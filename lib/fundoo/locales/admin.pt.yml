@@ -12,6 +12,7 @@ pt:
         goal: Meta
         total_payment_service_fee: "Taxa do MP"
         total_catarse_fee: "Taxa do Catarse"
+        zero_fee: "Apoio sem taxa?"
         repass_value: "Vl. Repasse"
         expires_at: Finaliza
         online_date: "Entrou no ar"
@@ -107,6 +108,7 @@ pt:
         payment_id: "ID do pagamento"
         payment_method: "Meio de pagamento"
         payment_fee: "Taxa do meio de pagamento"
+        successful: bem-sucedido
         payment_choice: "Opção de pagamento"
         payer_email: "Email utilizado no meio de pagamento"
         user_email: "Email utilizado no catarse"
@@ -126,9 +128,10 @@ pt:
           project: "Permalink ou nome do projeto"
           acquirer: "Nome da operadora de cartão"
           user: "ID, Nome, Email ou Email de pagamento"
-          payment_id: "Chave, ID do meio de pagamento ou TID da operadora"
+          payment_id: "Chave, ID do meio de pagamento ou TID da operadora'"
         acquirer: Operadora
         payment_tax: "Taxa meio de pagamento"
+        project_state: "Estado do projeto"
         send_refund_request_contribution: "Enviar solicitação de reembolso"
         payer_email: "Email do meio de pagamento"
         payment_id: "Id de pagamento"
@@ -199,6 +202,7 @@ pt:
           goal: Meta
           total_payment_service_fee: "Taxa do MP"
           total_catarse_fee: "Taxa do Catarse"
+          zero_fee: "Apoio sem taxa?"
           repass_value: "Vl. Repasse"
           expires_at: Finaliza
           online_date: "Entrou no ar"
@@ -294,6 +298,7 @@ pt:
           payment_id: "ID do pagamento"
           payment_method: "Meio de pagamento"
           payment_fee: "Taxa do meio de pagamento"
+          successful: bem-sucedido
           payment_choice: "Opção de pagamento"
           payer_email: "Email utilizado no meio de pagamento"
           user_email: "Email utilizado no catarse"
@@ -313,9 +318,10 @@ pt:
             project: "Permalink ou nome do projeto"
             acquirer: "Nome da operadora de cartão"
             user: "ID, Nome, Email ou Email de pagamento"
-            payment_id: "Chave, ID do meio de pagamento ou TID da operadora"
+            payment_id: "Chave, ID do meio de pagamento ou TID da operadora'"
           acquirer: Operadora
           payment_tax: "Taxa meio de pagamento"
+          project_state: "Estado do projeto"
           send_refund_request_contribution: "Enviar solicitação de reembolso"
           payer_email: "Email do meio de pagamento"
           payment_id: "Id de pagamento"

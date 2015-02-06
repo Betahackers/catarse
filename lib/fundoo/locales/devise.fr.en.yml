@@ -1,0 +1,89 @@
+fr:
+  devise:
+    feedback_tab:
+      title: Support
+      header_html: "Bienvenus sur <br/> la page de connexion Catharsis"
+      blog_button: "Lire la suite"
+      form_feedback_link: "Donner votre avis"
+      contact_link: "Demander du support"
+    confirmations:
+      confirmed: "Votre compte a été confirmed. Vous êtes maintenant connecté."
+      send_instructions: "Vous recevrez dans quelques minutes un couriel avec les informations of confirmation of votre compte."
+      send_paranoid_instructions: "SI votre adresse mail est presente dans notre système, vous recevrez un couriel pour confirm votre compte."
+    failure:
+      password_token: "CE lien a expiré. Saisissez votre email de nouveau."
+      already_authenticated: "Fr. devise. already_authenticated failure."
+      inactive: "Votre compte n'est pas encore activé."
+      invalid: "Email or invalidate mot de passe"
+      invalid_token: "Token of confirmation to invalidate."
+      locked: "Votre compte a été suspendu."
+      not_found_in_database: "Email or invalidate mot de passe."
+      timeout: "Votre session the expiré. Reconnectez-vous s'il vous plait."
+      unauthenticated: "Fr. devise. unauthenticated failure."
+      unconfirmed: "Vous little hide confirm votre compte avant de continuer."
+    mailer:
+      confirmation_instructions:
+        subject: "Instructions of confirmation"
+      reset_password_instructions:
+        subject: "Instructions pour changer votre mot de passe"
+      unlock_instructions:
+        subject: "Instructions pour déploquer votre compte"
+    omniauth_callbacks:
+      failure: "Pouvez-vous utiliser%{kind} pour \"%{reason}\"."
+      success: "Fr. devise. omniauth_callbacks. success"
+    passwords:
+      no_token: "fr.devise.passwords.no _ token"
+      send_instructions: "CE lien a expiré. Resaisissez votre email"
+      send_paranoid_instructions: "SI votre email est présent dans notre système, vous recevrez un email avec les instructions."
+      updated: "Fr. devise. updated passwords."
+      updated_not_active: "Votre mot de passe a été changé."
+      new:
+        site_title: "MOT de passe oublié"
+        title: "Saisissez votre mail et demandez un nouveau mot de passe."
+        submit: "Envoyer les instructions"
+      edit:
+        site_title: "Changer mot de passe"
+        label_new_password: "Saisissez votre mot de passe"
+        title: "Changement de mot de passe"
+        subtitle: "Changer le mot de passe that vous connecter pour vous utiliserez"
+        submit: "Changer mot de passe"
+    registrations:
+      destroyed: "Au revoir. Votre compte a été suspendu. Nous espérons vous revoir bientôt."
+      signed_up: "Fr. devise. registrations. signed_up"
+      signed_up_but_inactive: "Benvenus. Vous vous êtez activer votre connecté more little hide compte d ' approached by p."
+      signed_up_but_locked: "Vous êtes connecté more il if trouve votre compte that soit suspendu!"
+      signed_up_but_unconfirmed: "UN message vous a été envoyer pour activer votre compte et confirm."
+      update_needs_confirmation: "Mis à jour vous votre compte avec succès, plus nous devons vérifier votre nouvelle adresse e-mail. S'il vous plaît vérifier votre mail et cliquez sur le lien pour finaliser la confirmation confirmation de votre nouvelle adresse e-mail."
+      updated: "Votre compte a été mis à jour."
+    sessions:
+      new:
+        site_title: Autentification
+        submit: "If connecter"
+        title: "If connecter avec e-mail l'adresse"
+        login_title: Login
+        login_subtitle: "SI vous avez déjà un compte"
+        register_title: "Créer un compte"
+        register_subtitle: "Utilisez votre compte"
+        with_facebook: "If connecter avec mon compte facebook"
+        with_facebook_subtitle: "UN moyen rapide to connecter"
+        google_warning_html: "or avec votre compte <strong> Google </strong>"
+        google_step_1: "1-Cliquez sur%{link}"
+        google_step_2: "2-Suivez les instructions"
+        with_another_social: "Connexion avec Twitter ne sera plus valable dans une semaine"
+        with_another_social_subtitle: "<a target = \"_blank\" href = \"\" http://blog.catarse.me/mudanca-no-sistema-de-login/> Lire plus </a> à ce sujet (contenu en portugais)"
+      signed_in: "Fr. devise. sessions. signed_in"
+      signed_out: "Fr. devise. sessions. signed_out"
+    unlocks:
+      send_instructions: "Vous recevrez un email dans quelques minutes avec les instructions à suivre."
+      send_paranoid_instructions: "SI votre email est présent dans notre système, vous recevrez un email avec les instructions à suivre."
+      unlocked: "Votre compte a été réactivé. Vous pouvez vous connecter."
+  errors:
+    messages:
+      already_confirmed: "Compte déjà confirmed. Connectez vous"
+      confirmation_period_expired: "vous little hide confirm avant%{period}, un nouveau redemander"
+      expired: "the expiré. Redemandez un nouveau"
+      not_found: introuvable
+      not_locked: "n ' était pas suspendu"
+      not_saved:
+        one: "1 the erreur empêché%{resource} d ' être enregistré"
+        other: "%{count} erreurs n'ont empêché%{resource} d ' être enregistré"

@@ -2,18 +2,21 @@ pt:
   layouts:
     footer:
       links:
+        jobs: "Trabalhe conosco"
         blog: Blog
         contact: Contato
         discover: "Descubra projetos"
+        start: "Como funciona"
         expiring: "Na reta final"
         facebook: Facebook
         faq: Ajuda
+        guides: "Guia dos Realizadores"
         feedback: Feedback
         github: Github
         instagram: Instagram
         near: "Próximos a mim"
         press: Imprensa
-        privacy: Privacidade
+        privacy: "Política de privacidade"
         recents: Recentes
         recommended: Recomendados
         submit: "Envie seu projeto"
@@ -22,8 +25,8 @@ pt:
       texts:
         copyleft: "Feito com amor."
       titles:
-        about: "Sobre nós"
-        contact: "Mantenha contato"
+        about: Ajuda
+        contact: Bem-vindo
         newsletter: "Assine nossa news"
         sitemap: Navegue
         social: "Redes sociais"

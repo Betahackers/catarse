@@ -1,15 +1,15 @@
 en:
-  devise:
+  deivse:
     passwords:
       edit:
         titles:
-          site: "Set a new password"
-          header: "Set a new password"
+          site: "Setting a password"
+          header: "Setting a password"
         form:
           hint:
-            password_length: "Minimum of 6 characters"
+            password_length: "Must be at least 6 characters."
           labels:
             password: "New password"
-            password_confirmation: "Confirmation of password"
+            password_confirmation: "Re-enter password"
           inputs:
-            submit: "Save and enter"
+            submit: "Save and log me in"

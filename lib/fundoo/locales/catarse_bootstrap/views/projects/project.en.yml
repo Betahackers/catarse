@@ -3,19 +3,44 @@ en:
     project:
       contributed: raised
       reached: hit
-      progress_html: "<span> %{percent}% </span> funded"
+      progress_html: "<span>%{percent}% </span> funded"
       time_remaining_html:
-        one: "<span> %{count} %{unit} </span> rest"
-        other: "<span> %{count} %{unit} </span> rest"
-      pledged_html: "<span> %{value} </span> raised"
+        one: "<span>%{count}%{unit} </span> rest"
+        other: "<span>%{count}%{unit} </span> rest"
+      pledged_html: "<span>%{value} </span> raised"
       display_status:
+        online: Online
         expired: finalized
-        rejected: rejected
+        rejected: refused
         failed: "not funded"
         successful: funded
+        approved: approved
         reached_goal: funded
         waiting_confirmation: awaiting
         waiting_funds: awaiting
+        not_reached_goal: awaiting
+        draft: draft
+        in_analysis: "in analysis"
+    card:
+      by: by
+      remaining:
+        one: remainder
+        other: remainder
+      contributed: raised
+      reached: hit
+      progress_html: "<span>%{percent}% </span> funded"
+      time_remaining_html:
+        one: "<span>%{count}%{unit} </span> rest"
+        other: "<span>%{count}%{unit} </span> rest"
+      pledged_html: "<span>%{value} </span> raised"
+      display_status:
+        expired: finalized
+        rejected: rejected
+        failed: Non-funded
+        successful: Successful
+        approved: approved
+        reached_goal: funded
+        waiting_funds: "Pending bills"
         not_reached_goal: awaiting
         draft: draft
         in_analysis: "in analysis"

@@ -1,0 +1,44 @@
+fr:
+  channels_subscribers:
+    created: "Vous êtes désormais abonné to%{channel}"
+    deleted: "vous n ' êtes plus abonné to%{channel}"
+  channels:
+    send_your_project: "Soumettez votre projet"
+    send_a_email: "Envoyer un courriel"
+    follow: "s ' abonner"
+    following: abonné
+    unfollow: "If désabonner"
+    subscribed: "%{count} abonnés"
+    admin:
+      menu: Modération
+      statistics_menu: Statistiques
+      profile_menu: Profil
+      statistics:
+        title: statistiques
+        total_subscribers: "Total des abonnés"
+    projects:
+      send: "Soumettez votre project"
+      see_how_it_works: "Take comment ça marche et soumettez votre projet"
+      how_it_works: "Comment ça marche"
+      progress_html: "financé à hauter of <span>%{percent}% </span>"
+      time_remaining_html:
+        one: "<span>%{count}%{unit} </span> remainder"
+        other: "<span>%{count}%{unit} </span> remainder"
+      pledged_html: "<span>%{value} </span> promis"
+    how_it_works:
+      title: "Comment ça marche"
+    footer:
+      terms: "Conditions of utilisation"
+      privacy_policy: "Politique de confidentialité"
+      how_it_works: "Comment ça marche"
+      how_channels_work: "Comprendre les thematic Catharsis"
+      contact: Contact
+    accessibility:
+      how_it_works: "Voir comment ça marche et soumettre un projet"
+      send_your_project: "Cliquez pour soumettre votre projet"
+      link_to_twitter: "cette chaîne sur Twitter"
+      link_to_facebook: "cette chaîne sur Facebook"
+      link_to_website: "web site de cette chaîne"
+    presentation:
+      link-to-follow: "s ' abonner"
+      followers: abonnés
