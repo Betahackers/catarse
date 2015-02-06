@@ -17,7 +17,7 @@ en:
     credits:
       modal:
         title: "Want to request a refund of your support?"
-        text: "Learn how does the reimbursement process in Catharsis:"
+        text: "Learn how does the reimbursement process in Fundoo:"
         link: "Rules and operation of the refunds/chargebacks"
         reject_btn: "No, I would keep my credits"
         accept_btn: "Yes, I want to request a refund of my support"
@@ -54,14 +54,14 @@ en:
       other_link: "link to your page on the internet"
       change_password: "Change my password"
       current_password_hint: "<i> For the password is changed you must confirm your current password. </i>"
-      email_hint: "Your email will be used only for sending communications of Catharsis and designs that you support. He will not be visible in your profile. When you support a project, we will give your email to the owner of the project so that it can provide the rewards."
+      email_hint: "Your email will be used only for sending communications of Fundoo and designs that you support. He will not be visible in your profile. When you support a project, we will give your email to the owner of the project so that it can provide the rewards."
       email_tooltip: "Click here to fill in your email ..."
       gravatar_hint_html: "You can also change your photo using the %{link} with your email. <br> is as simple as sending a picture and now works for other sites as well;)"
       local_avatar: "My avatar"
       submit_text: "Choose your image"
       submit: Send
       my_data: "My data"
-      newsletter: "I want to receive news of Catharsis by email"
+      newsletter: "I want to receive news of Fundoo by email"
       password_hint: "<i> leave blank if you do not want to change your password. </i>"
       deactivate: "Deactivate my account"
       deactivate_notice: "The %{name} has been disabled."
@@ -74,8 +74,8 @@ en:
     show:
       projects:
         here: here
-        no_projects: " %{name} has not yet conducted any project in Catharsis. Will the inspiration will hit sometime?"
-        no_projects_current_user_html: "You have not performed any project in Catharsis. Let inspiration hit and click %{link} to start!"
+        no_projects: " %{name} has not yet conducted any project in Fundoo. Will the inspiration will hit sometime?"
+        no_projects_current_user_html: "You have not performed any project in Fundoo. Let inspiration hit and click %{link} to start!"
         title: "Projects of %{name}"
         title_current_user: "My projects"
       contributions:

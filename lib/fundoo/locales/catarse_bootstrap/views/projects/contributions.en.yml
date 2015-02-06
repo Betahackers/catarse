@@ -35,11 +35,11 @@ en:
           payment_card_installments: Parcels
         installment_with_tax: "without interest"
         transaction_error: "Transaction refused, please recheck your data or contact your bank/card issuer for more information."
-        pagarme_warning_html: "The Catharsis is in the testing phase of a new means of payment which will facilitate the financial support and the eventual repayment of values to the supporters. Therefore, we caution you that extra data may be required, in addition to those mentioned in the terms of use to support this project. Any doubt or difficulty, contact us by email at %{mailto}. Thank you."
+        pagarme_warning_html: "The Fundoo is in the testing phase of a new means of payment which will facilitate the financial support and the eventual repayment of values to the supporters. Therefore, we caution you that extra data may be required, in addition to those mentioned in the terms of use to support this project. Any doubt or difficulty, contact us by email at %{mailto}. Thank you."
         payment_save_card: "I want to save my credit card to facilitate future support."
         reward_sold_out: "This reward is depleted. Start a new support."
         page-title: "Supports %{name}"
-        credits_preview_html: "You have <strong> %{credits} </strong> in credits to perform this <strong> support until the day 10/11 </strong>, as <a href = ' http://blog.catarse.me/simplificacao-dos-reembolsos-e-o-fim-dos-creditos/' target = ' _blank ' _ > </a> new rules published by Catharsis."
+        credits_preview_html: "You have <strong> %{credits} </strong> in credits to perform this <strong> support until the day 10/11 </strong>, as <a href = ' http://blog.catarse.me/simplificacao-dos-reembolsos-e-o-fim-dos-creditos/' target = ' _blank ' _ > </a> new rules published by Fundoo."
         credits_submit: "Make payment"
         credits_title: "Payment with credit"
         insufficient_credits: "You have %{credits} credits. This value is not sufficient to perform the support, please choose another means of payment."
@@ -68,7 +68,7 @@ en:
         you_have_credits: "You have <strong> %{credits} </strong> in credits to accomplish this support."
         choose_reward: "Choose the reward and then the value of support"
         choose_value: "Enter the value of your support."
-        minimum_disclaimer: "From R $ <span id = \"minimum-value\" > </span> 10 is great;)"
+        minimum_disclaimer: "From € <span id=\"minimum-value\">10</span> is great;)"
         next_step: "Review and perform payment"
         no_reward: "Thank you. I just want to help the project."
       review:

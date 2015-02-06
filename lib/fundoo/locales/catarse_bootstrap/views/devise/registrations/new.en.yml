@@ -13,7 +13,7 @@ en:
             show_password: "Display password"
             name: "Full name"
             password: Password
-            newsletter: "I want to receive news of Catharsis on my email"
+            newsletter: "I want to receive news of Fundoo on my email"
             accept: "When making a record, you are accepting our <a href = \" %{terms_url}\" class = \"alt-link\" target = \"_blank\" > terms of use </a> and <a class = \"alt-link\" href = \" %{privacy_url}\" target = \"_blank\" > </a> privacy policy"
           hint:
             password_length: "Minimum of 6 characters"

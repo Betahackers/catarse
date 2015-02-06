@@ -37,7 +37,7 @@ en:
       link_reports_waiting_confirmation: "Download report of all supporters with billet printed"
       link_reward: "Download report of the supporters of the reward of %{value}"
     project_about:
-      embed: <embed>
+      embed: "<embed>"
       embed_title: "Embed this on your site design"
       active_btn: " Remember"
       deactive_btn: " Active reminder"
@@ -61,11 +61,11 @@ en:
       contribute_project:
         display_status:
           reached_goal: "This project will be successful and funded in %{date}"
-          not_reached_goal: "This project will only be funded if at least %{goal} are reached even %{date}"
-          failed: "This project has not reached the minimum of %{goal} to %{date} and was not funded"
+          not_reached_goal: "This project will only be funded if at least %{goal} are reached before %{date}"
+          failed: "This project has not reached the minimum of %{goal} by %{date} and was not funded"
           rejected: "This project was not accepted. Cannot perform a backup."
           in_analysis: "This project is under review and is not yet open to receive support."
-          successful: "This project was successful and was funded in %{date}"
+          successful: "This project was successful and was funded on %{date}"
           waiting_funds: "Awaiting the confirmation of bills to see if this project will be funded."
           draft: "This project is only a draft and is not yet open to receive support."
         submit: "Support this project"
@@ -91,4 +91,4 @@ en:
         pending: "Printed slips"
       sidebar:
         contributions: support
-        goal: "hit %{total}"
+        goal: "goal %{total}"

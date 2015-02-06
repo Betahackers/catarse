@@ -25,5 +25,5 @@
       = @project.about_html.try(:html_safe)
       - if @project.budgets.present?
         .fontsize-large.fontweight-semibold
-          | Orçamento
+          | Budget
         = pie_chart @project.budgets.pluck(:name, :value)

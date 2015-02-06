@@ -10,17 +10,17 @@ en:
           criteria: "Selection criteria"
           suport_central: "Support Central"
           support_contact: "Contact us"
-          how_it_works: "As the Catharsis works?"
+          how_it_works: "How Fundoo works?"
           money: "How will I receive the money?"
           selection: "How are projects selected?"
-          all_or_nothing: "Why is everything or Nothing?"
+          all_or_nothing: "Why is it all or nothing?"
       form:
         blocks:
           first:
             title: Welcome;)
-            description: "We just need to know 3 things for you to skip to the next step, where you will have a preview of your project as it airs, if selected."
+            description: "We just need to know 3 things for you to skip to the next step, where you will be able to preview and edit your project."
         info:
-          permalink: "http://catarse.me/"
-          goal: "R $"
+          permalink: "www.fundoo.es/"
+          goal: "€"
           online_days: days
         submit: "Save and continue"

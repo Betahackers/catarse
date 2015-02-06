@@ -14,7 +14,7 @@
 
             = form.input :value, required: true, as: :string, label: false,  input_html: { pattern: '\\d+', autocomplete: 'off', data: { rewards: @rewards.map{|r| {id: r.id, minimum_value: r.minimum_value.to_i} }.to_json } }
             .simbol
-              p R$
+              p €
             = form.input :reward, as: :radio, collection: @rewards
             = form.input :anonymous
             li#anonymous_warning.important.hide

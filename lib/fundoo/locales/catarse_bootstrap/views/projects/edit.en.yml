@@ -21,13 +21,13 @@ en:
           other: "1 support in term of confirmation."
         edit_reward: "Edit reward"
         new_reward: "Register reward"
-        reward_deliver_time: "<b> delivery Estimate: </b> %{estimate}"
+        reward_deliver_time: "<b> Delivery Estimate: </b> %{estimate}"
         reward_title: "For %{minimum} or more"
     formatting_tips:
       title: "Formatting tips"
       formatting_tip1: "If you paste the url of an image or a video from vimeo or youtube, they will appear in the description of the idea. give it a shot!"
       formatting_tip2_html: "When pasting a url either, she will turn into a link. For example, http://catarse.me will turn <a class = \"alt-link\" href = \"\" http://catarse.me > http://catarse.me </a>."
-      formatting_tip3_html: "If you want to put a text in the link, just use the following format: \"text you want\": http://sua.url. For example, \"Catharsis\": http://catarse.me turn <a class = \"alt-link\" href = \"\" http://catarse.me > </a> Catharsis."
+      formatting_tip3_html: "If you want to put a text in the link, just use the following format: \"text you want\": http://sua.url. For example, \"Fundoo\": http://catarse.me turn <a class = \"alt-link\" href = \"\" http://catarse.me > </a> Fundoo."
       formatting_tip4_html: "You can use bold by adding two asterisks (* *) before and after the text you want to format. For example, * my * bold text * * will appear as <strong> my bold text </strong>."
       formatting_tip5_html: "You can use italic by adding an underline (_) before and after the text you want to format. For example, _ my italic text _ will appear as <i> my text in italic </i>."
     dashboard_user_settings:
@@ -60,7 +60,7 @@ en:
         header2: "Be sure to read:"
       rejected:
         title: " %{name}, unfortunately not this time."
-        subtitle_html: "You sent your project for team analysis Catharsis and we understand that he does not conform to the profile of the platform. Remembering that have a project refused does not prevent you to send new projects to evaluate or redesign your current project so that it suits to %{link1}. Talk to our customer service! You can still edit your project and request a reevaluation. Think of it as a process of learning. Get up, shake the dust and get over it!"
+        subtitle_html: "You sent your project for team analysis Fundoo and we understand that he does not conform to the profile of the platform. Remembering that have a project refused does not prevent you to send new projects to evaluate or redesign your current project so that it suits to %{link1}. Talk to our customer service! You can still edit your project and request a reevaluation. Think of it as a process of learning. Get up, shake the dust and get over it!"
       online:
         title: " %{name}, his campaign is in the air!"
         subtitle_html: "Your project is in the air and his campaign will close in %{date}. You may receive support until your last minute campaign. Remember, it's all-or-nothing and you only take the resources obtained if hit the goal that was set. Don't forget to inform yourself about how the %{link1}. IT IS VERY IMPORTANT! Also check out %{link2}."
@@ -68,7 +68,7 @@ en:
       failed:
         title: " %{name}, don't get discouraged!"
         subtitle_html: "Your project does not hit the goal and we know that this is not the best of sensations. But don't be discouraged. The world record for largest collection of today is a second attempt to a project. And don't worry, all your supporters will get their money back.  %{link}."
-        questions: "We sent you an email too with two questions. If you have time and head, it would be great if you could take a look. Your feedback helps us build a better and nicer Catharsis for you."
+        questions: "We sent you an email too with two questions. If you have time and head, it would be great if you could take a look. Your feedback helps us build a better and nicer Fundoo for you."
       draft:
         title: " %{name}, continue to build your project."
         subtitle: "Before sending your project to our analysis, you have to fill in all the data from the tabs above (Basic, design, rewards and About you). You can save your changes and return to the draft as many times as you want (in your user profile has a link to the project). When you feel that filled all the tabs of the fullest possible form, click the submit button and our customer service will contact you."
@@ -78,7 +78,7 @@ en:
         subtitle_html: "To put your project in the air and start your campaign, please fill in the requested data in the %{link}. "
       in_analysis:
         title: " %{name}, soon we will send a feedback on your project."
-        subtitle_html: "You sent your project for team analysis Catharsis. Up to 4 working days <strong> </strong> our customer service will contact you to give the OK to go to the air or to suggest adjustments. Butterflies in your stomach? Don't let yourself be taken by anxiety and review your project. This is the time to put it right round. Collect feedback with those closest to us and listen to the suggestions of the Catharsis. Remember, some modifications will not be allowed when your project is up in the air."
+        subtitle_html: "You sent your project for team analysis Fundoo. Up to 4 working days <strong> </strong> our customer service will contact you to give the OK to go to the air or to suggest adjustments. Butterflies in your stomach? Don't let yourself be taken by anxiety and review your project. This is the time to put it right round. Collect feedback with those closest to us and listen to the suggestions of the Fundoo. Remember, some modifications will not be allowed when your project is up in the air."
     edit:
       start_tab: Home
       basics_tab: Basics
@@ -153,6 +153,6 @@ en:
       online_days: "Deadline for fundraising"
       online_days_label: "On average the projects are in the air for 40 days. The maximum period of the campaign is of 60 days."
       value: "Amount to be collected"
-      value_secondary: "Much of the aid will be of people close to you. Think about how to get at least 50% of the value of the goal within your network of contacts. Don't forget to include the 13% rate charged by Catharsis if your project is successful"
+      value_secondary: "Much of the aid will be of people close to you. Think about how to get at least 50% of the value of the goal within your network of contacts. Don't forget to include the 13% rate charged by Fundoo if your project is successful"
       form:
         submit: Save

@@ -3,8 +3,8 @@ en:
     collections:
       project:
         traffic_sources:
-          one: "I've had another project in Catharsis"
-          two: "indication of a person who already had a project in Catharsis"
+          one: "I've had another project in Fundoo"
+          two: "indication of a person who already had a project in Fundoo"
           three: "indication of friend/colleague/professional contact"
           four: "from a project that was picking up on the platform"
           five: "article in a blog"
@@ -37,15 +37,15 @@ en:
       project:
         category: "Select a category"
         select: "Select an option"
-        traffic_sources: "How did you meet the Catharsis?"
+        traffic_sources: "How did you meet the Fundoo?"
     hints:
       project:
         select: "Select an option"
-        traffic_sources: "How did you meet the Catharsis?"
-        name: "The more best direct. Do not exceed 50 characters"
-        permalink: "Is the address of your project, let the simple. Try not to use underline, hyphen and etc."
+        traffic_sources: "How did you meet the Fundoo?"
+        name: "The more direct the better. Do not exceed 50 characters"
+        permalink: "The web URL of your project. Keep it simple. Try not to use underlines, hyphens, etc."
         category: "Before sending, explore and inspire other projects of the same category."
-        goal: "Much of the aid will be of people close to you. Think about how to get at least 50% of the value of the goal within your network of contacts. Don't forget the 13% rate charged by Catharsis if your project is successful."
+        goal: "Much of the aid will be of people close to you. Think about how to get at least 50% of the value of the goal within your network of contacts."
         online_days: "On average the projects are in the air for 40 days. The maximum period of the campaign is of 60 days."
         video_url: "Link to your video on Vimeo or Youtube <br/>."
         about: "Talk about what will be accomplished, how the money will be used, who is behind the project, how and when the project will be delivered. Be direct and informal, this is a conversation between people who want to share an idea, not a project of the public notice. Remember that <a href = http://suporte.catarse.me/hc/pt-br/articles/203083017-Adicionar-imagens-e-v%C3%ADdeos-na-descri%C3%A7%C3%A3o-do-projeto class = ' alt-link ' target = ' _blank ' > you can use images and videos </a> to better illustrate your project description."

@@ -14,7 +14,7 @@ en:
     login:
       login_with_facebook: "sign in with your facebook account"
     user:
-      my_contributions: "My backups"
+      my_contributions: "My contributions"
       logout: Exit
       my_credits: "Credit balance"
       refund_link: "Request refund"

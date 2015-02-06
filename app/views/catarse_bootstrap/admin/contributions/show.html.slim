@@ -9,7 +9,7 @@
   p
     strong= t('.payment_fee')
     | &nbsp;
-    = number_to_currency resource.payment_service_fee, unit: 'R$', precision: 2, delimiter: '.'
+    = number_to_currency resource.payment_service_fee, unit: '€', precision: 2, delimiter: '.'
   p
     strong= t('.payment_id')
     | &nbsp;
@@ -31,4 +31,4 @@
     | &nbsp;
     = l(resource.created_at) if resource.created_at.present?
 
-= render 'shared/footer_big'
+= render 'shared/footer'

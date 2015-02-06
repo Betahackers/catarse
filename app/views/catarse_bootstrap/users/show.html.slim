@@ -10,22 +10,22 @@
         .fontsize-largest.fontweight-semibold.u-marginbottom-20
           = resource.decorate.display_name
         .w-hidden-small.w-hidden-tiny.u-marginbottom-40.fontsize-base
-          | Chegou junto em #{localize(resource.created_at, format: "%B de %Y")}
+          | Joined #{localize(resource.created_at, format: "%B de %Y")}
           br
-          | Apoiou #{resource.contributed_projects.count} projetos e já criou #{resource.created_projects.count} projetos&nbsp;
+          | Supported #{resource.contributed_projects.count} projects and created #{resource.created_projects.count} projects&nbsp;
       .w-col.w-col-3
   .hero-profile style="background-image: url('#{resource.cover_image.try(:base).try(:url)}')"
 
 nav.project-nav.u-text-center.u-marginbottom-30.profile style='z-index: 10; position: relative;'
   .w-container
     = link_to '#contributed', id: 'contributed_link', class: 'nav-tab' , data: {target: '#contributed'} do
-      | Apoiados &nbsp;
+      | Supported &nbsp;
       span.badge= resource.total_contributed_projects
     = link_to '#created', id: 'created_link', class: 'nav-tab' , data: {target: '#created'} do
-      | Criados &nbsp;
+      | Created &nbsp;
       span.badge= resource.created_projects.count
     = link_to '#about', id: 'about_link', class: 'nav-tab' , data: {target: '#about'} do
-      | Sobre
+      | About
 
 
 section.section
@@ -36,7 +36,7 @@ section.section
           .w-row.u-text-center
             .w-col.w-col-2
             .w-col.w-col-8
-              .fontsize-base #{resource.name} ainda não apoiou nenhum projeto.
+              .fontsize-base #{resource.name} has not contributed to any projects.
             .w-col.w-col-2
         - else
           == render_projects resource.contributed_projects.most_recent_first, 'profile_contributed_projects', { wrapper_class: 'w-col w-col-4 u-marginbottom-30' }
@@ -45,11 +45,11 @@ section.section
           .w-row.u-text-center
             .w-col.w-col-2
             .w-col.w-col-8
-              .fontsize-base #{resource.name} ainda não criou nenhum projeto.
+              .fontsize-base #{resource.name} has not created any projects.
             .w-col.w-col-2
         - else
           == render_projects resource.created_projects.most_recent_first, 'profile_created_projects', { wrapper_class: 'w-col w-col-4 u-marginbottom-30' }
       #about.content.w-hidden
         = render 'user_about', resource: resource
 
-= render 'shared/footer_big'
+= render 'shared/footer'

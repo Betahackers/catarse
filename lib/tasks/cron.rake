@@ -112,7 +112,7 @@ task deliver_projects_of_week: :environment do
   end
 end
 
-desc "Deliver credits waning for users that have credits less than R$ 10"
+desc "Deliver credits waning for users that have credits less than € 10"
 task :deliver_credits_less_10, [:percent] => :environment do |t, args|
   total_percent = (args.percent.to_f/100.0)
   collection = User.already_used_credits.where("user_totals.credits < 10")
@@ -123,7 +123,7 @@ task :deliver_credits_less_10, [:percent] => :environment do |t, args|
   end
 end
 
-desc "Deliver credits waning for users that have credits more than R$ 10"
+desc "Deliver credits waning for users that have credits more than € 10"
 task :deliver_credits_more_than_10, [:percent] => :environment do |t, args|
   total_percent = (args.percent.to_f/100.0)
   collection = User.already_used_credits.where("user_totals.credits >= 10")

@@ -1,8 +1,0 @@
-es:
-  channels:
-    profiles:
-      how_it_works:
-        title:
-          channel: "Cómo funciona"
-        sidebar:
-          title: Browse
