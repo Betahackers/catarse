@@ -1,7 +1,7 @@
 en:
   shared:
     terms: "terms of use"
-    accept_terms_html: "I have read and I agree with the%{link}."
+    accept_terms_html: "I have read and I agree with the %{link}."
     header_channel:
       contact: Contact
       logout: Exit
@@ -19,7 +19,7 @@ en:
       privacy_policy: "Privacy policy"
       terms: "Terms of use"
       what_is_channel: "What are channels?"
-      how_it_works: "How does the%{name}"
+      how_it_works: "How does the %{name}"
       how_channels_work: "Understand the channels in Catharsis"
     header_big:
       projects: "My Projects"

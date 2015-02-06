@@ -1,8 +1,8 @@
 en:
   explore:
     index:
-      success_follow: "Now you follow the category and will receive a weekly list of new projects of%{name}"
-      success_unfollow: "You failed to follow this category%{name}"
+      success_follow: "Now you follow the category and will receive a weekly list of new projects of %{name}"
+      success_unfollow: "You failed to follow this category %{name}"
       follow: Follow
       unfollow: Unfollow
       following: following

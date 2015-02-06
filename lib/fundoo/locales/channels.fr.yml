@@ -1,21 +1,21 @@
 fr:
   channels_subscribers:
-    created: "vous êtes désormais abonné à %{channel}"
+    created: 'vous êtes désormais abonné à %{channel}'
     deleted: "vous n'êtes plus abonné à %{channel}"
   channels:
     send_your_project: "Soumettez votre projet"
     send_a_email: "Envoyer un courriel"
-    follow: s'abonner
-    following: abonné
+    follow: "s'abonner"
+    following: "abonné"
     unfollow: "se désabonner"
     subscribed: "%{count} abonnés"
     admin:
-      menu: Modération
-      statistics_menu: Statistiques
-      profile_menu: Profil
+      menu: "Modération"
+      statistics_menu: "Statistiques"
+      profile_menu: "Profil"
       statistics:
-        title: statistiques
-        total_subscribers: "Total des abonnés"
+        title: 'statistiques'
+        total_subscribers: 'Total des abonnés'
     projects:
       send: "Soumettez votre project"
       see_how_it_works: "Regardez comment ça marche et soumettez votre projet"
@@ -32,7 +32,7 @@ fr:
       privacy_policy: "Politique de confidentialité"
       how_it_works: "Comment ça marche"
       how_channels_work: "Comprendre les chaînes Catarse"
-      contact: Contact
+      contact: "Contact"
     accessibility:
       how_it_works: "Voir comment ça marche et soumettre un projet"
       send_your_project: "Cliquez pour soumettre votre projet"
@@ -40,5 +40,5 @@ fr:
       link_to_facebook: "cette chaîne sur Facebook"
       link_to_website: "site web de cette chaîne"
     presentation:
-      link-to-follow: s'abonner
-      followers: abonnés
+      link-to-follow: "s'abonner"
+      followers: 'abonnés'

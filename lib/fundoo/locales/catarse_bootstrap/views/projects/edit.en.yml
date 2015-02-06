@@ -12,7 +12,7 @@ en:
       submit: Save
       index:
         select_reward: "Select this reward"
-        display_remaining: "%{remaining} of%{maximum} available"
+        display_remaining: " %{remaining} of %{maximum} available"
         dont_want: "I don't want to reward"
         limited: Limited
         sold_out: Exhausted
@@ -21,13 +21,13 @@ en:
           other: "1 support in term of confirmation."
         edit_reward: "Edit reward"
         new_reward: "Register reward"
-        reward_deliver_time: "<b> delivery Estimate: </b>%{estimate}"
-        reward_title: "For%{minimum} or more"
+        reward_deliver_time: "<b> delivery Estimate: </b> %{estimate}"
+        reward_title: "For %{minimum} or more"
     formatting_tips:
       title: "Formatting tips"
       formatting_tip1: "If you paste the url of an image or a video from vimeo or youtube, they will appear in the description of the idea. give it a shot!"
-      formatting_tip2_html: "When pasting a url either, she will turn into a link. For example, http://catarse.me will turn <a class = \"alt-link\" href = \"\" http://catarse.me> http://catarse.me </a>."
-      formatting_tip3_html: "If you want to put a text in the link, just use the following format: \"text you want\": http://sua.url. For example, \"Catharsis\": http://catarse.me turn <a class = \"alt-link\" href = \"\" http://catarse.me> </a> Catharsis."
+      formatting_tip2_html: "When pasting a url either, she will turn into a link. For example, http://catarse.me will turn <a class = \"alt-link\" href = \"\" http://catarse.me > http://catarse.me </a>."
+      formatting_tip3_html: "If you want to put a text in the link, just use the following format: \"text you want\": http://sua.url. For example, \"Catharsis\": http://catarse.me turn <a class = \"alt-link\" href = \"\" http://catarse.me > </a> Catharsis."
       formatting_tip4_html: "You can use bold by adding two asterisks (* *) before and after the text you want to format. For example, * my * bold text * * will appear as <strong> my bold text </strong>."
       formatting_tip5_html: "You can use italic by adding an underline (_) before and after the text you want to format. For example, _ my italic text _ will appear as <i> my text in italic </i>."
     dashboard_user_settings:
@@ -46,38 +46,38 @@ en:
         contributions: support
         left: remaining
       waiting_funds:
-        title: "%{name}, we're suing the last payments."
-        subtitle: "Your project was finalized in%{expires} and is awaiting confirmation of bills and payments. In general the projects are for up to 4 working days in this status, counted from the date of completion of the project."
+        title: " %{name}, we're suing the last payments."
+        subtitle: "Your project was finalized in %{expires} and is awaiting confirmation of bills and payments. In general the projects are for up to 4 working days in this status, counted from the date of completion of the project."
         header: "From here your project can hit the goal or not. Watch what happens in each of the cases:"
         success: "Hit the goal:"
         failed: "I didn't hit the goal:"
         good_luck: "Good luck!"
       successful:
-        title: "%{name}, celebrate you deserve!"
+        title: " %{name}, celebrate you deserve!"
         subtitle: "Your project was successful and now is the time to start the work of relationship with its supporters. Prometheus? Obey!"
         header1: "And don't forget: transparency is everything."
-        transparent_html: "Keep a supporter informed is to keep a happy supporter. Even if you go to inform you of a failure or setback. Happy supporters are%{link}. Therefore, use and abuse (always with moderation) News tab. What you write there comes straight to voice mail from your supporters. I will start the delivery of rewards? In the tab \"reports\" you low information so you can make the delivery of rewards management of your project."
+        transparent_html: "Keep a supporter informed is to keep a happy supporter. Even if you go to inform you of a failure or setback. Happy supporters are %{link}. Therefore, use and abuse (always with moderation) News tab. What you write there comes straight to voice mail from your supporters. I will start the delivery of rewards? In the tab \"reports\" you low information so you can make the delivery of rewards management of your project."
         header2: "Be sure to read:"
       rejected:
-        title: "%{name}, unfortunately not this time."
-        subtitle_html: "You sent your project for team analysis Catharsis and we understand that he does not conform to the profile of the platform. Remembering that have a project refused does not prevent you to send new projects to evaluate or redesign your current project so that it suits to%{link1}. Talk to our customer service! You can still edit your project and request a reevaluation. Think of it as a process of learning. Get up, shake the dust and get over it!"
+        title: " %{name}, unfortunately not this time."
+        subtitle_html: "You sent your project for team analysis Catharsis and we understand that he does not conform to the profile of the platform. Remembering that have a project refused does not prevent you to send new projects to evaluate or redesign your current project so that it suits to %{link1}. Talk to our customer service! You can still edit your project and request a reevaluation. Think of it as a process of learning. Get up, shake the dust and get over it!"
       online:
-        title: "%{name}, his campaign is in the air!"
-        subtitle_html: "Your project is in the air and his campaign will close in%{date}. You may receive support until your last minute campaign. Remember, it's all-or-nothing and you only take the resources obtained if hit the goal that was set. Don't forget to inform yourself about how the%{link1}. IT IS VERY IMPORTANT! Also check out%{link2}."
-        explanation_html: " <div class = ' fontsize-base u-40-card card marginbottom-terciary '> <p class = ' fontweight-bold '> With the project in the air, some information can no longer be edited </p> <p> you can no longer change: <br>-its goal of capturing; <br>-the deadline; <br>-the URL of the project; <br>-the user </p> the project owner. <p class = ' fontweight-bold '> needs more information about campaign processes? Check the box next to it. </p> <p> the &nbsp;% Search {link1} is also a great source of data about the Brazilian scenario. A good read on &nbsp;%{link2} can be inspiring. There you will find stories of successful projects and campaign tips. </p> </div> "
+        title: " %{name}, his campaign is in the air!"
+        subtitle_html: "Your project is in the air and his campaign will close in %{date}. You may receive support until your last minute campaign. Remember, it's all-or-nothing and you only take the resources obtained if hit the goal that was set. Don't forget to inform yourself about how the %{link1}. IT IS VERY IMPORTANT! Also check out %{link2}."
+        explanation_html: " <div class = ' fontsize-base u-40-card card marginbottom-terciary ' > <p class = ' fontweight-bold ' > With the project in the air, some information can no longer be edited </p> <p> you can no longer change: <br>-its goal of capturing; <br>-the deadline; <br>-the URL of the project; <br>-the user </p> the project owner. <p class = ' fontweight-bold ' > needs more information about campaign processes? Check the box next to it. </p> <p> the &nbsp;% Search {link1} is also a great source of data about the Brazilian scenario. A good read on &nbsp; %{link2} can be inspiring. There you will find stories of successful projects and campaign tips. </p> </div> "
       failed:
-        title: "%{name}, don't get discouraged!"
-        subtitle_html: "Your project does not hit the goal and we know that this is not the best of sensations. But don't be discouraged. The world record for largest collection of today is a second attempt to a project. And don't worry, all your supporters will get their money back. %{link}."
+        title: " %{name}, don't get discouraged!"
+        subtitle_html: "Your project does not hit the goal and we know that this is not the best of sensations. But don't be discouraged. The world record for largest collection of today is a second attempt to a project. And don't worry, all your supporters will get their money back.  %{link}."
         questions: "We sent you an email too with two questions. If you have time and head, it would be great if you could take a look. Your feedback helps us build a better and nicer Catharsis for you."
       draft:
-        title: "%{name}, continue to build your project."
+        title: " %{name}, continue to build your project."
         subtitle: "Before sending your project to our analysis, you have to fill in all the data from the tabs above (Basic, design, rewards and About you). You can save your changes and return to the draft as many times as you want (in your user profile has a link to the project). When you feel that filled all the tabs of the fullest possible form, click the submit button and our customer service will contact you."
         study_title: "Felt need to study more to assemble your project? Check out the links in the box alongside."
       approved:
-        title: "%{name}, your project has been approved!"
-        subtitle_html: "To put your project in the air and start your campaign, please fill in the requested data in the%{link}. "
+        title: " %{name}, your project has been approved!"
+        subtitle_html: "To put your project in the air and start your campaign, please fill in the requested data in the %{link}. "
       in_analysis:
-        title: "%{name}, soon we will send a feedback on your project."
+        title: " %{name}, soon we will send a feedback on your project."
         subtitle_html: "You sent your project for team analysis Catharsis. Up to 4 working days <strong> </strong> our customer service will contact you to give the OK to go to the air or to suggest adjustments. Butterflies in your stomach? Don't let yourself be taken by anxiety and review your project. This is the time to put it right round. Collect feedback with those closest to us and listen to the suggestions of the Catharsis. Remember, some modifications will not be allowed when your project is up in the air."
     edit:
       start_tab: Home
@@ -131,7 +131,7 @@ en:
       video_url_hint: "Link to your video on Vimeo or Youtube."
       about: "Project description"
       links_title: "Useful links"
-      about_hint_html: "Talk about what will be accomplished, how the money will be used, who is behind the project, how and when the project will be delivered. Be direct and informal, this is a conversation between people who want to share an idea, not a project of the public notice. Remember that <a class = \"alt-link\" target = \"_blank\" href = \"\" http://suporte.catarse.me/hc/pt-br/articles/203083017-Adicionar-imagens-e-v%C3%ADdeos-na-descri%C3%A7%C3%A3o-do-projeto> you can use images and videos </a> to better illustrate your project description."
+      about_hint_html: "Talk about what will be accomplished, how the money will be used, who is behind the project, how and when the project will be delivered. Be direct and informal, this is a conversation between people who want to share an idea, not a project of the public notice. Remember that <a class = \"alt-link\" target = \"_blank\" href = \"\" http://suporte.catarse.me/hc/pt-br/articles/203083017-Adicionar-imagens-e-v%C3%ADdeos-na-descri%C3%A7%C3%A3o-do-projeto > you can use images and videos </a> to better illustrate your project description."
       card: "Project card"
       card_subtitle: "You know that cardzinho project that appears in home and in search? Since then, makes beautiful because they say that the first impression is the one that is;)"
       image: "Project image"

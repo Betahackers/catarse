@@ -2,16 +2,18 @@ en:
   devise:
     sessions:
       new:
-        no_account_html: "Need an account?"
+        no_account_html: "Don't have an account?"
         titles:
-          site: "Log in"
-          header: "Log in"
+          site: Login
+          header: Login
         links:
           register: "Sign up"
+          password: Password
           forgot_password: "I forgot my password"
         form:
           labels:
-            remember_me: "Remember me"
+            remember_me: "Stay connected"
           inputs:
-            submit: "Log me in"
-            facebook: "Log in with Facebook"
+            submit: "Log in"
+            password: Password
+            facebook: "Login with Facebook"

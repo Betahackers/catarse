@@ -3,11 +3,11 @@ en:
     project:
       contributed: raised
       reached: hit
-      progress_html: "<span>%{percent}% </span> funded"
+      progress_html: "<span> %{percent}% </span> funded"
       time_remaining_html:
-        one: "<span>%{count}%{unit} </span> rest"
-        other: "<span>%{count}%{unit} </span> rest"
-      pledged_html: "<span>%{value} </span> raised"
+        one: "<span> %{count} %{unit} </span> rest"
+        other: "<span> %{count} %{unit} </span> rest"
+      pledged_html: "<span> %{value} </span> raised"
       display_status:
         online: Online
         expired: finalized
@@ -28,11 +28,11 @@ en:
         other: remainder
       contributed: raised
       reached: hit
-      progress_html: "<span>%{percent}% </span> funded"
+      progress_html: "<span> %{percent}% </span> funded"
       time_remaining_html:
-        one: "<span>%{count}%{unit} </span> rest"
-        other: "<span>%{count}%{unit} </span> rest"
-      pledged_html: "<span>%{value} </span> raised"
+        one: "<span> %{count} %{unit} </span> rest"
+        other: "<span> %{count} %{unit} </span> rest"
+      pledged_html: "<span> %{value} </span> raised"
       display_status:
         expired: finalized
         rejected: rejected

@@ -2,14 +2,14 @@ en:
   devise:
     passwords:
       new:
-        no_account_html: "Need an account?"
+        no_account_html: "Don't have an account?"
         titles:
-          site: "Forgot your password?"
-          header: "Forgot your password?"
+          site: "Reset password"
+          header: "Reset password"
         links:
           register: "Sign up"
         form:
           labels:
-            email: "We'll send password reset instructions to the email address associated with your account"
+            email: "After entering your email, we will send a notification with instructions on how to reset your password"
           inputs:
-            submit: "Reset password"
+            submit: Reset
