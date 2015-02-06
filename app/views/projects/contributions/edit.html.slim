@@ -24,16 +24,16 @@
           = hidden_field_tag 'contribution_id', @contribution.id
           = hidden_field_tag 'payment_method_url', nil
           = form.inputs do
-            fieldset.live_in_brazil
-              = check_box_tag 'live_in_brazil', 'live', params[:locale] == 'pt'
-              = label_tag 'live_in_brazil', t('.live_in_brazil'), class: 'inline'
+            / fieldset.live_in_brazil
+            /   = check_box_tag 'live_in_brazil', 'live', params[:locale] == 'pt'
+            /   = label_tag 'live_in_brazil', t('.live_in_brazil'), class: 'inline'
             = form.input :full_name, required: true, as: :string
             = form.input :email, required: true, as: :string
             .clearfix
             fieldset.address_data
               .title
                 h2
-              = form.input :cpf, as: :string, input_html: {autocomplete: 'off', data: {fixed_mask: '999.999.999-99'}}, required: true
+              / = form.input :cpf, as: :string, input_html: {autocomplete: 'off', data: {fixed_mask: '999.999.999-99'}}, required: true
               .clearfix
               = form.input :address_street, as: :string, required: true
               = form.input :address_number, as: :string, required: true

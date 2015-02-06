@@ -17,10 +17,11 @@ Catarse::Application.routes.draw do
 
   filter :locale, exclude: /\/auth\//
 
-  mount CatarsePaypalExpress::Engine => "/", as: :catarse_paypal_express
-  mount CatarseMoip::Engine => "/", as: :catarse_moip
-  mount CatarsePagarme::Engine => "/", as: :catarse_pagarme
+  # mount CatarsePaypalExpress::Engine => "/", as: :catarse_paypal_express
+  # mount CatarseMoip::Engine => "/", as: :catarse_moip
+  # mount CatarsePagarme::Engine => "/", as: :catarse_pagarme
   mount CatarseApi::Engine => "/api", as: :catarse_api
+  mount CatarseStripe::Engine => "/", :as => "catarse_stripe"
 #  mount CatarseWepay::Engine => "/", as: :catarse_wepay
 
   get '/post_preview' => 'post_preview#show', as: :post_preview
@@ -85,7 +86,8 @@ Catarse::Application.routes.draw do
 
   get "/terms-of-use" => 'high_voltage/pages#show', id: 'terms_of_use'
   get "/privacy-policy" => 'high_voltage/pages#show', id: 'privacy_policy'
-  get "/start" => 'high_voltage/pages#show', id: 'start'
+  # get "/start" => 'high_voltage/pages#show', id: 'start'
+  get "/start" => 'projects#new'
   get "/jobs" => 'high_voltage/pages#show', id: 'jobs'
   get "/guides" => 'high_voltage/pages#show', id: 'guides'
 

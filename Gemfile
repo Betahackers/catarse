@@ -34,9 +34,9 @@ gem 'user_notifier', '~> 0.0.5'
 gem 'mixpanel-ruby'
 
 # Payment engines
-gem 'catarse_paypal_express', '3.0.2'
-gem 'catarse_moip', '~> 3.1.0'
-gem 'catarse_pagarme', '2.4.2'
+#gem 'catarse_paypal_express', '3.0.2'
+#gem 'catarse_moip', '~> 3.1.0'
+#gem 'catarse_pagarme', '2.4.2'
 gem 'activemerchant', '1.44.1'
 #gem 'catarse_paypal_express', path: '../catarse_paypal_express'
 #gem 'catarse_moip', path: '../catarse_moip'
@@ -44,8 +44,17 @@ gem 'activemerchant', '1.44.1'
 #gem 'catarse_pagarme', path: '../catarse_pagarme'
 
 #gem 'catarse_pagarme', path: '~/code/catarse_pagarme'
-gem 'catarse_contribution_validator', github: 'catarse/catarse_contribution_validator'
+#gem 'catarse_contribution_validator', github: 'catarse/catarse_contribution_validator'
 # gem 'catarse_wepay', '~> 0.0.1'
+
+
+## Fundoo
+gem 'stripe_event', '1.3.0'
+gem 'catarse_stripe', github: 'Betahackers/catarse_stripe'
+# gem 'catarse_stripe', path: '../'
+gem "figaro"
+gem 'ffaker'
+
 
 # Decorators
 gem 'draper'
