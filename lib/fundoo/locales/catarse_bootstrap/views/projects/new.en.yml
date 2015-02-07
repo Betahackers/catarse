@@ -20,7 +20,7 @@ en:
             title: Welcome;)
             description: "We just need to know 3 things for you to skip to the next step, where you will be able to preview and edit your project."
         info:
-          permalink: "www.fundoo.es/"
-          goal: "€"
+          permalink: www.fundoo.es/
+          goal: €
           online_days: days
         submit: "Save and continue"

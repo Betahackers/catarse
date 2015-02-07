@@ -37,7 +37,7 @@ en:
       link_reports_waiting_confirmation: "Download report of all supporters with billet printed"
       link_reward: "Download report of the supporters of the reward of %{value}"
     project_about:
-      embed: "<embed>"
+      embed: <embed>
       embed_title: "Embed this on your site design"
       active_btn: " Remember"
       deactive_btn: " Active reminder"

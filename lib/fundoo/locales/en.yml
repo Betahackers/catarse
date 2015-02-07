@@ -651,7 +651,7 @@ en:
         state: "State"
         approve: "Approve"
         reject: "Reject"
-        send_to_draft: "Sendo to draft"
+        send_to_draft: "Send to draft"
     edit: "Update channel"
 
   registrations:
