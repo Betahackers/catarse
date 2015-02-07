@@ -70,6 +70,9 @@ Catarse::Application.configure do
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
 
+  # fixes http://stackoverflow.com/questions/17300341/migrate-not-working-on-heroku
+  config.active_record.schema_format = :ruby
+
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation can not be found).
   I18n.default_locale = :pt
