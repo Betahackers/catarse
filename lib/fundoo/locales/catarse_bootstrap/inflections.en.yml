@@ -9,7 +9,7 @@ en:
   remaining_plural: remaining
   created_project:
     one: " %{count} project created"
-    other: " %{count} project created"
+    other: " %{count} projects created"
   contributed_project:
     one: "supported %{count} project"
-    other: "supported %{count} project"
+    other: "supported %{count} projects"
