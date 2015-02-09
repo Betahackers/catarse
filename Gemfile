@@ -72,7 +72,7 @@ gem 'catarse_monkeymail', '>= 0.1.6'
 
 # HTML manipulation and formatting
 gem 'formtastic',   '~> 2.2.1'
-gem 'simple_form'
+gem 'simple_form', '3.0.3'
 gem 'mail_form'
 gem "auto_html"
 gem "RedCloth"
@@ -165,3 +165,8 @@ gem 'sprockets', '~> 2.10.1'
 # FIXME: Not-anymore-on-development
 # Gems that are with 1 or more years on the vacuum
 gem 'weekdays'
+
+
+# FUNDOO
+gem 'deface', github: 'spree/deface'
+# gem 'nokogiri', '1.6.1'
