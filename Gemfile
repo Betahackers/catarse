@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.5'
+# ruby '2.1.5'
 
 gem 'rails', '~> 4.1.6'
 
@@ -35,7 +35,7 @@ gem 'mixpanel-ruby'
 
 # Payment engines
 gem 'catarse_paypal_express', '3.0.2'
-gem 'catarse_moip', '~> 3.1.0'
+# gem 'catarse_moip', '~> 3.1.0'
 gem 'catarse_pagarme', '2.4.2'
 gem 'activemerchant', '1.44.1'
 #gem 'catarse_paypal_express', path: '../catarse_paypal_express'
@@ -90,14 +90,14 @@ gem 'inherited_resources',        '~> 1.4.1'
 gem 'has_scope', '~> 0.6.0.rc'
 gem 'spectator-validates_email',  require: 'validates_email'
 gem 'video_info', '>= 1.1.1'
-gem 'httparty', '~> 0.6.1' # this version is required by moip gem, otherwise payment confirmation will break
+# gem 'httparty', '~> 0.6.1' # this version is required by moip gem, otherwise payment confirmation will break
 
 # Translations
 gem 'http_accept_language'
 gem 'routing-filter', '~> 0.4.0.pre'
 
 # Payment
-gem 'moip', github: 'catarse/moip-ruby', ref: 'c0225ad71645cd1df35dafa1e45c9f092b3abb9e'
+# gem 'moip', github: 'catarse/moip-ruby', ref: 'c0225ad71645cd1df35dafa1e45c9f092b3abb9e'
 gem 'httpclient',     '>= 2.2.5'
 
 group :production do
@@ -169,4 +169,3 @@ gem 'weekdays'
 
 # FUNDOO
 gem 'deface', github: 'spree/deface'
-# gem 'nokogiri', '1.6.1'
