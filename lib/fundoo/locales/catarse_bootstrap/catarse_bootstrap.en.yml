@@ -1,0 +1,81 @@
+en:
+  catarse_bootstrap:
+    admin:
+      projects:
+        index:
+          meio_de_pagamento: "Means of payment"
+      financials:
+        index:
+          meio_de_pagamento: "Means of payment"
+    devise:
+      mailer:
+        reset_password_instructions:
+          pt:
+            ol: Hello
+            esqueceu_sua_senha_sem: "Forgot your password? No problem! Reset by clicking here"
+            definir_nova_senha: "set new password"
+            se_algum_problema_acontecer: "If there is any problem, reply to this message directly or contact us via e-mail # {mail_to:: CatarseSettings [: email_contact]}"
+            abra_os: "Hugs,"
+    layouts:
+      global_alert:
+        aqui: here
+        bem_vindo_a_vers: "Welcome to the beta version of Catharsis. To return to normal version click # {t this.link_to (' this '), url_for (: host ' www.catarse.me ', protocol: ' http '), class: ' link-hidden-white '}"
+        conhe_a_nossa_vers: "Meet our beta version!"
+        que_tal_experimentar_um: "How about trying a new Catharsis? # {t this.link_to ('. conhe_a_nossa_vers '), url_for (: host ' beta.catarse.me '), class: ' link-hidden-white '}"
+    pages:
+      bad_browser:
+        download_chrome: "Download Chrome"
+        download_firefox: "Download Firefox"
+      guides:
+        guia_dos_realizadores: "Directors ' Guide"
+        uma_compila_o_dos: "A compilation of the most important points of a campaign to help you make an amazing and successful project. We hope that this guide will help you develop your idea and succeed in his campaign;)"
+        come_ando: Starting
+        sua_hist_ria: "Your story"
+        meta_e_prazo: "Goal and deadline"
+        recompensas: Rewards
+        mobiliza_o: Mobilization
+        p_s_campanha: "Post campaign"
+      jobs:
+        trabalhe_conosco: "Work with us"
+        o_financiamento_coletivo_n: "The collective funding continues to grow and the super doCatarse team needs to grow up together. Come be a part of this story with us."
+    projects:
+      contributions:
+        show:
+          valeu: Thanks;)
+          agora_voc_parte_do: "Now you're part of the group"
+          pessoas_que_querem_tirar: "people who want to take the"
+          do_papel_assim_que: "the paper! As soon as your payment is confirmed, we will send you an email. You can also track the status of your support"
+          atrav_s_do_seu: "through your profile"
+          enquanto_isso_que: ".Meanwhile, how about spreading the idea to their friends?"
+          compartilhe: Share
+          tweet: Tweet
+          voc_pode_curtir_esses: "You can enjoy these here too"
+          e_por_falar_em: "And speaking of # {@project. category.name _en}, how about learn firsthand new projects in this category whenever they enter here noCatarse?Straight from the oven to your email!"
+      budget_fields:
+        cost: Cost
+      card:
+        pledged: Pledged
+    users:
+      contribution_row:
+        projetos_que_apoiei: "I supported projects"
+        valor_do_apoio: "Value of support"
+        status_do_apoio: "Support status"
+        recompensa: Reward
+        apoio: "Support:"
+        status_do_apoio_1: "Support status:"
+        cart_o_de_credito: "Credit card"
+        boleto_bancario: "Boleto bancario"
+        aguardando_confirma_o_do: "Awaiting payment confirmation"
+        recompensa_1: "Reward:"
+        estimativa_de_entrega: "Estimated delivery:"
+      dashboard_billing:
+        cart_es_de_cr: "Credit cards"
+        lembrando_caso_algum_projeto: "Remember: if any project that you have supported"
+        com_cart_o_de: "with Credit Card"
+        n_o_seja_bem: "is not successful, we will effect the reimbursement on the card that you used to support"
+        cart_o: Card
+        operadora: Operator
+        remover: Remove
+        voc_tem_certeza: "are you sure?"
+        dados_banc_rios: "Bank details"
+        caso_algum_projeto_que: "If any project that you have supported <b> with Bank </b> is not successful, we will effect a refund of your payment in the account below."

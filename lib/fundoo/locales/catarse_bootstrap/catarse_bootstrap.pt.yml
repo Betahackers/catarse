@@ -1,0 +1,81 @@
+pt:
+  catarse_bootstrap:
+    admin:
+      projects:
+        index:
+          meio_de_pagamento: "Meio de pagamento"
+      financials:
+        index:
+          meio_de_pagamento: "Meio de pagamento"
+    devise:
+      mailer:
+        reset_password_instructions:
+          pt:
+            ol: Olá
+            esqueceu_sua_senha_sem: "Esqueceu sua senha? Sem problemas! Redefina clicando aqui em"
+            definir_nova_senha: "definir nova senha"
+            se_algum_problema_acontecer: "Se algum problema acontecer, responda a esta mensagem diretamente ou fale conosco através do e-mail #{mail_to ::CatarseSettings[:email_contact]}"
+            abra_os: "Abraços,"
+    layouts:
+      global_alert:
+        aqui: aqui
+        bem_vindo_a_vers: "Bem vindo a versão beta do Catarse! Para voltar a versão normal clique #{link_to t('.aqui'), url_for(host: 'www.catarse.me', protocol: 'http'), class: 'link-hidden-white'}"
+        conhe_a_nossa_vers: "Conheça nossa versão beta!"
+        que_tal_experimentar_um: "Que tal experimentar um novo Catarse? #{link_to t('.conhe_a_nossa_vers'), url_for(host: 'beta.catarse.me'), class: 'link-hidden-white'}"
+    pages:
+      bad_browser:
+        download_chrome: "Download Chrome"
+        download_firefox: "Download Firefox"
+      guides:
+        guia_dos_realizadores: "Guia dos realizadores"
+        uma_compila_o_dos: "Uma compilação dos pontos mais importantes de uma campanha para ajudar você a fazer um projeto incrível e bem-sucedido. Esperamos que esse Guia te ajude a elaborar mais a sua ideia e a ter sucesso em sua campanha ;)"
+        come_ando: Começando
+        sua_hist_ria: "Sua história"
+        meta_e_prazo: "Meta e prazo"
+        recompensas: Recompensas
+        mobiliza_o: Mobilização
+        p_s_campanha: Pós-campanha
+      jobs:
+        trabalhe_conosco: "Trabalhe conosco"
+        o_financiamento_coletivo_n: "O financiamento coletivo não para de crescer e a super equipe doCatarse precisa crescer junto. Venha fazer parte dessa história com a gente."
+    projects:
+      contributions:
+        show:
+          valeu: "Valeu ;)"
+          agora_voc_parte_do: "Agora você é parte do grupo de"
+          pessoas_que_querem_tirar: "pessoas que querem tirar o"
+          do_papel_assim_que: "do papel! Assim que o seu pagamento for confirmado, enviaremos um email. Você também pode acompanhar o status do seu apoio"
+          atrav_s_do_seu: "através do seu perfil"
+          enquanto_isso_que: ".Enquanto isso, que tal espalhar a ideia para os seus amigos?"
+          compartilhe: Compartilhe
+          tweet: Tweet
+          voc_pode_curtir_esses: "Você pode curtir esses aqui também"
+          e_por_falar_em: "E por falar em #{@project.category.name_pt}, que tal saber em primeira mão novos projetos dessa categoria sempre que eles entram aqui noCatarse?Direto do forno para o seu email!"
+      budget_fields:
+        cost: Cost
+      card:
+        pledged: Pledged
+    users:
+      contribution_row:
+        projetos_que_apoiei: "Projetos que apoiei"
+        valor_do_apoio: "Valor do apoio"
+        status_do_apoio: "Status do apoio"
+        recompensa: Recompensa
+        apoio: "Apoio:"
+        status_do_apoio_1: "Status do apoio:"
+        cart_o_de_credito: "Cartão de credito"
+        boleto_bancario: "Boleto bancario"
+        aguardando_confirma_o_do: "Aguardando confirmação do pagamento"
+        recompensa_1: "Recompensa:"
+        estimativa_de_entrega: "Estimativa de entrega:"
+      dashboard_billing:
+        cart_es_de_cr: "Cartões de crédito"
+        lembrando_caso_algum_projeto: "Lembrando: caso algum projeto que você tenha apoiado"
+        com_cart_o_de: "com Cartão de Crédito"
+        n_o_seja_bem: "não seja bem-sucedido, nós efetuaremos o reembolso no cartão que você usou para apoiar"
+        cart_o: Cartão
+        operadora: Operadora
+        remover: Remover
+        voc_tem_certeza: "você tem certeza?"
+        dados_banc_rios: "Dados bancários"
+        caso_algum_projeto_que: "Caso algum projeto que você tenha apoiado <b>com Boleto Bancário</b> não seja bem-sucedido, nós efetuaremos o reembolso de seu pagamento na conta abaixo."

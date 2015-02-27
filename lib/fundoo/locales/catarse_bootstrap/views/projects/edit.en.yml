@@ -3,8 +3,8 @@ en:
     reward_fields:
       edit: "Edit reward"
       reward: Reward
-      info_box: "You can limit the available quantity of a reward. Once the limit is reached, the reward will be marked as SOLD OUT. The prediction of delivery is the date that you intend to deliver the reward to the supporters. If you want to change the order of the rewards, just drag them around here. Give It A Shot!"
-      minimum_value: "Minimum value:"
+      info_box: "Describe the value of reward and put a real delivery date forecast for the supporters. You can also limit a reward, and when the limit is reached it appears as EXHAUSTED. If you want to change the order that the rewards appear in your project, simply do this by dragging them up or down."
+      minimum_value: "Value:"
       deliver_at: "Prediction of delivery:"
       description: "Description:"
       limit_reward: "Limit reward"
@@ -23,20 +23,13 @@ en:
         new_reward: "Register reward"
         reward_deliver_time: "<b> Delivery Estimate: </b> %{estimate}"
         reward_title: "For %{minimum} or more"
-    formatting_tips:
-      title: "Formatting tips"
-      formatting_tip1: "If you paste the url of an image or a video from vimeo or youtube, they will appear in the description of the idea. give it a shot!"
-      formatting_tip2_html: "When pasting a url either, she will turn into a link. For example, http://catarse.me will turn <a class = \"alt-link\" href = \"\" http://catarse.me > http://catarse.me </a>."
-      formatting_tip3_html: "If you want to put a text in the link, just use the following format: \"text you want\": http://sua.url. For example, \"Fundoo\": http://catarse.me turn <a class = \"alt-link\" href = \"\" http://catarse.me > </a> Fundoo."
-      formatting_tip4_html: "You can use bold by adding two asterisks (* *) before and after the text you want to format. For example, * my * bold text * * will appear as <strong> my bold text </strong>."
-      formatting_tip5_html: "You can use italic by adding an underline (_) before and after the text you want to format. For example, _ my italic text _ will appear as <i> my text in italic </i>."
     dashboard_user_settings:
-      title: "Prepare to receive support."
-      subtitle_html: "With the information below, your project will be ready to air. After completing the fill, then click Save. If everything is correct, the next step is to put the project in the air at the time that you want. Just push the button <strong> Publish </strong> and hands to work!"
+      title: "Registration data and banking"
+      subtitle_html: "With the complete information below, your project will be ready to air. After completing the fill, then click Save. Review. If everything is ok, just press the publish button and start your campaign."
       user_data_title: "Registration data and address"
-      user_data_subtitle: "We need that data below because send an invoice at the end of the project, in case he be successful."
+      user_data_subtitle_html: "We need the information below for issuing Tax Note to successful projects. <b> warning: the CPF/CNPJ listed in registration data and bank details must be the same. </b>"
       account_title: "Bank details"
-      account_subtitle: "To effect the payment in your account, in case your project be successful, we need you to tell us your bank details"
+      account_subtitle_html: "We need the data below to perform the financial transfer for successful projects. <b> warning: the CPF/CNPJ listed in registration data and bank details must be the same. </b>"
       submit: Save
     dashboard_home_templates:
       status: "Status:"
@@ -47,39 +40,40 @@ en:
         left: remaining
       waiting_funds:
         title: " %{name}, we're suing the last payments."
-        subtitle: "Your project was finalized in %{expires} and is awaiting confirmation of bills and payments. In general the projects are for up to 4 working days in this status, counted from the date of completion of the project."
+        subtitle_html: "Your project was finalized in %{expires} and is awaiting confirmation of bills and payments. Due to the maturity of bills, projects that had last minute support are for up to 4 working days in this status, counted from the date of completion of the project. %{link}."
         header: "From here your project can hit the goal or not. Watch what happens in each of the cases:"
         success: "Hit the goal:"
         failed: "I didn't hit the goal:"
         good_luck: "Good luck!"
       successful:
         title: " %{name}, celebrate you deserve!"
-        subtitle: "Your project was successful and now is the time to start the work of relationship with its supporters. Prometheus? Obey!"
+        subtitle_html: "Your project was successful and now is the time to start the work of relationship with its supporters. Special attention to delivery of rewards. Prometheus? Delivered! Be sure to check out the post-project section of %{link1} and inform yourself about %{link2}. "
         header1: "And don't forget: transparency is everything."
         transparent_html: "Keep a supporter informed is to keep a happy supporter. Even if you go to inform you of a failure or setback. Happy supporters are %{link}. Therefore, use and abuse (always with moderation) News tab. What you write there comes straight to voice mail from your supporters. I will start the delivery of rewards? In the tab \"reports\" you low information so you can make the delivery of rewards management of your project."
         header2: "Be sure to read:"
       rejected:
         title: " %{name}, unfortunately not this time."
-        subtitle_html: "You sent your project for team analysis Fundoo and we understand that he does not conform to the profile of the platform. Remembering that have a project refused does not prevent you to send new projects to evaluate or redesign your current project so that it suits to %{link1}. Talk to our customer service! You can still edit your project and request a reevaluation. Think of it as a process of learning. Get up, shake the dust and get over it!"
+        subtitle_html: "You sent your project for examining the Fundoo and we understand that he does not conform to the profile of the site. Have a project refused does not prevent you to send new projects to evaluate or redesign your current project. Talk to our customer service! We recommend that you take a good look at the %{link1} and %{link2}."
       online:
         title: " %{name}, his campaign is in the air!"
-        subtitle_html: "Your project is in the air and his campaign will close in %{date}. You may receive support until your last minute campaign. Remember, it's all-or-nothing and you only take the resources obtained if hit the goal that was set. Don't forget to inform yourself about how the %{link1}. IT IS VERY IMPORTANT! Also check out %{link2}."
+        subtitle_html: "Your project is in the air and his campaign will close the day 23hs59min59s %{date}. Until this day and time you will be able to receive support. Remember, it's all-or-nothing and you only take the resources obtained if hit the goal that was set. Visit our %{link2} for any other enquiries."
         explanation_html: " <div class = ' fontsize-base u-40-card card marginbottom-terciary ' > <p class = ' fontweight-bold ' > With the project in the air, some information can no longer be edited </p> <p> you can no longer change: <br>-its goal of capturing; <br>-the deadline; <br>-the URL of the project; <br>-the user </p> the project owner. <p class = ' fontweight-bold ' > needs more information about campaign processes? Check the box next to it. </p> <p> the &nbsp;% Search {link1} is also a great source of data about the Brazilian scenario. A good read on &nbsp; %{link2} can be inspiring. There you will find stories of successful projects and campaign tips. </p> </div> "
       failed:
         title: " %{name}, don't get discouraged!"
-        subtitle_html: "Your project does not hit the goal and we know that this is not the best of sensations. But don't be discouraged. The world record for largest collection of today is a second attempt to a project. And don't worry, all your supporters will get their money back.  %{link}."
+        subtitle_html: "Your project does not hit the goal and we know that this is not the best of sensations. But don't be discouraged. Think of the process as a learning experience and not let he contemplated a second attempt. Don't worry, all your supporters will receive the money back. %{link}."
         questions: "We sent you an email too with two questions. If you have time and head, it would be great if you could take a look. Your feedback helps us build a better and nicer Fundoo for you."
       draft:
-        title: " %{name}, continue to build your project."
-        subtitle: "Before sending your project to our analysis, you have to fill in all the data from the tabs above (Basic, design, rewards and About you). You can save your changes and return to the draft as many times as you want (in your user profile has a link to the project). When you feel that filled all the tabs of the fullest possible form, click the submit button and our customer service will contact you."
+        title: "%{name}, build your project!"
+        subtitle: "The more careful and well formatted for a project, the greater the chances of it being successful in his campaign fund-raising. Before sending your project to our analysis, fill out all the tabs above with affection. You can save your changes and return to the draft project as many times as you want. When everything is ready, click the submit button and we will contact you to assess your project."
         study_title: "Felt need to study more to assemble your project? Check out the links in the box alongside."
       approved:
         title: " %{name}, your project has been approved!"
-        subtitle_html: "To put your project in the air and start your campaign, please fill in the requested data in the %{link}. "
+        subtitle_html: "To put your project in the air it takes only you fill out the required data in the %{link1}. It is important to know that charge the rate of 13% of the total amount collected only for successful projects. Understand %{link2}. "
       in_analysis:
-        title: " %{name}, soon we will send a feedback on your project."
-        subtitle_html: "You sent your project for team analysis Fundoo. Up to 4 working days <strong> </strong> our customer service will contact you to give the OK to go to the air or to suggest adjustments. Butterflies in your stomach? Don't let yourself be taken by anxiety and review your project. This is the time to put it right round. Collect feedback with those closest to us and listen to the suggestions of the Fundoo. Remember, some modifications will not be allowed when your project is up in the air."
+        title: "%{name}, you sent your project for review and will receive our reply within 4 working days"
+        subtitle_html: "Thank you very much! Our team will assess the entire contents of your project and within 4 working days you will receive an email informing you if it has been Approved, Declined or if it will continue under review for some more time so that you can perform adjustments suggested. Take advantage of this period to collect feedbacks with people close to me!"
     edit:
+      leave_link_html: "&nbsp; Exit the control panel"
       start_tab: Home
       basics_tab: Basics
       project_tab: Project
@@ -93,55 +87,57 @@ en:
       publish: Publish
     dashboard_user_about:
       submit: Save
-      title: "Now a little about you"
-      subtitle: "Tell people who you are. Links that help tell his story are always welcome!"
+      title: "Tell me more about you!"
+      subtitle: "Supporters want to know better the project directors. Links that help tell his story are always welcome. "
       twitter_label: "Twitter profile"
       twitter_hint: "Paste the link from your profile"
-      other_link_label: "Page on the internet"
-      other_link_hint: "Include links that help the supporters to know more about you and your qualifications to run the project. &nbsp;"
-      bio_label: Biography
-      bio_hint: "If you could talk about you in a tweet? Maximum 140 characters"
+      other_link_label: "Internet presence"
+      other_link_hint: "Include links that help the supporters to understand why you're the right person to do this project. "
+      about_label: "About you"
+      about_hint: "Use this space if you want to best describe you, your company or your institution. Want to give credit to partners? Use some institutional video? This space is yours and use it any way you want.  All this information will appear in the tab About in your public profile."
       facebook_link_label: "Facebook profile"
       facebook_link_hint: "Paste the link from your profile"
       uploaded_image_label: "Profile image"
-      uploaded_image_hint: "This image is used as the thumbnail of your profile (PNG, JPG size ideal 140px x 140px)"
+      uploaded_image_hint: "This image is used as the thumbnail of your profile (PNG, JPG ideal size 280 x 280)"
       name_label: Name
-      name_hint: "This is the name that users will see in your profile"
+      name_hint: "Your public name, visible to everyone as the author of the project."
     dashboard_reward:
       title: "Create and edit your rewards"
       add_reward: "Add reward"
-      subtitle: "Do not travel! Think about how you will deliver them and put all of this in the budget. Promised?! OBEY! :D"
+      subtitle: "This is its demonstration of gratitude with the supporters. Remember to include the costs of rewards at your budget. Promised, DELIVERED! "
       reward: Reward
     dashboard_preview:
-      header_subtitle: "Want to collect feedbacks?"
+      header_subtitle: "It's time for feedbacks!"
       header_text: "Share the link below with your friends and enjoy the moment to make fine adjustments to help in his campaign."
     dashboard_posts:
       title: "Write a new"
-      only_to_backers: "Visible only to supporters"
+      only_to_backers: "I want that novelty is only visible to supporters."
       publish: "Publish news"
       discard: Discard
-      warning: "Remember that every new post goes directly to the email from his supporters. Therefore, review your text before posting it."
+      warning: "All news published is sent directly to their supporters by email. Review your post before publishing."
       old_posts: "Old news"
     dashboard_project:
-      budget_hint: "Notify a list with the main items of the budget. You don't have to go into minute details, just an overview. His supporters will be glad to know where their money is going. There is no rule &nbsp; as the amount of items in the list, but normally 5 is usually a good number!"
+      budgets_hint_html: "Notify a list with the main items of the budget. You don't have to go into minute details, just an overview. His supporters will be glad to know where their money is going. There is no rule &nbsp; as the amount of items in the list, but normally 5 is usually a good number!"
+      budget_hint_html: "How your money will be used? The more transparency the better. Show that steps and processes are involved in the use of these resources. A list with the main items of the budget or even a pie chart will very well here."
       budget_label: "Project budget"
-      start: "Tell us what you have to say to the world!"
-      start_subtitle: "Use the space below to tell us about your project and why people should get excited with him and embrace his idea"
+      budgets_label: "Budget detail"
+      start: "Tell the story of your project!"
+      start_subtitle: "Think about it in the project narrative. It is she who will charm people and bring supporters. A good video and description are differentiators."
       video_url: "Video URL"
       video_url_hint: "Link to your video on Vimeo or Youtube."
       about: "Project description"
       links_title: "Useful links"
-      about_hint_html: "Talk about what will be accomplished, how the money will be used, who is behind the project, how and when the project will be delivered. Be direct and informal, this is a conversation between people who want to share an idea, not a project of the public notice. Remember that <a class = \"alt-link\" target = \"_blank\" href = \"\" http://suporte.catarse.me/hc/pt-br/articles/203083017-Adicionar-imagens-e-v%C3%ADdeos-na-descri%C3%A7%C3%A3o-do-projeto > you can use images and videos </a> to better illustrate your project description."
+      about_hint_html: "Speak with passion and clarity about what will take place. Clarify possible doubts about how the money will be used, who is behind the project, how and when the project will be delivered. Transparency draws more supporters. Remember: your design will be accessed by ordinary people who will decide whether or not they support your project. Make It A Good One! "
       card: "Project card"
-      card_subtitle: "You know that cardzinho project that appears in home and in search? Since then, makes beautiful because they say that the first impression is the one that is;)"
+      card_subtitle: "You know that cardzinho project that appears in home and in search? So, does beautiful here in part because they say that the first impression is the one that is!"
       image: "Project image"
-      image_hint: "This image is used as the thumbnail of your project (PNG, JPG size 650px x350px)"
-      headline: Soundbite
+      image_hint: "This image is used as the thumbnail of your project (PNG, JPG size 600 x 340)"
+      headline: "Project call"
       headline_hint: "Will be used in the card design, along with the above image (thumbnail). A maximum of 100 characters."
       submit: Save
     dashboard_basics:
-      project_start: "Complete the information below"
-      project_start_subtitle: "The data reported in this section cannot be changed with your project in the air! Fill in the fields with care and attention "
+      project_start: "Fill in the information below"
+      project_start_subtitle: "The data reported in this section cannot be modified when the project airs. fill carefully and review before launching the project. "
       online_date: "Date of entry in the air"
       user_id: "User ID"
       name: "Project name"
@@ -151,8 +147,8 @@ en:
       category: Category
       category_label: "Explore and inspire other projects of the same category as yours."
       online_days: "Deadline for fundraising"
-      online_days_label: "On average the projects are in the air for 40 days. The maximum period of the campaign is of 60 days."
+      online_days_label: "You can choose between 1 and 60 days for your campaign. Check out the directors ' Guide for tips on deadlines."
       value: "Amount to be collected"
-      value_secondary: "Much of the aid will be of people close to you. Think about how to get at least 50% of the value of the goal within your network of contacts. Don't forget to include the 13% rate charged by Fundoo if your project is successful"
+      value_secondary: "Plan a goal consistent with what your project proposes. Review your budget and don't forget to include the 13% rate charged by Catharsis if your project is successful"
       form:
         submit: Save

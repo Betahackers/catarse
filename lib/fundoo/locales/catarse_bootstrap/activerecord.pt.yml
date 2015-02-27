@@ -16,20 +16,20 @@ pt:
         address_state: Estado
         address_street: Endereço
         address_zip_code: CEP
-        cpf: 'CPF / CNPJ '
-        state_inscription: 'Inscrição Estadual'
+        cpf: "CPF / CNPJ "
+        state_inscription: "Inscrição Estadual"
         email: Email
         full_name: "Nome completo / Razão Social"
-        phone_number: "Telefone"
-        bank: 'Banco'
-        bank_id: 'Banco'
-        owner_name: 'Nome do titular'
-        owner_document: 'CPF / CNPJ do titular'
-        agency: 'Agência'
-        agency_digit: 'Dígito agência'
-        account: 'No. da conta'
-        account_digit: 'Dígito conta'
-        account_type: 'Tipo de conta'
+        phone_number: Telefone
+        bank: Banco
+        bank_id: Banco
+        owner_name: "Nome do titular"
+        owner_document: "CPF / CNPJ do titular"
+        agency: Agência
+        agency_digit: "Dígito agência"
+        account: "No. da conta"
+        account_digit: "Dígito conta"
+        account_type: "Tipo de conta"
       bank_account:
         bank: Banco
         bank_id: Banco
@@ -69,12 +69,12 @@ pt:
         about: "Descrição do projeto"
         user_id: "Id do usuário"
         video_url: "URL do vídeo"
-        permalink: 'Link do seu projeto'
-        more_links: 'Indique links para as pessoas conhecerem mais sobre o seu projeto e sua trajetória.'
-        traffic_sources: 'Como você conheceu o Catarse?'
+        permalink: "Link do seu projeto"
+        more_links: "Indique links para as pessoas conhecerem mais sobre o seu projeto e sua trajetória."
+        traffic_sources: "Como você conheceu o Catarse?"
         first_contributions: "Quem são as primeiras pessoas que você vai pedir para apoiar o seu projeto?"
-        budget: 'Orçamento do projeto'
-        uploaded_image: 'Imagem do projeto'
+        budget: "Orçamento do projeto"
+        uploaded_image: "Imagem do projeto"
       user:
         address_city: Cidade
         address_complement: Complemento
@@ -124,20 +124,20 @@ pt:
         bank_account:
           attributes:
             bank:
-              blank: 'Banco não pode ficar em branco'
+              blank: "Banco não pode ficar em branco"
             owner_name:
-              blank: 'Nome do titular não pode ficar em branco'
+              blank: "Nome do titular não pode ficar em branco"
             owner_document:
-              blank: 'CPF / CNPJ do titular não pode ficar em branco'
-              invalid: 'CPF / CNPJ inválido'
+              blank: "CPF / CNPJ do titular não pode ficar em branco"
+              invalid: "CPF / CNPJ inválido"
             agency:
-              blank: 'Agência não pode ficar em branco'
-              invalid: 'Agência inválida'
+              blank: "Agência não pode ficar em branco"
+              invalid: "Agência inválida"
             account:
-              blank: 'No. da conta não pode ficar em branco'
+              blank: "No. da conta não pode ficar em branco"
             account_digit:
-              blank: 'Dígito da conta não pode ficar em branco'
-              invalid: 'Digito da agência inválido'
+              blank: "Dígito da conta não pode ficar em branco"
+              invalid: "Digito da agência inválido"
         project_account:
           attributes:
             full_name:
@@ -218,7 +218,7 @@ pt:
             current_password:
               invalid: "Senha atual não é válida"
             reset_password_token:
-              invalid: 'expirou. Vá para <a href="/password/new">redefinir senha</a> e solicite novamente a redefinição da senha.'
+              invalid: "expirou. Vá para <a href=\"/password/new\">redefinir senha</a> e solicite novamente a redefinição da senha."
             name:
               blank: "Nome do usuário não pode ficar em branco"
             about:

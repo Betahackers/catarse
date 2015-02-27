@@ -17,8 +17,8 @@ en:
       form:
         blocks:
           first:
-            title: Welcome;)
-            description: "We just need to know 3 things for you to skip to the next step, where you will be able to preview and edit your project."
+            title: Welcome!
+            description: "Fill in the information below to start the draft of your project."
         info:
           permalink: www.fundoo.es/
           goal: €

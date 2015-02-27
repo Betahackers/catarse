@@ -11,8 +11,8 @@ en:
       deactive_btn: "I don't want to be remembered"
     send_to_analysis: "Your project has been sent to our team."
     send_to_analysis_error: "Error sending project for analysis. Fill in all required fields."
-    put_online: "Your project is online!"
-    put_online_error: "Error when placing the project online. Fill in all required fields."
+    push_to_online: "Your project is online!"
+    push_to_online_error: "Error when placing the project online. Fill in all required fields."
     twitter:
       take_a_look: "Check out the project %{name} in @catarse"
     video_embed:
@@ -43,6 +43,7 @@ en:
       deactive_btn: " Active reminder"
     show:
       menu:
+        panel_html: "&nbsp; &nbsp; Control Panel"
         about: About
         add_reward: "Add reward"
         comments: Comments
@@ -52,12 +53,8 @@ en:
         reports: Reports
         posts: News
     project_main:
-      twitter_profile: "Profile on Twitter"
-      facebook_profile: "Facebook profile"
-      author_website: "The author's website"
       share: Share
       tweet: Tweet
-      contact_author: "Send message"
       contribute_project:
         display_status:
           reached_goal: "This project will be successful and funded in %{date}"
@@ -67,7 +64,7 @@ en:
           in_analysis: "This project is under review and is not yet open to receive support."
           successful: "This project was successful and was funded on %{date}"
           waiting_funds: "Awaiting the confirmation of bills to see if this project will be funded."
-          draft: "This project is only a draft and is not yet open to receive support."
+          draft: "This project is only a draft and still cannot receive backups."
         submit: "Support this project"
       project_by: "design by"
       funding_period: "Campaign period"

@@ -1,5 +1,10 @@
 en:
   users:
+    card:
+      twitter_profile: "Profile on Twitter"
+      facebook_profile: "Facebook profile"
+      author_website: Site
+      contact_author: "Send message"
     failed_reactivation: "The link for reactivation is invalid, please contact our team."
     reactivated: "Welcome back, your account has been reactivated."
     project:

@@ -26,7 +26,7 @@ en:
         anonymous_contribution: "I want my support be anonymous"
         form_labels:
           user_another_card: "Use another credit card"
-          payment_card_number: "Credit card number"
+          payment_card_number: "Card number"
           payment_card_flag: Flag
           payment_card_source: "Cód. Security"
           payment_card_source_short: CVC

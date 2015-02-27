@@ -3,7 +3,7 @@ pt:
     card:
       twitter_profile: "Perfil no Twitter"
       facebook_profile: "Perfil no Facebook"
-      author_website: "Site"
+      author_website: Site
       contact_author: "Enviar mensagem"
     failed_reactivation: "O link para reativação é inválido, por favor entre em contato com a nossa equipe."
     reactivated: "Seja bem vindo de volta, sua conta foi reativada."

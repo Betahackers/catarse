@@ -22,15 +22,15 @@ pt:
         edit_reward: "Editar recompensa"
         new_reward: "Cadastrar recompensa"
         reward_deliver_time: "<b>Estimativa de Entrega:</b> %{estimate}"
-        reward_title: Para %{minimum} ou mais
+        reward_title: "Para %{minimum} ou mais"
     dashboard_user_settings:
-       title: "Dados cadastrais e bancários"
-       subtitle_html: "Com os dados abaixo completos, seu projeto estará pronto para ir ao ar. Após concluir o preenchimento, clique em Salvar. Revise. Se tudo estiver ok, basta apertar o botão Publicar e começar sua campanha!"
-       user_data_title: "Dados cadastrais e endereço"
-       user_data_subtitle_html: "Precisamos dos dados abaixo para emissão de Nota Fiscais para projetos bem sucedidos. <b>ATENÇÃO: O CPF/CNPJ listado nos dados cadastrais e dados bancários precisa ser o mesmo.</b>"
-       account_title: "Dados bancários"
-       account_subtitle_html: "Precisamos dos dados abaixo para efetuar a transferência financeira para projetos bem sucedidos. <b>ATENÇÃO: O CPF/CNPJ listado nos dados cadastrais e dados bancários precisa ser o mesmo.</b>"
-       submit: "Salvar"
+      title: "Dados cadastrais e bancários"
+      subtitle_html: "Com os dados abaixo completos, seu projeto estará pronto para ir ao ar. Após concluir o preenchimento, clique em Salvar. Revise. Se tudo estiver ok, basta apertar o botão Publicar e começar sua campanha!"
+      user_data_title: "Dados cadastrais e endereço"
+      user_data_subtitle_html: "Precisamos dos dados abaixo para emissão de Nota Fiscais para projetos bem sucedidos. <b>ATENÇÃO: O CPF/CNPJ listado nos dados cadastrais e dados bancários precisa ser o mesmo.</b>"
+      account_title: "Dados bancários"
+      account_subtitle_html: "Precisamos dos dados abaixo para efetuar a transferência financeira para projetos bem sucedidos. <b>ATENÇÃO: O CPF/CNPJ listado nos dados cadastrais e dados bancários precisa ser o mesmo.</b>"
+      submit: Salvar
     dashboard_home_templates:
       status: "Status:"
       project_numbers:
@@ -57,22 +57,7 @@ pt:
       online:
         title: "%{name}, sua campanha está no ar!"
         subtitle_html: "Seu projeto está no ar e sua campanha se encerrará às 23hs59min59s do dia %{date}. Até esse dia e horário você poderá receber apoios. Lembre-se, é tudo-ou-nada e você só levará os recursos captados se bater a meta que foi estipulada. Acesse a nossa %{link2} para outras dúvidas!"
-        explanation_html: "
-<div class='fontsize-base u-marginbottom-40 card card-terciary'>
-                      <p class='fontweight-bold'>
-                        Com o projeto no ar, algumas informações não podem mais ser editadas
-                      </p>
-                      <p>
-                        Você não poderá mais alterar:<br> - a sua meta de captação;<br> - o prazo final;<br> - a URL do projeto;<br> - o usuário dono do projeto.
-                      </p>
-                      <p class='fontweight-bold'>
-                        Precisa de mais informações sobre processos de campanha? Veja o box ao lado.
-                      </p>
-                      <p>
-                        A pequisa&nbsp;%{link1} também é ótima fonte de dados sobre o cenário brasileiro. Uma boa lida no&nbsp; %{link2} pode ser inspiradora. Lá você encontra histórias de projetos bem sucedidos e dicas de campanha.
-                      </p>
-                    </div>
-"
+        explanation_html: " <div class='fontsize-base u-marginbottom-40 card card-terciary'> <p class='fontweight-bold'> Com o projeto no ar, algumas informações não podem mais ser editadas </p> <p> Você não poderá mais alterar:<br> - a sua meta de captação;<br> - o prazo final;<br> - a URL do projeto;<br> - o usuário dono do projeto. </p> <p class='fontweight-bold'> Precisa de mais informações sobre processos de campanha? Veja o box ao lado. </p> <p> A pequisa&nbsp;%{link1} também é ótima fonte de dados sobre o cenário brasileiro. Uma boa lida no&nbsp; %{link2} pode ser inspiradora. Lá você encontra histórias de projetos bem sucedidos e dicas de campanha. </p> </div> "
       failed:
         title: "%{name}, não desanime!"
         subtitle_html: "Seu projeto não bateu a meta e sabemos que isso não é a melhor das sensações. Mas não desanime. Encare o processo como um aprendizado e não deixe de cogitar uma segunda tentativa. Não se preocupe, todos os seus apoiadores receberão o dinheiro de volta. %{link}."
@@ -101,7 +86,7 @@ pt:
       send: Enviar
       publish: Publicar
     dashboard_user_about:
-      submit: "Salvar"
+      submit: Salvar
       title: "Fale mais sobre você!"
       subtitle: "Apoiadores querem conhecer melhor os realizadores de projetos. Links que ajudam a contar sua história são sempre bem vindos. "
       twitter_label: "Perfil do twitter"
@@ -114,21 +99,21 @@ pt:
       facebook_link_hint: "Cole o link do seu perfil"
       uploaded_image_label: "Imagem do perfil"
       uploaded_image_hint: "Essa imagem será utilizada como a miniatura de seu perfil (PNG, JPG tamanho ideal 280 x 280)"
-      name_label: "Nome"
+      name_label: Nome
       name_hint: "Seu nome público, visível para todos como autor do projeto."
     dashboard_reward:
       title: "Crie e edite aqui suas recompensas"
       add_reward: "Adicionar recompensa"
       subtitle: "Essa é sua demonstração de gratidão com os apoiadores. Lembre-se de incluir os custos das recompensas no seu orçamento. Prometeu, ENTREGUE! "
-      reward: "Recompensa"
+      reward: Recompensa
     dashboard_preview:
       header_subtitle: "É hora dos feedbacks!"
       header_text: "Compartilhe o link abaixo com seus amigos e aproveite o momento para fazer ajustes finos que ajudem na sua campanha."
     dashboard_posts:
       title: "Escrever uma novidade"
       only_to_backers: "Quero que essa novidade seja visível apenas para apoiadores."
-      publish: 'Publicar novidade'
-      discard: 'Descartar'
+      publish: "Publicar novidade"
+      discard: Descartar
       warning: "Toda novidade publicada é enviada diretamente aos seus apoiadores por email. Revise bem o post antes de publicar."
       old_posts: "Novidades antigas"
     dashboard_project:
@@ -142,28 +127,28 @@ pt:
       video_url_hint: "Link do seu vídeo no Vimeo ou Youtube."
       about: "Descrição do projeto"
       links_title: "Links úteis"
-      about_hint_html: 'Fale com paixão e clareza sobre o que será realizado. Esclareça possíveis dúvidas sobre como o dinheiro será utilizado, quem está por trás do projeto, como e quando o projeto será entregue. Transparência atrai mais apoiadores. Lembre-se: seu projeto será acessado por pessoas comuns que decidirão se querem ou não apoiar seu projeto. Capriche! '
-      card: 'Card do projeto'
-      card_subtitle: 'Sabe aquele cardzinho de projeto que aparece na home e na busca? Então, faz bonito aqui nessa parte pois dizem que a primeira impressão é a que fica!'
-      image: 'Imagem do projeto'
-      image_hint: 'Essa imagem será utilizada como a miniatura de seu projeto (PNG, JPG tamanho 600 x 340)'
-      headline: 'Chamada do Projeto'
-      headline_hint: 'Será utilizada no card do projeto, junto com a imagem acima (miniatura). No máximo 100 caracteres.'
-      submit: 'Salvar'
+      about_hint_html: "Fale com paixão e clareza sobre o que será realizado. Esclareça possíveis dúvidas sobre como o dinheiro será utilizado, quem está por trás do projeto, como e quando o projeto será entregue. Transparência atrai mais apoiadores. Lembre-se: seu projeto será acessado por pessoas comuns que decidirão se querem ou não apoiar seu projeto. Capriche! "
+      card: "Card do projeto"
+      card_subtitle: "Sabe aquele cardzinho de projeto que aparece na home e na busca? Então, faz bonito aqui nessa parte pois dizem que a primeira impressão é a que fica!"
+      image: "Imagem do projeto"
+      image_hint: "Essa imagem será utilizada como a miniatura de seu projeto (PNG, JPG tamanho 600 x 340)"
+      headline: "Chamada do Projeto"
+      headline_hint: "Será utilizada no card do projeto, junto com a imagem acima (miniatura). No máximo 100 caracteres."
+      submit: Salvar
     dashboard_basics:
-      project_start: 'Preencha as informações abaixo'
-      project_start_subtitle: 'Os dados informados nessa seção não poderão ser modificados quando o projeto for ao ar. Preencha com atenção e revise antes de lançar o projeto. '
-      online_date: 'Data de entrada no ar'
-      user_id: 'Id do usuário'
-      name: 'Nome do projeto'
-      name_label: 'Quanto mais direto melhor. Não ultrapasse 50 caracteres'
-      url: 'URL do projeto'
-      url_label: 'É o endereço do seu projeto, deve ser fácil de memorizar. Evite underline, hífen e símbolos'
-      category: 'Categoria'
-      category_label: 'Explore e se inspire em outros projetos da mesma categoria que o seu.'
-      online_days: 'Prazo para arrecadação'
-      online_days_label: 'Você pode escolher entre 1 e 60 dias para a sua campanha. Confira o guia dos realizadores para dicas sobre prazos.'
-      value: 'Valor a ser arrecadado'
-      value_secondary: 'Planeje uma meta coerente com o que seu projeto propõe. Revise seu orçamento e não esqueça de incluir a taxa de 13% cobrada pelo Catarse caso seu projeto seja bem-sucedido'
+      project_start: "Preencha as informações abaixo"
+      project_start_subtitle: "Os dados informados nessa seção não poderão ser modificados quando o projeto for ao ar. Preencha com atenção e revise antes de lançar o projeto. "
+      online_date: "Data de entrada no ar"
+      user_id: "Id do usuário"
+      name: "Nome do projeto"
+      name_label: "Quanto mais direto melhor. Não ultrapasse 50 caracteres"
+      url: "URL do projeto"
+      url_label: "É o endereço do seu projeto, deve ser fácil de memorizar. Evite underline, hífen e símbolos"
+      category: Categoria
+      category_label: "Explore e se inspire em outros projetos da mesma categoria que o seu."
+      online_days: "Prazo para arrecadação"
+      online_days_label: "Você pode escolher entre 1 e 60 dias para a sua campanha. Confira o guia dos realizadores para dicas sobre prazos."
+      value: "Valor a ser arrecadado"
+      value_secondary: "Planeje uma meta coerente com o que seu projeto propõe. Revise seu orçamento e não esqueça de incluir a taxa de 13% cobrada pelo Catarse caso seu projeto seja bem-sucedido"
       form:
         submit: Salvar

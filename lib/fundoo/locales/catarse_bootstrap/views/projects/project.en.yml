@@ -4,6 +4,9 @@ en:
       contributed: raised
       reached: hit
       progress_html: "<span> %{percent}% </span> funded"
+      time_remaining_small_html:
+        one: "< div class = ' fontsize-smallest lineheight-tightest' >%{count} %{unit}</div> < div class = ' fontsize-smallest lineheight-tightest' > remainder </div>"
+        other: "< div class = ' fontsize-smallest lineheight-tightest ' >%{count} %{unit} </div> < div class = ' fontsize-smallest lineheight-tightest ' > remainder </div>"
       time_remaining_html:
         one: "<span> %{count} %{unit} </span> rest"
         other: "<span> %{count} %{unit} </span> rest"

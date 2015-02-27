@@ -5,7 +5,7 @@ en:
       success_unfollow: "You failed to follow this category %{name}"
       follow: Follow
       unfollow: Unfollow
-      following: following
+      following: followers
       categories: Categories
       expiring: "In the final stretch"
       in_funding: "Still being funded"
