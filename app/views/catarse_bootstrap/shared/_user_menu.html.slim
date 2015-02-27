@@ -1,26 +1,26 @@
 nav.w-dropdown-list.dropdown-list.user-menu
   .w-row
     .w-col.w-col-4
-      .fontweight-semibold.fontsize-smaller.u-marginbottom-10 Minhas coisas
+      .fontweight-semibold.fontsize-smaller.u-marginbottom-10= t('.minhas_coisas')
       ul.w-list-unstyled.u-marginbottom-20
         li.lineheight-looser
-          = link_to 'Histórico de apoios', edit_user_path(current_user, anchor: :contributions), class: 'alt-link fontsize-smaller'
+          = link_to t('.hist_rico_de_apoios'), edit_user_path(current_user, anchor: :contributions), class: 'alt-link fontsize-smaller'
         li.w-hidden-main.w-hidden-medium.lineheight-looser
-          = link_to  'Projetos criados', edit_user_path(current_user, anchor: :projects), class: 'alt-link fontsize-smaller'
+          = link_to  t('.projetos_criados'), edit_user_path(current_user, anchor: :projects), class: 'alt-link fontsize-smaller'
         /li.lineheight-looser
-          = link_to  'Atividade', edit_user_path(current_user, anchor: :feeds), class: 'alt-link fontsize-smaller'
-      .fontweight-semibold.fontsize-smaller.u-marginbottom-10 Configurações
+          = link_to  t('.atividade'), edit_user_path(current_user, anchor: :feeds), class: 'alt-link fontsize-smaller'
+      .fontweight-semibold.fontsize-smaller.u-marginbottom-10= t('.configura_es')
       ul.w-list-unstyled.u-marginbottom-20
         li.lineheight-looser
-          = link_to 'Sobre você', edit_user_path(current_user, anchor: :about_me), class: 'alt-link fontsize-smaller'
+          = link_to t('.sobre_voc'), edit_user_path(current_user, anchor: :about_me), class: 'alt-link fontsize-smaller'
         li.lineheight-looser
-          = link_to 'Notificações', edit_user_path(current_user, anchor: :notifications), class: 'alt-link fontsize-smaller'
+          = link_to t('.notifica_es'), edit_user_path(current_user, anchor: :notifications), class: 'alt-link fontsize-smaller'
         li.lineheight-looser
-          = link_to 'Dados de acesso', edit_user_path(current_user, anchor: :settings), class: 'alt-link fontsize-smaller'
+          = link_to t('.dados_de_acesso'), edit_user_path(current_user, anchor: :settings), class: 'alt-link fontsize-smaller'
         li.lineheight-looser
-          = link_to 'Banco e cartões', edit_user_path(current_user, anchor: :billing), class: 'alt-link fontsize-smaller'
+          = link_to t('.banco_e_cart_es'), edit_user_path(current_user, anchor: :billing), class: 'alt-link fontsize-smaller'
     .w-col.w-col-4.w-hidden-small.w-hidden-tiny
-      .fontweight-semibold.fontsize-smaller.u-marginbottom-10 Projetos apoiados
+      .fontweight-semibold.fontsize-smaller.u-marginbottom-10= t('.projetos_apoiados')
       - if current_user.contributed_projects.present?
         ul.w-list-unstyled.u-marginbottom-20
           - current_user.contributed_projects.limit(3).each do |project|
@@ -33,10 +33,10 @@ nav.w-dropdown-list.dropdown-list.user-menu
           li.u-margintop-20
             .w-row
               .w-col.w-col-6
-                = link_to 'Ver todos', edit_user_path(current_user, anchor: :contributions), class: 'btn btn-terciary'
+                = link_to t('.ver_todos'), edit_user_path(current_user, anchor: :contributions), class: 'btn btn-terciary'
               .w-col.w-col-6
     .w-col.w-col-4.w-hidden-small.w-hidden-tiny
-      .fontweight-semibold.fontsize-smaller.u-marginbottom-10 Projetos criados
+      .fontweight-semibold.fontsize-smaller.u-marginbottom-10= t('.projetos_criados')
       - if current_user.projects.present?
         ul.w-list-unstyled.u-marginbottom-20
           - current_user.projects.without_state('rejected').ordered.limit(3).each do |project|
@@ -49,11 +49,11 @@ nav.w-dropdown-list.dropdown-list.user-menu
           li.u-margintop-20
             .w-row
               .w-col.w-col-6
-                = link_to 'Ver todos', edit_user_path(current_user, anchor: :projects), class: 'btn btn-terciary'
+                = link_to t('.ver_todos'), edit_user_path(current_user, anchor: :projects), class: 'btn btn-terciary'
               .w-col.w-col-6
   - if current_user.admin?
     .divider.u-marginbottom-20
-    .fontweight-semibold.fontsize-smaller.u-marginbottom-10 Admin
+    .fontweight-semibold.fontsize-smaller.u-marginbottom-10= t('.admin')
     ul.w-list-unstyled.u-marginbottom-20
       - for menu, path in controller.menu do
         li.lineheight-looser
@@ -61,10 +61,9 @@ nav.w-dropdown-list.dropdown-list.user-menu
 
   .divider.u-marginbottom-20
   .fontsize-smallest
-    | Você está logado como
+    = t('.voc_est_logado_como')
     span
       | &nbsp;
       span.fontweight-semibold= current_user.decorate.display_name
       | &nbsp;
       = link_to t('layouts.user.logout'), destroy_user_session_path, method: :delete, class: 'alt-link'
-

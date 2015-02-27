@@ -7,12 +7,12 @@
       .fontsize-base
         = link_to project_by_slug_path(permalink: feed.from_object.try(:permalink), anchor: "posts/#{feed.to_object.try(:id)}"), class: 'link-hidden fontweight-semibold' do
           = feed.from_object.try(:name)
-        | &nbsp;postou:
+        =< t('.postou')
     = link_to project_by_slug_path(permalink: feed.from_object.try(:permalink), anchor: "posts/#{feed.to_object.try(:id)}"), class: 'fontsize-large fontweight-semibold link-hidden' do
       = feed.to_object.try(:title)
     p.fontsize-base
       = truncate(feed.to_object.try(:comment), length: 310)
-      = link_to 'Leia mais', project_by_slug_path(permalink: feed.from_object.try(:permalink), anchor: "posts/#{feed.to_object.try(:id)}"), class: 'alt-link'
+      = link_to t('.leia_mais'), project_by_slug_path(permalink: feed.from_object.try(:permalink), anchor: "posts/#{feed.to_object.try(:id)}"), class: 'alt-link'
 - elsif feed.is_common_owner?      
   .card.u-marginbottom-20.u-radius.card-terciary
     .w-row
@@ -23,7 +23,7 @@
             = l(feed.event_date, format: :simple)
           .fontweight-semibold.fontsize-base
             = link_to feed.from_object.try(:decorate).try(:display_name), user_path(feed.from_object), class: 'link-hidden'
-        .fontsize-large.fontweight-semibold.u-marginbottom-20 Novo projeto no ar!
+        .fontsize-large.fontweight-semibold.u-marginbottom-20= t('.novo_projeto_no_ar')
       .w-col.w-col-5
         = render_projects [feed.to_object], 'new_project_from_common_owner'
 
@@ -37,9 +37,9 @@
           .fontcolor-secondary.fontsize-smaller
             = l(feed.event_date, format: :simple)
           .fontweight-semibold.fontsize-base 
-            | Categoria:&nbsp;
+            => t('.categoria')
             = feed.from_object.try(:category).try(:name_pt)
-        .fontsize-large.fontweight-semibold.u-marginbottom-20 Novo projeto no ar!
+        .fontsize-large.fontweight-semibold.u-marginbottom-20= t('.novo_projeto_no_ar')
       .w-col.w-col-5
         = render_projects [feed.to_object], 'new_project_on_category'
 - elsif feed.is_finished_project?
@@ -53,17 +53,17 @@
             = l(feed.event_date, format: :simple)
           = link_to project_by_slug_path(permalink: feed.to_object.try(:permalink)), class: 'fontsize-larger fontweight-semibold link-hidden-success' do
             = feed.to_object.try(:name)
-          .fontsize-large.fontweight-semibold.u-marginbottom-20.text-success foi bem-sucedido!
+          .fontsize-large.fontweight-semibold.u-marginbottom-20.text-success= t('.foi_bem_sucedido')
           .w-row
             .w-col.w-col-3.w-col-small-3.w-col-tiny-3
               .fontweight-semibold.fontsize-larger
                 = "#{feed.to_object.try(:progress)}%"
             .w-col.w-col-4.w-col-small-4.w-col-tiny-4.u-text-center-small-only
               .fontweight-semibold.fontsize-small= feed.to_object.try(:decorate).try(:display_pledged)
-              .fontsize-smallest.lineheight-tightest Pledged
+              .fontsize-smallest.lineheight-tightest= t('.pledged')
             .w-col.w-col-5.w-col-small-5.w-col-tiny-5
               .fontweight-semibold.fontsize-small= feed.to_object.try(:total_contributions)
-              .fontsize-smallest.lineheight-tightest Apoiadores
+              .fontsize-smallest.lineheight-tightest= t('.apoiadores')
   - else
     .card.u-marginbottom-30.u-radius.card-terciary
       .w-clearfix.u-marginbottom-20
@@ -73,5 +73,5 @@
         .fontsize-base
           = link_to project_by_slug_path(permalink: feed.to_object.try(:permalink)), class: 'link-hidden fontweight-semibold' do
             = feed.to_object.try(:name)
-          | finalizou mas não foi financiado
+          = t('.finalizou_mas_n_o')
         

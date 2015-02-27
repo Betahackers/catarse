@@ -1,0 +1,73 @@
+pt:
+  users:
+    edit:
+      apoiados: Apoiados
+      criados: Criados
+      sobre_voc: "Sobre você"
+      dados_de_acesso: "Dados de acesso"
+      notifica_es: Notificações
+      banco_e_cart_es: "Banco e cartões"
+      ir_para_o_perfil: "Ir para o perfil público"
+      atividades: Atividades
+      voc_ainda_n_o: "Você ainda não criou nenhum projeto no Catarse. Acredite nos seus sonhos!"
+      inscreva_um_projeto: "Inscreva um projeto!"
+    contribution_row:
+      projetos_que_apoiei: "Projetos que apoiei"
+      valor_do_apoio: "Valor do apoio"
+      status_do_apoio: "Status do apoio"
+      recompensa: Recompensa
+      apoio: "Apoio:"
+      status_do_apoio_1: "Status do apoio:"
+      boleto_bancario: "Boleto bancario"
+      aguardando_confirma_o_do: "Aguardando confirmação do pagamento"
+      recompensa_1: "Recompensa:"
+      selecionou_recompensa: "selecionou recompensa"
+      estimativa_de_entrega: "Estimativa de entrega:"
+    dashboard_billing:
+      cart_es_de_cr: "Cartões de crédito"
+      caso_algum_projeto_que: "Caso algum projeto que você tenha apoiado <b>com Cartão de Crédito</b> não seja bem-sucedido, nós efetuaremos o reembolso <b>automaticamente</b> no cartão utilizado para efetuar o apoio."
+      cart_o: Cartão
+      operadora: Operadora
+      dados_banc_rios: "Dados bancários"
+      caso_algum_projeto_que_1: "Caso algum projeto que você tenha apoiado <b>com Boleto Bancário</b> não seja bem-sucedido, nós efetuaremos o reembolso de seu pagamento <b>automaticamente</b> na conta indicada abaixo."
+    dashboard_contributions:
+      voc_ainda_n_o: "Você ainda não apoiou nenhum projeto noCatarse..."
+      projetos_em_andamento: "Projetos em andamento"
+      projetos_bem_sucedidos: "Projetos bem-sucedidos"
+      projetos_n_o_financiados: "Projetos não-financiados"
+    feeds:
+      feed:
+        postou: "postou:"
+        leia_mais: "Leia mais"
+        novo_projeto_no_ar: "Novo projeto no ar!"
+        categoria: "Categoria:"
+        foi_bem_sucedido: "foi bem-sucedido!"
+        pledged: Pledged
+        apoiadores: Apoiadores
+        finalizou_mas_n_o: "finalizou mas não foi financiado"
+  pages:
+    guides:
+      guia_dos_realizadores: "Guia dos realizadores"
+      come_ando: Começando
+      sua_hist_ria: "Sua história"
+      meta_e_prazo: "Meta e prazo"
+      recompensas: Recompensas
+      mobiliza_o: Mobilização
+      p_s_campanha: Pós-campanha
+    jobs:
+      trabalhe_conosco: "Trabalhe conosco"
+  shared:
+    user_menu:
+      minhas_coisas: "Minhas coisas"
+      hist_rico_de_apoios: "Histórico de apoios"
+      projetos_criados: "Projetos criados"
+      atividade: Atividade
+      configura_es: Configurações
+      sobre_voc: "Sobre você"
+      notifica_es: Notificações
+      dados_de_acesso: "Dados de acesso"
+      banco_e_cart_es: "Banco e cartões"
+      projetos_apoiados: "Projetos apoiados"
+      ver_todos: "Ver todos"
+      admin: Admin
+      voc_est_logado_como: "Você está logado como"

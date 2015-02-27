@@ -2,15 +2,15 @@
   .w-col.w-col-10.w-col-push-1
     = render 'devise/shared/alert'
     .w-form.card.card-terciary.u-marginbottom-20
-      .fontsize-base.fontweight-semibold Cartões de crédito
+      .fontsize-base.fontweight-semibold= t('.cart_es_de_cr')
       .fontsize-small.u-marginbottom-20
-        ' Caso algum projeto que você tenha apoiado <b>com Cartão de Crédito</b> não seja bem-sucedido, nós efetuaremos o reembolso <b>automaticamente</b> no cartão utilizado para efetuar o apoio.
+        => t('.caso_algum_projeto_que')
       .divider.u-marginbottom-20
       .w-row.w-hidden-tiny.card
         .w-col.w-col-5.w-col-small-5
-          .fontsize-small.fontweight-semibold Cartão
+          .fontsize-small.fontweight-semibold= t('.cart_o')
         .w-col.w-col-5.w-col-small-5
-          .fontweight-semibold.fontsize-small Operadora
+          .fontweight-semibold.fontsize-small= t('.operadora')
         .w-col.w-col-2.w-col-small-2
       - resource.credit_cards.each do |credit_card|
         .w-row.card
@@ -27,9 +27,9 @@
       = hidden_field_tag :anchor, 'billing'
       .w-form.card.card-terciary
         = f.simple_fields_for :bank_account do |bform|
-          .fontsize-base.fontweight-semibold Dados bancários
+          .fontsize-base.fontweight-semibold= t('.dados_banc_rios')
           .fontsize-small.u-marginbottom-20
-            | Caso algum projeto que você tenha apoiado <b>com Boleto Bancário</b> não seja bem-sucedido, nós efetuaremos o reembolso de seu pagamento <b>automaticamente</b> na conta indicada abaixo.
+            = t('.caso_algum_projeto_que_1')
           .divider.u-marginbottom-20
           .w-row
             .w-col.w-col-6.w-sub-col
@@ -67,4 +67,3 @@
             .w-col.w-col-4.w-col-offset-4
               = f.submit 'Salvar',  class:'btn btn-large'
  
-

@@ -107,7 +107,7 @@ en:
           cancel: "Contribution canceled!"
           push_to_trash: "Contribution deleted!"
       show:
-        contribution_info: "Contribution information %{key}"
+        contribution_info: "Contribution information% {key}"
         payment_id: "Payment ID"
         payment_method: "Means of payment"
         payment_fee: "Rate of payment"
@@ -300,7 +300,7 @@ en:
             cancel: "Contribution canceled!"
             push_to_trash: "Contribution deleted!"
         show:
-          contribution_info: "Contribution information %{key}"
+          contribution_info: "Contribution information% {key}"
           payment_id: "Payment ID"
           payment_method: "Means of payment"
           payment_fee: "Rate of payment"

@@ -1,0 +1,73 @@
+en:
+  users:
+    edit:
+      apoiados: Supported
+      criados: Created
+      sobre_voc: "About you"
+      dados_de_acesso: "Access data"
+      notifica_es: Notifications
+      banco_e_cart_es: "And bank cards"
+      ir_para_o_perfil: "Go to the public profile"
+      atividades: Activities
+      voc_ainda_n_o: "You have not yet created any project in Catharsis. Believe in your dreams!"
+      inscreva_um_projeto: "Subscribe to a project!"
+    contribution_row:
+      projetos_que_apoiei: "I supported projects"
+      valor_do_apoio: "Value of support"
+      status_do_apoio: "Support status"
+      recompensa: Reward
+      apoio: "Support:"
+      status_do_apoio_1: "Support status:"
+      boleto_bancario: "Boleto bancario"
+      aguardando_confirma_o_do: "Awaiting payment confirmation"
+      recompensa_1: "Reward:"
+      selecionou_recompensa: "selected reward"
+      estimativa_de_entrega: "Estimated delivery:"
+    dashboard_billing:
+      cart_es_de_cr: "Credit cards"
+      caso_algum_projeto_que: "If any project that you have supported <b> Credit card </b> is not successful, we will effect the refund automatically <b> </b> on the card used to make the backup."
+      cart_o: Card
+      operadora: Operator
+      dados_banc_rios: "Bank details"
+      caso_algum_projeto_que_1: "If any project that you have supported <b> with Bank </b> is not successful, we will effect a refund of your payment <b> automatically </b> to the account indicated below."
+    dashboard_contributions:
+      voc_ainda_n_o: "You still haven't supported any project noCatarse..."
+      projetos_em_andamento: "Projects in progress"
+      projetos_bem_sucedidos: "Successful projects"
+      projetos_n_o_financiados: "Non-funded projects"
+    feeds:
+      feed:
+        postou: "posted:"
+        leia_mais: "Read more"
+        novo_projeto_no_ar: "New project in the air!"
+        categoria: "Category:"
+        foi_bem_sucedido: "was successful!"
+        pledged: Pledged
+        apoiadores: Supporters
+        finalizou_mas_n_o: "finalized but was not funded"
+  pages:
+    guides:
+      guia_dos_realizadores: "Directors ' Guide"
+      come_ando: Starting
+      sua_hist_ria: "Your story"
+      meta_e_prazo: "Goal and deadline"
+      recompensas: Rewards
+      mobiliza_o: Mobilization
+      p_s_campanha: "Post campaign"
+    jobs:
+      trabalhe_conosco: "Work with us"
+  shared:
+    user_menu:
+      minhas_coisas: "My stuff"
+      hist_rico_de_apoios: "Support history"
+      projetos_criados: "Projects created"
+      atividade: Activity
+      configura_es: Settings
+      sobre_voc: "About you"
+      notifica_es: Notifications
+      dados_de_acesso: "Access data"
+      banco_e_cart_es: "And bank cards"
+      projetos_apoiados: "Projects supported"
+      ver_todos: "View all"
+      admin: Admin
+      voc_est_logado_como: "You are logged in as"
