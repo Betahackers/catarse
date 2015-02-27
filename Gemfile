@@ -46,6 +46,7 @@ gem 'activemerchant', '1.44.1'
 #gem 'catarse_pagarme', path: '~/code/catarse_pagarme'
 #gem 'catarse_contribution_validator', github: 'catarse/catarse_contribution_validator'
 # gem 'catarse_wepay', '~> 0.0.1'
+gem 'catarse_paypal_express', '>= 2.0.0'
 
 
 ## Fundoo

@@ -1,3 +1,5 @@
+puts "LOADING PROJECT EXTENTIONS WOOOO!!!"
+
 module ProjectExtensions
   extend ActiveSupport::Concern
 

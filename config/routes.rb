@@ -22,6 +22,8 @@ Catarse::Application.routes.draw do
   # mount CatarsePagarme::Engine => "/", as: :catarse_pagarme
   mount CatarseApi::Engine => "/api", as: :catarse_api
   mount CatarseStripe::Engine => "/", :as => "catarse_stripe"
+  mount CatarsePaypalExpress::Engine => "/", :as => "catarse_paypal_express"
+  
 #  mount CatarseWepay::Engine => "/", as: :catarse_wepay
 
   get '/post_preview' => 'post_preview#show', as: :post_preview
