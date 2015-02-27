@@ -23,8 +23,8 @@
             label.w-form-label.fontsize-smallest= t('.form.labels.show_password')
           = form.input :password, as: :password, label: t('.form.labels.password'), input_html: { class: 'w-input text-field' }
           .u-marginbottom-10
-            = form.input_field :newsletter, as: :boolean, boolean_style: :inline, class: 'checkbox-fix', checked: true
-            label.w-form-label.fontsize-smallest= t('.form.labels.newsletter')
+            / = form.input_field :newsletter, as: :boolean, boolean_style: :inline, class: 'checkbox-fix', checked: true
+            / label.w-form-label.fontsize-smallest= t('.form.labels.newsletter')
           = form.button :submit, t('.form.inputs.submit'), class:'btn btn-medium'
       .fontsize-smallest.u-text-center.u-marginbottom-30
         = t(".form.labels.accept", terms_url: CatarseSettings[:terms_url], privacy_url: CatarseSettings[:privacy_url]).html_safe

@@ -1,0 +1,26 @@
+en:
+  projects:
+    new:
+      page-title: "Start your project"
+      faq:
+        titles:
+          support: Support
+          know_more: "Learn more"
+        links:
+          criteria: "Selection criteria"
+          suport_central: "Support Central"
+          support_contact: "Contact us"
+          how_it_works: "How Fundoo works?"
+          money: "How will I receive the money?"
+          selection: "How are projects selected?"
+          all_or_nothing: "Why is it all or nothing?"
+      form:
+        blocks:
+          first:
+            title: Welcome;)
+            description: "We just need to know 3 things for you to skip to the next step, where you will be able to preview and edit your project."
+        info:
+          permalink: www.fundoo.es/
+          goal: €
+          online_days: days
+        submit: "Save and continue"

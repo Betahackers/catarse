@@ -16,7 +16,7 @@ class RewardDecorator < Draper::Decorator
   def name
     deliver = %{
         <div class="fontsize-smallest fontcolor-secondary">
-          Estimativa de entrega:&nbsp;#{source.display_deliver_estimate || I18n.t('projects.contributions.no_estimate')}
+          Estimated delivery:&nbsp;#{source.display_deliver_estimate || I18n.t('projects.contributions.no_estimate')}
         </div>
     }
     %{

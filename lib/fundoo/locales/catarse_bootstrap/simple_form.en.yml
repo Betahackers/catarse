@@ -1,0 +1,53 @@
+en:
+  simple_form:
+    collections:
+      project:
+        traffic_sources:
+          one: "I've had another project in Fundoo"
+          two: "indication of a person who already had a project in Fundoo"
+          three: "indication of friend/colleague/professional contact"
+          four: "from a project that was picking up on the platform"
+          five: "article in a blog"
+          six: "a story in the press (news portal on the internet, TV, newspaper, magazine)"
+          seven: "in a class/course/lecture/event"
+          eight: "did a search on the internet about collective financing/alternative forms of funding"
+          nine: Another
+    validation_texts:
+      reward:
+        minimum_value: "Enter a minimum value greater than or equal to 10"
+        description: "Enter a description for the reward"
+      bank_account:
+        bank_id: "Select a bank"
+        agency: "What is the number of the Agency?"
+        account: "What is your account number?"
+        account_digit: "What digit Checker?"
+        owner_name: "What is the name of the account holder?"
+        owner_document: "Notify a CPF or CNPJ is valid for the current account"
+      contribution:
+        payer_name: "Please enter the name of the supporter"
+        payer_email: "Please enter a valid email address"
+        payer_document: "Please enter a CPF or CNPJ valid"
+        address_state: "Select a State"
+        address_street: "Type the name of the street"
+        address_number: "Enter the number of the address"
+        address_city: "Type the name of the city"
+        address_zip_code: "Enter the ZIP CODE"
+        address_phone_number: "Enter the phone number"
+    prompts:
+      project:
+        category: "Select a category"
+        select: "Select an option"
+        traffic_sources: "How did you meet the Fundoo?"
+    hints:
+      project:
+        select: "Select an option"
+        traffic_sources: "How did you meet the Fundoo?"
+        name: "The more direct the better. Do not exceed 50 characters"
+        permalink: "The web URL of your project. Keep it simple. Try not to use underlines, hyphens, etc."
+        category: "Before sending, explore and inspire other projects of the same category."
+        goal: "Much of the aid will be of people close to you. Think about how to get at least 50% of the value of the goal within your network of contacts."
+        online_days: "On average the projects are in the air for 40 days. The maximum period of the campaign is of 60 days."
+        video_url: "Link to your video on Vimeo or Youtube <br/>."
+        about: "Talk about what will be accomplished, how the money will be used, who is behind the project, how and when the project will be delivered. Be direct and informal, this is a conversation between people who want to share an idea, not a project of the public notice. Remember that <a href = http://suporte.catarse.me/hc/pt-br/articles/203083017-Adicionar-imagens-e-v%C3%ADdeos-na-descri%C3%A7%C3%A3o-do-projeto class = ' alt-link ' target = ' _blank ' > you can use images and videos </a> to better illustrate your project description."
+        headline: "Will be used in the card design, along with the above image (thumbnail). A maximum of 100 characters."
+        uploaded_image: "This image is used as the thumbnail of your project (PNG, JPG size 650px x350px)"

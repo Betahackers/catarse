@@ -1,0 +1,32 @@
+pt:
+  projects:
+    new:
+      page-title: "Comece seu projeto"
+      faq:
+        titles:
+          support: Suporte
+          know_more: "Saiba mais"
+        links:
+          criteria: "Critérios de seleção"
+          suport_central: "Central de suporte"
+          support_contact: "Entre em contato com a gente"
+          how_it_works: "Como o Catarse funciona?"
+          money: "Como receberei o dinheiro?"
+          selection: "Como os projetos são selecionados?"
+          all_or_nothing: "Por que Tudo ou Nada?"
+      form:
+        blocks:
+          first:
+<<<<<<< HEAD:config/locales/catarse_bootstrap/views/projects/new.pt.yml
+            title: "Bem Vindo!"
+            description: "Preencha as informações abaixo para iniciar o rascunho do seu projeto."
+
+=======
+            title: "Bem-vindo ;)"
+            description: "Só precisamos saber 3 coisas para que você passe para o próximo passo, onde você já terá uma visualização do seu projeto, tal como ele irá ao ar, caso seja selecionado."
+>>>>>>> master:lib/fundoo/locales/catarse_bootstrap/views/projects/new.pt.yml
+        info:
+          permalink: "http://catarse.me/"
+          goal: R$
+          online_days: dias
+        submit: "Salvar e continuar"

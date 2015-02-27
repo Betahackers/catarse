@@ -20,11 +20,11 @@ header.header
               .see-more-projects
                 = link_to 'ver todos', 'javascript:void(0);'
 
-        li.header-nav-li
-          = link_to t('.help'), CatarseSettings[:support_forum], target: :_blank, :class => 'header-nav-item',  id: 'guidelines_header_modal' if CatarseSettings[:support_forum].present?
-
-        li.header-nav-li
-          = link_to t('.blog'), CatarseSettings['blog_url'], target: :_blank, class: 'header-nav-item' if CatarseSettings['blog_url'].present?
+        / li.header-nav-li
+        /   = link_to t('.help'), CatarseSettings[:support_forum], target: :_blank, :class => 'header-nav-item',  id: 'guidelines_header_modal' if CatarseSettings[:support_forum].present?
+        /
+        / li.header-nav-li
+        /   = link_to t('.blog'), CatarseSettings['blog_url'], target: :_blank, class: 'header-nav-item' if CatarseSettings['blog_url'].present?
 
         - if current_user
           li.header-nav-li.user
