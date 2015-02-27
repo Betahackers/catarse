@@ -43,12 +43,17 @@ class User < ActiveRecord::Base
   has_one :bank_account, dependent: :destroy
   has_many :feeds, class_name: 'UserFeed'
   has_many :credit_cards
+  has_many :project_accounts
   has_many :contributions
   has_many :authorizations
-  has_many :projects
+  has_many :projects, -> do
+    without_state(:deleted)
+  end
   has_many :unsubscribes
   has_many :project_posts
-  has_many :contributed_projects, -> { where(contributions: { state: ['confirmed', 'requested_refund', 'refunded'] } ).uniq } ,through: :contributions, source: :project
+  has_many :contributed_projects, -> do
+    distinct.where(contributions: { state: ['confirmed', 'requested_refund', 'refunded'] } ).order('projects.created_at DESC')
+  end, through: :contributions, source: :project
   has_many :category_followers, dependent: :destroy
   has_many :categories, through: :category_followers
   has_many :links, class_name: 'UserLink', inverse_of: :user

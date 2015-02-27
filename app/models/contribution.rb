@@ -10,8 +10,6 @@ class Contribution < ActiveRecord::Base
   include Contribution::PaymentEngineHandler
   include Contribution::PaymentMethods
 
-  delegate :display_value, :display_confirmed_at, :display_slip_url, to: :decorator
-
   belongs_to :project
   belongs_to :reward
   belongs_to :user
@@ -21,23 +19,7 @@ class Contribution < ActiveRecord::Base
   validates_presence_of :project, :user, :value
   validates_numericality_of :value, greater_than_or_equal_to: 10.00
 
-  pg_search_scope :search_on_user,
-    against: [:payer_email],
-    associated_against: {
-      user: [:name, :full_name, :email, :id]
-    },
-    using: {tsearch: {dictionary: "portuguese"}},
-    ignoring: :accents
-
-  pg_search_scope :search_on_payment_data,
-    against: [:key, :payment_id, :acquirer_tid],
-    using: {tsearch: {dictionary: "portuguese"}},
-    ignoring: :accents
-
-  pg_search_scope :search_on_acquirer,
-    against: [:acquirer_name],
-    ignoring: :accents
-
+  scope :search_on_acquirer, ->(acquirer_name){ where(acquirer_name: acquirer_name) }
   scope :available_to_count, ->{ with_states(['confirmed', 'requested_refund', 'refunded']) }
   scope :available_to_display, ->{ with_states(['confirmed', 'requested_refund', 'refunded', 'waiting_confirmation']) }
   scope :by_id, ->(id) { where(id: id) }
@@ -47,7 +29,7 @@ class Contribution < ActiveRecord::Base
   scope :user_name_contains, ->(term) { joins(:user).where("unaccent(upper(users.name)) LIKE ('%'||unaccent(upper(?))||'%')", term) }
   scope :user_email_contains, ->(term) { joins(:user).where("unaccent(upper(users.email)) LIKE ('%'||unaccent(upper(?))||'%') OR unaccent(upper(payer_email)) LIKE ('%'||unaccent(upper(?))||'%')", term, term) }
   scope :project_name_contains, ->(term) {
-    joins(:project).merge(Project.search_on_name(term))
+    joins(:project).merge(Project.pg_search(term))
   }
   scope :anonymous, -> { where(anonymous: true) }
   scope :credits, -> { where("credits OR lower(payment_method) = 'credits'") }
@@ -82,10 +64,6 @@ class Contribution < ActiveRecord::Base
   def self.between_values(start_at, ends_at)
     return all unless start_at.present? && ends_at.present?
     where("value between ? and ?", start_at, ends_at)
-  end
-
-  def decorator
-    @decorator ||= ContributionDecorator.new(self)
   end
 
   def recommended_projects

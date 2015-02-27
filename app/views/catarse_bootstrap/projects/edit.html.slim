@@ -3,14 +3,21 @@
 
 .project-dashboard-edit
   = render 'project_header'
-  
+
+  - if @project.can_show_funding_period?
+    .project-nav
+      .w-container
+        .w-row
+          .w-col.w-col-9.u-text-center-small-only
+            = link_to t('.leave_link_html'), project_by_slug_path(@project.permalink), class: 'nav-tab dashboard fa fa-chevron-left'
+
   nav.dashboard-nav
     .w-container
       .w-row
         div class="w-col #{(@project.already_deployed?) ? 'w-col-12' : 'w-col-9'}"
           = link_to '#home', id: 'dashboard_home_link', class: 'dashboard-nav-link ' , data: {target: '#dashboard_home', tab_group: 'edit'} do
             = t('.start_tab')
-          - unless @project.already_deployed?
+          - if (!@project.already_deployed? && !@project.approved?) || (current_user && current_user.admin?)
             = link_to '#basics', id: 'basics_link', class: 'dashboard-nav-link ' , data: {target: '#dashboard_basics', tab_group: 'edit'} do
               = @project.decorate.status_icon_for('basics')
               | &nbsp;&nbsp;
@@ -36,8 +43,8 @@
             = @project.decorate.status_icon_for('user_about')
             | &nbsp;&nbsp;
             = t('.about_you_tab')
-          - if @project.can_show_account_link?
-            = link_to '#user_settings', id: 'dashboard_user_settings_link', class: 'dashboard-nav-link ' , data: {target: '#dashboard_user_settings'} do
+          - if @project.can_show_account_link? || (current_user && current_user.admin?)
+            = link_to '#user_settings', id: 'dashboard_user_settings_link', class: 'dashboard-nav-link ' , data: {target: '#dashboard_user_settings', tab_group: 'edit'} do
               = @project.decorate.status_icon_for('user_settings')
               | &nbsp;&nbsp;
               = t('.account_tab')
@@ -62,7 +69,7 @@
         article
           #dashboard_home.content.w-hidden
             = render 'dashboard_home'
-          - unless @project.already_deployed?
+          - if !@project.already_deployed? || (current_user && current_user.admin?)
             #dashboard_basics.content.w-hidden
               = render 'dashboard_basics'
           #dashboard_project.content.w-hidden

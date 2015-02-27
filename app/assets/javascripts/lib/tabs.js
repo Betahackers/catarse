@@ -32,7 +32,7 @@ Skull.Tabs = {
   },
 
   lookAnchors: function() {
-    $anchor = this.$('#current_anchor').data('anchor');
+    $anchor = this.$('#current_anchor').data('anchor') || window.location.hash || this.$('#default-tab').data('anchor');
 
     if(this.$('.dashboard-nav-link').length > 0) {
       selector = '.dashboard-nav-link';
@@ -44,7 +44,9 @@ Skull.Tabs = {
       window.location.hash = $anchor;
     } else {
       if(this.$(selector).filter('.selected').length < 1 && (window.location.hash == '' || window.location.hash == '_#_')) {
-        this.$(selector).filter(':first')[0].click()
+        var clickEvent = document.createEvent('MouseEvent');
+        clickEvent.initEvent('click', true, true);
+        this.$(selector).filter(':first')[0].dispatchEvent(clickEvent);
       }
     }
   }

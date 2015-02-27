@@ -11,6 +11,7 @@ class Project < ActiveRecord::Base
   include Project::CustomValidators
   include Project::RemindersHandler
   include Project::ErrorGroups
+  include Project::PaymentEngineHandler
 
   has_notifications
 
@@ -24,37 +25,29 @@ class Project < ActiveRecord::Base
   belongs_to :user
   belongs_to :category
   has_one :project_total
+  has_one :account, class_name: "ProjectAccount", inverse_of: :project
   has_many :rewards
   has_many :contributions
   has_many :posts, class_name: "ProjectPost", inverse_of: :project
   has_many :budgets, class_name: "ProjectBudget", inverse_of: :project
   has_many :unsubscribes
 
-  accepts_nested_attributes_for :rewards
+  accepts_nested_attributes_for :rewards, allow_destroy: true, reject_if: -> (x) { x[:description].blank? || x[:minimum_value].blank? }
   accepts_nested_attributes_for :user
+  accepts_nested_attributes_for :account
   accepts_nested_attributes_for :posts, allow_destroy: true#, reject_if: ->(x) { x[:title].blank? || x[:comment].blank? }
   accepts_nested_attributes_for :budgets, allow_destroy: true, reject_if: ->(x) { x[:name].blank? || x[:value].blank? }
 
   catarse_auto_html_for field: :about, video_width: 600, video_height: 403
 
-  pg_search_scope :search_on_name,
-    against: [[:name, 'A'], [:permalink, 'C'], [:headline, 'B']],
-    associated_against: {
-      category: [:name_pt, :name_en]
+  pg_search_scope :pg_search,
+    against: "full_text_index",
+    using: {
+      tsearch: {
+        dictionary: "portuguese",
+        tsvector_column: "full_text_index"
+      }
     },
-    using: {tsearch: {dictionary: "portuguese"}},
-    ignoring: :accents
-
-  pg_search_scope :pg_search, against: [
-      [:name, 'A'],
-      [:headline, 'B'],
-      [:about, 'C']
-    ],
-    associated_against:  {
-      user: [:name, :address_city ],
-      category: [:name_pt, :name_en]
-    },
-    using: {tsearch: {dictionary: "portuguese"}},
     ignoring: :accents
 
   # Used to simplify a has_scope
@@ -83,6 +76,7 @@ class Project < ActiveRecord::Base
   scope :expiring, -> { not_expired.where("projects.expires_at <= (current_timestamp + interval '2 weeks')") }
   scope :not_expiring, -> { not_expired.where("NOT (projects.expires_at <= (current_timestamp + interval '2 weeks'))") }
   scope :recent, -> { where("(current_timestamp - projects.online_date) <= '5 days'::interval") }
+  scope :ordered, -> { order(created_at: :desc)}
   scope :order_status, ->{ order("
                                      CASE projects.state
                                      WHEN 'online' THEN 1
@@ -105,25 +99,10 @@ class Project < ActiveRecord::Base
     joins(:contributions).merge(Contribution.confirmed_today).uniq
   }
 
-  scope :expiring_in_less_of, ->(time) {
-    with_state('online').where("(projects.expires_at - current_date) <= ?", time)
-  }
-
   scope :of_current_week, -> {
     where("
       projects.online_date AT TIME ZONE '#{Time.zone.tzinfo.name}' >= (current_timestamp AT TIME ZONE '#{Time.zone.tzinfo.name}' - '7 days'::interval)
     ")
-  }
-
-  scope :using_pagarme, -> (permalinks) {
-    where("projects.permalink in (:permalinks) OR
-           projects.online_date::date  AT TIME ZONE '#{Time.zone.tzinfo.name}' >= '2014-11-10'::date AT TIME ZONE '#{Time.zone.tzinfo.name}'",
-          { permalinks: permalinks })
-  }
-
-  scope :not_using_pagarme, -> {
-    where("projects.permalink not in (:permalinks) AND projects.online_date::date AT TIME ZONE '#{Time.zone.tzinfo.name}' < '2014-11-10'::date AT TIME ZONE '#{Time.zone.tzinfo.name}'",
-          { permalinks: (CatarseSettings[:projects_enabled_to_use_pagarme].split(',').map(&:strip) rescue []) })
   }
 
   attr_accessor :accepted_terms
@@ -135,32 +114,13 @@ class Project < ActiveRecord::Base
   validates_numericality_of :online_days, less_than_or_equal_to: 60, greater_than: 0, if: ->(p){ p.online_days.present? }
   validates_numericality_of :goal, greater_than: 9, allow_blank: true
   validates_uniqueness_of :permalink, case_sensitive: false
-  validates_format_of :permalink, with: /(\w|-)*/
+  validates_format_of :permalink, with: /\A(\w|-)*\Z/
 
   validates_with StateValidator
 
   [:between_created_at, :between_expires_at, :between_online_date, :between_updated_at].each do |name|
     define_singleton_method name do |starts_at, ends_at|
       between_dates name.to_s.gsub('between_',''), starts_at, ends_at
-    end
-  end
-
-  def self.with_payment_engine(payment_engine_name)
-    case payment_engine_name
-    when 'pagarme' then
-      self.enabled_to_use_pagarme
-    when 'moip' then
-      self.not_using_pagarme
-    else
-      self
-    end
-  end
-
-  def self.send_verify_moip_account_notification
-    expiring_in_less_of('7 days').find_each do |project|
-      unless project.using_pagarme?
-        project.notify_owner(:verify_moip_account, { from_email: CatarseSettings[:email_payments]})
-      end
     end
   end
 
@@ -173,14 +133,8 @@ class Project < ActiveRecord::Base
     order(sort_field)
   end
 
-  def self.enabled_to_use_pagarme
-    begin
-      permalinks = CatarseSettings[:projects_enabled_to_use_pagarme].split(',').map(&:strip)
-    rescue
-      permalinks = []
-    end
-
-    self.using_pagarme(permalinks)
+  def budget_text_html
+    catarse_auto_html budget, image_width: 600
   end
 
   def has_blank_service_fee?
@@ -195,12 +149,12 @@ class Project < ActiveRecord::Base
     ['online', 'waiting_funds', 'successful', 'failed'].include? state
   end
 
-  def can_show_preview_link?
-    ['draft', 'approved', 'rejected', 'in_analysis'].include? state
+  def can_update_account?
+    ['online', 'waiting_funds', 'successful', 'failed'].exclude? state
   end
 
-  def using_pagarme?
-    Project.enabled_to_use_pagarme.include?(self)
+  def can_show_preview_link?
+    ['draft', 'approved', 'rejected', 'in_analysis'].include? state
   end
 
   def subscribed_users
@@ -283,17 +237,16 @@ class Project < ActiveRecord::Base
     self.online? || self.successful? || self.failed? || self.waiting_funds?
   end
 
+  def expires_fragments *fragments
+    base = ActionController::Base.new
+    fragments.each do |fragment|
+      base.expire_fragment([fragment, id])
+    end
+  end
+
   private
   def self.between_dates(attribute, starts_at, ends_at)
     return all unless starts_at.present? && ends_at.present?
     where("(projects.#{attribute} AT TIME ZONE '#{Time.zone.tzinfo.name}')::date between to_date(?, 'dd/mm/yyyy') and to_date(?, 'dd/mm/yyyy')", starts_at, ends_at)
   end
-
-  def self.get_routes
-    routes = Rails.application.routes.routes.map do |r|
-      r.path.spec.to_s.split('/').second.to_s.gsub(/\(.*?\)/, '')
-    end
-    routes.compact.uniq.reject(&:empty?)
-  end
-
 end

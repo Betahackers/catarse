@@ -10,6 +10,13 @@ class ProjectObserver < ActiveRecord::Observer
       project.remove_scheduled_job('ProjectSchedulerWorker')
       ProjectSchedulerWorker.perform_at(project.online_date, project.id)
     end
+
+    project.expires_fragments(
+      'project-funding_period',
+      'project-stats',
+      'project-about',
+      'project-rewards'
+    )
   end
 
   def after_create(project)
@@ -38,6 +45,10 @@ class ProjectObserver < ActiveRecord::Observer
     notify_admin_that_project_reached_deadline(project)
     notify_admin_that_project_is_successful(project)
     notify_users(project)
+  end
+
+  def from_in_analysis_to_approved(project)
+    project.notify_owner(:project_approved, { from_email: CatarseSettings[:email_projects] })
   end
 
   def notify_admin_that_project_reached_deadline(project)

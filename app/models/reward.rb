@@ -21,13 +21,18 @@ class Reward < ActiveRecord::Base
            :medium_description, :last_description, :display_description, to: :decorator
 
   before_save :log_changes
+  after_save :expires_project_cache
 
   def deliver_at_cannot_be_in_the_past
-    self.errors.add(:deliver_at, "Previsão de entrega deve ser superior a data atual") if self.deliver_at < Time.now
+    self.errors.add(:deliver_at, "Previsão de entrega deve ser superior a data em que o projeto entra no ar") if self.project.online_date && self.deliver_at < self.project.online_date.beginning_of_month
   end
 
   def log_changes
     self.last_changes = self.changes.to_json
+  end
+
+  def to_s
+    display_description
   end
 
   def decorator
@@ -56,5 +61,9 @@ class Reward < ActiveRecord::Base
       project.errors.add 'reward.destroy', "can't destroy"
       return false
     end
+  end
+
+  def expires_project_cache
+    project.expires_fragments 'project-rewards'
   end
 end

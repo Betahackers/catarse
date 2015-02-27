@@ -37,8 +37,8 @@ RSpec.describe UserDecorator do
   describe "#display_image_html" do
     let(:user){ build(:user, image_url: 'http://image.jpg', uploaded_image: nil )}
     let(:options){ {width: 300, height: 300} }
-    subject{ user.display_image_html(options) }
-    it{ is_expected.to eq("<div class=\"avatar_wrapper\" style=\"width: #{options[:width]}px; height: #{options[:height]}px\"><img alt=\"User\" class=\"\" src=\"#{user.display_image}\" style=\"width: #{options[:width]}px; height: auto\" /></div>") }
+    subject{ user.display_image_html }
+    it{ is_expected.to eq("<div class=\"avatar_wrapper\"><img alt=\"User\" class=\"thumb big u-round\" src=\"#{user.display_image}\" /></div>") }
   end
 
   describe "#display_image" do
@@ -61,7 +61,7 @@ RSpec.describe UserDecorator do
 
     context "when we have an email" do
       let(:user){ create(:user, image_url: nil, email: 'diogob@gmail.com', uploaded_image: nil) }
-      it{ is_expected.to eq("https://gravatar.com/avatar/5e2a237dafbc45f79428fdda9c5024b1.jpg?default=#{CatarseSettings[:base_url]}/assets/user.png") }
+      it{ is_expected.to eq("https://gravatar.com/avatar/5e2a237dafbc45f79428fdda9c5024b1.jpg?default=#{CatarseSettings[:base_url]}/assets/catarse_bootstrap/user.jpg") }
     end
   end
 

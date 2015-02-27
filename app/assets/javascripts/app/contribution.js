@@ -2,7 +2,7 @@ App.addChild('Contribution', {
   el: '#new-contribution',
 
   events: {
-    'click label.back-reward-radio-reward' : 'clickReward',
+    'click .radio label' : 'clickReward',
     'click #submit' : 'submitForm',
     'input #contribution_value' : 'restrictChars'
   },
@@ -25,22 +25,22 @@ App.addChild('Contribution', {
 
   resetReward: function(event){
     if(parseInt('0' + this.$value.val()) < this.minimumValue()){
-      this.selectReward(this.$('label.back-reward-radio-reward:first'));
+      this.selectReward(this.$('.radio label'));
     }
   },
 
   minimumValue: function(){
-    return this.$('label.back-reward-radio-reward.selected').find('label[data-minimum-value]').data('minimum-value');
+    return this.$('.selected').find('label[data-minimum-value]').data('minimum-value');
   },
 
   resetSelected: function(){
-    this.$('label.back-reward-radio-reward').removeClass('selected');
+    this.$('.w-radio').removeClass('selected');
   },
 
   selectReward: function(reward){
     this.resetSelected();
     reward.find('input[type=radio]').prop('checked', true);
-    reward.addClass('selected');
+    reward.parent().addClass('selected');
   },
 
   clickReward: function(event){

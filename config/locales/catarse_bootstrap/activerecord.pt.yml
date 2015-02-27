@@ -8,6 +8,28 @@ pt:
       category: Categoria
       bank_account: Dados bancários
     attributes:
+      project_account:
+        address_city: Cidade
+        address_complement: Complemento
+        address_neighbourhood: Bairro
+        address_number: Número
+        address_state: Estado
+        address_street: Endereço
+        address_zip_code: CEP
+        cpf: 'CPF / CNPJ '
+        state_inscription: 'Inscrição Estadual'
+        email: Email
+        full_name: "Nome completo / Razão Social"
+        phone_number: "Telefone"
+        bank: 'Banco'
+        bank_id: 'Banco'
+        owner_name: 'Nome do titular'
+        owner_document: 'CPF / CNPJ do titular'
+        agency: 'Agência'
+        agency_digit: 'Dígito agência'
+        account: 'No. da conta'
+        account_digit: 'Dígito conta'
+        account_type: 'Tipo de conta'
       bank_account:
         bank: 'Banco'
         bank_id: 'Banco'
@@ -58,11 +80,11 @@ pt:
         about: "Descrição do projeto"
         user_id: "Id do usuário"
         video_url: "URL do vídeo"
-        permalink: 'URL do seu projeto'
+        permalink: 'Link do seu projeto'
         more_links: 'Indique links para as pessoas conhecerem mais sobre o seu projeto e sua trajetória.'
         traffic_sources: 'Como você conheceu o Catarse?'
         first_contributions: "Quem são as primeiras pessoas que você vai pedir para apoiar o seu projeto?"
-        budget: 'Orçamento'
+        budget: 'Orçamento do projeto'
         uploaded_image: 'Imagem do projeto'
       user:
         address_city: Cidade
@@ -110,6 +132,60 @@ pt:
     errors:
       models:
         contribution: "Erro ao salvar apoio"
+        bank_account:
+          attributes:
+            bank:
+              blank: 'Banco não pode ficar em branco'
+            owner_name:
+              blank: 'Nome do titular não pode ficar em branco'
+            owner_document:
+              blank: 'CPF / CNPJ do titular não pode ficar em branco'
+              invalid: 'CPF / CNPJ inválido'
+            agency:
+              blank: 'Agência não pode ficar em branco'
+              invalid: 'Agência inválida'
+            account:
+              blank: 'No. da conta não pode ficar em branco'
+            account_digit:
+              blank: 'Dígito da conta não pode ficar em branco'
+              invalid: 'Digito da agência inválido'
+        project_account:
+          attributes:
+            full_name:
+              blank: "Razão social do usuário não pode ficar em branco"
+            email:
+              blank: "Email do usuário não pode ficar em branco"
+            cpf:
+              blank: "CPF do usuário não pode ficar em branco"
+            address_street:
+              blank: "Endereço do usuário não pode ficar em branco"
+            address_number:
+              blank: "Número no endereço do usuário não pode ficar em branco"
+            address_city:
+              blank: "Cidade do usuário não pode ficar em branco"
+            address_state:
+              blank: "Estado do usuário não pode ficar em branco"
+            address_zip_code:
+              blank: "CEP do usuário não pode ficar em branco"
+            phone_number:
+              blank: "Telefone do usuário não pode ficar em branco"
+            bank:
+              blank: "Banco do usuário não pode ficar em branco"
+            agency:
+              blank: "Agência do usuário não pode ficar em branco"
+            agency_digit:
+              blank: "Dígito agência do usuário não pode ficar em branco"
+            account:
+              blank: "No. da conta do usuário não pode ficar em branco"
+            account_digit:
+              blank: "Dígito conta do usuário não pode ficar em branco"
+            owner_name:
+              blank: "Nome do titular do usuário não pode ficar em branco"
+            owner_document:
+              blank: "CPF / CNPJ do titular do usuário não pode ficar em branco"
+              not_same: "CPF/CNPJ dos dados cadastrais e bancários preenchidos não estão iguais."
+            account_type:
+              blank: "Tipo de conta não pode ficar em branco"
         project:
           attributes:
             video_url:
@@ -150,8 +226,16 @@ pt:
               too_short: "A senha que você escolheu é muito curta"
               confirmation: "A senha e a confirmação de senha preenchidas não estão iguais"
               blank: "A senha não pode ficar em branco"
+            current_password:
+              invalid: "Senha atual não é válida"
             reset_password_token:
               invalid: 'expirou. Vá para <a href="/password/new">redefinir senha</a> e solicite novamente a redefinição da senha.'
+            name:
+              blank: "Nome do usuário não pode ficar em branco"
+            about:
+              blank: "Sobre você não pode ficar em branco"
+            uploaded_image:
+              blank: "Imagem do usuário não pode ficar em branco"
   project:
     update:
       success: As informações foram atualizadas

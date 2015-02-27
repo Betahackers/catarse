@@ -1,12 +1,6 @@
-- unless browser.mobile?
-  #global-alert.w-clearfix.global-alert.u-text-center.w-hidden
-    = link_to ' ', '#', class: 'link-icon-light fa fa-close fa-lg u-right', id: 'close-global-alert'
-    .w-container
-      .fontsize-base
-        | Bem vindo a versão beta do Catarse! Para voltar a versão normal clique #{link_to 'aqui', url_for(host: 'www.catarse.me', protocol: 'http'), class: 'link-hidden-white'}
-- unless request.subdomain == 'beta'
-  #global-alert.w-clearfix.global-alert.u-text-center.w-hidden
-    = link_to ' ', '#', class: 'link-icon-light fa fa-close fa-lg u-right', id: 'close-global-alert'
-    .w-container
-      .fontsize-base
-        | Que tal experimentar um novo Catarse? #{link_to 'Conheça nossa versão beta!', url_for(host: 'beta.catarse.me'), class: 'link-hidden-white'}
+#global-alert.w-clearfix.global-alert.u-text-center.w-hidden
+  = link_to ' ', '#', class: 'link-icon-light fa fa-close fa-lg u-right', id: 'close-global-alert'
+  .w-container
+    | Se estiver com dificuldades para acessar o Catarse, pode ser necessário limpar os cookies do seu navegador. #{link_to 'Saiba mais', 'http://suporte.catarse.me/hc/pt-br/articles/204421185', target: :blank, class: 'link-hidden-white'} 
+  /.w-container
+    | Bem-vindo ao novo Catarse! A versão anterior ficará no ar até o dia 11/03/2015. #{link_to 'Saiba mais', 'http://blog.catarse.me/esta-no-ar-o-novo-catarse-botas-calcadas-para-trilhar-o-futuro/', target: :blank, class: 'link-hidden-white'}

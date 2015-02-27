@@ -1,8 +1,9 @@
 App.addChild('Search', {
-  el: '.discover-form',
+  el: '#discover-form-wrapper',
 
   events: {
-    'click .see-more-projects a': 'goToExplore'
+    'click a.see-more-projects': 'goToExplore',
+    'input .search-input': 'clearPreResult'
   },
 
   activate: function() {
@@ -14,28 +15,33 @@ App.addChild('Search', {
     var options = {
       wait: 300,
       highlight: true,
-      captureLength: 0,
+      captureLength: 3,
       callback: this.onTypeWatch
     };
 
     this.$('.search-input').typeWatch(options);
   },
 
+  clearPreResult: function(event){
+    if($(event.target).val() == "") {
+      this.$('.search-pre-result').hide();
+    }
+  },
+
   goToExplore: function() {
-    this.el.submit();
+    this.$el.find('form.discover-form').submit();
   },
 
   onTypeWatch: function(value) {
     var that = this;
 
-    if(value == "") {
-      return this.$('.search-pre-result').hide();
-    }
-
-    this.$('.search-pre-result').show();
-
-    $.get(this.$('.search-pre-result').data('searchpath'), { search_on_name: value, limit: 5 }, function(response){
-      that.$('.result').html(response);
+    $.get(this.$('.search-pre-result').data('searchpath'), { pg_search: value, limit: 5 }, function(response){
+      if($.trim(response) == "") {
+        that.$('.search-pre-result').hide();
+      } else {
+        that.$('.search-pre-result').show();
+        that.$('.result').html(response);
+      }
     });
   }
 });

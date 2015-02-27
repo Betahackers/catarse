@@ -26,7 +26,7 @@ App.addChild('DashboardRewards', {
       },
       update: function(e, ui) {
         var csrfToken, position;
-        position = that.$('#dashboard-rewards .reward-card').index(ui.item);
+        position = that.$('#dashboard-rewards .nested-fields').index(ui.item);
         csrfToken = $("meta[name='csrf-token']").attr("content");
         update_url = that.$(ui.item).find('.card-persisted').data('update_url');
         return $.ajax({
@@ -53,6 +53,7 @@ App.views.DashboardRewards.addChild('RewardForm', _.extend({
 
   events: {
     'blur input' : 'checkInput',
+    'blur textarea' : 'checkInput',
     'submit form' : 'validate',
     "click #limit_reward": "showInput",
     "click .reward-close-button": "closeForm",

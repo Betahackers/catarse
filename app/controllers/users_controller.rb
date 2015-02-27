@@ -1,9 +1,10 @@
 # coding: utf-8
 class UsersController < ApplicationController
   after_filter :verify_authorized, except: %i[reactivate]
+  after_filter :redirect_user_back_after_login, only: %i[show]
   inherit_resources
   defaults finder: :find_active!
-  actions :show, :update, :unsubscribe_notifications, :credits, :destroy, :edit
+  actions :show, :update, :unsubscribe_notifications, :destroy, :edit
   respond_to :json, only: [:contributions, :projects]
 
   def destroy
@@ -19,14 +20,9 @@ class UsersController < ApplicationController
     redirect_to user_path(current_user, anchor: 'unsubscribes')
   end
 
-  def credits
-    authorize resource
-    redirect_to user_path(current_user, anchor: 'credits')
-  end
-
   def settings
     authorize resource
-    redirect_to user_path(current_user, anchor: 'settings')
+    redirect_to user_path(current_user, anchor: 'billing')
   end
 
   def show
@@ -34,7 +30,6 @@ class UsersController < ApplicationController
     show!{
       fb_admins_add(@user.facebook_id) if @user.facebook_id
       @title = "#{@user.display_name}"
-      @credits = @user.contributions.can_refund
       @subscribed_to_posts = @user.posts_subscription
       @unsubscribes = @user.project_unsubscribes
       @credit_cards = @user.credit_cards
@@ -59,6 +54,7 @@ class UsersController < ApplicationController
     @unsubscribes = @user.project_unsubscribes
     @subscribed_to_posts = @user.posts_subscription
     resource.links.build
+    build_bank_account
   end
 
   def update
@@ -68,7 +64,6 @@ class UsersController < ApplicationController
       flash[:notice] = t('users.current_user_fields.updated')
       redirect_to edit_user_path(@user, anchor: params[:anchor])
     else
-      flash.now[:notice] = @user.errors.full_messages.to_sentence
       render :edit
     end
   end
@@ -81,9 +76,11 @@ class UsersController < ApplicationController
     update_category_followers
 
     if password_params_given?
-      @user.update_with_password permitted_params[:user]
+      if @user.update_with_password permitted_params[:user]
+        sign_in(@user, bypass: true)
+      end
     else
-      @user.update_attributes permitted_params[:user]
+      @user.update_without_password permitted_params[:user]
     end
   end
 
@@ -138,9 +135,5 @@ class UsersController < ApplicationController
 
   def permitted_params
     params.permit(policy(resource).permitted_attributes)
-  end
-
-  def use_catarse_boostrap
-    ["show", "edit", "update"].include?(action_name) ? 'catarse_bootstrap' : 'application'
   end
 end

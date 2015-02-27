@@ -4,7 +4,7 @@
   = simple_form_for '', url: admin_financials_path, method: :get do |form|
     .w-row
       .w-col-2.w-col
-        = form.input :search_on_name, as: :string, label: t('.permalink'), input_html: {value: current_scopes[:search_on_name]}
+        = form.input :pg_search, as: :string, label: t('.permalink'), input_html: {value: current_scopes[:search_on_name]}
       .w-col-2.w-col
         = form.input "between_expires_at[start_at]", as: :string, label: t(".between_expires_at"), input_html: {value: params[:between_expires_at] && params[:between_expires_at][:start_at], data: { fixed_mask: '99/99/9999' } }
       .w-col-2.w-col
@@ -14,13 +14,13 @@
       .w-col-2.w-col
         = form.input :user_name_contains, as: :string, label: t('.user'), input_html: {value: params[:user_name_contains]}
       .w-col-2.w-col
-        = form.input :with_state, collection: Project.state_names, label: t('channels.admin.filter.with_state'), as: :select, selected: params[:with_state], include_blank: true
+        = form.input :with_state, collection: Project.state_names, label: t('admin.filter.with_state'), as: :select, selected: params[:with_state], include_blank: true
       .large-1.columns
         = form.input :with_payment_engine, collection: ['pagarme', 'moip'], label: 'Meio de pagamento', as: :select, include_blank: true, selected: params[:with_payment_engine]
 
     .w-row
       .w-col-2.w-col
-        = form.button :submit, t('channels.admin.filter.submit'), class: 'button medium negative'
+        = form.button :submit, t('admin.filter.submit'), class: 'button medium negative'
       .w-col-2.w-col
         = link_to t('.search_report'), admin_financials_path(params: params,format: :csv)
       .w-col-2.w-col
@@ -62,7 +62,7 @@
             td
               = number_to_currency catarse_fee, precision: 2
             td
-              = number_to_currency ((project.pledged*0.87)), precistion: 2
+              = number_to_currency ((project.pledged*0.87)), precision: 2
             td
               = project.display_expires_at
             td
@@ -88,16 +88,22 @@
                   th= t('.details.name')
                   th= t('.details.document')
                   th= t('.details.email')
+                  th= t('.details.state_inscription')
+                  th= t('.details.address')
+                  th= t('.details.phone_number')
                   th= t('.details.permalink')
                 tbody
                   tr
                     td
-                      = project.user.display_bank_account
+                      = project.account.try(:decorate).try(:display_bank_account)
                       br/
-                      = project.user.display_bank_account_owner
-                    td= project.user.display_name
-                    td= project.user.cpf
-                    td= project.user.email
+                      = project.account.try(:decorate).try(:display_bank_account_owner)
+                    td= project.account.try(:decorate).try(:display_name)
+                    td= project.account.try(:cpf)
+                    td= project.account.try(:email)
+                    td= project.account.try(:state_inscription)
+                    td= project.account.try(:decorate).try(:display_address)
+                    td= project.account.try(:phone_number)
                     td= link_to project.permalink, project_by_slug_path(permalink: project.permalink), target: '_blank'
 
   = paginate @projects

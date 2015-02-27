@@ -8,23 +8,11 @@ class Project::StateValidator < ActiveModel::Validator
   def online
     in_analysis
     approved
-    @record.errors['user.full_name'] << "Razão social do usuário não pode ficar em branco" if user.full_name.blank?
-    @record.errors['user.email'] << "Email do usuário não pode ficar em branco" if user.email.blank?
-    @record.errors['user.cpf'] << "CPF do usuário não pode ficar em branco" if user.cpf.blank?
-    @record.errors['user.address_street'] << "Endereço do usuário não pode ficar em branco" if user.address_street.blank?
-    @record.errors['user.address_number'] << "Número no endereço do usuário não pode ficar em branco" if user.address_number.blank?
-    @record.errors['user.address_city'] << "Cidade do usuário não pode ficar em branco" if user.address_city.blank?
-    @record.errors['user.address_state'] << "Estado do usuário não pode ficar em branco" if user.address_state.blank?
-    @record.errors['user.address_zip_code'] << "CEP do usuário não pode ficar em branco" if user.address_zip_code.blank?
-    @record.errors['user.phone_number'] << "Telefone do usuário não pode ficar em branco" if user.phone_number.blank?
+    %w(full_name email cpf address_street address_number address_city address_state address_zip_code phone_number bank agency account account_digit owner_name owner_document account_type).each do |attribute|
+      validate_presence_of_nested_attribute(account, attribute)
+    end
 
-    @record.errors['user.bank_account.bank'] << "Banco do usuário não pode ficar em branco" if bank_account.try(:bank).blank?
-    @record.errors['user.bank_account.agency'] << "Agência do usuário não pode ficar em branco" if bank_account.try(:agency).blank?
-    @record.errors['user.bank_account.agency_digit'] << "Dígito agência do usuário não pode ficar em branco" if bank_account.try(:agency_digit).blank?
-    @record.errors['user.bank_account.account'] << "No. da conta do usuário não pode ficar em branco" if bank_account.try(:account).blank?
-    @record.errors['user.bank_account.account_digit'] << "Dígito conta do usuário não pode ficar em branco" if bank_account.try(:account_digit).blank?
-    @record.errors['user.bank_account.owner_name'] << "Nome do titular do usuário não pode ficar em branco" if bank_account.try(:owner_name).blank?
-    @record.errors['user.bank_account.owner_document'] << "CPF / CNPJ do titular do usuário não pode ficar em branco" if bank_account.try(:owner_document).blank?
+    validate_same_value_of(account, :owner_document, :cpf)
   end
 
   def approved
@@ -34,11 +22,12 @@ class Project::StateValidator < ActiveModel::Validator
   end
 
   def in_analysis
-    @record.errors.add_on_blank([:about, :headline, :goal, :online_days, :uploaded_image])
-    @record.errors['user.name'] << "Nome do usuário não pode ficar em branco" if user.name.blank?
-    @record.errors['user.bio'] << "Biografia do usuário não pode ficar em branco" if user.bio.blank?
+    @record.errors.add_on_blank([:about, :headline, :goal, :online_days, :uploaded_image, :budget])
+    %w(name about).each do |attribute|
+      validate_presence_of_nested_attribute(user, attribute)
+    end
     @record.errors['user.uploaded_image'] << "Imagem do usuário não pode ficar em branco" if user.personal_image.blank?
-    #@record.errors['rewards.size'] << "Deve haver pelo menos uma recompensa" if @record.rewards.count == 0
+    @record.errors['rewards.size'] << "Deve haver pelo menos uma recompensa" if @record.rewards.size== 0
   end
 
   def draft; end
@@ -52,7 +41,28 @@ class Project::StateValidator < ActiveModel::Validator
     @record.user
   end
 
-  def bank_account
-    @record.user.try(:bank_account)
+  def account
+    @record.try(:account) || @record.build_account
+  end
+
+  def validate_presence_of_nested_attribute(association, attribute_name)
+    add_errors_on(association, attribute_name, :blank) if association.send(attribute_name).blank?
+  end
+
+  def validate_same_value_of(association, attribute_name, other_attribute)
+    add_errors_on(association, attribute_name, :not_same) if association.send(attribute_name) != association.send(other_attribute)
+  end
+
+  def add_errors_on(association, attribute_name, i18n_error_key)
+    @record.errors["#{association_name(association)}.#{attribute_name}"] << error_message_for(association, attribute_name, i18n_error_key)
+    association.errors[attribute_name.to_sym] << error_message_for(association, attribute_name, i18n_error_key)
+  end
+
+  def association_name(association)
+    association.class.model_name.i18n_key
+  end
+
+  def error_message_for(association, attribute_name, i18n_error_key)
+    I18n.t("activerecord.errors.models.#{association_name(association)}.attributes.#{attribute_name}.#{i18n_error_key}")
   end
 end

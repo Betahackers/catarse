@@ -31,10 +31,12 @@ RSpec.describe Project, type: :model do
     it{ is_expected.to allow_value('https://youtube.com/watch?v=UyU-xI').for(:video_url) }
     it{ is_expected.not_to allow_value('http://www.foo.bar').for(:video_url) }
     it{ is_expected.to allow_value('testproject').for(:permalink) }
+    it{ is_expected.to allow_value('test-project').for(:permalink) }
     it{ is_expected.to allow_value(1).for(:online_days) }
     it{ is_expected.not_to allow_value(0).for(:online_days) }
     it{ is_expected.not_to allow_value(61).for(:online_days) }
     it{ is_expected.not_to allow_value('users').for(:permalink) }
+    it{ is_expected.not_to allow_value('agua.sp.01').for(:permalink) }
   end
 
   describe ".of_current_week" do
@@ -50,21 +52,6 @@ RSpec.describe Project, type: :model do
 
     it "should return a collection with projects of current week" do
       is_expected.to have(10).itens
-    end
-  end
-
-  describe ".expiring_in_less_of" do
-    subject { Project.expiring_in_less_of('7 days') }
-
-    before do
-      @project_01 = create(:project, state: 'online', online_date: DateTime.now, online_days: 3)
-      @project_02 = create(:project, state: 'online', online_date: DateTime.now, online_days: 30)
-      @project_03 = create(:project, state: 'draft')
-      @project_04 = create(:project, state: 'online', online_date: DateTime.now, online_days: 3)
-    end
-
-    it "should return a collection with projects that is expiring time less of the time in param" do
-      is_expected.to match_array([@project_01, @project_04])
     end
   end
 
@@ -362,35 +349,6 @@ RSpec.describe Project, type: :model do
     it{ is_expected.to eq([@p]) }
   end
 
-  describe "send_verify_moip_account_notification" do
-    context "when not have projects on pagarme" do
-      before do
-        @p = create(:project, state: 'online', online_date: '2014-10-9'.to_date, online_days: 3)
-        create(:project, state: 'draft')
-      end
-
-      it "should create notification for all projects that is expiring" do
-        expect(ProjectNotification).to receive(:notify_once).
-          with(:verify_moip_account, @p.user, @p, {from_email: CatarseSettings[:email_payments]})
-        Project.send_verify_moip_account_notification
-      end
-    end
-
-    context "when have projects using pagarme" do
-      before do
-        @p = create(:project, state: 'online', online_date: DateTime.now, online_days: 3)
-        CatarseSettings[:projects_enabled_to_use_pagarme] = @p.permalink
-        create(:project, state: 'draft')
-      end
-
-      it "should not create notification for projects that using pagarme" do
-        expect(ProjectNotification).to_not receive(:notify_once).
-          with(:verify_moip_account, @p.user, @p, {from_email: CatarseSettings[:email_payments]})
-        Project.send_verify_moip_account_notification
-      end
-    end
-  end
-
   describe '#reached_goal?' do
     let(:project) { create(:project, goal: 3000) }
     subject { project.reached_goal? }
@@ -418,18 +376,6 @@ RSpec.describe Project, type: :model do
     context 'when project expiration time is not more on time to wait' do
       let(:contribution) { create(:contribution, created_at: 1.week.ago) }
       it {is_expected.to eq(false)}
-    end
-  end
-
-  describe "#search_on_name" do
-    before { @p = create(:project, name: 'foo') }
-    context "when project exists" do
-      subject{ [Project.search_on_name('foo'), Project.pg_search('fóõ')] }
-      it{ is_expected.to eq([[@p],[@p]]) }
-    end
-    context "when project is not found" do
-      subject{ Project.search_on_name('lorem') }
-      it{ is_expected.to eq([]) }
     end
   end
 
@@ -540,7 +486,7 @@ RSpec.describe Project, type: :model do
     context "when we have an online_date" do
       let(:project){ create(:project, online_date: Time.zone.now, online_days: 1)}
       before{project.save!}
-      it{ expect(subject.to_time).to eq(Time.zone.tomorrow.end_of_day.to_s(:simple)) }
+      it{ expect(subject.in_time_zone('Brasilia').to_s(:short)).to eq(Time.zone.tomorrow.end_of_day.to_s(:short)) }
     end
   end
 

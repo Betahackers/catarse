@@ -19,12 +19,6 @@ FactoryGirl.define do
     "foo_page_#{n}"
   end
 
-  factory :channel_partner do |f|
-    f.url "http://google.com"
-    f.image File.open("#{Rails.root}/spec/support/testimg.png")
-    f.association :channel
-  end
-
   factory :category_follower do |f|
     f.association :user
     f.association :category
@@ -38,7 +32,7 @@ FactoryGirl.define do
     f.uploaded_image File.open("#{Rails.root}/spec/support/testimg.png")
     f.email { generate(:email) }
     f.permalink { generate(:permalink) }
-    f.bio "This is Foo bar's biography."
+    f.about "This is Foo bar's biography."
     f.address_street 'fooo'
     f.address_number '123'
     f.address_city 'fooo bar'
@@ -57,7 +51,7 @@ FactoryGirl.define do
     f.cpf "123456"
     f.uploaded_image File.open("#{Rails.root}/spec/support/testimg.png")
     f.email { generate(:email) }
-    f.bio "This is Foo bar's biography."
+    f.about "This is Foo bar's biography."
     f.address_street 'fooo'
     f.address_number '123'
     f.address_city 'fooo bar'
@@ -93,6 +87,32 @@ FactoryGirl.define do
     f.state 'online'
     f.budget '1000'
     f.uploaded_image File.open("#{Rails.root}/spec/support/testimg.png")
+    after :build do |project|
+      project.account = build(:project_account, project: nil)
+      project.rewards.build(deliver_at: Time.now, minimum_value: 10, description: 'test')
+    end
+  end
+
+  factory :project_account do |f|
+    f.association :project
+    f.association :bank
+    f.full_name "Foo Bar"
+    f.email "foo@bar.com"
+    f.cpf "foo"
+    f.address_zip_code "foo"
+    f.address_neighbourhood "foo"
+    f.address_state "foo"
+    f.address_city "foo"
+    f.address_number "foo"
+    f.address_street "foo"
+    f.phone_number "1234"
+    f.agency "foo"
+    f.agency_digit "foo"
+    f.owner_document "foo"
+    f.owner_name "foo"
+    f.account "1"
+    f.account_digit "1000"
+    f.account_type "foo"
   end
 
   factory :project_budget do |f|
@@ -209,13 +229,4 @@ FactoryGirl.define do
     account '1'
   end
 
-  factory :channel_post do |f|
-    f.association :user, factory: :user
-    f.association :channel, factory: :channel
-    title "My title"
-    f.body "This is a comment"
-    f.body_html "<p>This is a comment</p>"
-  end
-
 end
-

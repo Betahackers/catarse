@@ -32,20 +32,16 @@ Catarse::Application.routes.draw do
   end
   resources :auto_complete_projects, only: [:index]
   resources :projects, only: [:index, :create, :update, :edit, :new, :show] do
-    resources :posts, controller: 'projects/posts', only: [ :index, :create, :destroy ]
-    resources :rewards, only: [ :index, :create, :update, :destroy, :new, :edit ] do
-      member do
-        post 'sort'
-      end
+    resources :accounts, only: [:create, :update]
+    resources :posts, controller: 'projects/posts', only: [ :index, :destroy ]
+    resources :rewards, only: [ :index ] do
+      post :sort, on: :member
     end
     resources :contributions, {controller: 'projects/contributions'} do
-      member do
-        put 'credits_checkout'
-      end
+      put :credits_checkout, on: :member
     end
-    collection do
-      get 'video'
-    end
+
+    get 'video', on: :collection
     member do
       get :reminder, to: 'projects/reminders#create'
       delete :reminder, to: 'projects/reminders#destroy'
@@ -60,18 +56,12 @@ Catarse::Application.routes.draw do
     end
   end
   resources :users do
-    resources :projects, controller: 'users/projects', only: [ :index ]
     resources :credit_cards, controller: 'users/credit_cards', only: [ :destroy ]
     member do
       get :unsubscribe_notifications
       get :credits
       get :settings
       get :reactivate
-    end
-    resources :contributions, controller: 'users/contributions', only: [:index] do
-      member do
-        get :request_refund
-      end
     end
 
     resources :unsubscribes, only: [:create]
@@ -87,7 +77,7 @@ Catarse::Application.routes.draw do
   get "/privacy-policy" => 'high_voltage/pages#show', id: 'privacy_policy'
   get "/start" => 'high_voltage/pages#show', id: 'start'
   get "/jobs" => 'high_voltage/pages#show', id: 'jobs'
-  get "/guides" => 'high_voltage/pages#show', id: 'guides'
+  get "/guides" => 'high_voltage/pages#show', id: 'guides', as: :guides
 
 
 

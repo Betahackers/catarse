@@ -18,7 +18,7 @@ class UserDecorator < Draper::Decorator
 
   def gravatar_url
     return unless source.email
-    "https://gravatar.com/avatar/#{Digest::MD5.new.update(source.email)}.jpg?default=#{CatarseSettings[:base_url]}/assets/user.png"
+    "https://gravatar.com/avatar/#{Digest::MD5.new.update(source.email)}.jpg?default=#{CatarseSettings[:base_url]}/assets/catarse_bootstrap/user.jpg"
   end
 
   def display_name
@@ -29,9 +29,9 @@ class UserDecorator < Draper::Decorator
     source.personal_image || '/user.png'
   end
 
-  def display_image_html options={width: 119, height: 121}
-    (%{<div class="avatar_wrapper" style="width: #{options[:width]}px; height: #{options[:height]}px">} +
-      h.image_tag(display_image, alt: "User", style: "width: #{options[:width]}px; height: auto", class: "#{options[:image_class]}") +
+  def display_image_html 
+    (%{<div class="avatar_wrapper">} +
+      h.image_tag(display_image, alt: "User", class: "thumb big u-round") +
       %{</div>}).html_safe
   end
 
