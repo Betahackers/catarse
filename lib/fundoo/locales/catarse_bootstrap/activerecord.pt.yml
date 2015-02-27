@@ -69,21 +69,12 @@ pt:
         about: "Descrição do projeto"
         user_id: "Id do usuário"
         video_url: "URL do vídeo"
-<<<<<<< HEAD:config/locales/catarse_bootstrap/activerecord.pt.yml
         permalink: 'Link do seu projeto'
         more_links: 'Indique links para as pessoas conhecerem mais sobre o seu projeto e sua trajetória.'
         traffic_sources: 'Como você conheceu o Catarse?'
         first_contributions: "Quem são as primeiras pessoas que você vai pedir para apoiar o seu projeto?"
         budget: 'Orçamento do projeto'
         uploaded_image: 'Imagem do projeto'
-=======
-        permalink: "URL do seu projeto"
-        more_links: "Indique links para as pessoas conhecerem mais sobre o seu projeto e sua trajetória."
-        traffic_sources: "Como você conheceu o Catarse?"
-        first_contributions: "Quem são as primeiras pessoas que você vai pedir para apoiar o seu projeto?"
-        budget: Orçamento
-        uploaded_image: "Imagem do projeto"
->>>>>>> master:lib/fundoo/locales/catarse_bootstrap/activerecord.pt.yml
       user:
         address_city: Cidade
         address_complement: Complemento
@@ -227,7 +218,6 @@ pt:
             current_password:
               invalid: "Senha atual não é válida"
             reset_password_token:
-<<<<<<< HEAD:config/locales/catarse_bootstrap/activerecord.pt.yml
               invalid: 'expirou. Vá para <a href="/password/new">redefinir senha</a> e solicite novamente a redefinição da senha.'
             name:
               blank: "Nome do usuário não pode ficar em branco"
@@ -235,9 +225,6 @@ pt:
               blank: "Sobre você não pode ficar em branco"
             uploaded_image:
               blank: "Imagem do usuário não pode ficar em branco"
-=======
-              invalid: "expirou. Vá para <a href=\"/password/new\">redefinir senha</a> e solicite novamente a redefinição da senha."
->>>>>>> master:lib/fundoo/locales/catarse_bootstrap/activerecord.pt.yml
   project:
     update:
       success: "As informações foram atualizadas"

@@ -1,6 +1,5 @@
 pt:
   shared:
-<<<<<<< HEAD:config/locales/catarse_bootstrap/views/shared.pt.yml
     formatting_tips:
       title: "Dicas de formatação"
       formatting_tip1_html: 'Se você colar a url de uma imagem ou de um vídeo do vimeo ou do youtube, eles irão aparecer na descrição da ideia. experimente!'
@@ -10,10 +9,6 @@ pt:
       formatting_tip5_html: "Você pode usar itálico adicionando um underline (_) antes e depois do texto que você quer formatar. Por exemplo, _meu texto em itálico_ irá aparecer como <i> meu texto em itálico</i>."
     terms: termos de uso
     accept_terms_html: Eu li e estou de acordo com os %{link}.
-=======
-    terms: "termos de uso"
-    accept_terms_html: "Eu li e estou de acordo com os %{link}."
->>>>>>> master:lib/fundoo/locales/catarse_bootstrap/views/shared.pt.yml
     header_channel:
       contact: Contato
       logout: Sair

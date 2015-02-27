@@ -2,18 +2,10 @@ CarrierWave.configure do |config|
   if Rails.env.production?
     config.fog_credentials = {
       provider: 'AWS',
-<<<<<<< HEAD
-      host: 's3.amazonaws.com',
-      endpoint: 'https://s3.amazonaws.com',
-      aws_access_key_id: CatarseSettings.get_without_cache(:aws_access_key),
-      aws_secret_access_key: CatarseSettings.get_without_cache(:aws_secret_key),
-      path_style: true
-=======
       # host: 's3.amazonaws.com',
       # endpoint: 'http://s3.amazonaws.com',
       aws_access_key_id: ENV['AWS_ACCESS_KEY_ID'] || 'AWS_ACCESS_KEY_ID' ,
       aws_secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'] || 'AWS_SECRET_ACCESS_KEY'
->>>>>>> master
     }
     config.fog_directory  = ENV['AWS_BUCKET'] || 'AWS_BUCKET'
     config.fog_public     = true

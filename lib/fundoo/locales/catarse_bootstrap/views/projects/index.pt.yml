@@ -12,11 +12,7 @@ pt:
       blog: "Blog do Catarse"
       expiring: "Na reta final"
       recommended: Recomendados
-<<<<<<< HEAD:config/locales/catarse_bootstrap/views/projects/index.pt.yml
       banner_subtitle: 'Música, quadrinhos, cinema, impacto social, tecnologia e muito mais. Conheça, inspire-se e apoie projetos.'
-=======
-      banner_subtitle: "Ciências, música, quadrinhos, cinema, impacto social e muito mais. Conheça, inspire-se e apoie projetos"
->>>>>>> master:lib/fundoo/locales/catarse_bootstrap/views/projects/index.pt.yml
       box:
         by: por
         when: em

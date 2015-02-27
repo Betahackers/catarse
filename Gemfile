@@ -34,16 +34,9 @@ gem 'user_notifier', '~> 0.0.5'
 gem 'mixpanel-ruby'
 
 # Payment engines
-<<<<<<< HEAD
-gem 'catarse_paypal_express', '3.0.2'
-gem 'catarse_moip', '~> 3.1.0'
-gem 'catarse_pagarme', '2.4.7'
-
-=======
-#gem 'catarse_paypal_express', '3.0.2'
-#gem 'catarse_moip', '~> 3.1.0'
-#gem 'catarse_pagarme', '2.4.2'
->>>>>>> master
+# gem 'catarse_paypal_express', '3.0.2'
+# gem 'catarse_moip', '~> 3.1.0'
+# gem 'catarse_pagarme', '2.4.7'
 gem 'activemerchant', '1.44.1'
 gem 'catarse_paypal_adaptive', path: '../catarse_paypal_adaptive'
 #gem 'catarse_moip', path: '../catarse_moip'

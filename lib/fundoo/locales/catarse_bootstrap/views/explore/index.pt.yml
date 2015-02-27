@@ -4,13 +4,8 @@ pt:
       success_follow: "Agora você segue a categoria e vai receber semanalmente uma lista com os novos projetos de %{name}"
       success_unfollow: "Você deixou de seguir essa categoria %{name}"
       follow: Seguir
-<<<<<<< HEAD:config/locales/catarse_bootstrap/views/explore/index.pt.yml
       unfollow: Deixar de seguir
       following: seguidores
-=======
-      unfollow: "Deixar de seguir"
-      following: seguindo
->>>>>>> master:lib/fundoo/locales/catarse_bootstrap/views/explore/index.pt.yml
       categories: Categorias
       expiring: "Na reta final"
       in_funding: "No ar"

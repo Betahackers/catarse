@@ -17,14 +17,8 @@ pt:
       form:
         blocks:
           first:
-<<<<<<< HEAD:config/locales/catarse_bootstrap/views/projects/new.pt.yml
             title: "Bem Vindo!"
             description: "Preencha as informações abaixo para iniciar o rascunho do seu projeto."
-
-=======
-            title: "Bem-vindo ;)"
-            description: "Só precisamos saber 3 coisas para que você passe para o próximo passo, onde você já terá uma visualização do seu projeto, tal como ele irá ao ar, caso seja selecionado."
->>>>>>> master:lib/fundoo/locales/catarse_bootstrap/views/projects/new.pt.yml
         info:
           permalink: "http://catarse.me/"
           goal: R$
