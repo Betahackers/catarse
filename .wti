@@ -1,4 +1,4 @@
-api_key: 0cw_TGI-INVcuXEi4Ersyg
+api_key: 8j0iqgCdvGwq-z1w36R7VQ
 
 # Optional: locales not to sync with WebTranslateIt.
 # Takes a string, a symbol, or an array of string or symbol.
@@ -6,7 +6,7 @@ api_key: 0cw_TGI-INVcuXEi4Ersyg
 # ignore_locales: 'pt'
 
 # Or if you prefer a list of locales to sync with WebTranslateIt:
-# needed_locales: ["pt"]
+# needed_locales: ["en", "pt"]
 
 # Optional
 # before_pull: "echo 'some unix command'"   # Command executed before pulling files

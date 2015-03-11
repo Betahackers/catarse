@@ -41,16 +41,36 @@ pt:
     projects:
       contributions:
         show:
-          valeu: "Valeu ;)"
           agora_voc_parte_do: "Agora você é parte do grupo de"
-          pessoas_que_querem_tirar: "pessoas que querem tirar o"
-          do_papel_assim_que: "do papel! Assim que o seu pagamento for confirmado, enviaremos um email. Você também pode acompanhar o status do seu apoio"
-          atrav_s_do_seu: "através do seu perfil"
           enquanto_isso_que: ".Enquanto isso, que tal espalhar a ideia para os seus amigos?"
-          compartilhe: Compartilhe
           tweet: Tweet
           voc_pode_curtir_esses: "Você pode curtir esses aqui também"
           e_por_falar_em: "E por falar em #{@project.category.name_pt}, que tal saber em primeira mão novos projetos dessa categoria sempre que eles entram aqui noCatarse?Direto do forno para o seu email!"
+          valeu: Valeu!
+          voc_faz_parte_do: "Você faz parte do grupo de"
+          pessoas_que_querem_tirar: "pessoas que querem tirar o"
+          do_papel_voc_receber: "do papel! Você receberá a confirmação do pagamento por email assim que ele for processado. Você também pode acompanhar o status do seu apoio"
+          atrav_s_do_seu: "através do seu perfil"
+          compartilhe_o_seu: ".Compartilhe o seu apoio e aumente as chances do projetobater a meta!"
+          compartilhe: Compartilhe
+          tu_te: Tuíte
+          recomenda_es_de_projetos: "Recomendações de projetos para você"
+          curte_a_categoria_project: "Curte a categoria #{@project.category.name_pt}? Você pode receber em primeira mão e diretamente no seu email quando novos projetos entrarem no ar!"
+        faq_box:
+          perguntas_frequentes: "Perguntas Frequentes"
+          como_eu_apoio_este: "Como eu apoio este projeto?"
+          primeiro_escolha_o_valor: "Primeiro, escolha o valor e a recompensa desejados. Depois é só clicar em 'Revisar e realizar pagamento' que redirecionaremos você para a próxima página para concluir o seu pagamento."
+          quando_o_pagamento_efetivado: "Quando o pagamento é efetivado?"
+          se_voc_pagou_com: "Se você pagou com cartão de crédito, a confirmação deverá ser no mesmo dia. Se foi com boleto, em até 4 dias úteis."
+          e_se_o_projeto: "E se o projeto não atingir a meta?"
+          nesse_caso_voc_recebe: "Nesse caso, você recebe de volta 100% do que pagou através de um reembolso."
+          se_o_projeto_for: "Se o projeto for financiado, como eu recebo minha recompensa?"
+          quando_sua_recompensa_estiver: "Quando sua recompensa estiver pronta, #{link_to @project.user.display_name, user_path(@project.user)} vai entrar em contato com você para combinar a entrega."
+        edit:
+          preencha_e_revise_os: "Preencha e revise os dados para pagamento"
+          esses_dados_ser_o: "Esses dados serão informados ao realizador do projeto"
+          endere_o_de_entrega: "Endereço de entrega"
+          pr_ximo_passo: "Próximo passo"
       budget_fields:
         cost: Cost
       card:
@@ -68,6 +88,7 @@ pt:
         aguardando_confirma_o_do: "Aguardando confirmação do pagamento"
         recompensa_1: "Recompensa:"
         estimativa_de_entrega: "Estimativa de entrega:"
+        selecionou_recompensa: "selecionou recompensa"
       dashboard_billing:
         cart_es_de_cr: "Cartões de crédito"
         lembrando_caso_algum_projeto: "Lembrando: caso algum projeto que você tenha apoiado"
@@ -79,3 +100,44 @@ pt:
         voc_tem_certeza: "você tem certeza?"
         dados_banc_rios: "Dados bancários"
         caso_algum_projeto_que: "Caso algum projeto que você tenha apoiado <b>com Boleto Bancário</b> não seja bem-sucedido, nós efetuaremos o reembolso de seu pagamento na conta abaixo."
+      edit:
+        apoiados: Apoiados
+        criados: Criados
+        sobre_voc: "Sobre você"
+        dados_de_acesso: "Dados de acesso"
+        notifica_es: Notificações
+        banco_e_cart_es: "Banco e cartões"
+        ir_para_o_perfil: "Ir para o perfil público"
+        atividades: Atividades
+        voc_ainda_n_o: "Você ainda não criou nenhum projeto no Catarse. Acredite nos seus sonhos!"
+        inscreva_um_projeto: "Inscreva um projeto!"
+      dashboard_contributions:
+        voc_ainda_n_o: "Você ainda não apoiou nenhum projeto noCatarse..."
+        projetos_em_andamento: "Projetos em andamento"
+        projetos_bem_sucedidos: "Projetos bem-sucedidos"
+        projetos_n_o_financiados: "Projetos não-financiados"
+      feeds:
+        feed:
+          postou: "postou:"
+          leia_mais: "Leia mais"
+          novo_projeto_no_ar: "Novo projeto no ar!"
+          categoria: "Categoria:"
+          foi_bem_sucedido: "foi bem-sucedido!"
+          pledged: Pledged
+          apoiadores: Apoiadores
+          finalizou_mas_n_o: "finalizou mas não foi financiado"
+    shared:
+      user_menu:
+        minhas_coisas: "Minhas coisas"
+        hist_rico_de_apoios: "Histórico de apoios"
+        projetos_criados: "Projetos criados"
+        atividade: Atividade
+        configura_es: Configurações
+        sobre_voc: "Sobre você"
+        notifica_es: Notificações
+        dados_de_acesso: "Dados de acesso"
+        banco_e_cart_es: "Banco e cartões"
+        projetos_apoiados: "Projetos apoiados"
+        ver_todos: "Ver todos"
+        admin: Admin
+        voc_est_logado_como: "Você está logado como"

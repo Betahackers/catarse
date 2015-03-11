@@ -41,16 +41,36 @@ en:
     projects:
       contributions:
         show:
-          valeu: Thanks;)
           agora_voc_parte_do: "Now you're part of the group"
-          pessoas_que_querem_tirar: "people who want to take the"
-          do_papel_assim_que: "the paper! As soon as your payment is confirmed, we will send you an email. You can also track the status of your support"
-          atrav_s_do_seu: "through your profile"
           enquanto_isso_que: ".Meanwhile, how about spreading the idea to their friends?"
-          compartilhe: Share
           tweet: Tweet
           voc_pode_curtir_esses: "You can enjoy these here too"
           e_por_falar_em: "And speaking of # {@project. category.name _en}, how about learn firsthand new projects in this category whenever they enter here noCatarse?Straight from the oven to your email!"
+          valeu: Thanks;)
+          voc_faz_parte_do: "You're part of the Group of"
+          pessoas_que_querem_tirar: "people who want to take the"
+          do_papel_voc_receber: "the paper! You will receive confirmation of payment by e-mail as soon as it is rendered. You can also track the status of your support"
+          atrav_s_do_seu: "through your profile"
+          compartilhe_o_seu: ".Share your support and increase the chances of projetobater the goal!"
+          compartilhe: Share
+          tu_te: Tweet
+          recomenda_es_de_projetos: "Recommendations for designs for you"
+          curte_a_categoria_project: "Check the category # {@project. category.name _en}? You can receive firsthand and directly in your email when new projects come up!"
+        faq_box:
+          perguntas_frequentes: "Frequently Asked Questions"
+          como_eu_apoio_este: "As I support this project?"
+          primeiro_escolha_o_valor: "First, select the desired value and reward. Then just click on ' review and perform payment ' that we'll redirect you to the next page to complete your payment."
+          quando_o_pagamento_efetivado: "When payment is effected?"
+          se_voc_pagou_com: "If you paid by credit card, the acknowledgment must be on the same day if it was with billet, up to 4 working days."
+          e_se_o_projeto: "And if the project does not reach the goal?"
+          nesse_caso_voc_recebe: "In this case, you get back 100% of what you paid through a refund."
+          se_o_projeto_for: "If the project is funded, how do I get my reward?"
+          quando_sua_recompensa_estiver: "When your reward is ready, # {@project this.link_to. user. display_name, user_path (user @project)} will contact you to arrange delivery."
+        edit:
+          preencha_e_revise_os: "Fill out and review the data for payment"
+          esses_dados_ser_o: "Such information will be reported to the Project Director"
+          endere_o_de_entrega: "Delivery address"
+          pr_ximo_passo: "Next step"
       budget_fields:
         cost: Cost
       card:
@@ -68,6 +88,7 @@ en:
         aguardando_confirma_o_do: "Awaiting payment confirmation"
         recompensa_1: "Reward:"
         estimativa_de_entrega: "Estimated delivery:"
+        selecionou_recompensa: "selected reward"
       dashboard_billing:
         cart_es_de_cr: "Credit cards"
         lembrando_caso_algum_projeto: "Remember: if any project that you have supported"
@@ -79,3 +100,44 @@ en:
         voc_tem_certeza: "are you sure?"
         dados_banc_rios: "Bank details"
         caso_algum_projeto_que: "If any project that you have supported <b> with Bank </b> is not successful, we will effect a refund of your payment in the account below."
+      edit:
+        apoiados: Supported
+        criados: Created
+        sobre_voc: "About you"
+        dados_de_acesso: "Access data"
+        notifica_es: Notifications
+        banco_e_cart_es: "And bank cards"
+        ir_para_o_perfil: "Go to the public profile"
+        atividades: Activities
+        voc_ainda_n_o: "You have not yet created any project in Catharsis. Believe in your dreams!"
+        inscreva_um_projeto: "Subscribe to a project!"
+      dashboard_contributions:
+        voc_ainda_n_o: "You still haven't supported any project noCatarse..."
+        projetos_em_andamento: "Projects in progress"
+        projetos_bem_sucedidos: "Successful projects"
+        projetos_n_o_financiados: "Non-funded projects"
+      feeds:
+        feed:
+          postou: "posted:"
+          leia_mais: "Read more"
+          novo_projeto_no_ar: "New project in the air!"
+          categoria: "Category:"
+          foi_bem_sucedido: "was successful!"
+          pledged: Pledged
+          apoiadores: Supporters
+          finalizou_mas_n_o: "finalized but was not funded"
+    shared:
+      user_menu:
+        minhas_coisas: "My stuff"
+        hist_rico_de_apoios: "Support history"
+        projetos_criados: "Projects created"
+        atividade: Activity
+        configura_es: Settings
+        sobre_voc: "About you"
+        notifica_es: Notifications
+        dados_de_acesso: "Access data"
+        banco_e_cart_es: "And bank cards"
+        projetos_apoiados: "Projects supported"
+        ver_todos: "View all"
+        admin: Admin
+        voc_est_logado_como: "You are logged in as"
