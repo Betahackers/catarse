@@ -43,7 +43,7 @@
         - if contribution.reward
           = contribution.reward.display_description
         - else
-          =Não t('.selecionou_recompensa')
+          = t('.selecionou_recompensa')
       - if contribution.reward.try(:display_deliver_estimate).present?
         .fontsize-smallest.lineheight-looser
           span.fontweight-semibold= t('.estimativa_de_entrega')
