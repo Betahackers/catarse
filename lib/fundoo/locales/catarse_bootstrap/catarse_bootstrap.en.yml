@@ -62,17 +62,17 @@ en:
         agora_voc_parte_do: Now you're part of the group
         atrav_s_do_seu: through your profile
         compartilhe: Share
-        compartilhe_o_seu: ".Share your support and increase the chances of projetobater the goal!"
+        compartilhe_o_seu: ". Share your support and increase the chances of projetobater the goal!"
         curte_a_categoria_project: 'Check the category # {@project. category.name _en}? You can receive firsthand and directly in your email when new projects come up!'
-        do_papel_voc_receber: the paper! You will receive confirmation of payment by e-mail as soon as it is rendered. You can also track the status of your support
+        do_papel_voc_receber: " happen! You will receive confirmation of payment by e-mail as soon as it is rendered. You can also track the status of your support"
         e_por_falar_em: 'And speaking of # {@project. category.name _en}, how about learn firsthand new projects in this category whenever they enter here noCatarse?Straight from the oven to your email!'
-        enquanto_isso_que: ".Meanwhile, how about spreading the idea to their friends?"
-        pessoas_que_querem_tirar: people who want to take the
+        enquanto_isso_que: ". Meanwhile, how about spreading the idea to their friends?"
+        pessoas_que_querem_tirar: people who want to make
         recomenda_es_de_projetos: Recommendations for designs for you
         tu_te: Tweet
         tweet: Tweet
         valeu: Thanks;)
-        voc_faz_parte_do: You're part of the Group of
+        voc_faz_parte_do: "You're part of the group of "
         voc_pode_curtir_esses: You can enjoy these here too
   shared:
     user_menu:
