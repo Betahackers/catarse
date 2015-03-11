@@ -176,7 +176,3 @@ gem 'sprockets', '~> 2.10.1'
 # FIXME: Not-anymore-on-development
 # Gems that are with 1 or more years on the vacuum
 gem 'weekdays'
-
-
-# FUNDOO
-gem 'deface', github: 'spree/deface'

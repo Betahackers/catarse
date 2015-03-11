@@ -27,7 +27,7 @@
       = @project.about_html.try(:html_safe)
       - if @project.budget.present?
         p.fontsize-large.fontweight-semibold
-          | Orçamento
+          = t('.budget')
         p.fontsize-base
           = @project.budget_text_html
         /- if @project.budgets.present?

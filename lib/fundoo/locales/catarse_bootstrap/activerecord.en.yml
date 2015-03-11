@@ -15,16 +15,16 @@ en:
         address_number: Number
         address_state: State
         address_street: Address
-        address_zip_code: CEP
-        cpf: "CPF/CNPJ "
-        state_inscription: "State Enrollment"
+        address_zip_code: "Postal code"
+        cpf: "Document number"
+        state_inscription: "Document issuing state"
         email: Email
         full_name: "Full name/company name"
         phone_number: Phone
         bank: Bank
         bank_id: Bank
         owner_name: "Name of the holder"
-        owner_document: "CPF/CNPJ of the holder"
+        owner_document: "Document number of the holder"
         agency: Agency
         agency_digit: "Digit agency"
         account: "In The. of the account"
@@ -34,15 +34,15 @@ en:
         bank: Bank
         bank_id: Bank
         owner_name: "Name of the holder"
-        owner_document: "CPF/CNPJ of the holder"
+        owner_document: "Document number of the holder"
         agency: Agency
-        agency_digit: "Digit agency"
-        account: "In The. of the account"
-        account_digit: "Digit account"
+        agency_digit: "Agency digit"
+        account: "Account number"
+        account_digit: "Account digit"
       contribution:
         payer_name: "Full Name"
         payer_email: Email
-        payer_document: "CPF or CNPJ"
+        payer_document: "Document Number"
         country: Country
         address_street: Street
         address_number: Number
@@ -50,7 +50,7 @@ en:
         address_neighbourhood: Neighborhood
         address_state: State
         address_city: City
-        address_zip_code: CEP
+        address_zip_code: "Postal code"
         address_phone_number: Phone
         value: "value of support"
         reward: reward
@@ -82,8 +82,8 @@ en:
         address_number: Number
         address_state: State
         address_street: Address
-        address_zip_code: CEP
-        cpf: "CPF/CNPJ "
+        address_zip_code: "Postal Code"
+        cpf: "Document Number"
         cpf_hint: (?)
         state_inscription: "State Enrollment"
         current_password: "Current password"
@@ -128,8 +128,8 @@ en:
             owner_name:
               blank: "Holder's name cannot be blank"
             owner_document:
-              blank: "CPF/CNPJ of the holder cannot be blank"
-              invalid: "CPF/CNPJ invalid"
+              blank: "Document number of the holder cannot be blank"
+              invalid: "Document number invalid"
             agency:
               blank: "Agency can't be blank"
               invalid: "Invalid Agency"
@@ -171,8 +171,8 @@ en:
             owner_name:
               blank: "Name of the holder of the user cannot be blank"
             owner_document:
-              blank: "CPF/CNPJ of the holder of the user cannot be blank"
-              not_same: "CPF/CNPJ of cadastral data and banking filled are not equal."
+              blank: "Document number of the holder of the user cannot be blank"
+              not_same: "Document number of cadastral data and banking filled are not equal."
             account_type:
               blank: "Account type cannot be blank"
         project:
@@ -246,7 +246,7 @@ en:
     user_full_name: "Full name of the supporter"
     user_name: "Nickname of the supporter"
     user_email: "Email profile Fundoo"
-    cpf: "CPF armrest"
+    cpf: "Document number"
     payer_email: "Email of the means of payment"
     payment_method: "Means of payment"
     street: Street
@@ -255,7 +255,7 @@ en:
     neighbourhood: Neighborhood
     city: City
     address_state: State
-    zip_code: CEP
+    zip_code: "Postal code"
     anonymous: Anonymous
   user:
     no_name: "Without name"
