@@ -14,13 +14,10 @@ en:
           definir_nova_senha: set new password
           esqueceu_sua_senha_sem: Forgot your password? No problem! Reset by clicking here
           ol: Hello
-          se_algum_problema_acontecer: 'If there is any problem, reply to this message directly or contact us via e-mail # {mail_to:: CatarseSettings [: email_contact]}'
+          se_algum_problema_acontecer: 'If there is any problem, reply to this message directly or contact us via e-mail '
   layouts:
     global_alert:
       aqui: here
-      bem_vindo_a_vers: 'Welcome to the beta version of Catharsis. To return to normal version click # {t this.link_to ('' this ''), url_for (: host '' www.catarse.me '', protocol: '' http ''), class: '' link-hidden-white ''}'
-      conhe_a_nossa_vers: Meet our beta version!
-      que_tal_experimentar_um: 'How about trying a new Catharsis? # {t this.link_to (''. conhe_a_nossa_vers ''), url_for (: host '' beta.catarse.me ''), class: '' link-hidden-white ''}'
   pages:
     bad_browser:
       download_chrome: Download Chrome
@@ -55,7 +52,7 @@ en:
         perguntas_frequentes: Frequently Asked Questions
         primeiro_escolha_o_valor: First, select the desired value and reward. Then just click on ' review and perform payment ' that we'll redirect you to the next page to complete your payment.
         quando_o_pagamento_efetivado: When payment is effected?
-        quando_sua_recompensa_estiver: 'When your reward is ready, # {@project this.link_to. user. display_name, user_path (user @project)} will contact you to arrange delivery.'
+        quando_sua_recompensa_estiver: 'When your reward is ready, the organizer will contact you to arrange delivery.'
         se_o_projeto_for: If the project is funded, how do I get my reward?
         se_voc_pagou_com: If you paid by credit card, the acknowledgment must be on the same day if it was with billet, up to 4 working days.
       show:
@@ -63,9 +60,9 @@ en:
         atrav_s_do_seu: through your profile
         compartilhe: Share
         compartilhe_o_seu: ". Share your support and increase the chances of projetobater the goal!"
-        curte_a_categoria_project: 'Check the category # {@project. category.name _en}? You can receive firsthand and directly in your email when new projects come up!'
+        curte_a_categoria_project: 'You can receive firsthand and directly in your email when new projects come up!'
         do_papel_voc_receber: " happen! You will receive confirmation of payment by e-mail as soon as it is rendered. You can also track the status of your support"
-        e_por_falar_em: 'And speaking of # {@project. category.name _en}, how about learn firsthand new projects in this category whenever they enter here noCatarse?Straight from the oven to your email!'
+        e_por_falar_em: 'How about learn firsthand new projects in this category whenever they enter here? Straight from the oven to your email!'
         enquanto_isso_que: ". Meanwhile, how about spreading the idea to their friends?"
         pessoas_que_querem_tirar: people who want to make
         recomenda_es_de_projetos: Recommendations for designs for you
