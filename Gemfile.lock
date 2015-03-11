@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/Betahackers/catarse_paypal_adaptive.git
-  revision: aa46ac95f54133ffc14105163115204b82018b0a
+  revision: f7a35832cd9eede07fa8909aaf13e643ea8a988d
   specs:
-    catarse_paypal_adaptive (3.0.3)
+    catarse_paypal_adaptive (3.0.4)
       activemerchant (>= 1.34.0)
       paypal-sdk-adaptivepayments
       rails (~> 4.0)
