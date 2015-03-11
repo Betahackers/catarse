@@ -1,91 +1,82 @@
+---
 en:
   projects:
     metrics:
       titles:
-        confirmed_by_day: "Total of confirmed support per day"
-        confirmed_amount_by_day: "Total collected per day"
-        address_state: "Total confirmed funding by State"
-    reminder:
-      ok: "Ok! We will send you a reminder via email 48 hours before the end of the campaign"
-      active_btn: "Remind me of this project"
-      deactive_btn: "I don't want to be remembered"
-    send_to_analysis: "Your project has been sent to our team."
-    send_to_analysis_error: "Error sending project for analysis. Fill in all required fields."
-    push_to_online: "Your project is online!"
-    push_to_online_error: "Error when placing the project online. Fill in all required fields."
-    twitter:
-      take_a_look: "Check out the project %{name} in @catarse"
-    video_embed:
-      a_project_by_html: "A project of %{link} in"
+        address_state: Total confirmed funding by State
+        confirmed_amount_by_day: Total collected per day
+        confirmed_by_day: Total of confirmed support per day
     posts:
-      project_post:
-        unavailable: "This news is only available to supporters."
-        contribute: Support
-        unavailable_contribute: "This project to view it."
-        destroy: "Remove News"
-        destroy_confirmation: "Want to remove this news?"
       new:
-        notice: "News submitted successfully!"
-        comment: "Text of your News"
-        exclusive: "Visible only to supporters"
-        submit: "Send News"
-        title: "Title of your News"
-        warning: "Remembering that every post of novelty will go directly to the e-mail from his supporters. So, check your text before sending it."
-    project_reports:
-      all_contributions_without_reward: "Download report of all supporters who have selected a reward"
-      link_reports_confirmed: "Download all confirmed supporters report"
-      link_reports_waiting_confirmation: "Download report of all supporters with billet printed"
-      link_reward: "Download report of the supporters of the reward of %{value}"
+        comment: Text of your News
+        exclusive: Visible only to supporters
+        notice: News submitted successfully!
+        submit: Send News
+        title: Title of your News
+        warning: Remembering that every post of novelty will go directly to the e-mail from his supporters. So, check your text before sending it.
+      project_post:
+        contribute: Support
+        destroy: Remove News
+        destroy_confirmation: Want to remove this news?
+        unavailable: This news is only available to supporters.
+        unavailable_contribute: This project to view it.
     project_about:
-      embed: <embed>
-      embed_title: "Embed this on your site design"
       active_btn: " Remember"
       deactive_btn: " Active reminder"
-    show:
-      menu:
-        panel_html: "&nbsp; &nbsp; Control Panel"
-        about: About
-        add_reward: "Add reward"
-        comments: Comments
-        contributions: Support
-        metrics: Metrics
-        edit: Edition
-        reports: Reports
-        posts: News
+      embed: "<embed>"
+      embed_title: Embed this on your site design
     project_main:
-      share: Share
-      tweet: Tweet
       contribute_project:
         display_status:
-          reached_goal: "This project will be successful and funded in %{date}"
-          not_reached_goal: "This project will only be funded if at least %{goal} are reached before %{date}"
-          failed: "This project has not reached the minimum of %{goal} by %{date} and was not funded"
-          rejected: "This project was not accepted. Cannot perform a backup."
-          in_analysis: "This project is under review and is not yet open to receive support."
-          successful: "This project was successful and was funded on %{date}"
-          waiting_funds: "Awaiting the confirmation of bills to see if this project will be funded."
-          draft: "This project is only a draft and still cannot receive backups."
-        submit: "Support this project"
-      project_by: "design by"
-      funding_period: "Campaign period"
-      project_header:
-        subtitle_html: "A project of %{link}"
-        without_city: "A project of"
-        with_city: "A project of %{discussion.category_name} for %{author} in %{city}"
-      menu:
-        about: About
-        add_reward: "Add reward"
-        comments: Comments
-        contributions: Support
-        metrics: Metrics
-        edit: Edition
-        reports: Reports
-        posts: News
-      no_rewards_warning: "Do not travel! Think about how you will deliver them and put all of this in the budget. Promised?! OBEY! :D"
-      no_rewards_warning_title: "Create here your rewards"
+          draft: This project is only a draft and still cannot receive backups.
+          failed: This project has not reached the minimum of %{goal} by %{date} and was not funded
+          in_analysis: This project is under review and is not yet open to receive support.
+          not_reached_goal: This project will only be funded if at least %{goal} are reached before %{date}
+          reached_goal: This project will be successful and funded in %{date}
+          rejected: This project was not accepted. Cannot perform a backup.
+          successful: This project was successful and was funded on %{date}
+          waiting_funds: Awaiting the confirmation of bills to see if this project will be funded.
+        submit: Support this project
       contribution_states:
         confirmed: Confirmed
-        pending: "Printed slips"
+        pending: Printed slips
+      funding_period: Campaign period
+      menu:
+        about: About
+        add_reward: Add reward
+        comments: Comments
+        contributions: Support
+        edit: Edition
+        metrics: Metrics
+        posts: News
+        reports: Reports
+      no_rewards_warning: Do not travel! Think about how you will deliver them and put all of this in the budget. Promised?! OBEY! :D
+      no_rewards_warning_title: Create here your rewards
+      project_by: design by
+      project_header:
+        subtitle_html: A project of %{link}
+        with_city: A project of %{discussion.category_name} for %{author} in %{city}
+        without_city: A project of
+      share: Share
       sidebar:
         contributions: support
-        goal: "goal %{total}"
+        goal: goal %{total}
+      tweet: Tweet
+    project_reports:
+      all_contributions_without_reward: Download report of all supporters who have selected a reward
+      link_reports_confirmed: Download all confirmed supporters report
+      link_reports_waiting_confirmation: Download report of all supporters with billet printed
+      link_reward: Download report of the supporters of the reward of %{value}
+    push_to_online: Your project is online!
+    push_to_online_error: Error when placing the project online. Fill in all required fields.
+    reminder:
+      active_btn: Remind me of this project
+      deactive_btn: I don't want to be remembered
+      ok: Ok! We will send you a reminder via email 48 hours before the end of the campaign
+    send_to_analysis: Your project has been sent to our team.
+    send_to_analysis_error: Error sending project for analysis. Fill in all required fields.
+    show:
+      menu:
+        metrics: Metrics
+        panel_html: "&nbsp; &nbsp; Control Panel"
+        posts: News

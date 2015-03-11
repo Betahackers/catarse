@@ -1,143 +1,144 @@
+---
 en:
   catarse_bootstrap:
     admin:
-      projects:
-        index:
-          meio_de_pagamento: "Means of payment"
       financials:
         index:
-          meio_de_pagamento: "Means of payment"
+          meio_de_pagamento: Means of payment
+      projects:
+        index:
+          meio_de_pagamento: Means of payment
     devise:
       mailer:
         reset_password_instructions:
           pt:
+            abra_os: Hugs,
+            definir_nova_senha: set new password
+            esqueceu_sua_senha_sem: Forgot your password? No problem! Reset by clicking here
             ol: Hello
-            esqueceu_sua_senha_sem: "Forgot your password? No problem! Reset by clicking here"
-            definir_nova_senha: "set new password"
-            se_algum_problema_acontecer: "If there is any problem, reply to this message directly or contact us via e-mail # {mail_to:: CatarseSettings [: email_contact]}"
-            abra_os: "Hugs,"
+            se_algum_problema_acontecer: 'If there is any problem, reply to this message directly or contact us via e-mail # {mail_to:: CatarseSettings [: email_contact]}'
     layouts:
       global_alert:
         aqui: here
-        bem_vindo_a_vers: "Welcome to the beta version of Catharsis. To return to normal version click # {t this.link_to (' this '), url_for (: host ' www.catarse.me ', protocol: ' http '), class: ' link-hidden-white '}"
-        conhe_a_nossa_vers: "Meet our beta version!"
-        que_tal_experimentar_um: "How about trying a new Catharsis? # {t this.link_to ('. conhe_a_nossa_vers '), url_for (: host ' beta.catarse.me '), class: ' link-hidden-white '}"
+        bem_vindo_a_vers: 'Welcome to the beta version of Catharsis. To return to normal version click # {t this.link_to ('' this ''), url_for (: host '' www.catarse.me '', protocol: '' http ''), class: '' link-hidden-white ''}'
+        conhe_a_nossa_vers: Meet our beta version!
+        que_tal_experimentar_um: 'How about trying a new Catharsis? # {t this.link_to (''. conhe_a_nossa_vers ''), url_for (: host '' beta.catarse.me ''), class: '' link-hidden-white ''}'
     pages:
       bad_browser:
-        download_chrome: "Download Chrome"
-        download_firefox: "Download Firefox"
+        download_chrome: Download Chrome
+        download_firefox: Download Firefox
       guides:
-        guia_dos_realizadores: "Directors ' Guide"
-        uma_compila_o_dos: "A compilation of the most important points of a campaign to help you make an amazing and successful project. We hope that this guide will help you develop your idea and succeed in his campaign;)"
         come_ando: Starting
-        sua_hist_ria: "Your story"
-        meta_e_prazo: "Goal and deadline"
-        recompensas: Rewards
+        guia_dos_realizadores: Directors ' Guide
+        meta_e_prazo: Goal and deadline
         mobiliza_o: Mobilization
-        p_s_campanha: "Post campaign"
+        p_s_campanha: Post campaign
+        recompensas: Rewards
+        sua_hist_ria: Your story
+        uma_compila_o_dos: A compilation of the most important points of a campaign to help you make an amazing and successful project. We hope that this guide will help you develop your idea and succeed in his campaign;)
       jobs:
-        trabalhe_conosco: "Work with us"
-        o_financiamento_coletivo_n: "The collective funding continues to grow and the super doCatarse team needs to grow up together. Come be a part of this story with us."
+        o_financiamento_coletivo_n: The collective funding continues to grow and the super doCatarse team needs to grow up together. Come be a part of this story with us.
+        trabalhe_conosco: Work with us
     projects:
-      contributions:
-        show:
-          agora_voc_parte_do: "Now you're part of the group"
-          enquanto_isso_que: ".Meanwhile, how about spreading the idea to their friends?"
-          tweet: Tweet
-          voc_pode_curtir_esses: "You can enjoy these here too"
-          e_por_falar_em: "And speaking of # {@project. category.name _en}, how about learn firsthand new projects in this category whenever they enter here noCatarse?Straight from the oven to your email!"
-          valeu: Thanks;)
-          voc_faz_parte_do: "You're part of the Group of"
-          pessoas_que_querem_tirar: "people who want to take the"
-          do_papel_voc_receber: "the paper! You will receive confirmation of payment by e-mail as soon as it is rendered. You can also track the status of your support"
-          atrav_s_do_seu: "through your profile"
-          compartilhe_o_seu: ".Share your support and increase the chances of projetobater the goal!"
-          compartilhe: Share
-          tu_te: Tweet
-          recomenda_es_de_projetos: "Recommendations for designs for you"
-          curte_a_categoria_project: "Check the category # {@project. category.name _en}? You can receive firsthand and directly in your email when new projects come up!"
-        faq_box:
-          perguntas_frequentes: "Frequently Asked Questions"
-          como_eu_apoio_este: "As I support this project?"
-          primeiro_escolha_o_valor: "First, select the desired value and reward. Then just click on ' review and perform payment ' that we'll redirect you to the next page to complete your payment."
-          quando_o_pagamento_efetivado: "When payment is effected?"
-          se_voc_pagou_com: "If you paid by credit card, the acknowledgment must be on the same day if it was with billet, up to 4 working days."
-          e_se_o_projeto: "And if the project does not reach the goal?"
-          nesse_caso_voc_recebe: "In this case, you get back 100% of what you paid through a refund."
-          se_o_projeto_for: "If the project is funded, how do I get my reward?"
-          quando_sua_recompensa_estiver: "When your reward is ready, # {@project this.link_to. user. display_name, user_path (user @project)} will contact you to arrange delivery."
-        edit:
-          preencha_e_revise_os: "Fill out and review the data for payment"
-          esses_dados_ser_o: "Such information will be reported to the Project Director"
-          endere_o_de_entrega: "Delivery address"
-          pr_ximo_passo: "Next step"
       budget_fields:
         cost: Cost
       card:
         pledged: Pledged
-    users:
-      contribution_row:
-        projetos_que_apoiei: "I supported projects"
-        valor_do_apoio: "Value of support"
-        status_do_apoio: "Support status"
-        recompensa: Reward
-        apoio: "Support:"
-        status_do_apoio_1: "Support status:"
-        cart_o_de_credito: "Credit card"
-        boleto_bancario: "Boleto bancario"
-        aguardando_confirma_o_do: "Awaiting payment confirmation"
-        recompensa_1: "Reward:"
-        estimativa_de_entrega: "Estimated delivery:"
-        selecionou_recompensa: "selected reward"
-      dashboard_billing:
-        cart_es_de_cr: "Credit cards"
-        lembrando_caso_algum_projeto: "Remember: if any project that you have supported"
-        com_cart_o_de: "with Credit Card"
-        n_o_seja_bem: "is not successful, we will effect the reimbursement on the card that you used to support"
-        cart_o: Card
-        operadora: Operator
-        remover: Remove
-        voc_tem_certeza: "are you sure?"
-        dados_banc_rios: "Bank details"
-        caso_algum_projeto_que: "If any project that you have supported <b> with Bank </b> is not successful, we will effect a refund of your payment in the account below."
-      edit:
-        apoiados: Supported
-        criados: Created
-        sobre_voc: "About you"
-        dados_de_acesso: "Access data"
-        notifica_es: Notifications
-        banco_e_cart_es: "And bank cards"
-        ir_para_o_perfil: "Go to the public profile"
-        atividades: Activities
-        voc_ainda_n_o: "You have not yet created any project in Catharsis. Believe in your dreams!"
-        inscreva_um_projeto: "Subscribe to a project!"
-      dashboard_contributions:
-        voc_ainda_n_o: "You still haven't supported any project noCatarse..."
-        projetos_em_andamento: "Projects in progress"
-        projetos_bem_sucedidos: "Successful projects"
-        projetos_n_o_financiados: "Non-funded projects"
-      feeds:
-        feed:
-          postou: "posted:"
-          leia_mais: "Read more"
-          novo_projeto_no_ar: "New project in the air!"
-          categoria: "Category:"
-          foi_bem_sucedido: "was successful!"
-          pledged: Pledged
-          apoiadores: Supporters
-          finalizou_mas_n_o: "finalized but was not funded"
+      contributions:
+        edit:
+          endere_o_de_entrega: Delivery address
+          esses_dados_ser_o: Such information will be reported to the Project Director
+          pr_ximo_passo: Next step
+          preencha_e_revise_os: Fill out and review the data for payment
+        faq_box:
+          como_eu_apoio_este: As I support this project?
+          e_se_o_projeto: And if the project does not reach the goal?
+          nesse_caso_voc_recebe: In this case, you get back 100% of what you paid through a refund.
+          perguntas_frequentes: Frequently Asked Questions
+          primeiro_escolha_o_valor: First, select the desired value and reward. Then just click on ' review and perform payment ' that we'll redirect you to the next page to complete your payment.
+          quando_o_pagamento_efetivado: When payment is effected?
+          quando_sua_recompensa_estiver: 'When your reward is ready, # {@project this.link_to. user. display_name, user_path (user @project)} will contact you to arrange delivery.'
+          se_o_projeto_for: If the project is funded, how do I get my reward?
+          se_voc_pagou_com: If you paid by credit card, the acknowledgment must be on the same day if it was with billet, up to 4 working days.
+        show:
+          agora_voc_parte_do: Now you're part of the group
+          atrav_s_do_seu: through your profile
+          compartilhe: Share
+          compartilhe_o_seu: ".Share your support and increase the chances of projetobater the goal!"
+          curte_a_categoria_project: 'Check the category # {@project. category.name _en}? You can receive firsthand and directly in your email when new projects come up!'
+          do_papel_voc_receber: the paper! You will receive confirmation of payment by e-mail as soon as it is rendered. You can also track the status of your support
+          e_por_falar_em: 'And speaking of # {@project. category.name _en}, how about learn firsthand new projects in this category whenever they enter here noCatarse?Straight from the oven to your email!'
+          enquanto_isso_que: ".Meanwhile, how about spreading the idea to their friends?"
+          pessoas_que_querem_tirar: people who want to take the
+          recomenda_es_de_projetos: Recommendations for designs for you
+          tu_te: Tweet
+          tweet: Tweet
+          valeu: Thanks;)
+          voc_faz_parte_do: You're part of the Group of
+          voc_pode_curtir_esses: You can enjoy these here too
     shared:
       user_menu:
-        minhas_coisas: "My stuff"
-        hist_rico_de_apoios: "Support history"
-        projetos_criados: "Projects created"
-        atividade: Activity
-        configura_es: Settings
-        sobre_voc: "About you"
-        notifica_es: Notifications
-        dados_de_acesso: "Access data"
-        banco_e_cart_es: "And bank cards"
-        projetos_apoiados: "Projects supported"
-        ver_todos: "View all"
         admin: Admin
-        voc_est_logado_como: "You are logged in as"
+        atividade: Activity
+        banco_e_cart_es: And bank cards
+        configura_es: Settings
+        dados_de_acesso: Access data
+        hist_rico_de_apoios: Support history
+        minhas_coisas: My stuff
+        notifica_es: Notifications
+        projetos_apoiados: Projects supported
+        projetos_criados: Projects created
+        sobre_voc: About you
+        ver_todos: View all
+        voc_est_logado_como: You are logged in as
+    users:
+      contribution_row:
+        aguardando_confirma_o_do: Awaiting payment confirmation
+        apoio: 'Support:'
+        boleto_bancario: Boleto bancario
+        cart_o_de_credito: Credit card
+        estimativa_de_entrega: 'Estimated delivery:'
+        projetos_que_apoiei: I supported projects
+        recompensa: Reward
+        recompensa_1: 'Reward:'
+        selecionou_recompensa: selected reward
+        status_do_apoio: Support status
+        status_do_apoio_1: 'Support status:'
+        valor_do_apoio: Value of support
+      dashboard_billing:
+        cart_es_de_cr: Credit cards
+        cart_o: Card
+        caso_algum_projeto_que: If any project that you have supported <b> with Bank </b> is not successful, we will effect a refund of your payment in the account below.
+        com_cart_o_de: with Credit Card
+        dados_banc_rios: Bank details
+        lembrando_caso_algum_projeto: 'Remember: if any project that you have supported'
+        n_o_seja_bem: is not successful, we will effect the reimbursement on the card that you used to support
+        operadora: Operator
+        remover: Remove
+        voc_tem_certeza: are you sure?
+      dashboard_contributions:
+        projetos_bem_sucedidos: Successful projects
+        projetos_em_andamento: Projects in progress
+        projetos_n_o_financiados: Non-funded projects
+        voc_ainda_n_o: You still haven't supported any project noCatarse...
+      edit:
+        apoiados: Supported
+        atividades: Activities
+        banco_e_cart_es: And bank cards
+        criados: Created
+        dados_de_acesso: Access data
+        inscreva_um_projeto: Subscribe to a project!
+        ir_para_o_perfil: Go to the public profile
+        notifica_es: Notifications
+        sobre_voc: About you
+        voc_ainda_n_o: You have not yet created any project in Catharsis. Believe in your dreams!
+      feeds:
+        feed:
+          apoiadores: Supporters
+          categoria: 'Category:'
+          finalizou_mas_n_o: finalized but was not funded
+          foi_bem_sucedido: was successful!
+          leia_mais: Read more
+          novo_projeto_no_ar: New project in the air!
+          pledged: Pledged
+          postou: 'posted:'

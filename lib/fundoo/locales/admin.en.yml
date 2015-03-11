@@ -1,386 +1,413 @@
+---
 en:
   admin:
-    filter:
-      title: Filters
-    confirm_dialog: "You are sure?"
-    financials:
-      index:
-        id: ID
-        name: Title
-        user: "User MoIP"
-        user_id: "User ID"
-        goal: Meta
-        total_payment_service_fee: "Rate of MP"
-        total_catarse_fee: "Rate of Catharsis"
-        zero_fee: "No support fee?"
-        repass_value: "Vl. Pass-through"
-        expires_at: Finalizes
-        online_date: "Went on the air"
-        pledged: Achieved
-        recommended: Recommended?
-        state: State
-        menu: "Rel. Money"
-        title: "Financial reports"
-        contribution_report: "Supporters report"
-        search_report: "Search report"
-        total_projects: projects
-        submit: Filter
-        by_state: "By state"
-        between_expires_at: "Expire between"
-        by_progress: "By progress %"
-        details:
-          name: "Corporate name"
-          bank_data: "Banking data"
-          document: CPF/CNPJ
-          email: Email
-          state_inscription: "State affiliations"
-          address: Address
-          phone_number: Phone
-          permalink: "Project Permalink"
-    projects:
-      index:
-        with_state: "By State"
-        by_category: "By category"
-        project: Project
-        user: User
-        between_created_at: "Created at between"
-        goal_between: "Come between"
-        between_expires_at: "Expire between"
-        between_online_date: "Entered in the air between"
-        between_updated_at: "Updated between"
-        by_user_email: "Director's e-mail"
-        id: ID
-        name: Title
-        send_to_trash: Delete
-        send_to_draft: "Send to DRAFT!"
-        reject: Reject!
-        approve: Approve!
-        user_id: "User ID"
-        goal: Meta
-        total_contributions: Support
-        online_date: "Went on the air"
-        pledged: Achieved
-        recommended: Recommended?
-        state: State
-        no_projects: "No project found"
-        menu: "Admin projects"
-        title: "Project management"
-        total_projects: projects
-        submit: Filter
-        expires_at: "Ends in"
-        category: Category
-        order_table: "Sort table"
-        order_date: "Date of shipment"
-        order_asc: "Goal asc"
-        order_desc: "Goal desc"
-        order_created_at: "Submission date"
-        last_modification: "Last update"
     actions:
       confirm: Confirm
-    users:
+    confirm_dialog: You are sure?
+    contributions:
       index:
-        title: "Management contributions"
-        menu: Users
-        credits: Credits
-        credits_view: "Calculated credits"
+        acquirer: Operator
+        anonymous: Anonymous?
+        between_values: Values between
+        by_state: State
+        cancel: Cancel contribution
+        confirm_contribution: Confirm support
+        confirmed: Confirmed?
+        contribution: Support
+        contribution_info: Infos sur le bailleur %{key}
+        created_at: Created at
+        credits: Crédits utilisés
+        credits_html: Used credits? &nbsp;
+        details:
+          acquirer_name: Card carrier
+          acquirer_tid: TID Operator
+          created_at: Initiated in
+          installments: Parcels
+          normal_email: Email at Catharsis
+          payer_email: E-mail of the means of payment
+          payment_choice: Payment option
+          payment_id: Payment ID
+          payment_method: Means of payment
         id: ID
         key: Key
+        menu: Contributions
+        no_contributions: No contributions found.
+        no_reward: No reward
+        payer_email: Payer email
+        payment_choice: Payment choice
+        payment_fee: Payment method fee
+        payment_id: Payment ID
+        payment_method: Méthode de paiement
+        payment_tax: Fee payment method
+        pending_to_refund: Pending to refund
+        placeholders:
+          acquirer: Name of the card carrier
+          payment_id: Key means of payment ID or TID operator '
+          project: Permalink or project name
+          user: ID, name, Email or payment Email
+        project: Project
+        project_state: Project state
+        push_to_trash: Delete contribution
+        refund_and_hide: Refund and hide
+        refund_contribution: Reverse support
+        refunded: Refunded?
+        request_refund: Direct reimbursement request
+        requested_refund: Requested refund?
+        reward: Reward
+        send_refund_request_contribution: Send refund request
+        state: State
         submit: Search
-        has_credits_difference: "Discrepancy in credits"
+        title: Contributions management
         total_contributed: contributed
+        total_contribution: support
         total_contributions: contributions
-        total_users: users
-        total_credits: credits
-        total_credits_view: "calculated credits"
+        total_contributors: contributors
+        total_users: Users
+        unconfirm_contribution: Desconfirmar support
         user: User
+        user_email: Catarse user email
         value: Value
-        payer_email: "Payment email"
-        provider: Provider
-    contributions:
       messages:
         successful:
-          confirm: "Contribution confirmed!"
-          pendent: "Contribution unconfirmed!"
-          refund: "Contribution refunded!"
-          change_reward: "Reward changed!"
-          hide: "Contribution hidden!"
-          cancel: "Contribution canceled!"
-          push_to_trash: "Contribution deleted!"
+          cancel: Contribution canceled!
+          change_reward: Reward changed!
+          confirm: Contribution confirmed!
+          hide: Contribution hidden!
+          pendent: Contribution unconfirmed!
+          push_to_trash: Contribution deleted!
+          refund: Contribution refunded!
       show:
-        contribution_info: "Contribution information% {key}"
-        payment_id: "Payment ID"
-        payment_method: "Means of payment"
-        payment_fee: "Rate of payment"
+        contribution_info: Contribution information% {key}
+        created_at: Initiated in
+        payer_email: Email used for the means of payment
+        payment_choice: Payment option
+        payment_fee: Rate of payment
+        payment_id: Payment ID
+        payment_method: Means of payment
         successful: successful
-        payment_choice: "Payment option"
-        payer_email: "Email used for the means of payment"
-        user_email: "Email used in catharsis"
-        created_at: "Initiated in"
+        user_email: Email used in catharsis
+    financials:
       index:
+        between_expires_at: Expire between
+        by_progress: By progress %
+        by_state: By state
+        contribution_report: Supporters report
         details:
-          payer_email: "E-mail of the means of payment"
-          normal_email: "Email at Catharsis"
-          payment_id: "Payment ID"
-          acquirer_tid: "TID Operator"
-          payment_method: "Means of payment"
-          payment_choice: "Payment option"
-          acquirer_name: "Card carrier"
-          installments: Parcels
-          created_at: "Initiated in"
-        placeholders:
-          project: "Permalink or project name"
-          acquirer: "Name of the card carrier"
-          user: "ID, name, Email or payment Email"
-          payment_id: "Key means of payment ID or TID operator '"
-        acquirer: Operator
-        payment_tax: "Fee payment method"
-        project_state: "Project state"
-        send_refund_request_contribution: "Send refund request"
-        payer_email: "Payer email"
-        payment_id: "Payment ID"
-        user_email: "Catarse user email"
-        push_to_trash: "Delete contribution"
-        cancel: "Cancel contribution"
-        between_values: "Values between"
-        by_state: State
-        refund_and_hide: "Refund and hide"
-        pending_to_refund: "Pending to refund"
-        confirm_contribution: "Confirm support"
-        unconfirm_contribution: "Desconfirmar support"
-        refund_contribution: "Reverse support"
-        request_refund: "Direct reimbursement request"
-        title: "Contributions management"
-        state: State
-        menu: Contributions
-        anonymous: Anonymous?
-        contribution: Support
-        confirmed: Confirmed?
-        credits_html: "Used credits? &nbsp;"
+          address: Address
+          bank_data: Banking data
+          document: CPF/CNPJ
+          email: Email
+          name: Corporate name
+          permalink: Project Permalink
+          phone_number: Phone
+          state_inscription: State affiliations
+        expires_at: Finalizes
+        goal: Meta
         id: ID
-        key: Key
-        no_contributions: "No contributions found."
+        menu: Rel. Money
+        name: Title
+        online_date: Went on the air
+        pledged: Achieved
+        recommended: Recommended?
+        repass_value: Vl. Pass-through
+        search_report: Search report
+        state: State
+        submit: Filter
+        title: Financial reports
+        total_catarse_fee: Rate of Catharsis
+        total_payment_service_fee: Rate of MP
+        total_projects: projects
+        user: User MoIP
+        user_id: User ID
+        zero_fee: No support fee?
+    projects:
+      index:
+        approve: Approve!
+        between_created_at: Created at between
+        between_expires_at: Expire between
+        between_online_date: Entered in the air between
+        between_updated_at: Updated between
+        by_category: By category
+        by_state: Par état
+        by_user_email: Director's e-mail
+        category: Category
+        expires_at: Ends in
+        goal: Meta
+        goal_between: Come between
+        id: ID
+        last_modification: Last update
+        menu: Admin projects
+        name: Title
+        no_projects: No project found
+        online_date: Went on the air
+        order_asc: Goal asc
+        order_created_at: Submission date
+        order_date: Date of shipment
+        order_desc: Goal desc
+        order_table: Sort table
+        pledged: Achieved
         project: Project
-        refunded: Refunded?
-        requested_refund: "Requested refund?"
-        reward: Reward
-        no_reward: "No reward"
-        submit: Search
-        total_contributed: contributed
-        total_contributions: contributions
-        total_contribution: support
-        total_users: Users
+        recommended: Recommended?
+        reject: Reject!
+        send_to_draft: Send to DRAFT!
+        send_to_trash: Delete
+        state: State
+        submit: Filter
+        title: Project management
+        total_contributions: Support
+        total_projects: projects
         user: User
-        value: Value
+        user_id: User ID
+        with_state: By State
     statistics:
+      charts:
+        current_period: Latest 8 without.
+        last_year: Previous year
+      contributions_by_week:
+        current_period: 8 dernières semaines
+        last_year: L'an dernier
+        previous_period: les 8 semaines passées
+        title: Contributed value confirmed per week
       index:
         menu: Statistics
         title: Statistics
-        total_users: Users
+        total_contributed: Contributed
         total_contributions: Contributions
         total_contributors: Contributors
-        total_contributed: Contributed
         total_projects: Projects
-        total_projects_success: Successful
         total_projects_online: Online
-      projects_in_analysis_by_week:
-        title: "Projects submitted for curation per week"
+        total_projects_success: Successful
+        total_users: Users
       projects_by_week:
-        title: "Projects sent per week"
-      contributions_by_week:
-        title: "Contributed value confirmed per week"
-      charts:
-        current_period: "Latest 8 without."
-        last_year: "Previous year"
+        current_period: 8 dernières semaines
+        last_year: L'an dernier
+        previous_period: les 8 semaines passées
+        title: Projects sent per week
+      projects_in_analysis_by_week:
+        title: Projects submitted for curation per week
+    users:
+      index:
+        credits: Credits
+        credits_view: Calculated credits
+        has_credits_difference: Discrepancy in credits
+        id: ID
+        key: Key
+        menu: Users
+        payer_email: Payment email
+        provider: Provider
+        submit: Search
+        title: Management contributions
+        total_contributed: contributed
+        total_contributions: contributions
+        total_contributors: contributors
+        total_credits: credits
+        total_credits_view: calculated credits
+        total_users: users
+        user: User
+        value: Value
   channels:
     admin:
-      filter:
-        title: Filters
-      confirm_dialog: "You are sure?"
-      financials:
-        index:
-          id: ID
-          name: Title
-          user: "User MoIP"
-          user_id: "User ID"
-          goal: Meta
-          total_payment_service_fee: "Rate of MP"
-          total_catarse_fee: "Rate of Catharsis"
-          zero_fee: "No support fee?"
-          repass_value: "Vl. Pass-through"
-          expires_at: Finalizes
-          online_date: "Went on the air"
-          pledged: Achieved
-          recommended: Recommended?
-          state: State
-          menu: "Rel. Money"
-          title: "Financial reports"
-          contribution_report: "Supporters report"
-          search_report: "Search report"
-          total_projects: projects
-          submit: Filter
-          by_state: "By state"
-          between_expires_at: "Expire between"
-          by_progress: "By progress %"
-          details:
-            name: "Corporate name"
-            bank_data: "Banking data"
-            document: CPF/CNPJ
-            email: Email
-            state_inscription: "State affiliations"
-            address: Address
-            phone_number: Phone
-            permalink: "Project Permalink"
-      projects:
-        index:
-          with_state: "By State"
-          by_category: "By category"
-          project: Project
-          user: User
-          between_created_at: "Created at between"
-          goal_between: "Come between"
-          between_expires_at: "Expire between"
-          between_online_date: "Entered in the air between"
-          between_updated_at: "Updated between"
-          by_user_email: "Director's e-mail"
-          id: ID
-          name: Title
-          send_to_trash: Delete
-          send_to_draft: "Send to DRAFT!"
-          reject: Reject!
-          approve: Approve!
-          user_id: "User ID"
-          goal: Meta
-          total_contributions: Support
-          online_date: "Went on the air"
-          pledged: Achieved
-          recommended: Recommended?
-          state: State
-          no_projects: "No project found"
-          menu: "Admin projects"
-          title: "Project management"
-          total_projects: projects
-          submit: Filter
-          expires_at: "Ends in"
-          category: Category
-          order_table: "Sort table"
-          order_date: "Date of shipment"
-          order_asc: "Goal asc"
-          order_desc: "Goal desc"
-          order_created_at: "Submission date"
-          last_modification: "Last update"
       actions:
         confirm: Confirm
-      users:
+      confirm_dialog: You are sure?
+      contributions:
         index:
-          title: "Management contributions"
-          menu: Users
-          credits: Credits
-          credits_view: "Calculated credits"
+          acquirer: Operator
+          anonymous: Anonymous?
+          between_values: Values between
+          by_state: State
+          cancel: Cancel contribution
+          confirm_contribution: Confirm support
+          confirmed: Confirmed?
+          contribution: Support
+          contribution_info: Infos sur le bailleur %{key}
+          created_at: Created at
+          credits: Crédits utilisés
+          credits_html: Used credits? &NBSP;
+          details:
+            acquirer_name: Card carrier
+            acquirer_tid: TID Operator
+            created_at: Initiated in
+            installments: Parcels
+            normal_email: Email at Catharsis
+            payer_email: E-mail of the means of payment
+            payment_choice: Payment option
+            payment_id: Payment ID
+            payment_method: Means of payment
           id: ID
           key: Key
+          menu: Contributions
+          no_contributions: No contributions found.
+          no_reward: No reward
+          payer_email: Payer email
+          payment_choice: Payment choice
+          payment_fee: Payment method fee
+          payment_id: Payment ID
+          payment_method: Méthode de paiement
+          payment_tax: Fee payment method
+          pending_to_refund: Pending to refund
+          placeholders:
+            acquirer: Name of the card carrier
+            payment_id: Key means of payment ID or TID operator '
+            project: Permalink or project name
+            user: ID, name, Email or payment Email
+          project: Project
+          project_state: Project state
+          push_to_trash: Delete contribution
+          refund_and_hide: Refund and hide
+          refund_contribution: Reverse support
+          refunded: Refunded?
+          request_refund: Direct reimbursement request
+          requested_refund: Requested refund?
+          reward: Reward
+          send_refund_request_contribution: Send refund request
+          state: State
           submit: Search
-          has_credits_difference: "Discrepancy in credits"
+          title: Contributions management
           total_contributed: contributed
+          total_contribution: support
           total_contributions: contributions
-          total_users: users
-          total_credits: credits
-          total_credits_view: "calculated credits"
+          total_contributors: contributors
+          total_users: Users
+          unconfirm_contribution: Desconfirmar support
           user: User
+          user_email: Catarse user email
           value: Value
-          payer_email: "Payment email"
-          provider: Provider
-      contributions:
         messages:
           successful:
-            confirm: "Contribution confirmed!"
-            pendent: "Contribution unconfirmed!"
-            refund: "Contribution refunded!"
-            change_reward: "Reward changed!"
-            hide: "Contribution hidden!"
-            cancel: "Contribution canceled!"
-            push_to_trash: "Contribution deleted!"
+            cancel: Contribution canceled!
+            change_reward: Reward changed!
+            confirm: Contribution confirmed!
+            hide: Contribution hidden!
+            pendent: Contribution unconfirmed!
+            push_to_trash: Contribution deleted!
+            refund: Contribution refunded!
         show:
-          contribution_info: "Contribution information% {key}"
-          payment_id: "Payment ID"
-          payment_method: "Means of payment"
-          payment_fee: "Rate of payment"
+          contribution_info: Contribution information% {key}
+          created_at: Initiated in
+          payer_email: Email used for the means of payment
+          payment_choice: Payment option
+          payment_fee: Rate of payment
+          payment_id: Payment ID
+          payment_method: Means of payment
           successful: successful
-          payment_choice: "Payment option"
-          payer_email: "Email used for the means of payment"
-          user_email: "Email used in catharsis"
-          created_at: "Initiated in"
+          user_email: Email used in catharsis
+      financials:
         index:
+          between_expires_at: Expire between
+          by_progress: By progress %
+          by_state: By state
+          contribution_report: Supporters report
           details:
-            payer_email: "E-mail of the means of payment"
-            normal_email: "Email at Catharsis"
-            payment_id: "Payment ID"
-            acquirer_tid: "TID Operator"
-            payment_method: "Means of payment"
-            payment_choice: "Payment option"
-            acquirer_name: "Card carrier"
-            installments: Parcels
-            created_at: "Initiated in"
-          placeholders:
-            project: "Permalink or project name"
-            acquirer: "Name of the card carrier"
-            user: "ID, name, Email or payment Email"
-            payment_id: "Key means of payment ID or TID operator '"
-          acquirer: Operator
-          payment_tax: "Fee payment method"
-          project_state: "Project state"
-          send_refund_request_contribution: "Send refund request"
-          payer_email: "Payer email"
-          payment_id: "Payment ID"
-          user_email: "Catarse user email"
-          push_to_trash: "Delete contribution"
-          cancel: "Cancel contribution"
-          between_values: "Values between"
-          by_state: State
-          refund_and_hide: "Refund and hide"
-          pending_to_refund: "Pending to refund"
-          confirm_contribution: "Confirm support"
-          unconfirm_contribution: "Desconfirmar support"
-          refund_contribution: "Reverse support"
-          request_refund: "Direct reimbursement request"
-          title: "Contributions management"
-          state: State
-          menu: Contributions
-          anonymous: Anonymous?
-          contribution: Support
-          confirmed: Confirmed?
-          credits_html: "Used credits? &NBSP;"
+            address: Address
+            bank_data: Banking data
+            document: CPF/CNPJ
+            email: Email
+            name: Corporate name
+            permalink: Project Permalink
+            phone_number: Phone
+            state_inscription: State affiliations
+          expires_at: Finalizes
+          goal: Meta
           id: ID
-          key: Key
-          no_contributions: "No contributions found."
+          menu: Rel. Money
+          name: Title
+          online_date: Went on the air
+          pledged: Achieved
+          recommended: Recommended?
+          repass_value: Vl. Pass-through
+          search_report: Search report
+          state: State
+          submit: Filter
+          title: Financial reports
+          total_catarse_fee: Rate of Catharsis
+          total_payment_service_fee: Rate of MP
+          total_projects: projects
+          user: User MoIP
+          user_id: User ID
+          zero_fee: No support fee?
+      projects:
+        index:
+          approve: Approve!
+          between_created_at: Created at between
+          between_expires_at: Expire between
+          between_online_date: Entered in the air between
+          between_updated_at: Updated between
+          by_category: By category
+          by_state: Par état
+          by_user_email: Director's e-mail
+          category: Category
+          expires_at: Ends in
+          goal: Meta
+          goal_between: Come between
+          id: ID
+          last_modification: Last update
+          menu: Admin projects
+          name: Title
+          no_projects: No project found
+          online_date: Went on the air
+          order_asc: Goal asc
+          order_created_at: Submission date
+          order_date: Date of shipment
+          order_desc: Goal desc
+          order_table: Sort table
+          pledged: Achieved
           project: Project
-          refunded: Refunded?
-          requested_refund: "Requested refund?"
-          reward: Reward
-          no_reward: "No reward"
-          submit: Search
-          total_contributed: contributed
-          total_contributions: contributions
-          total_contribution: support
-          total_users: Users
+          recommended: Recommended?
+          reject: Reject!
+          send_to_draft: Send to DRAFT!
+          send_to_trash: Delete
+          state: State
+          submit: Filter
+          title: Project management
+          total_contributions: Support
+          total_projects: projects
           user: User
-          value: Value
+          user_id: User ID
+          with_state: By State
       statistics:
+        charts:
+          current_period: Latest 8 without.
+          last_year: Previous year
+        contributions_by_week:
+          current_period: 8 dernières semaines
+          last_year: L'an dernier
+          previous_period: les 8 semaines passées
+          title: Contributed value confirmed per week
         index:
           menu: Statistics
           title: Statistics
-          total_users: Users
+          total_contributed: Contributed
           total_contributions: Contributions
           total_contributors: Contributors
-          total_contributed: Contributed
           total_projects: Projects
-          total_projects_success: Successful
           total_projects_online: Online
-        projects_in_analysis_by_week:
-          title: "Projects submitted for curation per week"
+          total_projects_success: Successful
+          total_users: Users
         projects_by_week:
-          title: "Projects sent per week"
-        contributions_by_week:
-          title: "Contributed value confirmed per week"
-        charts:
-          current_period: "Latest 8 without."
-          last_year: "Previous year"
+          current_period: 8 dernières semaines
+          last_year: L'an dernier
+          previous_period: les 8 semaines passées
+          title: Projects sent per week
+        projects_in_analysis_by_week:
+          title: Projects submitted for curation per week
+      users:
+        index:
+          credits: Credits
+          credits_view: Calculated credits
+          has_credits_difference: Discrepancy in credits
+          id: ID
+          key: Key
+          menu: Users
+          payer_email: Payment email
+          provider: Provider
+          submit: Search
+          title: Management contributions
+          total_contributed: contributed
+          total_contributions: contributions
+          total_contributors: contributors
+          total_credits: credits
+          total_credits_view: calculated credits
+          total_users: users
+          user: User
+          value: Value
