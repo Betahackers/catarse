@@ -77,7 +77,7 @@ en:
           push_to_trash: Contribution deleted!
           refund: Contribution refunded!
       show:
-        contribution_info: Contribution information% {key}
+        contribution_info: Contribution information %{key}
         created_at: Initiated in
         payer_email: Email used for the means of payment
         payment_choice: Payment option
@@ -283,7 +283,7 @@ en:
             push_to_trash: Contribution deleted!
             refund: Contribution refunded!
         show:
-          contribution_info: Contribution information% {key}
+          contribution_info: Contribution information %{key}
           created_at: Initiated in
           payer_email: Email used for the means of payment
           payment_choice: Payment option
