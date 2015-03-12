@@ -84,14 +84,10 @@ class Projects::ContributionsController < ApplicationController
   end
 
   def avaiable_payment_engines
-    @engines ||= if parent.using_pagarme?
-      [PaymentEngines.find_engine('Pagarme')].compact
-    else
-      PaymentEngines.engines.inject([]) do |total, item|
+    @engines ||= PaymentEngines.engines.inject([]) do |total, item|
         total << item unless item.name == 'Pagarme'
         total
       end
-    end
   end
 
   def collection
