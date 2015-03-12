@@ -844,7 +844,7 @@ en:
           title: Oohh yeah!
         no_reward: Thanks. I just want to help the project.
         submit: Review and proceed to checkout
-        title: Contribution %{name}
+        title: Contribution
       review:
         error: Ooops. There was an error while registering your back. Please try again.
       show:
@@ -860,7 +860,7 @@ en:
       success: Your project was successfully created! We'll soon contact you. Thanks a lot!
     form:
       add_reward: Add reward
-      important_html: Please notice that Catarse will charge 13% if your project is successful. Add this values to your budget in order to execute your project with no surprises.
+      important_html: #Please notice that Catarse will charge 13% if your project is successful. Add this values to your budget in order to execute your project with no surprises.
       permalink_hint: Simplify the URL of your project. Think that your sponsor need to remember the address to share your project.
       project_warning:
         content_html: Want to have your project selected? Don't forget to read %{link}.

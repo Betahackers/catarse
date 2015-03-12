@@ -8,7 +8,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   end
 
   def self.choose_storage
-    ENV['AWS_ACCESS_KEY_ID'] ? :fog : :file
+    ENV['AWS_ACCESS_KEY_ID'] && Rails.env.production? ? :fog : :file
   end
 
   storage choose_storage

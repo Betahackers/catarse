@@ -126,7 +126,7 @@ RSpec.describe Contribution::PaymentEngineHandler, type: :model do
     let(:contribution) { create(:contribution) }
     let(:contribution_attributes) {
       {
-        country_id: (contribution.country_id || user.country_id),
+        country: (contribution.country || user.country),
         address_street: (contribution.address_street || user.address_street),
         address_number: (contribution.address_number || user.address_number),
         address_complement: (contribution.address_complement || user.address_complement),

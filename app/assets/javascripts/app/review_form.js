@@ -4,7 +4,7 @@ App.addChild('ReviewForm', _.extend({
   events: {
     'blur input' : 'checkInput',
     'change #contribution_address_state' : 'checkInput',
-    'change #contribution_country_id' : 'onCountryChange',
+    'change #contribution_country' : 'onCountryChange',
     'change #contribution_anonymous' : 'toggleAnonymousConfirmation',
     'click #next-step' : 'onNextStepClick',
   },
@@ -35,8 +35,8 @@ App.addChild('ReviewForm', _.extend({
   },
 
   internationalAddress: function(){
-    this.$state.data('old_value', this.$state.val());
-    this.$state.val('outro / other')
+    // this.$state.data('old_value', this.$state.val());
+    // this.$state.val('outro / other')
     this.makeFieldsOptional();
   },
 
@@ -59,7 +59,7 @@ App.addChild('ReviewForm', _.extend({
   },
 
   activate: function(){
-    this.$country = this.$('#contribution_country_id');
+    this.$country = this.$('#contribution_country');
     if(this.$country.val() === ''){
       this.$country.val('36');
     }
@@ -71,7 +71,7 @@ App.addChild('ReviewForm', _.extend({
 
   updateContribution: function(){
     var contribution_data = {
-      country_id: this.$('#contribution_country_id').val(),
+      country: this.$('#contribution_country').val(),
       payer_name: this.$('#contribution_full_name').val(),
       payer_email: this.$('#contribution_email').val(),
       payer_document: this.$('#contribution_payer_document').val(),

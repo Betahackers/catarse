@@ -36,7 +36,7 @@ App.addChild('Payment', _.extend({
   },
 
   loadPaymentChoices: function() {
-    if($('#contribution_country_id').val() == '36') {
+    if($('#contribution_country').val() == '36') {
       this.$('#MoIP').show();
       this.onTabClick({currentTarget: this.$('.nav-tab:first')});
     } else {

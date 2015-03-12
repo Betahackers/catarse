@@ -110,7 +110,7 @@ class ProjectsController < ApplicationController
     @rewards = @project.rewards.build unless @rewards.present?
     @budget = resource.budgets.build
 
-    resource.build_account unless resource.account
+    # resource.build_account unless resource.account
   end
 
   def resource_action action_name

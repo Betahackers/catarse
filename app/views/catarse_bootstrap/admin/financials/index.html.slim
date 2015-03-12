@@ -80,31 +80,31 @@
                 span.label.label-warning= project.state
               - else
                 span.label= project.state
-          tr class='detail_tr' id="project_details-#{project.id}"
-            td colspan='11'
-              table style='border: 1px #ededed solid'
-                thead
-                  th style='width: 350px'= t('.details.bank_data')
-                  th= t('.details.name')
-                  th= t('.details.document')
-                  th= t('.details.email')
-                  th= t('.details.state_inscription')
-                  th= t('.details.address')
-                  th= t('.details.phone_number')
-                  th= t('.details.permalink')
-                tbody
-                  tr
-                    td
-                      = project.account.try(:decorate).try(:display_bank_account)
-                      br/
-                      = project.account.try(:decorate).try(:display_bank_account_owner)
-                    td= project.account.try(:decorate).try(:display_name)
-                    td= project.account.try(:cpf)
-                    td= project.account.try(:email)
-                    td= project.account.try(:state_inscription)
-                    td= project.account.try(:decorate).try(:display_address)
-                    td= project.account.try(:phone_number)
-                    td= link_to project.permalink, project_by_slug_path(permalink: project.permalink), target: '_blank'
+          / tr class='detail_tr' id="project_details-#{project.id}"
+          /   td colspan='11'
+          /     table style='border: 1px #ededed solid'
+          /       thead
+          /         th style='width: 350px'= t('.details.bank_data')
+          /         th= t('.details.name')
+          /         th= t('.details.document')
+          /         th= t('.details.email')
+          /         th= t('.details.state_inscription')
+          /         th= t('.details.address')
+          /         th= t('.details.phone_number')
+          /         th= t('.details.permalink')
+          /       tbody
+          /         tr
+          /           td
+          /             = project.account.try(:decorate).try(:display_bank_account)
+          /             br/
+          /             = project.account.try(:decorate).try(:display_bank_account_owner)
+          /           td= project.account.try(:decorate).try(:display_name)
+          /           td= project.account.try(:cpf)
+          /           td= project.account.try(:email)
+          /           td= project.account.try(:state_inscription)
+          /           td= project.account.try(:decorate).try(:display_address)
+          /           td= project.account.try(:phone_number)
+          /           td= link_to project.permalink, project_by_slug_path(permalink: project.permalink), target: '_blank'
 
   = paginate @projects
 = render 'shared/footer'

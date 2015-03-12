@@ -22,7 +22,7 @@ class User < ActiveRecord::Base
     :image_url, :uploaded_image, :bio, :newsletter, :full_name, :address_street, :address_number,
     :address_complement, :address_neighbourhood, :address_city, :address_state, :address_zip_code, :phone_number,
     :cpf, :state_inscription, :locale, :twitter, :facebook_link, :other_link, :moip_login, :deactivated_at, :reactivate_token,
-    :bank_account_attributes, :country_id, :zero_credits, :links_attributes, :about, :cover_image, :category_followers_attributes, :category_follower_ids
+    :bank_account_attributes, :country, :zero_credits, :links_attributes, :about, :cover_image, :category_followers_attributes, :category_follower_ids
 
   mount_uploader :uploaded_image, UserUploader
   mount_uploader :cover_image, CoverUploader
@@ -38,7 +38,7 @@ class User < ActiveRecord::Base
   validates_confirmation_of :password, if: :password_confirmation_required?
   validates_length_of :password, within: Devise.password_length, allow_blank: true
 
-  belongs_to :country
+  # belongs_to :country
   has_one :user_total
   has_one :bank_account, dependent: :destroy
   has_many :feeds, class_name: 'UserFeed'
