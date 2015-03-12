@@ -25,7 +25,8 @@ module Project::PaymentEngineHandler
     end
 
     def using_pagarme?
-      Project.enabled_to_use_pagarme.include?(self)
+      # Project.enabled_to_use_pagarme.include?(self)
+      false
     end
   end
 end
