@@ -4,6 +4,7 @@ CarrierWave.configure do |config|
       provider: 'AWS',
       # host: 's3.amazonaws.com',
       # endpoint: 'http://s3.amazonaws.com',
+      region: 'eu-west-1',
       aws_access_key_id: ENV['AWS_ACCESS_KEY_ID'] || 'AWS_ACCESS_KEY_ID' ,
       aws_secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'] || 'AWS_SECRET_ACCESS_KEY'
     }
@@ -28,3 +29,5 @@ module CarrierWave
 
   end
 end
+
+
