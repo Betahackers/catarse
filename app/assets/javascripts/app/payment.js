@@ -32,7 +32,7 @@ App.addChild('Payment', _.extend({
   },
 
   selectInternationalPayment: function() {
-    this.onTabClick({currentTarget: this.$('#PayPal')});
+    this.onTabClick({currentTarget: this.$('#OfflinePayment')});
   },
 
   loadPaymentChoices: function() {

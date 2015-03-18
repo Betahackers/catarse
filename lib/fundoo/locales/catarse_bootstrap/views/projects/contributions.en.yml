@@ -50,6 +50,7 @@ en:
         Credits: Credits
         MoIP: Moip
         PayPal: Paypal
+        OfflinePayment: OfflinePayment
       selected_reward:
         edit: Edit
         review_without_reward_html: You will be supporting with <strong> %{value} </strong> and doesn't want any reward for their support.

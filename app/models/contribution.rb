@@ -17,7 +17,7 @@ class Contribution < ActiveRecord::Base
   has_many :payment_notifications
 
   validates_presence_of :project, :user, :value
-  validates_numericality_of :value, greater_than_or_equal_to: 10.00
+  validates_numericality_of :value, greater_than_or_equal_to: 1.00
 
   scope :search_on_acquirer, ->(acquirer_name){ where(acquirer_name: acquirer_name) }
   scope :available_to_count, ->{ with_states(['confirmed', 'requested_refund', 'refunded']) }
@@ -110,7 +110,7 @@ class Contribution < ActiveRecord::Base
   end
 
   def self.payment_method_names
-    ['Pagarme', 'PayPal', 'MoIP']
+    ['Pagarme', 'PayPal', 'MoIP', 'OfflinePayment']
   end
 
   # Used in payment engines

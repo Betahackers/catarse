@@ -2,6 +2,10 @@ module Contribution::PaymentMethods
   extend ActiveSupport::Concern
 
   included do
+    def is_offline_payment?
+      payment_method.try(:downcase) == 'offlinepayment'
+    end
+    
     def is_paypal?
       payment_method.try(:downcase) == 'paypal'
     end

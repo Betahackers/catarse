@@ -22,7 +22,7 @@ Catarse::Application.routes.draw do
   # mount CatarsePagarme::Engine => "/", as: :catarse_pagarme
   mount CatarseApi::Engine => "/api", as: :catarse_api
   # mount CatarseStripe::Engine => "/", :as => "catarse_stripe"
-  mount CatarsePaypalAdaptive::Engine => "/", :as => "catarse_paypal_adaptive"
+  mount CatarseOfflinePayment::Engine => "/", :as => "catarse_offline_payment"
   
 #  mount CatarseWepay::Engine => "/", as: :catarse_wepay
 
