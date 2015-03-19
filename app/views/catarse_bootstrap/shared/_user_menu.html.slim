@@ -17,8 +17,6 @@ nav.w-dropdown-list.dropdown-list.user-menu
           = link_to t('.notifica_es'), edit_user_path(current_user, anchor: :notifications), class: 'alt-link fontsize-smaller'
         li.lineheight-looser
           = link_to t('.dados_de_acesso'), edit_user_path(current_user, anchor: :settings), class: 'alt-link fontsize-smaller'
-        li.lineheight-looser
-          = link_to t('.banco_e_cart_es'), edit_user_path(current_user, anchor: :billing), class: 'alt-link fontsize-smaller'
     .w-col.w-col-4.w-hidden-small.w-hidden-tiny
       .fontweight-semibold.fontsize-smaller.u-marginbottom-10= t('.projetos_apoiados')
       - if current_user.contributed_projects.present?
