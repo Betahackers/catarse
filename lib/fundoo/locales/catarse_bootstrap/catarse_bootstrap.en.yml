@@ -24,7 +24,7 @@ en:
       download_firefox: Download Firefox
     guides:
       come_ando: Starting
-      guia_dos_realizadores: Directors ' Guide
+      guia_dos_realizadores: Fundoo Creators' Guide
       meta_e_prazo: Goal and deadline
       mobiliza_o: Mobilization
       p_s_campanha: Post campaign
@@ -32,7 +32,7 @@ en:
       sua_hist_ria: Your story
       uma_compila_o_dos: A compilation of the most important points of a campaign to help you make an amazing and successful project. We hope that this guide will help you develop your idea and succeed in his campaign;)
     jobs:
-      o_financiamento_coletivo_n: The collective funding continues to grow and the super doCatarse team needs to grow up together. Come be a part of this story with us.
+      o_financiamento_coletivo_n:  Collective funding continues to grow and the super Fundoo team needs to grow up together. Come be a part of this story with us.
       trabalhe_conosco: Work with us
   projects:
     budget_fields:
@@ -75,7 +75,7 @@ en:
     user_menu:
       admin: Admin
       atividade: Activity
-      banco_e_cart_es: And bank cards
+      banco_e_cart_es: Bank cards
       configura_es: Settings
       dados_de_acesso: Access data
       hist_rico_de_apoios: Support history
@@ -115,18 +115,18 @@ en:
       projetos_bem_sucedidos: Successful projects
       projetos_em_andamento: Projects in progress
       projetos_n_o_financiados: Non-funded projects
-      voc_ainda_n_o: You still haven't supported any project noCatarse...
+      voc_ainda_n_o: You still haven't supported any Fundoo projects...
     edit:
       apoiados: Supported
       atividades: Activities
-      banco_e_cart_es: And bank cards
+      banco_e_cart_es: Bank cards
       criados: Created
       dados_de_acesso: Access data
       inscreva_um_projeto: Subscribe to a project!
-      ir_para_o_perfil: Go to the public profile
+      ir_para_o_perfil: Go to your public profile
       notifica_es: Notifications
       sobre_voc: About you
-      voc_ainda_n_o: You have not yet created any project in Catharsis. Believe in your dreams!
+      voc_ainda_n_o: You have not yet created any project in Fundoo. Create your dreams!
     feeds:
       feed:
         apoiadores: Supporters

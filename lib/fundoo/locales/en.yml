@@ -12,7 +12,7 @@ en:
         image_url: Image URL
         more_links: Where can we find more about you and your project?
         name: Name
-        online_days: Days of the air campaign
+        online_days: How many days will your campaign last?
         permalink: Project URL
         traffic_sources: How did you hear about Catarse?
         user_id: User ID
@@ -453,7 +453,7 @@ en:
         description: Description
         edit: Edit
         info_box: Info box
-        limit_reward: Limit reward
+        limit_reward: Limit quantity of rewards
         minimum_value: Minimum value
         reward: Reward
         submit: Submit
@@ -471,7 +471,7 @@ en:
         description: Description
         edit: Edit
         info_box: Info box
-        limit_reward: Limit reward
+        limit_reward: Limit quantity of rewards
         minimum_value: Minimum value
         reward: Reward
         submit: Submit
@@ -650,7 +650,7 @@ en:
       privacy: Privacy
       recents: Recent
       recommended: Recommended
-      submit: Send your project
+      submit: Create your project
       support: Support
       terms: Terms
       twitter: Twitter
@@ -690,7 +690,7 @@ en:
       profile: My profile
       signin: Login
       signup: Sign up
-      submit: Send your project
+      submit: Submit your project
     login:
       login_with_facebook: sign in with your facebook account
       remember_me: Remember me and keep me connected.

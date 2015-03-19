@@ -17,7 +17,7 @@ en:
       form:
         blocks:
           first:
-            description: Fill in the information below to start the draft of your project.
+            description: Fill in the information below to start your project on Fundoo.
             title: Welcome!
         info:
           goal: "€"

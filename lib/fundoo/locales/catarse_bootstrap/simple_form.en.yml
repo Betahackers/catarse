@@ -6,31 +6,31 @@ en:
         traffic_sources:
           eight: did a search on the internet about collective financing/alternative forms of funding
           five: article in a blog
-          four: from a project that was picking up on the platform
-          nine: Another
+          four: from a project that was already using Fundoo
           one: I've had another project in Fundoo
           seven: in a class/course/lecture/event
           six: a story in the press (news portal on the internet, TV, newspaper, magazine)
-          three: indication of friend/colleague/professional contact
-          two: indication of a person who already had a project in Fundoo
+          three: referred by a friend/colleague/professional contact
+          two: referred by a person who already had a project in Fundoo
+          nine: other
     hints:
       project:
-        about: 'Speak with passion and clarity about what will take place. Clarify possible doubts about how the money will be used, who is behind the project, how and when the project will be delivered. Transparency draws more supporters. Remember: your design will be accessed by ordinary people who will decide whether or not they support your project. Make It A Good One! '
+        about: 'Speak with passion and clarity about what will take place. Clarify possible issues or doubts about how the money will be used, who is behind the project, and how and when the project will be delivered. Transparency draws more supporters. Remember: your design will be accessed by ordinary people who will decide whether or not they support your project. Make It A Good One! '
         category: Choose the most appropriate to your project.
-        goal: Plan a goal consistent with what your project proposes. Review your budget and don't forget to include the 13% rate charged by Catharsis if your project is successful.
-        headline: Phrase in the project card to call supporters. Must have a maximum of 100 characters and summarize well the project.
+        goal: Plan a goal consistent with what your project proposes. Review your budget and make sure you include all of your expenses in order to successfully complete your project.
+        headline: Phrase in the project card to entice supporters. Must have a maximum of 100 characters and should summarize the project well.
         name: Give it a name people remember easily. Do not exceed 50 characters.
-        online_days: You can choose between 1 and 60 days for your campaign. Check out the directors ' Guide for tips on deadlines.
-        permalink: Prefer something simple, straightforward and to identify your project. Try not to use hyphen, underline etc.
+        online_days: You can choose between 1 and 60 days for your campaign. Check out the Fundoo Creators' Guide (link at the bottom of the page) for tips on deadlines.
+        permalink: Prefer something simple and straightforward that identifies your project. Do not use a hyphen, underline etc.
         select: Select an option
-        traffic_sources: How did you meet the Fundoo?
+        traffic_sources: How did you hear about Fundoo?
         uploaded_image: This image is used as the thumbnail of your project (PNG, JPG size 600 x 340)
         video_url: Link to your video on Vimeo or Youtube <br/>.
     prompts:
       project:
         category: Select a category
         select: Select an option
-        traffic_sources: How did you meet the Fundoo?
+        traffic_sources: How did you hear about Fundoo?
     validation_texts:
       bank_account:
         account: What is your account number?

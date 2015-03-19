@@ -3,11 +3,11 @@ en:
   rewards:
     form:
       available: Quantity available
-      deliver_at: 'Prediction of delivery:'
+      deliver_at: 'Delivery date:'
       description: 'Description:'
       edit: Edit reward
-      info_box: You can limit the available quantity of a reward. Once the limit is reached, the reward will be marked as SOLD OUT. The prediction of delivery is the date that you intend to deliver the reward to the supporters. If you want to change the order of the rewards, just drag them around here. Give It A Shot!
-      limit_reward: Limit reward
+      info_box: You can limit the available quantity of a reward. Once the limit is reached, the reward will be marked as SOLD OUT. The delivery date is the date that you intend to deliver the reward to the supporters. If you want to change the order of the rewards, just drag them around here. Give It A Shot!
+      limit_reward: Limit quantity of rewards
       minimum_value: 'Minimum value:'
       reward: Reward
       submit: Save
