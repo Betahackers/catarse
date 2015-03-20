@@ -1,7 +1,14 @@
 var App = window.App = Skull.View.extend({
   el: 'html',
 
-  events: {
+initialize: function(){
+    var that = this;
+    _.bindAll(this);
+
+    this.player = $(".player").YTPlayer();
+  },
+
+events: {
     "click #close-global-alert" : "closeAlert",
     "click a#user-menu" : "toggleMenu",
     "click a.mobile-menu-link" : "mobileMenu",

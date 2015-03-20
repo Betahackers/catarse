@@ -1,12 +1,12 @@
 = render 'shared/header_big', overlayer: true
 
-.hero-back.hero-full
+.hero-back.hero-full.player data-property="{videoURL:'https://www.youtube.com/watch?v=odCICnIVmXw',containment:'.player', quality:'large', autoPlay:true, mute:true, opacity:1, showControls:false}"
   .w-container
     .w-row.u-text-center
       .w-col.w-col-2
       .w-col.w-col-8
-        .fontweight-semibold.u-marginbottom-20.fontsize-jumbo= t('.banner_title') 
-        .fontsize-large.lineheight-tight.u-marginbottom-30= t('.banner_subtitle')
+        .fontweight-semibold.u-marginbottom-20.fontsize-jumbo.fontcolor-negative= t('.banner_title')
+        .fontsize-large.lineheight-tight.u-marginbottom-30.fontcolor-negative= t('.banner_subtitle')
         .w-row
           .w-col.w-col-3
           .w-col.w-col-6
