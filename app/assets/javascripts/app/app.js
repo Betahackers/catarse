@@ -1,13 +1,6 @@
 var App = window.App = Skull.View.extend({
   el: 'html',
 
-initialize: function(){
-    var that = this;
-    _.bindAll(this);
-
-    this.player = $(".player").YTPlayer();
-  },
-
 events: {
     "click #close-global-alert" : "closeAlert",
     "click a#user-menu" : "toggleMenu",
@@ -56,6 +49,7 @@ events: {
     Backbone.history.start({pushState: false});
     this.maskAllElements();
     this.applyErrors();
+    this.player = $(".player").YTPlayer();
   },
 
   flash: function() {
