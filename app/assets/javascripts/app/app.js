@@ -49,7 +49,10 @@ events: {
     Backbone.history.start({pushState: false});
     this.maskAllElements();
     this.applyErrors();
-    this.player = $(".player").YTPlayer();
+    jQuery.browser.mobile = jQuery.browser.android || jQuery.browser.blackberry || jQuery.browser.ios || jQuery.browser.windowsMobile || jQuery.browser.operaMobile || jQuery.browser.kindle;
+    if (!jQuery.browser.mobile) {
+      this.player = $(".player").YTPlayer();
+    }
   },
 
   flash: function() {
