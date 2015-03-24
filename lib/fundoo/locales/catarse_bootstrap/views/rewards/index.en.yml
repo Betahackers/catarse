@@ -3,7 +3,7 @@ en:
     form:
       edit: "Edit reward"
       reward: Reward
-      info_box: "You can limit the available quantity of a reward. Once the limit is reached, the reward will be marked as SOLD OUT. The prediction of delivery is the date that you intend to deliver the reward to the supporters. If you want to change the order of the rewards, just drag them around here. Give It A Shot!"
+      info_box: "You can limit the available quantity of a reward. Once the limit is reached, the reward will be marked as SOLD OUT. The prediction of delivery is the date that you intend to deliver the reward to the contributors. If you want to change the order of the rewards, just drag them around here. Give It A Shot!"
       minimum_value: "Minimum value:"
       deliver_at: "Prediction of delivery:"
       description: "Description:"
@@ -17,8 +17,8 @@ en:
       limited: Limited
       sold_out: Exhausted
       contributions_to_confirm:
-        one: "1 support in term of confirmation."
-        other: "1 support in term of confirmation."
+        one: "1 contribution for confirmation."
+        other: "%{count} contributions for confirmation."
       edit_reward: "Edit reward"
       new_reward: "Register reward"
       reward_deliver_time: "<b> Delivery Estimate: </b> %{estimate}"

@@ -12,6 +12,26 @@ class ContributionPolicy < ApplicationPolicy
     end
   end
 
+  def confirm?
+    done_by_owner_or_admin_for_record?(record.project) && record.project.online?
+  end
+  
+  def refund?
+    done_by_owner_or_admin_for_record?(record.project) && record.project.online?
+  end
+
+  def hide?
+    done_by_owner_or_admin_for_record?(record.project) && record.project.online?
+  end
+  
+  def push_to_trash?
+    done_by_owner_or_admin_for_record?(record.project) && record.project.online?
+  end
+
+  def cancel?
+    done_by_owner_or_admin_for_record?(record.project) && record.project.online?
+  end
+  
   def create?
     done_by_owner_or_admin? && record.project.online?
   end

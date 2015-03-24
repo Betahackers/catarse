@@ -55,6 +55,10 @@ class ApplicationPolicy
     is_owned_by?(user) || is_admin?
   end
 
+  def done_by_owner_or_admin_for_record? record
+    (user.present? && record.user == user) || is_admin?
+  end
+
   def is_owned_by?(user)
     user.present? && record.user == user
   end

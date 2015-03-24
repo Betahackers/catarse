@@ -52,7 +52,7 @@ en:
         address_city: City
         address_zip_code: "Postal code"
         address_phone_number: Phone
-        value: "value of support"
+        value: "value of contribution"
         reward: reward
         project: project
       reward:
@@ -120,7 +120,7 @@ en:
         visible: "Publish (check if you want to publish this nóvidade)"
     errors:
       models:
-        contribution: "Error saving support"
+        contribution: "Error saving contribution"
         bank_account:
           attributes:
             bank:
@@ -235,16 +235,16 @@ en:
   contribution:
     project_should_be_online: "You can not support a project that is not in the air"
     reward_must_be_from_project: "must be of the same design"
-    should_not_contribute_if_maximum_contributions_been_reached: "has reached its maximum number of supporters"
+    should_not_contribute_if_maximum_contributions_been_reached: "has reached its maximum number of channels_subscribers"
     value_must_be_at_least_rewards_value: "must be at least %{minimum_value} for the selected reward"
   contribution_report_to_project_owner:
     reward_description: "Reward description"
     deliver_at: "Date of delivery of the reward"
     confirmed_at: "Date of payment confirmation"
-    contribution_value: "Value of support"
+    contribution_value: "Value of contribution"
     service_fee: "Rate of Fundoo"
-    user_full_name: "Full name of the supporter"
-    user_name: "Nickname of the supporter"
+    user_full_name: "Full name of the contributor"
+    user_name: "Nickname of the contributor"
     user_email: "Email profile Fundoo"
     cpf: "Document number"
     payer_email: "Email of the means of payment"

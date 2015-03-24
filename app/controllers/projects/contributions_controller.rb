@@ -1,6 +1,6 @@
 class Projects::ContributionsController < ApplicationController
   inherit_resources
-  actions :index, :show, :new, :update, :review, :create
+  actions :index, :show, :new, :update, :review, :create, :confirm, :refund, :cancel, :hide, :push_to_trash
   skip_before_filter :verify_authenticity_token, only: [:moip]
   has_scope :available_to_count, type: :boolean
   has_scope :with_state
@@ -10,6 +10,23 @@ class Projects::ContributionsController < ApplicationController
   before_filter :detect_old_browsers, only: [:new, :create]
 
   helper_method :avaiable_payment_engines
+
+
+  def self.contribution_actions
+    %w[confirm refund hide cancel push_to_trash].each do |action|
+      define_method action do
+        authorize resource
+        if resource.send(action)
+          flash[:notice] = I18n.t("admin.contributions.messages.successful.#{action}")
+        else
+          flash[:notice] = t("activerecord.errors.models.contribution")
+        end
+        redirect_to project_path(parent, anchor: 'contributions')
+      end
+    end
+  end
+  contribution_actions
+
 
   def edit
     authorize resource

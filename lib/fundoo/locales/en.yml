@@ -651,7 +651,7 @@ en:
       recents: Recent
       recommended: Recommended
       submit: Create your project
-      support: Support
+      contribution: Support
       terms: Terms
       twitter: Twitter
     texts:
@@ -782,7 +782,7 @@ en:
         unsuccessful_text: The project %{link} that you contributed wasn't funded. Maybe next time!
     start:
       email_subject: Your project has been received by Catarse's team
-      email_text: 'Thanks for trusting your project to Catarse :)<br><br>We know that you expect a quick reply but, to be quite frank, we take up to 4 days to respond, ok? That is because we have a small team working on several projects. Note that the reply can come sooner, so keep attention to your inbox.<br><br>Meanwhile it is worth to get to know the projects that are online (<a href=''%{explore_link}'' style=''color: #E75297 !important;''>%{explore_link}</a>) and - if you like any of them- contribute it! This is the way to show support for the crowdfunding culture in Brazil and to feed the ecosystem that keeps growing around Catarse.<br><br>Besides that, you will get some inspiration for your own project...<br><br>Stay tuned for updates in <a href=''%{facebook}'' style=''color: #E75297 !important;''>Facebook</a> and get some deeper knowledge about Catarse reading the posts in our <a href=''%{blog}'' style=''color: #E75297 !important;''>blog</a>.<br><br>If you have any doubt, send an email to: %{email}'
+      email_text: 'Thanks for trusting your project to Catarse :)<br><br>We know that you expect a quick reply but, to be quite frank, we take up to 4 days to respond, ok? That is because we have a small team working on several projects. Note that the reply can come sooner, so keep attention to your inbox.<br><br>Meanwhile it is worth to get to know the projects that are online (<a href=''%{explore_link}'' style=''color: #E75297 !important;''>%{explore_link}</a>) and - if you like any of them- contribute it! This is the way to show contribution for the crowdfunding culture in Brazil and to feed the ecosystem that keeps growing around Catarse.<br><br>Besides that, you will get some inspiration for your own project...<br><br>Stay tuned for updates in <a href=''%{facebook}'' style=''color: #E75297 !important;''>Facebook</a> and get some deeper knowledge about Catarse reading the posts in our <a href=''%{blog}'' style=''color: #E75297 !important;''>blog</a>.<br><br>If you have any doubt, send an email to: %{email}'
       notification_text: Your project has been received by Catarse's team
     video_regex_validation: only Vimeo URLs are allowed
   project_by: project by
@@ -965,7 +965,7 @@ en:
       exclusive: Visible for contributions only
       submit: Send update
       title: Title of the update
-      warning: Remembering that every new post goes directly to the email of his supporters. Therefore, review your text well before sending it.
+      warning: Remembering that every new post goes directly to the email of his contributors. Therefore, review your text well before sending it.
     recommended_header:
       guidelines: How it Works
       guidelines_subtitle: Getting to know Catarse
@@ -1063,7 +1063,7 @@ en:
       success: Successfully logged out. See you!
     failure:
       error: There was an error while loggin in. Please try again.
-  share_my_contributions: See the projects that I support in Catarse!
+  share_my_contributions: See the projects that I contribution in Catarse!
   share_my_projects: See my projects in Catarse!
   shared:
     accept_terms_html: I have read and accepted the %{link}.
@@ -1135,9 +1135,9 @@ en:
       introduction: Catarse is an excellent way to engage in a cause you believe in
       legend_html: We believe that being part of a project is the kind of thing that sometimes we do not really know why, but it does a darn good.
       money: No problem! You just need to enter in your profile (My credits) and request a chargeback. If you paid with debit or billet, you’ll need to open an account at MOIP. If you used a credit card the value will be back on your next bill.
-      more_questions: I'm dying to support a project, is there anything else I need to know?
+      more_questions: I'm dying to contribution a project, is there anything else I need to know?
       not_funded: You will receive credits  on Catarse. The moment you choose to contribute another project, on the screen to select the reward, there will have a field to use your credits.
-      not_success: You get the full amount of support in the form of loans (to support another project). If that does not please you, you can request your money back, according to the rules of the <a href='%{terms}' target='_blank'>terms of use</a>.
+      not_success: You get the full amount of contribution in the form of loans (to contribution another project). If that does not please you, you can request your money back, according to the rules of the <a href='%{terms}' target='_blank'>terms of use</a>.
       not_success_title: If the project does not meet the target ...
       other_contributions: I WANT MORE! CAN I HELP  IN OTHER WAYS?
       other_five: Send an e-mail to the project creator asking how can  you help even more.
@@ -1153,10 +1153,10 @@ en:
       step_two: A good way to decide how much to contribute with it’s  to look  through which rewards  are offered in exchange for your contributing. And also your bank statement.
       submit: VERY COOL!
       subtitle: Understand step by step how to contribute a project on Catarse.
-      successful: The project is considered successful! The creator gets the money and contacts all supporters.
+      successful: The project is considered successful! The creator gets the money and contacts all contributors.
       successful_title: If the project meet or exceed its financial target ...
       title: I want to contribute a project!
-      title_contribution: How do I know that my support was successful?
+      title_contribution: How do I know that my contribution was successful?
       title_credits: If the project does not achieve the goal, how do I use my credits?
       title_four: Spread the word!
       title_money: What if I don't want to use the credits?
@@ -1239,7 +1239,7 @@ en:
       subtitle: contributions
     goal:
       subtitle: total of %{total}
-  tell_about_this_contribution: Tell the world about your support!
+  tell_about_this_contribution: Tell the world about your contribution!
   tell_about_this_project: Tell the world about your project!
   terms: terms of use
   user:

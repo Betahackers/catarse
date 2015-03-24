@@ -2,7 +2,7 @@ en:
   projects:
     metrics:
       titles:
-        confirmed_by_day: "Total of confirmed support per day"
+        confirmed_by_day: "Total of confirmed contribution per day"
         confirmed_amount_by_day: "Total collected per day"
         address_state: "Total confirmed funding by State"
     reminder:
@@ -19,7 +19,7 @@ en:
       a_project_by_html: "A project of %{link} in"
     posts:
       project_post:
-        unavailable: "This news is only available to supporters."
+        unavailable: "This news is only available to contributors."
         contribute: Support
         unavailable_contribute: "This project to view it."
         destroy: "Remove News"
@@ -27,15 +27,15 @@ en:
       new:
         notice: "News submitted successfully!"
         comment: "Text of your News"
-        exclusive: "Visible only to supporters"
+        exclusive: "Visible only to contributors"
         submit: "Send News"
         title: "Title of your News"
-        warning: "Remembering that every post of novelty will go directly to the e-mail from his supporters. So, check your text before sending it."
+        warning: "Remembering that every post of novelty will go directly to the e-mail from his contributors. So, check your text before sending it."
     project_reports:
-      all_contributions_without_reward: "Download report of all supporters who have selected a reward"
-      link_reports_confirmed: "Download all confirmed supporters report"
-      link_reports_waiting_confirmation: "Download report of all supporters with billet printed"
-      link_reward: "Download report of the supporters of the reward of %{value}"
+      all_contributions_without_reward: "Download report of all contributors who have selected a reward"
+      link_reports_confirmed: "Download all confirmed contributors report"
+      link_reports_waiting_confirmation: "Download report of all contributors with billet printed"
+      link_reward: "Download report of the contributors of the reward of %{value}"
     project_about:
       embed: <embed>
       embed_title: "Embed this on your site design"
@@ -61,7 +61,7 @@ en:
           not_reached_goal: "This project will only be funded if at least %{goal} are reached before %{date}"
           failed: "This project has not reached the minimum of %{goal} by %{date} and was not funded"
           rejected: "This project was not accepted. Cannot perform a backup."
-          in_analysis: "This project is under review and is not yet open to receive support."
+          in_analysis: "This project is under review and is not yet open to receive contribution."
           successful: "This project was successful and was funded on %{date}"
           waiting_funds: "Awaiting the confirmation of bills to see if this project will be funded."
           draft: "This project is only a draft and still cannot receive backups."
@@ -85,7 +85,7 @@ en:
       no_rewards_warning_title: "Create here your rewards"
       contribution_states:
         confirmed: Confirmed
-        pending: "Printed slips"
+        pending: "Pending confirmation"
       sidebar:
-        contributions: support
+        contributions: contribution
         goal: "goal %{total}"

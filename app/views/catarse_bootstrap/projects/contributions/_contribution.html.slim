@@ -1,14 +1,29 @@
 - unless contribution.anonymous
   .w-clearfix.u-marginbottom-20
+    .w-row
+      .w-col.w-col-9
+        = link_to user_path(contribution.user) do
+          .thumb.u-left.u-round[style="background-image: url('#{contribution.user.display_image}'); background-size: contain;"]
 
-    = link_to user_path(contribution.user) do
-      .thumb.u-left.u-round[style="background-image: url('#{contribution.user.display_image}'); background-size: contain;"]
-
-    .fontsize-base.fontweight-semibold
-      = link_to user_path(contribution.user), class: 'link-hidden-dark' do
-        = contribution.user.short_name
-    - if policy(@project).update?
-      .fontsize-smaller = number_to_currency contribution.value
-    .fontsize-smaller = l(contribution.confirmed_at || contribution.created_at, format: :simple)
-    .fontsize-smaller = contribution.user.contributions_text
-  .divider.u-marginbottom-20
+        .fontsize-base.fontweight-semibold
+          = link_to user_path(contribution.user), class: 'link-hidden-dark' do
+            = contribution.user.short_name
+        - if policy(@project).update?
+          .fontsize-smaller = number_to_currency contribution.value
+          .fontsize-smaller = l(contribution.confirmed_at || contribution.created_at, format: :simple)
+          .fontsize-smaller = contribution.user.contributions_text
+          .fontsize-smaller = t(contribution.state)        
+      
+      .w-col.w-col-3
+        - if policy(@project).update?      
+          - if !contribution.confirmed? && !contribution.refunded?
+            = link_to t('admin.contributions.index.confirm_contribution'), confirm_project_contribution_path(id: contribution.id, local_params: params), method: :put, class: 'fontsize-smaller btn btn-tiny btn-message u-marginbottom-10'
+            = link_to t('admin.contributions.index.cancel'), cancel_project_contribution_path(id: contribution.id, local_params: params), method: :put, class: 'fontsize-smaller btn btn-medium btn-tiny btn-message u-marginbottom-10'          
+          - if contribution.requested_refund? or contribution.confirmed?
+            = link_to t('admin.contributions.index.refund_contribution'), refund_project_contribution_path(id: contribution.id, local_params: params), method: :put, class: 'fontsize-smaller btn btn-tiny btn-message u-marginbottom-10'
+          = link_to t('admin.contributions.index.refund_and_hide'), hide_project_contribution_path(id: contribution.id, local_params: params), method: :put, class: 'fontsize-smaller btn btn-tiny btn-message u-marginbottom-10'
+          = link_to t('admin.contributions.index.cancel'), cancel_project_contribution_path(id: contribution.id, local_params: params), method: :put, class: 'fontsize-smaller btn btn-tiny btn-message u-marginbottom-10'
+          = link_to t('admin.contributions.index.push_to_trash'), push_to_trash_project_contribution_path(id: contribution.id, local_params: params), method: :put, class: 'fontsize-smaller btn btn-tiny btn-message u-marginbottom-10'
+      
+    .divider.u-marginbottom-20
+    
