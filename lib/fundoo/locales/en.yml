@@ -1009,13 +1009,7 @@ en:
         link_reports: 'Download report of '
         link_reward: Download the report of contributions that selected the reward
         no_contributions: This project don't have any contribution yet.
-      share:
-        embed: embed
-        embed_title: Embed this project on your site
-        link: Link
-        link_title: Share the link
-        take_a_look: Check out the project
-        title: Be part of it and share this project
+      share: Share
       waiting: This project is waiting for approval and soon we'll know if it will go online on Catarse ;)
       waiting_owner: To edit the project info, click on 'Edit project' tab. The rewards you can edit on reward column.
     title: "%{name}'s projects"
