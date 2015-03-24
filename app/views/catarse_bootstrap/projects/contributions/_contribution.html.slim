@@ -21,8 +21,7 @@
             = link_to t('admin.contributions.index.cancel'), cancel_project_contribution_path(id: contribution.id, local_params: params), method: :put, class: 'fontsize-smaller btn btn-medium btn-tiny btn-message u-marginbottom-10'          
           - if contribution.requested_refund? or contribution.confirmed?
             = link_to t('admin.contributions.index.refund_contribution'), refund_project_contribution_path(id: contribution.id, local_params: params), method: :put, class: 'fontsize-smaller btn btn-tiny btn-message u-marginbottom-10'
-          = link_to t('admin.contributions.index.refund_and_hide'), hide_project_contribution_path(id: contribution.id, local_params: params), method: :put, class: 'fontsize-smaller btn btn-tiny btn-message u-marginbottom-10'
-          = link_to t('admin.contributions.index.cancel'), cancel_project_contribution_path(id: contribution.id, local_params: params), method: :put, class: 'fontsize-smaller btn btn-tiny btn-message u-marginbottom-10'
+            = link_to t('admin.contributions.index.refund_and_hide'), hide_project_contribution_path(id: contribution.id, local_params: params), method: :put, class: 'fontsize-smaller btn btn-tiny btn-message u-marginbottom-10'
           = link_to t('admin.contributions.index.push_to_trash'), push_to_trash_project_contribution_path(id: contribution.id, local_params: params), method: :put, class: 'fontsize-smaller btn btn-tiny btn-message u-marginbottom-10'
       
     .divider.u-marginbottom-20
