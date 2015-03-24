@@ -1,48 +1,49 @@
----
 en:
   projects:
-    card:
-      by: by
-      contributed: raised
-      display_status:
-        approved: approved
-        draft: draft
-        expired: finalized
-        failed: Non-funded
-        in_analysis: in analysis
-        not_reached_goal: awaiting
-        reached_goal: funded
-        rejected: rejected
-        successful: Successful
-        waiting_funds: Pending bills
-      pledged_html: "<span> %{value} </span> raised"
-      progress_html: "<span> %{percent}% </span> funded"
-      reached: hit
-      remaining:
-        one: remainder
-        other: remainder
-      time_remaining_html:
-        one: "<span> %{count} %{unit} </span> rest"
-        other: "<span> %{count} %{unit} </span> rest"
     project:
-      display_status:
-        approved: approved
-        draft: draft
-        expired: finalized
-        failed: not funded
-        in_analysis: in analysis
-        not_reached_goal: awaiting
-        online: Online
-        reached_goal: funded
-        rejected: refused
-        successful: funded
-        waiting_confirmation: awaiting
-        waiting_funds: awaiting
-      pledged_html: "<span> %{value} </span> raised"
+      contributed: raised
+      reached: hit
       progress_html: "<span> %{percent}% </span> funded"
-      time_remaining_html:
-        one: "<span> %{count} %{unit} </span> rest"
-        other: "<span> %{count} %{unit} </span> rest"
       time_remaining_small_html:
         one: "< div class = ' fontsize-smallest lineheight-tightest' >%{count} %{unit}</div> < div class = ' fontsize-smallest lineheight-tightest' > remainder </div>"
         other: "< div class = ' fontsize-smallest lineheight-tightest ' >%{count} %{unit} </div> < div class = ' fontsize-smallest lineheight-tightest ' > remainder </div>"
+      time_remaining_html:
+        one: "<span> %{count} %{unit} </span> rest"
+        other: "<span> %{count} %{unit} </span> rest"
+      pledged_html: "<span> %{value} </span> raised"
+      display_status:
+        online: Online
+        expired: finalized
+        rejected: refused
+        failed: "not funded"
+        successful: funded
+        approved: approved
+        reached_goal: funded
+        waiting_confirmation: awaiting
+        waiting_funds: awaiting
+        not_reached_goal: awaiting
+        draft: draft
+        in_analysis: "in analysis"
+    card:
+      by: by
+      remaining:
+        one: remainder
+        other: remainder
+      contributed: raised
+      reached: hit
+      progress_html: "<span> %{percent}% </span> funded"
+      time_remaining_html:
+        one: "<span> %{count} %{unit} </span> rest"
+        other: "<span> %{count} %{unit} </span> rest"
+      pledged_html: "<span> %{value} </span> raised"
+      display_status:
+        expired: finalized
+        rejected: rejected
+        failed: Non-funded
+        successful: Successful
+        approved: approved
+        reached_goal: funded
+        waiting_funds: "Pending bills"
+        not_reached_goal: awaiting
+        draft: draft
+        in_analysis: "in analysis"

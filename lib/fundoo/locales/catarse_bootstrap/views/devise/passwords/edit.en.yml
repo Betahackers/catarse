@@ -1,16 +1,15 @@
----
 en:
   devise:
     passwords:
       edit:
+        titles:
+          site: "Set a new password"
+          header: "Set new password"
         form:
           hint:
-            password_length: Minimum of 6 characters
-          inputs:
-            submit: Save and enter
+            password_length: "Minimum of 6 characters"
           labels:
-            password: New password
-            password_confirmation: Confirmation of password
-        titles:
-          header: Set new password
-          site: Set a new password
+            password: "New password"
+            password_confirmation: "Confirmation of password"
+          inputs:
+            submit: "Save and enter"

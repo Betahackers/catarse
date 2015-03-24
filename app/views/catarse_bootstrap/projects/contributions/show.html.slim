@@ -38,7 +38,7 @@
   .section.section-gray-one
     .w-container
       .fontsize-larger.lineheight-tight.u-text-center.u-marginbottom-40 
-        = t('.curte_a_categoria_project')
+        = t('.curte_a_categoria_project', project_name: @project.category.name_pt)
       .w-row
         .w-col.w-col-4.w-col-push-4
           = link_to "Follow #{@project.category.name_pt}", subscribe_category_path(@project.category), class: 'btn btn-large btn-dark'

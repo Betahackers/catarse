@@ -1,155 +1,154 @@
----
 en:
   projects:
-    dashboard_basics:
-      category: Category
-      category_label: Explore and inspire other projects of the same category as yours.
-      form:
-        submit: Save
-      name: Project name
-      name_label: The more best direct. Do not exceed 50 characters
-      online_date: Date of entry in the air
-      online_days: Deadline for fundraising
-      online_days_label: You can choose between 1 and 60 days for your campaign. Check out the Fundoo Creators' Guide (link at the bottom of the page) for tips on deadlines.
-      project_start: Fill in the information below
-      project_start_subtitle: 'The data entered in this section cannot be modified when the project goes live. Fill in carefully and review before launching the project. '
-      url: Project URL
-      url_label: Is the address of your project, it should be easy to remember. Avoid underline, hyphen and symbols
-      user_id: User ID
-      value: Amount to be collected
-      value_secondary: Plan a goal consistent with what your project proposes. Review your budget and don't forget to make sure you include all of your expenses if your project is successful
+    reward_fields:
+      edit: "Edit reward"
+      reward: Reward
+      info_box: "Describe the value of reward and put a real delivery date forecast for the supporters. You can also limit a reward, and when the limit is reached it appears as EXHAUSTED. If you want to change the order that the rewards appear in your project, simply do this by dragging them up or down."
+      minimum_value: "Value:"
+      deliver_at: "Prediction of delivery:"
+      description: "Description:"
+      limit_reward: "Limit reward"
+      available: "Quantity available"
+      submit: Save
+      index:
+        select_reward: "Select this reward"
+        display_remaining: " %{remaining} of %{maximum} available"
+        dont_want: "I don't want to reward"
+        limited: Limited
+        sold_out: Exhausted
+        contributions_to_confirm:
+          one: "1 support in term of confirmation."
+          other: "1 support in term of confirmation."
+        edit_reward: "Edit reward"
+        new_reward: "Register reward"
+        reward_deliver_time: "<b> Delivery Estimate: </b> %{estimate}"
+        reward_title: "For %{minimum} or more"
+    dashboard_user_settings:
+      title: "Registration data and banking"
+      subtitle_html: "With the complete information below, your project will be ready to air. After completing the fill, then click Save. Review. If everything is ok, just press the publish button and start your campaign."
+      user_data_title: "Registration data and address"
+      user_data_subtitle_html: "We need the information below for issuing Tax Note to successful projects. <b> warning: the CPF/CNPJ listed in registration data and bank details must be the same. </b>"
+      account_title: "Bank details"
+      account_subtitle_html: "This is a required field but doesn't apply to Fundoo. just make up some values. <b> warning: the document number listed in registration data and bank details must be the same. </b>"
+      submit: Save
     dashboard_home_templates:
-      approved:
-        subtitle_html: 'To put your project in the air it takes only you fill out the required data in the %{link1}. It is important to know that charge the rate of 13% of the total amount collected only for successful projects. Understand %{link2}. '
-        title: " %{name}, your project has been approved!"
-      draft:
-        study_title: Felt need to study more to assemble your project? Check out the links in the box alongside.
-        subtitle: The more careful and well formatted for a project, the greater the chances of it being successful in his campaign fund-raising. Before sending your project to our analysis, fill out all the tabs above with care. You can save your changes and return to the draft project as many times as you want. When everything is ready, click the submit button and we will contact you to assess your project.
-        title: "%{name}, build your project!"
-      failed:
-        questions: We sent you an email too with two questions. If you have time and head, it would be great if you could take a look. Your feedback helps us build a better and nicer Fundoo for you.
-        subtitle_html: Your project does not hit the goal and we know that this is not the best of sensations. But don't be discouraged. Think of the process as a learning experience and not let he contemplated a second attempt. Don't worry, all your supporters will receive the money back. %{link}.
-        title: " %{name}, don't get discouraged!"
-      in_analysis:
-        subtitle_html: Thank you very much! Our team will assess the entire contents of your project. Within 4 working days you will receive an email informing you if it has been approved, declined, or if it will continue under review for some more time so that you may make the suggested adjustments. Take advantage of this period to get feedback with people close to you!
-        title: "%{name}, you have submitted your project for review and will receive our reply within 4 working days"
-      online:
-        explanation_html: " <div class = ' fontsize-base u-40-card card marginbottom-terciary ' > <p class = ' fontweight-bold ' > With the project in the air, some information can no longer be edited </p> <p> you can no longer change: <br>-its goal of capturing; <br>-the deadline; <br>-the URL of the project; <br>-the user </p> the project owner. <p class = ' fontweight-bold ' > needs more information about campaign processes? Check the box next to it. </p> <p> the &nbsp;% Search {link1} is also a great source of data about the Brazilian scenario. A good read on &nbsp; %{link2} can be inspiring. There you will find stories of successful projects and campaign tips. </p> </div> "
-        subtitle_html: Your project is in the air and his campaign will close the day 23hs59min59s %{date}. Until this day and time you will be able to receive support. Remember, it's all-or-nothing and you only take the resources obtained if hit the goal that was set. Visit our %{link2} for any other enquiries.
-        title: " %{name}, his campaign is in the air!"
+      status: "Status:"
       project_numbers:
+        financed: funded
         backed: raised
         contributions: support
-        financed: funded
         left: remaining
-      rejected:
-        subtitle_html: You sent your project for examining the Fundoo and we understand that he does not conform to the profile of the site. Have a project refused does not prevent you to send new projects to evaluate or redesign your current project. Talk to our customer service! We recommend that you take a good look at the %{link1} and %{link2}.
-        title: " %{name}, unfortunately not this time."
-      status: 'Status:'
-      successful:
-        header1: 'And don''t forget: transparency is everything.'
-        header2: 'Be sure to read:'
-        subtitle_html: 'Your project was successful and now is the time to start the work of relationship with its supporters. Special attention to delivery of rewards. Prometheus? Delivered! Be sure to check out the post-project section of %{link1} and inform yourself about %{link2}. '
-        title: " %{name}, celebrate you deserve!"
-        transparent_html: Keep a supporter informed is to keep a happy supporter. Even if you go to inform you of a failure or setback. Happy supporters are %{link}. Therefore, use and abuse (always with moderation) News tab. What you write there comes straight to voice mail from your supporters. I will start the delivery of rewards? In the tab "reports" you low information so you can make the delivery of rewards management of your project.
       waiting_funds:
-        failed: 'I didn''t hit the goal:'
-        good_luck: Good luck!
-        header: 'From here your project can hit the goal or not. Watch what happens in each of the cases:'
-        subtitle_html: Your project was finalized in %{expires} and is awaiting confirmation of bills and payments. Due to the maturity of bills, projects that had last minute support are for up to 4 working days in this status, counted from the date of completion of the project. %{link}.
-        success: 'Hit the goal:'
         title: " %{name}, we're suing the last payments."
-    dashboard_posts:
-      discard: Discard
-      old_posts: Old news
-      only_to_backers: I want that novelty is only visible to supporters.
-      publish: Publish news
-      title: Write a new
-      warning: All news published is sent directly to their supporters by email. Review your post before publishing.
-    dashboard_preview:
-      header_subtitle: Get feedback!
-      header_text: Share the link below with your friends and use this opportunity to fine-tune your campaign.
-    dashboard_project:
-      about: Project description
-      about_hint_html: 'Speak with passion and clarity about what will take place. Clarify possible issues or doubts about how the money will be used, who is behind the project, and how and when the project will be delivered. Transparency draws more supporters. Remember: your design will be accessed by ordinary people who will decide whether or not they support your project. Make It A Good One! '
-      budget_hint_html: How your money will be used? The more transparency the better. Show that steps and processes that are involved in the use of these resources. A list with the main items of the budget or even a pie chart will go very well here.
-      budget_label: Project budget
-      budgets_hint_html: Notify a list with the main items of the budget. You don't have to go into minute details, just an overview. His supporters will be glad to know where their money is going. There is no rule &nbsp; as the amount of items in the list, but normally 5 is usually a good number!
-      budgets_label: Budget detail
-      card: Project card
-      card_subtitle: Did you know that the Project card that appears in home and in search? Make it fantastic because they say that the first impression is the most important!
-      headline: Project call
-      headline_hint: Will be used in the card design, along with the above image (thumbnail). A maximum of 100 characters.
-      image: Project image
-      image_hint: This image is used as the thumbnail of your project (PNG, JPG size 600 x 340)
-      links_title: Useful links
-      start: Tell the story of your project!
-      start_subtitle: Make it interesting - it will charm people and bring supporters. A good video and description help distinguish your project from others.
-      submit: Save
-      video_url: Video URL
-      video_url_hint: Link to your video on Vimeo or Youtube.
-    dashboard_reward:
-      add_reward: Add reward
-      reward: Reward
-      subtitle: 'This is its demonstration of gratitude to your supporters. Remember to include the costs of rewards in your budget. Whatever you promise, you must deliver!'
-      title: Create and edit your rewards
-    dashboard_user_about:
-      about_hint: Use this space if you want to best describe you, your company or your institution. Want to give credit to partners? Use some institutional video? This space is yours and use it any way you want.  All this information will appear in the tab About in your public profile.
-      about_label: About you
-      facebook_link_hint: Paste the link from your profile
-      facebook_link_label: Facebook profile
-      name_hint: Your public name, visible to everyone as the author of the project.
-      name_label: Name
-      other_link_hint: 'Include links that help the supporters to understand why you''re the right person to do this project. '
-      other_link_label: Internet presence
-      submit: Save
-      subtitle: 'Supporters want to know better the project directors. Links that help tell his story are always welcome. '
-      title: Tell us more about you!
-      twitter_hint: Paste the link from your profile
-      twitter_label: Twitter profile
-      uploaded_image_hint: This image is used as the thumbnail of your profile (PNG, JPG ideal size 280 x 280)
-      uploaded_image_label: Profile image
-    dashboard_user_settings:
-      account_subtitle_html: 'This is a required field but doesn''t apply to Fundoo. just make up some values. <b> warning: the document number listed in registration data and bank details must be the same. </b>'
-      account_title: Bank details
-      submit: Save
-      subtitle_html: With the complete information below, your project will be ready to air. After completing the fill, then click Save. Review. If everything is ok, just press the publish button and start your campaign.
-      title: Registration data and banking
-      user_data_subtitle_html: 'We need the information below for issuing Tax Note to successful projects. <b> warning: the CPF/CNPJ listed in registration data and bank details must be the same. </b>'
-      user_data_title: Registration data and address
+        subtitle_html: "Your project was finalized in %{expires} and is awaiting confirmation of bills and payments. Due to the maturity of bills, projects that had last minute support are for up to 4 working days in this status, counted from the date of completion of the project. %{link}."
+        header: "From here your project can hit the goal or not. Watch what happens in each of the cases:"
+        success: "Hit the goal:"
+        failed: "I didn't hit the goal:"
+        good_luck: "Good luck!"
+      successful:
+        title: " %{name}, celebrate you deserve!"
+        subtitle_html: "Your project was successful and now is the time to start the work of relationship with its supporters. Special attention to delivery of rewards. Prometheus? Delivered! Be sure to check out the post-project section of %{link1} and inform yourself about %{link2}. "
+        header1: "And don't forget: transparency is everything."
+        transparent_html: "Keep a supporter informed is to keep a happy supporter. Even if you go to inform you of a failure or setback. Happy supporters are %{link}. Therefore, use and abuse (always with moderation) News tab. What you write there comes straight to voice mail from your supporters. I will start the delivery of rewards? In the tab \"reports\" you low information so you can make the delivery of rewards management of your project."
+        header2: "Be sure to read:"
+      rejected:
+        title: " %{name}, unfortunately not this time."
+        subtitle_html: "You sent your project for examining the Fundoo and we understand that he does not conform to the profile of the site. Have a project refused does not prevent you to send new projects to evaluate or redesign your current project. Talk to our customer service! We recommend that you take a good look at the %{link1} and %{link2}."
+      online:
+        title: " %{name}, his campaign is in the air!"
+        subtitle_html: "Your project is in the air and his campaign will close the day 23hs59min59s %{date}. Until this day and time you will be able to receive support. Remember, it's all-or-nothing and you only take the resources obtained if hit the goal that was set. Visit our %{link2} for any other enquiries."
+        explanation_html: " <div class = ' fontsize-base u-40-card card marginbottom-terciary ' > <p class = ' fontweight-bold ' > With the project in the air, some information can no longer be edited </p> <p> you can no longer change: <br>-its goal of capturing; <br>-the deadline; <br>-the URL of the project; <br>-the user </p> the project owner. <p class = ' fontweight-bold ' > needs more information about campaign processes? Check the box next to it. </p> <p> the &nbsp;% Search {link1} is also a great source of data about the Brazilian scenario. A good read on &nbsp; %{link2} can be inspiring. There you will find stories of successful projects and campaign tips. </p> </div> "
+      failed:
+        title: " %{name}, don't get discouraged!"
+        subtitle_html: "Your project does not hit the goal and we know that this is not the best of sensations. But don't be discouraged. Think of the process as a learning experience and not let he contemplated a second attempt. Don't worry, all your supporters will receive the money back. %{link}."
+        questions: "We sent you an email too with two questions. If you have time and head, it would be great if you could take a look. Your feedback helps us build a better and nicer Fundoo for you."
+      draft:
+        title: "%{name}, build your project!"
+        subtitle: "The more careful and well formatted for a project, the greater the chances of it being successful in his campaign fund-raising. Before sending your project to our analysis, fill out all the tabs above with affection. You can save your changes and return to the draft project as many times as you want. When everything is ready, click the submit button and we will contact you to assess your project."
+        study_title: "Felt need to study more to assemble your project? Check out the links in the box alongside."
+      approved:
+        title: " %{name}, your project has been approved!"
+        subtitle_html: "To put your project in the air it takes only you fill out the required data in the %{link1}. It is important to know that charge the rate of 13% of the total amount collected only for successful projects. Understand %{link2}. "
+      in_analysis:
+        title: "%{name}, you sent your project for review and will receive our reply within 4 working days"
+        subtitle_html: "Thank you very much! Our team will assess the entire contents of your project and within 4 working days you will receive an email informing you if it has been Approved, Declined or if it will continue under review for some more time so that you can perform adjustments suggested. Take advantage of this period to collect feedbacks with people close to me!"
     edit:
-      about_you_tab: About you
-      account_tab: Account
-      basics_tab: Basics
       leave_link_html: "&nbsp; Exit the control panel"
-      posts_tab: News
-      preview_tab: Preview
-      project_tab: Project
-      publish: Publish
-      reports_tab: Reports
-      rewards_tab: Rewards
-      send: Send
       start_tab: Home
-    reward_fields:
-      available: Quantity available
-      deliver_at: 'Delivery date:'
-      description: 'Description:'
-      edit: Edit reward
-      index:
-        contributions_to_confirm:
-          one: 1 support in term of confirmation.
-          other: 1 support in term of confirmation.
-        display_remaining: " %{remaining} of %{maximum} available"
-        dont_want: I don't want to reward
-        edit_reward: Edit reward
-        limited: Limited
-        new_reward: Register reward
-        reward_deliver_time: "<b> Delivery Estimate: </b> %{estimate}"
-        reward_title: For %{minimum} or more
-        select_reward: Select this reward
-        sold_out: Exhausted
-      info_box: Describe the value of reward and put a real delivery date forecast for the supporters. You can also limit the number of rewards that are available, and when the limit is reached it appears as EXHAUSTED. If you want to change the order that the rewards appear in your project, simply do this by dragging them up or down.
-      limit_reward: Limit quantity of rewards
-      minimum_value: 'Value:'
-      reward: Reward
+      basics_tab: Basics
+      project_tab: Project
+      posts_tab: News
+      rewards_tab: Rewards
+      about_you_tab: "About you"
+      reports_tab: Reports
+      account_tab: Account
+      preview_tab: Preview
+      send: Send
+      publish: Publish
+    dashboard_user_about:
       submit: Save
+      title: "Tell me more about you!"
+      subtitle: "Supporters want to know better the project directors. Links that help tell his story are always welcome. "
+      twitter_label: "Twitter profile"
+      twitter_hint: "Paste the link from your profile"
+      other_link_label: "Internet presence"
+      other_link_hint: "Include links that help the supporters to understand why you're the right person to do this project. "
+      about_label: "About you"
+      about_hint: "Use this space if you want to best describe you, your company or your institution. Want to give credit to partners? Use some institutional video? This space is yours and use it any way you want.  All this information will appear in the tab About in your public profile."
+      facebook_link_label: "Facebook profile"
+      facebook_link_hint: "Paste the link from your profile"
+      uploaded_image_label: "Profile image"
+      uploaded_image_hint: "This image is used as the thumbnail of your profile (PNG, JPG ideal size 280 x 280)"
+      name_label: Name
+      name_hint: "Your public name, visible to everyone as the author of the project."
+    dashboard_reward:
+      title: "Create and edit your rewards"
+      add_reward: "Add reward"
+      subtitle: "This is its demonstration of gratitude with the supporters. Remember to include the costs of rewards at your budget. Promised, DELIVERED! "
+      reward: Reward
+    dashboard_preview:
+      header_subtitle: "It's time for feedbacks!"
+      header_text: "Share the link below with your friends and enjoy the moment to make fine adjustments to help in his campaign."
+    dashboard_posts:
+      title: "Write a new"
+      only_to_backers: "I want that novelty is only visible to supporters."
+      publish: "Publish news"
+      discard: Discard
+      warning: "All news published is sent directly to their supporters by email. Review your post before publishing."
+      old_posts: "Old news"
+    dashboard_project:
+      budgets_hint_html: "Notify a list with the main items of the budget. You don't have to go into minute details, just an overview. His supporters will be glad to know where their money is going. There is no rule &nbsp; as the amount of items in the list, but normally 5 is usually a good number!"
+      budget_hint_html: "How your money will be used? The more transparency the better. Show that steps and processes are involved in the use of these resources. A list with the main items of the budget or even a pie chart will very well here."
+      budget_label: "Project budget"
+      budgets_label: "Budget detail"
+      start: "Tell the story of your project!"
+      start_subtitle: "Think about it in the project narrative. It is she who will charm people and bring supporters. A good video and description are differentiators."
+      video_url: "Video URL"
+      video_url_hint: "Link to your video on Vimeo or Youtube."
+      about: "Project description"
+      links_title: "Useful links"
+      about_hint_html: "Speak with passion and clarity about what will take place. Clarify possible doubts about how the money will be used, who is behind the project, how and when the project will be delivered. Transparency draws more supporters. Remember: your design will be accessed by ordinary people who will decide whether or not they support your project. Make It A Good One! "
+      card: "Project card"
+      card_subtitle: "You know that cardzinho project that appears in home and in search? So, does beautiful here in part because they say that the first impression is the one that is!"
+      image: "Project image"
+      image_hint: "This image is used as the thumbnail of your project (PNG, JPG size 600 x 340)"
+      headline: "Project call"
+      headline_hint: "Will be used in the card design, along with the above image (thumbnail). A maximum of 100 characters."
+      submit: Save
+    dashboard_basics:
+      project_start: "Fill in the information below"
+      project_start_subtitle: "The data reported in this section cannot be modified when the project airs. fill carefully and review before launching the project. "
+      online_date: "Date of entry in the air"
+      user_id: "User ID"
+      name: "Project name"
+      name_label: "The more best direct. Do not exceed 50 characters"
+      url: "Project URL"
+      url_label: "Is the address of your project, it should be easy to remember. Avoid underline, hyphen and symbols"
+      category: Category
+      category_label: "Explore and inspire other projects of the same category as yours."
+      online_days: "Deadline for fundraising"
+      online_days_label: "You can choose between 1 and 60 days for your campaign. Check out the directors ' Guide for tips on deadlines."
+      value: "Amount to be collected"
+      value_secondary: "Plan a goal consistent with what your project proposes. Review your budget and don't forget to include the 13% rate charged by Catharsis if your project is successful"
+      form:
+        submit: Save

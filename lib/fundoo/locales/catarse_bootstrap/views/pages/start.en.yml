@@ -1,28 +1,27 @@
----
 en:
   pages:
     start:
+      page-title: "How does the Fundoo?"
+      title: "Finance your project collectively"
+      submit: "Start your project"
+      learn-more: "Learn more"
       header:
-        money: Donated for projects published here
-        people: People have supported at least 01 project in Fundoo
-        success: Projects have already been funded in Catharsis
-      learn-more: Learn more
-      page-title: How does the Fundoo?
-      people:
-        content: Produce your project with care, at the right time. Plan a good campaign is a decisive factor for the success of their collective funding. We offer a variety of materials to assist you!
-        link: Learn how many supporters you need to mobilize
-        title: Study and plan
+        people: "People have supported at least 01 project in Fundoo"
+        success: "Projects have already been funded in Catharsis"
+        money: "Donated for projects published here"
       start:
-        content: It is important to start somewhere. A good first step to turning your idea into a project of collective financing is to register a draft in Catharsis. We're here to help.
-        link: Learn more about the first steps of a project
-        title: Start your project
-      submit: Start your project
-      time:
-        content: Communicate well during his campaign and be nice to their supporters. They are the strength of your project and are who really will determine the success or not of the campaign! The Catharsis is a form of you close to people who love their work, expand this network and form public.
-        link: Learn how our fee helps maintain the Fundoo
-        title: Mobilize supporters
-      title: Finance your project collectively
+        title: "Start your project"
+        content: "It is important to start somewhere. A good first step to turning your idea into a project of collective financing is to register a draft in Catharsis. We're here to help."
+        link: "Learn more about the first steps of a project"
+      people:
+        title: "Study and plan"
+        content: "Produce your project with care, at the right time. Plan a good campaign is a decisive factor for the success of their collective funding. We offer a variety of materials to assist you!"
+        link: "Learn how many supporters you need to mobilize"
       work:
-        content: 'Who defines the goal of fundraising and campaign time is you. Choose between 1 and 60 days to conduct its campaign in search of supporters. Achieve your financial goal, keep the amount collected. Otherwise all who supported receive the money back. We charge a fee of 13% of the total collected only projects that have reached or surpassed the goal. '
-        link: Receive tips on successful campaigns in Fundoo
-        title: It's all or nothing
+        title: "It's all or nothing"
+        content: "Who defines the goal of fundraising and campaign time is you. Choose between 1 and 60 days to conduct its campaign in search of supporters. Achieve your financial goal, keep the amount collected. Otherwise all who supported receive the money back. We charge a fee of 13% of the total collected only projects that have reached or surpassed the goal. "
+        link: "Receive tips on successful campaigns in Fundoo"
+      time:
+        title: "Mobilize supporters"
+        content: "Communicate well during his campaign and be nice to their supporters. They are the strength of your project and are who really will determine the success or not of the campaign! The Catharsis is a form of you close to people who love their work, expand this network and form public."
+        link: "Learn how our fee helps maintain the Fundoo"

@@ -1,211 +1,275 @@
----
 en:
   activerecord:
+    models:
+      channel: Channel
+      project: Project
+      reward: Reward
+      contribution: Supporter
+      category: Category
+      bank_account: "Bank details"
     attributes:
-      bank_account:
-        account: Account number
-        account_digit: Account digit
-        agency: Agency
-        agency_digit: Agency digit
-        bank: Bank
-        bank_id: Bank
-        owner_document: Document number of the holder
-        owner_name: Name of the holder
-      channel:
-        description: Description
-        ga_code: Analytics code
-        how_it_works: How it works
-        image: Image of novelty
-        name: Name
-        video_url: Video
-      channel_partner:
-        image: Image
-        name: Name
-        url: Site
-      channel_post:
-        body: Content
-        title: Title
-        visible: Publish (check if you want to publish this nóvidade)
-      contribution:
-        address_city: City
-        address_complement: Add-on
-        address_neighbourhood: Neighborhood
-        address_number: Number
-        address_phone_number: Phone
-        address_state: State
-        address_street: Street
-        address_zip_code: Postal code
-        country: Country
-        payer_document: Document Number
-        payer_email: Email
-        payer_name: Full Name
-        project: project
-        reward: reward
-      project:
-        about: Project description
-        budget: Project budget
-        channels: Channels
-        first_contributions: Who are the first people you'll ask to support your project?
-        goal: Amount to be collected
-        uploaded_image: Project image
       project_account:
-        account: In The. of the account
-        account_digit: Digit account
-        account_type: Type of account
         address_city: City
         address_complement: Add-on
         address_neighbourhood: Neighborhood
         address_number: Number
         address_state: State
         address_street: Address
-        address_zip_code: Postal code
-        agency: Agency
-        agency_digit: Digit agency
+        address_zip_code: "Postal code"
+        cpf: "Document number"
+        state_inscription: "Document issuing state"
+        email: Email
+        full_name: "Full name/company name"
+        phone_number: Phone
         bank: Bank
         bank_id: Bank
-        cpf: Document number
-        email: Email
-        full_name: Full name/company name
-        owner_document: Document number of the holder
-        owner_name: Name of the holder
-        phone_number: Phone
-        state_inscription: Document issuing state
-      project_post:
-        comment: Text
-        title: Title
+        owner_name: "Name of the holder"
+        owner_document: "Document number of the holder"
+        agency: Agency
+        agency_digit: "Digit agency"
+        account: "In The. of the account"
+        account_digit: "Digit account"
+        account_type: "Type of account"
+      bank_account:
+        bank: Bank
+        bank_id: Bank
+        owner_name: "Name of the holder"
+        owner_document: "Document number of the holder"
+        agency: Agency
+        agency_digit: "Agency digit"
+        account: "Account number"
+        account_digit: "Account digit"
+      contribution:
+        payer_name: "Full Name"
+        payer_email: Email
+        payer_document: "Document Number"
+        country: Country
+        address_street: Street
+        address_number: Number
+        address_complement: Add-on
+        address_neighbourhood: Neighborhood
+        address_state: State
+        address_city: City
+        address_zip_code: "Postal code"
+        address_phone_number: Phone
+        value: "value of support"
+        reward: reward
+        project: project
       reward:
-        deliver_at: Delivery forecast
+        deliver_at: "Delivery forecast"
+      project:
+        channels: Channels
+        category: Category
+        expires_at: Deadline
+        online_days: "Deadline for fundraising"
+        headline: Soundbite
+        image_url: "URL of the image"
+        name: "Project name"
+        goal: "Amount to be collected"
+        about: "Project description"
+        user_id: "User ID"
+        video_url: "Video URL"
+        permalink: "Link from your project"
+        more_links: "Provide links for people to know more about your project and its trajectory."
+        traffic_sources: "How did you meet the Fundoo?"
+        first_contributions: "Who are the first people you'll ask to support your project?"
+        budget: "Project budget"
+        uploaded_image: "Project image"
       user:
+        address_city: City
+        address_complement: Add-on
+        address_neighbourhood: Neighborhood
+        address_number: Number
+        address_state: State
+        address_street: Address
+        address_zip_code: "Postal Code"
+        cpf: "Document Number"
+        cpf_hint: (?)
+        state_inscription: "State Enrollment"
+        current_password: "Current password"
+        email: Email
+        full_name: "Full name/company name"
+        bio: "Mini Bio"
+        name: Surname
+        newsletter: "I want to receive news of Fundoo"
+        password: Password
+        password_confirmation: "Confirmation of password"
+        phone_number: Phone
+        cpf_hint_title: "Invoice will be issued for this document"
         id: ID
-        reset_password_token: Link to recreate password
+        moip_login: "MoIP login"
+        moip_login_hint: "(How to create an account)"
+        reset_password_token: "Link to recreate password"
+      channel:
+        ga_code: "Analytics code"
+        description: Description
+        how_it_works: "How it works"
+        image: "Image of novelty"
+        name: Name
+        video_url: Video
+      channel_partner:
+        name: Name
+        url: Site
+        image: Image
+      project_post:
+        title: Title
+        comment: Text
+      channel_post:
+        title: Title
+        body: Content
+        visible: "Publish (check if you want to publish this nóvidade)"
     errors:
       models:
+        contribution: "Error saving support"
         bank_account:
           attributes:
-            account:
-              blank: In The. the account cannot be blank
-            account_digit:
-              blank: Digit of the account cannot be blank
-              invalid: Type of invalid Agency
-            agency:
-              blank: Agency can't be blank
-              invalid: Invalid Agency
             bank:
-              blank: Bank cannot be blank
-            owner_document:
-              blank: Document number of the holder cannot be blank
-              invalid: Document number invalid
+              blank: "Bank cannot be blank"
             owner_name:
-              blank: Holder's name cannot be blank
-        contribution: Error saving support
-        project:
-          attributes:
-            about:
-              blank: The project description cannot be blank
-            budget:
-              blank: The project's budget cannot be blank
-            category:
-              blank: You must choose a category for your project
-            goal:
-              blank: The meta value cannot be blank
-              greater_than: The goal should be greater than 9
-              not_a_number: Meta collection accepts only numbers
-            headline:
-              blank: The catch phrase of the project cannot be blank
-              too_long: The catch phrase is very long. You can use a maximum of 140 characters.
-            name:
-              blank: The project name cannot be blank
-            online_days:
-              blank: The period of collection cannot be blank
-              greater_than: The deadline for collection must be greater than 0 days
-              not_a_number: The deadline for collection must be a number of days
-            permalink:
-              blank: The URL of the project cannot be blank
-              taken: This project URL already exists
-            uploaded_image:
-              blank: The image of the project cannot be blank
-            video_url:
-              blank: The video of the project cannot be blank
+              blank: "Holder's name cannot be blank"
+            owner_document:
+              blank: "Document number of the holder cannot be blank"
+              invalid: "Document number invalid"
+            agency:
+              blank: "Agency can't be blank"
+              invalid: "Invalid Agency"
+            account:
+              blank: "In The. the account cannot be blank"
+            account_digit:
+              blank: "Digit of the account cannot be blank"
+              invalid: "Type of invalid Agency"
         project_account:
           attributes:
-            account:
-              blank: In The. user account cannot be blank
-            account_digit:
-              blank: Digit the user account cannot be blank
-            account_type:
-              blank: Account type cannot be blank
-            address_city:
-              blank: City of the user cannot be blank
-            address_number:
-              blank: Number in the user's address cannot be blank
-            address_state:
-              blank: State of the user cannot be blank
-            address_street:
-              blank: Address of the user cannot be blank
-            address_zip_code:
-              blank: User ZIP CODE cannot be blank
-            agency:
-              blank: User agency cannot be blank
-            agency_digit:
-              blank: Digit user agency cannot be blank
-            bank:
-              blank: User Bank cannot be blank
-            cpf:
-              blank: CPF of the user cannot be blank
-            email:
-              blank: Email of the user cannot be blank
             full_name:
-              blank: Business name of the user cannot be blank
-            owner_document:
-              blank: Document number of the holder of the user cannot be blank
-              not_same: Document number of cadastral data and banking filled are not equal.
-            owner_name:
-              blank: Name of the holder of the user cannot be blank
+              blank: "Business name of the user cannot be blank"
+            email:
+              blank: "Email of the user cannot be blank"
+            cpf:
+              blank: "CPF of the user cannot be blank"
+            address_street:
+              blank: "Address of the user cannot be blank"
+            address_number:
+              blank: "Number in the user's address cannot be blank"
+            address_city:
+              blank: "City of the user cannot be blank"
+            address_state:
+              blank: "State of the user cannot be blank"
+            address_zip_code:
+              blank: "User ZIP CODE cannot be blank"
             phone_number:
-              blank: Phone of the user cannot be blank
+              blank: "Phone of the user cannot be blank"
+            bank:
+              blank: "User Bank cannot be blank"
+            agency:
+              blank: "User agency cannot be blank"
+            agency_digit:
+              blank: "Digit user agency cannot be blank"
+            account:
+              blank: "In The. user account cannot be blank"
+            account_digit:
+              blank: "Digit the user account cannot be blank"
+            owner_name:
+              blank: "Name of the holder of the user cannot be blank"
+            owner_document:
+              blank: "Document number of the holder of the user cannot be blank"
+              not_same: "Document number of cadastral data and banking filled are not equal."
+            account_type:
+              blank: "Account type cannot be blank"
+        project:
+          attributes:
+            video_url:
+              blank: "The video of the project cannot be blank"
+            budget:
+              blank: "The project's budget cannot be blank"
+            uploaded_image:
+              blank: "The image of the project cannot be blank"
+            name:
+              blank: "The project name cannot be blank"
+            permalink:
+              blank: "The URL of the project cannot be blank"
+              invalid: "The project URL is invalid"
+              taken: "This project URL already exists"
+            category:
+              blank: "You must choose a category for your project"
+            goal:
+              blank: "The meta value cannot be blank"
+              greater_than: "The goal should be greater than 9"
+              not_a_number: "Meta collection accepts only numbers"
+            online_days:
+              blank: "The period of collection cannot be blank"
+              greater_than: "The deadline for collection must be greater than 0 days"
+              not_a_number: "The deadline for collection must be a number of days"
+            about:
+              blank: "The project description cannot be blank"
+            headline:
+              blank: "The catch phrase of the project cannot be blank"
+              too_long: "The catch phrase is very long. You can use a maximum of 140 characters."
         user:
           attributes:
-            about:
-              blank: About you cannot be blank
-            current_password:
-              invalid: Current password is not valid
             email:
-              blank: The email can not be blank
-              invalid: This e-mail address is invalid
-              not_found: The email is not registered, check the address or your registration
-              taken: The email is already registered, login
-            name:
-              blank: User name cannot be blank
+              not_found: "The email is not registered, check the address or your registration"
+              taken: "The email is already registered, login"
+              invalid: "This e-mail address is invalid"
+              blank: "The email can not be blank"
             password:
-              blank: The password cannot be blank
-              confirmation: The password and confirmation password filled are not equal
-              too_short: The password you chose is too short
+              too_short: "The password you chose is too short"
+              confirmation: "The password and confirmation password filled are not equal"
+              blank: "The password cannot be blank"
+            current_password:
+              invalid: "Current password is not valid"
             reset_password_token:
-              invalid: expired. Go to <a href = "/password/new" > </a> reset password and request password reset again.
+              invalid: "expired. Go to <a href = \"/password/new\" > </a> reset password and request password reset again."
+            name:
+              blank: "User name cannot be blank"
+            about:
+              blank: "About you cannot be blank"
             uploaded_image:
-              blank: Image of the user cannot be blank
-    models:
-      bank_account: Bank details
-      channel: Channel
-  channels:
-    back_to_news: "← Back to news"
-    image_hint: Maximum size (600x121px)
-  contribution_report_to_project_owner:
-    city: City
-    complement: Add-on
-    contribution_value: Value of support
-    cpf: Document number
-    deliver_at: Date of delivery of the reward
-    neighbourhood: Neighborhood
-    street: Street
-    user_full_name: Full name of the supporter
-    zip_code: Postal code
+              blank: "Image of the user cannot be blank"
   project:
-    delete:
-      posts: Novelty successfully deleted
     update:
-      failed: The unsaved information, verify that all fields have been filled in correctly
-      success: The information has been updated
+      success: "The information has been updated"
+      failed: "The unsaved information, verify that all fields have been filled in correctly"
+    delete:
+      posts: "Novelty successfully deleted"
+    video_regex_validation: "only URLs from Youtube or Vimeo are accepted"
+  contribution:
+    project_should_be_online: "You can not support a project that is not in the air"
+    reward_must_be_from_project: "must be of the same design"
+    should_not_contribute_if_maximum_contributions_been_reached: "has reached its maximum number of supporters"
+    value_must_be_at_least_rewards_value: "must be at least %{minimum_value} for the selected reward"
+  contribution_report_to_project_owner:
+    reward_description: "Reward description"
+    deliver_at: "Date of delivery of the reward"
+    confirmed_at: "Date of payment confirmation"
+    contribution_value: "Value of support"
+    service_fee: "Rate of Fundoo"
+    user_full_name: "Full name of the supporter"
+    user_name: "Nickname of the supporter"
+    user_email: "Email profile Fundoo"
+    cpf: "Document number"
+    payer_email: "Email of the means of payment"
+    payment_method: "Means of payment"
+    street: Street
+    address_number: Number
+    complement: Add-on
+    neighbourhood: Neighborhood
+    city: City
+    address_state: State
+    zip_code: "Postal code"
+    anonymous: Anonymous
   user:
+    no_name: "Without name"
     contributions_text:
-      other: Supported this and most other %{total} projects
+      one: "Supported this and most other %{total} projects"
+      other: "Supported this and most other %{total} projects"
+  channels_subscribers:
+    created: "Now you follow the %{channel}"
+    deleted: "You no longer follow the %{channel}"
+  channels:
+    edit: "Update channel"
+    image_hint: "Maximum size (600x121px)"
+    subscribed: " %{count} following the channel"
+    back_to_news: "← Back to news"
+    follow: "Follow the channel"
+    following: Following
+    unfollow: Unfollow

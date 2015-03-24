@@ -1,139 +1,211 @@
 en:
   admin:
-    financials:
-      index:
-        meio_de_pagamento: Means of payment
     projects:
       index:
-        meio_de_pagamento: Means of payment
+        meio_de_pagamento: "Means of payment"
+    financials:
+      index:
+        meio_de_pagamento: "Means of payment"
   devise:
+    passwords:
+      new:
+        redefinir_senha: "Reset password"
     mailer:
       reset_password_instructions:
         pt:
-          abra_os: Hugs,
-          definir_nova_senha: set new password
-          esqueceu_sua_senha_sem: Forgot your password? No problem! Reset by clicking here
           ol: Hello
-          se_algum_problema_acontecer: 'If there is any problem, reply to this message directly or contact us via e-mail '
+          esqueceu_sua_senha_sem: "Forgot your password? Without problems! Reset by clicking here"
+          definir_nova_senha: "set new password"
+          se_algum_problema_acontecer: "If any problem happens, reply to this message directly or contact us via e-mail"
+          abra_os: "Hugs,"
+  explore:
+    index:
+      explore_amazing_projects: "Explore amazing projects "
+      category_name: Category-name
+      how_about_starting_your: "How about starting your project?"
+      create_your_project_on: "Create your project on Fundoo today!"
+      learn_more: "Learn more"
   layouts:
     global_alert:
       aqui: here
+      conhe_a_nossa_vers: "Meet our beta version!"
   pages:
     bad_browser:
-      download_chrome: Download Chrome
-      download_firefox: Download Firefox
+      download_chrome: "Download Chrome"
+      download_firefox: "Download Firefox"
     guides:
+      guia_dos_realizadores: "Directors ' Guide"
+      uma_compila_o_dos: "A compilation of the most important points of a campaign to help you make an amazing and successful project. We hope that this guide will help you develop your idea and succeed in his campaign;)"
       come_ando: Starting
-      guia_dos_realizadores: Fundoo Creators' Guide
-      meta_e_prazo: Goal and deadline
-      mobiliza_o: Mobilization
-      p_s_campanha: Post campaign
+      sua_hist_ria: "Your story"
+      meta_e_prazo: "Goal and deadline"
       recompensas: Rewards
-      sua_hist_ria: Your story
-      uma_compila_o_dos: A compilation of the most important points of a campaign to help you make an amazing and successful project. We hope that this guide will help you develop your idea and succeed in his campaign;)
+      mobiliza_o: Mobilization
+      p_s_campanha: "Post campaign"
     jobs:
-      o_financiamento_coletivo_n:  Collective funding continues to grow and the super Fundoo team needs to grow up together. Come be a part of this story with us.
-      trabalhe_conosco: Work with us
+      trabalhe_conosco: "Work with us"
+      o_financiamento_coletivo_n: "The collective funding continues to grow and the super doCatarse team needs to grow up together. Come be a part of this story with us."
   projects:
+    contributions:
+      show:
+        agora_voc_parte_do: "Now you're part of a group of"
+        enquanto_isso_que: ".Meanwhile, how about spreading the idea to their friends?"
+        tweet: Tweet
+        voc_pode_curtir_esses: "You can enjoy these here too"
+        valeu: Thanks!
+        voc_faz_parte_do: "You're part of the group of"
+        pessoas_que_querem_tirar: "people who want to make"
+        do_papel_voc_receber: "happen! You will receive confirmation of payment by e-mail as soon as it is rendered. You can also track the status of your support"
+        atrav_s_do_seu: "through your profile"
+        compartilhe_o_seu: ".Share your support and increase the chances of reaching the goal!"
+        compartilhe: Share
+        tu_te: Tweet
+        recomenda_es_de_projetos: "Projects recommended for you"
+        curte_a_categoria_project: "Follow the category %{project_name}? You can receive firsthand and directly in your email when new projects come up!"
+      faq_box:
+        perguntas_frequentes: "Frequently Asked Questions"
+        como_eu_apoio_este: "As I support this project?"
+        primeiro_escolha_o_valor: "First, select the desired value and reward. Then just click on ' review and perform payment ' that we'll redirect you to the next page to complete your payment."
+        quando_o_pagamento_efetivado: "When payment is effected?"
+        se_voc_pagou_com: "If you paid by credit card, the acknowledgment must be on the same day if it was with billet, up to 4 working days."
+        e_se_o_projeto: "And if the project does not reach the goal?"
+        nesse_caso_voc_recebe: "In this case, you get back 100% of what you paid through a refund."
+        se_o_projeto_for: "If the project is funded, how do I get my reward?"
+        quando_sua_recompensa_estiver: "When your reward is ready, %{user_link} will contact you to arrange delivery."
+      edit:
+        preencha_e_revise_os: "Fill out and review the data for payment"
+        esses_dados_ser_o: "Such information will be reported to the Project Director"
+        endere_o_de_entrega: "Delivery address"
+        pr_ximo_passo: "Next step"
     budget_fields:
       cost: Cost
     card:
       pledged: Pledged
-    contributions:
-      edit:
-        endere_o_de_entrega: Delivery address
-        esses_dados_ser_o: Such information will be reported to the Project Director
-        pr_ximo_passo: Next step
-        preencha_e_revise_os: Fill out and review the data for payment
-      faq_box:
-        como_eu_apoio_este: As I support this project?
-        e_se_o_projeto: And if the project does not reach the goal?
-        nesse_caso_voc_recebe: In this case, you get back 100% of what you paid through a refund.
-        perguntas_frequentes: Frequently Asked Questions
-        primeiro_escolha_o_valor: First, select the desired value and reward. Then just click on ' review and perform payment ' that we'll redirect you to the next page to complete your payment.
-        quando_o_pagamento_efetivado: When payment is effected?
-        quando_sua_recompensa_estiver: 'When your reward is ready, the organizer will contact you to arrange delivery.'
-        se_o_projeto_for: If the project is funded, how do I get my reward?
-        se_voc_pagou_com: If you paid by credit card, the acknowledgment must be on the same day if it was with billet, up to 4 working days.
-      show:
-        agora_voc_parte_do: Now you're part of the group
-        atrav_s_do_seu: through your profile
-        compartilhe: Share
-        compartilhe_o_seu: ". Share your support and increase the chances of projetobater the goal!"
-        curte_a_categoria_project: 'You can receive firsthand and directly in your email when new projects come up!'
-        do_papel_voc_receber: " happen! You will receive confirmation of payment by e-mail as soon as it is rendered. You can also track the status of your support"
-        e_por_falar_em: 'How about learn firsthand new projects in this category whenever they enter here? Straight from the oven to your email!'
-        enquanto_isso_que: ". Meanwhile, how about spreading the idea to their friends?"
-        pessoas_que_querem_tirar: people who want to make
-        recomenda_es_de_projetos: Recommendations for designs for you
-        tu_te: Tweet
-        tweet: Tweet
-        valeu: Thanks;)
-        voc_faz_parte_do: "You're part of the group of "
-        voc_pode_curtir_esses: You can enjoy these here too
-  shared:
-    user_menu:
-      admin: Admin
-      atividade: Activity
-      banco_e_cart_es: Bank cards
-      configura_es: Settings
-      dados_de_acesso: Access data
-      hist_rico_de_apoios: Support history
-      minhas_coisas: My stuff
-      notifica_es: Notifications
-      projetos_apoiados: Projects supported
-      projetos_criados: Projects created
-      sobre_voc: About you
-      ver_todos: View all
-      voc_est_logado_como: You are logged in as
+    dashboard_reward:
+      save: Save
+    mobile_video:
+      leia_mais: "Read more"
+    project_embed:
+      insiraum_widget_em_seu: "Insiraum widget on your site"
+    reward_fields:
+      describe_this_reward: "Describe this reward"
+      tem_certeza: "Are you sure?"
+    dashboard_home_templates:
+      approved:
+        como_fazemos_o_repasse: "How do we make the transfer of money"
+      failed:
+        entenda_como_fazemos_estornos: "Understand how to do chargebacks and refunds"
+      online:
+        central_de_suporte: "Support Central"
+      rejected:
+        guia_dos_realizadores: "Directors' Guide"
+      successful:
+        como_o_repasse_do: "as the transfer of the money will be made"
+        status: "Status:"
+      waiting_funds:
+        entenda_como_o_repasse: "Understand how the transfer of money is made for successful projects"
   users:
     contribution_row:
-      aguardando_confirma_o_do: Awaiting payment confirmation
-      apoio: 'Support:'
-      boleto_bancario: Boleto bancario
-      cart_o_de_credito: Credit card
-      estimativa_de_entrega: 'Estimated delivery:'
-      projetos_que_apoiei: I supported projects
+      projetos_que_apoiei: "I supported projects"
+      valor_do_apoio: "Value of support"
+      status_do_apoio: "Support status"
       recompensa: Reward
-      recompensa_1: 'Reward:'
-      selecionou_recompensa: selected reward
-      status_do_apoio: Support status
-      status_do_apoio_1: 'Support status:'
-      valor_do_apoio: Value of support
+      apoio: "Support:"
+      status_do_apoio_1: "Support status:"
+      cart_o_de_credito: "Credit card %{installment_value}x€%{installments}"
+      boleto_bancario: "Boleto bancario"
+      aguardando_confirma_o_do: "Awaiting payment confirmation"
+      recompensa_1: "Reward:"
+      estimativa_de_entrega: "Estimated delivery:"
+      selecionou_recompensa: "selected reward"
+      confirmado_em_contribution_decorate: "Confirmed on %{confirmed_on}"
+      rembolsado_em_contribution_decorate: "Refunded on %{refuned_on}"
+      reembolso_solicitado_em_contribution: "Refund requested on %{requested_refund_on}"
     dashboard_billing:
-      cart_es_de_cr: Credit cards
+      cart_es_de_cr: "Credit cards"
+      lembrando_caso_algum_projeto: "Remember: if any project that you have supported"
+      com_cart_o_de: "with Credit Card"
+      n_o_seja_bem: "is not successful, we will effect the reimbursement on the card that you used to support"
       cart_o: Card
-      caso_algum_projeto_que: If any project that you have supported <b> with Bank </b> is not successful, we will effect a refund of your payment in the account below.
-      com_cart_o_de: with Credit Card
-      dados_banc_rios: Bank details
-      lembrando_caso_algum_projeto: 'Remember: if any project that you have supported'
-      n_o_seja_bem: is not successful, we will effect the reimbursement on the card that you used to support
       operadora: Operator
       remover: Remove
-      voc_tem_certeza: are you sure?
-    dashboard_contributions:
-      projetos_bem_sucedidos: Successful projects
-      projetos_em_andamento: Projects in progress
-      projetos_n_o_financiados: Non-funded projects
-      voc_ainda_n_o: You still haven't supported any Fundoo projects...
+      voc_tem_certeza: "are you sure?"
+      dados_banc_rios: "Bank details"
+      caso_algum_projeto_que: "If any project that you have supported <b> with Bank </b> is not successful, we will effect a refund of your payment in the account below."
     edit:
       apoiados: Supported
-      atividades: Activities
-      banco_e_cart_es: Bank cards
       criados: Created
-      dados_de_acesso: Access data
-      inscreva_um_projeto: Subscribe to a project!
-      ir_para_o_perfil: Go to your public profile
+      sobre_voc: "About you"
+      dados_de_acesso: "Access data"
       notifica_es: Notifications
-      sobre_voc: About you
-      voc_ainda_n_o: You have not yet created any project in Fundoo. Create your dreams!
+      banco_e_cart_es: "And bank cards"
+      ir_para_o_perfil: "Go to the public profile"
+      atividades: Activities
+      voc_ainda_n_o: "You have not yet created any project in Catharsis. Believe in your dreams!"
+      inscreva_um_projeto: "Subscribe to a project!"
+    dashboard_contributions:
+      start_now: "Start now!"
+      voc_ainda_n_o: "You still haven't supported any project cathartic ..."
+      projetos_em_andamento: "Projects in progress"
+      projetos_bem_sucedidos: "Successful projects"
+      projetos_n_o_financiados: "Non-funded projects"
+    dashboard_notifications:
+      newsletters: "Newsletters:"
+      featured_projects_and_posts: "Featured projects and posts from our Blog"
+      projects_that_you_support: "Projects that you support:"
+      i_want_to_receive: "I want to receive updates about these projects"
+      categories_you_follow: "Categories you follow:"
+      project_reminders: "Project reminders:"
+    dashboard_settings:
+      email: Email
+      keep_this_email_address: "Keep this email address updated because it is the channel of communication between you, Fundoo staff, and the projects that you support."
+      change_my_password: "Change my password"
+      for_the_password_to: "For the password to be changed, you need to confirm your current password."
+      disable_my_account: "Disable my account"
+      all_your_contributions_will: "All your contributions will be made anonymous, your data will not be visible, you will exit the system, and your account will be permanently disabled."
+      deactivate_my_account_on: "Deactivate my account on Fundoo"
+      you_want_to_disable: "You want to disable this account?"
+      save: Save
+    show:
+      editar_perfil: " Edit profile"
     feeds:
       feed:
-        apoiadores: Supporters
-        categoria: 'Category:'
-        finalizou_mas_n_o: finalized but was not funded
-        foi_bem_sucedido: was successful!
-        leia_mais: Read more
-        novo_projeto_no_ar: New project in the air!
+        postou: "posted:"
+        leia_mais: "Read more"
+        novo_projeto_no_ar: "New project in the air!"
+        categoria: "Category:"
+        foi_bem_sucedido: "was successful!"
         pledged: Pledged
-        postou: 'posted:'
+        apoiadores: Supporters
+        finalizou_mas_n_o: "finalized but was not funded"
+  shared:
+    user_menu:
+      minhas_coisas: "My stuff"
+      hist_rico_de_apoios: "Support history"
+      projetos_criados: "Projects created"
+      atividade: Activity
+      configura_es: Settings
+      sobre_voc: "About you"
+      notifica_es: Notifications
+      dados_de_acesso: "Access data"
+      banco_e_cart_es: "And bank cards"
+      projetos_apoiados: "Projects supported"
+      ver_todos: "View all"
+      admin: Admin
+      voc_est_logado_como: "You are logged in as"
+  metrics:
+    index:
+      total_de_apoios_confirmados: "Total of confirmed contributions per day"
+      total_arrecadado_por_dia: "Total collected per day"
+      total_de_apoios_confirmado: "Total contributions confirmed by State"
+      estado: State
+      total_de_apoio_confirmado: "Total confirmed contributions"
+      baixar_relat_rios: "Download reports"
+      apoiadores_confirmados: "Confirmed supporters "
+      apoiadores_confirmados_com_boleto: "Confirmed supporters with billet printed"
+      apoiadores_que_n_o: "Supporters who don't have selected reward"
+      apoiadores_da_recompensa_reward: "Supporters of the reward %{reward}"
+  rewards:
+    form:
+      describe_this_reward: "Describe this reward"
+      tem_certeza: "Are you sure?"

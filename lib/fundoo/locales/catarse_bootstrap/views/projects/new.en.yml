@@ -1,27 +1,26 @@
----
 en:
   projects:
     new:
+      page-title: "Start your project"
       faq:
-        links:
-          all_or_nothing: Why is it all or nothing?
-          criteria: Selection criteria
-          how_it_works: How Fundoo works?
-          money: How will I receive the money?
-          selection: How are projects selected?
-          suport_central: Support Central
-          support_contact: Contact us
         titles:
-          know_more: Learn more
           support: Support
+          know_more: "Learn more"
+        links:
+          criteria: "Selection criteria"
+          suport_central: "Support Central"
+          support_contact: "Contact us"
+          how_it_works: "How Fundoo works?"
+          money: "How will I receive the money?"
+          selection: "How are projects selected?"
+          all_or_nothing: "Why is it all or nothing?"
       form:
         blocks:
           first:
-            description: Fill in the information below to start your project on Fundoo.
             title: Welcome!
+            description: "Fill in the information below to start the draft of your project."
         info:
-          goal: "€"
-          online_days: days
           permalink: www.fundoo.es/
-        submit: Save and continue
-      page-title: Start your project
+          goal: €
+          online_days: days
+        submit: "Save and continue"
