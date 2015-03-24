@@ -6,7 +6,7 @@
 .w-hidden-main.w-hidden-medium.project-about-highlight
   .w-container
     p.w-hidden-main.w-hidden-medium.fontsize-small = @project.headline
-    = link_to "Leia mais", about_mobile_project_path(@project), class: "alt-link fontsize-small"
+    = link_to t('.leia_mais'), about_mobile_project_path(@project), class: "alt-link fontsize-small"
 .w-container.w-hidden-main.w-hidden-medium.project-stats
   .w-row.w-hidden-main.w-hidden-medium
     .w-col.w-col-3.w-col-small-3.w-col-tiny-3.fontweight-semibold
@@ -18,4 +18,3 @@
     .w-col.w-col-3.w-col-small-3.w-col-tiny-3.fontweight-semibold
       .fontsize-largest = @project.remaining_days
       .fontsize-smaller.lineheight-tighter  #{@project.time_to_go[:unit].capitalize} #{pluralize_without_number(@project.time_to_go[:time], t('remaining_singular'), t('remaining_plural'))}
-

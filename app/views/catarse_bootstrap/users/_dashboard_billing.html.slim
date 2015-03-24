@@ -21,7 +21,7 @@
             .fontsize-small.fontweight-semibold.u-marginbottom-10
               = credit_card.card_brand.upcase
           .w-col.w-col-2.w-col-small-2
-            = link_to 'Remover', user_credit_card_path(resource, credit_card), class: 'btn btn-terciary btn-small', method: :delete, data: { confirm: 'você tem certeza?' }
+            = link_to t('.remover'), user_credit_card_path(resource, credit_card), class: 'btn btn-terciary btn-small', method: :delete, data: { confirm: t('.voc_tem_certeza') }
 
     = simple_form_for resource, html: { class: 'w-form' } do |f|
       = hidden_field_tag :anchor, 'billing'

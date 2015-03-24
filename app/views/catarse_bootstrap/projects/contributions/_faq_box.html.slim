@@ -11,4 +11,5 @@
     li.list-answer.u-marginbottom-20.fontsize-smaller= t('.nesse_caso_voc_recebe')
 
     li.list-question.fontsize-smaller.alt-link= t('.se_o_projeto_for')
-    li.list-answer.u-marginbottom-20.fontsize-smaller= t('.quando_sua_recompensa_estiver')
+    li.list-answer.u-marginbottom-20.fontsize-smaller= t('.quando_sua_recompensa_estiver', user_link: link_to(
+          @project.user.display_name, user_path(@project.user)))

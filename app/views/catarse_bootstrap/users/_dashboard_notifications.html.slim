@@ -5,20 +5,20 @@
           .w-form.card.card-terciary
               .w-row.u-marginbottom-20
                 .w-col.w-col-4
-                  .fontweight-semibold.fontsize-small.u-marginbottom-10 Newsletters:
+                  .fontweight-semibold.fontsize-small.u-marginbottom-10= t('.newsletters')
                 .w-col.w-col-8
                   .w-checkbox.w-clearfix
                       = f.check_box :newsletter, class: 'w-checkbox-input'
                       label.w-form-label.fontsize-base.fontweight-semibold for="checkbox"  Fundoo Newsletter (weekly)
-                      div Featured projects and posts from our Blog&nbsp;
+                      div=> t('.featured_projects_and_posts')
               .w-row.u-marginbottom-20
                 .w-col.w-col-4
-                  .fontweight-semibold.fontsize-small.u-marginbottom-10 Projects that you support:
+                  .fontweight-semibold.fontsize-small.u-marginbottom-10= t('.projects_that_you_support')
                 .w-col.w-col-8
                   .w-checkbox.w-clearfix
                     = f.simple_fields_for :unsubscribes, @subscribed_to_posts do |u|
                       = check_box_tag :subscribed, "1", @user.subscribed_to_posts?, class: 'w-checkbox-input'
-                      label.w-form-label.fontsize-base.fontweight-semibold  I want to receive updates about these projects
+                      label.w-form-label.fontsize-base.fontweight-semibold= t('.i_want_to_receive')
                     .u-marginbottom-20
                       a.alt-link#toggle-notifications href="#"  Manage notifications for #{@user.contributed_projects.count} projects
                     - if @unsubscribes
@@ -31,7 +31,7 @@
                               label.w-form-label.fontsize-small= u.object.project.name
               .w-row.u-marginbottom-20
                 .w-col.w-col-4
-                  .fontweight-semibold.fontsize-small.u-marginbottom-10 Categories you follow:
+                  .fontweight-semibold.fontsize-small.u-marginbottom-10= t('.categories_you_follow')
                 .w-col.w-col-8
                   - @user.category_followers.all.each do |category_follower|
                     .w-checkbox.w-clearfix
@@ -40,7 +40,7 @@
                       label.w-form-label.fontsize-small= category_follower.category.name_pt
               .w-row.u-marginbottom-20
                 .w-col.w-col-4
-                  .fontweight-semibold.fontsize-small.u-marginbottom-10 Project reminders:
+                  .fontweight-semibold.fontsize-small.u-marginbottom-10= t('.project_reminders')
                 .w-col.w-col-8
                   - @user.projects_in_reminder.each do |project|
                     .w-checkbox.w-clearfix
@@ -52,5 +52,3 @@
             .w-col.w-col-4.w-col-push-4
               = f.submit 'Save',  class:'btn btn-large'
  
-
-

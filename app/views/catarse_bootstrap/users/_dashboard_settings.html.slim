@@ -5,16 +5,16 @@
       .w-col.w-col-10.w-col-push-1
         = render 'devise/shared/alert'
         .w-form.card.card-terciary.u-marginbottom-20
-          .fontsize-base.fontweight-semibold Email
-          .fontsize-small.u-marginbottom-20 Keep this email address updated because it is the channel of communication between you, Fundoo staff, and the projects that you support.
+          .fontsize-base.fontweight-semibold= t('.email')
+          .fontsize-small.u-marginbottom-20= t('.keep_this_email_address')
           .w-row.u-marginbottom-20
             .w-col.w-col-6.w-sub-col
               = form.input_field :email, as: :string, class: 'w-input text-field positive'
             .w-col.w-col-6
 
           .divider.u-marginbottom-20
-          .fontsize-base.fontweight-semibold Change my password
-          .fontsize-small.u-marginbottom-20 For the password to be changed, you need to confirm your current password.
+          .fontsize-base.fontweight-semibold= t('.change_my_password')
+          .fontsize-small.u-marginbottom-20= t('.for_the_password_to')
           .w-row.u-marginbottom-20
             .w-col.w-col-6.w-sub-col
               label.field-label.fontweight-semibold for="email-20"  Current password
@@ -24,14 +24,14 @@
               = form.input_field :password, class: 'w-input text-field positive'
 
           .divider.u-marginbottom-20
-          .fontweight-semibold.fontsize-smaller Disable my account
-          .fontsize-smallest All your contributions will be made anonymous, your data will not be visible, you will exit the system, and your account will be permanently disabled.
-          = link_to 'Deactivate my account on Fundoo', resource, method: :delete, data: { confirm: 'You want to disable this account?' }, class: 'alt-link fontsize-smaller'
+          .fontweight-semibold.fontsize-smaller= t('.disable_my_account')
+          .fontsize-smallest= t('.all_your_contributions_will')
+          = link_to t('.deactivate_my_account_on'), resource, method: :delete, data: { confirm: t('.you_want_to_disable') }, class: 'alt-link fontsize-smaller'
 
     div
       .w-container
         .w-row
           .w-col.w-col-4
           .w-col.w-col-4
-            = form.button :submit, 'Save',  class:'btn btn-large'
+            = form.button :submit, t('.save'),  class:'btn btn-large'
           .w-col.w-col-4

@@ -4,18 +4,18 @@
     .w-row
       .w-col.w-col-8.u-marginbottom-30
         .fontsize-base.u-marginbottom-40
-          p.fontweight-bold Total de apoios confirmados por dia
+          p.fontweight-bold= t('.total_de_apoios_confirmados')
           = line_chart @metrics[:confirmed]
         .fontsize-base.u-marginbottom-60
-          p.fontweight-bold Total arrecadado por dia
+          p.fontweight-bold= t('.total_arrecadado_por_dia')
           = line_chart @metrics[:confirmed_amount_by_day]
         .fontsize-base.u-marginbottom-40
-          p.fontweight-bold Total de apoios confirmado por Estado
+          p.fontweight-bold= t('.total_de_apoios_confirmado')
         .w-row.card.fontsize-base.fontweight-semibold.card-secondary
           .w-col.w-col-6.w-col-small-6.w-col-tiny-6
-            div Estado
+            div= t('.estado')
           .w-col.w-col-6.w-col-small-6.w-col-tiny-6
-            div Total de apoio confirmado
+            div= t('.total_de_apoio_confirmado')
         - @metrics[:address_state].sort{|a,b| b[1] <=> a[1]}.each do |metric|
           .w-row.card.fontsize-base
             .w-col.w-col-6.w-col-small-6.w-col-tiny-6
@@ -26,25 +26,25 @@
         .card.u-radius.u-marginbottom-20.card-terciary data-ix="new-interaction" 
           .fontsize-small.fontweight-semibold.u-marginbottom-20
             span.fa.fa-download .
-            | Baixar relatórios
+            = t('.baixar_relat_rios')
           ul.w-list-unstyled
             li.fontsize-smaller.u-marginbottom-10
               div
-                | Apoiadores confirmados &nbsp;
+                => t('.apoiadores_confirmados')
                 = link_to 'CSV', reports_contribution_reports_for_project_owners_path(project_id: @project.id, format: :csv), class: 'alt-link'
                 | &nbsp;\&nbsp;
                 = link_to 'XLS', reports_contribution_reports_for_project_owners_path(project_id: @project.id, format: :xls), class: 'alt-link'
             li.divider.u-marginbottom-10
             li.fontsize-smaller.u-marginbottom-10
               div
-                | Apoiadores confirmados com boleto impresso&nbsp;&nbsp;
+                => t('.apoiadores_confirmados_com_boleto')
                 = link_to 'CSV', reports_contribution_reports_for_project_owners_path(project_id: @project.id, state: 'waiting_confirmation', format: :csv), class: 'alt-link'
                 | &nbsp;\&nbsp;
                 = link_to 'XLS', reports_contribution_reports_for_project_owners_path(project_id: @project.id,state: 'waiting_confirmation', format: :xls), class: 'alt-link'
             li.divider.u-marginbottom-10
             li.fontsize-smaller.u-marginbottom-10
               div
-                | Apoiadores que não selecionaram recompensa&nbsp;&nbsp;
+                => t('.apoiadores_que_n_o')
                 a.alt-link href="#"  CSV
                 | \&nbsp;
                 a.alt-link href="#"  XLS
@@ -56,7 +56,7 @@
                 - selected_r.each do |reward|
                   li.fontsize-smaller.u-marginbottom-10
                     div
-                      | Apoiadores da recompensa #{reward.display_minimum}
+                      = t('.apoiadores_da_recompensa_reward', reward: reward.display_minimum)
                       br/
                       = link_to 'CSV', reports_contribution_reports_for_project_owners_path(project_id: @project.id, reward_id: reward.id, format: :csv), class: 'alt-link'
                       | &nbsp;\&nbsp;
@@ -88,4 +88,3 @@
           tr
             td= metric[0] || 'Internacional'
             td= metric[1]
-
