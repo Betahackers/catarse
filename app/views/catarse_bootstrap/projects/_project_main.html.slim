@@ -8,7 +8,7 @@ section.section
           = render 'edit_action', text: 'Escrever novidade', anchor: 'posts'
           .posts
             | &nbsp;
-          #posts-loading.loader.u-text-center.w-col.w-col-12 = image_tag "catarse_bootstrap/loader.gif"
+          #posts-loading.loader.u-text-center.w-col.w-col-12 = image_tag "catarse_bootstrap/fundoo-logo-infinity-spinning.svg"
 
         #project_contributions.content.w-col.w-col-8.w-hidden[data-path=project_contributions_path(project_id: @project.id)]
           - if policy(@project).update?
@@ -24,7 +24,7 @@ section.section
             .divider.u-marginbottom-20
           .results[data-skiptab="true"]
             | &nbsp;
-          #contributions-loading.loader.u-text-center.w-col.w-col-12 = image_tag "catarse_bootstrap/loader.gif"
+          #contributions-loading.loader.u-text-center.w-col.w-col-12 = image_tag "catarse_bootstrap/fundoo-logo-infinity-spinning.svg"
 
         #project_comments.content.w-col.w-col-8.w-hidden
 
@@ -60,7 +60,7 @@ section.section
               = render_twitter_mobile(url: project_by_slug_url(permalink: @project.permalink), title: @project.name)
               = t('.tweet')
         #rewards.u-marginbottom-30[data-index_path=project_rewards_path(@project)]
-          .u-text-center = image_tag 'catarse_bootstrap/loader.gif'
+          .u-text-center = image_tag 'catarse_bootstrap/fundoo-logo-infinity-spinning.svg'
         - if @project.can_show_funding_period?
           .fontsize-small.fontweight-semibold.u-text-center-small-only = t('.funding_period')
           .fontsize-small.u-text-center-small-only = "#{@project.display_online_date} - #{@project.display_expires_at}  (#{t('datetime.distance_in_words.x_days', count: @project.online_days)})"
