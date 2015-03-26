@@ -80,11 +80,11 @@ puts 'Seeding the database...'
   sendgrid: 'bwdkgkej'
   
 }.each do |name, value|
-   conf = CatarseSettings.find_or_initialize_by(name: name)
+   conf = ENV.find_or_initialize_by(name: name)
    conf.update_attributes({
      value: value
    })
-   CatarseSettings[name] = value
+   ENV[name] = value
 end
 
 
@@ -120,7 +120,7 @@ puts '============================================='
 puts ' Showing all entries in Configuration Table...'
 puts '---------------------------------------------'
 
-CatarseSettings.all.each do |conf|
+ENV.all.each do |conf|
   a = conf.attributes
   puts "  #{a['name']}: #{a['value']}"
 end

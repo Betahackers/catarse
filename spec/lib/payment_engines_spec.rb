@@ -55,7 +55,7 @@ RSpec.describe PaymentEngines do
 
   describe ".configuration" do
     subject{ PaymentEngines.configuration }
-    it{ is_expected.to eq(CatarseSettings) }
+    it{ is_expected.to eq(ENV) }
   end
 
   describe ".create_payment_notification" do

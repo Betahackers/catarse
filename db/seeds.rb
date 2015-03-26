@@ -71,7 +71,7 @@ puts 'Seeding the database...'
   github_url: 'http://github.com/catarse',
   contato_url: 'http://suporte.catarse.me/'
 }.each do |name, value|
-   conf = CatarseSettings.find_or_initialize_by(name: name)
+   conf = ENV.find_or_initialize_by(name: name)
    conf.update_attributes({
      value: value
    }) if conf.new_record?
@@ -103,7 +103,7 @@ puts '============================================='
 puts ' Showing all entries in Configuration Table...'
 puts '---------------------------------------------'
 
-CatarseSettings.all.each do |conf|
+ENV.all.each do |conf|
   a = conf.attributes
   puts "  #{a['name']}: #{a['value']}"
 end

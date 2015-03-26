@@ -2,7 +2,7 @@
 - project = @notification.project
 
 - project_link = edit_project_url(project)
-- company_name = CatarseSettings[:company_name]
+- company_name = ENV[:company_name]
 
 |Olá, #{user.name}!
 br
@@ -36,7 +36,7 @@ strong
   | Para acompanhar a mudança de status da página do projeto #{link_to project.name, project_link, target: '__blank'} fique de olho na caixa de entrada do seu e-mail e no painel de controle do seu projeto.
 br/
 br/
-| Lembrando que você pode tirar dúvidas conosco a qualquer momento respondendo diretamente a esta mensagem ou através do e-mail #{mail_to CatarseSettings[:email_projects]} 
+| Lembrando que você pode tirar dúvidas conosco a qualquer momento respondendo diretamente a esta mensagem ou através do e-mail #{mail_to ENV[:email_projects]} 
 br/
 br/
 |Um abraço,

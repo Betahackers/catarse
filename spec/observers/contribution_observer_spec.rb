@@ -90,7 +90,7 @@ RSpec.describe ContributionObserver do
   describe '#from_confirmed_to_requested_refund' do
     let(:admin){ create(:user) }
     before do
-      CatarseSettings[:email_payments] = admin.email
+      ENV[:email_payments] = admin.email
       allow(contribution).to receive(:can_do_refund?).and_return(true)
     end
 
@@ -136,7 +136,7 @@ RSpec.describe ContributionObserver do
 
   describe '#from_confirmed_to_canceled' do
     before do
-      CatarseSettings[:email_payments] = 'finan@c.me'
+      ENV[:email_payments] = 'finan@c.me'
     end
 
     let(:user_finan) { create(:user, email: 'finan@c.me') }

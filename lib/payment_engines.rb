@@ -25,7 +25,7 @@ class PaymentEngines
   end
 
   def self.configuration
-    CatarseSettings
+    ENV
   end
 
   def self.find_payment filter

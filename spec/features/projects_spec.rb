@@ -10,8 +10,8 @@ RSpec.describe "Projects", type: :feature do
     RoutingFilter.active = true
   }
   before {
-    CatarseSettings[:base_url] = 'http://catarse.me'
-    CatarseSettings[:company_name] = 'Catarse'
+    ENV[:base_url] = 'http://catarse.me'
+    ENV[:company_name] = 'Catarse'
   }
 
 

@@ -36,11 +36,11 @@ class ProjectObserver < ActiveRecord::Observer
   end
 
   def from_online_to_waiting_funds(project)
-    project.notify_owner(:project_in_waiting_funds, { from_email: CatarseSettings[:email_projects] })
+    project.notify_owner(:project_in_waiting_funds, { from_email: ENV[:email_projects] })
   end
 
   def from_waiting_funds_to_successful(project)
-    project.notify_owner(:project_success, from_email: CatarseSettings[:email_projects])
+    project.notify_owner(:project_success, from_email: ENV[:email_projects])
 
     notify_admin_that_project_reached_deadline(project)
     notify_admin_that_project_is_successful(project)
@@ -48,15 +48,15 @@ class ProjectObserver < ActiveRecord::Observer
   end
 
   def from_in_analysis_to_approved(project)
-    project.notify_owner(:project_approved, { from_email: CatarseSettings[:email_projects] })
+    project.notify_owner(:project_approved, { from_email: ENV[:email_projects] })
   end
 
   def notify_admin_that_project_reached_deadline(project)
-    project.notify_to_backoffice(:adm_project_deadline, { from_email: CatarseSettings[:email_system] })
+    project.notify_to_backoffice(:adm_project_deadline, { from_email: ENV[:email_system] })
   end
 
   def notify_admin_that_project_is_successful(project)
-    redbooth_user = User.find_by(email: CatarseSettings[:email_redbooth])
+    redbooth_user = User.find_by(email: ENV[:email_redbooth])
     project.notify_once(:redbooth_task, redbooth_user) if redbooth_user
   end
 
@@ -88,7 +88,7 @@ class ProjectObserver < ActiveRecord::Observer
 
     request_refund_for_failed_project(project)
 
-    project.notify_owner(:project_unsuccessful, { from_email: CatarseSettings[:email_projects] })
+    project.notify_owner(:project_unsuccessful, { from_email: ENV[:email_projects] })
   end
 
   def from_waiting_funds_to_failed(project)
@@ -123,8 +123,8 @@ class ProjectObserver < ActiveRecord::Observer
     project.notify_owner(
       notification_type,
       {
-        from_email: CatarseSettings[:email_projects],
-        from_name: CatarseSettings[:company_name]
+        from_email: ENV[:email_projects],
+        from_name: ENV[:company_name]
       }
     )
   end

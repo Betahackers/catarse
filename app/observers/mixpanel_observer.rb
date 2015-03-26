@@ -72,7 +72,7 @@ class MixpanelObserver < ActiveRecord::Observer
   end
 
   def tracker
-    @tracker ||= Mixpanel::Tracker.new(CatarseSettings[:mixpanel_token])
+    @tracker ||= Mixpanel::Tracker.new(ENV[:mixpanel_token])
   end
 end
 

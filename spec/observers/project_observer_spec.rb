@@ -12,11 +12,11 @@ RSpec.describe ProjectObserver do
   subject{ contribution }
 
   before do
-    CatarseSettings[:support_forum] = 'http://support.com'
-    CatarseSettings[:email_projects] = 'foo@foo.com'
-    CatarseSettings[:facebook_url] = 'http://facebook.com/foo'
-    CatarseSettings[:blog_url] = 'http://blog.com/foo'
-    CatarseSettings[:company_name] = 'Catarse'
+    ENV[:support_forum] = 'http://support.com'
+    ENV[:email_projects] = 'foo@foo.com'
+    ENV[:facebook_url] = 'http://facebook.com/foo'
+    ENV[:blog_url] = 'http://blog.com/foo'
+    ENV[:company_name] = 'Catarse'
   end
 
   describe "after_save" do
@@ -61,7 +61,7 @@ RSpec.describe ProjectObserver do
       create(:reward, project: project)
       project
     end
-    let(:user) { create(:user, email: ::CatarseSettings[:email_projects])}
+    let(:user) { create(:user, email: ::ENV[:email_projects])}
 
     before do
       user
@@ -89,8 +89,8 @@ RSpec.describe ProjectObserver do
           project.user,
           project,
           {
-            from_email: CatarseSettings[:email_projects],
-            from_name: CatarseSettings[:company_name]
+            from_email: ENV[:email_projects],
+            from_name: ENV[:company_name]
           }
         )
         project.push_to_online
@@ -121,7 +121,7 @@ RSpec.describe ProjectObserver do
           project.user,
           project,
           {
-            from_email: CatarseSettings[:email_projects]
+            from_email: ENV[:email_projects]
           }
         )
       end
@@ -141,7 +141,7 @@ RSpec.describe ProjectObserver do
         project.user,
         project,
         {
-          from_email: CatarseSettings[:email_projects]
+          from_email: ENV[:email_projects]
         }
       )
     end
@@ -254,8 +254,8 @@ RSpec.describe ProjectObserver do
     let(:project){ create(:project, goal: 30, online_days: 1, online_date: Time.now - 8.days, state: 'waiting_funds') }
     let(:user) { create(:user, email: 'foo@foo.com')}
     before do
-      CatarseSettings[:email_payments] = 'foo@foo.com'
-      CatarseSettings[:email_system] = 'foo2@foo.com'
+      ENV[:email_payments] = 'foo@foo.com'
+      ENV[:email_system] = 'foo2@foo.com'
       user
       allow(project).to receive(:reached_goal?).and_return(true)
       allow(project).to receive(:in_time_to_wait?).and_return(false)
@@ -272,7 +272,7 @@ RSpec.describe ProjectObserver do
     let(:project){ create(:project, goal: 30, online_days: 1, online_date: Time.now - 8.days, state: 'waiting_funds') }
     let(:user) { create(:user, email: 'foo@foo.com')}
     before do
-      CatarseSettings[:email_redbooth] = 'foo@foo.com'
+      ENV[:email_redbooth] = 'foo@foo.com'
       user
       allow(project).to receive(:reached_goal?).and_return(true)
       allow(project).to receive(:in_time_to_wait?).and_return(false)

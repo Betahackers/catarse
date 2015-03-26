@@ -10,10 +10,10 @@ RSpec.describe 'find_secure_token' do
 
   context 'when database does not contain secret_token in configurations' do
     before do
-      ::CatarseSettings[:secret_token] = nil
+      ::ENV[:secret_token] = nil
     end
     it{ is_expected.not_to be_nil }
-    it{ is_expected.to eq(::CatarseSettings[:secret_token]) }
+    it{ is_expected.to eq(::ENV[:secret_token]) }
   end
 
 end
@@ -27,10 +27,10 @@ RSpec.describe 'find_secure_key_base' do
 
   context 'when database does not contain secret_key_base in configurations' do
     before do
-      ::CatarseSettings[:secret_key_base] = nil
+      ::ENV[:secret_key_base] = nil
     end
     it{ is_expected.not_to be_nil }
-    it{ is_expected.to eq(::CatarseSettings[:secret_key_base]) }
+    it{ is_expected.to eq(::ENV[:secret_key_base]) }
   end
 
 end

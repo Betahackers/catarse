@@ -10,11 +10,11 @@ module Project::PaymentEngineHandler
 
     scope :not_using_pagarme, -> do
       where("projects.permalink not in (:permalinks) AND projects.online_date::date AT TIME ZONE '#{Time.zone.tzinfo.name}' < '2014-11-10'::date AT TIME ZONE '#{Time.zone.tzinfo.name}'",
-            { permalinks: (CatarseSettings[:projects_enabled_to_use_pagarme].split(',').map(&:strip) rescue []) })
+            { permalinks: (ENV[:projects_enabled_to_use_pagarme].split(',').map(&:strip) rescue []) })
     end
 
     def self.enabled_to_use_pagarme
-      permalinks = (CatarseSettings[:projects_enabled_to_use_pagarme].split(',').map(&:strip) rescue [])
+      permalinks = (ENV[:projects_enabled_to_use_pagarme].split(',').map(&:strip) rescue [])
       self.using_pagarme(permalinks)
     end
 

@@ -178,7 +178,7 @@ RSpec.describe Project, type: :model do
 
   describe '.video_url' do
     before do
-      CatarseSettings[:minimum_goal_for_video] = 5000
+      ENV[:minimum_goal_for_video] = 5000
     end
     context 'when goal is above minimum' do
       subject { @project_01 }
@@ -194,7 +194,7 @@ RSpec.describe Project, type: :model do
       subject { @project_02 }
 
       before do
-        CatarseSettings[:minumum_goal_for_video] = 5000
+        ENV[:minumum_goal_for_video] = 5000
         @project_02 = create(:project, goal: 4000)
       end
 
@@ -508,8 +508,8 @@ RSpec.describe Project, type: :model do
   describe "#new_draft_recipient" do
     subject { project.new_draft_recipient }
     before do
-      CatarseSettings[:email_projects] = 'admin_projects@foor.bar'
-      @user = create(:user, email: CatarseSettings[:email_projects])
+      ENV[:email_projects] = 'admin_projects@foor.bar'
+      @user = create(:user, email: ENV[:email_projects])
     end
     it{ is_expected.to eq(@user) }
   end
@@ -521,7 +521,7 @@ RSpec.describe Project, type: :model do
       @project_03 = create(:project, permalink: 'c', online_date: '2014-10-9'.to_date)
       @project_04 = create(:project, online_date: '2014-11-11'.to_date)
 
-      CatarseSettings[:projects_enabled_to_use_pagarme] = 'a, c'
+      ENV[:projects_enabled_to_use_pagarme] = 'a, c'
     end
 
     subject { Project.enabled_to_use_pagarme }
@@ -536,7 +536,7 @@ RSpec.describe Project, type: :model do
 
     context "when project is using pagarme" do
       before do
-        CatarseSettings[:projects_enabled_to_use_pagarme] = 'foo'
+        ENV[:projects_enabled_to_use_pagarme] = 'foo'
       end
 
       it { is_expected.to be_truthy }
@@ -553,7 +553,7 @@ RSpec.describe Project, type: :model do
 
     context "when project is not using pagarme" do
       before do
-        CatarseSettings[:projects_enabled_to_use_pagarme] = nil
+        ENV[:projects_enabled_to_use_pagarme] = nil
       end
 
       it { is_expected.to be_falsey }
