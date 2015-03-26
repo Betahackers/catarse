@@ -1,13 +1,20 @@
 es:
   date:
-    abbr_day_names: "[El Dom, el Lun, el mar, el Mié, Jue, el Vie, se sentó."
+    abbr_day_names: 
+      - Dom
+      - Lun
+      - Mar
+      - Mié
+      - Jue
+      - Vie
+      - Sáb
     abbr_month_names:
       - ~
       - Ene
       - Feb
       - Mar
       - Abr
-      - mayo
+      - Mayo
       - Jun
       - Jul
       - Aug
@@ -15,14 +22,37 @@ es:
       - Oct
       - Nov
       - Dic
-    day_names: "[Domingo, el lunes, el martes, el miércoles, el jueves, el viernes, sábado."
+    day_names:
+      - Domingo
+      - Lunes
+      - Martes
+      - Miércoles
+      - Jueves
+      - Viernes
+      - Sábado
     formats:
       default: "%Y-%m-%d"
       with_time: "%Y/%m/%d - %H: %M"
       long: "Ese %d, %y"
       short: "ese %d"
-    month_names: "[, Enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre."
-    order: "[: año: mes: día]"
+    month_names:
+      - ~
+      - Enero
+      - Febrero
+      - Marzo
+      - Abril
+      - Mayo
+      - Junio
+      - Julio
+      - Agosto
+      - Septiembre
+      - Octubre
+      - Noviembre
+      - Diciembre
+    order:
+      - :year
+      - :month
+      - :day
   datetime:
     distance_in_words:
       about_x_hours:
