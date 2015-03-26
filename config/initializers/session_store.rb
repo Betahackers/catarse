@@ -1,9 +1,9 @@
 # Be sure to restart your server when you modify this file.
 
-# if Rails.env.production? && ENV[:base_domain]
-#   Catarse::Application.config.session_store :cookie_store, key: ENV[:secret_token], domain: ENV[:base_domain]
+# if Rails.env.production? && ENV['BASE_DOMAIN']
+#   Catarse::Application.config.session_store :cookie_store, key: ENV['SECRET_TOKEN'], domain: ENV['BASE_DOMAIN']
 # else
-  Catarse::Application.config.session_store :cookie_store, key: ENV[:secret_token]
+  Catarse::Application.config.session_store :cookie_store, key: ENV['SECRET_TOKEN']
 # end
 
 # Use the database for sessions instead of the cookie-based default,

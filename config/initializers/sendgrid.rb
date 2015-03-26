@@ -4,8 +4,8 @@
 #       address: 'smtp.sendgrid.net',
 #       port: '587',
 #       authentication: :plain,
-#       user_name: ENV[:sendgrid_user_name],
-#       password: ENV[:sendgrid],
+#       user_name: ENV['SENDGRID_USER_NAME'],
+#       password: ENV['SENDGRID'],
 #       domain: 'heroku.com'
 #     }
 #     ActionMailer::Base.delivery_method = :smtp

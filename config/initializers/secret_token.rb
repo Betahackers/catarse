@@ -5,16 +5,16 @@ require 'securerandom'
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
 def find_secure_token
-  CatarseSettings[:secret_token] = SecureRandom.hex(64) unless ENV[:secret_token]
-  ENV[:secret_token]
+  ENV['SECRET_TOKEN'] = SecureRandom.hex(64) unless ENV['SECRET_TOKEN']
+  ENV['SECRET_TOKEN']
 rescue
   # Just to ensure that we can run migrations and create the settings table
   nil
 end
 
 def find_secure_key_base
-  CatarseSettings[:secret_key_base] = SecureRandom.hex(64) unless ENV[:secret_key_base]
-  ENV[:secret_key_base]
+  ENV['SECRET_KEY_BASE'] = SecureRandom.hex(64) unless ENV['SECRET_KEY_BASE']
+  ENV['SECRET_KEY_BASE']
 rescue
   # Just to ensure that we can run migrations and create the settings table
   nil

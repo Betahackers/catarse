@@ -64,16 +64,16 @@ RSpec.configure do |config|
     allow(Blog).to receive(:fetch_last_posts).and_return([])
 
     # Default configurations
-    ENV[:base_domain] = 'localhost'
-    ENV[:email_contact] = 'foo@bar.com'
-    ENV[:email_projects] = 'foo@bar.com'
-    ENV[:email_system] = 'system@catarse.me'
-    ENV[:company_name] = 'Foo Bar Company'
+    ENV['BASE_DOMAIN'] = 'localhost'
+    ENV['EMAIL_CONTACT'] = 'foo@bar.com'
+    ENV['EMAIL_PROJECTS'] = 'foo@bar.com'
+    ENV['EMAIL_SYSTEM'] = 'system@catarse.me'
+    ENV['COMPANY_NAME'] = 'Foo Bar Company'
 
     # Email notification defaults
-    UserNotifier.system_email     = ENV[:email_system]
-    UserNotifier.from_email       = ENV[:email_contact]
-    UserNotifier.from_name        = ENV[:company_name]
+    UserNotifier.system_email     = ENV['EMAIL_SYSTEM']
+    UserNotifier.from_email       = ENV['EMAIL_CONTACT']
+    UserNotifier.from_name        = ENV['COMPANY_NAME']
 
     allow_any_instance_of(Contribution).to receive(:payment_engine).and_return(PaymentEngines::Interface.new)
     allow_any_instance_of(MixpanelObserver).to receive_messages(tracker: double('mixpanel tracker', track: nil, people: double('mixpanel people', {set: nil})))

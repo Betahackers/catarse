@@ -4,8 +4,8 @@ style media="screen, projection" type="text/css"
 javascript:
   if (typeof(Zenbox) !== "undefined") {
     Zenbox.init({
-      dropboxID:   "#{CatarseSettings[:zendesk_dropbox_id]}",
-      url:         "#{CatarseSettings[:zendesk_url]}",
+      dropboxID:   "#{ENV['ZENDESK_DROPBOX_ID']}",
+      url:         "#{ENV['ZENDESK_URL']}",
       tabTooltip:  "Suporte",
       tabImageURL: "https://assets.zendesk.com/external/zenbox/images/tab_pt_support.png",
       tabColor:    "black",

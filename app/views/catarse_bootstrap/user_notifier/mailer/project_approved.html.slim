@@ -1,7 +1,7 @@
 - project = @notification.project
 
 - project_link = edit_project_url(project)
-- company_name = ENV[:company_name]
+- company_name = ENV['COMPANY_NAME']
 
 | Olá, #{project.user.name}, o <strong>#{link_to 'seu projeto foi aprovado', project_link}</strong> e pode ir ao ar quando você desejar.
 br/
@@ -36,7 +36,7 @@ br/
 | - Só cobramos nossa taxa de 13% caso você tenha sucesso em sua captação! Entenda como fazemos o #{link_to 'repasse do dinheiro', 'http://suporte.catarse.me/hc/pt-br/articles/202037493-Como-ser%C3%A1-feito-o-repasse-do-dinheiro-'}.
 br/
 br/
-| Lembrando que você pode tirar dúvidas conosco respondendo diretamente a esta mensagem ou através do e-mail #{mail_to ENV[:email_projects]}
+| Lembrando que você pode tirar dúvidas conosco respondendo diretamente a esta mensagem ou através do e-mail #{mail_to ENV['EMAIL_PROJECTS']}
 br/
 br/
 | Um grande abraço,

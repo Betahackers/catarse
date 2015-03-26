@@ -55,7 +55,7 @@ es:
         valeu: "¡ Gracias!"
         voc_faz_parte_do: "Tú eres parte del grupo de"
         pessoas_que_querem_tirar: "personas que quieren hacer"
-        do_papel_voc_receber: "pasar! Usted recibirá confirmación del pago por correo electrónico tan pronto como se procesa. También puede seguir el estado de tu apoyo"
+        do_papel_voc_receber: "que sea una realidad! Usted recibirá confirmación del pago por correo electrónico tan pronto como se procesa. También puede seguir el estado de tu apoyo"
         atrav_s_do_seu: "a través de su perfil"
         compartilhe_o_seu: ".Comparte tu apoyo y aumentar las posibilidades de llegar a la meta!"
         compartilhe: Compartir
@@ -112,7 +112,7 @@ es:
       recompensa: Recompensa
       apoio: "Soporte:"
       status_do_apoio_1: "Estado de soporte:"
-      cart_o_de_credito: "Tarjeta de crédito %{installment_value} x€ %{installments}"
+      cart_o_de_credito: "Tarjeta de crédito %{installment_value} x €%{installments}"
       boleto_bancario: "Boleto bancario"
       aguardando_confirma_o_do: "A la espera de confirmación de pago"
       recompensa_1: "Recompensa:"

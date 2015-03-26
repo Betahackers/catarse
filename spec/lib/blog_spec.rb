@@ -5,7 +5,7 @@ require 'rails_helper'
 RSpec.describe Blog do
   describe ".fetch_last_posts" do
     it "should fetch last posts from the blog url in configuration" do
-      ENV[:blog_url] = 'test'
+      ENV['BLOG_URL'] = 'test'
       Blog.fetch_last_posts
     end
   end

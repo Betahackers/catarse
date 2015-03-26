@@ -1,7 +1,7 @@
 header.header
   .centered
     h1
-      = link_to "#{ENV[:company_name]}", root_url(host: ENV[:base_domain] || request.domain, protocol: 'http'), :class => 'logo', :title => ENV[:company_name]
+      = link_to "#{ENV['COMPANY_NAME']}", root_url(host: ENV['BASE_DOMAIN'] || request.domain, protocol: 'http'), :class => 'logo', :title => ENV['COMPANY_NAME']
     nav.header-nav
       ul
         li.header-nav-li
@@ -21,10 +21,10 @@ header.header
                 = link_to 'ver todos', 'javascript:void(0);'
 
         / li.header-nav-li
-        /   = link_to t('.help'), ENV[:support_forum], target: :_blank, :class => 'header-nav-item',  id: 'guidelines_header_modal' if ENV[:support_forum].present?
+        /   = link_to t('.help'), ENV['SUPPORT_FORUM'], target: :_blank, :class => 'header-nav-item',  id: 'guidelines_header_modal' if ENV['SUPPORT_FORUM'].present?
         /
         / li.header-nav-li
-        /   = link_to t('.blog'), ENV['blog_url'], target: :_blank, class: 'header-nav-item' if ENV['blog_url'].present?
+        /   = link_to t('.blog'), ENV['BLOG_URL'], target: :_blank, class: 'header-nav-item' if ENV['BLOG_URL'].present?
 
         - if current_user
           li.header-nav-li.user

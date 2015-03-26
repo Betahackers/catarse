@@ -4,7 +4,7 @@ en:
       title: "Formatting tips"
       formatting_tip1_html: "If you paste the url of an image or a video from vimeo or youtube, they will appear in the description of the idea. give it a shot!"
       formatting_tip2_html: "When pasting a url either, she will turn into a link. For example, http://catarse.me will turn < the class = \"alt-link\" href = \"http://catarse.me\" target = \"_blank\" > http://catarse.me </a>."
-      formatting_tip3_html: "If you want to put a text in the link, just use the following format: \"text you want\": http://sua.url. For example, \"Catharsis\": http://catarse.me turn < the class = \"alt-link\" href = \"http://catarse.me\" target = \"_blank\" > </a> Catharsis."
+      formatting_tip3_html: "If you want to put a text in the link, just use the following format: \"text you want\": http://sua.url. For example, \"Fundoo\": http://catarse.me turn < the class = \"alt-link\" href = \"http://catarse.me\" target = \"_blank\" > </a> Fundoo."
       formatting_tip4_html: "You can use bold by adding two asterisks (* *) before and after the text you want to format. For example, * my * bold text * * will appear as <strong> my bold text </strong>."
       formatting_tip5_html: "You can use italic by adding an underline (_) before and after the text you want to format. For example, _ my italic text _ will appear as <i> my text in italic </i>."
     terms: "terms of use"

@@ -1,6 +1,6 @@
 CatarseMonkeymail.configure do |config|
-  config.api_key = ENV[:mailchimp_api_key]
-  config.list_id = ENV[:mailchimp_list_id]
-  config.successful_projects_list = ENV[:mailchimp_successful_projects_list]
-  config.failed_projects_list = ENV[:mailchimp_failed_projects_list]
+  config.api_key = ENV['MAILCHIMP_API_KEY']
+  config.list_id = ENV['MAILCHIMP_LIST_ID']
+  config.successful_projects_list = ENV['MAILCHIMP_SUCCESSFUL_PROJECTS_LIST']
+  config.failed_projects_list = ENV['MAILCHIMP_FAILED_PROJECTS_LIST']
 end

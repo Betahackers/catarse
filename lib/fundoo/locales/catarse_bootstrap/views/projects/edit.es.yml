@@ -17,12 +17,12 @@ es:
         limited: Limitada
         sold_out: Agotado
         contributions_to_confirm:
-          one: "1 soporte en término de confirmación."
-          other: "1 soporte en término de confirmación."
+          one: "1 contribuidor para confirmar"
+          other: "%{count} contribuidores para confirmar"
         edit_reward: "Editar recompensa"
         new_reward: "Registro de recompensa"
         reward_deliver_time: "<b>Estimación de entrega:</b> %{estimate}"
-        reward_title: "{Mínimo} % o más"
+        reward_title: "%{minimum} o más"
     dashboard_user_settings:
       title: "Banca y datos del registro"
       subtitle_html: "Con la siguiente información completa, su proyecto estará listo al aire. Después de completar el relleno, luego haga clic en guardar. Revisión. Si todo está bien, sólo presione el botón publicar y empezar su campaña."

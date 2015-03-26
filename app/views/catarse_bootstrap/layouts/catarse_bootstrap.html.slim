@@ -21,9 +21,9 @@ html
       meta property="og:title"        content=t('site.title')
       meta property="og:type"         content=:cause
       meta property="og:url"          content=root_url
-      meta property="og:image"        content=CatarseSettings[:company_logo]
-      meta property="og:site_name"    content=CatarseSettings[:company_name]
-      meta property="fb:app_id"       content=CatarseSettings[:facebook_app_id]
+      meta property="og:image"        content=ENV['COMPANY_LOGO']
+      meta property="og:site_name"    content=ENV['COMPANY_NAME']
+      meta property="fb:app_id"       content=ENV['FACEBOOK_APP_ID']
       meta property="og:description"  content=(t('projects.index_header.title') + '. ' +  t('projects.index_header.subtitle'))
 
   body#catarse_bootstrap[data-controller-name=controller_name data-action=action_name data-user="#{current_user.try(:to_analytics_json)}" data-mobile=browser.mobile?.to_s]

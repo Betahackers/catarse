@@ -68,7 +68,7 @@ es:
         you_have_credits: "Tienes <strong>%{credits}</strong> en créditos para llevar a cabo esta contribución."
         choose_reward: "Elegir la recompensa y entonces el valor de la contribución"
         choose_value: "Introduzca el valor de su contribución."
-        minimum_disclaimer: "Desde € <span id=\"minimum-value\"> 10</span> es genial;)"
+        minimum_disclaimer: "Desde €<span id=\"minimum-value\"> 10</span> es genial;)"
         next_step: "Revisar y realizar el pago"
         no_reward: "Gracias. Sólo quiero ayudar al proyecto."
       review:

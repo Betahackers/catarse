@@ -32,10 +32,10 @@ p
   ' em contato diretamente com o realizador através do e-mail #{mail_to contribution.project.user.email}.
   ' Ah! Lembre-se de guardar este email, pois ele contém informações importantes
   ' a respeito da sua contribuição ao projeto.
-p Se ficou com alguma dúvida, entre em contato conosco respondendo a esta mensagem ou através do e-mail #{mail_to ENV[:email_contact]}
+p Se ficou com alguma dúvida, entre em contato conosco respondendo a esta mensagem ou através do e-mail #{mail_to ENV['EMAIL_CONTACT']}
 
 p
   | Um abraço e muito obrigado,
   br/
-  | #{ENV[:company_name]}
+  | #{ENV['COMPANY_NAME']}
 

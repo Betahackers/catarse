@@ -11,7 +11,7 @@ en:
         user_id: "User ID"
         goal: Meta
         total_payment_service_fee: "Rate of MP"
-        total_catarse_fee: "Rate of Catharsis"
+        total_catarse_fee: "Rate of Fundoo"
         zero_fee: "No contribution fee?"
         repass_value: "Vl. Pass-through"
         expires_at: Finalizes
@@ -107,19 +107,19 @@ en:
           cancel: "Contribution canceled!"
           push_to_trash: "Contribution deleted!"
       show:
-        contribution_info: "Contribution information% {key}"
+        contribution_info: "Contribution information %{key}"
         payment_id: "Payment ID"
         payment_method: "Means of payment"
         payment_fee: "Rate of payment"
         successful: successful
         payment_choice: "Payment option"
         payer_email: "Email used for the means of payment"
-        user_email: "Email used in catharsis"
+        user_email: "Email used in fundoo"
         created_at: "Initiated in"
       index:
         details:
           payer_email: "E-mail of the means of payment"
-          normal_email: "Email at Catharsis"
+          normal_email: "Email at Fundoo"
           payment_id: "Payment ID"
           acquirer_tid: "TID Operator"
           payment_method: "Means of payment"
@@ -204,7 +204,7 @@ en:
           user_id: "User ID"
           goal: Meta
           total_payment_service_fee: "Rate of MP"
-          total_catarse_fee: "Rate of Catharsis"
+          total_catarse_fee: "Rate of Fundoo"
           zero_fee: "No support fee?"
           repass_value: "Vl. Pass-through"
           expires_at: Finalizes
@@ -300,19 +300,19 @@ en:
             cancel: "Contribution canceled!"
             push_to_trash: "Contribution deleted!"
         show:
-          contribution_info: "Contribution information% {key}"
+          contribution_info: "Contribution information %{key}"
           payment_id: "Payment ID"
           payment_method: "Means of payment"
           payment_fee: "Rate of payment"
           successful: successful
           payment_choice: "Payment option"
           payer_email: "Email used for the means of payment"
-          user_email: "Email used in catharsis"
+          user_email: "Email used in fundoo"
           created_at: "Initiated in"
         index:
           details:
             payer_email: "E-mail of the means of payment"
-            normal_email: "Email at Catharsis"
+            normal_email: "Email at Fundoo"
             payment_id: "Payment ID"
             acquirer_tid: "TID Operator"
             payment_method: "Means of payment"

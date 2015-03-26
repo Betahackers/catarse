@@ -3,7 +3,7 @@ es:
     project:
       contributed: criado
       reached: golpear
-      progress_html: "<span>{%} %</span> financiado"
+      progress_html: "<span>%{percent}%</span> financiado"
       time_remaining_small_html:
         one: "< div class = ' fontsize-smallest lineheight-tightest' >%{count} %{unit}</div> < div class = ' fontsize-smallest lineheight-tightest' > resto </div>"
         other: "< div class = ' fontsize-smallest lineheight-tightest ' >%{count} %{unit} </div> < div class = ' fontsize-smallest lineheight-tightest ' > resto </div>"
@@ -31,7 +31,7 @@ es:
         other: resto
       contributed: criado
       reached: golpear
-      progress_html: "<span>{%} %</span> financiado"
+      progress_html: "<span>%{percent}%</span> financiado"
       time_remaining_html:
         one: "<span> %{count} %{unit} </span> resto"
         other: "<span> %{count} %{unit} </span> resto"

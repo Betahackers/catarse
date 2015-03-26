@@ -10,8 +10,8 @@ RSpec.describe "Projects", type: :feature do
     RoutingFilter.active = true
   }
   before {
-    ENV[:base_url] = 'http://catarse.me'
-    ENV[:company_name] = 'Catarse'
+    ENV['BASE_URL'] = 'http://catarse.me'
+    ENV['COMPANY_NAME'] = 'Catarse'
   }
 
 

@@ -12,6 +12,6 @@ en:
   share_my_contributions: "Check out the project "
   site:
     description: "The Fundoo is a different tool – and collaborative – to make your project happen!"
-    keywords: "catharsis, crowdfunding, collective funding, project, community, open source"
+    keywords: "fundoo, crowdfunding, collective funding, project, community, open source"
     meta_title: "%{title} · %{company_name}"
     title: "Funding for your projects"

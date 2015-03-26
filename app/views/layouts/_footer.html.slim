@@ -5,23 +5,23 @@ footer.footer
         .footer-list
           h3.footer-title= t('.titles.contact')
           ul.footer-list
-            li= link_to t('.links.twitter'), "#{ENV[:twitter_url]}", target: '_blank'
-            li= link_to t('.links.facebook'), "#{ENV[:facebook_url]}", target: '_blank'
-            li= link_to t('.links.instagram'), "#{ENV[:instagram_url]}", target: '_blank'
-            li= link_to t('.links.github'), "#{ENV[:github_url]}", target: '_blank'
-            li= link_to t('.links.blog'), "#{ENV[:blog_url]}", target: '_blank'
-            li.zendesk_widget= link_to t('.links.contact'), "#{ENV[:zendesk_url]}/account/dropboxes/#{ENV[:zendesk_dropbox_id]}"
+            li= link_to t('.links.twitter'), "#{ENV['TWITTER_URL']}", target: '_blank'
+            li= link_to t('.links.facebook'), "#{ENV['FACEBOOK_URL']}", target: '_blank'
+            li= link_to t('.links.instagram'), "#{ENV['INSTAGRAM_URL']}", target: '_blank'
+            li= link_to t('.links.github'), "#{ENV['GITHUB_URL']}", target: '_blank'
+            li= link_to t('.links.blog'), "#{ENV['BLOG_URL']}", target: '_blank'
+            li.zendesk_widget= link_to t('.links.contact'), "#{ENV['ZENDESK_URL']}/account/dropboxes/#{ENV['ZENDESK_DROPBOX_ID']}"
       .footer-div
         .footer-list
           h3.footer-title= t('.titles.about')
           ul.footer-list
-            li= link_to t('.links.jobs'), "#{ENV[:jobs_url]}", target: '_blank'
-            li= link_to t('.links.faq'), "#{ENV[:faq_url]}", target: '_blank'
-            li= mail_to ENV[:email_press], t('layouts.footer.links.press')
-            li= link_to t('.links.feedback'), "#{ENV[:feedback_url]}", target: '_blank'
+            li= link_to t('.links.jobs'), "#{ENV['JOBS_URL']}", target: '_blank'
+            li= link_to t('.links.faq'), "#{ENV['FAQ_URL']}", target: '_blank'
+            li= mail_to ENV['EMAIL_PRESS'], t('layouts.footer.links.press')
+            li= link_to t('.links.feedback'), "#{ENV['FEEDBACK_URL']}", target: '_blank'
             li= link_to t('.links.terms'), terms_of_use_path, target: '_blank'
             li= link_to t('.links.privacy'), privacy_policy_path, target: '_blank'
-            //li= link_to t('.links.press'), "#{ENV[:press_url]}", target: '_blank'
+            //li= link_to t('.links.press'), "#{ENV['PRESS_URL']}", target: '_blank'
       .footer-div
         .footer-list
           h3.footer-title= t('.titles.sitemap')
@@ -39,9 +39,9 @@ footer.footer
           = render 'layouts/newsletter'
         h3.footer-title= t('.titles.social')
         .twitter-box
-          = link_to "Follow @#{ENV[:twitter_username]}", "http://twitter.com/#{ENV[:twitter_username]}", :class => 'twitter-follow-button', :"data-button"=>"blue", :"data-text-color" => "#ffffff", :"data-link-color"=>"#fffffff", :"data-width" => "224px"
+          = link_to "Follow @#{ENV['TWITTER_USERNAME']}", "http://twitter.com/#{ENV['TWITTER_USERNAME']}", :class => 'twitter-follow-button', :"data-button"=>"blue", :"data-text-color" => "#ffffff", :"data-link-color"=>"#fffffff", :"data-width" => "224px"
         .facebook-box
           = render_facebook_like colorscheme: "dark", width: "171"
     hr
     .row
-        p.copyleft= "#{t('.texts.copyleft')} Catarse, #{DateTime.now.year} | Open source #{link_to 'Catarse @ Github', "#{ENV[:github_url]}", :class => 'github', target: '_blank'}".html_safe
+        p.copyleft= "#{t('.texts.copyleft')} Catarse, #{DateTime.now.year} | Open source #{link_to 'Catarse @ Github', "#{ENV['GITHUB_URL']}", :class => 'github', target: '_blank'}".html_safe

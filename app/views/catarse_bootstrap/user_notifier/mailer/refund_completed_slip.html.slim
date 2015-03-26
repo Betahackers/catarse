@@ -1,6 +1,6 @@
 - contribution = @notification.contribution
-- company_name = ENV[:company_name]
-- contact_email = ENV[:email_contact]
+- company_name = ENV['COMPANY_NAME']
+- contact_email = ENV['EMAIL_CONTACT']
 - user = @notification.contribution.user
 - bank_account = user.bank_account
 

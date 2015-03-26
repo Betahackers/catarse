@@ -3,18 +3,18 @@ footer
     .large-3.columns
       h3.footer-title= t('footer.titles.contact')
       ul.footer-list
-        li= link_to t('footer.links.twitter'), "#{ENV[:twitter_url]}", target: '_blank'
-        li= link_to t('footer.links.facebook'), "#{ENV[:facebook_url]}", target: '_blank'
-        li= link_to t('footer.links.instagram'), "#{ENV[:instagram_url]}", target: '_blank'
-        li= link_to t('footer.links.github'), "#{ENV[:github_url]}", target: '_blank'
-        li= link_to t('footer.links.blog'), "#{ENV[:blog_url]}", target: '_blank'
-        li.zendesk_widget= link_to t('footer.links.contact'), "#{ENV[:zendesk_url]}/account/dropboxes/#{ENV[:zendesk_dropbox_id]}"
+        li= link_to t('footer.links.twitter'), "#{ENV['TWITTER_URL']}", target: '_blank'
+        li= link_to t('footer.links.facebook'), "#{ENV['FACEBOOK_URL']}", target: '_blank'
+        li= link_to t('footer.links.instagram'), "#{ENV['INSTAGRAM_URL']}", target: '_blank'
+        li= link_to t('footer.links.github'), "#{ENV['GITHUB_URL']}", target: '_blank'
+        li= link_to t('footer.links.blog'), "#{ENV['BLOG_URL']}", target: '_blank'
+        li.zendesk_widget= link_to t('footer.links.contact'), "#{ENV['ZENDESK_URL']}/account/dropboxes/#{ENV['ZENDESK_DROPBOX_ID']}"
     .large-3.columns
       h3.footer-title= t('footer.titles.about')
       ul.footer-list
-        li= link_to t('.links.jobs'), "#{ENV[:jobs_url]}", target: '_blank'
-        li= link_to t('footer.links.faq'), "#{ENV[:faq_url]}", target: '_blank'
-        li= link_to t('footer.links.feedback'), "#{ENV[:feedback_url]}", target: '_blank'
+        li= link_to t('.links.jobs'), "#{ENV['JOBS_URL']}", target: '_blank'
+        li= link_to t('footer.links.faq'), "#{ENV['FAQ_URL']}", target: '_blank'
+        li= link_to t('footer.links.feedback'), "#{ENV['FEEDBACK_URL']}", target: '_blank'
         li= link_to t('footer.links.terms'), terms_of_use_path, target: '_blank'
         li= link_to t('footer.links.privacy'), privacy_policy_path, target: '_blank'
     .large-3.columns
@@ -33,11 +33,11 @@ footer
         = render 'layouts/newsletter'
       h3.footer-title= t('footer.titles.social')
       .twitter-box
-        = link_to "Follow @#{ENV[:twitter_username]}", "http://twitter.com/#{ENV[:twitter_username]}", :class => 'twitter-follow-button', :"data-button"=>"blue", :"data-text-color" => "#ffffff", :"data-link-color"=>"#fffffff", :"data-width" => "224px"
+        = link_to "Follow @#{ENV['TWITTER_USERNAME']}", "http://twitter.com/#{ENV['TWITTER_USERNAME']}", :class => 'twitter-follow-button', :"data-button"=>"blue", :"data-text-color" => "#ffffff", :"data-link-color"=>"#fffffff", :"data-width" => "224px"
       .facebook-box
         = render_facebook_like href: "", colorscheme: "dark", width: "171"
   .row
     hr/
   .row
-    p.copyleft= "#{t('footer.texts.copyleft')} Catarse, #{DateTime.now.year} | Open source #{link_to 'Catarse @ Github', "#{ENV[:github_url]}", :class => 'github', target: '_blank'}".html_safe
+    p.copyleft= "#{t('footer.texts.copyleft')} Catarse, #{DateTime.now.year} | Open source #{link_to 'Catarse @ Github', "#{ENV['GITHUB_URL']}", :class => 'github', target: '_blank'}".html_safe
 

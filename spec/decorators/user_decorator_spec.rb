@@ -61,7 +61,7 @@ RSpec.describe UserDecorator do
 
     context "when we have an email" do
       let(:user){ create(:user, image_url: nil, email: 'diogob@gmail.com', uploaded_image: nil) }
-      it{ is_expected.to eq("https://gravatar.com/avatar/5e2a237dafbc45f79428fdda9c5024b1.jpg?default=#{ENV[:base_url]}/assets/catarse_bootstrap/user.jpg") }
+      it{ is_expected.to eq("https://gravatar.com/avatar/5e2a237dafbc45f79428fdda9c5024b1.jpg?default=#{ENV['BASE_URL']}/assets/catarse_bootstrap/user.jpg") }
     end
   end
 

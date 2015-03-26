@@ -22,4 +22,4 @@ es:
       edit_reward: "Editar recompensa"
       new_reward: "Registro de recompensa"
       reward_deliver_time: "<b>Estimación de entrega:</b> %{estimate}"
-      reward_title: "{Mínimo} % o más"
+      reward_title: "%{minimum} o más"

@@ -17,8 +17,8 @@ es:
       - Dic
     day_names: "[Domingo, el lunes, el martes, el miércoles, el jueves, el viernes, sábado."
     formats:
-      default: "Y %-%m-%d"
-      with_time: "%Y/%m/%d - % H: %M"
+      default: "%Y-%m-%d"
+      with_time: "%Y/%m/%d - %H: %M"
       long: "Ese %d, %y"
       short: "ese %d"
     month_names: "[, Enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre."
@@ -27,38 +27,38 @@ es:
     distance_in_words:
       about_x_hours:
         one: "alrededor de 1 hora"
-        other: "alrededor de 1 hora"
+        other: "alrededor de %{count} hora"
       about_x_months:
         one: "alrededor de 1 mes"
-        other: "alrededor de 1 mes"
+        other: "alrededor de %{count} meses"
       about_x_years:
         one: "cerca de 1 año"
-        other: "cerca de 1 año"
+        other: "cerca de %{count} años"
       almost_x_years:
         one: "casi 1 año"
-        other: "casi 1 año"
+        other: "casi %{count} años"
       half_a_minute: "medio minuto"
       less_than_x_minutes:
         one: "menos de un minuto"
-        other: "menos de un minuto"
+        other: "menos de %{count} minutos"
       less_than_x_seconds:
         one: "menos de 1 segundo"
-        other: "menos de 1 segundo"
+        other: "menos de %{count} segundos"
       over_x_years:
         one: "más de 1 año"
-        other: "más de 1 año"
+        other: "más de %{count} años"
       x_days:
         one: "1 día"
-        other: "1 día"
+        other: "%{count} días"
       x_minutes:
         one: "1 minuto"
-        other: "1 minuto"
+        other: "%{count} minutos"
       x_months:
         one: "1 mes"
-        other: "1 mes"
+        other: "%{count} meses"
       x_seconds:
         one: "1 segundo"
-        other: "1 segundo"
+        other: "%{count} segundos"
     prompts:
       day: Día
       hour: Hora
@@ -106,7 +106,7 @@ es:
     currency:
       format:
         delimiter: ","
-        format: "%u %n"
+        format: "%u%n"
         precision: 0
         separator: "."
         significant: falso
@@ -166,10 +166,10 @@ es:
     am: AM
     formats:
       estimate: "%B/%Y"
-      simple: "% d/%m/%Y, % H: %M h"
-      default: "%A, %d de ese de %Y % H: %M h"
-      long: "%A, %d de ese de %Y % H: %M h"
-      short: "% d/%m, % H: %M h"
+      simple: "%d/%m/%Y, %H:%M h"
+      default: "%A, %d de ese de %Y %H:%M h"
+      long: "%A, %d de ese de %Y %H:%M h"
+      short: "%d/%m, %H:%M h"
       posts: "%d ese %y"
     pm: PM
   activemodel:

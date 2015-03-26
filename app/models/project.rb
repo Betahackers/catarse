@@ -206,7 +206,7 @@ class Project < ActiveRecord::Base
   end
 
   def new_draft_recipient
-    User.find_by_email CatarseSettings[:email_projects]
+    User.find_by_email ENV['EMAIL_PROJECTS']
   end
 
   def should_fail?
@@ -222,7 +222,7 @@ class Project < ActiveRecord::Base
     )
   end
 
-  def notify_to_backoffice(template_name, options = {}, backoffice_user = User.find_by(email: CatarseSettings[:email_payments]))
+  def notify_to_backoffice(template_name, options = {}, backoffice_user = User.find_by(email: ENV['EMAIL_PAYMENTS']))
     if backoffice_user
       notify_once(
         template_name,

@@ -12,13 +12,13 @@ en:
       submit: Save
       index:
         select_reward: "Select this reward"
-        display_remaining: " %{remaining} of %{maximum} available"
+        display_remaining: "%{remaining} of %{maximum} available"
         dont_want: "I don't want to reward"
         limited: Limited
         sold_out: Exhausted
         contributions_to_confirm:
-          one: "1 support in term of confirmation."
-          other: "1 support in term of confirmation."
+          one: "1 contributor to confirm."
+          other: "%{count} contributors to confirm."
         edit_reward: "Edit reward"
         new_reward: "Register reward"
         reward_deliver_time: "<b> Delivery Estimate: </b> %{estimate}"
@@ -149,6 +149,6 @@ en:
       online_days: "Deadline for fundraising"
       online_days_label: "You can choose between 1 and 60 days for your campaign. Check out the directors ' Guide for tips on deadlines."
       value: "Amount to be collected"
-      value_secondary: "Plan a goal consistent with what your project proposes. Review your budget and don't forget to include the 13% rate charged by Catharsis if your project is successful"
+      value_secondary: "Plan a goal consistent with what your project proposes. Review your budget and don't forget to include the 13% rate charged by Fundoo if your project is successful"
       form:
         submit: Save

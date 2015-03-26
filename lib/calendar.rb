@@ -4,7 +4,7 @@ class Calendar
 
   def initialize(api_key=nil, max_results=4)
     @api_key = api_key if api_key
-    @api_key = ENV[:google_api_key]
+    @api_key = ENV['GOOGLE_API_KEY']
     @max_results = max_results
   end
 

@@ -2,7 +2,7 @@
 - confirmed_contributions_today = project.contributions.confirmed_today
 
 - project_link = project_by_slug_url(permalink: project.permalink)
-- company_name = ENV[:company_name]
+- company_name = ENV['COMPANY_NAME']
 
 | Olá, <strong>#{project.user.decorate.display_name}</strong>!
 br
@@ -32,7 +32,7 @@ table width="500" border="1" cellpadding="10" cellspacing="0" style='font-size: 
         td= contribution.reward.try(:decorate).try(:display_description)
 br/
 br/
-| Lembrando que você pode tirar dúvidas conosco respondendo diretamente a esta mensagem ou através do e-mail #{mail_to ENV[:email_projects] }
+| Lembrando que você pode tirar dúvidas conosco respondendo diretamente a esta mensagem ou através do e-mail #{mail_to ENV['EMAIL_PROJECTS'] }
 br/
 br/
 | Um abraço,

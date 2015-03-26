@@ -455,8 +455,8 @@ fr:
       rewards_title: Rewards
       submit: "Save draft"
     index_header:
-      subtitle: "Fund projects collaboratively and become part of something bigger. Promote a collective catharsis! You're the missing part in this story."
-      subtitle_html: "Fund projects collaboratively and become part of something bigger.<br/>Promote a collective catharsis! You're the missing part in this story."
+      subtitle: "Fund projects collaboratively and become part of something bigger. Promote a collective fundoo! You're the missing part in this story."
+      subtitle_html: "Fund projects collaboratively and become part of something bigger.<br/>Promote a collective fundoo! You're the missing part in this story."
       title: "Make the projects you believe in happen"
     recommended_header:
       suggest_for_you: "suggested for you"
@@ -550,7 +550,7 @@ fr:
         add_reward: 'Add Rewards'
       share: Share
     new:
-      legend_html: "After filling in the form below, you will receive a project page in Draft mode. In this draft you will add the rewards for your contributions. You may also share the page with your friends to collect feedback and sharpen your project even more.<br><br>The information filled in below is not definitive, but remember that the more consistent you are in your project submission, the faster it will go on air.<br><br><b>Very Important:</b> <i>Catharsis is cured platform, which means that our board will evaluate the focus, the feasibility and consistency of your project during the Draft. If we understand that your project does not comply with our <a href='https://docs.google.com/a/catarse.me/document/d/1wLDS2lphQ6monovg9rEaTIDcxBD3FRZV9dfGKmajyj8/edit' target='_blank' >selection criteria</a>, it may be refused by the team of curators.</i>"
+      legend_html: "After filling in the form below, you will receive a project page in Draft mode. In this draft you will add the rewards for your contributions. You may also share the page with your friends to collect feedback and sharpen your project even more.<br><br>The information filled in below is not definitive, but remember that the more consistent you are in your project submission, the faster it will go on air.<br><br><b>Very Important:</b> <i>Fundoo is cured platform, which means that our board will evaluate the focus, the feasibility and consistency of your project during the Draft. If we understand that your project does not comply with our <a href='https://docs.google.com/a/catarse.me/document/d/1wLDS2lphQ6monovg9rEaTIDcxBD3FRZV9dfGKmajyj8/edit' target='_blank' >selection criteria</a>, it may be refused by the team of curators.</i>"
       permalink_important: 'Try not to use underline, hyphen etc.'
       permalink_hint: 'Go simple. Your contributions should be able to remember the URL to your project ;)'
       name_important: "Do not exceed  50 characters"
@@ -717,7 +717,7 @@ fr:
       title: "How it works"
       subtitle: "Get to know Catarse better."
       introduction_html: "Catarse is a space of exchange among individuals who together <br >enable the realization of creative projects."
-      legend_html: "We believe that connecting people that share value with respect to a cause; an idea; a project,  is one of the best ways to make them come true. <br><br> Be very welcome! This is your space as much as it is ours, after all, catharsis happens daily from the meeting of people in search of new ways to give life to more initiatives from society itself. We understand this to be an alternative to government resources, the sponsoring companies and bank loans = D"
+      legend_html: "We believe that connecting people that share value with respect to a cause; an idea; a project,  is one of the best ways to make them come true. <br><br> Be very welcome! This is your space as much as it is ours, after all, fundoo happens daily from the meeting of people in search of new ways to give life to more initiatives from society itself. We understand this to be an alternative to government resources, the sponsoring companies and bank loans = D"
       submit: "SUBMITTING A PROJECT"
       send_project: "Understand how to submit your project"
       explore_curious: "CONTRIBUTING A PROJECT"
