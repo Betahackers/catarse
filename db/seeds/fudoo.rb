@@ -36,7 +36,8 @@ puts 'Seeding the database...'
 ].each do |name|
    category = Category.find_or_initialize_by(name_en: name[:en])
    category.update_attributes({
-     name_pt: name[:pt]
+     name_pt: name[:pt],
+     name_es: name[:en]
    })
  end
 
@@ -46,10 +47,10 @@ puts 'Seeding the database...'
   company_logo: 'http://placehold.it/200x100&text=Fundoo.png',
   host: 'fundoo.es',
   base_url: "http://www.fundoo.es",
-  email_contact: 'contato@fundoo.es',
-  email_payments: 'financeiro@fundoo.es',
-  email_projects: 'projetos@fundoo.es',
-  email_system: 'system@fundoo.es',
+  email_contact: 'hello@fundoo.es',
+  email_payments: 'hello@fundoo.es',
+  email_projects: 'hello@fundoo.es',
+  email_system: 'hello@fundoo.es',
   email_no_reply: 'no-reply@fundoo.es',
   # facebook_url: "http://facebook.com/fundoo",
   # facebook_app_id:  ENV['FACEBOOK_API_ID'],
