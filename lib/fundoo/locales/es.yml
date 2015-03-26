@@ -1,0 +1,17 @@
+es:
+  not_filled: "No llena"
+  days: días
+  facebook_locale: es_ES
+  failure_title: "Por favor corrija los siguientes errores:"
+  i_just_contributed: "Sólo apoyo el proyecto %{name} en @fundoo"
+  "no": "No"
+  "yes": Sí
+  not_informed: "No se informó"
+  or: o
+  sending: "Enviar a..."
+  share_my_contributions: "Echale un vistazo al proyecto "
+  site:
+    description: "La catarsis es una herramienta diferente – y colaboración – para conseguir su proyecto de papel!"
+    keywords: "catarsis, crowdfunding, financiación colectiva, proyecto, comunidad de código abierto"
+    meta_title: "%{title} · %{company_name}"
+    title: "Fund your projects"

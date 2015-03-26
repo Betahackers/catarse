@@ -1,0 +1,25 @@
+es:
+  rewards:
+    form:
+      edit: "Editar recompensa"
+      reward: Recompensa
+      info_box: "Puede limitar la cantidad disponible de una recompensa. Una vez que se alcanza el límite, la recompensa se marcará como SOLD OUT. La predicción de la entrega es la fecha en que pretende entregar la recompensa a los contribuyentes. Si desea cambiar el orden de las recompensas, solo arrastrarlas por aquí. Dale una oportunidad!"
+      minimum_value: "Valor mínimo:"
+      deliver_at: "Predicción de la entrega:"
+      description: "Descripción:"
+      limit_reward: "Límite recompensa"
+      available: "Cantidad disponible"
+      submit: Salvar
+    index:
+      select_reward: "Seleccione esta recompensa"
+      display_remaining: "%{remaining}  de %{maximum} disponible"
+      dont_want: "No quiero recompensa"
+      limited: Limitada
+      sold_out: Agotado
+      contributions_to_confirm:
+        one: "1 contribución para la confirmación."
+        other: "1 contribución para la confirmación."
+      edit_reward: "Editar recompensa"
+      new_reward: "Registro de recompensa"
+      reward_deliver_time: "<b>Estimación de entrega:</b> %{estimate}"
+      reward_title: "{Mínimo} % o más"

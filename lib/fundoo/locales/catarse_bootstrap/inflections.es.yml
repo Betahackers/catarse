@@ -1,0 +1,15 @@
+es:
+  found_singular: Encontrados
+  found_plural: Encontrados
+  project_singular: proyecto
+  project_plural: proyectos
+  contribution_singular: partidario
+  contribution_plural: partidarios
+  remaining_singular: resto
+  remaining_plural: restantes
+  created_project:
+    one: "%{count} proyecto"
+    other: "%{count} proyectos"
+  contributed_project:
+    one: "%{count} proyecto apoyado"
+    other: "%{count} proyectos apoyado"

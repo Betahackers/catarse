@@ -1,0 +1,32 @@
+es:
+  shared:
+    formatting_tips:
+      title: "Consejos de formato"
+      formatting_tip1_html: "Si pega la url de una imagen o un video de vimeo o youtube, aparecerán en la descripción de la idea. ¡ Pruébelo!"
+      formatting_tip2_html: "Al pegar una url tampoco, ella se convertirá en un enlace. Por ejemplo, http://catarse.me se convertirá < la clase = \"alt-link\" href = \"http://catarse.me\" target = \"_blank\" > http://catarse.me</a>."
+      formatting_tip3_html: "Si quieres poner un texto en el link, sólo utilice el siguiente formato: \"texto quiere\": http://sua.url. Por ejemplo, \"catarsis\": http://catarse.me girar < la clase = \"alt-link\" href = \"http://catarse.me\" target = \"_blank\" ></a> catarsis."
+      formatting_tip4_html: "Puede utilizar negrita agregando dos asteriscos (* *) antes y después del texto que desee dar formato. Por ejemplo, * mi * texto en negrilla ** aparecerá como <strong>mi texto en negrita</strong>."
+      formatting_tip5_html: "Puede usar cursiva añadiendo un subrayado (_) antes y después del texto que desee dar formato. Por ejemplo, _ mi texto en cursiva _ aparecerá como <i>texto en cursiva</i>."
+    terms: "términos de uso"
+    accept_terms_html: "He leído y estoy de acuerdo con el %{link}."
+    header_channel:
+      contact: Contacto
+      logout: Salida
+      my_credits: "Mis créditos"
+      partners: Socios
+      posts: Noticias
+      profile: "Mi perfil"
+      signin: "Inicio de sesión"
+      signup: Únete
+      submit: "Enviar proyecto"
+      how_work: "Cómo funciona"
+    footer_channel:
+      contact: Contacto
+      how_works: "Cómo funciona"
+      privacy_policy: "Política de privacidad"
+      terms: "Términos de uso"
+      what_is_channel: "¿Cuáles son los canales?"
+      how_it_works: "¿Cómo el %{name}"
+      how_channels_work: "Entender los canales en Fundoo"
+    header_big:
+      projects: "Mis proyectos"

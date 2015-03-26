@@ -1,0 +1,19 @@
+es:
+  explore:
+    index:
+      success_follow: "Ahora sigue la categoría y recibirá una lista semanal de nuevos proyectos de %{name}"
+      success_unfollow: "No seguir esta categoría %{name}"
+      follow: Siga
+      unfollow: "Dejar de seguir"
+      following: seguidores
+      categories: Categorías
+      expiring: "En la recta final"
+      in_funding: "Aún siendo financiado"
+      near: "Más cercanas a mí"
+      quick_explore: "Búsqueda rápida"
+      recent: Recientes
+      recommended: "Se recomienda"
+      subtitle: "Explorar los proyectos, encontrar aquellos que meterse con tu corazón y hacer que suceda!"
+      successful: Éxito
+      title: "Encontrar proyectos increíbles"
+    title: "Explorar los proyectos"

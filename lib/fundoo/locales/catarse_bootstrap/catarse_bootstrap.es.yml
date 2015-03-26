@@ -1,0 +1,211 @@
+es:
+  admin:
+    projects:
+      index:
+        meio_de_pagamento: "Medios de pago"
+    financials:
+      index:
+        meio_de_pagamento: "Medios de pago"
+  devise:
+    passwords:
+      new:
+        redefinir_senha: "Restablecer contraseña"
+    mailer:
+      reset_password_instructions:
+        pt:
+          ol: Hola
+          esqueceu_sua_senha_sem: "¿Olvidaste tu contraseña? Sin problemas! Reset pulsando aquí"
+          definir_nova_senha: "establecer nueva contraseña"
+          se_algum_problema_acontecer: "Si ocurre algún problema, responda a este mensaje directamente o en contacto con nosotros por correo electrónico"
+          abra_os: "Abrazos,"
+  explore:
+    index:
+      explore_amazing_projects: "Explorar proyectos increíbles "
+      category_name: "Nombre de categoría"
+      how_about_starting_your: "¿Iniciar tu proyecto?"
+      create_your_project_on: "Crear tu proyecto en Fundoo hoy!"
+      learn_more: "Aprende más"
+  layouts:
+    global_alert:
+      aqui: aquí
+      conhe_a_nossa_vers: "Conocer nuestra versión beta!"
+  pages:
+    bad_browser:
+      download_chrome: "Descargar Chrome"
+      download_firefox: "Descargar Firefox"
+    guides:
+      guia_dos_realizadores: "Guía de directores"
+      uma_compila_o_dos: "Una recopilación de los puntos más importantes de una campaña para ayudarle a hacer un proyecto increíble y exitoso. Esperamos que esta guía te ayudará a desarrollar tu idea y tener éxito en su campaña;)"
+      come_ando: "A partir"
+      sua_hist_ria: "Tu historia"
+      meta_e_prazo: "Objetivo y plazo"
+      recompensas: Recompensas
+      mobiliza_o: Movilización
+      p_s_campanha: "Post campaña"
+    jobs:
+      trabalhe_conosco: "Trabaja con nosotros"
+      o_financiamento_coletivo_n: "La financiación colectiva sigue creciendo y el equipo de super doCatarse necesita crecer juntos. Ven a formar parte de esta historia con nosotros."
+  projects:
+    contributions:
+      show:
+        agora_voc_parte_do: "Ahora eres parte de un grupo de"
+        enquanto_isso_que: ".Mientras tanto, ¿por qué difundir la idea a sus amigos?"
+        tweet: Tweet
+        voc_pode_curtir_esses: "Se pueden disfrutar de estos aquí también"
+        valeu: "¡ Gracias!"
+        voc_faz_parte_do: "Tú eres parte del grupo de"
+        pessoas_que_querem_tirar: "personas que quieren hacer"
+        do_papel_voc_receber: "pasar! Usted recibirá confirmación del pago por correo electrónico tan pronto como se procesa. También puede seguir el estado de tu apoyo"
+        atrav_s_do_seu: "a través de su perfil"
+        compartilhe_o_seu: ".Comparte tu apoyo y aumentar las posibilidades de llegar a la meta!"
+        compartilhe: Compartir
+        tu_te: Tweet
+        recomenda_es_de_projetos: "Proyectos recomendados para ti"
+        curte_a_categoria_project: "¿Seguir la categoría %{project_name}? Usted puede recibir personalmente y directamente en su correo electrónico cuando nuevos proyectos!"
+      faq_box:
+        perguntas_frequentes: "Preguntas frecuentes"
+        como_eu_apoio_este: "¿Como apoyo este proyecto?"
+        primeiro_escolha_o_valor: "En primer lugar, seleccione el valor deseado y recompensa. A continuación, haz clic en 'examinar y realizar pago' que podrá redirigirle a la siguiente página para completar su pago."
+        quando_o_pagamento_efetivado: "¿Cuando se efectúa el pago?"
+        se_voc_pagou_com: "Si usted paga con tarjeta de crédito, el reconocimiento debe ser el mismo día si fue con tocho, hasta 4 días laborables."
+        e_se_o_projeto: "¿Y si el proyecto no llega a la meta?"
+        nesse_caso_voc_recebe: "En este caso, vuelve el 100% de lo que has pagado a través de un reembolso."
+        se_o_projeto_for: "Si el proyecto está financiado, ¿Cómo obtengo mi recompensa?"
+        quando_sua_recompensa_estiver: "Cuando esté lista su recompensa, %{user_link} te contactará para organizar la entrega."
+      edit:
+        preencha_e_revise_os: "Completar y revisar los datos de pago"
+        esses_dados_ser_o: "Dicha información se notificará al Director del proyecto"
+        endere_o_de_entrega: "Dirección de entrega"
+        pr_ximo_passo: "Siguiente paso"
+    budget_fields:
+      cost: Costo
+    card:
+      pledged: "Se comprometió"
+    dashboard_reward:
+      save: Salvar
+    mobile_video:
+      leia_mais: "Leer más"
+    project_embed:
+      insiraum_widget_em_seu: "Insiraum widget en su sitio"
+    reward_fields:
+      describe_this_reward: "Describir esta recompensa"
+      tem_certeza: "¿Estás seguro?"
+    dashboard_home_templates:
+      approved:
+        como_fazemos_o_repasse: "¿Cómo hacer la transferencia de dinero"
+      failed:
+        entenda_como_fazemos_estornos: "Entender cómo hacer anulaciones y reembolsos"
+      online:
+        central_de_suporte: "Soporte Central"
+      rejected:
+        guia_dos_realizadores: "Guía de directores"
+      successful:
+        como_o_repasse_do: "como se realizará la transferencia del dinero"
+        status: "Estado:"
+      waiting_funds:
+        entenda_como_o_repasse: "Entender cómo se hace la transferencia de dinero para proyectos exitosos"
+  users:
+    contribution_row:
+      projetos_que_apoiei: "He apoyado proyectos"
+      valor_do_apoio: "Valor de apoyo"
+      status_do_apoio: "Estado de soporte"
+      recompensa: Recompensa
+      apoio: "Soporte:"
+      status_do_apoio_1: "Estado de soporte:"
+      cart_o_de_credito: "Tarjeta de crédito %{installment_value} x€ %{installments}"
+      boleto_bancario: "Boleto bancario"
+      aguardando_confirma_o_do: "A la espera de confirmación de pago"
+      recompensa_1: "Recompensa:"
+      estimativa_de_entrega: "Entrega estimada:"
+      selecionou_recompensa: "recompensa seleccionado"
+      confirmado_em_contribution_decorate: "Confirmado el %{confirmed_on}"
+      rembolsado_em_contribution_decorate: "Reembolsada %{refuned_on}"
+      reembolso_solicitado_em_contribution: "Reembolso solicitado %{requested_refund_on}"
+    dashboard_billing:
+      cart_es_de_cr: "Tarjetas de crédito"
+      lembrando_caso_algum_projeto: "Recuerde: Si cualquier proyecto que ha apoyado"
+      com_cart_o_de: "con tarjeta de crédito"
+      n_o_seja_bem: "es no exitosas, efectuaremos el reembolso en la tarjeta que usaste para apoyar"
+      cart_o: Tarjeta
+      operadora: Operador
+      remover: Quitar
+      voc_tem_certeza: "¿Estás seguro?"
+      dados_banc_rios: "Datos bancarios"
+      caso_algum_projeto_que: "Si cualquier proyecto que ha apoyado <b>con el Banco</b> no tiene éxito, efectuaremos un reembolso de su pago en la cuenta abajo."
+    edit:
+      apoiados: Apoyado
+      criados: Creado
+      sobre_voc: "Por ti"
+      dados_de_acesso: "Datos de acceso"
+      notifica_es: Notificaciones
+      banco_e_cart_es: "Y tarjetas bancarias"
+      ir_para_o_perfil: "Ir al perfil público"
+      atividades: Actividades
+      voc_ainda_n_o: "Aún no ha creado ningún proyecto en catarsis. Creer en tus sueños!"
+      inscreva_um_projeto: "Suscribirse a un proyecto."
+    dashboard_contributions:
+      start_now: "¡ Empiece ahora!"
+      voc_ainda_n_o: "Usted todavía no ha apoyado cualquier proyecto catártica..."
+      projetos_em_andamento: "Proyectos en curso"
+      projetos_bem_sucedidos: "Proyectos exitosos"
+      projetos_n_o_financiados: "Proyectos financiados por el no"
+    dashboard_notifications:
+      newsletters: "Boletines informativos:"
+      featured_projects_and_posts: "Proyectos destacados y las entradas de nuestro Blog"
+      projects_that_you_support: "Proyectos que apoya:"
+      i_want_to_receive: "Quiero recibir actualizaciones sobre estos proyectos"
+      categories_you_follow: "Categorías que siga:"
+      project_reminders: "Proyecto recordatorios:"
+    dashboard_settings:
+      email: "Correo electrónico"
+      keep_this_email_address: "Mantener esta dirección de correo electrónico actualizada porque es el canal de comunicación entre usted, el personal de Fundoo y los proyectos que apoya."
+      change_my_password: "Cambiar mi contraseña"
+      for_the_password_to: "La contraseña debe ser cambiado, debes confirmar tu contraseña actual."
+      disable_my_account: "Desactivar mi cuenta"
+      all_your_contributions_will: "Se realizará todas sus contribuciones anónimas, sus datos no serán visibles, saldrás del sistema y su cuenta se deshabilitará permanentemente."
+      deactivate_my_account_on: "Desactivar mi cuenta en Fundoo"
+      you_want_to_disable: "¿Que desea desactivar esta cuenta?"
+      save: Salvar
+    show:
+      editar_perfil: " Editar perfil"
+    feeds:
+      feed:
+        postou: "Publicado:"
+        leia_mais: "Leer más"
+        novo_projeto_no_ar: "Nuevo proyecto en el aire!"
+        categoria: "Categoría:"
+        foi_bem_sucedido: "tuvo éxito!"
+        pledged: "Se comprometió"
+        apoiadores: Partidarios
+        finalizou_mas_n_o: "finalizado pero no fue financiado"
+  shared:
+    user_menu:
+      minhas_coisas: "Mis cosas"
+      hist_rico_de_apoios: "Historia de la ayuda"
+      projetos_criados: "Proyectos creados"
+      atividade: Actividad
+      configura_es: Configuración
+      sobre_voc: "Por ti"
+      notifica_es: Notificaciones
+      dados_de_acesso: "Datos de acceso"
+      banco_e_cart_es: "Y tarjetas bancarias"
+      projetos_apoiados: "Proyectos apoyados"
+      ver_todos: "Ver todos"
+      admin: Admin
+      voc_est_logado_como: "Estás logueado como"
+  metrics:
+    index:
+      total_de_apoios_confirmados: "Total de contribuciones confirmadas por día"
+      total_arrecadado_por_dia: "Total recogido por día"
+      total_de_apoios_confirmado: "Contribuciones totales confirmadas por estado"
+      estado: Estado
+      total_de_apoio_confirmado: "Total de las contribuciones confirmado"
+      baixar_relat_rios: "Descargar informes"
+      apoiadores_confirmados: "Confirmados los partidarios "
+      apoiadores_confirmados_com_boleto: "Confirmados los partidarios con billete impreso"
+      apoiadores_que_n_o: "Fanáticos que no tienen recompensa seleccionado"
+      apoiadores_da_recompensa_reward: "Partidarios de la recompensa %{reward}"
+  rewards:
+    form:
+      describe_this_reward: "Describir esta recompensa"
+      tem_certeza: "¿Estás seguro?"

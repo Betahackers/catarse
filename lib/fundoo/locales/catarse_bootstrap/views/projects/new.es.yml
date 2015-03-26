@@ -1,0 +1,26 @@
+es:
+  projects:
+    new:
+      page-title: "Iniciar tu proyecto"
+      faq:
+        titles:
+          support: Apoyo
+          know_more: "Aprende más"
+        links:
+          criteria: "Criterios de selección"
+          suport_central: "Soporte Central"
+          support_contact: "Contacte con nosotros"
+          how_it_works: "¿Cómo funciona Fundoo?"
+          money: "¿Cómo recibiré el dinero?"
+          selection: "¿Cómo se seleccionan los proyectos?"
+          all_or_nothing: "¿Por qué es todo o nada?"
+      form:
+        blocks:
+          first:
+            title: "¡ Bienvenido!"
+            description: "Rellene la siguiente información para iniciar el proyecto de su proyecto."
+        info:
+          permalink: www.fundoo.es/
+          goal: €
+          online_days: días
+        submit: "Guardar y continuar"

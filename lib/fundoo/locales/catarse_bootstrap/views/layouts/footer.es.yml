@@ -1,0 +1,32 @@
+es:
+  layouts:
+    footer:
+      links:
+        jobs: "Trabaja con nosotros"
+        blog: Blog
+        contact: Contacto
+        discover: "Descubrir proyectos"
+        start: "Cómo funciona"
+        expiring: "En la recta final"
+        facebook: Facebook
+        faq: Ayuda
+        guides: "Guía de directores"
+        feedback: Retroalimentación
+        github: GitHub
+        instagram: Instagram
+        near: "Más cercanas a mí"
+        press: Prensa
+        privacy: "Política de privacidad"
+        recents: Recientes
+        recommended: "Se recomienda"
+        submit: "Envía tu proyecto"
+        terms: "Términos de uso"
+        twitter: Twitter
+      texts:
+        copyleft: "Hecha con amor."
+      titles:
+        about: Ayuda
+        contact: Bienvenido
+        newsletter: "Suscríbete a nuestras noticias"
+        sitemap: Browse
+        social: "Redes sociales"

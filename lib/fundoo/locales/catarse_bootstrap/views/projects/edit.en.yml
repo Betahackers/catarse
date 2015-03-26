@@ -39,7 +39,7 @@ en:
         contributions: support
         left: remaining
       waiting_funds:
-        title: " %{name}, we're suing the last payments."
+        title: "%{name}, we're processing the last payments."
         subtitle_html: "Your project was finalized in %{expires} and is awaiting confirmation of bills and payments. Due to the maturity of bills, projects that had last minute support are for up to 4 working days in this status, counted from the date of completion of the project. %{link}."
         header: "From here your project can hit the goal or not. Watch what happens in each of the cases:"
         success: "Hit the goal:"

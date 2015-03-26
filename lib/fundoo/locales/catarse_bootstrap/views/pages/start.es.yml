@@ -1,0 +1,27 @@
+es:
+  pages:
+    start:
+      page-title: "¿Cómo funciona el Fundoo?"
+      title: "Financiar tu proyecto colectivamente"
+      submit: "Iniciar tu proyecto"
+      learn-more: "Aprende más"
+      header:
+        people: "Personas han apoyado al menos 01 proyecto en Fundoo"
+        success: "Proyectos ya han sido financiados en catarsis"
+        money: "Donados para proyectos publicados aquí"
+      start:
+        title: "Iniciar tu proyecto"
+        content: "Es importante empezar en alguna parte. Un buen primer paso para transformar su idea en un proyecto de financiación colectiva es registrar un borrador en catarsis. Estamos aquí para ayudar."
+        link: "Más información sobre los primeros pasos de un proyecto"
+      people:
+        title: "Estudio y plan"
+        content: "Producir su proyecto con cuidado, en el momento oportuno. Plan de una buena campaña es un factor decisivo para el éxito de su financiación colectiva. Ofrecemos una variedad de materiales para ayudarle!"
+        link: "Aprender cómo muchos seguidores necesita movilizar"
+      work:
+        title: "Es todo o nada"
+        content: "La OMS define la meta de recaudación de fondos y el tiempo de campaña es usted. Elija entre 1 y 60 días para llevar a cabo su campaña en busca de simpatizantes. Alcanzar su meta financiera, mantener la cantidad recogida. De lo contrario todos los que apoyaron recibirán el dinero. Cobramos una cuota del 13% de los totales recogidos únicos proyectos que han alcanzado o superado la meta. "
+        link: "Recibir consejos sobre campañas exitosas en Fundoo"
+      time:
+        title: "Movilizar a sus partidarios"
+        content: "Comunicar bien durante su campaña y ser amable con sus partidarios. Son la fuerza de su proyecto y está quien realmente determinará el éxito o no de la campaña. La catarsis es una forma de cerca de la gente que aman su trabajo, ampliando esta red y forma pública."
+        link: "Aprenda cómo nuestros honorarios ayuda a mantener el Fundoo"

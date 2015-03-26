@@ -1,0 +1,154 @@
+es:
+  projects:
+    reward_fields:
+      edit: "Editar recompensa"
+      reward: Recompensa
+      info_box: "Describir el valor de la recompensa y poner una fecha de entrega real el pronóstico para los hinchas. También puede limitar una recompensa, y cuando se alcanza el límite aparece como agotado. Si desea cambiar el orden en que aparecen las recompensas en su proyecto, hacerlo simplemente arrastrándolos hacia arriba o hacia abajo."
+      minimum_value: "Valor:"
+      deliver_at: "Predicción de la entrega:"
+      description: "Descripción:"
+      limit_reward: "Límite recompensa"
+      available: "Cantidad disponible"
+      submit: Salvar
+      index:
+        select_reward: "Seleccione esta recompensa"
+        display_remaining: "%{remaining} de %{maximum} disponible"
+        dont_want: "No quiero recompensa"
+        limited: Limitada
+        sold_out: Agotado
+        contributions_to_confirm:
+          one: "1 soporte en término de confirmación."
+          other: "1 soporte en término de confirmación."
+        edit_reward: "Editar recompensa"
+        new_reward: "Registro de recompensa"
+        reward_deliver_time: "<b>Estimación de entrega:</b> %{estimate}"
+        reward_title: "{Mínimo} % o más"
+    dashboard_user_settings:
+      title: "Banca y datos del registro"
+      subtitle_html: "Con la siguiente información completa, su proyecto estará listo al aire. Después de completar el relleno, luego haga clic en guardar. Revisión. Si todo está bien, sólo presione el botón publicar y empezar su campaña."
+      user_data_title: "Dirección y datos de registro"
+      user_data_subtitle_html: "Necesitamos la siguiente información para emitir nota impuesto a proyectos exitosos. <b>ADVERTENCIA: el CPF/CNPJ enumerados en los datos de registro y datos bancarios deben ser el mismo.</b>"
+      account_title: "Datos bancarios"
+      account_subtitle_html: "Este es un campo obligatorio pero no se aplica a Fundoo. inventa algunos valores. <b>ADVERTENCIA: el número de documento figuran en los datos de registro y datos bancarios deben ser el mismo.</b>"
+      submit: Salvar
+    dashboard_home_templates:
+      status: "Estado:"
+      project_numbers:
+        financed: "financiado por"
+        backed: criado
+        contributions: apoyo
+        left: restantes
+      waiting_funds:
+        title: "%{name}, estamos procesando los últimos pagos."
+        subtitle_html: "Su proyecto fue finalizado en %{expires} y está en espera de confirmación de facturas y pagos. Debido a los vencimientos de las facturas, proyectos que contaban con apoyo de último minuto son para hasta 4 días laborables en este estado, contados a partir de la fecha de finalización del proyecto. %{link}."
+        header: "Desde aquí su proyecto puede golpear el objetivo o no. Mira lo que pasa en cada uno de los casos:"
+        success: "Golpear el objetivo:"
+        failed: "No le pegué la meta:"
+        good_luck: "¡Buena suerte!"
+      successful:
+        title: "%{name}, celebrar que te mereces!"
+        subtitle_html: "Su proyecto fue un éxito y ahora es el momento de iniciar el trabajo de relación con sus seguidores. Especial atención a la entrega de premios. ¿Prometheus? Entregado! Asegúrese de revisar la sección después del proyecto de %{link1} e informarse acerca de %{link2}. "
+        header1: "Y no olvides: la transparencia es todo."
+        transparent_html: "Mantendremos informado seguidor es mantener un feliz partidario. Incluso si vas a informar de un fallo o contratiempo. Feliz %{link} son partidarios. Por lo tanto, usan y abusan (siempre con moderación) ficha de noticias. Lo que escribes ahí viene directamente al correo de voz de sus partidarios. ¿Voy a empezar la entrega de los premios? En la pestaña \"informes\" te baja información así que usted puede hacer la entrega de la administración de recompensas de su proyecto."
+        header2: "Asegúrese de leer:"
+      rejected:
+        title: "%{name}, por desgracia, no esta vez."
+        subtitle_html: "Envió su proyecto para examinar el Fundoo y entendemos que él no cumple con el perfil del sitio. Tener un proyecto rechazado no impide para enviar nuevos proyectos para evaluar o rediseñar su proyecto actual. Hablar con nuestro servicio al cliente! Le recomendamos que llevas un buen vistazo a las %{link1} y %{link2}."
+      online:
+        title: "%{name}, su campaña está en el aire!"
+        subtitle_html: "El proyecto está en el aire y su campaña cerrará el día 23hs59min59s %{date}. Hasta este día y la hora usted será capaz de recibir apoyo. Recuerde, es todo o nada y sólo tomas los recursos obtenido if golpeó la meta establecida. Visita nuestro %{link2} para cualquier otra consulta."
+        explanation_html: " <div class = ' fontsize-base u-40-card card marginbottom-terciary ' > <p class = ' fontweight-bold ' > con el proyecto en el aire, algo de información ya no se puede editar</p> <p>ya no se puede cambiar: <br>-su objetivo de capturar; <br>-la fecha límite; <br>-la URL del proyecto; <br>-el usuario</p> el propietario del proyecto. <p class = ' fontweight-bold ' > necesita más información sobre los procesos de campaña? Marque la casilla junto a él. </p> <p>la búsqueda %{link1} también es una gran fuente de datos sobre el escenario brasileño. Una buena lectura de  %{link2} puede ser inspirador. Allí usted encontrará historias de éxito de los proyectos y consejos de la campaña. </p> </div> "
+      failed:
+        title: "%{name}, no haz desanime!"
+        subtitle_html: "Su proyecto no golpee el objetivo y sabemos que esto no es la mejor de las sensaciones. Pero no te desanimes. Pensar en el proceso como una experiencia de aprendizaje y no dejar que contempló un segundo intento. No te preocupes, todos tus seguidores recibirán el dinero. %{link}."
+        questions: "Te enviamos un email con dos preguntas. Si tienes tiempo y cabeza, sería genial si podría echarle un vistazo. Sus comentarios nos ayudan a construir un Fundoo mejor y más agradable para usted."
+      draft:
+        title: "%{name}, construir su proyecto!"
+        subtitle: "El más cuidadoso y bien formateados para un proyecto, el mayor las probabilidades de que sea exitoso en su recaudación de fondos de campaña. Antes de enviar su proyecto a nuestro análisis, llene todas las pestañas arriba con afecto. Puede guardar los cambios y volver al proyecto proyecto tantas veces como quieras. Cuando todo esté listo, haga clic en el botón \"enviar\" y nosotros le contactaremos para evaluar su proyecto."
+        study_title: "¿Sentía necesidad de estudiar más para montar tu proyecto? Revisa los links en el cuadro de al lado."
+      approved:
+        title: "%{name}, el proyecto ha sido aprobado."
+        subtitle_html: "Para poner su proyecto en el aire tarda solamente llene los datos requeridos en el %{link1}. "
+      in_analysis:
+        title: "%{name}, que envió su proyecto para la revisión y recibirá nuestra contestación dentro de 4 días laborables"
+        subtitle_html: "¡Muchas gracias! Nuestro equipo evaluará todo el contenido de su proyecto y dentro de 4 días laborables recibirá un correo electrónico informándole si ha sido aprobada, rechazada o si continuará bajo revisión para poco más de tiempo para que usted puede realizar los ajustes sugeridos. Aproveche este período para recoger opiniones con gente cercana a mí!"
+    edit:
+      leave_link_html: "Salida del panel de control"
+      start_tab: "Página de inicio"
+      basics_tab: "Conceptos básicos"
+      project_tab: Proyecto
+      posts_tab: Noticias
+      rewards_tab: Recompensas
+      about_you_tab: "Por ti"
+      reports_tab: Informes
+      account_tab: Cuenta
+      preview_tab: "Vista previa"
+      send: Enviar
+      publish: Publicar
+    dashboard_user_about:
+      submit: Salvar
+      title: "Cuéntame más de ti!"
+      subtitle: "Los partidarios quieren conocer mejor el proyecto de directiva. Enlaces que ayudan a contar su historia son siempre bienvenidos. "
+      twitter_label: "Perfil de Twitter"
+      twitter_hint: "Pegar el link de tu perfil"
+      other_link_label: "Presencia en Internet"
+      other_link_hint: "Incluir enlaces que ayudan a los partidarios de entender por qué eres la persona indicada para hacer este proyecto. "
+      about_label: "Por ti"
+      about_hint: "Utilice este espacio si desea describir mejor, su empresa o su institución. ¿Quiere dar crédito a los socios? ¿Utilizar un video institucional? Este espacio es tuyo y utilizar de cualquier manera que quieras.  Toda esta información aparecerá en la pestaña de tu perfil público."
+      facebook_link_label: "Perfil de Facebook"
+      facebook_link_hint: "Pegar el link de tu perfil"
+      uploaded_image_label: "Imagen de perfil"
+      uploaded_image_hint: "Esta imagen se utiliza como la imagen de tu perfil (PNG, JPG ideal tamaño 280 x 280)"
+      name_label: Nombre
+      name_hint: "Su nombre público, accesibles a todo el mundo como el autor del proyecto."
+    dashboard_reward:
+      title: "Crear y editar tus recompensas"
+      add_reward: "Añadir recompensa"
+      subtitle: "Esta es su demostración de gratitud con los partidarios. Recuerde que debe incluir los costos de las recompensas a su presupuesto. Prometió, entregado. "
+      reward: Recompensa
+    dashboard_preview:
+      header_subtitle: "Es hora de regeneraciones!"
+      header_text: "Compartir este enlace con tus amigos y disfrutar el momento para hacer ajustes finos para ayudar en su campaña."
+    dashboard_posts:
+      title: "Escribir un nuevo"
+      only_to_backers: "Quiero que novedad sólo es visible a sus partidarios."
+      publish: "Publicar noticias"
+      discard: Descarte
+      warning: "Todas las noticias publicadas se envían directamente a sus seguidores por correo electrónico. Revisa tu post antes de su publicación."
+      old_posts: "Noticias viejas"
+    dashboard_project:
+      budgets_hint_html: "Notificar una lista con los principales elementos del presupuesto. No tienes que entrar en detalles minuciosos, sólo un resumen. Sus partidarios se alegrarán de saber adónde va su dinero. No hay ninguna regla que la cantidad de elementos de la lista, pero normalmente 5 suele ser un buen número!"
+      budget_hint_html: "¿Cómo se utilizará el dinero? La transparencia más mejor. Mostrar que pasos y procesos están implicados en el uso de estos recursos. Una lista con los principales elementos del presupuesto o incluso un gráfico lo harán muy bien aquí."
+      budget_label: "Presupuesto del proyecto"
+      budgets_label: "Detalle de presupuesto"
+      start: "Contar la historia de su proyecto!"
+      start_subtitle: "Piense en la narrativa del proyecto. Es ella quien va encantar a la gente y traer partidarios. Un buen video y la descripción son diferenciadores."
+      video_url: "URL del video"
+      video_url_hint: "Enlace al vídeo en Vimeo o Youtube."
+      about: "Descripción del proyecto"
+      links_title: "Enlaces útiles"
+      about_hint_html: "Habla con pasión y claridad sobre lo que llevará a cabo. Aclarar posibles dudas acerca de cómo el dinero se utilizará, quién está detrás del proyecto, cómo y cuándo se entregará el proyecto. Transparencia atrae a más seguidores. Recuerde: su diseño se accederá por la gente ordinaria que decidirá o no apoyan su proyecto. Que sea una buena! "
+      card: "Tarjeta de proyecto"
+      card_subtitle: "¿Conoces ese proyecto cardzinho que aparece en casa y en la búsqueda? Entonces, hace hermoso aquí en parte porque dicen que la primera impresión es la que está!"
+      image: "Imagen de proyecto"
+      image_hint: "Esta imagen se utiliza como la imagen de su proyecto (PNG, JPG tamaño 600 x 340)"
+      headline: "Proyecto llamada"
+      headline_hint: "Se utilizarán en el diseño de la tarjeta, junto con la imagen de arriba (miniatura). Un máximo de 100 caracteres."
+      submit: Salvar
+    dashboard_basics:
+      project_start: "Rellene la siguiente información"
+      project_start_subtitle: "Los datos registrados en esta sección no pueden modificarse cuando el proyecto se transmite. Llene cuidadosamente y revisar antes de lanzar el proyecto. "
+      online_date: "Fecha de entrada en el aire"
+      user_id: "ID de usuario"
+      name: "Nombre del proyecto"
+      name_label: "El mejor directo. No exceda 50 caracteres"
+      url: "URL del proyecto"
+      url_label: "Es la dirección de su proyecto, debería ser fácil de recordar. Evitar el subrayado, guión y símbolos"
+      category: Categoría
+      category_label: "Explorar e inspirar a otros proyectos de la misma categoría que el tuyo."
+      online_days: "Fecha límite para la recaudación de fondos"
+      online_days_label: "Puede elegir entre 1 y 60 días para su campaña. Echale un vistazo y guía de los directores para consejos sobre plazos."
+      value: "Cantidad que debe recogerse"
+      value_secondary: "Planear una meta consistente con lo que propone el proyecto. Revise su presupuesto y no olvides incluir la tasa del 13% cargada por catarsis si su proyecto es exitoso"
+      form:
+        submit: Salvar

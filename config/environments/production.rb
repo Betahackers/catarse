@@ -70,6 +70,9 @@ Catarse::Application.configure do
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
 
+  config.action_mailer.delivery_method = :postmark
+  config.action_mailer.postmark_settings = { :api_key => ENV['POSTMARK_API_TOKEN'] }
+
   # fixes http://stackoverflow.com/questions/17300341/migrate-not-working-on-heroku
   config.active_record.schema_format = :ruby
 

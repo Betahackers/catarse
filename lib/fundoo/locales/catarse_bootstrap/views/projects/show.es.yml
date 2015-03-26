@@ -1,0 +1,91 @@
+es:
+  projects:
+    metrics:
+      titles:
+        confirmed_by_day: "Total de contribución confirmada por día"
+        confirmed_amount_by_day: "Total recogido por día"
+        address_state: "Total confirmado financiamiento por estado"
+    reminder:
+      ok: "¡Vale! Le enviaremos un recordatorio por correo electrónico 48 horas antes del final de la campaña"
+      active_btn: "Me recuerda a este proyecto"
+      deactive_btn: "No quiero ser recordado"
+    send_to_analysis: "El proyecto ha sido enviado a nuestro equipo."
+    send_to_analysis_error: "Proyecto envía error de análisis. Rellene todos los campos requeridos."
+    push_to_online: "El proyecto está en línea!"
+    push_to_online_error: "Error al poner el proyecto en línea. Rellene todos los campos requeridos."
+    twitter:
+      take_a_look: "Echale un vistazo al proyecto %{name} en @fundoo"
+    video_embed:
+      a_project_by_html: "Un proyecto de %{link}"
+    posts:
+      project_post:
+        unavailable: "Esta noticia sólo está disponible para los contribuyentes."
+        contribute: Apoyo
+        unavailable_contribute: "Este proyecto para visualizarlo."
+        destroy: "Eliminar noticias"
+        destroy_confirmation: "¿Desea eliminar esta noticia?"
+      new:
+        notice: "Noticias enviadas correctamente!"
+        comment: "Texto de la noticia"
+        exclusive: "Visible sólo para colaboradores"
+        submit: "Enviar noticias"
+        title: "Título de la noticia"
+        warning: "Recordando que todos los puestos de la novedad irá directamente al correo electrónico de sus colaboradores. Entonces, revisar su texto antes de enviarlo."
+    project_reports:
+      all_contributions_without_reward: "Descargar informe de todos los colaboradores que han seleccionado una recompensa"
+      link_reports_confirmed: "Descargar todos los colaboradores confirmados informe"
+      link_reports_waiting_confirmation: "Descargar informe de todos los colaboradores con billete impreso"
+      link_reward: "Descargar el informe de los contribuyentes de la recompensa de %{value}"
+    project_about:
+      embed: <embed>
+      embed_title: "Esto incrustar en el diseño de su sitio"
+      active_btn: " Recuerda"
+      deactive_btn: " Recordatorio activo"
+    show:
+      menu:
+        panel_html: "Panel de control"
+        about: "Acerca de"
+        add_reward: "Añadir recompensa"
+        comments: Comentarios
+        contributions: Apoyo
+        metrics: Métricas
+        edit: Edición
+        reports: Informes
+        posts: Noticias
+    project_main:
+      share: Compartir
+      tweet: Tweet
+      contribute_project:
+        display_status:
+          reached_goal: "Este proyecto será exitoso y financiado en %{date}"
+          not_reached_goal: "Este proyecto se financiará sólo si al menos %{goal} se alcanzan antes de %{date}"
+          failed: "Este proyecto no ha alcanzado el mínimo de %{goal} antes de %{date} y no fue financiado"
+          rejected: "Este proyecto no fue aceptado. No puede realizar una copia de seguridad."
+          in_analysis: "Este proyecto está bajo revisión y todavía no está abierta a recibir contribución."
+          successful: "Este proyecto fue un éxito y fue financiado en %{date}"
+          waiting_funds: "A la espera de la confirmación de las cuentas para ver si este proyecto será financiado."
+          draft: "Este proyecto es sólo un borrador y aún no puede recibir copias de seguridad."
+        submit: "Apoyar este proyecto"
+      project_by: "diseño de"
+      funding_period: "Periodo de campaña"
+      project_header:
+        subtitle_html: "Un proyecto de %{link}"
+        without_city: "Un proyecto de"
+        with_city: "Un proyecto de %{discussion.category_name} de %{author} en %{city}"
+      menu:
+        about: "Acerca de"
+        add_reward: "Añadir recompensa"
+        comments: Comentarios
+        contributions: Apoyo
+        metrics: Métricas
+        edit: Edición
+        reports: Informes
+        posts: Noticias
+      no_rewards_warning: "No viajar! Piense en cómo se las entrego y poner todo esto en el presupuesto. ¿Prometió? OBEDECER! : D"
+      no_rewards_warning_title: "Crea aquí tu recompensa"
+      contribution_states:
+        confirmed: Confirmado
+        pending: "Pendiente confirmación"
+      sidebar:
+        contributions: contribución
+        goal: "meta %{total}"

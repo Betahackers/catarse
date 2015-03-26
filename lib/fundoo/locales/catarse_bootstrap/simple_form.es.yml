@@ -1,0 +1,53 @@
+es:
+  simple_form:
+    collections:
+      project:
+        traffic_sources:
+          one: "He tenido otro proyecto en Fundoo"
+          two: "indicación de una persona que ya tenía un proyecto en Fundoo"
+          three: "indicación de contacto amigo/colega/profesional"
+          four: "de un proyecto que fue recogiendo la plataforma"
+          five: "artículo publicado en un blog"
+          six: "una historia en la prensa (portal de noticias en el periódico a internet, televisión, revisto)"
+          seven: "en una clase/curso/conferencias/eventos"
+          eight: "Hice una búsqueda en internet sobre formas colectivas de financiamiento y alternativas de financiación"
+          nine: Otro
+    validation_texts:
+      reward:
+        minimum_value: "Introduzca un valor mínimo mayor o igual a 10"
+        description: "Escriba una descripción para la recompensa"
+      bank_account:
+        bank_id: "Seleccionar un banco"
+        agency: "¿Cuál es el número de la Agencia?"
+        account: "¿Cuál es su número de cuenta?"
+        account_digit: "¿Qué dígito verificador."
+        owner_name: "Introduzca un nombre con un mínimo de 5 y un máximo de 30 letras"
+        owner_document: "Notificar un CPF o CNPJ es válida para la cuenta corriente"
+      contribution:
+        payer_name: "Por favor, introduzca el nombre del partidario"
+        payer_email: "Introduzca una dirección válida de correo electrónico"
+        payer_document: "Introduce un CPF o CNPJ válido"
+        address_state: "Seleccione un estado"
+        address_street: "Escriba el nombre de la calle"
+        address_number: "Introduzca el número de la dirección"
+        address_city: "Escriba el nombre de la ciudad"
+        address_zip_code: "Ingrese el código postal"
+        address_phone_number: "Ingrese el número telefónico"
+    prompts:
+      project:
+        category: "Seleccione una categoría"
+        select: "Seleccione una opción"
+        traffic_sources: "¿Cómo conociste el Fundoo?"
+    hints:
+      project:
+        select: "Seleccione una opción"
+        traffic_sources: "¿Cómo conociste el Fundoo?"
+        name: "Darle un nombre que la gente recuerde fácilmente. No exceda 50 caracteres."
+        permalink: "Prefieren algo simple, sencillo y para identificar su proyecto. Trate de no usar guión, subrayado, etc.."
+        category: "Elegir la más adecuada a su proyecto."
+        goal: "Planear una meta consistente con lo que propone el proyecto. Revise su presupuesto y no olvides incluir la tasa del 13% cargada por catarsis si su proyecto es exitoso."
+        online_days: "Puede elegir entre 1 y 60 días para su campaña. Echale un vistazo y guía de los directores para consejos sobre plazos."
+        video_url: "Enlace al vídeo en Vimeo o Youtube <br/>."
+        about: "Habla con pasión y claridad sobre lo que llevará a cabo. Aclarar posibles dudas acerca de cómo el dinero se utilizará, quién está detrás del proyecto, cómo y cuándo se entregará el proyecto. Transparencia atrae a más seguidores. Recuerde: su diseño se accederá por la gente ordinaria que decidirá o no apoyan su proyecto. Que sea una buena! "
+        headline: "Frase en la tarjeta de proyecto para llamar a los fanáticos. Debe tener un máximo de 100 caracteres y resumir bien el proyecto."
+        uploaded_image: "Esta imagen se utiliza como la imagen de su proyecto (PNG, JPG tamaño 600 x 340)"

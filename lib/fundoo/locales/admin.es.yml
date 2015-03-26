@@ -1,0 +1,386 @@
+es:
+  admin:
+    filter:
+      title: Filtros
+    confirm_dialog: "¿Estás seguro?"
+    financials:
+      index:
+        id: ID
+        name: Título
+        user: "Usuario MolP"
+        user_id: "ID de usuario"
+        goal: Meta
+        total_payment_service_fee: "Tasa de MP"
+        total_catarse_fee: "Tasa de catarsis"
+        zero_fee: "¿No hay cuota de apoyo?"
+        repass_value: "VL. pass-through"
+        expires_at: Finaliza
+        online_date: "Salió al aire"
+        pledged: Logrado
+        recommended: "¿Se recomienda?"
+        state: Estado
+        menu: "Dinero de rel."
+        title: "Informes financieros"
+        contribution_report: "Informe partidarios"
+        search_report: "Informe de búsqueda"
+        total_projects: proyectos
+        submit: Filtro
+        by_state: "Por estado"
+        between_expires_at: "Vencen entre"
+        by_progress: "Por progreso %"
+        details:
+          name: "Nombre corporativo"
+          bank_data: "Datos bancarios"
+          document: CPF/CNPJ
+          email: "Correo electrónico"
+          state_inscription: "Afiliaciones estatales"
+          address: Dirección
+          phone_number: Teléfono
+          permalink: "Proyecto Permalink"
+    projects:
+      index:
+        with_state: "Por estado"
+        by_category: "Por categoría"
+        project: Proyecto
+        user: Usuario
+        between_created_at: "Creado en entre"
+        goal_between: Entre
+        between_expires_at: "Vencen entre"
+        between_online_date: "Entró en el aire entre"
+        between_updated_at: "Actualizado entre"
+        by_user_email: "Correo electrónico del Director"
+        id: ID
+        name: Título
+        send_to_trash: Borrar
+        send_to_draft: "Enviar al proyecto!"
+        reject: Rechazo!
+        approve: Aprobar!
+        user_id: "ID de usuario"
+        goal: Meta
+        total_contributions: Apoyo
+        online_date: "Salió al aire"
+        pledged: Logrado
+        recommended: "¿Se recomienda?"
+        state: Estado
+        no_projects: "Ningún proyecto encontró"
+        menu: "Proyectos de administrador"
+        title: "Gestión de proyectos"
+        total_projects: proyectos
+        submit: Filtro
+        expires_at: "Termina en"
+        category: Categoría
+        order_table: "Tabla de tipo"
+        order_date: "Fecha de envío"
+        order_asc: "Meta asc"
+        order_desc: "Meta desc"
+        order_created_at: "Fecha de presentación"
+        last_modification: "Última actualización"
+    actions:
+      confirm: Confirmar
+    users:
+      index:
+        title: "Contribuciones de gestión"
+        menu: Usuarios
+        credits: Créditos
+        credits_view: "Créditos calculados"
+        id: ID
+        key: Clave
+        submit: "Búsqueda de"
+        has_credits_difference: "Discrepancia en créditos"
+        total_contributed: contribuyó
+        total_contributions: contribuciones
+        total_users: usuarios
+        total_credits: créditos
+        total_credits_view: "créditos calculados"
+        user: Usuario
+        value: Valor
+        payer_email: "Correo electrónico de pago"
+        provider: Proveedor
+    contributions:
+      messages:
+        successful:
+          confirm: "Aporte confirmado!"
+          pendent: "Aporte sin confirmar!"
+          refund: "Aporte reembolsado!"
+          change_reward: "Recompensa cambiado!"
+          hide: "Aporte ocultada!"
+          cancel: "Aporte cancelado!"
+          push_to_trash: "Aporte eliminado!"
+      show:
+        contribution_info: "Aporte información %{key}"
+        payment_id: "ID de pago"
+        payment_method: "Medios de pago"
+        payment_fee: "Tasa de pago"
+        successful: exitosa
+        payment_choice: "Opción de pago"
+        payer_email: "Correo electrónico utilizado por los medios de pago"
+        user_email: "Correo electrónico utilizado en catarsis"
+        created_at: "Iniciada en"
+      index:
+        details:
+          payer_email: "Correo electrónico de los medios de pago"
+          normal_email: "Correo electrónico en catarsis"
+          payment_id: "ID de pago"
+          acquirer_tid: "Operador de TID"
+          payment_method: "Medios de pago"
+          payment_choice: "Opción de pago"
+          acquirer_name: Tarjetón
+          installments: Parcelas
+          created_at: "Iniciada en"
+        placeholders:
+          project: "Nombre del proyecto o Permalink"
+          acquirer: "Nombre del portador de la tarjeta"
+          user: "ID, nombre, correo electrónico o correo electrónico de pago"
+          payment_id: "Principales medios de operador ID o TID pago '"
+        acquirer: Operador
+        payment_tax: "Método de pago de cuota"
+        project_state: "Estado del proyecto"
+        send_refund_request_contribution: "Enviar solicitud de reembolso"
+        payer_email: "Correo electrónico pagador"
+        payment_id: "ID de pago"
+        user_email: "Correo electrónico de usuario catarse"
+        push_to_trash: "Eliminar la contribución"
+        cancel: "Cancelar la contribución"
+        between_values: "Valores entre"
+        by_state: Estado
+        refund_and_hide: "Reembolso y ocultar"
+        pending_to_refund: "Pendiente de reembolso"
+        confirm_contribution: "Confirmar asistencia"
+        unconfirm_contribution: "Desconfirmar apoyo"
+        refund_contribution: "Apoyo inverso"
+        request_refund: "Solicitud de reembolso directo"
+        title: "Gestión de las contribuciones"
+        state: Estado
+        menu: Contribuciones
+        anonymous: ¿Anónimo?
+        contribution: Apoyo
+        confirmed: ¿Confirmado?
+        credits_html: "¿Créditos usados? &nbsp;"
+        id: ID
+        key: Clave
+        no_contributions: "Ninguna contribución encontrada."
+        project: Proyecto
+        refunded: ¿Reembolsado?
+        requested_refund: "¿Reembolso solicitado?"
+        reward: Recompensa
+        no_reward: "Ninguna recompensa"
+        submit: "Búsqueda de"
+        total_contributed: contribuyó
+        total_contributions: contribuciones
+        total_contribution: apoyo
+        total_users: Usuarios
+        user: Usuario
+        value: Valor
+    statistics:
+      index:
+        menu: Estadísticas
+        title: Estadísticas
+        total_users: Usuarios
+        total_contributions: Contribuciones
+        total_contributors: Colaboradores
+        total_contributed: Contribuyó
+        total_projects: Proyectos
+        total_projects_success: Exitosa
+        total_projects_online: "En línea"
+      projects_in_analysis_by_week:
+        title: "Proyectos presentados para la curación por semana"
+      projects_by_week:
+        title: "Proyectos enviados por semana"
+      contributions_by_week:
+        title: "Aportado valor confirmado por semana"
+      charts:
+        current_period: "Últimas 8 sin."
+        last_year: "Año anterior"
+  channels:
+    admin:
+      filter:
+        title: Filtros
+      confirm_dialog: "¿Estás seguro?"
+      financials:
+        index:
+          id: ID
+          name: Título
+          user: "Usuario MolP"
+          user_id: "ID de usuario"
+          goal: Meta
+          total_payment_service_fee: "Tasa de MP"
+          total_catarse_fee: "Tasa de catarsis"
+          zero_fee: "¿No hay cuota de apoyo?"
+          repass_value: "VL. pass-through"
+          expires_at: Finaliza
+          online_date: "Salió al aire"
+          pledged: Logrado
+          recommended: "¿Se recomienda?"
+          state: Estado
+          menu: "Dinero de rel."
+          title: "Informes financieros"
+          contribution_report: "Informe partidarios"
+          search_report: "Informe de búsqueda"
+          total_projects: proyectos
+          submit: Filtro
+          by_state: "Por estado"
+          between_expires_at: "Vencen entre"
+          by_progress: "Por progreso %"
+          details:
+            name: "Nombre corporativo"
+            bank_data: "Datos bancarios"
+            document: CPF/CNPJ
+            email: "Correo electrónico"
+            state_inscription: "Afiliaciones estatales"
+            address: Dirección
+            phone_number: Teléfono
+            permalink: "Proyecto Permalink"
+      projects:
+        index:
+          with_state: "Por estado"
+          by_category: "Por categoría"
+          project: Proyecto
+          user: Usuario
+          between_created_at: "Creado en entre"
+          goal_between: Entre
+          between_expires_at: "Vencen entre"
+          between_online_date: "Entró en el aire entre"
+          between_updated_at: "Actualizado entre"
+          by_user_email: "Correo electrónico del Director"
+          id: ID
+          name: Título
+          send_to_trash: Borrar
+          send_to_draft: "Enviar al proyecto!"
+          reject: Rechazo!
+          approve: Aprobar!
+          user_id: "ID de usuario"
+          goal: Meta
+          total_contributions: Apoyo
+          online_date: "Salió al aire"
+          pledged: Logrado
+          recommended: "¿Se recomienda?"
+          state: Estado
+          no_projects: "Ningún proyecto encontró"
+          menu: "Proyectos de administrador"
+          title: "Gestión de proyectos"
+          total_projects: proyectos
+          submit: Filtro
+          expires_at: "Termina en"
+          category: Categoría
+          order_table: "Tabla de tipo"
+          order_date: "Fecha de envío"
+          order_asc: "Meta asc"
+          order_desc: "Meta desc"
+          order_created_at: "Fecha de presentación"
+          last_modification: "Última actualización"
+      actions:
+        confirm: Confirmar
+      users:
+        index:
+          title: "Contribuciones de gestión"
+          menu: Usuarios
+          credits: Créditos
+          credits_view: "Créditos calculados"
+          id: ID
+          key: Clave
+          submit: "Búsqueda de"
+          has_credits_difference: "Discrepancia en créditos"
+          total_contributed: contribuyó
+          total_contributions: contribuciones
+          total_users: usuarios
+          total_credits: créditos
+          total_credits_view: "créditos calculados"
+          user: Usuario
+          value: Valor
+          payer_email: "Correo electrónico de pago"
+          provider: Proveedor
+      contributions:
+        messages:
+          successful:
+            confirm: "Aporte confirmado!"
+            pendent: "Aporte sin confirmar!"
+            refund: "Aporte reembolsado!"
+            change_reward: "Recompensa cambiado!"
+            hide: "Aporte ocultada!"
+            cancel: "Aporte cancelado!"
+            push_to_trash: "Aporte eliminado!"
+        show:
+          contribution_info: "Aporte información %{key}"
+          payment_id: "ID de pago"
+          payment_method: "Medios de pago"
+          payment_fee: "Tasa de pago"
+          successful: exitosa
+          payment_choice: "Opción de pago"
+          payer_email: "Correo electrónico utilizado por los medios de pago"
+          user_email: "Correo electrónico utilizado en catarsis"
+          created_at: "Iniciada en"
+        index:
+          details:
+            payer_email: "Correo electrónico de los medios de pago"
+            normal_email: "Correo electrónico en catarsis"
+            payment_id: "ID de pago"
+            acquirer_tid: "Operador de TID"
+            payment_method: "Medios de pago"
+            payment_choice: "Opción de pago"
+            acquirer_name: Tarjetón
+            installments: Parcelas
+            created_at: "Iniciada en"
+          placeholders:
+            project: "Nombre del proyecto o Permalink"
+            acquirer: "Nombre del portador de la tarjeta"
+            user: "ID, nombre, correo electrónico o correo electrónico de pago"
+            payment_id: "Principales medios de operador ID o TID pago '"
+          acquirer: Operador
+          payment_tax: "Método de pago de cuota"
+          project_state: "Estado del proyecto"
+          send_refund_request_contribution: "Enviar solicitud de reembolso"
+          payer_email: "Correo electrónico pagador"
+          payment_id: "ID de pago"
+          user_email: "Correo electrónico de usuario catarse"
+          push_to_trash: "Eliminar la contribución"
+          cancel: "Cancelar la contribución"
+          between_values: "Valores entre"
+          by_state: Estado
+          refund_and_hide: "Reembolso y ocultar"
+          pending_to_refund: "Pendiente de reembolso"
+          confirm_contribution: "Confirmar asistencia"
+          unconfirm_contribution: "Desconfirmar apoyo"
+          refund_contribution: "Apoyo inverso"
+          request_refund: "Solicitud de reembolso directo"
+          title: "Gestión de las contribuciones"
+          state: Estado
+          menu: Contribuciones
+          anonymous: ¿Anónimo?
+          contribution: Apoyo
+          confirmed: ¿Confirmado?
+          credits_html: "¿Créditos usados? &NBSP;"
+          id: ID
+          key: Clave
+          no_contributions: "Ninguna contribución encontrada."
+          project: Proyecto
+          refunded: ¿Reembolsado?
+          requested_refund: "¿Reembolso solicitado?"
+          reward: Recompensa
+          no_reward: "Ninguna recompensa"
+          submit: "Búsqueda de"
+          total_contributed: contribuyó
+          total_contributions: contribuciones
+          total_contribution: apoyo
+          total_users: Usuarios
+          user: Usuario
+          value: Valor
+      statistics:
+        index:
+          menu: Estadísticas
+          title: Estadísticas
+          total_users: Usuarios
+          total_contributions: Contribuciones
+          total_contributors: Colaboradores
+          total_contributed: Contribuyó
+          total_projects: Proyectos
+          total_projects_success: Exitosa
+          total_projects_online: "En línea"
+        projects_in_analysis_by_week:
+          title: "Proyectos presentados para la curación por semana"
+        projects_by_week:
+          title: "Proyectos enviados por semana"
+        contributions_by_week:
+          title: "Aportado valor confirmado por semana"
+        charts:
+          current_period: "Últimas 8 sin."
+          last_year: "Año anterior"

@@ -1,0 +1,49 @@
+es:
+  projects:
+    project:
+      contributed: criado
+      reached: golpear
+      progress_html: "<span>{%} %</span> financiado"
+      time_remaining_small_html:
+        one: "< div class = ' fontsize-smallest lineheight-tightest' >%{count} %{unit}</div> < div class = ' fontsize-smallest lineheight-tightest' > resto </div>"
+        other: "< div class = ' fontsize-smallest lineheight-tightest ' >%{count} %{unit} </div> < div class = ' fontsize-smallest lineheight-tightest ' > resto </div>"
+      time_remaining_html:
+        one: "<span> %{count} %{unit} </span> resto"
+        other: "<span> %{count} %{unit} </span> resto"
+      pledged_html: "<span>{valor} %</span> planteado"
+      display_status:
+        online: "En línea"
+        expired: finalizado
+        rejected: "se negó"
+        failed: "no financiado"
+        successful: "financiado por"
+        approved: aprobado
+        reached_goal: "financiado por"
+        waiting_confirmation: "a la espera de"
+        waiting_funds: "a la espera de"
+        not_reached_goal: "a la espera de"
+        draft: proyecto
+        in_analysis: "en el análisis"
+    card:
+      by: por
+      remaining:
+        one: resto
+        other: resto
+      contributed: criado
+      reached: golpear
+      progress_html: "<span>{%} %</span> financiado"
+      time_remaining_html:
+        one: "<span> %{count} %{unit} </span> resto"
+        other: "<span> %{count} %{unit} </span> resto"
+      pledged_html: "<span>{valor} %</span> planteado"
+      display_status:
+        expired: finalizado
+        rejected: rechazado
+        failed: Non-financiado
+        successful: Exitosa
+        approved: aprobado
+        reached_goal: "financiado por"
+        waiting_funds: "Facturas pendientes"
+        not_reached_goal: "a la espera de"
+        draft: proyecto
+        in_analysis: "en el análisis"

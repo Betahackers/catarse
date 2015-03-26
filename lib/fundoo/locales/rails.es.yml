@@ -1,0 +1,234 @@
+es:
+  date:
+    abbr_day_names: "[El Dom, el Lun, el mar, el Mié, Jue, el Vie, se sentó."
+    abbr_month_names:
+      - ~
+      - Ene
+      - Feb
+      - Mar
+      - Abr
+      - mayo
+      - Jun
+      - Jul
+      - Aug
+      - Sep
+      - Oct
+      - Nov
+      - Dic
+    day_names: "[Domingo, el lunes, el martes, el miércoles, el jueves, el viernes, sábado."
+    formats:
+      default: "Y %-%m-%d"
+      with_time: "%Y/%m/%d - % H: %M"
+      long: "Ese %d, %y"
+      short: "ese %d"
+    month_names: "[, Enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre."
+    order: "[: año: mes: día]"
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: "alrededor de 1 hora"
+        other: "alrededor de 1 hora"
+      about_x_months:
+        one: "alrededor de 1 mes"
+        other: "alrededor de 1 mes"
+      about_x_years:
+        one: "cerca de 1 año"
+        other: "cerca de 1 año"
+      almost_x_years:
+        one: "casi 1 año"
+        other: "casi 1 año"
+      half_a_minute: "medio minuto"
+      less_than_x_minutes:
+        one: "menos de un minuto"
+        other: "menos de un minuto"
+      less_than_x_seconds:
+        one: "menos de 1 segundo"
+        other: "menos de 1 segundo"
+      over_x_years:
+        one: "más de 1 año"
+        other: "más de 1 año"
+      x_days:
+        one: "1 día"
+        other: "1 día"
+      x_minutes:
+        one: "1 minuto"
+        other: "1 minuto"
+      x_months:
+        one: "1 mes"
+        other: "1 mes"
+      x_seconds:
+        one: "1 segundo"
+        other: "1 segundo"
+    prompts:
+      day: Día
+      hour: Hora
+      minute: Minuto
+      month: Mes
+      second: Segundos
+      year: Año
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: "debe ser aceptado"
+      blank: "No puede ser en blanco"
+      confirmation: "No coincide con la confirmación"
+      empty: "No puede estar vacío"
+      equal_to: "debe ser igual a %{count}"
+      even: "debe ser incluso"
+      exclusion: "está reservado"
+      greater_than: "debe ser mayor que %{count}"
+      greater_than_or_equal_to: "debe ser mayor o igual a %{count}"
+      inclusion: "No está incluido en la lista"
+      invalid: "No es válido"
+      less_than: "debe ser menos de %{count}"
+      less_than_or_equal_to: "debe ser menor o igual a %{count}"
+      not_a_number: "No es un número"
+      not_an_integer: "debe ser un número entero"
+      odd: "debe ser impar"
+      record_invalid: "Error de validación: %{errors}"
+      taken: "Ya se ha tomado"
+      too_long: "{\"one\"=>\"es demasiado largo (máximo es 1 carácter)\", \"other\" =>\"es demasiado largo (máximo es %{count} caracteres)\"}"
+      too_short: "{\"one\"=>\"es muy corta (el mínimo es 1 carácter)\", \"other\" =>\"es muy corta (mínimo es %{count} caracteres)\"}"
+      wrong_length: "{\"one\"=>\"es la longitud incorrecta (debe ser 1 carácter)\", \"other\"=>\"es la longitud incorrecta (debe ser caracteres %{count})\"}"
+    template:
+      body: "Hubo problemas con los siguientes campos:"
+      header:
+        one: "1 error prohibido este %{model} se guardara"
+        other: "%{count} error prohibido este %{model} se guardara"
+  helpers:
+    select:
+      prompt: "Por favor, seleccione"
+    submit:
+      create: "Crear %{model}"
+      submit: "Ahorre %{model}"
+      update: "Actualización %{model}"
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%u %n"
+        precision: 0
+        separator: "."
+        significant: falso
+        strip_insignificant_zeros: falso
+        unit: €
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: falso
+      strip_insignificant_zeros: falso
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion:
+            one: "Mil millones"
+            other: "Mil millones"
+          million:
+            one: Millones
+            other: Millones
+          quadrillion:
+            one: "Mil billones"
+            other: "Mil billones"
+          thousand: Mil
+          trillion:
+            one: Trillón
+            other: Trillón
+          unit: unidad
+      format:
+        delimiter: "."
+        precision: 3
+        significant: verdadero
+        strip_insignificant_zeros: verdadero
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: Byte
+            other: Byte
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: "."
+    precision:
+      format:
+        delimiter: "."
+  support:
+    array:
+      last_word_connector: ", y "
+      two_words_connector: " y "
+      words_connector: ", "
+  time:
+    am: AM
+    formats:
+      estimate: "%B/%Y"
+      simple: "% d/%m/%Y, % H: %M h"
+      default: "%A, %d de ese de %Y % H: %M h"
+      long: "%A, %d de ese de %Y % H: %M h"
+      short: "% d/%m, % H: %M h"
+      posts: "%d ese %y"
+    pm: PM
+  activemodel:
+    errors:
+      format: "%{attribute} %{message}"
+      messages:
+        accepted: "debe ser aceptado"
+        blank: "No puede ser en blanco"
+        confirmation: "No coincide con la confirmación"
+        empty: "No puede estar vacío"
+        equal_to: "debe ser igual a %{count}"
+        even: "debe ser incluso"
+        exclusion: "está reservado"
+        greater_than: "debe ser mayor que %{count}"
+        greater_than_or_equal_to: "debe ser mayor o igual a %{count}"
+        inclusion: "No está incluido en la lista"
+        invalid: "No es válido"
+        less_than: "debe ser menos de %{count}"
+        less_than_or_equal_to: "debe ser menor o igual a %{count}"
+        not_a_number: "No es un número"
+        not_an_integer: "debe ser un número entero"
+        odd: "debe ser impar"
+        record_invalid: "Error de validación: %{errors}"
+        taken: "Ya se ha tomado"
+        too_long: "{\"one\"=>\"es demasiado largo (máximo es 1 carácter)\", \"other\" =>\"es demasiado largo (máximo es %{count} caracteres)\"}"
+        too_short: "{\"one\"=>\"es muy corta (el mínimo es 1 carácter)\", \"other\" =>\"es muy corta (mínimo es %{count} caracteres)\"}"
+        wrong_length: "{\"one\"=>\"es la longitud incorrecta (debe ser 1 carácter)\", \"other\"=>\"es la longitud incorrecta (debe ser caracteres %{count})\"}"
+      template:
+        body: "Hubo problemas con los siguientes campos:"
+        header:
+          one: "1 error prohibido este %{model} se guardara"
+          other: "%{count} error prohibido este %{model} se guardara"
+  activerecord:
+    errors:
+      format: "%{attribute} %{message}"
+      messages:
+        accepted: "debe ser aceptado"
+        blank: "No puede ser en blanco"
+        confirmation: "No coincide con la confirmación"
+        empty: "No puede estar vacío"
+        equal_to: "debe ser igual a %{count}"
+        even: "debe ser incluso"
+        exclusion: "está reservado"
+        greater_than: "debe ser mayor que %{count}"
+        greater_than_or_equal_to: "debe ser mayor o igual a %{count}"
+        inclusion: "No está incluido en la lista"
+        invalid: "No es válido"
+        less_than: "debe ser menos de %{count}"
+        less_than_or_equal_to: "debe ser menor o igual a %{count}"
+        not_a_number: "No es un número"
+        not_an_integer: "debe ser un número entero"
+        odd: "debe ser impar"
+        record_invalid: "Error de validación: %{errors}"
+        taken: "Ya se ha tomado"
+        too_long: "{\"one\"=>\"es demasiado largo (máximo es 1 carácter)\", \"other\" =>\"es demasiado largo (máximo es %{count} caracteres)\"}"
+        too_short: "{\"one\"=>\"es muy corta (el mínimo es 1 carácter)\", \"other\" =>\"es muy corta (mínimo es %{count} caracteres)\"}"
+        wrong_length: "{\"one\"=>\"es la longitud incorrecta (debe ser 1 carácter)\", \"other\"=>\"es la longitud incorrecta (debe ser caracteres %{count})\"}"
+      template:
+        body: "Hubo problemas con los siguientes campos:"
+        header:
+          one: "1 error prohibido este %{model} se guardara"
+          other: "%{count} error prohibido este %{model} se guardara"

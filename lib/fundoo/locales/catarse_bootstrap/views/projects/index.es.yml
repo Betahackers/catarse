@@ -1,0 +1,48 @@
+es:
+  projects:
+    index_header:
+      subtitle: "Financiar proyectos de manera colaborativa y formar parte de algo más grande. Promover una fundoo colectiva. Eres la pieza que falta en esta historia."
+      title: "Hacerlo realidad, qué cree diseños"
+    index:
+      back_a_project: "Apoyar un proyecto"
+      banner_title: "Tomar proyectos de papel!"
+      see_all: "Ver todos"
+      near_you: "Cerca de usted"
+      recents: Recientes
+      blog: "Blog de Fundoo"
+      expiring: "En la recta final"
+      recommended: "Se recomienda"
+      banner_subtitle: "Música, cómics, cine, impacto social, tecnología y mucho más. Conocer, inspirar y apoyar proyectos."
+      box:
+        by: por
+        when: en
+      banner: "Cumplir con la investigación"
+      explore: "Explorar proyectos"
+      links:
+        channels: "Descubrir las alas de canal"
+        recommended: "Descubrir proyectos recomendados"
+        expiring: "Descubrir proyectos en recta final"
+        recents: "Descubre los proyectos más recientes"
+        near: "Descubrir proyectos cerca de ti"
+      sidebar:
+        titles:
+          blog: blog
+          facebook: "¿Disfruté nuestro rostro?"
+          newsletter: "Suscríbete a nuestras noticias"
+          faq: ¿preguntas?
+          schedule: Agenda
+        placeholders:
+          email: "Introduce tu email"
+        buttons:
+          newsletter: Enviar
+      sections:
+        near:
+          title: "Más cercanas a mí"
+        recommended:
+          title: "Se recomienda"
+        expiring:
+          title: "En la recta final"
+        recents:
+          title: Recientes
+        channels:
+          title: "Canal alas"

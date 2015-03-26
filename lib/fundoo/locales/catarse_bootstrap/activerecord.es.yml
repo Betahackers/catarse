@@ -1,0 +1,275 @@
+es:
+  activerecord:
+    models:
+      channel: Canal
+      project: Proyecto
+      reward: Recompensa
+      contribution: Partidario
+      category: Categoría
+      bank_account: "Datos bancarios"
+    attributes:
+      project_account:
+        address_city: Ciudad
+        address_complement: Add-on
+        address_neighbourhood: Barrio
+        address_number: Número
+        address_state: Estado
+        address_street: Dirección
+        address_zip_code: "Código postal"
+        cpf: "Número de documento"
+        state_inscription: "Estado de emisión del documento"
+        email: "Correo electrónico"
+        full_name: "Nombre completo nombre/empresa"
+        phone_number: Teléfono
+        bank: Banco
+        bank_id: Banco
+        owner_name: "Nombre del titular"
+        owner_document: "Número de documento del titular"
+        agency: Agencia
+        agency_digit: "Agencia de dígitos"
+        account: "En. de la cuenta"
+        account_digit: "Cuenta de dígitos"
+        account_type: "Tipo de cuenta"
+      bank_account:
+        bank: Banco
+        bank_id: Banco
+        owner_name: "Nombre del titular"
+        owner_document: "Número de documento del titular"
+        agency: Agencia
+        agency_digit: "Cifras de la Agencia"
+        account: "Número de cuenta"
+        account_digit: "Dígitos de la cuenta"
+      contribution:
+        payer_name: "Nombre completo"
+        payer_email: "Correo electrónico"
+        payer_document: "Número de documento"
+        country: País
+        address_street: Calle
+        address_number: Número
+        address_complement: Add-on
+        address_neighbourhood: Barrio
+        address_state: Estado
+        address_city: Ciudad
+        address_zip_code: "Código postal"
+        address_phone_number: Teléfono
+        value: "valor de apoyo"
+        reward: recompensa
+        project: proyecto
+      reward:
+        deliver_at: "Previsión de entrega"
+      project:
+        channels: Canales
+        category: Categoría
+        expires_at: "Fecha límite"
+        online_days: "Fecha límite para la recaudación de fondos"
+        headline: Soundbite
+        image_url: "URL de la imagen"
+        name: "Nombre del proyecto"
+        goal: "Cantidad que debe recogerse"
+        about: "Descripción del proyecto"
+        user_id: "ID de usuario"
+        video_url: "URL del video"
+        permalink: "Un enlace desde su proyecto"
+        more_links: "Proporcionar enlaces para la gente saber más sobre su proyecto y su trayectoria."
+        traffic_sources: "¿Cómo conociste el Fundoo?"
+        first_contributions: "¿Quiénes son las primeras personas que pediré a apoyar su proyecto?"
+        budget: "Presupuesto del proyecto"
+        uploaded_image: "Imagen de proyecto"
+      user:
+        address_city: Ciudad
+        address_complement: Add-on
+        address_neighbourhood: Barrio
+        address_number: Número
+        address_state: Estado
+        address_street: Dirección
+        address_zip_code: "Código postal"
+        cpf: "Número de documento"
+        cpf_hint: (?)
+        state_inscription: "Estado inscripción"
+        current_password: "Contraseña actual"
+        email: "Correo electrónico"
+        full_name: "Nombre completo nombre/empresa"
+        bio: "Mini Bio"
+        name: Apellido
+        newsletter: "Deseo recibir noticias de Fundoo"
+        password: Contraseña
+        password_confirmation: "Confirmación de contraseña"
+        phone_number: Teléfono
+        cpf_hint_title: "Este documento se emitirá factura"
+        id: ID
+        moip_login: "MoIP login"
+        moip_login_hint: "(Cómo crear una cuenta)"
+        reset_password_token: "Enlace a recrear la contraseña"
+      channel:
+        ga_code: "Código de Analytics"
+        description: Descripción
+        how_it_works: "Cómo funciona"
+        image: "Imagen de la novedad"
+        name: Nombre
+        video_url: Video
+      channel_partner:
+        name: Nombre
+        url: Sitio
+        image: Imagen
+      project_post:
+        title: Título
+        comment: Texto
+      channel_post:
+        title: Título
+        body: Contenido
+        visible: "Publicar (Verifica si desea publicar este nóvidade)"
+    errors:
+      models:
+        contribution: "Error al guardar la ayuda"
+        bank_account:
+          attributes:
+            bank:
+              blank: "Banco no puede estar en blanco"
+            owner_name:
+              blank: "Nombre del titular no puede estar en blanco"
+            owner_document:
+              blank: "Número de documento del titular no puede estar en blanco"
+              invalid: "Inválido número documento"
+            agency:
+              blank: "La agencia no puede estar en blanco"
+              invalid: "La agencia no es válido"
+            account:
+              blank: "En. la cuenta no puede ser en blanco"
+            account_digit:
+              blank: "Dígitos de la cuenta no pueden ser en blanco"
+              invalid: "Tipo de agencia no válida"
+        project_account:
+          attributes:
+            full_name:
+              blank: "Nombre del negocio del usuario no puede estar en blanco"
+            email:
+              blank: "Correo electrónico del usuario no puede estar en blanco"
+            cpf:
+              blank: "CPF del usuario no puede estar en blanco"
+            address_street:
+              blank: "Dirección del usuario no puede ser en blanco"
+            address_number:
+              blank: "Número en la dirección del usuario no puede estar en blanco"
+            address_city:
+              blank: "Ciudad del usuario no puede ser en blanco"
+            address_state:
+              blank: "Estado del usuario no puede ser en blanco"
+            address_zip_code:
+              blank: "Usuario código postal no puede estar en blanco"
+            phone_number:
+              blank: "Teléfono del usuario no puede estar en blanco"
+            bank:
+              blank: "Banco de usuario no puede estar en blanco"
+            agency:
+              blank: "Agencia de usuario no puede estar en blanco"
+            agency_digit:
+              blank: "Agencia de usuario dígito no puede ser en blanco"
+            account:
+              blank: "En. cuenta de usuario no puede estar en blanco"
+            account_digit:
+              blank: "Dígitos de la cuenta de usuario no pueden estar en blanco"
+            owner_name:
+              blank: "Nombre del titular del usuario no puede estar en blanco"
+            owner_document:
+              blank: "Número de documento del titular del usuario no puede estar en blanco"
+              not_same: "Número de documento de datos catastrales y banca llenada no es igual."
+            account_type:
+              blank: "Tipo de cuenta no puede ser en blanco"
+        project:
+          attributes:
+            video_url:
+              blank: "El video del proyecto no puede ser en blanco"
+            budget:
+              blank: "Presupuesto del proyecto no puede ser en blanco"
+            uploaded_image:
+              blank: "La imagen del proyecto no puede ser en blanco"
+            name:
+              blank: "El nombre del proyecto no puede ser en blanco"
+            permalink:
+              blank: "La URL del proyecto no puede ser en blanco"
+              invalid: "El proyecto URL no es válida"
+              taken: "URL de este proyecto ya existe"
+            category:
+              blank: "Debe elegir una categoría para su proyecto"
+            goal:
+              blank: "El valor de la meta no puede ser en blanco"
+              greater_than: "El objetivo debe ser mayor a 9"
+              not_a_number: "Colección meta acepta solamente números"
+            online_days:
+              blank: "El período de colección no puede ser en blanco"
+              greater_than: "El plazo para la recolección debe ser mayor que 0 días"
+              not_a_number: "El plazo para la recolección debe ser un número de días"
+            about:
+              blank: "La descripción del proyecto no puede ser en blanco"
+            headline:
+              blank: "La frase del proyecto no puede ser en blanco"
+              too_long: "La frase es muy larga. Puede utilizar un máximo de 140 caracteres."
+        user:
+          attributes:
+            email:
+              not_found: "El email no está registrado, revise la dirección o su registro"
+              taken: "El email ya está registrado, Inicio de sesión"
+              invalid: "Esta dirección de e-mail no es válida"
+              blank: "El correo electrónico no puede ser en blanco"
+            password:
+              too_short: "La contraseña que elegiste es demasiado corta"
+              confirmation: "La contraseña y la confirmación contraseña llena no son iguales"
+              blank: "La contraseña no puede estar en blanco"
+            current_password:
+              invalid: "Contraseña actual no es válido"
+            reset_password_token:
+              invalid: "expiró. Ir a <a href = \"/password/new\" ></a> restablecer contraseña y petición contraseña restablecer otra vez."
+            name:
+              blank: "Nombre de usuario no puede estar en blanco"
+            about:
+              blank: "Acerca de usted no puede ser en blanco"
+            uploaded_image:
+              blank: "Imagen del usuario no puede estar en blanco"
+  project:
+    update:
+      success: "Se ha actualizado la información"
+      failed: "El sin guardar información, verificar que todos los campos han sido llenados correctamente"
+    delete:
+      posts: "Novedad borrado con éxito"
+    video_regex_validation: "se aceptan sólo URLs de Youtube o Vimeo"
+  contribution:
+    project_should_be_online: "Usted no puede apoyar un proyecto que no está en el aire"
+    reward_must_be_from_project: "debe ser del mismo diseño"
+    should_not_contribute_if_maximum_contributions_been_reached: "ha alcanzado su máximo número de partidarios"
+    value_must_be_at_least_rewards_value: "debe ser al menos %{minimum_value} para la recompensa seleccionada"
+  contribution_report_to_project_owner:
+    reward_description: "Descripción de recompensa"
+    deliver_at: "Fecha de entrega de la recompensa"
+    confirmed_at: "Fecha de confirmación del pago"
+    contribution_value: "Valor de apoyo"
+    service_fee: "Tasa de Fundoo"
+    user_full_name: "Nombre completo del partidario"
+    user_name: "Apodo del partidario"
+    user_email: "Perfil de correo electrónico Fundoo"
+    cpf: "Número de documento"
+    payer_email: "Correo electrónico de los medios de pago"
+    payment_method: "Medios de pago"
+    street: Calle
+    address_number: Número
+    complement: Add-on
+    neighbourhood: Barrio
+    city: Ciudad
+    address_state: Estado
+    zip_code: "Código postal"
+    anonymous: Anónimo
+  user:
+    no_name: "Sin nombre"
+    contributions_text:
+      one: "Apoyó este y más otros %{total} proyecto"
+      other: "Apoyó este y más otros %{total} proyectos "
+  channels_subscribers:
+    created: "Ahora sigue el %{channel}"
+    deleted: "Ya no sigues el %{channel}"
+  channels:
+    edit: "Canal de actualización"
+    image_hint: "Tamaño máximo (600x121px)"
+    subscribed: "%{count} siguiendo el canal"
+    back_to_news: "← Volver a noticias"
+    follow: "Siga el canal"
+    following: Siguiendo
+    unfollow: "Dejar de seguir"
