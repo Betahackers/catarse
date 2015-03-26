@@ -180,3 +180,4 @@ gem 'sprockets', '~> 2.10.1'
 gem 'weekdays'
 
 gem 'country_select'
+gem 'postmark-rails'
