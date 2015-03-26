@@ -75,6 +75,7 @@ pt:
         PayPal: PayPal
         MoIP: MoIP
         Credits: Créditos
+        OfflinePayment: Pay Cash
         error: "Ooops. Ocorreu um erro ao registrar seu apoio. Por favor, tente novamente."
       show:
         header_subtitle: "Sem você talvez este projeto não tivesse uma chance. Bem-vindo ao time!"

@@ -75,6 +75,7 @@ es:
         PayPal: Paypal
         MoIP: MoIP
         Credits: Créditos
+        OfflinePayment: Pagar en Efectivo
         error: "Ooops. Error al registrar su contribución. Por favor intentelo nuevamente."
       show:
         header_subtitle: "Sin ti este proyecto no tuvo una oportunidad. ¡ Bienvenido al equipo!"
