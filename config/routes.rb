@@ -1,3 +1,6 @@
+require 'sidekiq/web'
+
+
 Catarse::Application.routes.draw do
   mount JasmineRails::Engine => '/specs' if defined?(JasmineRails)
   devise_for(
@@ -143,6 +146,11 @@ Catarse::Application.routes.draw do
     end
   end
 
+  authenticate :user, lambda { |u| u.admin? } do
+    mount Sidekiq::Web => '/sidekiq'
+  end
+  
   get "/:permalink" => "projects#show", as: :project_by_slug
+
 
 end

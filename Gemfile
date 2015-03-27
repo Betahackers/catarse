@@ -181,3 +181,4 @@ gem 'weekdays'
 
 gem 'country_select'
 gem 'postmark-rails'
+gem 'sinatra', :require => nil
