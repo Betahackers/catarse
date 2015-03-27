@@ -40,8 +40,8 @@ en:
             o_projeto_notification_atingiu: "The project %{notification} hit the deadline"
         categorized_projects_of_the_week:
           ol_user: "Hi %{user},"
-          novidades_dessa_semana_na: "This week's news in the category \" %{category} of Fundoo"
-                    um_abra_o: "A hug,"
+          novidades_dessa_semana_na: "This week's news in the category %{category} of Fundoo"
+          um_abra_o: "A hug,"
           descadastrar: Unsubscribe
           link_to_o: "%{link_to} receiving recent projects in this category."
         categorized_projects_of_the_week_subject:
@@ -158,7 +158,7 @@ en:
           ol_strong_user_strong: "Hello, <strong> %{user} </strong>!"
           vimos_aqui_que_voc: "We see here that you have $ %{user} in credits in Fundoo. How about leverage and support another cool project right now?"
           abaixo_selecionamos_algumas_sugest: "Below we have selected a few suggestions of projects specially for you:"
-          env_projects_project1: "\" %{ENV}/projects/%{project1}\")}"
+          env_projects_project1: ""
           pra_n_o_ficar: "Not be doubt, here's a step-by-step guide for use of credits:"
           escolher_o_projeto_que: "Choose the project you want to support;"
           1_link_to: "1- %{link_to}"
@@ -167,11 +167,11 @@ en:
           4_clicar_no_bot: "4-click the Revise and perform payment at the bottom of the screen;"
           aqui: here
           nesse_artigo: "in this article"
-          caso_prefira_voc_pode: "If you prefer, you may request a refund of your money by clicking %{link_to}/users/%{user1} #credits \")}. You can get most of your questions about reimbursement %{link_to2}."
+          caso_prefira_voc_pode: "If you prefer, you may request a refund of your money. You can get most of your questions about reimbursement %{link_to2}."
           se_tiver_alguma_outra: "If you have any other questions, please contact us at our Support Center: suporte.catarse.me."
           um_grande_abra_o: "A big hug,"
           equipe_do_catarse: "Team of Fundoo"
-                  credits_warning_less_group_subject:
+        credits_warning_less_group_subject:
           text:
             total_days_dias: " %{total_days} days to use their credits and make a project happen!"
         credits_warning_more_group:
@@ -186,7 +186,7 @@ en:
           3_colocar_o_valor: "3-Put the value that you want to support and select the field that you want to use your credits."
           4_clicar_no_bot: "4-click the Revise and perform payment at the bottom of the screen;"
           strong_dicas_de: "<strong> </strong> projects tips"
-                    caso_voc_n_o: "If you do not use the credits until the day 10/11, we will contact you to perform the refund."
+          caso_voc_n_o: "If you do not use the credits until the day 10/11, we will contact you to perform the refund."
           se_ficar_com_alguma: "If you have any questions, just let us know by responding to this email or via contato@catarse.me"
           um_abra_o: "A hug"
           catarse: Fundoo
@@ -205,18 +205,6 @@ en:
         deadline_extension_subject:
           text:
             instabilidade_moment_nea_e: "Momentary instability and extension"
-        hangout:
-          ol_notification_tudo_bem: "Hi %{notification}, all right?"
-          que_tal_um_empurr: "How about a little nudge to their collective funding campaign of %{notification}"
-          ser_um_sucesso_o: "be a success?
-          mola: Spring
-          m_rcio_sequeira_do: "Márcio Sequeira of %{link_to} are the guests of the free school to present the Tera"
-          hangout_os_segredos: "\"Hangout: the secrets of Crowdfunding\" on day 5/11 at noon."
-          nosso_coordenador_de_comunica: "Our communications coordinator and creator of"
-          maior_arrecada_o_por: "highest for collective funding in the history of Brazil"
-          clique_aqui_e_inscreva: "Click here and sign up"
-          v_o_ensinar_como: "will teach you how to make your project take off in Fundoo.  %{link_to}!"
-          esperamos_voc: "We wait you!"
         hangout_subject:
           text:
             inscreva_se_no_hangout: "Join Hangout: the secrets of Crowdfunding"
@@ -356,7 +344,7 @@ en:
           caso_o_motivo_para: "If the reason for not having completed their support was a technical problem, we recommend that you try again using another browser."
           se_o_problema_persistir: "If the problem persists, please contact immediately responding to this message or via e-mail %{mail_to}"
           um_abra_o: "A hug,"
-                  pending_payment_subject:
+        ending_payment_subject:
           text:
             o_projeto_notification_precisa: "The %{notification} project needs your support!"
         posts:
@@ -515,7 +503,7 @@ en:
           por_favor_strong_n: "Please don't forget to include </strong> in your list of contacts e-mail: </strong>"
           um_abra_o: "A hug,"
           a_equipe_do_company: "The %{company_name} team wishes you a good campaign it!!!!"
-                  project_visible_subject:
+        project_visible_subject:
           text:
             o_projeto_notification_est: "The project %{notification} is in the air in %{ENV1}"
         redbooth_task:
@@ -655,7 +643,7 @@ en:
           se_ficou_com_alguma: "If you got any questions contact us responding to this email or via %{mail_to}"
           um_abra_o: "A hug,"
           catarse: Fundoo
-                  terms_update_subject:
+        terms_update_subject:
           text:
             atualiza_o_termos_de: "Updated terms of use and privacy policy"
         user_deactivate:
@@ -683,7 +671,7 @@ en:
           3_colocar_o_valor: "3-Put the value that you want to support and select the field that you want to use your credits."
           4_clicar_no_bot: "4-click the Revise and perform payment at the bottom of the screen;"
           strong_dicas_de: "<strong> </strong> projects tips"
-                    caso_voc_n_o: "If you do not use the credits until the day 10/11, we will contact you to perform the refund."
+          caso_voc_n_o: "If you do not use the credits until the day 10/11, we will contact you to perform the refund."
           se_ficar_com_alguma: "If you have any questions, just let us know by responding to this email or via contato@catarse.me"
           um_abra_o: "A hug,"
           catarse: Fundoo

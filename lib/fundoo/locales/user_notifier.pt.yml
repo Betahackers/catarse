@@ -1,978 +1,704 @@
----
 pt:
   catarse_bootstrap:
     user_notifier:
       mailer:
         contribution_data:
-          seguem_todos_os_dados: 'Seguem todos os dados do pagamento:'
-          nome_do_apoiador_contribution: 'Nome do apoiador: %{contribution}'
-          cpf_cnpj_do_apoiador: 'CPF/CNPJ do apoiador: %{contribution}'
-          data_da_confirma_o: 'Data da confirmação do apoio: %{l}'
-          op_o_de_pagamento: 'Opção de pagamento: %{contribution}'
-          valor_da_contribui_o: 'Valor da contribuição: %{number_to_currency}'
-          n_mero_de_parcelas: 'Número de parcelas: %{contribution}'
-          valor_da_parcela_number: 'Valor da parcela: %{number_to_currency}'
-          recompensa_selecionada_contribution: 'Recompensa selecionada: %{contribution}'
-          estimativa_de_entrega_contribution: 'Estimativa de entrega: %{contribution}'
-          id_do_apoio_contribution: 'ID do apoio: %{contribution}'
-          nome_raz_o_social: 'Nome/Razão Social do realizador: %{contribution}'
-          cpf_cnpj_do_realizador: 'CPF/CNPJ do realizador: %{contribution}'
-          importante_ressaltar_que: "É importante ressaltar que o Catarse é apenas
-            intermediador desse processo,"
-          portanto_se_tiver_alguma: portanto, se tiver alguma dúvida em relação ao
-            projeto ou recompensa selecionada entre
-          em_contato_diretamente_com: em contato diretamente com o realizador através
-            do e-mail %{mail_to}.
-          ah_lembre_se_de: Ah! Lembre-se de guardar este email, pois ele contém informações
-            importantes
-          a_respeito_da_sua: a respeito da sua contribuição ao projeto.
-          se_ficou_com_alguma: Se ficou com alguma dúvida, entre em contato conosco
-            respondendo a esta mensagem ou através do e-mail %{mail_to}
-          um_abra_o_e: Um abraço e muito obrigado,
+          seguem_todos_os_dados: "Seguem todos os dados do pagamento:"
+          nome_do_apoiador_contribution: "Nome do apoiador: %{contribution}"
+          cpf_cnpj_do_apoiador: "CPF/CNPJ do apoiador: %{contribution}"
+          data_da_confirma_o: "Data da confirmação do apoio: %{l}"
+          op_o_de_pagamento: "Opção de pagamento: %{contribution}"
+          valor_da_contribui_o: "Valor da contribuição: %{number_to_currency}"
+          n_mero_de_parcelas: "Número de parcelas: %{contribution}"
+          valor_da_parcela_number: "Valor da parcela: %{number_to_currency}"
+          recompensa_selecionada_contribution: "Recompensa selecionada: %{contribution}"
+          estimativa_de_entrega_contribution: "Estimativa de entrega: %{contribution}"
+          id_do_apoio_contribution: "ID do apoio: %{contribution}"
+          nome_raz_o_social: "Nome/Razão Social do realizador: %{contribution}"
+          cpf_cnpj_do_realizador: "CPF/CNPJ do realizador: %{contribution}"
+          importante_ressaltar_que: "É importante ressaltar que o Catarse é apenas intermediador desse processo,"
+          portanto_se_tiver_alguma: "portanto, se tiver alguma dúvida em relação ao projeto ou recompensa selecionada entre"
+          em_contato_diretamente_com: "em contato diretamente com o realizador através do e-mail %{mail_to}."
+          ah_lembre_se_de: "Ah! Lembre-se de guardar este email, pois ele contém informações importantes"
+          a_respeito_da_sua: "a respeito da sua contribuição ao projeto."
+          se_ficou_com_alguma: "Se ficou com alguma dúvida, entre em contato conosco respondendo a esta mensagem ou através do e-mail %{mail_to}"
+          um_abra_o_e: "Um abraço e muito obrigado,"
           env: "%{ENV}"
         adm_project_deadline:
-          o_projeto_link_to: O projeto %{link_to} acabou de atingir seu prazo.
-          nome_do_projeto_project: 'Nome do projeto: %{project}'
-          valor_arrecadado_project: 'Valor arrecadado: %{project}'
-          data_de_finaliza_o: 'Data de finalização: %{project}'
-          conta_moip_project: 'Conta Moip: %{project}'
-          bancarios: Bancarios:'
-          banco_bank_account: 'Banco: %{bank_account}'
-          ag_ncia_bank_account: 'Agência: %{bank_account}- %{bank_account1}'
-          conta_bank_account_bank: 'Conta: %{bank_account} - %{bank_account1}'
-          nome_do_titular_bank: 'Nome do titular: %{bank_account}'
-          cpf_bank_account: 'CPF: %{bank_account}'
+          o_projeto_link_to: "O projeto %{link_to} acabou de atingir seu prazo."
+          nome_do_projeto_project: "Nome do projeto: %{project}"
+          valor_arrecadado_project: "Valor arrecadado: %{project}"
+          data_de_finaliza_o: "Data de finalização: %{project}"
+          conta_moip_project: "Conta Moip: %{project}"
+          bancarios: "Bancarios:'"
+          banco_bank_account: "Banco: %{bank_account}"
+          ag_ncia_bank_account: "Agência: %{bank_account}- %{bank_account1}"
+          conta_bank_account_bank: "Conta: %{bank_account} - %{bank_account1}"
+          nome_do_titular_bank: "Nome do titular: %{bank_account}"
+          cpf_bank_account: "CPF: %{bank_account}"
         adm_project_deadline_subject:
           text:
-            o_projeto_notification_atingiu: O projeto %{notification} atingiu o prazo
+            o_projeto_notification_atingiu: "O projeto %{notification} atingiu o prazo"
         categorized_projects_of_the_week:
-          ol_user: Olá %{user},
-          novidades_dessa_semana_na: Novidades dessa semana na categoria %{category}
-            do Catarse
-                      ref: ''notificacao_subscription_category''))}'
-          um_abra_o: Um abraço,
+          ol_user: "Olá %{user},"
+          novidades_dessa_semana_na: "Novidades dessa semana na categoria %{category} do Catarse"
+          project_by_slug_url: "project_by_slug_url(permalink: project.permalink, ref: 'notificacao_subscription_category'))}"
+          um_abra_o: "Um abraço,"
           env: "%{ENV}"
           descadastrar: Descadastrar
           link_to_o: "%{link_to} o recebimento de projetos recentes dessa categoria."
         categorized_projects_of_the_week_subject:
           text:
-            projetos_recentes_na_categoria: Projetos recentes na categoria %{notification}
+            projetos_recentes_na_categoria: "Projetos recentes na categoria %{notification}"
         confirm_contribution:
-          ol_strong_contribution_strong: Olá, <strong>%{contribution}</strong>!
-          seu_apoio_para_o: Seu apoio para o projeto %{link_to} foi confirmado com
-            sucesso.
-          at_o_momento_voc: Até o momento você e outras %{contribution} pessoas estão
-            tornando esse projeto uma realidade.
-          esse_e_mail_serve: Esse e-mail serve como um <strong>recibo provisório da
-            sua contribuição</strong>.
+          ol_strong_contribution_strong: "Olá, <strong>%{contribution}</strong>!"
+          seu_apoio_para_o: "Seu apoio para o projeto %{link_to} foi confirmado com sucesso."
+          at_o_momento_voc: "Até o momento você e outras %{contribution} pessoas estão tornando esse projeto uma realidade."
+          esse_e_mail_serve: "Esse e-mail serve como um <strong>recibo provisório da sua contribuição</strong>."
         confirm_contribution_subject:
           text:
-            recibo_provis_rio_apoio: 'Recibo provisório: apoio confirmado para %{notification}'
+            recibo_provis_rio_apoio: "Recibo provisório: apoio confirmado para %{notification}"
         contribution_canceled:
-          ol_strong_contribution_strong: Olá, <strong>%{contribution}</strong>!
-          n_o_recebemos_a: Não recebemos a confirmação de pagamento do apoio para
-            o projeto %{link_to}.
-          para_se_tornar_realidade: Para se tornar realidade, esse projeto precisa
-            muito do seu apoio, portanto, você tem até %{l}
-          nova_contribui_o: nova contribuição
-          para_realizar_uma_link: para realizar uma %{link_to}.
-          junte_se_a_mais: Junte-se a mais <strong>%{contribution}</strong> pessoas
-            que querem tirar o projeto %{link_to1} do papel.
-          se_ficou_com_alguma: Se ficou com alguma dúvida, entre em contato conosco
-            respondendo a esta mensagem ou através do e-mail %{mail_to}
-          um_abra_o: Um abraço,
+          ol_strong_contribution_strong: "Olá, <strong>%{contribution}</strong>!"
+          n_o_recebemos_a: "Não recebemos a confirmação de pagamento do apoio para o projeto %{link_to}."
+          para_se_tornar_realidade: "Para se tornar realidade, esse projeto precisa muito do seu apoio, portanto, você tem até %{l}"
+          nova_contribui_o: "nova contribuição"
+          para_realizar_uma_link: "para realizar uma %{link_to}."
+          junte_se_a_mais: "Junte-se a mais <strong>%{contribution}</strong> pessoas que querem tirar o projeto %{link_to1} do papel."
+          se_ficou_com_alguma: "Se ficou com alguma dúvida, entre em contato conosco respondendo a esta mensagem ou através do e-mail %{mail_to}"
+          um_abra_o: "Um abraço,"
           company_name: "%{company_name}"
         contribution_canceled_after_confirmed:
-          projeto_contribution: 'Projeto: %{contribution}'
-          chave_do_apoio_contribution: 'Chave do apoio: %{contribution}'
-          id_meio_de_pagamento: 'ID meio de pagamento: %{contribution}'
-          esse_apoio_recebeu_uma: Esse apoio recebeu uma notificação de cancelamento
-            após já ter recebido uma notificação de confirmação.
-          verifique_no_site_do: Verifique no site do meio de pagamento o real status
-            da transação e, se o apoio constar como confirmado, confirme-o no site
-            do Catarse (adm/contributions)
+          projeto_contribution: "Projeto: %{contribution}"
+          chave_do_apoio_contribution: "Chave do apoio: %{contribution}"
+          id_meio_de_pagamento: "ID meio de pagamento: %{contribution}"
+          esse_apoio_recebeu_uma: "Esse apoio recebeu uma notificação de cancelamento após já ter recebido uma notificação de confirmação."
+          verifique_no_site_do: "Verifique no site do meio de pagamento o real status da transação e, se o apoio constar como confirmado, confirme-o no site do Catarse (adm/contributions)"
         contribution_canceled_after_confirmed_subject:
           text:
-            apoio_cancelado_ap_s: Apoio cancelado após ser confirmado
+            apoio_cancelado_ap_s: "Apoio cancelado após ser confirmado"
         contribution_canceled_slip:
-          ol_strong_contribution_strong: Olá, <strong>%{contribution}</strong>!
-          n_o_recebemos_a: Não recebemos a confirmação de pagamento do boleto gerado
-            para o projeto %{link_to}.
-          caso_voc_ainda_tenha: Caso você ainda tenha interesse em apoiar o projeto,
-            podemos alterar a data de vencimento para você. Para isso, basta entrar
-            em contato conosco respondendo a esta mensagem ou através do e-mail %{mail_to}
-          um_abra_o: Um abraço,
+          ol_strong_contribution_strong: "Olá, <strong>%{contribution}</strong>!"
+          n_o_recebemos_a: "Não recebemos a confirmação de pagamento do boleto gerado para o projeto %{link_to}."
+          caso_voc_ainda_tenha: "Caso você ainda tenha interesse em apoiar o projeto, podemos alterar a data de vencimento para você. Para isso, basta entrar em contato conosco respondendo a esta mensagem ou através do e-mail %{mail_to}"
+          um_abra_o: "Um abraço,"
           company_name: "%{company_name}"
         contribution_canceled_slip_subject:
           text:
-            cancelamento_apoio_para_o: 'Cancelamento: apoio para o projeto %{notification}'
+            cancelamento_apoio_para_o: "Cancelamento: apoio para o projeto %{notification}"
         contribution_canceled_subject:
           text:
-            cancelado_apoio_para_o: 'Cancelado: apoio para o projeto %{notification}'
+            cancelado_apoio_para_o: "Cancelado: apoio para o projeto %{notification}"
         contribution_confirmed_after_project_was_closed:
-          projeto_contribution: 'Projeto: %{contribution}'
-          chave_contribution: 'Chave: %{contribution}'
-          criado_em_contribution: 'Criado em: %{contribution}'
-          confirmado_em_contribution: 'Confirmado em: %{contribution}'
+          projeto_contribution: "Projeto: %{contribution}"
+          chave_contribution: "Chave: %{contribution}"
+          criado_em_contribution: "Criado em: %{contribution}"
+          confirmado_em_contribution: "Confirmado em: %{contribution}"
         contribution_confirmed_after_project_was_closed_subject:
           text:
-            novo_apoio_confirmado_no: Novo apoio confirmado no projeto '%{notification}'
-              após 7 dias do encerramento
+            novo_apoio_confirmado_no: "Novo apoio confirmado no projeto '%{notification}' após 7 dias do encerramento"
         contribution_project_successful:
-          ol_strong_contribution_strong: Olá, <strong>%{contribution}</strong>!
-          parab_ns_o_projeto: Parabéns! O projeto %{link_to} que,
-          incluindo_voc_teve_contribution: incluindo você, teve %{contribution} apoiadores,
-            foi financiado com sucesso.
-          esse_e_mail_serve: Esse e-mail serve como um <strong>recibo definitivo da
-            sua contribuição</strong>.
+          ol_strong_contribution_strong: "Olá, <strong>%{contribution}</strong>!"
+          parab_ns_o_projeto: "Parabéns! O projeto %{link_to} que,"
+          incluindo_voc_teve_contribution: "incluindo você, teve %{contribution} apoiadores, foi financiado com sucesso no %{ENV1}."
+          esse_e_mail_serve: "Esse e-mail serve como um <strong>recibo definitivo da sua contribuição</strong>."
         contribution_project_successful_subject:
           text:
-            recibo_definitivo_apoio_para: 'Recibo definitivo: apoio para o projeto
-              financiado %{notification}'
+            recibo_definitivo_apoio_para: "Recibo definitivo: apoio para o projeto financiado %{notification}"
         contribution_project_unsuccessful:
-          ol_contribution: Olá, %{contribution}!
-          infelizmente_o_projeto_link: Infelizmente o projeto %{link_to}
-          que_voc_apoiou_n: que você apoiou não atingiu a meta estabelecida e não
-            foi financiado.
-          como_o_seu_pagamento: Como o seu pagamento foi feito por boleto, segue os
-            procedimentos que devem ser feitos para que possamos estornar o valor
-            do seu apoio
-          como_o_seu_apoio: Como o seu apoio foi efetuado através de boleto, você
-            precisa preencher seus
-          dados_banc_rios: dados bancários
+          ol_contribution: "Olá, %{contribution}!"
+          infelizmente_o_projeto_link: "Infelizmente o projeto %{link_to}"
+          que_voc_apoiou_n: "que você apoiou não atingiu a meta estabelecida e não foi financiado no %{ENV}."
+          como_o_seu_pagamento: "Como o seu pagamento foi feito por boleto, segue os procedimentos que devem ser feitos para que possamos estornar o valor do seu apoio"
+          como_o_seu_apoio: "Como o seu apoio foi efetuado através de boleto, você precisa preencher seus"
+          dados_banc_rios: "dados bancários"
           link_to_para: "%{link_to} para efetuarmos a transação em até 30 dias."
-          assim_que_o_reembolso: Assim que o reembolso for feito, você receberá um
-            e-mail de confirmação da operação.
-          se_ficou_com_alguma: 'Se ficou com alguma dúvida, entre em contato conosco
-            respondendo a esta mensagem ou através do e-mail %{mail_to} .Para agilizar
-            o atendimento, pedimos que indique a chave de identificação do seu apoio,
-            que é:'
+          assim_que_o_reembolso: "Assim que o reembolso for feito, você receberá um e-mail de confirmação da operação."
+          se_ficou_com_alguma: "Se ficou com alguma dúvida, entre em contato conosco respondendo a esta mensagem ou através do e-mail %{mail_to} .Para agilizar o atendimento, pedimos que indique a chave de identificação do seu apoio, que é:"
           contribution: "%{contribution}"
-          um_abra_o: Um abraço,
+          um_abra_o: "Um abraço,"
           env: "%{ENV}"
         contribution_project_unsuccessful_credit:
-          ol_contribution: Olá, %{contribution}!
-          infelizmente_o_projeto_link: Infelizmente o projeto %{link_to} que você
-            apoiou não atingiu a meta estabelecida e não foi financiado.
-          como_seu_apoio_foi: Como seu apoio foi realizado utilizando créditos, nossa
-            equipe entrará em contato para realizar o reembolso.
-          se_ficou_com_alguma: Se ficou com alguma dúvida, entre em contato conosco
-            respondendo a esta mensagem ou através do e-mail %{mail_to}
-          e_nos_informe_a: 'e nos informe a chave de identificação do seu apoio, que
-            é: %{contribution}'
-          um_abra_o: Um abraço,
+          ol_contribution: "Olá, %{contribution}!"
+          infelizmente_o_projeto_link: "Infelizmente o projeto %{link_to} que você apoiou não atingiu a meta estabelecida e não foi financiado no %{ENV1}."
+          como_seu_apoio_foi: "Como seu apoio foi realizado utilizando créditos, nossa equipe entrará em contato para realizar o reembolso."
+          se_ficou_com_alguma: "Se ficou com alguma dúvida, entre em contato conosco respondendo a esta mensagem ou através do e-mail %{mail_to}"
+          e_nos_informe_a: "e nos informe a chave de identificação do seu apoio, que é: %{contribution}"
+          um_abra_o: "Um abraço,"
           env: "%{ENV}"
         contribution_project_unsuccessful_credit_card:
-          ol_contribution: Olá, %{contribution}!
-          infelizmente_o_projeto_link: Infelizmente o projeto %{link_to} que você
-            apoiou não atingiu a meta estabelecida e não foi financiado.
-          em_at_5_dias: Em até 5 dias úteis faremos o reembolso do valor do seu apoio,
-            que <strong>virá como crédito na próxima ou
-          subsequente_fatura_do_seu: subsequente fatura do seu cartão</strong>. Assim
-            que o reembolso for feito, você receberá um e-mail de confirmação da operação.
-          se_ficou_com_alguma: Se ficou com alguma dúvida, entre em contato conosco
-            respondendo a esta mensagem ou através do e-mail %{mail_to}
-          e_nos_informe_a: 'e nos informe a chave de identificação do seu apoio, que
-            é: %{contribution}'
-          um_abra_o: Um abraço,
+          ol_contribution: "Olá, %{contribution}!"
+          infelizmente_o_projeto_link: "Infelizmente o projeto %{link_to} que você apoiou não atingiu a meta estabelecida e não foi financiado no %{ENV1}."
+          em_at_5_dias: "Em até 5 dias úteis faremos o reembolso do valor do seu apoio, que <strong>virá como crédito na próxima ou"
+          subsequente_fatura_do_seu: "subsequente fatura do seu cartão</strong>. Assim que o reembolso for feito, você receberá um e-mail de confirmação da operação."
+          se_ficou_com_alguma: "Se ficou com alguma dúvida, entre em contato conosco respondendo a esta mensagem ou através do e-mail %{mail_to}"
+          e_nos_informe_a: "e nos informe a chave de identificação do seu apoio, que é: %{contribution}"
+          um_abra_o: "Um abraço,"
           env: "%{ENV}"
         contribution_project_unsuccessful_credit_card_subject:
           text:
-            reembolso_apoio_para_o: 'Reembolso: apoio para o projeto não-financiado
-              %{notification}'
+            reembolso_apoio_para_o: "Reembolso: apoio para o projeto não-financiado %{notification}"
         contribution_project_unsuccessful_credit_subject:
           text:
-            reembolso_apoio_para_o: 'Reembolso: apoio para o projeto não-financiado
-              %{notification}'
+            reembolso_apoio_para_o: "Reembolso: apoio para o projeto não-financiado %{notification}"
         contribution_project_unsuccessful_slip:
-          ol_contribution: Olá, %{contribution}!
-          infelizmente_o_projeto_link: Infelizmente o projeto %{link_to} que você
-            apoiou não atingiu a meta estabelecida e não foi financiado.
-          como_o_seu_apoio: Como o seu apoio foi efetuado através de boleto, realizaremos
-            o reembolso diretamente na conta em até 30 dias.
-          banco_bank_account: 'Banco: %{bank_account}'
-          ag_ncia_bank_account: 'Agência: %{bank_account} - %{bank_account1}'
-          conta_bank_account_bank: 'Conta: %{bank_account} - %{bank_account1}'
-          nome_do_titular_bank: 'Nome do titular: %{bank_account}'
-          cpf_bank_account: 'CPF: %{bank_account}'
-          assim_que_o_reembolso: Assim que o reembolso for feito, você receberá um
-            e-mail de confirmação da operação.
-          se_ficou_com_alguma: Se ficou com alguma dúvida, entre em contato conosco
-            respondendo a esta mensagem ou através do e-mail %{mail_to}
-          e_nos_informe_a: 'e nos informe a chave de identificação do seu apoio, que
-            é: %{contribution}'
-          um_abra_o: Um abraço,
+          ol_contribution: "Olá, %{contribution}!"
+          infelizmente_o_projeto_link: "Infelizmente o projeto %{link_to} que você apoiou não atingiu a meta estabelecida e não foi financiado no %{ENV1}."
+          como_o_seu_apoio: "Como o seu apoio foi efetuado através de boleto, realizaremos o reembolso diretamente na conta em até 30 dias."
+          banco_bank_account: "Banco: %{bank_account}"
+          ag_ncia_bank_account: "Agência: %{bank_account} - %{bank_account1}"
+          conta_bank_account_bank: "Conta: %{bank_account} - %{bank_account1}"
+          nome_do_titular_bank: "Nome do titular: %{bank_account}"
+          cpf_bank_account: "CPF: %{bank_account}"
+          assim_que_o_reembolso: "Assim que o reembolso for feito, você receberá um e-mail de confirmação da operação."
+          se_ficou_com_alguma: "Se ficou com alguma dúvida, entre em contato conosco respondendo a esta mensagem ou através do e-mail %{mail_to}"
+          e_nos_informe_a: "e nos informe a chave de identificação do seu apoio, que é: %{contribution}"
+          um_abra_o: "Um abraço,"
           env: "%{ENV}"
         contribution_project_unsuccessful_slip_subject:
           text:
-            reembolso_apoio_para_o: 'Reembolso: apoio para o projeto não-financiado
-              %{notification}'
+            reembolso_apoio_para_o: "Reembolso: apoio para o projeto não-financiado %{notification}"
         contribution_project_unsuccessful_subject:
           text:
             a_o_necess: "[Ação necessária] - Reembolso: apoio ao projeto %{notification}"
         credits_warning:
-          ol_strong_user_strong: Olá, <strong>%{user}</strong> !
-          vimos_aqui_que_voc: Vimos aqui que você tem R$ %{user} em créditos no Catarse.
-            Que tal aproveitar e apoiar outro projeto bacana agora mesmo?
-          abaixo_selecionamos_algumas_sugest: 'Abaixo selecionamos algumas sugestões
-            de projetos especialmente para você:'
-          env_projects_project1: '"%{ENV}/projects/%{project1}")}'
-          pra_n_o_ficar: 'Pra não ficar dúvida, aqui vai um passo-a-passo pra utilização
-            dos créditos:'
-          escolher_o_projeto_que: Escolher o projeto que quer apoiar;
-          1_link_to: 1 - %{link_to}
-          2_clicar_em_quero: 2 - Clicar em Quero apoiar este projeto;
-          3_colocar_o_valor: 3 - Colocar o valor que quer apoiar e selecionar o campo
-            confirmando que você quer usar seus créditos.
-          4_clicar_no_bot: 4 - Clicar no botão Revisar e realizar pagamento na parte
-            debaixo da tela;
+          ol_strong_user_strong: "Olá, <strong>%{user}</strong> !"
+          vimos_aqui_que_voc: "Vimos aqui que você tem R$ %{user} em créditos no Catarse. Que tal aproveitar e apoiar outro projeto bacana agora mesmo?"
+          abaixo_selecionamos_algumas_sugest: "Abaixo selecionamos algumas sugestões de projetos especialmente para você:"
+          pra_n_o_ficar: "Pra não ficar dúvida, aqui vai um passo-a-passo pra utilização dos créditos:"
+          escolher_o_projeto_que: "Escolher o projeto que quer apoiar;"
+          1_link_to: "1 - %{link_to}"
+          2_clicar_em_quero: "2 - Clicar em Quero apoiar este projeto;"
+          3_colocar_o_valor: "3 - Colocar o valor que quer apoiar e selecionar o campo confirmando que você quer usar seus créditos."
+          4_clicar_no_bot: "4 - Clicar no botão Revisar e realizar pagamento na parte debaixo da tela;"
           aqui: aqui
-          nesse_artigo: nesse artigo
-          caso_prefira_voc_pode: Caso prefira, você pode pedir o reembolso do seu
-            dinheiro clicando %{link_to}/users/%{user1}#credits")}. Você conseguirá
-            tirar a maioria das suas dúvidas sobre reembolso %{link_to2}.
-          se_tiver_alguma_outra: 'Se tiver alguma outra dúvida, entre em contato conosco
-            na nossa Central de Suporte: suporte.catarse.me.'
-          um_grande_abra_o: Um grande abraço,
-          equipe_do_catarse: Equipe do Catarse
-                  credits_warning_less_group_subject:
+          nesse_artigo: "nesse artigo"
+          caso_prefira_voc_pode: "Caso prefira, você pode pedir o reembolso do seu dinheiro clicando %{link_to}/users/%{user1}#credits\")}. Você conseguirá tirar a maioria das suas dúvidas sobre reembolso %{link_to2}."
+          se_tiver_alguma_outra: "Se tiver alguma outra dúvida, entre em contato conosco na nossa Central de Suporte: suporte.catarse.me."
+          um_grande_abra_o: "Um grande abraço,"
+          equipe_do_catarse: "Equipe do Catarse"
+          link_to_link: ", link_to: (link_to(t("
+        credits_warning_less_group_subject:
           text:
-            total_days_dias: "%{total_days} dias para usar seus créditos e fazer um
-              projeto acontecer!"
+            total_days_dias: "%{total_days} dias para usar seus créditos e fazer um projeto acontecer!"
         credits_warning_more_group:
-          oi_user: Oi %{user},
-          para_podermos_simplificar_ainda: Para podermos simplificar ainda mais o
-            processo de reembolsos,
-          n_o_existir_o: não existirão mais créditos no Catarse
-          a_partir_de_10: a partir de 10/11 %{link_to}. É por isso que viemos aqui
-            falar com você.
-          pelo_que_checamos_voc: Pelo que checamos, você já chegou a usar parte dos
-            seus créditos, mas ainda tem %{user} por aqui. É esse dinheiro que pode
-            ajudar a fazer a diferença em um projeto em que você acredita. :-)
-          para_apoiar_um_projeto: 'Para apoiar um projeto, o processo é o mesmo:'
-          1_escolher_o_projeto: 1 - Escolher o projeto que quer apoiar;
-          2_clicar_em_apoiar: 2 - Clicar em Apoiar este projeto;
-          3_colocar_o_valor: 3 - Colocar o valor que quer apoiar e selecionar o campo
-            confirmando que você quer usar seus créditos.
-          4_clicar_no_bot: 4 - Clicar no botão Revisar e realizar pagamento na parte
-            debaixo da tela;
+          oi_user: "Oi %{user},"
+          para_podermos_simplificar_ainda: "Para podermos simplificar ainda mais o processo de reembolsos,"
+          n_o_existir_o: "não existirão mais créditos no Catarse"
+          a_partir_de_10: "a partir de 10/11 %{link_to}. É por isso que viemos aqui falar com você."
+          pelo_que_checamos_voc: "Pelo que checamos, você já chegou a usar parte dos seus créditos, mas ainda tem %{user} por aqui. É esse dinheiro que pode ajudar a fazer a diferença em um projeto em que você acredita. :-)"
+          para_apoiar_um_projeto: "Para apoiar um projeto, o processo é o mesmo:"
+          1_escolher_o_projeto: "1 - Escolher o projeto que quer apoiar;"
+          2_clicar_em_apoiar: "2 - Clicar em Apoiar este projeto;"
+          3_colocar_o_valor: "3 - Colocar o valor que quer apoiar e selecionar o campo confirmando que você quer usar seus créditos."
+          4_clicar_no_bot: "4 - Clicar no botão Revisar e realizar pagamento na parte debaixo da tela;"
           strong_dicas_de: "<strong>Dicas de projetos</strong>"
-                      ref: ''credits_warning_more_group''))}'
-          caso_voc_n_o: Caso você não utilize os créditos até o dia 10/11, entraremos
-            em contato para realizar o reembolso.
-          se_ficar_com_alguma: Se ficar com alguma dúvida, só nos avisar respondendo
-            a este e-mail ou através do contato@catarse.me
-          um_abra_o: Um abraço
+          project_by_slug_url: "project_by_slug_url(permalink: project.permalink, ref: 'credits_warning_more_group'))}"
+          caso_voc_n_o: "Caso você não utilize os créditos até o dia 10/11, entraremos em contato para realizar o reembolso."
+          se_ficar_com_alguma: "Se ficar com alguma dúvida, só nos avisar respondendo a este e-mail ou através do contato@catarse.me"
+          um_abra_o: "Um abraço"
           catarse: Catarse
         credits_warning_more_group_subject:
           text:
-            total_days_dias: "%{total_days} dias para usar seus créditos e fazer um
-              projeto acontecer!"
+            total_days_dias: "%{total_days} dias para usar seus créditos e fazer um projeto acontecer!"
         credits_warning_subject:
           text:
-            voc_tem_r_notification: Você tem R$ %{notification} em créditos
+            voc_tem_r_notification: "Você tem R$ %{notification} em créditos no %{ENV1}"
         deadline_extension:
-          oi_notification: Oi %{notification},
-          devido_s_mudan_as: Devido às mudanças que ocorreram na plataforma na noite
-            de ontem, algumas instabilidades foram relatadas no acesso ao Catarse.
-            Esses erros são bastante pontuais e estão acontecendo por conta da atualização
-            do sistema. A previsão é que o site esteja totalmente estável em até 36h.
-          para_que_os_projetos: Para que os projetos não sejam prejudicados por possíveis
-            problemas de acesso, ofereceremos a extensão de prazo de 2 dias para queles
-            que manifestarem interesse. Para isso, você deve enviar um email para
-            projetos@catarse.me com o título "Extensão de prazo".
-          se_ficar_com_alguma: Se ficar com alguma dúvida, só avisar.
+          oi_notification: "Oi %{notification},"
+          devido_s_mudan_as: "Devido às mudanças que ocorreram na plataforma na noite de ontem, algumas instabilidades foram relatadas no acesso ao Catarse. Esses erros são bastante pontuais e estão acontecendo por conta da atualização do sistema. A previsão é que o site esteja totalmente estável em até 36h."
+          para_que_os_projetos: "Para que os projetos não sejam prejudicados por possíveis problemas de acesso, ofereceremos a extensão de prazo de 2 dias para queles que manifestarem interesse. Para isso, você deve enviar um email para projetos@catarse.me com o título \"Extensão de prazo\"."
+          se_ficar_com_alguma: "Se ficar com alguma dúvida, só avisar."
           abra_o: Abraço!
         deadline_extension_subject:
           text:
-            instabilidade_moment_nea_e: Instabilidade momentânea e extensão de prazo
+            instabilidade_moment_nea_e: "Instabilidade momentânea e extensão de prazo"
         hangout:
-          ol_notification_tudo_bem: Olá %{notification}, tudo bem?
-          que_tal_um_empurr: Que tal um empurrãozinho para a sua campanha de financiamento
-            coletivo do %{notification}
-          ser_um_sucesso_o: ser um sucesso? O Felipe Caruso da equipe do Catarse e
+          ol_notification_tudo_bem: "Olá %{notification}, tudo bem?"
+          que_tal_um_empurr: "Que tal um empurrãozinho para a sua campanha de financiamento coletivo do %{notification}"
+          ser_um_sucesso_o: "ser um sucesso? O Felipe Caruso da equipe do Catarse e"
           mola: Mola
-          m_rcio_sequeira_do: Márcio Sequeira do %{link_to} são os convidados da escola
-            livre Tera para apresentar o
-          hangout_os_segredos: "“Hangout: Os segredos do Crowdfunding” no dia 5/11
-            ao meio-dia."
-          nosso_coordenador_de_comunica: Nosso coordenador de comunicação e o idealizador
-            da
-          maior_arrecada_o_por: maior arrecadação por financiamento coletivo da história
-            do Brasil
-          clique_aqui_e_inscreva: Clique aqui e inscreva-se
-          v_o_ensinar_como: vão ensinar como fazer seu projeto decolar no Catarse.
-            %{link_to}!
-          esperamos_voc: Esperamos você!
+          m_rcio_sequeira_do: "Márcio Sequeira do %{link_to} são os convidados da escola livre Tera para apresentar o"
+          hangout_os_segredos: "“Hangout: Os segredos do Crowdfunding” no dia 5/11 ao meio-dia."
+          nosso_coordenador_de_comunica: "Nosso coordenador de comunicação e o idealizador da"
+          maior_arrecada_o_por: "maior arrecadação por financiamento coletivo da história do Brasil"
+          clique_aqui_e_inscreva: "Clique aqui e inscreva-se"
+          v_o_ensinar_como: "vão ensinar como fazer seu projeto decolar no Catarse. %{link_to}!"
+          esperamos_voc: "Esperamos você!"
         hangout_subject:
           text:
-            inscreva_se_no_hangout: 'Inscreva-se no Hangout: Os Segredos do Crowdfunding'
+            inscreva_se_no_hangout: "Inscreva-se no Hangout: Os Segredos do Crowdfunding"
         in_analysis_project:
-          ol_user: Olá, %{user}!
-          muito_obrigado_por_nos: Muito obrigado por nos enviar o projeto %{link_to}
-          apartir_de_agora_nossa: Apartir de agora, nossa equipe de projetos vai <strong>avaliar
-            todo o conteúdo</strong> que você colocou na página e (em no máximo 4
-            dias úteis)
-          voc_receber_um_e: você receberá um e-mail informando se ela foi <strong>Aprovada,
-            Recusada</strong> ou se vai continuar <strong>Em Análise</strong> por
-            mais algum tempo.
-          o_que_significa_isso: O que significa isso?
-          p_gina_foi_recusada: Página foi Recusada
-          o_seu_projeto_n: O seu projeto não tem o perfil do %{company_name} e/ou
-            encontramos informarmações que desrespeitam as nossas regras. Essa página
-            não poderá ser publicada na plataforma.
-          p_gina_continua_em: Página continua Em Análise
-          o_projeto_tem_o: O projeto tem o perfil do %{company_name} e está de acordo
-            com as regras, só que a página ainda não está pronta para ser públicada
-            na plataforma. Receba nossos comentários, dicas e sugestões. Finalize
-            as edições na página do projeto e avise o nosso agente de suporte quando
-            quiser que ele faça uma nova avaliação.
-          p_gina_foi_aprovada: Página foi Aprovada
-          vamos_em_frente_iniciar: Vamos em frente, iniciar a arrecadação só depende
-            de você! Escolha a melhor data e publique a página do seu projeto na plataforma.
-          para_acompanhar_a_mudan: Para acompanhar a mudança de status da página do
-            projeto %{link_to} fique de olho na caixa de entrada do seu e-mail e no
-            painel de controle do seu projeto.
-          lembrando_que_voc_pode: Lembrando que você pode tirar dúvidas conosco a
-            qualquer momento respondendo diretamente a esta mensagem ou através do
-            e-mail %{mail_to}
-          um_abra_o: Um abraço,
+          ol_user: "Olá, %{user}!"
+          muito_obrigado_por_nos: "Muito obrigado por nos enviar o projeto %{link_to}"
+          apartir_de_agora_nossa: "Apartir de agora, nossa equipe de projetos vai <strong>avaliar todo o conteúdo</strong> que você colocou na página e (em no máximo 4 dias úteis)"
+          voc_receber_um_e: "você receberá um e-mail informando se ela foi <strong>Aprovada, Recusada</strong> ou se vai continuar <strong>Em Análise</strong> por mais algum tempo."
+          o_que_significa_isso: "O que significa isso?"
+          p_gina_foi_recusada: "Página foi Recusada"
+          o_seu_projeto_n: "O seu projeto não tem o perfil do %{company_name} e/ou encontramos informarmações que desrespeitam as nossas regras. Essa página não poderá ser publicada na plataforma."
+          p_gina_continua_em: "Página continua Em Análise"
+          o_projeto_tem_o: "O projeto tem o perfil do %{company_name} e está de acordo com as regras, só que a página ainda não está pronta para ser públicada na plataforma. Receba nossos comentários, dicas e sugestões. Finalize as edições na página do projeto e avise o nosso agente de suporte quando quiser que ele faça uma nova avaliação."
+          p_gina_foi_aprovada: "Página foi Aprovada"
+          vamos_em_frente_iniciar: "Vamos em frente, iniciar a arrecadação só depende de você! Escolha a melhor data e publique a página do seu projeto na plataforma."
+          para_acompanhar_a_mudan: "Para acompanhar a mudança de status da página do projeto %{link_to} fique de olho na caixa de entrada do seu e-mail e no painel de controle do seu projeto."
+          lembrando_que_voc_pode: "Lembrando que você pode tirar dúvidas conosco a qualquer momento respondendo diretamente a esta mensagem ou através do e-mail %{mail_to}"
+          um_abra_o: "Um abraço,"
         in_analysis_project_subject:
           text:
-            o_seu_projeto_foi: O seu projeto foi recebido pelo Catarse
+            o_seu_projeto_foi: "O seu projeto foi recebido pelo Catarse"
         inactive_draft:
-          ol_project_tudo_bem: Olá %{project}, tudo bem? Aqui quem fala é a Luciana
-            do Catarse!
-          vi_que_voc_criou: Vi que você criou a página de <strong>rascunho</strong>
-            do projeto %{link_to} mas ainda não nos enviou. Após o envio, a página
-            ficará <strong>em análise</strong> por alguns dias e você será acompanhado
-            por mim ou por outra pessoa da nossa equipe de atendimento.
-          al_m_de_revisar: Além de revisar as informações sobre a sua campanha, nós
-            vamos te oferecer uma consultoria com dicas e orientações sobre o que
-            melhorar no seu projeto. Quando estiver tudo pronto a página poderá ser
-            <strong>aprovada</strong> e você escolherá o melhor dia para publicá-la
-            no site, iniciando a arrecadação.
-          seu_rascunho_de_projeto: seu rascunho de projeto
-          deseja_enviar_o_link: Deseja enviar o %{link_to} para a nossa análise?
-          lembre_se: 'Lembre-se:'
-          ap_s_o_envio: Após o envio, todas as informações do seu projeto ainda poderão
-            ser editadas!
-          quando_o_projeto_for: Quando o projeto for aprovado, é você quem escolhe
-            o dia para iniciar sua arrecadação.
-          se_tem_alguma_d: Se tem alguma dúvida te atrapalhando manda aqui pra mim
-            que eu te ajudo!
-          beijo: Beijo,
+          ol_project_tudo_bem: "Olá %{project}, tudo bem? Aqui quem fala é a Luciana do Catarse!"
+          vi_que_voc_criou: "Vi que você criou a página de <strong>rascunho</strong> do projeto %{link_to} mas ainda não nos enviou. Após o envio, a página ficará <strong>em análise</strong> por alguns dias e você será acompanhado por mim ou por outra pessoa da nossa equipe de atendimento."
+          al_m_de_revisar: "Além de revisar as informações sobre a sua campanha, nós vamos te oferecer uma consultoria com dicas e orientações sobre o que melhorar no seu projeto. Quando estiver tudo pronto a página poderá ser <strong>aprovada</strong> e você escolherá o melhor dia para publicá-la no site, iniciando a arrecadação."
+          seu_rascunho_de_projeto: "seu rascunho de projeto"
+          deseja_enviar_o_link: "Deseja enviar o %{link_to} para a nossa análise?"
+          lembre_se: "Lembre-se:"
+          ap_s_o_envio: "Após o envio, todas as informações do seu projeto ainda poderão ser editadas!"
+          quando_o_projeto_for: "Quando o projeto for aprovado, é você quem escolhe o dia para iniciar sua arrecadação."
+          se_tem_alguma_d: "Se tem alguma dúvida te atrapalhando manda aqui pra mim que eu te ajudo!"
+          beijo: "Beijo,"
           masini: Masini
-          catalisadora_de_projetos_criativos: Catalisadora de projetos criativos
-          p_s_voc_quer: P.S - Você quer um tempo para refletir e aprender mais?
-          as_dicas_fundamentais_para: As dicas fundamentais para estruturar o seu
-            projeto e conduzir sua campanha podem ser encontradas nos nossos diversos
-            canais de informação. Confira abaixo uma lista com links importantes!
-          central_de_suporte: Central de Suporte
-          para_conhecer_todas: "- Para conhecer todas as regras do jogo e tirar dúvidas,
-            acesse a %{link_to}"
-          historias_de_projetos: Historias de projetos
-          dicas_de_campanha: Dicas de campanha
-          para_se_inspirar: "- Para se inspirar, leia as editorias de %{link_to} e
-            %{link_to1} do Blog do Catarse"
-          guia_dos_realizadores: Guia dos Realizadores
+          catalisadora_de_projetos_criativos: "Catalisadora de projetos criativos"
+          p_s_voc_quer: "P.S - Você quer um tempo para refletir e aprender mais?"
+          as_dicas_fundamentais_para: "As dicas fundamentais para estruturar o seu projeto e conduzir sua campanha podem ser encontradas nos nossos diversos canais de informação. Confira abaixo uma lista com links importantes!"
+          central_de_suporte: "Central de Suporte"
+          para_conhecer_todas: "- Para conhecer todas as regras do jogo e tirar dúvidas, acesse a %{link_to}"
+          historias_de_projetos: "Historias de projetos"
+          dicas_de_campanha: "Dicas de campanha"
+          para_se_inspirar: "- Para se inspirar, leia as editorias de %{link_to} e %{link_to1} do Blog do Catarse"
+          guia_dos_realizadores: "Guia dos Realizadores"
           para_montar_uma: "- Para montar uma campanha afiada, confira nosso %{link_to}"
-          pesquisa_rfcbr: 'pesquisa #RFCBr'
-          para_entender_o: "- Para entender o cenário do financiamento coletivo no
-            brasil, estude a %{link_to}"
-          apoie_um_projeto: apoie um projeto
+          pesquisa_rfcbr: "pesquisa #RFCBr"
+          para_entender_o: "- Para entender o cenário do financiamento coletivo no brasil, estude a %{link_to}"
+          apoie_um_projeto: "apoie um projeto"
           para_sentir_o: "- Para sentir o que seus apoiadores sentirão, %{link_to}"
         inactive_draft_subject:
           text:
-            vamos_conversar_sobre_o: Vamos conversar sobre o seu projeto no Catarse?
+            vamos_conversar_sobre_o: "Vamos conversar sobre o seu projeto no Catarse?"
         invalid_payment:
           ol: Olá
-          o_apoio_contribution_para: O apoio %{contribution} para o projeto %{contribution1}
-            foi confirmado com o valor menor do valor do apoio do projeto.
+          o_apoio_contribution_para: "O apoio %{contribution} para o projeto %{contribution1} foi confirmado com o valor menor do valor do apoio do projeto."
         invalid_payment_subject:
           text:
-            pagamento_com_valor_diferente: Pagamento com valor diferente do apoio
+            pagamento_com_valor_diferente: "Pagamento com valor diferente do apoio"
         invalid_refund:
-          ol_comunidade: Olá Comunidade!
-          o_reembolso_do_apoio: 'O reembolso do apoio ao projeto %{link_to} não foi
-            efetuado devido a erros nos dados bancários preenchidos:'
-          banco_bank_account: 'Banco: %{bank_account}'
-          ag_ncia_bank_account: 'Agência: %{bank_account} - %{bank_account1}'
-          conta_bank_account_bank: 'Conta: %{bank_account} - %{bank_account1}'
-          nome_do_titular_bank: 'Nome do titular: %{bank_account}'
-          cpf_bank_account: 'CPF: %{bank_account}'
-          chave_de_identifica_o: 'Chave de identificação do apoio: %{contribution}'
-          favor_entrar_em_contato: 'Favor entrar em contato com o usuário através
-            do email cadastrado para realizar o reembolso: %{mail_to}'
+          ol_comunidade: "Olá Comunidade!"
+          o_reembolso_do_apoio: "O reembolso do apoio ao projeto %{link_to} não foi efetuado devido a erros nos dados bancários preenchidos:"
+          banco_bank_account: "Banco: %{bank_account}"
+          ag_ncia_bank_account: "Agência: %{bank_account} - %{bank_account1}"
+          conta_bank_account_bank: "Conta: %{bank_account} - %{bank_account1}"
+          nome_do_titular_bank: "Nome do titular: %{bank_account}"
+          cpf_bank_account: "CPF: %{bank_account}"
+          chave_de_identifica_o: "Chave de identificação do apoio: %{contribution}"
+          favor_entrar_em_contato: "Favor entrar em contato com o usuário através do email cadastrado para realizar o reembolso: %{mail_to}"
           beijos: Beijos
           catarse: Catarse
         invalid_refund_subject:
           text:
-            reembolso_n_o_efetuado: 'Reembolso não-efetuado: apoio para o projeto
-              %{notification}'
+            reembolso_n_o_efetuado: "Reembolso não-efetuado: apoio para o projeto %{notification}"
         new_draft_project:
-          solicita_o_de_an: 'Solicitação de análise do projeto: %{project}'
-          frase_de_efeito_project: 'Frase de efeito: %{project}'
-          tempo_de_preparo_distance: 'Tempo de preparo: %{distance_of_time_in_words}'
-          sobre_o_projeto: SOBRE O PROJETO
-          link_link_to: 'Link: %{link_to}'
-          categoria_link_to: 'Categoria: %{link_to}")}'
-          valor_da_meta_number: 'Valor da meta: %{number_to_currency}'
-          sobre_o_realizador: SOBRE O REALIZADOR
-          nome_project: 'Nome: %{project}'
-          apelido_project: 'Apelido: %{project}'
-          email_project: 'Email: %{project}'
-          telefone_project: 'Telefone: %{project}'
-          links: 'Links:'
-          projetos_apoiados_project: 'Projetos Apoiados: %{project}'
-          projetos_financiados_project: 'Projetos Financiados: %{project}'
-          projetos_n_o_financiados: 'Projetos Não financiados: %{project}'
-          projetos_em_rascunho_project: 'Projetos Em Rascunho: %{project}'
-          projetos_em_an_lise: 'Projetos Em Análise: %{project}'
-          projetos_aprovados_project: 'Projetos Aprovados: %{project}'
-          projetos_recusados_project: 'Projetos Recusados: %{project}'
+          solicita_o_de_an: "Solicitação de análise do projeto: %{project}"
+          frase_de_efeito_project: "Frase de efeito: %{project}"
+          tempo_de_preparo_distance: "Tempo de preparo: %{distance_of_time_in_words}"
+          sobre_o_projeto: "SOBRE O PROJETO"
+          link_link_to: "Link: %{link_to}"
+          categoria_link_to: "Categoria: %{link_to}\")}"
+          valor_da_meta_number: "Valor da meta: %{number_to_currency}"
+          sobre_o_realizador: "SOBRE O REALIZADOR"
+          nome_project: "Nome: %{project}"
+          apelido_project: "Apelido: %{project}"
+          email_project: "Email: %{project}"
+          telefone_project: "Telefone: %{project}"
+          links: "Links:"
+          projetos_apoiados_project: "Projetos Apoiados: %{project}"
+          projetos_financiados_project: "Projetos Financiados: %{project}"
+          projetos_n_o_financiados: "Projetos Não financiados: %{project}"
+          projetos_em_rascunho_project: "Projetos Em Rascunho: %{project}"
+          projetos_em_an_lise: "Projetos Em Análise: %{project}"
+          projetos_aprovados_project: "Projetos Aprovados: %{project}"
+          projetos_recusados_project: "Projetos Recusados: %{project}"
         new_draft_project_subject:
           text:
-            an_lise_do_seu: Análise do seu projeto %{notification}
+            an_lise_do_seu: "Análise do seu projeto %{notification}"
         new_user_registration:
           ol: Olá
           user: ", %{user}!"
-          bem_vindo_ao_catarse: Bem-vindo ao Catarse. A comunidade de financiamento
-            coletivo mais receptiva do Brasil!
-          s_para_voc_n: 'Só para você não se esquecer, o seu email de acesso é: %{user}'
-          para_come_ar_vale: 'Para começar, vale conhecer três projetos que estão
-            na reta final:'
-          abra_os: Abraços,
+          bem_vindo_ao_catarse: "Bem-vindo ao Catarse. A comunidade de financiamento coletivo mais receptiva do Brasil!"
+          s_para_voc_n: "Só para você não se esquecer, o seu email de acesso é: %{user}"
+          para_come_ar_vale: "Para começar, vale conhecer três projetos que estão na reta final:"
+          abra_os: "Abraços,"
         new_user_registration_subject:
           text:
-            bem_vindo_ao_catarse: Bem-vindo ao Catarse!
+            bem_vindo_ao_catarse: "Bem-vindo ao Catarse!"
         payment_slip:
-          ol_strong_contribution_strong: Olá, <strong>%{contribution}</strong> !
-          voc_acabou_de_gerar: Você acabou de gerar um boleto para apoiar o projeto
-            %{link_to}.
-          ap_s_o_pagamento: Após o pagamento, levamos até 3 dias úteis para receber
-            a confirmação.
-          quando_essa_confirma_o: Quando essa confirmação ocorrer, mandaremos outro
-            email com todos os detalhes da transação.
-          para_imprimir_o_boleto: Para imprimir o boleto gerado, basta
-          clicar_aqui: clicar aqui
+          ol_strong_contribution_strong: "Olá, <strong>%{contribution}</strong> !"
+          voc_acabou_de_gerar: "Você acabou de gerar um boleto para apoiar o projeto %{link_to}."
+          ap_s_o_pagamento: "Após o pagamento, levamos até 3 dias úteis para receber a confirmação."
+          quando_essa_confirma_o: "Quando essa confirmação ocorrer, mandaremos outro email com todos os detalhes da transação."
+          para_imprimir_o_boleto: "Para imprimir o boleto gerado, basta"
+          clicar_aqui: "clicar aqui"
           default_key: "."
-          o_prazo_de_vencimento: O prazo de vencimento do boleto é de 2 dias corridos.
-            Para alterar a data de vencimento, entre em contato conosco respondendo
-            a esta mensagem ou através do e-mail %{mail_to}
-          um_abra_o: Um abraço,
+          o_prazo_de_vencimento: "O prazo de vencimento do boleto é de 2 dias corridos. Para alterar a data de vencimento, entre em contato conosco respondendo a esta mensagem ou através do e-mail %{mail_to}"
+          um_abra_o: "Um abraço,"
           env: "%{ENV}"
         payment_slip_subject:
           text:
-            boleto_gerado_apoio_para: 'Boleto gerado: apoio para %{notification}'
+            boleto_gerado_apoio_para: "Boleto gerado: apoio para %{notification}"
         pending_contribution_project_unsuccessful:
-          ol_contribution: Olá, %{contribution}!
-          voc_iniciou_um_apoio: Você iniciou um apoio para o projeto %{link_to}, porém
-            ele não atingiu a meta estabelecida no Catarse.
-          strong_se_voc: "<strong>Se você NÃO concluiu o apoio</strong>, pode desconsiderar
-            as informações desse e-mail."
-          strong_se_voc_1: "<strong>Se você concluiu o seu apoio</strong>, mas não
-            recebeu a confirmação do Catarse ainda, você deverá receber nos próximos
-            dias um recibo provisório. Logo depois, já que o projeto não foi financiado,
-            receberá uma notificação com detalhes sobre o reembolso do seu apoio."
-          lembrando_que_a_chave: 'Lembrando que a chave de identificação do seu apoio
-            é: <strong>%{contribution}</strong>'
-          se_ficou_com_alguma: Se ficou com alguma dúvida, entre em contato conosco
-            respondendo a esta mensagem ou através do e-mail %{mail_to}
-          um_abra_o: Um abraço,
+          ol_contribution: "Olá, %{contribution}!"
+          voc_iniciou_um_apoio: "Você iniciou um apoio para o projeto %{link_to}, porém ele não atingiu a meta estabelecida no Catarse."
+          strong_se_voc: "<strong>Se você NÃO concluiu o apoio</strong>, pode desconsiderar as informações desse e-mail."
+          strong_se_voc_1: "<strong>Se você concluiu o seu apoio</strong>, mas não recebeu a confirmação do Catarse ainda, você deverá receber nos próximos dias um recibo provisório. Logo depois, já que o projeto não foi financiado, receberá uma notificação com detalhes sobre o reembolso do seu apoio."
+          lembrando_que_a_chave: "Lembrando que a chave de identificação do seu apoio é: <strong>%{contribution}</strong>"
+          se_ficou_com_alguma: "Se ficou com alguma dúvida, entre em contato conosco respondendo a esta mensagem ou através do e-mail %{mail_to}"
+          um_abra_o: "Um abraço,"
           env: "%{ENV}"
         pending_contribution_project_unsuccessful_subject:
           text:
-            voc_tem_um_apoio: Você tem um apoio pendente para o projeto não-financiado
-              %{notification}
+            voc_tem_um_apoio: "Você tem um apoio pendente para o projeto não-financiado %{notification}"
         pending_payment:
-          ol_strong_contribution_strong: Olá, <strong>%{contribution}</strong>!
-          verificamos_que_voc_iniciou: Verificamos que você iniciou um apoio para
-            o projeto %{link_to},
-          por_m_n_o: porém não chegou a concluí-lo.
-          o_seu_apoio_essencial: O seu apoio é essencial e você pode juntar-se a outras
-            %{contribution} pessoas para tornar esse projeto uma realidade.
-          voc_tem_at_l: Você tem até %{l} para realizar sua contribuição de onde parou.
+          ol_strong_contribution_strong: "Olá, <strong>%{contribution}</strong>!"
+          verificamos_que_voc_iniciou: "Verificamos que você iniciou um apoio para o projeto %{link_to},"
+          por_m_n_o: "porém não chegou a concluí-lo."
+          o_seu_apoio_essencial: "O seu apoio é essencial e você pode juntar-se a outras %{contribution} pessoas para tornar esse projeto uma realidade."
+          voc_tem_at_l: "Você tem até %{l} para realizar sua contribuição de onde parou."
           link_to: "%{link_to}"
-          caso_o_motivo_para: Caso o motivo para não ter concluído seu apoio foi algum
-            problema técnico, recomendamos tentar novamente utilizando outro navegador.
-          se_o_problema_persistir: Se o problema persistir, entre em contato imediatamente
-            respondendo a esta mensagem ou através do e-mail %{mail_to}
-          um_abra_o: Um abraço,
+          caso_o_motivo_para: "Caso o motivo para não ter concluído seu apoio foi algum problema técnico, recomendamos tentar novamente utilizando outro navegador."
+          se_o_problema_persistir: "Se o problema persistir, entre em contato imediatamente respondendo a esta mensagem ou através do e-mail %{mail_to}"
+          um_abra_o: "Um abraço,"
           env: "%{ENV}"
-                  pending_payment_subject:
+          link_to_link: ", link_to: ( link_to t("
+        pending_payment_subject:
           text:
-            o_projeto_notification_precisa: O projeto %{notification} precisa do seu
-              apoio!
+            o_projeto_notification_precisa: "O projeto %{notification} precisa do seu apoio!"
         posts:
-          veja_o_projeto_link: 'Veja o projeto: %{link_to}'
+          veja_o_projeto_link: "Veja o projeto: %{link_to}"
           descadastrar: Descadastrar
           link_to_o: "%{link_to} o recebimento de novidades desse projeto"
         posts_subject:
           text:
-            novidade: 'Novidade:'
+            novidade: "Novidade:"
         processing_payment:
-          ol_strong_contribution_strong: Olá, <strong>%{contribution}</strong>!
-          seu_apoio_para_link: Seu apoio para %{link_to}
-          entrou_em_processo_de: entrou em processo de <strong>análise pelo %{contribution}</strong>
-          esse_uma_medida_de: Esse é uma medida de segurança realizada pelo %{contribution}
-            para evitar fraudes e
-          aumentar_a_tranquilidade_de: aumentar a tranquilidade de todos os envolvidos
-            nas transações que ocorrem no %{company_name}.
-          poss_vel_que: "É possível que o %{contribution} entre em contato com você
-            por telefone para confirmar a transação."
-          assim_que_o_contribution: Assim que o %{contribution} autorizar seu pagamento,
-            mandaremos um outro email com a confirmação.
-          se_ficou_com_alguma: Se ficou com alguma dúvida, entre em contato conosco
-            respondendo a esta mensagem ou através do e-mail %{mail_to}
-          um_abra_o: Um abraço,
+          ol_strong_contribution_strong: "Olá, <strong>%{contribution}</strong>!"
+          seu_apoio_para_link: "Seu apoio para %{link_to}"
+          entrou_em_processo_de: "entrou em processo de <strong>análise pelo %{contribution}</strong>"
+          esse_uma_medida_de: "Esse é uma medida de segurança realizada pelo %{contribution} para evitar fraudes e"
+          aumentar_a_tranquilidade_de: "aumentar a tranquilidade de todos os envolvidos nas transações que ocorrem no %{company_name}."
+          poss_vel_que: "É possível que o %{contribution} entre em contato com você por telefone para confirmar a transação."
+          assim_que_o_contribution: "Assim que o %{contribution} autorizar seu pagamento, mandaremos um outro email com a confirmação."
+          se_ficou_com_alguma: "Se ficou com alguma dúvida, entre em contato conosco respondendo a esta mensagem ou através do e-mail %{mail_to}"
+          um_abra_o: "Um abraço,"
           company_name: "%{company_name}"
         processing_payment_subject:
           text:
-            em_an_lise_apoio: 'Em análise: apoio para %{notification}'
+            em_an_lise_apoio: "Em análise: apoio para %{notification}"
         project_approved:
-          seu_projeto_foi_aprovado: seu projeto foi aprovado
-          ol_project_o_strong: Olá, %{project}, o <strong>%{link_to1}</strong> e pode
-            ir ao ar quando você desejar.
-          para_iniciar_a_campanha: Para iniciar a campanha você precisa fazer apenas
-            3 coisas!
+          seu_projeto_foi_aprovado: "seu projeto foi aprovado"
+          ol_project_o_strong: "Olá, %{project}, o <strong>%{link_to1}</strong> e pode ir ao ar quando você desejar."
+          para_iniciar_a_campanha: "Para iniciar a campanha você precisa fazer apenas 3 coisas!"
           conta: CONTA
-          1_preencher_seus_dados: 1. Preencher seus dados bancários na aba %{link_to}.
-          precisamos_dos_seus_dados: Precisamos dos seus dados bancários para realizar
-            o repasse do dinheiro arrecadado caso você atinja sua meta de financiamento.
-          2_escolher_a_melhor: 2. Escolher a melhor data para começar.
+          1_preencher_seus_dados: "1. Preencher seus dados bancários na aba %{link_to}."
+          precisamos_dos_seus_dados: "Precisamos dos seus dados bancários para realizar o repasse do dinheiro arrecadado caso você atinja sua meta de financiamento."
+          2_escolher_a_melhor: "2. Escolher a melhor data para começar."
           voc_mesmo_quem: "É você mesmo quem escolhe a data de lançamento."
-          3_e_apertar_o: 3. E apertar o botão de publicar o projeto.
+          3_e_apertar_o: "3. E apertar o botão de publicar o projeto."
           aten_o: Atenção
-          ap_s_a: "- Após a públicação é Tudo-ou-Nada e alguns aspectos do projeto
-            não podem ser alterados!"
-          repasse_do_dinheiro: repasse do dinheiro
-          s_cobramos_nossa: "- Só cobramos nossa taxa de 13% caso você tenha sucesso
-            em sua captação! Entenda como fazemos o %{link_to}."
-          lembrando_que_voc_pode: Lembrando que você pode tirar dúvidas conosco respondendo
-            diretamente a esta mensagem ou através do e-mail %{mail_to}
-          um_grande_abra_o: Um grande abraço,
-          a_equipe_do_company: A equipe do %{company_name} te deseja uma ótima campanha!
+          ap_s_a: "- Após a públicação é Tudo-ou-Nada e alguns aspectos do projeto não podem ser alterados!"
+          repasse_do_dinheiro: "repasse do dinheiro"
+          s_cobramos_nossa: "- Só cobramos nossa taxa de 13% caso você tenha sucesso em sua captação! Entenda como fazemos o %{link_to}."
+          lembrando_que_voc_pode: "Lembrando que você pode tirar dúvidas conosco respondendo diretamente a esta mensagem ou através do e-mail %{mail_to}"
+          um_grande_abra_o: "Um grande abraço,"
+          a_equipe_do_company: "A equipe do %{company_name} te deseja uma ótima campanha!"
         project_approved_subject:
           text:
-            o_seu_projeto_foi: O seu projeto foi aprovado! Leia este email!
+            o_seu_projeto_foi: "O seu projeto foi aprovado! Leia este email!"
         project_in_waiting_funds:
-          oi_project: Oi %{project},
-          o_prazo_do_projeto: O prazo do projeto %{link_to} no %{company_name1} chegou
-            ao fim.
-          devido_a_prazos_de: Devido a prazos de boletos existem pagamentos pendentes
-            para o seu projeto.
-          para_computar_esses_apoios: Para computar esses apoios ficaremos aguardando
-            a confirmação dessas contribuições por até <strong>4 dias úteis após o
-            término do projeto</strong>.
-          lembre_se_nesse_ponto: Lembre-se, é nesse ponto que descontamos a taxa de
-            13% relativa aos serviços do Catarse e dos meios de pagamento. Essa taxa
-            incide sobre o valor total arrecadado.
-          confira_o_que_pode: 'Confira o que pode acontecer depois dessa data:'
+          oi_project: "Oi %{project},"
+          o_prazo_do_projeto: "O prazo do projeto %{link_to} no %{company_name1} chegou ao fim."
+          devido_a_prazos_de: "Devido a prazos de boletos existem pagamentos pendentes para o seu projeto."
+          para_computar_esses_apoios: "Para computar esses apoios ficaremos aguardando a confirmação dessas contribuições por até <strong>4 dias úteis após o término do projeto</strong>."
+          lembre_se_nesse_ponto: "Lembre-se, é nesse ponto que descontamos a taxa de 13% relativa aos serviços do Catarse e dos meios de pagamento. Essa taxa incide sobre o valor total arrecadado."
+          confira_o_que_pode: "Confira o que pode acontecer depois dessa data:"
           strong_1_se: "<strong>1) Se o seu projeto já atingiu ou ultrapassou a meta:</strong>"
-          vamos_apenas_esperar_o: vamos apenas esperar o prazo para contabilizar esses
-            apoios de última hora. Com esse processo finalizado, basta
-          repassar_o_valor_arrecadado: repassar o valor arrecadado para você.
-          strong_2_se: "<strong>2) Se o seu projeto ainda não atingiu a meta:</strong>
-            vamos esperar e torcer pela confirmação desses apoios! Atingindo 100%
-            da meta iniciaremos o repasse do dinheiro para você."
-          reembolso_dos_seus_apoiadores: reembolso dos seus apoiadores
-          caso_contr_rio_iniciaremos: Caso contrário iniciaremos o %{link_to}.
-          aba_conta_do_painel: aba Conta do painel de controle
-          strong_aten_o: "<strong>ATENÇÃO:</strong> Para fazer o repasse utilizaremos
-            as informações cadastrais e bancárias preenchidas na <strong>%{link_to}</strong>
-            do seu projeto. <strong>Certifique-se de que os dados estão corretos.</strong>"
-          se_ficou_com_alguma: Se ficou com alguma dúvida, responda a esta mensagem
-            diretamente ou fale conosco através do e-mail %{mail_to}. Caso precise
-            falar via telefone estaremos a disposição de segunda à sexta das 14h às
-            18h no telefone (11) 98414-0173.
-          um_abra_o: Um abraço,
+          vamos_apenas_esperar_o: "vamos apenas esperar o prazo para contabilizar esses apoios de última hora. Com esse processo finalizado, basta"
+          repassar_o_valor_arrecadado: "repassar o valor arrecadado para você."
+          strong_2_se: "<strong>2) Se o seu projeto ainda não atingiu a meta:</strong> vamos esperar e torcer pela confirmação desses apoios! Atingindo 100% da meta iniciaremos o repasse do dinheiro para você."
+          reembolso_dos_seus_apoiadores: "reembolso dos seus apoiadores"
+          caso_contr_rio_iniciaremos: "Caso contrário iniciaremos o %{link_to}."
+          aba_conta_do_painel: "aba Conta do painel de controle"
+          strong_aten_o: "<strong>ATENÇÃO:</strong> Para fazer o repasse utilizaremos as informações cadastrais e bancárias preenchidas na <strong>%{link_to}</strong> do seu projeto. <strong>Certifique-se de que os dados estão corretos.</strong>"
+          se_ficou_com_alguma: "Se ficou com alguma dúvida, responda a esta mensagem diretamente ou fale conosco através do e-mail %{mail_to}. Caso precise falar via telefone estaremos a disposição de segunda à sexta das 14h às 18h no telefone (11) 98414-0173."
+          um_abra_o: "Um abraço,"
         project_in_waiting_funds_subject:
           text:
-            fim_do_prazo_do: Fim do prazo do projeto %{notification}
+            fim_do_prazo_do: "Fim do prazo do projeto %{notification}"
         project_owner_contribution_confirmed:
-          ol_strong_project_strong: Olá, <strong>%{project}</strong>!
+          ol_strong_project_strong: "Olá, <strong>%{project}</strong>!"
           confirmed_contributions_today: "%{confirmed_contributions_today} novos apoios"
-          hoje_seu_projeto_recebeu: Hoje seu projeto recebeu %{link_to}, parabéns!
-          poste_uma_mensagem_para: Poste uma mensagem para os apoiadores
-          acompanhe_as_m_tricas: acompanhe as métricas da sua arrecadação
+          hoje_seu_projeto_recebeu: "Hoje seu projeto recebeu %{link_to}, parabéns!"
+          poste_uma_mensagem_para: "Poste uma mensagem para os apoiadores"
+          acompanhe_as_m_tricas: "acompanhe as métricas da sua arrecadação"
           link_to_e: "%{link_to} e %{link_to1}!"
-          mais_informa_es_sobre: 'Mais informações sobre os apoios do dia:'
-          lembrando_que_voc_pode: Lembrando que você pode tirar dúvidas conosco respondendo
-            diretamente a esta mensagem ou através do e-mail %{mail_to}
-          um_abra_o: Um abraço,
+          mais_informa_es_sobre: "Mais informações sobre os apoios do dia:"
+          lembrando_que_voc_pode: "Lembrando que você pode tirar dúvidas conosco respondendo diretamente a esta mensagem ou através do e-mail %{mail_to}"
+          um_abra_o: "Um abraço,"
         project_owner_contribution_confirmed_subject:
           text:
-            novos_apoios_para_o: Novos apoios para o projeto %{notification}
+            novos_apoios_para_o: "Novos apoios para o projeto %{notification}"
         project_received:
-          ol_user: Olá, %{user}!
-          obrigado_por_iniciar_o: Obrigado por iniciar o processo de inscrição de
-            um projeto no %{company_name}!
-          saiba_que_recebemos_sua: Saiba que recebemos sua inscrição!
-          voc_acabou_de_criar: Você acabou de criar a página de rascunho do projeto
-            %{link_to} no %{company_name1}.
+          ol_user: "Olá, %{user}!"
+          obrigado_por_iniciar_o: "Obrigado por iniciar o processo de inscrição de um projeto no %{company_name}!"
+          saiba_que_recebemos_sua: "Saiba que recebemos sua inscrição!"
+          voc_acabou_de_criar: "Você acabou de criar a página de rascunho do projeto %{link_to} no %{company_name1}."
           hora_de_trabalhar: "É hora de trabalhar na apresentação do seu projeto!"
-          seu_projeto_est_no: Seu projeto está no %{company_name} como um rascunho,
-            ou seja, não está público.
-          voc_pode_enviar_o: Você pode enviar o link acima para outras pessoas visualizarem
-            a página e te ajudarem com críticas e sugestões.
-          ningu_m_poder_apoiar: Ninguém poderá apoiar o seu projeto até que ele seja
-            aprovado e a campanha esteja no ar.
-          para_avan_ar_para: Para avançar para essas etapas você deve completar toda
-            a página de rascunho do seu projeto e enviá-la para nossa análise. Quando
-            considerar que a sua página está pronta, basta clicar no botão “ENVIAR”.
-          depois_disso_a_equipe: Depois disso, a equipe do %{company_name} vai avaliar
-            se o projeto está de acordo com os critérios da plataforma e te enviará
-            uma resposta (para este e-mail mesmo) em até 4 dias úteis!
-          se_ficou_com_alguma: Se ficou com alguma dúvida, responda a esta mensagem
-            ou envie um email para %{mail_to}
-          e_por_falar_nisso: E por falar nisso, por favor <strong>não esqueça de incluir
-            na sua lista de contatos os e-mails:</strong>
-          mail_to_e: "%{mail_to} e %{mail_to1} para evitar que nossas mensagens caiam
-            na sua caixa de spam devido a filtros do seu email."
-          um_abra_o: Um abraço,
+          seu_projeto_est_no: "Seu projeto está no %{company_name} como um rascunho, ou seja, não está público."
+          voc_pode_enviar_o: "Você pode enviar o link acima para outras pessoas visualizarem a página e te ajudarem com críticas e sugestões."
+          ningu_m_poder_apoiar: "Ninguém poderá apoiar o seu projeto até que ele seja aprovado e a campanha esteja no ar."
+          para_avan_ar_para: "Para avançar para essas etapas você deve completar toda a página de rascunho do seu projeto e enviá-la para nossa análise. Quando considerar que a sua página está pronta, basta clicar no botão “ENVIAR”."
+          depois_disso_a_equipe: "Depois disso, a equipe do %{company_name} vai avaliar se o projeto está de acordo com os critérios da plataforma e te enviará uma resposta (para este e-mail mesmo) em até 4 dias úteis!"
+          se_ficou_com_alguma: "Se ficou com alguma dúvida, responda a esta mensagem ou envie um email para %{mail_to}"
+          e_por_falar_nisso: "E por falar nisso, por favor <strong>não esqueça de incluir na sua lista de contatos os e-mails:</strong>"
+          mail_to_e: "%{mail_to} e %{mail_to1} para evitar que nossas mensagens caiam na sua caixa de spam devido a filtros do seu email."
+          um_abra_o: "Um abraço,"
         project_received_subject:
           text:
-            o_seu_rascunho_de: O seu rascunho de projeto foi criado
+            o_seu_rascunho_de: "O seu rascunho de projeto foi criado no %{ENV}"
         project_success:
-          uhuu_project: Uhuu, %{project},
-          parab_ns_pela_campanha: Parabéns pela campanha!
-          o_projeto_link_to: O projeto %{link_to} foi financiado!
-          depois_de_comemorar_com: Depois de comemorar com vontade o término bem sucedido
-            da sua campanha, é hora de voltar ao trabalho!
-          reunimos_aqui_algumas_strong: Reunimos aqui algumas <strong>informações
-            importantíssimas para essa nova etapa!</strong>
-          strong_1_strong: "<strong>1</strong> - O valor arrecadado estará disponível
-            na sua conta bancária até o <strong>dia %{10}</strong>"
-          strong_aten_o: "<strong>ATENÇÃO</strong>: Para fazer o repasse utilizaremos
-            as informações cadastrais e bancárias preenchidas na aba Conta do painel
-            de controle do seu projeto. <strong>Certifique-se de que os dados estão
-            corretos</strong>."
-          confira: 'Confira:'
-          como_ser_feito_o: Como será feito o repasse?
-          2_strong_organiza_o: 2 - <strong>Organização é tudo!</strong> Na <strong>aba
-            Relatórios</strong>, baixe planilhas com as <strong>informações sobre
-            os seus apoiadores</strong> e comece a organizar a <strong>entrega das
-            recompensas!</strong>
-          strong_3_converse: "<strong>3 - Converse com seus apoiadores hoje, amanhã
-            e sempre!</strong> As pessoas demonstraram respeito por você ao te apoiar
-            financeiramente e esperam o mesmo em troca. <strong>A Aba de novidades</strong>
-            ficará disponível para sempre. <strong>Procure fazer postagens de maneira
-            recorrente</strong> mantendo seus apoiadores informados sobre o andamento
-            do projeto."
-          se_ficou_com_alguma: Se ficou com alguma dúvida, responda a esta mensagem
-            diretamente ou fale conosco através do e-mail %{mail_to}. Caso precise
-            falar via telefone estaremos a disposição de segunda à sexta das 14h às
-            18h no telefone (11) 98414-0173.
-          um_abra_o_apertado: Um abraço apertado de parabéns!
-          a_equipe_do_company: A equipe do %{company_name} está vibrando com você!!!!
+          uhuu_project: "Uhuu, %{project},"
+          parab_ns_pela_campanha: "Parabéns pela campanha!"
+          o_projeto_link_to: "O projeto %{link_to} foi financiado!"
+          depois_de_comemorar_com: "Depois de comemorar com vontade o término bem sucedido da sua campanha, é hora de voltar ao trabalho!"
+          reunimos_aqui_algumas_strong: "Reunimos aqui algumas <strong>informações importantíssimas para essa nova etapa!</strong>"
+          strong_1_strong: "<strong>1</strong> - O valor arrecadado estará disponível na sua conta bancária até o <strong>dia %{10}</strong>"
+          strong_aten_o: "<strong>ATENÇÃO</strong>: Para fazer o repasse utilizaremos as informações cadastrais e bancárias preenchidas na aba Conta do painel de controle do seu projeto. <strong>Certifique-se de que os dados estão corretos</strong>."
+          confira: "Confira:"
+          como_ser_feito_o: "Como será feito o repasse?"
+          2_strong_organiza_o: "2 - <strong>Organização é tudo!</strong> Na <strong>aba Relatórios</strong>, baixe planilhas com as <strong>informações sobre os seus apoiadores</strong> e comece a organizar a <strong>entrega das recompensas!</strong>"
+          strong_3_converse: "<strong>3 - Converse com seus apoiadores hoje, amanhã e sempre!</strong> As pessoas demonstraram respeito por você ao te apoiar financeiramente e esperam o mesmo em troca. <strong>A Aba de novidades</strong> ficará disponível para sempre. <strong>Procure fazer postagens de maneira recorrente</strong> mantendo seus apoiadores informados sobre o andamento do projeto."
+          se_ficou_com_alguma: "Se ficou com alguma dúvida, responda a esta mensagem diretamente ou fale conosco através do e-mail %{mail_to}. Caso precise falar via telefone estaremos a disposição de segunda à sexta das 14h às 18h no telefone (11) 98414-0173."
+          um_abra_o_apertado: "Um abraço apertado de parabéns!"
+          a_equipe_do_company: "A equipe do %{company_name} está vibrando com você!!!!"
         project_success_subject:
           text:
-            parab_ns_notification_foi: Parabéns! %{notification} foi financiado.
+            parab_ns_notification_foi: "Parabéns! %{notification} foi financiado."
         project_unsuccessful:
-          oi_project: Oi, %{project},
-          infelizmente_o_projeto_link: Infelizmente o projeto %{link_to} não alcançou
-            a meta de financiamento no %{company_name1}.
-          processo_de_reembolso: processo de reembolso
-          fique_tranquilo_todos_os: Fique tranquilo, todos os seus apoiadores já receberam
-            um email com instruções sobre o %{link_to}.
-          quer_ajudar_a_melhorar: Quer ajudar a melhorar o Catarse?
-          seu_projeto_pode_n: Seu projeto pode não ter atingido a meta mas com certeza
-            você aprendeu alguma coisa e pode tirar grande proveito dessa experiência
-            se quiser! Compartilhe esse aprendizado conosco!
-          1_quais_os_2: 1. Quais os 2 piores problemas que você enfrentou durante
-            a campanha?
-          pode_ser_algo_diretamente: Pode ser algo diretamente relacionado com o %{company_name},
-            uma reflexão sua, auto-crítica, ou mesmo motivos externos que dificultaram
-            seu trajeto no financiamento coletivo.
-          2_o_que_voc: 2. O que você mais sentiu falta na plataforma do %{company_name}?
-          como_podemos_melhorar_a: Como podemos melhorar a plataforma? Como poderiamos
-            ter te ajudado mais?
-          estamos_sempre_em_busca: Estamos sempre em busca de melhorar a usabilidade
-            do site e o nosso serviço. Para isso precisamos estar atentos ao que você
-            tem a dizer sobre a gente.
-          esperamos_que_voc_considere: Esperamos que você considere essa experiência
-            válida e saiba que estamos a postos caso precise da nossa ajuda!
-          te_esperamos_numa_pr: Te esperamos numa próxima.
-          um_grande_abra_o: Um grande abraço,
-          a_equipe_do_company: A equipe do %{company_name} adorou te acompanhar nessa
-            aventura!
+          oi_project: "Oi, %{project},"
+          infelizmente_o_projeto_link: "Infelizmente o projeto %{link_to} não alcançou a meta de financiamento no %{company_name1}."
+          processo_de_reembolso: "processo de reembolso"
+          fique_tranquilo_todos_os: "Fique tranquilo, todos os seus apoiadores já receberam um email com instruções sobre o %{link_to}."
+          quer_ajudar_a_melhorar: "Quer ajudar a melhorar o Catarse?"
+          seu_projeto_pode_n: "Seu projeto pode não ter atingido a meta mas com certeza você aprendeu alguma coisa e pode tirar grande proveito dessa experiência se quiser! Compartilhe esse aprendizado conosco!"
+          1_quais_os_2: "1. Quais os 2 piores problemas que você enfrentou durante a campanha?"
+          pode_ser_algo_diretamente: "Pode ser algo diretamente relacionado com o %{company_name}, uma reflexão sua, auto-crítica, ou mesmo motivos externos que dificultaram seu trajeto no financiamento coletivo."
+          2_o_que_voc: "2. O que você mais sentiu falta na plataforma do %{company_name}?"
+          como_podemos_melhorar_a: "Como podemos melhorar a plataforma? Como poderiamos ter te ajudado mais?"
+          estamos_sempre_em_busca: "Estamos sempre em busca de melhorar a usabilidade do site e o nosso serviço. Para isso precisamos estar atentos ao que você tem a dizer sobre a gente."
+          esperamos_que_voc_considere: "Esperamos que você considere essa experiência válida e saiba que estamos a postos caso precise da nossa ajuda!"
+          te_esperamos_numa_pr: "Te esperamos numa próxima."
+          um_grande_abra_o: "Um grande abraço,"
+          a_equipe_do_company: "A equipe do %{company_name} adorou te acompanhar nessa aventura!"
         project_unsuccessful_subject:
           text:
             notification_n_o: "%{notification} não alcançou a meta de arrecadação"
         project_visible:
-          ol_user: Olá, %{user}.
-          strong_o_projeto: "<strong>O projeto %{link_to} está no ar e já pode receber
-            apoios!</strong>"
-          muito_importante_se: "É muito importante se planejar para uma campanha.
-            Mas se você não planejou suas ações anteriormente, não perca tempo."
-          a_hora_essa_estamos: A hora é essa! Estamos aqui para te ajudar! Para conversar
-            sobre estratégias de comunicação com nossa equipe e receber
-          sugest_es_sobre_como: sugestões sobre como agir na sua campanha, responda
-            esse email ou envie uma mensagem para %{mail_to}.
-          guia_de_realizadores: GUIA DE REALIZADORES
-          confira_nosso_link_to: Confira nosso %{link_to} para saber mais sobre como
-            conduzir uma campanha!
-          lembre_se_que_strong: Lembre-se que <strong>você é o responsável por promover
-            a campanha e cuidar da divulgação do projeto.</strong> É da sua rede que
-            virão grande parte dos apoios!
-          uma_pequena_lista_sobre: 'Uma pequena lista sobre o que pode ou não ser
-            alterado em um projeto no ar:'
+          ol_user: "Olá, %{user}."
+          strong_o_projeto: "<strong>O projeto %{link_to} está no ar e já pode receber apoios!</strong>"
+          muito_importante_se: "É muito importante se planejar para uma campanha. Mas se você não planejou suas ações anteriormente, não perca tempo."
+          a_hora_essa_estamos: "A hora é essa! Estamos aqui para te ajudar! Para conversar sobre estratégias de comunicação com nossa equipe e receber"
+          sugest_es_sobre_como: "sugestões sobre como agir na sua campanha, responda esse email ou envie uma mensagem para %{mail_to}."
+          guia_de_realizadores: "GUIA DE REALIZADORES"
+          confira_nosso_link_to: "Confira nosso %{link_to} para saber mais sobre como conduzir uma campanha!"
+          lembre_se_que_strong: "Lembre-se que <strong>você é o responsável por promover a campanha e cuidar da divulgação do projeto.</strong> É da sua rede que virão grande parte dos apoios!"
+          uma_pequena_lista_sobre: "Uma pequena lista sobre o que pode ou não ser alterado em um projeto no ar:"
           posso: Posso
           trocar_o_v: "- Trocar o vídeo principal da sua campanha"
-          enviar_novidades_diretamente: "- Enviar novidades diretamente para email
-            dos meus apoiadores"
+          enviar_novidades_diretamente: "- Enviar novidades diretamente para email dos meus apoiadores"
           baixar_relat_rios: "- Baixar relatórios"
           editar_a_descri: "- Editar a descrição do seu projeto"
           criar_novas_recompensas: "- Criar novas recompensas"
-          alterar_conte_do: "- Alterar conteúdo e valor de recompensas que ninguém
-            escolheu"
+          alterar_conte_do: "- Alterar conteúdo e valor de recompensas que ninguém escolheu"
           alterar_o_limite: "- Alterar o limite de apoiadores de uma determinada recompensa"
-          esgotar_recompensas_limitando: "- Esgotar recompensas (limitando-as para
-            um numero X de apoiadores)"
+          esgotar_recompensas_limitando: "- Esgotar recompensas (limitando-as para um numero X de apoiadores)"
           trocar_o_thumbnail: "- Trocar o Thumbnail e a Frase de Efeito do seu projeto"
-          n_o_posso: Não posso
+          n_o_posso: "Não posso"
           alterar_meta_de: "- Alterar meta de arrecadação"
           alterar_o_prazo: "- Alterar o prazo escolhido"
-          alterar_recompensas_onde: "- Alterar recompensas onde existem apoios já
-            efetuados"
-          por_favor_strong_n: Por favor </strong>não esqueça de incluir na sua lista
-            de contatos os e-mails:</strong>
-          um_abra_o: Um abraço,
-          a_equipe_do_company: A equipe do %{company_name} te deseja uma boa campanha!!!!
-                  project_visible_subject:
+          alterar_recompensas_onde: "- Alterar recompensas onde existem apoios já efetuados"
+          por_favor_strong_n: "Por favor </strong>não esqueça de incluir na sua lista de contatos os e-mails:</strong>"
+          um_abra_o: "Um abraço,"
+          a_equipe_do_company: "A equipe do %{company_name} te deseja uma boa campanha!!!!"
+          link_to_link: ", link_to: (link_to t("
+        project_visible_subject:
           text:
-            o_projeto_notification_est: O projeto %{notification} está no ar
+            o_projeto_notification_est: "O projeto %{notification} está no ar no %{ENV1}"
         redbooth_task:
           diegoreeberg: "#diegoreeberg"
-          arrecadado: 'Arrecadado:'
-          usuario_moip: 'Usuario moip:'
-          cpf_cnpj_do_realizador: 'CPF/CNPJ do realizador:'
-          data_de_expira_o: 'Data de expiração:'
-          telefone: 'Telefone:'
-          usando_pagar_me: Usando pagar.me?
-          dados_bancarios: 'Dados Bancarios:'
-          banco_project_account: 'Banco: %{project_account}'
-          ag_ncia_project_account: 'Agência: %{project_account}- %{project_account1}'
-          conta_project_account_project: 'Conta: %{project_account} - %{project_account1}'
-          nome_do_titular_project: 'Nome do titular: %{project_account}'
-          cpf_project_account: 'CPF: %{project_account}'
+          arrecadado: "Arrecadado:"
+          usuario_moip: "Usuario moip:"
+          cpf_cnpj_do_realizador: "CPF/CNPJ do realizador:"
+          data_de_expira_o: "Data de expiração:"
+          telefone: "Telefone:"
+          usando_pagar_me: "Usando pagar.me?"
+          dados_bancarios: "Dados Bancarios:"
+          banco_project_account: "Banco: %{project_account}"
+          ag_ncia_project_account: "Agência: %{project_account}- %{project_account1}"
+          conta_project_account_project: "Conta: %{project_account} - %{project_account1}"
+          nome_do_titular_project: "Nome do titular: %{project_account}"
+          cpf_project_account: "CPF: %{project_account}"
         redbooth_task_subject:
           text:
             notification: "%{notification}"
         refund_completed_credit_card:
-          ol_strong_contribution_strong: Olá, <strong>%{contribution}</strong>!
-          o_reembolso_do_seu: O reembolso do seu apoio para o projeto %{link_to} no
-            %{company_name1} acabou de ser realizado! O crédito efetivo deverá acontecer
-            na próxima fatura, caso ela ainda esteja em aberto, ou na próxima, caso
-            a desse mês já tenha sido fechada.
-          a_chave_de_identifica: 'A chave de identificação do seu apoio é: %{contribution}'
-          se_ficou_com_alguma: Se ficou com alguma dúvida ou teve algum problema nesse
-            processo, entre em contato conosco respondendo a
-          esta_mensagem_ou_atrav: esta mensagem ou através do e-mail %{mail_to}. Para
-            agilizar o atendimento, pedimos que indique a chave de identificação.
-          um_abra_o: Um abraço,
+          ol_strong_contribution_strong: "Olá, <strong>%{contribution}</strong>!"
+          o_reembolso_do_seu: "O reembolso do seu apoio para o projeto %{link_to} no %{company_name1} acabou de ser realizado! O crédito efetivo deverá acontecer na próxima fatura, caso ela ainda esteja em aberto, ou na próxima, caso a desse mês já tenha sido fechada."
+          a_chave_de_identifica: "A chave de identificação do seu apoio é: %{contribution}"
+          se_ficou_com_alguma: "Se ficou com alguma dúvida ou teve algum problema nesse processo, entre em contato conosco respondendo a"
+          esta_mensagem_ou_atrav: "esta mensagem ou através do e-mail %{mail_to}. Para agilizar o atendimento, pedimos que indique a chave de identificação."
+          um_abra_o: "Um abraço,"
           company_name: "%{company_name}"
         refund_completed_credit_card_subject:
           text:
-            reembolso_efetuado_apoio_para: 'Reembolso efetuado: apoio para projeto
-              %{notification}'
+            reembolso_efetuado_apoio_para: "Reembolso efetuado: apoio para projeto %{notification}"
         refund_completed_slip:
-          ol_strong_contribution_strong: Olá, <strong>%{contribution}</strong>!
-          o_reembolso_do_seu: 'O reembolso do seu apoio para o projeto %{link_to}
-            no %{company_name1} acabou de ser realizado para a conta bancária:'
-          banco_bank_account: 'Banco: %{bank_account}'
-          ag_ncia_bank_account: 'Agência: %{bank_account} - %{bank_account1}'
-          conta_bank_account_bank: 'Conta: %{bank_account} - %{bank_account1}'
-          nome_do_titular_bank: 'Nome do titular: %{bank_account}'
-          cpf_bank_account: 'CPF: %{bank_account}'
-          a_chave_de_identifica: 'A chave de identificação do seu apoio é: %{contribution}'
-          se_ficou_com_alguma: Se ficou com alguma dúvida ou teve algum problema nesse
-            processo, entre em contato conosco respondendo a esta mensagem ou através
-            do e-mail %{mail_to}. Para agilizar o atendimento, pedimos que indique
-            o código de identificação.
-          um_abra_o: Um abraço,
+          ol_strong_contribution_strong: "Olá, <strong>%{contribution}</strong>!"
+          o_reembolso_do_seu: "O reembolso do seu apoio para o projeto %{link_to} no %{company_name1} acabou de ser realizado para a conta bancária:"
+          banco_bank_account: "Banco: %{bank_account}"
+          ag_ncia_bank_account: "Agência: %{bank_account} - %{bank_account1}"
+          conta_bank_account_bank: "Conta: %{bank_account} - %{bank_account1}"
+          nome_do_titular_bank: "Nome do titular: %{bank_account}"
+          cpf_bank_account: "CPF: %{bank_account}"
+          a_chave_de_identifica: "A chave de identificação do seu apoio é: %{contribution}"
+          se_ficou_com_alguma: "Se ficou com alguma dúvida ou teve algum problema nesse processo, entre em contato conosco respondendo a esta mensagem ou através do e-mail %{mail_to}. Para agilizar o atendimento, pedimos que indique o código de identificação."
+          um_abra_o: "Um abraço,"
           company_name: "%{company_name}"
         refund_completed_slip_subject:
           text:
-            reembolso_efetuado_apoio_para: 'Reembolso efetuado: apoio para projeto
-              não-financiado %{notification}'
+            reembolso_efetuado_apoio_para: "Reembolso efetuado: apoio para projeto não-financiado %{notification}"
         refund_moip:
-          ol_user_tudo_bem: Olá %{user}, tudo bem?
-          para_muitos_casos_n: Para muitos casos, não tínhamos uma solução simples
-            para fazer o reembolso. Agora estamos em um processo para otimizar essa
-            etapa. Você faz parte do primeiro grupo para o qual iremos fazer o reembolso
-            direto na conta bancária. :-)
-          http_bit_ly_reembolsocatarse: http://bit.ly/reembolsoCatarse
-          pra_isso_precisaremos_que: 'Pra isso, precisaremos que vocês preencham o
-            formulário abaixo com seus dados bancários: %{link_to}'
-          o_valor_do_apoio: 'O valor do apoio que você fez e que será reembolsado
-            é de: R$%{user}.'
-          infelizmente_como_seu_apoio: Infelizmente, como seu apoio foi feito há mais
-            de 120 dias, não conseguiremos reembolsar a taxa do meio de pagamento
-            (cartão ou boleto) e a descontaremos na hora de efetuar o depósito. Esta
-            taxa é diferente de acordo com a forma de pagamento utilizada, sendo que
-            pode variar entre 2% e 6% do seu apoio.
-          o_s_n_mero: 'O(s) número(s) de identificação do seu apoio é:'
-          iremos_fazer_o_dep: Iremos fazer o depósito na sua conta até novembro/2014.
-            Isso porque teremos que fazer, uma a uma, quase 8 mil operações. Preferimos
-            definir um prazo mais longo e entregar como prometido do que prometer
-            algo pra amanhã e não cumprir.
-          espero_que_voc_s: Espero que vocês compreendam e estamos aqui para tirar
-            qualquer dúvida. Para isso, é só responder a esta mensagem.
-          muito_obrigado: Muito obrigado!
-          diego_reeberg: Diego Reeberg
-          malabarista_organizacional: Malabarista Organizacional
+          ol_user_tudo_bem: "Olá %{user}, tudo bem?"
+          para_muitos_casos_n: "Para muitos casos, não tínhamos uma solução simples para fazer o reembolso. Agora estamos em um processo para otimizar essa etapa. Você faz parte do primeiro grupo para o qual iremos fazer o reembolso direto na conta bancária. :-)"
+          http_bit_ly_reembolsocatarse: "http://bit.ly/reembolsoCatarse"
+          pra_isso_precisaremos_que: "Pra isso, precisaremos que vocês preencham o formulário abaixo com seus dados bancários: %{link_to}"
+          o_valor_do_apoio: "O valor do apoio que você fez e que será reembolsado é de: R$%{user}."
+          infelizmente_como_seu_apoio: "Infelizmente, como seu apoio foi feito há mais de 120 dias, não conseguiremos reembolsar a taxa do meio de pagamento (cartão ou boleto) e a descontaremos na hora de efetuar o depósito. Esta taxa é diferente de acordo com a forma de pagamento utilizada, sendo que pode variar entre 2% e 6% do seu apoio."
+          o_s_n_mero: "O(s) número(s) de identificação do seu apoio é:"
+          iremos_fazer_o_dep: "Iremos fazer o depósito na sua conta até novembro/2014. Isso porque teremos que fazer, uma a uma, quase 8 mil operações. Preferimos definir um prazo mais longo e entregar como prometido do que prometer algo pra amanhã e não cumprir."
+          espero_que_voc_s: "Espero que vocês compreendam e estamos aqui para tirar qualquer dúvida. Para isso, é só responder a esta mensagem."
+          muito_obrigado: "Muito obrigado!"
+          diego_reeberg: "Diego Reeberg"
+          malabarista_organizacional: "Malabarista Organizacional"
         refund_paypal:
-          ol_user_tudo_bem: Olá %{user}, tudo bem?
-          para_muitos_casos_n: Para muitos casos, não tínhamos uma solução simples
-            para fazer o reembolso. Agora estamos em um processo para otimizar essa
-            etapa. Como você fez o seu apoio via Paypal, a maneira mais simples é
-            fazermos uma transferência direto para a sua conta Paypal, cadastrada
-            no nosso sistema através do e-mail %{user}.
-          o_valor_do_apoio: 'O valor do apoio que você fez e que será reembolsado
-            é de: R$%{user}.'
-          infelizmente_como_seu_apoio: Infelizmente, como seu apoio foi feito há mais
-            de 120 dias, não conseguiremos reembolsar a taxa do meio de pagamento
-            (cartão ou boleto) e a descontaremos na hora de efetuar o depósito. Esta
-            taxa é diferente de acordo com a forma de pagamento utilizada, sendo que
-            pode variar entre 2% e 6% do seu apoio.
-          o_s_n_mero: 'O(s) número(s) de identificação do seu apoio é:'
-          iremos_fazer_o_dep: Iremos fazer o depósito na sua conta até o dia 30/09/2014.
-          espero_que_voc_s: Espero que vocês compreendam e estamos aqui para tirar
-            qualquer dúvida. Para isso, é só responder a esta mensagem.
-          muito_obrigado: Muito obrigado!
-          diego_reeberg: Diego Reeberg
-          malabarista_organizacional: Malabarista Organizacional
+          ol_user_tudo_bem: "Olá %{user}, tudo bem?"
+          para_muitos_casos_n: "Para muitos casos, não tínhamos uma solução simples para fazer o reembolso. Agora estamos em um processo para otimizar essa etapa. Como você fez o seu apoio via Paypal, a maneira mais simples é fazermos uma transferência direto para a sua conta Paypal, cadastrada no nosso sistema através do e-mail %{user}."
+          o_valor_do_apoio: "O valor do apoio que você fez e que será reembolsado é de: R$%{user}."
+          infelizmente_como_seu_apoio: "Infelizmente, como seu apoio foi feito há mais de 120 dias, não conseguiremos reembolsar a taxa do meio de pagamento (cartão ou boleto) e a descontaremos na hora de efetuar o depósito. Esta taxa é diferente de acordo com a forma de pagamento utilizada, sendo que pode variar entre 2% e 6% do seu apoio."
+          o_s_n_mero: "O(s) número(s) de identificação do seu apoio é:"
+          iremos_fazer_o_dep: "Iremos fazer o depósito na sua conta até o dia 30/09/2014."
+          espero_que_voc_s: "Espero que vocês compreendam e estamos aqui para tirar qualquer dúvida. Para isso, é só responder a esta mensagem."
+          muito_obrigado: "Muito obrigado!"
+          diego_reeberg: "Diego Reeberg"
+          malabarista_organizacional: "Malabarista Organizacional"
         refund_request:
-          usu_rio_contribution: Usuário %{contribution}
-          email_do_usu_rio: 'Email do usuário: %{contribution}'
-          email_de_pagamento_contribution: 'Email de pagamento: %{contribution}'
-          nome_de_pagamento_contribution: 'Nome de pagamento: %{contribution}'
-          projeto_contribution: 'Projeto: %{contribution}'
-          chave_do_apoio_contribution: 'Chave do apoio: %{contribution}'
-          identificador_no_meio_de: 'Identificador no meio de pagamento: %{contribution}'
-          valor_do_apoio_contribution: 'Valor do apoio: %{contribution}'
-          meio_de_pagamento_contribution: 'Meio de pagamento: %{contribution}'
-          forma_de_pagamento_contribution: 'Forma de pagamento: %{contribution}'
-          data_de_cria_o: 'Data de criação: %{contribution}'
+          usu_rio_contribution: "Usuário %{contribution}"
+          email_do_usu_rio: "Email do usuário: %{contribution}"
+          email_de_pagamento_contribution: "Email de pagamento: %{contribution}"
+          nome_de_pagamento_contribution: "Nome de pagamento: %{contribution}"
+          projeto_contribution: "Projeto: %{contribution}"
+          chave_do_apoio_contribution: "Chave do apoio: %{contribution}"
+          identificador_no_meio_de: "Identificador no meio de pagamento: %{contribution}"
+          valor_do_apoio_contribution: "Valor do apoio: %{contribution}"
+          meio_de_pagamento_contribution: "Meio de pagamento: %{contribution}"
+          forma_de_pagamento_contribution: "Forma de pagamento: %{contribution}"
+          data_de_cria_o: "Data de criação: %{contribution}"
         refund_request_subject:
           text:
-            pedido_de_reembolso_do: Pedido de reembolso do projeto %{notification}
+            pedido_de_reembolso_do: "Pedido de reembolso do projeto %{notification}"
         refunded_and_canceled:
-          ol_strong_contribution_strong: Olá, <strong>%{contribution}</strong>!
-          seu_reembolso_foi_realizado: Seu reembolso foi realizado com sucesso e o
-            pagamento para o projeto %{link_to}, cancelado.
-          a_chave_de_identifica: 'A chave de identificação do seu apoio é: %{contribution}'
-          se_ficou_com_alguma: Se ficou com alguma dúvida, entre em contato conosco
-            respondendo a esta mensagem ou através do e-mail %{mail_to}
-          um_abra_o: Um abraço,
+          ol_strong_contribution_strong: "Olá, <strong>%{contribution}</strong>!"
+          seu_reembolso_foi_realizado: "Seu reembolso foi realizado com sucesso e o pagamento para o projeto %{link_to}, cancelado."
+          a_chave_de_identifica: "A chave de identificação do seu apoio é: %{contribution}"
+          se_ficou_com_alguma: "Se ficou com alguma dúvida, entre em contato conosco respondendo a esta mensagem ou através do e-mail %{mail_to}"
+          um_abra_o: "Um abraço,"
           company_name: "%{company_name}"
         refunded_and_canceled_subject:
           text:
-            reembolso_efetuado_apoio_para: 'Reembolso efetuado: apoio para projeto
-              %{notification}'
+            reembolso_efetuado_apoio_para: "Reembolso efetuado: apoio para projeto %{notification}"
         reminder:
-          ol_strong_user_strong: Olá, <strong>%{user}</strong>!
-          este_o_lembrete_de: Este é o lembrete de que o projeto %{link_to} termina
-            em 48 horas
-          agora_a_hora_de: Agora é a hora de você fazer parte dessa campanha ;)
-          um_abra_o: Um abraço,
+          ol_strong_user_strong: "Olá, <strong>%{user}</strong>!"
+          este_o_lembrete_de: "Este é o lembrete de que o projeto %{link_to} termina em 48 horas"
+          agora_a_hora_de: "Agora é a hora de você fazer parte dessa campanha ;)"
+          um_abra_o: "Um abraço,"
           company_name: "%{company_name}"
         reminder_subject:
           text:
-            lembrete_do_catarse_a: Lembrete do Catarse! A campanha %{notification}
-              está terminando!
+            lembrete_do_catarse_a: "Lembrete do Catarse! A campanha %{notification} está terminando!"
         requested_refund_for_credits:
-          ol_comunidade: Olá Comunidade!
-          esse_apoio_para_projeto: Esse apoio para projeto não-financiado, foi realizado
-            através de créditos. Por favor, entre em contato com o realizador para
-            efetuar o reembolso.
-          usu_rio_contribution: Usuário %{contribution}
-          email_do_usu_rio: 'Email do usuário: %{contribution}'
-          email_de_pagamento_contribution: 'Email de pagamento: %{contribution}'
-          nome_de_pagamento_contribution: 'Nome de pagamento: %{contribution}'
-          projeto_contribution: 'Projeto: %{contribution}'
-          chave_do_apoio_contribution: 'Chave do apoio: %{contribution}'
-          identificador_no_meio_de: 'Identificador no meio de pagamento: %{contribution}'
-          valor_do_apoio_contribution: 'Valor do apoio: %{contribution}'
-          meio_de_pagamento_contribution: 'Meio de pagamento: %{contribution}'
-          forma_de_pagamento_contribution: 'Forma de pagamento: %{contribution}'
-          data_de_cria_o: 'Data de criação: %{contribution}'
+          ol_comunidade: "Olá Comunidade!"
+          esse_apoio_para_projeto: "Esse apoio para projeto não-financiado, foi realizado através de créditos. Por favor, entre em contato com o realizador para efetuar o reembolso."
+          usu_rio_contribution: "Usuário %{contribution}"
+          email_do_usu_rio: "Email do usuário: %{contribution}"
+          email_de_pagamento_contribution: "Email de pagamento: %{contribution}"
+          nome_de_pagamento_contribution: "Nome de pagamento: %{contribution}"
+          projeto_contribution: "Projeto: %{contribution}"
+          chave_do_apoio_contribution: "Chave do apoio: %{contribution}"
+          identificador_no_meio_de: "Identificador no meio de pagamento: %{contribution}"
+          valor_do_apoio_contribution: "Valor do apoio: %{contribution}"
+          meio_de_pagamento_contribution: "Meio de pagamento: %{contribution}"
+          forma_de_pagamento_contribution: "Forma de pagamento: %{contribution}"
+          data_de_cria_o: "Data de criação: %{contribution}"
         requested_refund_for_credits_subject:
           text:
-            pedido_de_reembolso_para: Pedido de reembolso para créditos
+            pedido_de_reembolso_para: "Pedido de reembolso para créditos"
         terms_update:
-          ol_user: Olá %{user},
-          termos_de_uso: termos de uso
-          esse_email_para_notificar: Esse email é para notificar a recente atualização
-            nos nossos %{link_to}
-          pol_tica_de_privacidade: política de privacidade
-          e_link_to_no: e %{link_to} no Catarse. As mudanças estão relacionadas ao
-            novo meio de pagamento que o Catarse está utilizando e passam a valer
-            para projetos que entrarem no ar dia 10/11/2014.
-          resumindo_as_mudan_as: 'Resumindo as mudanças:'
-          projetos_n_o: "- projetos não financiados não geram mais créditos (independentemente
-            de quando entraram;"
+          ol_user: "Olá %{user},"
+          termos_de_uso: "termos de uso"
+          esse_email_para_notificar: "Esse email é para notificar a recente atualização nos nossos %{link_to}"
+          pol_tica_de_privacidade: "política de privacidade"
+          e_link_to_no: "e %{link_to} no Catarse. As mudanças estão relacionadas ao novo meio de pagamento que o Catarse está utilizando e passam a valer para projetos que entrarem no ar dia 10/11/2014."
+          resumindo_as_mudan_as: "Resumindo as mudanças:"
+          projetos_n_o: "- projetos não financiados não geram mais créditos (independentemente de quando entraram;"
           n_o_haver: "- não haverá a possibilidade de usar créditos em nenhum projeto;"
-          se_o_projeto: "- Se o projeto não for financiado, reembolso do pagamento
-            feito via cartão de crédito em até 5 dias úteis direto na fatura;"
-          se_o_projeto_1: "- Se o projeto não for financiado, reembolso do pagamento
-            feito via boleto em até 10 dias úteis direto na conta bancária informada
-            no momento do pagamento;"
+          se_o_projeto: "- Se o projeto não for financiado, reembolso do pagamento feito via cartão de crédito em até 5 dias úteis direto na fatura;"
+          se_o_projeto_1: "- Se o projeto não for financiado, reembolso do pagamento feito via boleto em até 10 dias úteis direto na conta bancária informada no momento do pagamento;"
           op_o_de: "- opção de salvar os dados do cartão de crédito no perfil do Catarse."
-          post_no_blog: post no blog
-          para_ler_todos_os: Para ler todos os detalhes veja nosso %{link_to} ou
-          leia_os_link_to: leia os %{link_to}
-          e_link_to_atualizados: e %{link_to} atualizados.
-          se_ficou_com_alguma: Se ficou com alguma dúvida entre em contato conosco
-            respondendo a este email ou através do %{mail_to}
-          um_abra_o: Um abraço,
+          post_no_blog: "post no blog"
+          para_ler_todos_os: "Para ler todos os detalhes veja nosso %{link_to} ou"
+          leia_os_link_to: "leia os %{link_to}"
+          e_link_to_atualizados: "e %{link_to} atualizados."
+          se_ficou_com_alguma: "Se ficou com alguma dúvida entre em contato conosco respondendo a este email ou através do %{mail_to}"
+          um_abra_o: "Um abraço,"
           catarse: Catarse
-                  terms_update_subject:
+          link_to_link: ", link_to: (link_to t("
+        terms_update_subject:
           text:
-            atualiza_o_termos_de: Atualização Termos de Uso e Política de Privacidade
+            atualiza_o_termos_de: "Atualização Termos de Uso e Política de Privacidade"
         user_deactivate:
-          ol_notification: Olá %{notification},
-          clicar_aqui: clicar aqui
-          sua_conta_no_catarse: Sua conta no Catarse já está desativada. Caso sinta
-            saudades, você pode reativar a sua conta a qualquer momento, basta %{link_to}
-            e voltar a apoiar ou realizar projetos incríveis.
-          qualquer_d_vida_voc: Qualquer dúvida você pode entrar em contato conosco
-            respondendo a esta mensagem ou através do e-mail %{mail_to}
-          um_abra_o: Um abraço,
+          ol_notification: "Olá %{notification},"
+          clicar_aqui: "clicar aqui"
+          sua_conta_no_catarse: "Sua conta no Catarse já está desativada. Caso sinta saudades, você pode reativar a sua conta a qualquer momento, basta %{link_to} e voltar a apoiar ou realizar projetos incríveis."
+          qualquer_d_vida_voc: "Qualquer dúvida você pode entrar em contato conosco respondendo a esta mensagem ou através do e-mail %{mail_to}"
+          um_abra_o: "Um abraço,"
           catarse: Catarse
         user_deactivate_subject:
           text:
-            sua_conta_no_catarse: Sua conta no Catarse foi desativada!
+            sua_conta_no_catarse: "Sua conta no Catarse foi desativada!"
         credits_warning_less_group:
-          oi_user: Oi %{user},
-          para_podermos_simplificar_ainda: Para podermos simplificar ainda mais o
-            processo de reembolsos,
-          n_o_existir_o: não existirão mais créditos no Catarse
-          a_partir_de_10: a partir de 10/11 %{link_to}. É por isso que viemos aqui
-            falar com você.
-          pelo_que_checamos_voc: Pelo que checamos, você já chegou a usar parte dos
-            seus créditos, mas ainda tem %{user} por aqui.
-          como_se_voc: "É como se você achasse aquela nota ou moeda perdida no bolso
-            da sua calça e pudesse dar um destino bacana pra ela. :-)"
-          da_logo_voc_pode: 'Daí, logo você pode pensar: ué, mas o apoio mínimo no
-            Catarse é de 10 reais, o que fazer então?'
-          o_apoio_m_nimo: O apoio mínimo é R$10 sim, mas <strong>até 10/11</strong>
-            você vai poder apoiar um projeto em que você acredita com os créditos
-            que você ainda tem. :-D
-          para_apoiar_um_projeto: 'Para apoiar um projeto, o processo é o mesmo:'
-          1_escolher_o_projeto: 1 - Escolher o projeto que quer apoiar;
-          2_clicar_em_apoiar: 2 - Clicar em Apoiar este projeto;
-          3_colocar_o_valor: 3 - Colocar o valor que quer apoiar e selecionar o campo
-            confirmando que você quer usar seus créditos.
-          4_clicar_no_bot: 4 - Clicar no botão Revisar e realizar pagamento na parte
-            debaixo da tela;
+          oi_user: "Oi %{user},"
+          para_podermos_simplificar_ainda: "Para podermos simplificar ainda mais o processo de reembolsos,"
+          n_o_existir_o: "não existirão mais créditos no Catarse"
+          a_partir_de_10: "a partir de 10/11 %{link_to}. É por isso que viemos aqui falar com você."
+          pelo_que_checamos_voc: "Pelo que checamos, você já chegou a usar parte dos seus créditos, mas ainda tem %{user} por aqui."
+          como_se_voc: "É como se você achasse aquela nota ou moeda perdida no bolso da sua calça e pudesse dar um destino bacana pra ela. :-)"
+          da_logo_voc_pode: "Daí, logo você pode pensar: ué, mas o apoio mínimo no Catarse é de 10 reais, o que fazer então?"
+          o_apoio_m_nimo: "O apoio mínimo é R$10 sim, mas <strong>até 10/11</strong> você vai poder apoiar um projeto em que você acredita com os créditos que você ainda tem. :-D"
+          para_apoiar_um_projeto: "Para apoiar um projeto, o processo é o mesmo:"
+          1_escolher_o_projeto: "1 - Escolher o projeto que quer apoiar;"
+          2_clicar_em_apoiar: "2 - Clicar em Apoiar este projeto;"
+          3_colocar_o_valor: "3 - Colocar o valor que quer apoiar e selecionar o campo confirmando que você quer usar seus créditos."
+          4_clicar_no_bot: "4 - Clicar no botão Revisar e realizar pagamento na parte debaixo da tela;"
           strong_dicas_de: "<strong>Dicas de projetos</strong>"
-                      ref: ''credits_warning_less_group''))}'
-          caso_voc_n_o: Caso você não utilize os créditos até o dia 10/11, entraremos
-            em contato para realizar o reembolso.
-          se_ficar_com_alguma: Se ficar com alguma dúvida, só nos avisar respondendo
-            a este e-mail ou através de contato@catarse.me
-          um_abra_o: Um abraço,
+          project_by_slug_url: "project_by_slug_url(permalink: project.permalink, ref: 'credits_warning_less_group'))}"
+          caso_voc_n_o: "Caso você não utilize os créditos até o dia 10/11, entraremos em contato para realizar o reembolso."
+          se_ficar_com_alguma: "Se ficar com alguma dúvida, só nos avisar respondendo a este e-mail ou através de contato@catarse.me"
+          um_abra_o: "Um abraço,"
           catarse: Catarse
