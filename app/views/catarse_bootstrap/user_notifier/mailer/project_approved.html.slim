@@ -3,43 +3,42 @@
 - project_link = edit_project_url(project)
 - company_name = ENV['COMPANY_NAME']
 
-| Olá, #{project.user.name}, o <strong>#{link_to 'seu projeto foi aprovado', project_link}</strong> e pode ir ao ar quando você desejar.
+= t('.ol_project_o_strong', project: (project.user.name), link_to1: (link_to t('.seu_projeto_foi_aprovado'), project_link))
 br/
 br/
 strong 
-  | Para iniciar a campanha você precisa fazer apenas 3 coisas!
+  = t('.para_iniciar_a_campanha')
 br/
 br/
 strong 
-  | 1. Preencher seus dados bancários na aba #{link_to 'CONTA', edit_project_url(project, anchor: 'user_settings')}.
+  = t('.1_preencher_seus_dados', link_to: (link_to t('.conta'), edit_project_url(project, anchor: 'user_settings')))
 br/
-| Precisamos dos seus dados bancários para realizar o repasse do dinheiro arrecadado caso você atinja sua meta de financiamento. 
-br/
-br/
-strong
-  | 2. Escolher a melhor data para começar.
-br/
-| É você mesmo quem escolhe a data de lançamento.
+= t('.precisamos_dos_seus_dados')
 br/
 br/
 strong
-  | 3. E apertar o botão de publicar o projeto. 
+  = t('.2_escolher_a_melhor')
+br/
+= t('.voc_mesmo_quem')
+br/
+br/
+strong
+  = t('.3_e_apertar_o')
 br/
 = image_tag 'https://s3.amazonaws.com/cdn.catarse/notifications_assets/btn-publish.gif', width: '600'
 br/
 br/
 strong
-  | Atenção
+  = t('.aten_o')
 br/
-| - Após a públicação é Tudo-ou-Nada e alguns aspectos do projeto não podem ser alterados! 
+= t('.ap_s_a')
 br/
-| - Só cobramos nossa taxa de 13% caso você tenha sucesso em sua captação! Entenda como fazemos o #{link_to 'repasse do dinheiro', 'http://suporte.catarse.me/hc/pt-br/articles/202037493-Como-ser%C3%A1-feito-o-repasse-do-dinheiro-'}.
-br/
-br/
-| Lembrando que você pode tirar dúvidas conosco respondendo diretamente a esta mensagem ou através do e-mail #{mail_to ENV['EMAIL_PROJECTS']}
+= t('.s_cobramos_nossa', link_to: (link_to t('.repasse_do_dinheiro'), 'http://suporte.catarse.me/hc/pt-br/articles/202037493-Como-ser%C3%A1-feito-o-repasse-do-dinheiro-'))
 br/
 br/
-| Um grande abraço,
+= t('.lembrando_que_voc_pode', mail_to: (mail_to ENV['EMAIL_PROJECTS']))
 br/
-| A equipe do #{company_name} te deseja uma ótima campanha! 
-
+br/
+= t('.um_grande_abra_o')
+br/
+= t('.a_equipe_do_company', company_name: (company_name))

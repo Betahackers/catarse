@@ -1,22 +1,22 @@
 - contribution = @notification.contribution
-|Olá, #{contribution.user.name}!
+= t('.ol_contribution', contribution: (contribution.user.name))
 br
 br
-|Você iniciou um apoio para o projeto #{link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink)}, porém ele não atingiu a meta estabelecida no Catarse.
+= t('.voc_iniciou_um_apoio', link_to: (link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink)))
 br
 br
-| <strong>Se você NÃO concluiu o apoio</strong>, pode desconsiderar as informações desse e-mail.
+= t('.strong_se_voc')
 br
 br
-| <strong>Se você concluiu o seu apoio</strong>, mas não recebeu a confirmação do Catarse ainda, você deverá receber nos próximos dias um recibo provisório. Logo depois, já que o projeto não foi financiado, receberá uma notificação com detalhes sobre o reembolso do seu apoio.
+= t('.strong_se_voc_1')
 br
 br
-| Lembrando que a chave de identificação do seu apoio é: <strong>#{contribution.payment_id}</strong>
+= t('.lembrando_que_a_chave', contribution: (contribution.payment_id))
 br
 br
-| Se ficou com alguma dúvida, entre em contato conosco respondendo a esta mensagem ou através do e-mail #{mail_to ENV['EMAIL_CONTACT']}
+= t('.se_ficou_com_alguma', mail_to: (mail_to ENV['EMAIL_CONTACT']))
 br
 br
-| Um abraço,
+= t('.um_abra_o')
 br
 | #{ENV['COMPANY_NAME']}

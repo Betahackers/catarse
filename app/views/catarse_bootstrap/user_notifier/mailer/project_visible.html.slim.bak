@@ -15,7 +15,7 @@ br/
 => t('.sugest_es_sobre_como', mail_to: (mail_to ENV['EMAIL_PROJECTS']))
 br/
 br/
-= t('.confira_nosso_link_tot('.link_to_link').guia_de_realizadores'), guides_url))
+= t('.confira_nosso_link_to', link_to: (link_to t('.guia_de_realizadores'), guides_url))
 br/
 br/
 = t('.lembre_se_que_strong')
@@ -54,8 +54,8 @@ br/
 = t('.alterar_recompensas_onde')
 br/
 br/
-| Por favor </strong>não esqueça de incluir na sua lista de contatos os e-mails:</strong>
-'  #{mail_to ENV['EMAIL_PROJECTS']} e #{mail_to ENV['EMAIL_CONTACT']} para evitar que nossas mensagens caiam na sua caixa de spam devido a filtros do seu email.
+= t('.por_favor_strong_n')
+=> t('.mail_to_e', mail_to: (mail_to ENV['EMAIL_PROJECTS']), mail_to1: (mail_to ENV['EMAIL_CONTACT']))
 br/
 br/
 = t('.um_abra_o')

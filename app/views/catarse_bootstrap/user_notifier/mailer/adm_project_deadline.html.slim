@@ -1,25 +1,25 @@
 - project = @notification.project
 - bank_account = project.user.bank_account
-|O projeto #{link_to(project.name, project_by_slug_url(project.permalink))} acabou de atingir seu prazo.
+= t('.o_projeto_link_to', link_to: (link_to(project.name, project_by_slug_url(project.permalink))))
 br
 br
-| Nome do projeto: #{project.name}
+= t('.nome_do_projeto_project', project: (project.name))
 br/
-| Valor arrecadado: #{project.display_pledged}
+= t('.valor_arrecadado_project', project: (project.display_pledged))
 br/
-| Data de finalização: #{project.display_expires_at}
+= t('.data_de_finaliza_o', project: (project.display_expires_at))
 br/
-| Conta Moip: #{project.user.moip_login}
+= t('.conta_moip_project', project: (project.user.moip_login))
 br/
 br/
-'Dados Bancarios:'
+=>Dados t('.bancarios')
 br/
-| Banco: #{bank_account.try(:name)}
+= t('.banco_bank_account', bank_account: (bank_account.try(:name)))
 br/
-| Agência: #{bank_account.try(:agency)}- #{bank_account.try(:agency_digit)}
+= t('.ag_ncia_bank_account', bank_account: (bank_account.try(:agency)), bank_account1: (bank_account.try(:agency_digit)))
 br/
-| Conta: #{bank_account.try(:account)} - #{bank_account.try(:account_digit)}
+= t('.conta_bank_account_bank', bank_account: (bank_account.try(:account)), bank_account1: (bank_account.try(:account_digit)))
 br/
-| Nome do titular: #{bank_account.try(:user_name)}
+= t('.nome_do_titular_bank', bank_account: (bank_account.try(:user_name)))
 br/
-| CPF: #{bank_account.try(:user_document)}
+= t('.cpf_bank_account', bank_account: (bank_account.try(:user_document)))

@@ -1,41 +1,40 @@
-p Seguem todos os dados do pagamento:
+p= t('.seguem_todos_os_dados')
 p
-  | Nome do apoiador: #{(contribution.payer_name || contribution.user.display_name)}
+  = t('.nome_do_apoiador_contribution', contribution: ((contribution.payer_name || contribution.user.display_name)))
   br/
-  | CPF/CNPJ do apoiador: #{(contribution.payer_document || contribution.user.cpf)}
+  = t('.cpf_cnpj_do_apoiador', contribution: ((contribution.payer_document || contribution.user.cpf)))
   br/
-  | Data da confirmação do apoio: #{l contribution.confirmed_at}
+  = t('.data_da_confirma_o', l: (l contribution.confirmed_at))
   br/
-  | Opção de pagamento: #{contribution.payment_choice || contribution.payment_method}
+  = t('.op_o_de_pagamento', contribution: (contribution.payment_choice || contribution.payment_method))
   br/
-  | Valor da contribuição: #{number_to_currency contribution.value}
+  = t('.valor_da_contribui_o', number_to_currency: (number_to_currency contribution.value))
   - if contribution.installments > 1
     br/
-    | Número de parcelas: #{contribution.installments}
+    = t('.n_mero_de_parcelas', contribution: (contribution.installments))
     br/
-    | Valor da parcela: #{number_to_currency(contribution.installment_value, precision: 2)}
+    = t('.valor_da_parcela_number', number_to_currency: (number_to_currency(contribution.installment_value, precision: 2)))
   br/
   -if contribution.reward.present?
-    | Recompensa selecionada: #{contribution.reward.description}
+    = t('.recompensa_selecionada_contribution', contribution: (contribution.reward.description))
     br/
-    | Estimativa de entrega: #{contribution.reward.display_deliver_estimate}
+    = t('.estimativa_de_entrega_contribution', contribution: (contribution.reward.display_deliver_estimate))
     br/
-  | ID do apoio: #{contribution.payment_id}
+  = t('.id_do_apoio_contribution', contribution: (contribution.payment_id))
   br/
-  | Nome/Razão Social do realizador: #{ contribution.project.user.full_name.presence || contribution.project.user.name.presence }
+  = t('.nome_raz_o_social', contribution: ( contribution.project.user.full_name.presence || contribution.project.user.name.presence ))
   br/
-  | CPF/CNPJ do realizador: #{contribution.project.user.cpf}
+  = t('.cpf_cnpj_do_realizador', contribution: (contribution.project.user.cpf))
 
 p
-  ' É importante ressaltar que o Catarse é apenas intermediador desse processo,
-  ' portanto, se tiver alguma dúvida em relação ao projeto ou recompensa selecionada entre
-  ' em contato diretamente com o realizador através do e-mail #{mail_to contribution.project.user.email}.
-  ' Ah! Lembre-se de guardar este email, pois ele contém informações importantes
-  ' a respeito da sua contribuição ao projeto.
-p Se ficou com alguma dúvida, entre em contato conosco respondendo a esta mensagem ou através do e-mail #{mail_to ENV['EMAIL_CONTACT']}
+  => t('.importante_ressaltar_que')
+  => t('.portanto_se_tiver_alguma')
+  => t('.em_contato_diretamente_com', mail_to: (mail_to contribution.project.user.email))
+  => t('.ah_lembre_se_de')
+  => t('.a_respeito_da_sua')
+p= t('.se_ficou_com_alguma', mail_to: (mail_to ENV['EMAIL_CONTACT']))
 
 p
-  | Um abraço e muito obrigado,
+  = t('.um_abra_o_e')
   br/
-  | #{ENV['COMPANY_NAME']}
-
+  = t('.env', ENV: (ENV['COMPANY_NAME']))

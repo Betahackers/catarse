@@ -10,7 +10,7 @@ br
 = t('.o_seu_apoio_essencial', contribution: (contribution.project.total_contributions))
 br
 br
-| #{ link_to "Você tem até #{l(contribution.project.expires_at)} para realizar sua contribuição de onde parou.", edit_project_contribution_url(project_id: contribution.project.id, id: contribution.id, ref: 'notification_pending') }
+= t('.link_to', link_to: ( link_to t('.voc_tem_at_l', l: (l(contribution.project.expires_at))), edit_project_contribution_url(project_id: contribution.project.id, id: contribution.id, ref: 'notification_pending') ))
 br
 br
 = t('.caso_o_motivo_para')
@@ -21,4 +21,4 @@ br
 br
 = t('.um_abra_o')
 br
-|#{ENV['COMPANY_NAME']}
+= t('.env', ENV: (ENV['COMPANY_NAME']))

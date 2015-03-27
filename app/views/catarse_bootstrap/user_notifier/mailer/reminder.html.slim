@@ -2,14 +2,14 @@
 - user = @notification.user
 - company_name = ENV['COMPANY_NAME']
 
-|Olá, <strong>#{user.display_name}</strong>!
+= t('.ol_strong_user_strong', user: (user.display_name))
 br
 br
-| Este é o lembrete de que o projeto #{link_to project.name, project_by_slug_url(project.permalink, ref: 'notificacao-reminder')} termina em 48 horas
+= t('.este_o_lembrete_de', link_to: (link_to project.name, project_by_slug_url(project.permalink, ref: 'notificacao-reminder')))
 br
-| Agora é a hora de você fazer parte dessa campanha ;)
+= t('.agora_a_hora_de')
 br
 br
-|Um abraço,
+= t('.um_abra_o')
 br
 | #{company_name}

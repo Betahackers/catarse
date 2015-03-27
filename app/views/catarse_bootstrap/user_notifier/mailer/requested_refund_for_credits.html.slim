@@ -1,29 +1,29 @@
 - contribution = @notification.contribution
 
-| Olá Comunidade!
+= t('.ol_comunidade')
 br/
 br/
-| Esse apoio para projeto não-financiado, foi realizado através de créditos. Por favor, entre em contato com o realizador para efetuar o reembolso.
+= t('.esse_apoio_para_projeto')
 br/
 br/
-| Usuário #{contribution.user.display_name}
+= t('.usu_rio_contribution', contribution: (contribution.user.display_name))
 br/
-| Email do usuário: #{contribution.user.email}
+= t('.email_do_usu_rio', contribution: (contribution.user.email))
 br/
-| Email de pagamento: #{contribution.payer_email}
+= t('.email_de_pagamento_contribution', contribution: (contribution.payer_email))
 br/
-| Nome de pagamento: #{contribution.payer_name}
+= t('.nome_de_pagamento_contribution', contribution: (contribution.payer_name))
 br/
-| Projeto: #{contribution.project.name}
+= t('.projeto_contribution', contribution: (contribution.project.name))
 br/
-| Chave do apoio: #{contribution.key}
+= t('.chave_do_apoio_contribution', contribution: (contribution.key))
 br/
-| Identificador no meio de pagamento: #{contribution.payment_id}
+= t('.identificador_no_meio_de', contribution: (contribution.payment_id))
 br/
-| Valor do apoio: #{contribution.decorate.display_value} 
+= t('.valor_do_apoio_contribution', contribution: (contribution.decorate.display_value))
 br/
-| Meio de pagamento: #{contribution.payment_method}
+= t('.meio_de_pagamento_contribution', contribution: (contribution.payment_method))
 br/
-| Forma de pagamento: #{contribution.payment_choice}
+= t('.forma_de_pagamento_contribution', contribution: (contribution.payment_choice))
 br/
-| Data de criação: #{contribution.created_at}
+= t('.data_de_cria_o', contribution: (contribution.created_at))

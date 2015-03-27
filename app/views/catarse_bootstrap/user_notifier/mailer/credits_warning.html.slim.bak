@@ -9,7 +9,7 @@ br
 br
 br
 -user.recommended_projects.limit(3).each do |project|
-  |#{link_to(project.name, "#{ENV['BASE_URL']}/projects/#{project.to_param}")}
+  =#{link_to(project.name, t('.env_projects_project1', ENV: (ENV['BASE_URL']), project1: (project.to_param))
   br
   |#{project.headline}
   br
@@ -19,7 +19,7 @@ br
 = t('.pra_n_o_ficar')
 br
 br
-= t('.1_link_tot('.link_to_link').escolher_o_projeto_que'), explore_url)))
+= t('.1_link_to', link_to: (link_to(t('.escolher_o_projeto_que'), explore_url)))
 br
 = t('.2_clicar_em_quero')
 br

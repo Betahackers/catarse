@@ -1,7 +1,7 @@
 - contribution = @notification.contribution
-| Olá
+= t('.ol')
 br/
 br/
-| O apoio #{contribution.key} para o projeto #{contribution.project.name} foi confirmado com o valor menor do valor do apoio do projeto.
+= t('.o_apoio_contribution_para', contribution: (contribution.key), contribution1: (contribution.project.name))
 br/
 br/

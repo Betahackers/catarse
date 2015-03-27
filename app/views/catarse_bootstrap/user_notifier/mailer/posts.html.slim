@@ -5,8 +5,7 @@ strong= update.title
 == update.email_comment_html
 br
 br
-|Veja o projeto: #{link_to update.project.name, project_by_slug_url(permalink: update.project.permalink)}
+= t('.veja_o_projeto_link', link_to: (link_to update.project.name, project_by_slug_url(permalink: update.project.permalink)))
 br/
 br/
-| #{link_to 'Descadastrar', unsubscribe_notifications_user_url(user)} o recebimento de novidades desse projeto
-
+= t('.link_to_o', link_to: (link_to t('.descadastrar'), unsubscribe_notifications_user_url(user)))

@@ -1,8 +1,7 @@
 - contribution = @notification.contribution
-p Olá, <strong>#{contribution.user.display_name}</strong>!
+p= t('.ol_strong_contribution_strong', contribution: (contribution.user.display_name))
 p
-  | Parabéns! O projeto #{link_to(contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink))} que, 
-  | incluindo você, teve #{contribution.project.total_contributions} apoiadores, foi financiado com sucesso no #{ENV['COMPANY_NAME']}.
-p Esse e-mail serve como um <strong>recibo definitivo da sua contribuição</strong>.
+  = t('.parab_ns_o_projeto', link_to: (link_to(contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink))))
+  = t('.incluindo_voc_teve_contribution', contribution: (contribution.project.total_contributions), ENV1: (ENV['COMPANY_NAME']))
+p= t('.esse_e_mail_serve')
 = render partial: 'contribution_data', locals: {contribution: contribution}
-

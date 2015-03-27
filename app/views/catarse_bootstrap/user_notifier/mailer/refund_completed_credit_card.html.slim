@@ -1,19 +1,19 @@
 -contribution = @notification.contribution
 - company_name = ENV['COMPANY_NAME']
 - contact_email = ENV['EMAIL_CONTACT']
-|Olá, <strong>#{contribution.user.display_name}</strong>!
+= t('.ol_strong_contribution_strong', contribution: (contribution.user.display_name))
 br
 br
-| O reembolso do seu apoio para o projeto #{link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink)} no #{company_name} acabou de ser realizado! O crédito efetivo deverá acontecer na próxima fatura, caso ela ainda esteja em aberto, ou na próxima, caso a desse mês já tenha sido fechada.
+= t('.o_reembolso_do_seu', link_to: (link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink)), company_name1: (company_name))
 br
 br
-| A chave de identificação do seu apoio é: #{contribution.payment_id}
+= t('.a_chave_de_identifica', contribution: (contribution.payment_id))
 br/
 br/
-| Se ficou com alguma dúvida ou teve algum problema nesse processo, entre em contato conosco respondendo a
-'  esta mensagem ou através do e-mail #{mail_to contact_email}. Para agilizar o atendimento, pedimos que indique a chave de identificação.
+= t('.se_ficou_com_alguma')
+=> t('.esta_mensagem_ou_atrav', mail_to: (mail_to contact_email))
 br
 br
-|Um abraço,
+= t('.um_abra_o')
 br
 | #{company_name}

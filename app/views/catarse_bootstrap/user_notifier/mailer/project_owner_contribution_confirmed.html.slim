@@ -4,16 +4,16 @@
 - project_link = project_by_slug_url(permalink: project.permalink)
 - company_name = ENV['COMPANY_NAME']
 
-| Olá, <strong>#{project.user.decorate.display_name}</strong>!
+= t('.ol_strong_project_strong', project: (project.user.decorate.display_name))
 br
 br
-| Hoje seu projeto recebeu #{link_to "#{confirmed_contributions_today.length} novos apoios", project_by_slug_url(permalink: project.permalink, anchor: 'contributions')}, parabéns!
+= t('.hoje_seu_projeto_recebeu', link_to: (link_to t('.confirmed_contributions_today', confirmed_contributions_today: (confirmed_contributions_today.length)), project_by_slug_url(permalink: project.permalink, anchor: 'contributions')))
 br/
 br/
-| #{link_to 'Poste uma mensagem para os apoiadores', edit_project_url(project, anchor: 'posts')} e #{link_to 'acompanhe as métricas da sua arrecadação', edit_project_url(project, anchor: 'reports')}!
+= t('.link_to_e', link_to: (link_to t('.poste_uma_mensagem_para'), edit_project_url(project, anchor: 'posts')), link_to1: (link_to t('.acompanhe_as_m_tricas'), edit_project_url(project, anchor: 'reports')))
 br
 br
-| Mais informações sobre os apoios do dia:
+= t('.mais_informa_es_sobre')
 br
 br
 table width="500" border="1" cellpadding="10" cellspacing="0" style='font-size: 13px;'
@@ -32,9 +32,9 @@ table width="500" border="1" cellpadding="10" cellspacing="0" style='font-size: 
         td= contribution.reward.try(:decorate).try(:display_description)
 br/
 br/
-| Lembrando que você pode tirar dúvidas conosco respondendo diretamente a esta mensagem ou através do e-mail #{mail_to ENV['EMAIL_PROJECTS'] }
+= t('.lembrando_que_voc_pode', mail_to: (mail_to ENV['EMAIL_PROJECTS'] ))
 br/
 br/
-| Um abraço,
+= t('.um_abra_o')
 br
 = company_name

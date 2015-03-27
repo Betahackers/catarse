@@ -1,17 +1,17 @@
 - contribution = @notification.contribution
-p Olá, <strong>#{contribution.user.display_name}</strong> !
-p Você acabou de gerar um boleto para apoiar o projeto #{link_to(contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink))}.
+p= t('.ol_strong_contribution_strong', contribution: (contribution.user.display_name))
+p= t('.voc_acabou_de_gerar', link_to: (link_to(contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink))))
 p 
-  | Após o pagamento, levamos até 3 dias úteis para receber a confirmação. 
-  | Quando essa confirmação ocorrer, mandaremos outro email com todos os detalhes da transação.
+  = t('.ap_s_o_pagamento')
+  = t('.quando_essa_confirma_o')
 p 
-  | Para imprimir o boleto gerado, basta 
-  = link_to 'clicar aqui', contribution.decorate.display_slip_url
-  | .
+  = t('.para_imprimir_o_boleto')
+  = link_to t('.clicar_aqui'), contribution.decorate.display_slip_url
+  = t('.default_key')
 
-p O prazo de vencimento do boleto é de 2 dias corridos. Para alterar a data de vencimento, entre em contato conosco respondendo a esta mensagem ou através do e-mail #{mail_to ENV['EMAIL_CONTACT']}
+p= t('.o_prazo_de_vencimento', mail_to: (mail_to ENV['EMAIL_CONTACT']))
 
 p 
-  | Um abraço,
+  = t('.um_abra_o')
   br/
   | #{ENV['COMPANY_NAME']}

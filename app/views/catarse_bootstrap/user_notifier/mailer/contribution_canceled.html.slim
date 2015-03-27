@@ -2,20 +2,20 @@
 - company_name = ENV['COMPANY_NAME']
 - contact_email = ENV['EMAIL_CONTACT']
 
-|Olá, <strong>#{contribution.user.display_name}</strong>!
+= t('.ol_strong_contribution_strong', contribution: (contribution.user.display_name))
 br
 br
-| Não recebemos a confirmação de pagamento do apoio para o projeto #{link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink, ref: 'notificacao_cancelado')}. 
+= t('.n_o_recebemos_a', link_to: (link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink, ref: 'notificacao_cancelado')))
 br
 br
-| Para se tornar realidade, esse projeto precisa muito do seu apoio, portanto, você tem até #{l(contribution.project.expires_at)} 
-| para realizar uma #{link_to 'nova contribuição', project_by_slug_url(permalink: contribution.project.permalink, ref: 'notificacao_cancelado')}. 
-| Junte-se a mais <strong>#{contribution.project.total_contributions}</strong> pessoas que querem tirar o projeto #{link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink, ref: 'notificacao_cancelado')} do papel.
+= t('.para_se_tornar_realidade', l: (l(contribution.project.expires_at)))
+= t('.para_realizar_uma_link', link_to: (link_to t('.nova_contribui_o'), project_by_slug_url(permalink: contribution.project.permalink, ref: 'notificacao_cancelado')))
+= t('.junte_se_a_mais', contribution: (contribution.project.total_contributions), link_to1: (link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink, ref: 'notificacao_cancelado')))
 br
 br
-| Se ficou com alguma dúvida, entre em contato conosco respondendo a esta mensagem ou através do e-mail #{mail_to contact_email}
+= t('.se_ficou_com_alguma', mail_to: (mail_to contact_email))
 br
 br
-|Um abraço,
+= t('.um_abra_o')
 br
-| #{company_name}
+= t('.company_name', company_name: (company_name))

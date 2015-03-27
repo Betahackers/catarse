@@ -1,33 +1,33 @@
 - project = @notification.project
-| Solicitação de análise do projeto: #{project.name}
+= t('.solicita_o_de_an', project: (project.name))
 br/
-| Frase de efeito: #{project.headline}
+= t('.frase_de_efeito_project', project: (project.headline))
 br/
-| Tempo de preparo: #{distance_of_time_in_words(project.created_at, project.sent_to_analysis_at)}
-br/
-br/
-strong SOBRE O PROJETO
+= t('.tempo_de_preparo_distance', distance_of_time_in_words: (distance_of_time_in_words(project.created_at, project.sent_to_analysis_at)))
 br/
 br/
-| Link: #{link_to project_by_slug_url(project.permalink), project_by_slug_url(project.permalink)}
-br/
-| Categoria: #{link_to project.category, explore_url(anchor: "by_category/#{project.category_id}")}
-br/
-| Valor da meta: #{number_to_currency project.goal}
+strong= t('.sobre_o_projeto')
 br/
 br/
-strong SOBRE O REALIZADOR
+= t('.link_link_to', link_to: (link_to project_by_slug_url(project.permalink), project_by_slug_url(project.permalink)))
+br/
+= t('.categoria_link_to', link_to: (link_to project.category, explore_url(anchor: "by_category/#{project.category_id))
+br/
+= t('.valor_da_meta_number', number_to_currency: (number_to_currency project.goal))
 br/
 br/
-| Nome: #{project.user.full_name}
+strong= t('.sobre_o_realizador')
 br/
-| Apelido: #{project.user.name}
 br/
-| Email: #{project.user.email}
+= t('.nome_project', project: (project.user.full_name))
 br/
-| Telefone: #{project.user.phone_number}
+= t('.apelido_project', project: (project.user.name))
 br/
-| Links: 
+= t('.email_project', project: (project.user.email))
+br/
+= t('.telefone_project', project: (project.user.phone_number))
+br/
+= t('.links')
 br/
 - project.user.links.each do |link|
   = link.link
@@ -38,16 +38,16 @@ br/
 br/
 = project.user.other_link
 br/
-| Projetos Apoiados: #{project.user.total_contributed_projects}
+= t('.projetos_apoiados_project', project: (project.user.total_contributed_projects))
 br/
-| Projetos Financiados: #{project.user.projects.with_state('successful').count}
+= t('.projetos_financiados_project', project: (project.user.projects.with_state('successful').count))
 br/
-| Projetos Não financiados: #{project.user.projects.with_state('failed').count}
+= t('.projetos_n_o_financiados', project: (project.user.projects.with_state('failed').count))
 br/
-| Projetos Em Rascunho: #{project.user.projects.with_state('draft').count}
+= t('.projetos_em_rascunho_project', project: (project.user.projects.with_state('draft').count))
 br/
-| Projetos Em Análise: #{project.user.projects.with_state('in_analysis').count} 
+= t('.projetos_em_an_lise', project: (project.user.projects.with_state('in_analysis').count))
 br/
-| Projetos Aprovados: #{project.user.projects.with_state('approved').count}
+= t('.projetos_aprovados_project', project: (project.user.projects.with_state('approved').count))
 br/
-| Projetos Recusados: #{project.user.projects.with_state('rejected').count} 
+= t('.projetos_recusados_project', project: (project.user.projects.with_state('rejected').count))

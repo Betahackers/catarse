@@ -1,50 +1,49 @@
 - project = @notification.project
 - project_link = edit_project_url(project)
-|Olá #{project.user.name}, tudo bem? Aqui quem fala é a Luciana do Catarse!
+= t('.ol_project_tudo_bem', project: (project.user.name))
 br/
 br/
-| Vi que você criou a página de <strong>rascunho</strong> do projeto #{link_to(project.name, project_link)}  mas ainda não nos enviou. Após o envio, a página ficará <strong>em análise</strong> por alguns dias e você será acompanhado por mim ou por outra pessoa da nossa equipe de atendimento.
+= t('.vi_que_voc_criou', link_to: (link_to(project.name, project_link)))
 br/
 br/
-| Além de revisar as informações sobre a sua campanha, nós vamos te oferecer uma consultoria com dicas e orientações sobre o que melhorar no seu projeto. Quando estiver tudo pronto a página poderá ser <strong>aprovada</strong> e você escolherá o melhor dia para publicá-la no site, iniciando a arrecadação.
+= t('.al_m_de_revisar')
 br/
 br/
-| Deseja enviar o #{link_to 'seu rascunho de projeto', project_link} para a nossa análise?
+= t('.deseja_enviar_o_link', link_to: (link_to t('.seu_rascunho_de_projeto'), project_link))
 br/
 br/
 = image_tag 'https://s3.amazonaws.com/cdn.catarse/notifications_assets/btn-send-to-analysis.gif', width: 600
 br/
 br/
-strong Lembre-se:
+strong= t('.lembre_se')
 br/
-| Após o envio, todas as informações do seu projeto ainda poderão ser editadas! 
+= t('.ap_s_o_envio')
 br/
-| Quando o projeto for aprovado, é você quem escolhe o dia para iniciar sua arrecadação. 
-br/
-br/
-| Se tem alguma dúvida te atrapalhando manda aqui pra mim que eu te ajudo!
+= t('.quando_o_projeto_for')
 br/
 br/
-|Beijo,
+= t('.se_tem_alguma_d')
+br/
+br/
+= t('.beijo')
 br/
 strong
-  |Luciana Masini
+  =Luciana t('.masini')
 br/
-|Catalisadora de projetos criativos
+= t('.catalisadora_de_projetos_criativos')
 br/
 br/
 strong 
-  | P.S - Você quer um tempo para refletir e aprender mais? 
+  = t('.p_s_voc_quer')
 br/
-| As dicas fundamentais para estruturar o seu projeto e conduzir sua campanha podem ser encontradas nos nossos diversos canais de informação. Confira abaixo uma lista com links importantes!
+= t('.as_dicas_fundamentais_para')
 br/
-| - Para conhecer todas as regras do jogo e tirar dúvidas, acesse a #{link_to 'Central de Suporte', 'http://suporte.catarse.me/hc/pt-br', target: '__blank'}
+= t('.para_conhecer_todas', link_to: (link_to t('.central_de_suporte'), 'http://suporte.catarse.me/hc/pt-br', target: '__blank'))
 br/
-| - Para se inspirar, leia as editorias de #{link_to 'Historias de projetos', 'http://blog.catarse.me/category/projeto/', target: '__blank'} e #{ link_to 'Dicas de campanha', 'http://blog.catarse.me/category/dicas/', target: '__blank'} do Blog do Catarse
+= t('.para_se_inspirar', link_to: (link_to t('.historias_de_projetos'), 'http://blog.catarse.me/category/projeto/', target: '__blank'), link_to1: ( link_to t('.dicas_de_campanha'), 'http://blog.catarse.me/category/dicas/', target: '__blank'))
 br/
-| - Para montar uma campanha afiada, confira nosso #{link_to 'Guia dos Realizadores', guides_url(anchor: 'starting'), target: '__blank'}
+= t('.para_montar_uma', link_to: (link_to t('.guia_dos_realizadores'), guides_url(anchor: 'starting'), target: '__blank'))
 br/
-| - Para entender o cenário do financiamento coletivo no brasil, estude a #{link_to 'pesquisa #RFCBr', 'http://pesquisa.catarse.me/', target: '__blank'}
+= t('.para_entender_o', link_to: (link_to t('.pesquisa_rfcbr'), 'http://pesquisa.catarse.me/', target: '__blank'))
 br/
-| - Para sentir o que seus apoiadores sentirão, #{link_to 'apoie um projeto', explore_url, target: '__blank'}
-
+= t('.para_sentir_o', link_to: (link_to t('.apoie_um_projeto'), explore_url, target: '__blank'))

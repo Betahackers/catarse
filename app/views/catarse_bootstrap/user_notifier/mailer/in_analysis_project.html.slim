@@ -4,41 +4,41 @@
 - project_link = edit_project_url(project)
 - company_name = ENV['COMPANY_NAME']
 
-|Olá, #{user.name}!
+= t('.ol_user', user: (user.name))
 br
 br
-| Muito obrigado por nos enviar o projeto #{link_to project.name, project_link, target: '__blank'}
+= t('.muito_obrigado_por_nos', link_to: (link_to project.name, project_link, target: '__blank'))
 br/
 br/
-| Apartir de agora, nossa equipe de projetos vai <strong>avaliar todo o conteúdo</strong> que você colocou na página e (em no máximo 4 dias úteis) 
-'  você receberá um e-mail informando se ela foi <strong>Aprovada, Recusada</strong> ou se vai continuar <strong>Em Análise</strong> por mais algum tempo.
+= t('.apartir_de_agora_nossa')
+=> t('.voc_receber_um_e')
 br
 br
-strong O que significa isso?
+strong= t('.o_que_significa_isso')
 br/
 br/
-strong Página foi Recusada
+strong= t('.p_gina_foi_recusada')
 br/
-| O seu projeto não tem o perfil do #{company_name} e/ou encontramos informarmações que desrespeitam as nossas regras. Essa página não poderá ser publicada na plataforma.
-br/
-br/
-strong Página continua Em Análise
-br/
-| O projeto tem o perfil do #{company_name} e está de acordo com as regras, só que a página ainda não está pronta para ser públicada na plataforma. Receba nossos comentários, dicas e sugestões. Finalize as edições na página do projeto e avise o nosso agente de suporte quando quiser que ele faça uma nova avaliação.
+= t('.o_seu_projeto_n', company_name: (company_name))
 br/
 br/
-strong Página foi Aprovada 
+strong= t('.p_gina_continua_em')
 br/
-| Vamos em frente, iniciar a arrecadação só depende de você! Escolha a melhor data e publique a página do seu projeto na plataforma. 
+= t('.o_projeto_tem_o', company_name: (company_name))
+br/
+br/
+strong= t('.p_gina_foi_aprovada')
+br/
+= t('.vamos_em_frente_iniciar')
 br/
 br/
 strong
-  | Para acompanhar a mudança de status da página do projeto #{link_to project.name, project_link, target: '__blank'} fique de olho na caixa de entrada do seu e-mail e no painel de controle do seu projeto.
+  = t('.para_acompanhar_a_mudan', link_to: (link_to project.name, project_link, target: '__blank'))
 br/
 br/
-| Lembrando que você pode tirar dúvidas conosco a qualquer momento respondendo diretamente a esta mensagem ou através do e-mail #{mail_to ENV['EMAIL_PROJECTS']} 
+= t('.lembrando_que_voc_pode', mail_to: (mail_to ENV['EMAIL_PROJECTS']))
 br/
 br/
-|Um abraço,
+= t('.um_abra_o')
 br/
 = company_name

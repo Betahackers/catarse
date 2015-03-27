@@ -2,15 +2,15 @@
 - company_name = ENV['COMPANY_NAME']
 - contact_email = ENV['EMAIL_CONTACT']
 
-|Olá, <strong>#{contribution.user.display_name}</strong>!
+= t('.ol_strong_contribution_strong', contribution: (contribution.user.display_name))
 br
 br
-| Não recebemos a confirmação de pagamento do boleto gerado para o projeto #{link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink, ref: 'notificacao_cancelado')}.
+= t('.n_o_recebemos_a', link_to: (link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink, ref: 'notificacao_cancelado')))
 br
 br
-| Caso você ainda tenha interesse em apoiar o projeto, podemos alterar a data de vencimento para você. Para isso, basta entrar em contato conosco respondendo a esta mensagem ou através do e-mail #{mail_to contact_email}
+= t('.caso_voc_ainda_tenha', mail_to: (mail_to contact_email))
 br
 br
-|Um abraço,
+= t('.um_abra_o')
 br
-| #{company_name}
+= t('.company_name', company_name: (company_name))

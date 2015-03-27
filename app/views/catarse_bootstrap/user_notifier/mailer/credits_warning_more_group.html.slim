@@ -1,50 +1,46 @@
 - user = @notification.user
 
-| Oi #{user.name},
+= t('.oi_user', user: (user.name))
 br/
 br/
-| Para podermos simplificar ainda mais o processo de reembolsos, 
-'  a partir de 10/11 #{link_to 'não existirão mais créditos no Catarse', 'http://blog.catarse.me/simplificacao-dos-reembolsos-e-o-fim-dos-creditos/', target: '__blank'}. É por isso que viemos aqui falar com você.
+= t('.para_podermos_simplificar_ainda')
+=> t('.a_partir_de_10', link_to: (link_to t('.n_o_existir_o'), 'http://blog.catarse.me/simplificacao-dos-reembolsos-e-o-fim-dos-creditos/', target: '__blank'))
 br/
 br/
-| Pelo que checamos, você já chegou a usar parte dos seus créditos, mas ainda tem #{user.display_credits} por aqui. É esse dinheiro que pode ajudar a fazer a diferença em um projeto em que você acredita. :-)
+= t('.pelo_que_checamos_voc', user: (user.display_credits))
 br/
 br/
-|Para apoiar um projeto, o processo é o mesmo:
+= t('.para_apoiar_um_projeto')
 br/
 br/
-| 1 - Escolher o projeto que quer apoiar;
+= t('.1_escolher_o_projeto')
 br/
-| 2 - Clicar em Apoiar este projeto;
+= t('.2_clicar_em_apoiar')
 br/
-| 3 - Colocar o valor que quer apoiar e selecionar o campo confirmando que você quer usar seus créditos.
+= t('.3_colocar_o_valor')
 br/
-| 4 - Clicar no botão Revisar e realizar pagamento na parte debaixo da tela;
+= t('.4_clicar_no_bot')
 br/
 | 5 - Pronto! Seu apoio será confirmado =)
 br/
 br/
-| <strong>Dicas de projetos</strong>
+= t('.strong_dicas_de')
 br/
 br/
 - user.recommended_projects.limit(3).each do |project|
-  |#{link_to(project.name, project_by_slug_url(permalink: project.permalink, ref: 'credits_warning_more_group'))}
+  =#{link_to(project.name, t('.project_by_slug_url')
   br/
   |#{project.headline}
   br/
   br/
 br/
 br/
-| Caso você não utilize os créditos até o dia 10/11, entraremos em contato para realizar o reembolso.
+= t('.caso_voc_n_o')
 br/
 br/
-| Se ficar com alguma dúvida, só nos avisar respondendo a este e-mail ou através do contato@catarse.me 
+= t('.se_ficar_com_alguma')
 br/
 br/
-| Um abraço
+= t('.um_abra_o')
 br/
-| Catarse
-
-
-
-
+= t('.catarse')

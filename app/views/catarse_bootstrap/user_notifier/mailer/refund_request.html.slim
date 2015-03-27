@@ -1,12 +1,12 @@
 - contribution = @notification.contribution
-p Usuário #{contribution.user.display_name}
-p Email do usuário: #{contribution.user.email}
-p Email de pagamento: #{contribution.payer_email}
-p Nome de pagamento: #{contribution.payer_name}
-p Projeto: #{contribution.project.name}
-p Chave do apoio: #{contribution.key}
-p Identificador no meio de pagamento: #{contribution.payment_id}
-p Valor do apoio: #{contribution.decorate.display_value} 
-p Meio de pagamento: #{contribution.payment_method}
-p Forma de pagamento: #{contribution.payment_choice}
-p Data de criação: #{contribution.created_at}
+p= t('.usu_rio_contribution', contribution: (contribution.user.display_name))
+p= t('.email_do_usu_rio', contribution: (contribution.user.email))
+p= t('.email_de_pagamento_contribution', contribution: (contribution.payer_email))
+p= t('.nome_de_pagamento_contribution', contribution: (contribution.payer_name))
+p= t('.projeto_contribution', contribution: (contribution.project.name))
+p= t('.chave_do_apoio_contribution', contribution: (contribution.key))
+p= t('.identificador_no_meio_de', contribution: (contribution.payment_id))
+p= t('.valor_do_apoio_contribution', contribution: (contribution.decorate.display_value))
+p= t('.meio_de_pagamento_contribution', contribution: (contribution.payment_method))
+p= t('.forma_de_pagamento_contribution', contribution: (contribution.payment_choice))
+p= t('.data_de_cria_o', contribution: (contribution.created_at))
