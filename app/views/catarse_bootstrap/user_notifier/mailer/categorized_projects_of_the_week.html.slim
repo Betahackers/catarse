@@ -1,10 +1,10 @@
 - user = @notification.user
 - category = @notification.category
 
-= t('.ol_user', user: (user.name))
+= raw t('.ol_user', user: (user.name))
 br/
 br/
-= t('.novidades_dessa_semana_na', category: (category.name_pt))
+= raw t('.novidades_dessa_semana_na', category: (category.name_pt))
 br/
 br/
 - category.projects.of_current_week.with_state('online').each do |project|
@@ -15,7 +15,7 @@ br/
   br
 br/
 br/
-= t('.um_abra_o')
+= raw t('.um_abra_o')
 br/
 | #{ENV['COMPANY_NAME']}
 br/

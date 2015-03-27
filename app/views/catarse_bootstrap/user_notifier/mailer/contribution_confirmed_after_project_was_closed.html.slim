@@ -1,8 +1,8 @@
 - contribution = @notification.contribution
-= t('.projeto_contribution', contribution: (contribution.project.name))
+= raw t('.projeto_contribution', contribution: (contribution.project.name))
 br
-= t('.chave_contribution', contribution: (contribution.key))
+= raw t('.chave_contribution', contribution: (contribution.key))
 br
-= t('.criado_em_contribution', contribution: (contribution.created_at))
+= raw t('.criado_em_contribution', contribution: (contribution.created_at))
 br
-= t('.confirmado_em_contribution', contribution: (contribution.confirmed_at))
+= raw t('.confirmado_em_contribution', contribution: (contribution.confirmed_at))

@@ -1,33 +1,33 @@
 - user = @notification.user
 
-= t('.ol_user', user: (user.display_name))
+= raw t('.ol_user', user: (user.display_name))
 br/
 br/
-= t('.esse_email_para_notificar', link_to: (link_to t('.termos_de_uso'), 'http://www.catarse.me/pt/terms-of-use', target: '__blank'))
-=> t('.e_link_to_no', link_to: (link_to t('.pol_tica_de_privacidade'), 'http://www.catarse.me/pt/privacy-policy', target: '__blank' ))
+= raw t('.esse_email_para_notificar', link_to: (link_to raw t('.termos_de_uso'), 'http://www.catarse.me/pt/terms-of-use', target: '__blank'))
+=> raw t('.e_link_to_no', link_to: (link_to raw t('.pol_tica_de_privacidade'), 'http://www.catarse.me/pt/privacy-policy', target: '__blank' ))
 br/
 br/
-= t('.resumindo_as_mudan_as')
+= raw t('.resumindo_as_mudan_as')
 br/
 br/
-= t('.projetos_n_o')
+= raw t('.projetos_n_o')
 br/
-= t('.n_o_haver')
+= raw t('.n_o_haver')
 br/
-= t('.se_o_projeto')
+= raw t('.se_o_projeto')
 br/
-= t('.se_o_projeto_1')
+= raw t('.se_o_projeto_1')
 br/
-= t('.op_o_de')
-br/
-br/
-= t('.para_ler_todos_os', link_to: (link_to t('.post_no_blog'), 'http://blog.catarse.me/pode-parcelar-pode-e-salvar-o-cartao-e-automatizar-reembolsos-e-repasses/', target: '__blank'))
-=> t('.e_link_to_atualizados', link_to: (link_to t('.pol_tica_de_privacidade'), 'http://www.catarse.me/pt/privacy-policy', taget: '__blank'))
+= raw t('.op_o_de')
 br/
 br/
-= t('.se_ficou_com_alguma', mail_to: (mail_to ENV['EMAIL_CONTACT']))
+= raw t('.para_ler_todos_os', link_to: (link_to raw t('.post_no_blog'), 'http://blog.catarse.me/pode-parcelar-pode-e-salvar-o-cartao-e-automatizar-reembolsos-e-repasses/', target: '__blank'))
+=> raw t('.e_link_to_atualizados', link_to: (link_to raw t('.pol_tica_de_privacidade'), 'http://www.catarse.me/pt/privacy-policy', taget: '__blank'))
 br/
 br/
-= t('.um_abra_o')
+= raw t('.se_ficou_com_alguma', mail_to: (mail_to ENV['EMAIL_CONTACT']))
 br/
-= t('.catarse')
+br/
+= raw t('.um_abra_o')
+br/
+= raw t('.catarse')

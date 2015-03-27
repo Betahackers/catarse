@@ -5,7 +5,7 @@ strong= update.title
 == update.email_comment_html
 br
 br
-= t('.veja_o_projeto_link', link_to: (link_to update.project.name, project_by_slug_url(permalink: update.project.permalink)))
+= raw t('.veja_o_projeto_link', link_to: (link_to update.project.name, project_by_slug_url(permalink: update.project.permalink)))
 br/
 br/
-= t('.link_to_o', link_to: (link_to t('.descadastrar'), unsubscribe_notifications_user_url(user)))
+= raw t('.link_to_o', link_to: (link_to raw t('.descadastrar'), unsubscribe_notifications_user_url(user)))

@@ -2,14 +2,14 @@
 - user = @notification.user
 - company_name = ENV['COMPANY_NAME']
 
-= t('.ol_strong_user_strong', user: (user.display_name))
+= raw t('.ol_strong_user_strong', user: (user.display_name))
 br
 br
-= t('.este_o_lembrete_de', link_to: (link_to project.name, project_by_slug_url(project.permalink, ref: 'notificacao-reminder')))
+= raw t('.este_o_lembrete_de', link_to: (link_to project.name, project_by_slug_url(project.permalink, ref: 'notificacao-reminder')))
 br
-= t('.agora_a_hora_de')
+= raw t('.agora_a_hora_de')
 br
 br
-= t('.um_abra_o')
+= raw t('.um_abra_o')
 br
 | #{company_name}

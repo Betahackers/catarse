@@ -2,34 +2,34 @@
 - user = @notification.contribution.user
 - bank_account = user.bank_account
 
-= t('.ol_contribution', contribution: (contribution.user.name))
+= raw t('.ol_contribution', contribution: (contribution.user.name))
 br
 br
-= t('.infelizmente_o_projeto_link', link_to: (link_to(contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink))), ENV1: (ENV['COMPANY_NAME']))
+= raw t('.infelizmente_o_projeto_link', link_to: (link_to(contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink))), ENV1: (ENV['COMPANY_NAME']))
 br
 br
-= t('.como_o_seu_apoio')
+= raw t('.como_o_seu_apoio')
 br
 br
-= t('.banco_bank_account', bank_account: (bank_account.bank.to_s))
+= raw t('.banco_bank_account', bank_account: (bank_account.bank.to_s))
 br
-= t('.ag_ncia_bank_account', bank_account: (bank_account.try(:agency)), bank_account1: (bank_account.try(:agency_digit)))
+= raw t('.ag_ncia_bank_account', bank_account: (bank_account.try(:agency)), bank_account1: (bank_account.try(:agency_digit)))
 br
-= t('.conta_bank_account_bank', bank_account: (bank_account.try(:account)), bank_account1: (bank_account.try(:account_digit)))
+= raw t('.conta_bank_account_bank', bank_account: (bank_account.try(:account)), bank_account1: (bank_account.try(:account_digit)))
 br
-= t('.nome_do_titular_bank', bank_account: (bank_account.try(:owner_name)))
+= raw t('.nome_do_titular_bank', bank_account: (bank_account.try(:owner_name)))
 br
-= t('.cpf_bank_account', bank_account: (bank_account.try(:owner_document)))
-br
-br
-= t('.assim_que_o_reembolso')
+= raw t('.cpf_bank_account', bank_account: (bank_account.try(:owner_document)))
 br
 br
-= t('.se_ficou_com_alguma', mail_to: (mail_to ENV['EMAIL_CONTACT']))
-= t('.e_nos_informe_a', contribution: (contribution.payment_id))
+= raw t('.assim_que_o_reembolso')
 br
 br
-= t('.um_abra_o')
+= raw t('.se_ficou_com_alguma', mail_to: (mail_to ENV['EMAIL_CONTACT']))
+= raw t('.e_nos_informe_a', contribution: (contribution.payment_id))
+br
+br
+= raw t('.um_abra_o')
 br
 | #{ENV['COMPANY_NAME']}
 

@@ -1,42 +1,42 @@
 - user = @notification.user
 
-= t('.oi_user', user: (user.name))
+= raw t('.oi_user', user: (user.name))
 br/
 br/
-= t('.para_podermos_simplificar_ainda')
-=> t('.a_partir_de_10', link_to: (link_to t('.n_o_existir_o'), 'http://blog.catarse.me/simplificacao-dos-reembolsos-e-o-fim-dos-creditos/', target: '__blank'))
+= raw t('.para_podermos_simplificar_ainda')
+=> raw t('.a_partir_de_10', link_to: (link_to raw t('.n_o_existir_o'), 'http://blog.catarse.me/simplificacao-dos-reembolsos-e-o-fim-dos-creditos/', target: '__blank'))
 br/
 br/
-= t('.pelo_que_checamos_voc', user: (user.display_credits))
+= raw t('.pelo_que_checamos_voc', user: (user.display_credits))
 br/
 br/
-= t('.como_se_voc')
+= raw t('.como_se_voc')
 br/
 br/
-= t('.da_logo_voc_pode')
+= raw t('.da_logo_voc_pode')
 br/
 br/
-= t('.o_apoio_m_nimo')
+= raw t('.o_apoio_m_nimo')
 br/
 br/
-= t('.para_apoiar_um_projeto')
+= raw t('.para_apoiar_um_projeto')
 br/
 br/
-= t('.1_escolher_o_projeto')
+= raw t('.1_escolher_o_projeto')
 br/
-= t('.2_clicar_em_apoiar')
+= raw t('.2_clicar_em_apoiar')
 br/
-= t('.3_colocar_o_valor')
+= raw t('.3_colocar_o_valor')
 br/
-= t('.4_clicar_no_bot')
+= raw t('.4_clicar_no_bot')
 br/
 | 5 - Pronto! Seu apoio será confirmado =)
 br/
 br/
-= t('.strong_dicas_de')
+= raw t('.strong_dicas_de')
 br/
 br/
-- user.recommended_projects.limit(3).each do |project|
+- user.recommended_projects.limiraw t(3).each do |project|
   |#{link_to(project.name, project_by_slug_url(permalink: project.permalink, ref: 'credits_warning_less_group'))}
   br/
   |#{project.headline}
@@ -44,12 +44,12 @@ br/
   br/
 br/
 br/
-= t('.caso_voc_n_o')
+= raw t('.caso_voc_n_o')
 br/
 br/
-= t('.se_ficar_com_alguma')
+= raw t('.se_ficar_com_alguma')
 br/
 br/
-= t('.um_abra_o')
+= raw t('.um_abra_o')
 br/
-= t('.catarse')
+= raw t('.catarse')

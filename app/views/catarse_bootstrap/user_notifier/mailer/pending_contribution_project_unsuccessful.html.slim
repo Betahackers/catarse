@@ -1,22 +1,22 @@
 - contribution = @notification.contribution
-= t('.ol_contribution', contribution: (contribution.user.name))
+= raw t('.ol_contribution', contribution: (contribution.user.name))
 br
 br
-= t('.voc_iniciou_um_apoio', link_to: (link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink)))
+= raw t('.voc_iniciou_um_apoio', link_to: (link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink)))
 br
 br
-= t('.strong_se_voc')
+= raw t('.strong_se_voc')
 br
 br
-= t('.strong_se_voc_1')
+= raw t('.strong_se_voc_1')
 br
 br
-= t('.lembrando_que_a_chave', contribution: (contribution.payment_id))
+= raw t('.lembrando_que_a_chave', contribution: (contribution.payment_id))
 br
 br
-= t('.se_ficou_com_alguma', mail_to: (mail_to ENV['EMAIL_CONTACT']))
+= raw t('.se_ficou_com_alguma', mail_to: (mail_to ENV['EMAIL_CONTACT']))
 br
 br
-= t('.um_abra_o')
+= raw t('.um_abra_o')
 br
 | #{ENV['COMPANY_NAME']}

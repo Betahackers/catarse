@@ -1,27 +1,27 @@
 - contribution = @notification.contribution
 
-= t('.ol_contribution', contribution: (contribution.user.name))
+= raw t('.ol_contribution', contribution: (contribution.user.name))
 br
 br
-= t('.infelizmente_o_projeto_link', link_to: (link_to(contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink))))
-= t('.que_voc_apoiou_n', ENV: (ENV['COMPANY_NAME']))
+= raw t('.infelizmente_o_projeto_link', link_to: (link_to(contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink))))
+= raw t('.que_voc_apoiou_n', ENV: (ENV['COMPANY_NAME']))
 br
 br
-= t('.como_o_seu_pagamento')
+= raw t('.como_o_seu_pagamento')
 br
 br
-= t('.como_o_seu_apoio')
-=> t('.link_to_para', link_to: (link_to t('.dados_banc_rios'), settings_user_url(contribution.user)))
+= raw t('.como_o_seu_apoio')
+=> raw t('.link_to_para', link_to: (link_to raw t('.dados_banc_rios'), settings_user_url(contribution.user)))
 br
 br
-= t('.assim_que_o_reembolso')
+= raw t('.assim_que_o_reembolso')
 br/
 br/
-= t('.se_ficou_com_alguma', mail_to: (mail_to ENV['EMAIL_CONTACT']))
+= raw t('.se_ficou_com_alguma', mail_to: (mail_to ENV['EMAIL_CONTACT']))
 br/
 | #{contribution.payment_id}
 br
 br
-= t('.um_abra_o')
+= raw t('.um_abra_o')
 br
-= t('.env', ENV: (ENV['COMPANY_NAME']))
+= raw t('.env', ENV: (ENV['COMPANY_NAME']))

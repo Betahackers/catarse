@@ -4,41 +4,41 @@
 - project_link = edit_project_url(project)
 - company_name = ENV['COMPANY_NAME']
 
-= t('.ol_user', user: (user.name))
+= raw t('.ol_user', user: (user.name))
 br/
 br/
-= t('.obrigado_por_iniciar_o', company_name: (company_name))
+= raw t('.obrigado_por_iniciar_o', company_name: (company_name))
 br/
-= t('.saiba_que_recebemos_sua')
-br/
-br/
-= t('.voc_acabou_de_criar', link_to: (link_to project.name, project_link), company_name1: (company_name))
+= raw t('.saiba_que_recebemos_sua')
 br/
 br/
-strong= t('.hora_de_trabalhar')
-br/
-= t('.seu_projeto_est_no', company_name: (company_name))
-=> t('.voc_pode_enviar_o')
+= raw t('.voc_acabou_de_criar', link_to: (link_to project.name, project_link), company_name1: (company_name))
 br/
 br/
-strong= t('.ningu_m_poder_apoiar')
+strong= raw t('.hora_de_trabalhar')
 br/
-= t('.para_avan_ar_para')
+= raw t('.seu_projeto_est_no', company_name: (company_name))
+=> raw t('.voc_pode_enviar_o')
+br/
+br/
+strong= raw t('.ningu_m_poder_apoiar')
+br/
+= raw t('.para_avan_ar_para')
 br/
 br/
 = image_tag 'https://s3.amazonaws.com/cdn.catarse/notifications_assets/btn-send-to-analysis.gif', width: 600
 br/
 br/
-= t('.depois_disso_a_equipe', company_name: (company_name))
+= raw t('.depois_disso_a_equipe', company_name: (company_name))
 br/
 br/
-= t('.se_ficou_com_alguma', mail_to: (mail_to ENV['EMAIL_PROJECTS']))
+= raw t('.se_ficou_com_alguma', mail_to: (mail_to ENV['EMAIL_PROJECTS']))
 br/
 br/
 | #{mail_to ENV['EMAIL_PROJECTS']} e #{mail_to ENV['EMAIL_CONTACT']} para evitar que nossas mensagens caiam na sua caixa de spam devido a filtros do seu email. 
-= t('.e_por_falar_nisso')
+= raw t('.e_por_falar_nisso')
 br/
 br/
-= t('.um_abra_o')
+= raw t('.um_abra_o')
 br/
 = company_name

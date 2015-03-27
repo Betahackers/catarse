@@ -1,29 +1,29 @@
 - contribution = @notification.contribution
 
-= t('.ol_comunidade')
+= raw t('.ol_comunidade')
 br/
 br/
-= t('.esse_apoio_para_projeto')
+= raw t('.esse_apoio_para_projeto')
 br/
 br/
-= t('.usu_rio_contribution', contribution: (contribution.user.display_name))
+= raw t('.usu_rio_contribution', contribution: (contribution.user.display_name))
 br/
-= t('.email_do_usu_rio', contribution: (contribution.user.email))
+= raw t('.email_do_usu_rio', contribution: (contribution.user.email))
 br/
-= t('.email_de_pagamento_contribution', contribution: (contribution.payer_email))
+= raw t('.email_de_pagamento_contribution', contribution: (contribution.payer_email))
 br/
-= t('.nome_de_pagamento_contribution', contribution: (contribution.payer_name))
+= raw t('.nome_de_pagamento_contribution', contribution: (contribution.payer_name))
 br/
-= t('.projeto_contribution', contribution: (contribution.project.name))
+= raw t('.projeto_contribution', contribution: (contribution.project.name))
 br/
-= t('.chave_do_apoio_contribution', contribution: (contribution.key))
+= raw t('.chave_do_apoio_contribution', contribution: (contribution.key))
 br/
-= t('.identificador_no_meio_de', contribution: (contribution.payment_id))
+= raw t('.identificador_no_meio_de', contribution: (contribution.payment_id))
 br/
-= t('.valor_do_apoio_contribution', contribution: (contribution.decorate.display_value))
+= raw t('.valor_do_apoio_contribution', contribution: (contribution.decorate.display_value))
 br/
-= t('.meio_de_pagamento_contribution', contribution: (contribution.payment_method))
+= raw t('.meio_de_pagamento_contribution', contribution: (contribution.payment_method))
 br/
-= t('.forma_de_pagamento_contribution', contribution: (contribution.payment_choice))
+= raw t('.forma_de_pagamento_contribution', contribution: (contribution.payment_choice))
 br/
-= t('.data_de_cria_o', contribution: (contribution.created_at))
+= raw t('.data_de_cria_o', contribution: (contribution.created_at))

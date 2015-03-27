@@ -4,57 +4,57 @@
 - project_link = edit_project_url(project)
 - company_name = ENV['COMPANY_NAME']
 
-= t('.ol_user', user: (user.decorate.display_name))
+= raw t('.ol_user', user: (user.decorate.display_name))
 br/
 br/
-= t('.strong_o_projeto', link_to: (link_to project.name, project_link, target: '__blank'))
+= raw t('.strong_o_projeto', link_to: (link_to project.name, project_link, target: '__blank'))
 br/
 br/
-= t('.muito_importante_se')
-=> t('.a_hora_essa_estamos')
-=> t('.sugest_es_sobre_como', mail_to: (mail_to ENV['EMAIL_PROJECTS']))
+= raw t('.muito_importante_se')
+=> raw t('.a_hora_essa_estamos')
+=> raw t('.sugest_es_sobre_como', mail_to: (mail_to ENV['EMAIL_PROJECTS']))
 br/
 br/
-= t('.lembre_se_que_strong')
+= raw t('.lembre_se_que_strong')
 br/
 br/
-strong= t('.uma_pequena_lista_sobre')
+strong= raw t('.uma_pequena_lista_sobre')
 br/
 br/
-strong= t('.posso')
+strong= raw t('.posso')
 br/
-= t('.trocar_o_v')
+= raw t('.trocar_o_v')
 br/
-= t('.enviar_novidades_diretamente')
+= raw t('.enviar_novidades_diretamente')
 br/
-= t('.baixar_relat_rios')
+= raw t('.baixar_relat_rios')
 br/
-= t('.editar_a_descri')
+= raw t('.editar_a_descri')
 br/
-= t('.criar_novas_recompensas')
+= raw t('.criar_novas_recompensas')
 br/
-= t('.alterar_conte_do')
+= raw t('.alterar_conte_do')
 br/
-= t('.alterar_o_limite')
+= raw t('.alterar_o_limite')
 br/
-= t('.esgotar_recompensas_limitando')
+= raw t('.esgotar_recompensas_limitando')
 br/
-= t('.trocar_o_thumbnail')
+= raw t('.trocar_o_thumbnail')
 br/
 br/
-strong= t('.n_o_posso')
+strong= raw t('.n_o_posso')
 br/
-= t('.alterar_meta_de')
+= raw t('.alterar_meta_de')
 br/
-= t('.alterar_o_prazo')
+= raw t('.alterar_o_prazo')
 br/
-= t('.alterar_recompensas_onde')
+= raw t('.alterar_recompensas_onde')
 br/
 br/
 | Por favor </strong>não esqueça de incluir na sua lista de contatos os e-mails:</strong>
 '  #{mail_to ENV['EMAIL_PROJECTS']} e #{mail_to ENV['EMAIL_CONTACT']} para evitar que nossas mensagens caiam na sua caixa de spam devido a filtros do seu email.
 br/
 br/
-= t('.um_abra_o')
+= raw t('.um_abra_o')
 br/
-= t('.a_equipe_do_company', company_name: (company_name))
+= raw t('.a_equipe_do_company', company_name: (company_name))

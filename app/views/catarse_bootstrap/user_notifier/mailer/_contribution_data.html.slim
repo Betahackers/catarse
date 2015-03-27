@@ -1,40 +1,40 @@
-p= t('.seguem_todos_os_dados')
+p= raw t('.seguem_todos_os_dados')
 p
-  = t('.nome_do_apoiador_contribution', contribution: ((contribution.payer_name || contribution.user.display_name)))
+  = raw t('.nome_do_apoiador_contribution', contribution: ((contribution.payer_name || contribution.user.display_name)))
   br/
-  = t('.cpf_cnpj_do_apoiador', contribution: ((contribution.payer_document || contribution.user.cpf)))
+  = raw t('.cpf_cnpj_do_apoiador', contribution: ((contribution.payer_document || contribution.user.cpf)))
   br/
-  = t('.data_da_confirma_o', l: (l contribution.confirmed_at))
+  = raw t('.data_da_confirma_o', l: (l contribution.confirmed_at))
   br/
-  = t('.op_o_de_pagamento', contribution: (contribution.payment_choice || contribution.payment_method))
+  = raw t('.op_o_de_pagamento', contribution: (contribution.payment_choice || contribution.payment_method))
   br/
-  = t('.valor_da_contribui_o', number_to_currency: (number_to_currency contribution.value))
+  = raw t('.valor_da_contribui_o', number_to_currency: (number_to_currency contribution.value))
   - if contribution.installments > 1
     br/
-    = t('.n_mero_de_parcelas', contribution: (contribution.installments))
+    = raw t('.n_mero_de_parcelas', contribution: (contribution.installments))
     br/
-    = t('.valor_da_parcela_number', number_to_currency: (number_to_currency(contribution.installment_value, precision: 2)))
+    = raw t('.valor_da_parcela_number', number_to_currency: (number_to_currency(contribution.installment_value, precision: 2)))
   br/
   -if contribution.reward.present?
-    = t('.recompensa_selecionada_contribution', contribution: (contribution.reward.description))
+    = raw t('.recompensa_selecionada_contribution', contribution: (contribution.reward.description))
     br/
-    = t('.estimativa_de_entrega_contribution', contribution: (contribution.reward.display_deliver_estimate))
+    = raw t('.estimativa_de_entrega_contribution', contribution: (contribution.reward.display_deliver_estimate))
     br/
-  = t('.id_do_apoio_contribution', contribution: (contribution.payment_id))
+  = raw t('.id_do_apoio_contribution', contribution: (contribution.payment_id))
   br/
-  = t('.nome_raz_o_social', contribution: ( contribution.project.user.full_name.presence || contribution.project.user.name.presence ))
+  = raw t('.nome_raz_o_social', contribution: ( contribution.project.user.full_name.presence || contribution.project.user.name.presence ))
   br/
-  = t('.cpf_cnpj_do_realizador', contribution: (contribution.project.user.cpf))
+  = raw t('.cpf_cnpj_do_realizador', contribution: (contribution.project.user.cpf))
 
 p
-  => t('.importante_ressaltar_que')
-  => t('.portanto_se_tiver_alguma')
-  => t('.em_contato_diretamente_com', mail_to: (mail_to contribution.project.user.email))
-  => t('.ah_lembre_se_de')
-  => t('.a_respeito_da_sua')
-p= t('.se_ficou_com_alguma', mail_to: (mail_to ENV['EMAIL_CONTACT']))
+  => raw t('.importante_ressaltar_que')
+  => raw t('.portanto_se_tiver_alguma')
+  => raw t('.em_contato_diretamente_com', mail_to: (mail_to contribution.project.user.email))
+  => raw t('.ah_lembre_se_de')
+  => raw t('.a_respeito_da_sua')
+p= raw t('.se_ficou_com_alguma', mail_to: (mail_to ENV['EMAIL_CONTACT']))
 
 p
-  = t('.um_abra_o_e')
+  = raw t('.um_abra_o_e')
   br/
-  = t('.env', ENV: (ENV['COMPANY_NAME']))
+  = raw t('.env', ENV: (ENV['COMPANY_NAME']))

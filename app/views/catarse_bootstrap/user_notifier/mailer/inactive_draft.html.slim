@@ -1,49 +1,49 @@
 - project = @notification.project
 - project_link = edit_project_url(project)
-= t('.ol_project_tudo_bem', project: (project.user.name))
+= raw t('.ol_project_tudo_bem', project: (project.user.name))
 br/
 br/
-= t('.vi_que_voc_criou', link_to: (link_to(project.name, project_link)))
+= raw t('.vi_que_voc_criou', link_to: (link_to(project.name, project_link)))
 br/
 br/
-= t('.al_m_de_revisar')
+= raw t('.al_m_de_revisar')
 br/
 br/
-= t('.deseja_enviar_o_link', link_to: (link_to t('.seu_rascunho_de_projeto'), project_link))
+= raw t('.deseja_enviar_o_link', link_to: (link_to raw t('.seu_rascunho_de_projeto'), project_link))
 br/
 br/
 = image_tag 'https://s3.amazonaws.com/cdn.catarse/notifications_assets/btn-send-to-analysis.gif', width: 600
 br/
 br/
-strong= t('.lembre_se')
+strong= raw t('.lembre_se')
 br/
-= t('.ap_s_o_envio')
+= raw t('.ap_s_o_envio')
 br/
-= t('.quando_o_projeto_for')
-br/
-br/
-= t('.se_tem_alguma_d')
+= raw t('.quando_o_projeto_for')
 br/
 br/
-= t('.beijo')
+= raw t('.se_tem_alguma_d')
+br/
+br/
+= raw t('.beijo')
 br/
 strong
-  =Luciana t('.masini')
+  =Luciana raw t('.masini')
 br/
-= t('.catalisadora_de_projetos_criativos')
+= raw t('.catalisadora_de_projetos_criativos')
 br/
 br/
 strong 
-  = t('.p_s_voc_quer')
+  = raw t('.p_s_voc_quer')
 br/
-= t('.as_dicas_fundamentais_para')
+= raw t('.as_dicas_fundamentais_para')
 br/
-= t('.para_conhecer_todas', link_to: (link_to t('.central_de_suporte'), 'http://suporte.catarse.me/hc/pt-br', target: '__blank'))
+= raw t('.para_conhecer_todas', link_to: (link_to raw t('.central_de_suporte'), 'http://suporte.catarse.me/hc/pt-br', target: '__blank'))
 br/
-= t('.para_se_inspirar', link_to: (link_to t('.historias_de_projetos'), 'http://blog.catarse.me/category/projeto/', target: '__blank'), link_to1: ( link_to t('.dicas_de_campanha'), 'http://blog.catarse.me/category/dicas/', target: '__blank'))
+= raw t('.para_se_inspirar', link_to: (link_to raw t('.historias_de_projetos'), 'http://blog.catarse.me/category/projeto/', target: '__blank'), link_to1: ( link_to raw t('.dicas_de_campanha'), 'http://blog.catarse.me/category/dicas/', target: '__blank'))
 br/
-= t('.para_montar_uma', link_to: (link_to t('.guia_dos_realizadores'), guides_url(anchor: 'starting'), target: '__blank'))
+= raw t('.para_montar_uma', link_to: (link_to raw t('.guia_dos_realizadores'), guides_url(anchor: 'starting'), target: '__blank'))
 br/
-= t('.para_entender_o', link_to: (link_to t('.pesquisa_rfcbr'), 'http://pesquisa.catarse.me/', target: '__blank'))
+= raw t('.para_entender_o', link_to: (link_to raw t('.pesquisa_rfcbr'), 'http://pesquisa.catarse.me/', target: '__blank'))
 br/
-= t('.para_sentir_o', link_to: (link_to t('.apoie_um_projeto'), explore_url, target: '__blank'))
+= raw t('.para_sentir_o', link_to: (link_to raw t('.apoie_um_projeto'), explore_url, target: '__blank'))

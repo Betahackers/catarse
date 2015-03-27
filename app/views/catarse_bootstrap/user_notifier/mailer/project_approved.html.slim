@@ -3,42 +3,42 @@
 - project_link = edit_project_url(project)
 - company_name = ENV['COMPANY_NAME']
 
-= t('.ol_project_o_strong', project: (project.user.name), link_to1: (link_to t('.seu_projeto_foi_aprovado'), project_link))
+= raw t('.ol_project_o_strong', project: (project.user.name), link_to1: (link_to raw t('.seu_projeto_foi_aprovado'), project_link))
 br/
 br/
 strong 
-  = t('.para_iniciar_a_campanha')
+  = raw t('.para_iniciar_a_campanha')
 br/
 br/
 strong 
-  = t('.1_preencher_seus_dados', link_to: (link_to t('.conta'), edit_project_url(project, anchor: 'user_settings')))
+  = raw t('.1_preencher_seus_dados', link_to: (link_to raw t('.conta'), edit_project_url(project, anchor: 'user_settings')))
 br/
-= t('.precisamos_dos_seus_dados')
-br/
-br/
-strong
-  = t('.2_escolher_a_melhor')
-br/
-= t('.voc_mesmo_quem')
+= raw t('.precisamos_dos_seus_dados')
 br/
 br/
 strong
-  = t('.3_e_apertar_o')
+  = raw t('.2_escolher_a_melhor')
+br/
+= raw t('.voc_mesmo_quem')
+br/
+br/
+strong
+  = raw t('.3_e_apertar_o')
 br/
 = image_tag 'https://s3.amazonaws.com/cdn.catarse/notifications_assets/btn-publish.gif', width: '600'
 br/
 br/
 strong
-  = t('.aten_o')
+  = raw t('.aten_o')
 br/
-= t('.ap_s_a')
+= raw t('.ap_s_a')
 br/
-= t('.s_cobramos_nossa', link_to: (link_to t('.repasse_do_dinheiro'), 'http://suporte.catarse.me/hc/pt-br/articles/202037493-Como-ser%C3%A1-feito-o-repasse-do-dinheiro-'))
-br/
-br/
-= t('.lembrando_que_voc_pode', mail_to: (mail_to ENV['EMAIL_PROJECTS']))
+= raw t('.s_cobramos_nossa', link_to: (link_to raw t('.repasse_do_dinheiro'), 'http://suporte.catarse.me/hc/pt-br/articles/202037493-Como-ser%C3%A1-feito-o-repasse-do-dinheiro-'))
 br/
 br/
-= t('.um_grande_abra_o')
+= raw t('.lembrando_que_voc_pode', mail_to: (mail_to ENV['EMAIL_PROJECTS']))
 br/
-= t('.a_equipe_do_company', company_name: (company_name))
+br/
+= raw t('.um_grande_abra_o')
+br/
+= raw t('.a_equipe_do_company', company_name: (company_name))

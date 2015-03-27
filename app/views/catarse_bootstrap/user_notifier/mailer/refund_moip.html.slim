@@ -1,27 +1,27 @@
 - user = @notification.user
-= t('.ol_user_tudo_bem', user: (user.name))
+= raw t('.ol_user_tudo_bem', user: (user.name))
 br
 | Sabe quando você acha aquela nota de dinheiro no bolso de uma calça que não usava faz tempo? Pois esse e-mail é pra relembrarmos essa gostosa sensação. =D
 br
-= t('.para_muitos_casos_n')
+= raw t('.para_muitos_casos_n')
 br
-= t('.pra_isso_precisaremos_que', link_to: (link_to t('.http_bit_ly_reembolsocatarse'), t('.http_bit_ly_reembolsocatarse')))
+= raw t('.pra_isso_precisaremos_que', link_to: (link_to raw t('.http_bit_ly_reembolsocatarse'), raw t('.http_bit_ly_reembolsocatarse')))
 br
-= t('.o_valor_do_apoio', user: (user.contributions.where(state:'requested_refund').sum(:value)))
+= raw t('.o_valor_do_apoio', user: (user.contributions.where(state:'requested_refund').sum(:value)))
 br
-= t('.infelizmente_como_seu_apoio')
+= raw t('.infelizmente_como_seu_apoio')
 br
-= t('.o_s_n_mero')
+= raw t('.o_s_n_mero')
 br
 - user.contributions.where(state:'requested_refund').each do |contribution|
   |#{contribution.key}
   br
-= t('.iremos_fazer_o_dep')
+= raw t('.iremos_fazer_o_dep')
 br
-= t('.espero_que_voc_s')
+= raw t('.espero_que_voc_s')
 br
-= t('.muito_obrigado')
+= raw t('.muito_obrigado')
 br
-= t('.diego_reeberg')
+= raw t('.diego_reeberg')
 br
-= t('.malabarista_organizacional')
+= raw t('.malabarista_organizacional')

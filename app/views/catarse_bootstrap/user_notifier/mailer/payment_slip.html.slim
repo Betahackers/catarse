@@ -1,17 +1,17 @@
 - contribution = @notification.contribution
-p= t('.ol_strong_contribution_strong', contribution: (contribution.user.display_name))
-p= t('.voc_acabou_de_gerar', link_to: (link_to(contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink))))
+p= raw t('.ol_strong_contribution_strong', contribution: (contribution.user.display_name))
+p= raw t('.voc_acabou_de_gerar', link_to: (link_to(contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink))))
 p 
-  = t('.ap_s_o_pagamento')
-  = t('.quando_essa_confirma_o')
+  = raw t('.ap_s_o_pagamento')
+  = raw t('.quando_essa_confirma_o')
 p 
-  = t('.para_imprimir_o_boleto')
-  = link_to t('.clicar_aqui'), contribution.decorate.display_slip_url
-  = t('.default_key')
+  = raw t('.para_imprimir_o_boleto')
+  = link_to raw t('.clicar_aqui'), contribution.decorate.display_slip_url
+  = raw t('.default_key')
 
-p= t('.o_prazo_de_vencimento', mail_to: (mail_to ENV['EMAIL_CONTACT']))
+p= raw t('.o_prazo_de_vencimento', mail_to: (mail_to ENV['EMAIL_CONTACT']))
 
 p 
-  = t('.um_abra_o')
+  = raw t('.um_abra_o')
   br/
   | #{ENV['COMPANY_NAME']}

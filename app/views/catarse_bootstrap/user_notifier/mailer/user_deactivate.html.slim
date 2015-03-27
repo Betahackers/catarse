@@ -1,10 +1,10 @@
-p= t('.ol_notification', notification: (@notification.user.name))
+p= raw t('.ol_notification', notification: (@notification.user.name))
 
 p 
-  = t('.sua_conta_no_catarse', link_to: (link_to(t('.clicar_aqui'), reactivate_user_url(@notification.user, token: @notification.user.reactivate_token))))
+  = raw t('.sua_conta_no_catarse', link_to: (link_to(raw t('.clicar_aqui'), reactivate_user_url(@notification.user, token: @notification.user.reactivate_token))))
 
 p 
-  = t('.qualquer_d_vida_voc', mail_to: (mail_to ENV['EMAIL_CONTACT']))
+  = raw t('.qualquer_d_vida_voc', mail_to: (mail_to ENV['EMAIL_CONTACT']))
 
-p= t('.um_abra_o')
-p= t('.catarse')
+p= raw t('.um_abra_o')
+p= raw t('.catarse')

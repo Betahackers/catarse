@@ -1,11 +1,11 @@
 - contribution = @notification.contribution
-= t('.projeto_contribution', contribution: (contribution.project.name))
+= raw t('.projeto_contribution', contribution: (contribution.project.name))
 br/
-= t('.chave_do_apoio_contribution', contribution: (contribution.key))
+= raw t('.chave_do_apoio_contribution', contribution: (contribution.key))
 br/
-= t('.id_meio_de_pagamento', contribution: (contribution.payment_id))
+= raw t('.id_meio_de_pagamento', contribution: (contribution.payment_id))
 br/
 br/
-= t('.esse_apoio_recebeu_uma')
+= raw t('.esse_apoio_recebeu_uma')
 br/
-= t('.verifique_no_site_do')
+= raw t('.verifique_no_site_do')

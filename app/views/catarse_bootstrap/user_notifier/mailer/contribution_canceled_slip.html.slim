@@ -2,15 +2,15 @@
 - company_name = ENV['COMPANY_NAME']
 - contact_email = ENV['EMAIL_CONTACT']
 
-= t('.ol_strong_contribution_strong', contribution: (contribution.user.display_name))
+= raw t('.ol_strong_contribution_strong', contribution: (contribution.user.display_name))
 br
 br
-= t('.n_o_recebemos_a', link_to: (link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink, ref: 'notificacao_cancelado')))
+= raw t('.n_o_recebemos_a', link_to: (link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink, ref: 'notificacao_cancelado')))
 br
 br
-= t('.caso_voc_ainda_tenha', mail_to: (mail_to contact_email))
+= raw t('.caso_voc_ainda_tenha', mail_to: (mail_to contact_email))
 br
 br
-= t('.um_abra_o')
+= raw t('.um_abra_o')
 br
-= t('.company_name', company_name: (company_name))
+= raw t('.company_name', company_name: (company_name))

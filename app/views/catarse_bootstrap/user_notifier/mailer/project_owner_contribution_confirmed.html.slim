@@ -4,16 +4,16 @@
 - project_link = project_by_slug_url(permalink: project.permalink)
 - company_name = ENV['COMPANY_NAME']
 
-= t('.ol_strong_project_strong', project: (project.user.decorate.display_name))
+= raw t('.ol_strong_project_strong', project: (project.user.decorate.display_name))
 br
 br
-= t('.hoje_seu_projeto_recebeu', link_to: (link_to t('.confirmed_contributions_today', confirmed_contributions_today: (confirmed_contributions_today.length)), project_by_slug_url(permalink: project.permalink, anchor: 'contributions')))
+= raw t('.hoje_seu_projeto_recebeu', link_to: (link_to raw t('.confirmed_contributions_today', confirmed_contributions_today: (confirmed_contributions_today.length)), project_by_slug_url(permalink: project.permalink, anchor: 'contributions')))
 br/
 br/
-= t('.link_to_e', link_to: (link_to t('.poste_uma_mensagem_para'), edit_project_url(project, anchor: 'posts')), link_to1: (link_to t('.acompanhe_as_m_tricas'), edit_project_url(project, anchor: 'reports')))
+= raw t('.link_to_e', link_to: (link_to raw t('.poste_uma_mensagem_para'), edit_project_url(project, anchor: 'posts')), link_to1: (link_to raw t('.acompanhe_as_m_tricas'), edit_project_url(project, anchor: 'reports')))
 br
 br
-= t('.mais_informa_es_sobre')
+= raw t('.mais_informa_es_sobre')
 br
 br
 table width="500" border="1" cellpadding="10" cellspacing="0" style='font-size: 13px;'
@@ -32,9 +32,9 @@ table width="500" border="1" cellpadding="10" cellspacing="0" style='font-size: 
         td= contribution.reward.try(:decorate).try(:display_description)
 br/
 br/
-= t('.lembrando_que_voc_pode', mail_to: (mail_to ENV['EMAIL_PROJECTS'] ))
+= raw t('.lembrando_que_voc_pode', mail_to: (mail_to ENV['EMAIL_PROJECTS'] ))
 br/
 br/
-= t('.um_abra_o')
+= raw t('.um_abra_o')
 br
 = company_name

@@ -1,24 +1,24 @@
 - contribution = @notification.contribution
 
-= t('.ol_strong_contribution_strong', contribution: (contribution.user.display_name))
+= raw t('.ol_strong_contribution_strong', contribution: (contribution.user.display_name))
 br
 br
-=> t('.verificamos_que_voc_iniciou', link_to: (link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink, ref: 'notificacao_pending')))
-= t('.por_m_n_o')
+=> raw t('.verificamos_que_voc_iniciou', link_to: (link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink, ref: 'notificacao_pending')))
+= raw t('.por_m_n_o')
 br
 br
-= t('.o_seu_apoio_essencial', contribution: (contribution.project.total_contributions))
+= raw t('.o_seu_apoio_essencial', contribution: (contribution.project.total_contributions))
 br
 br
-= t('.link_to', link_to: ( link_to t('.voc_tem_at_l', l: (l(contribution.project.expires_at))), edit_project_contribution_url(project_id: contribution.project.id, id: contribution.id, ref: 'notification_pending') ))
+= raw t('.link_to', link_to: ( link_to raw t('.voc_tem_at_l', l: (l(contribution.project.expires_at))), edit_project_contribution_url(project_id: contribution.project.id, id: contribution.id, ref: 'notification_pending') ))
 br
 br
-= t('.caso_o_motivo_para')
+= raw t('.caso_o_motivo_para')
 br
 br
-= t('.se_o_problema_persistir', mail_to: (mail_to ENV['EMAIL_CONTACT']))
+= raw t('.se_o_problema_persistir', mail_to: (mail_to ENV['EMAIL_CONTACT']))
 br
 br
-= t('.um_abra_o')
+= raw t('.um_abra_o')
 br
 |#{ENV['COMPANY_NAME']}

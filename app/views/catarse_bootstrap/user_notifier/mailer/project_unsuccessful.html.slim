@@ -3,41 +3,41 @@
 - project_link = edit_project_url(project)
 - company_name = ENV['COMPANY_NAME']
 
-= t('.oi_project', project: (project.user.display_name))
+= raw t('.oi_project', project: (project.user.display_name))
 br/
 br/
-= t('.infelizmente_o_projeto_link', link_to: (link_to project.name, project_link ), company_name1: (company_name))
+= raw t('.infelizmente_o_projeto_link', link_to: (link_to project.name, project_link ), company_name1: (company_name))
 br/
 br/
-= t('.fique_tranquilo_todos_os', link_to: (link_to t('.processo_de_reembolso'), 'http://suporte.catarse.me/hc/pt-br/articles/202365507-Regras-e-funcionamento-dos-reembolsos-estornos', target: '__blank' ))
+= raw t('.fique_tranquilo_todos_os', link_to: (link_to raw t('.processo_de_reembolso'), 'http://suporte.catarse.me/hc/pt-br/articles/202365507-Regras-e-funcionamento-dos-reembolsos-estornos', target: '__blank' ))
 br/
 br/
-strong= t('.quer_ajudar_a_melhorar')
+strong= raw t('.quer_ajudar_a_melhorar')
 br/
-= t('.seu_projeto_pode_n')
-br/
-br/
-strong= t('.1_quais_os_2')
+= raw t('.seu_projeto_pode_n')
 br/
 br/
-= t('.pode_ser_algo_diretamente', company_name: (company_name))
+strong= raw t('.1_quais_os_2')
 br/
 br/
-strong= t('.2_o_que_voc', company_name: (company_name))
+= raw t('.pode_ser_algo_diretamente', company_name: (company_name))
 br/
 br/
-= t('.como_podemos_melhorar_a')
+strong= raw t('.2_o_que_voc', company_name: (company_name))
 br/
 br/
-= t('.estamos_sempre_em_busca')
+= raw t('.como_podemos_melhorar_a')
 br/
 br/
-= t('.esperamos_que_voc_considere')
+= raw t('.estamos_sempre_em_busca')
 br/
 br/
-= t('.te_esperamos_numa_pr')
+= raw t('.esperamos_que_voc_considere')
 br/
 br/
-= t('.um_grande_abra_o')
+= raw t('.te_esperamos_numa_pr')
 br/
-= t('.a_equipe_do_company', company_name: (company_name))
+br/
+= raw t('.um_grande_abra_o')
+br/
+= raw t('.a_equipe_do_company', company_name: (company_name))

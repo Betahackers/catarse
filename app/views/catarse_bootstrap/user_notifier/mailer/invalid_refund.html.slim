@@ -2,30 +2,30 @@
 - bank_account = contribution.user.bank_account
 - project = contribution.project
 
-= t('.ol_comunidade')
+= raw t('.ol_comunidade')
 br/
 br/
-= t('.o_reembolso_do_apoio', link_to: (link_to(project.name, project_by_slug_url(permalink: project.permalink))))
+= raw t('.o_reembolso_do_apoio', link_to: (link_to(project.name, project_by_slug_url(permalink: project.permalink))))
 br/
 br/
 - if bank_account
-  = t('.banco_bank_account', bank_account: (bank_account.bank.to_s))
+  = raw t('.banco_bank_account', bank_account: (bank_account.bank.to_s))
   br
-  = t('.ag_ncia_bank_account', bank_account: (bank_account.try(:agency)), bank_account1: (bank_account.try(:agency_digit)))
+  = raw t('.ag_ncia_bank_account', bank_account: (bank_account.try(:agency)), bank_account1: (bank_account.try(:agency_digit)))
   br
-  = t('.conta_bank_account_bank', bank_account: (bank_account.try(:account)), bank_account1: (bank_account.try(:account_digit)))
+  = raw t('.conta_bank_account_bank', bank_account: (bank_account.try(:account)), bank_account1: (bank_account.try(:account_digit)))
   br
-  = t('.nome_do_titular_bank', bank_account: (bank_account.try(:owner_name)))
+  = raw t('.nome_do_titular_bank', bank_account: (bank_account.try(:owner_name)))
   br
-  = t('.cpf_bank_account', bank_account: (bank_account.try(:owner_document)))
+  = raw t('.cpf_bank_account', bank_account: (bank_account.try(:owner_document)))
   br/
   br/
-= t('.chave_de_identifica_o', contribution: (contribution.payment_id))
+= raw t('.chave_de_identifica_o', contribution: (contribution.payment_id))
 br/
 br/
-= t('.favor_entrar_em_contato', mail_to: (mail_to contribution.user.email))
+= raw t('.favor_entrar_em_contato', mail_to: (mail_to contribution.user.email))
 br/
 br/
-= t('.beijos')
+= raw t('.beijos')
 br/
-= t('.catarse')
+= raw t('.catarse')

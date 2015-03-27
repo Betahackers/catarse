@@ -1,19 +1,19 @@
 - user = @notification.user
 - expiring = ProjectsForHome.expiring
 
-= t('.ol')
+= raw t('.ol')
 - if user.name
-  = t('.user', user: (user.name))
+  = raw t('.user', user: (user.name))
 
 br/
 br/
-= t('.bem_vindo_ao_catarse')
+= raw t('.bem_vindo_ao_catarse')
 br/
 br/
-= t('.s_para_voc_n', user: (user.email))
+= raw t('.s_para_voc_n', user: (user.email))
 br/
 br/
-= t('.para_come_ar_vale')
+= raw t('.para_come_ar_vale')
 br/
 br/
 br/
@@ -36,7 +36,7 @@ center
 
 br
 br
-= t('.abra_os')
+= raw t('.abra_os')
 br
 = ENV['COMPANY_NAME']
 

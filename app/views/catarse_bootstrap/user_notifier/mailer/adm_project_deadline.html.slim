@@ -1,25 +1,25 @@
 - project = @notification.project
 - bank_account = project.user.bank_account
-= t('.o_projeto_link_to', link_to: (link_to(project.name, project_by_slug_url(project.permalink))))
+= raw t('.o_projeto_link_to', link_to: (link_to(project.name, project_by_slug_url(project.permalink))))
 br
 br
-= t('.nome_do_projeto_project', project: (project.name))
+= raw t('.nome_do_projeto_project', project: (project.name))
 br/
-= t('.valor_arrecadado_project', project: (project.display_pledged))
+= raw t('.valor_arrecadado_project', project: (project.display_pledged))
 br/
-= t('.data_de_finaliza_o', project: (project.display_expires_at))
+= raw t('.data_de_finaliza_o', project: (project.display_expires_at))
 br/
-= t('.conta_moip_project', project: (project.user.moip_login))
+= raw t('.conta_moip_project', project: (project.user.moip_login))
 br/
 br/
-=>Dados t('.bancarios')
+=>Dados raw t('.bancarios')
 br/
-= t('.banco_bank_account', bank_account: (bank_account.try(:name)))
+= raw t('.banco_bank_account', bank_account: (bank_account.try(:name)))
 br/
-= t('.ag_ncia_bank_account', bank_account: (bank_account.try(:agency)), bank_account1: (bank_account.try(:agency_digit)))
+= raw t('.ag_ncia_bank_account', bank_account: (bank_account.try(:agency)), bank_account1: (bank_account.try(:agency_digit)))
 br/
-= t('.conta_bank_account_bank', bank_account: (bank_account.try(:account)), bank_account1: (bank_account.try(:account_digit)))
+= raw t('.conta_bank_account_bank', bank_account: (bank_account.try(:account)), bank_account1: (bank_account.try(:account_digit)))
 br/
-= t('.nome_do_titular_bank', bank_account: (bank_account.try(:user_name)))
+= raw t('.nome_do_titular_bank', bank_account: (bank_account.try(:user_name)))
 br/
-= t('.cpf_bank_account', bank_account: (bank_account.try(:user_document)))
+= raw t('.cpf_bank_account', bank_account: (bank_account.try(:user_document)))

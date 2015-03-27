@@ -3,41 +3,41 @@
 - project_link = edit_project_url(project)
 - company_name = ENV['COMPANY_NAME']
 
-= t('.uhuu_project', project: (project.user.name))
+= raw t('.uhuu_project', project: (project.user.name))
 br/
-= t('.parab_ns_pela_campanha')
-br/
-br/
-= t('.o_projeto_link_to', link_to: (link_to project.name, project_link))
+= raw t('.parab_ns_pela_campanha')
 br/
 br/
-= t('.depois_de_comemorar_com')
-=> t('.reunimos_aqui_algumas_strong')
+= raw t('.o_projeto_link_to', link_to: (link_to project.name, project_link))
 br/
 br/
-= t('.strong_1_strong', 10: (10.weekdays_from(project.expires_at).strftime('%d/%m/%Y')))
-br/
-= t('.strong_aten_o')
-br/
-strong= t('.confira')
-= link_to t('.como_ser_feito_o'), 'http://suporte.catarse.me/hc/pt-br/articles/202037493-Como-ser%C3%A1-feito-o-repasse-do-dinheiro-', target: '__blank'
+= raw t('.depois_de_comemorar_com')
+=> raw t('.reunimos_aqui_algumas_strong')
 br/
 br/
-= t('.2_strong_organiza_o')
+= raw t('.strong_1_strong', 10: (10.weekdays_from(project.expires_at).strftime('%d/%m/%Y')))
+br/
+= raw t('.strong_aten_o')
+br/
+strong= raw t('.confira')
+= link_to raw t('.como_ser_feito_o'), 'http://suporte.catarse.me/hc/pt-br/articles/202037493-Como-ser%C3%A1-feito-o-repasse-do-dinheiro-', target: '__blank'
+br/
+br/
+= raw t('.2_strong_organiza_o')
 br/
 br/
 = image_tag 'https://s3.amazonaws.com/cdn.catarse/notifications_assets/reports.gif', width: 600
 br/
 br/
-= t('.strong_3_converse')
+= raw t('.strong_3_converse')
 br/
 br/
 = image_tag 'https://s3.amazonaws.com/cdn.catarse/notifications_assets/post.gif', width: 600
 br/
 br/
-= t('.se_ficou_com_alguma', mail_to: (mail_to ENV['EMAIL_PROJECTS']))
+= raw t('.se_ficou_com_alguma', mail_to: (mail_to ENV['EMAIL_PROJECTS']))
 br/
 br/
-= t('.um_abra_o_apertado')
+= raw t('.um_abra_o_apertado')
 br/
-= t('.a_equipe_do_company', company_name: (company_name))
+= raw t('.a_equipe_do_company', company_name: (company_name))

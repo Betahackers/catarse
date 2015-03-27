@@ -1,24 +1,24 @@
 -contribution = @notification.contribution
 - company_name = ENV['COMPANY_NAME']
 - contact_email = ENV['EMAIL_CONTACT']
-= t('.ol_strong_contribution_strong', contribution: (contribution.user.display_name))
+= raw t('.ol_strong_contribution_strong', contribution: (contribution.user.display_name))
 br
 br
-= t('.seu_apoio_para_link', link_to: (link_to contribution.project.name, project_url(contribution.project)))
-= t('.entrou_em_processo_de', contribution: (contribution.payment_method))
+= raw t('.seu_apoio_para_link', link_to: (link_to contribution.project.name, project_url(contribution.project)))
+= raw t('.entrou_em_processo_de', contribution: (contribution.payment_method))
 br
 br
-= t('.esse_uma_medida_de', contribution: (contribution.payment_method))
-= t('.aumentar_a_tranquilidade_de', company_name: (company_name))
-= t('.poss_vel_que', contribution: (contribution.payment_method))
+= raw t('.esse_uma_medida_de', contribution: (contribution.payment_method))
+= raw t('.aumentar_a_tranquilidade_de', company_name: (company_name))
+= raw t('.poss_vel_que', contribution: (contribution.payment_method))
 br
 br
-= t('.assim_que_o_contribution', contribution: (contribution.payment_method))
+= raw t('.assim_que_o_contribution', contribution: (contribution.payment_method))
 br
 br
-= t('.se_ficou_com_alguma', mail_to: (mail_to contact_email))
+= raw t('.se_ficou_com_alguma', mail_to: (mail_to contact_email))
 br
 br
-= t('.um_abra_o')
+= raw t('.um_abra_o')
 br
 | #{company_name}

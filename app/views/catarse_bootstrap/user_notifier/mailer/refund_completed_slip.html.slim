@@ -4,29 +4,29 @@
 - user = @notification.contribution.user
 - bank_account = user.bank_account
 
-= t('.ol_strong_contribution_strong', contribution: (contribution.user.display_name))
+= raw t('.ol_strong_contribution_strong', contribution: (contribution.user.display_name))
 br
 br
-= t('.o_reembolso_do_seu', link_to: (link_to(contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink))), company_name1: (company_name))
+= raw t('.o_reembolso_do_seu', link_to: (link_to(contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink))), company_name1: (company_name))
 br
 br
-= t('.banco_bank_account', bank_account: (bank_account.try(:bank).to_s))
+= raw t('.banco_bank_account', bank_account: (bank_account.try(:bank).to_s))
 br
-= t('.ag_ncia_bank_account', bank_account: (bank_account.try(:agency)), bank_account1: (bank_account.try(:agency_digit)))
+= raw t('.ag_ncia_bank_account', bank_account: (bank_account.try(:agency)), bank_account1: (bank_account.try(:agency_digit)))
 br
-= t('.conta_bank_account_bank', bank_account: (bank_account.try(:account)), bank_account1: (bank_account.try(:account_digit)))
+= raw t('.conta_bank_account_bank', bank_account: (bank_account.try(:account)), bank_account1: (bank_account.try(:account_digit)))
 br
-= t('.nome_do_titular_bank', bank_account: (bank_account.try(:owner_name)))
+= raw t('.nome_do_titular_bank', bank_account: (bank_account.try(:owner_name)))
 br
-= t('.cpf_bank_account', bank_account: (bank_account.try(:owner_document)))
-br
-br
-= t('.a_chave_de_identifica', contribution: (contribution.payment_id))
+= raw t('.cpf_bank_account', bank_account: (bank_account.try(:owner_document)))
 br
 br
-= t('.se_ficou_com_alguma', mail_to: (mail_to contact_email))
+= raw t('.a_chave_de_identifica', contribution: (contribution.payment_id))
 br
 br
-= t('.um_abra_o')
+= raw t('.se_ficou_com_alguma', mail_to: (mail_to contact_email))
+br
+br
+= raw t('.um_abra_o')
 br
 | #{company_name}

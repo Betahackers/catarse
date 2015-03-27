@@ -4,41 +4,41 @@
 - project_link = edit_project_url(project)
 - company_name = ENV['COMPANY_NAME']
 
-= t('.ol_user', user: (user.name))
+= raw t('.ol_user', user: (user.name))
 br
 br
-= t('.muito_obrigado_por_nos', link_to: (link_to project.name, project_link, target: '__blank'))
+= raw t('.muito_obrigado_por_nos', link_to: (link_to project.name, project_link, target: '__blank'))
 br/
 br/
-= t('.apartir_de_agora_nossa')
-=> t('.voc_receber_um_e')
+= raw t('.apartir_de_agora_nossa')
+=> raw t('.voc_receber_um_e')
 br
 br
-strong= t('.o_que_significa_isso')
+strong= raw t('.o_que_significa_isso')
 br/
 br/
-strong= t('.p_gina_foi_recusada')
+strong= raw t('.p_gina_foi_recusada')
 br/
-= t('.o_seu_projeto_n', company_name: (company_name))
-br/
-br/
-strong= t('.p_gina_continua_em')
-br/
-= t('.o_projeto_tem_o', company_name: (company_name))
+= raw t('.o_seu_projeto_n', company_name: (company_name))
 br/
 br/
-strong= t('.p_gina_foi_aprovada')
+strong= raw t('.p_gina_continua_em')
 br/
-= t('.vamos_em_frente_iniciar')
+= raw t('.o_projeto_tem_o', company_name: (company_name))
+br/
+br/
+strong= raw t('.p_gina_foi_aprovada')
+br/
+= raw t('.vamos_em_frente_iniciar')
 br/
 br/
 strong
-  = t('.para_acompanhar_a_mudan', link_to: (link_to project.name, project_link, target: '__blank'))
+  = raw t('.para_acompanhar_a_mudan', link_to: (link_to project.name, project_link, target: '__blank'))
 br/
 br/
-= t('.lembrando_que_voc_pode', mail_to: (mail_to ENV['EMAIL_PROJECTS']))
+= raw t('.lembrando_que_voc_pode', mail_to: (mail_to ENV['EMAIL_PROJECTS']))
 br/
 br/
-= t('.um_abra_o')
+= raw t('.um_abra_o')
 br/
 = company_name

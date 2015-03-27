@@ -1,19 +1,19 @@
 -contribution = @notification.contribution
 - company_name = ENV['COMPANY_NAME']
 - contact_email = ENV['EMAIL_CONTACT']
-= t('.ol_strong_contribution_strong', contribution: (contribution.user.display_name))
+= raw t('.ol_strong_contribution_strong', contribution: (contribution.user.display_name))
 br
 br
-= t('.o_reembolso_do_seu', link_to: (link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink)), company_name1: (company_name))
+= raw t('.o_reembolso_do_seu', link_to: (link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink)), company_name1: (company_name))
 br
 br
-= t('.a_chave_de_identifica', contribution: (contribution.payment_id))
+= raw t('.a_chave_de_identifica', contribution: (contribution.payment_id))
 br/
 br/
-= t('.se_ficou_com_alguma')
-=> t('.esta_mensagem_ou_atrav', mail_to: (mail_to contact_email))
+= raw t('.se_ficou_com_alguma')
+=> raw t('.esta_mensagem_ou_atrav', mail_to: (mail_to contact_email))
 br
 br
-= t('.um_abra_o')
+= raw t('.um_abra_o')
 br
 | #{company_name}

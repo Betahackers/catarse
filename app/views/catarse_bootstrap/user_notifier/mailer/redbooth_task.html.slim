@@ -1,38 +1,38 @@
 - project = @notification.project
 - project_account = project.account
 - project_link = project_by_slug_url(permalink: project.permalink)
-= t('.diegoreeberg')
+= raw t('.diegoreeberg')
 br/
 = project.name
 br/
 = link_to project_link, project_link
 br/
-= t('.arrecadado')
+= raw t('.arrecadado')
 = project.display_pledged
 br/
-= t('.usuario_moip')
+= raw t('.usuario_moip')
 = project.user.try(:moip_login)
 br/
-= t('.cpf_cnpj_do_realizador')
+= raw t('.cpf_cnpj_do_realizador')
 = project_account.try(:cpf)
 br/
-= t('.data_de_expira_o')
+= raw t('.data_de_expira_o')
 = project.display_expires_at
 br/
-= t('.telefone')
+= raw t('.telefone')
 = project_account.try(:phone_number)
 br/
-= t('.usando_pagar_me')
+= raw t('.usando_pagar_me')
 = (project.using_pagarme? ? 'Sim' : 'Não')
 br/
-= t('.dados_bancarios')
+= raw t('.dados_bancarios')
 br/
-= t('.banco_project_account', project_account: (project_account.try(:bank).try(:name)))
+= raw t('.banco_project_account', project_account: (project_account.try(:bank).try(:name)))
 br/
-= t('.ag_ncia_project_account', project_account: (project_account.try(:agency)), project_account1: (project_account.try(:agency_digit)))
+= raw t('.ag_ncia_project_account', project_account: (project_account.try(:agency)), project_account1: (project_account.try(:agency_digit)))
 br/
-= t('.conta_project_account_project', project_account: (project_account.try(:account)), project_account1: (project_account.try(:account_digit)))
+= raw t('.conta_project_account_project', project_account: (project_account.try(:account)), project_account1: (project_account.try(:account_digit)))
 br/
-= t('.nome_do_titular_project', project_account: (project_account.try(:full_name)))
+= raw t('.nome_do_titular_project', project_account: (project_account.try(:full_name)))
 br/
-= t('.cpf_project_account', project_account: (project_account.try(:owner_document)))
+= raw t('.cpf_project_account', project_account: (project_account.try(:owner_document)))

@@ -1,7 +1,7 @@
 - contribution = @notification.contribution
-p= t('.ol_strong_contribution_strong', contribution: (contribution.user.display_name))
+p= raw t('.ol_strong_contribution_strong', contribution: (contribution.user.display_name))
 p
-  = t('.parab_ns_o_projeto', link_to: (link_to(contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink))))
-  = t('.incluindo_voc_teve_contribution', contribution: (contribution.project.total_contributions), ENV1: (ENV['COMPANY_NAME']))
-p= t('.esse_e_mail_serve')
+  = raw t('.parab_ns_o_projeto', link_to: (link_to(contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink))))
+  = raw t('.incluindo_voc_teve_contribution', contribution: (contribution.project.total_contributions), ENV1: (ENV['COMPANY_NAME']))
+p= raw t('.esse_e_mail_serve')
 = render partial: 'contribution_data', locals: {contribution: contribution}

@@ -1,11 +1,11 @@
-p= t('.ol_notification_tudo_bem', notification: (@notification.project.user.name))
+p= raw t('.ol_notification_tudo_bem', notification: (@notification.project.user.name))
 p 
-  = t('.que_tal_um_empurr', notification: (@notification.project.name))
-  = t('.ser_um_sucesso_o')
-  = t('.m_rcio_sequeira_do', link_to: (link_to t('.mola'), 'http://catarse.me/pt/mola'))
-  = t('.hangout_os_segredos')
+  = raw t('.que_tal_um_empurr', notification: (@notification.project.name))
+  = raw t('.ser_um_sucesso_o')
+  = raw t('.m_rcio_sequeira_do', link_to: (link_to raw t('.mola'), 'http://catarse.me/pt/mola'))
+  = raw t('.hangout_os_segredos')
 p 
-  = t('.nosso_coordenador_de_comunica')
-  = link_to t('.maior_arrecada_o_por'), 'http://blog.catarse.me/inovacao-e-planejamento-a-historia-do-maior-projeto-de-financiamento-coletivo-no-brasil/' 
-  = t('.v_o_ensinar_como', link_to: (link_to t('.clique_aqui_e_inscreva'), 'http://extra.startupi.com.br/hangout-catarse-mola'))
-p= t('.esperamos_voc')
+  = raw t('.nosso_coordenador_de_comunica')
+  = link_to raw t('.maior_arrecada_o_por'), 'http://blog.catarse.me/inovacao-e-planejamento-a-historia-do-maior-projeto-de-financiamento-coletivo-no-brasil/' 
+  = raw t('.v_o_ensinar_como', link_to: (link_to raw t('.clique_aqui_e_inscreva'), 'http://extra.startupi.com.br/hangout-catarse-mola'))
+p= raw t('.esperamos_voc')
