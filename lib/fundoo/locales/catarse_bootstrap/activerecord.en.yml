@@ -260,9 +260,9 @@ en:
   user:
     no_name: "Without name"
     contributions_text:
-      many: "Contributed this and other %{total} projects"
       one: "Contributed only this project until now"
       two: "Contributed this and 1 other project"
+      many: "Contributed this and other %{total} projects"
   channels_subscribers:
     created: "Now you follow the %{channel}"
     deleted: "You no longer follow the %{channel}"

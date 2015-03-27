@@ -49,8 +49,7 @@ pt:
           ol_user: Olá %{user},
           novidades_dessa_semana_na: Novidades dessa semana na categoria %{category}
             do Catarse
-          project_by_slug_url: 'project_by_slug_url(permalink: project.permalink,
-            ref: ''notificacao_subscription_category''))}'
+                      ref: ''notificacao_subscription_category''))}'
           um_abra_o: Um abraço,
           env: "%{ENV}"
           descadastrar: Descadastrar
@@ -123,7 +122,7 @@ pt:
           ol_strong_contribution_strong: Olá, <strong>%{contribution}</strong>!
           parab_ns_o_projeto: Parabéns! O projeto %{link_to} que,
           incluindo_voc_teve_contribution: incluindo você, teve %{contribution} apoiadores,
-            foi financiado com sucesso no %{ENV1}.
+            foi financiado com sucesso.
           esse_e_mail_serve: Esse e-mail serve como um <strong>recibo definitivo da
             sua contribuição</strong>.
         contribution_project_successful_subject:
@@ -134,7 +133,7 @@ pt:
           ol_contribution: Olá, %{contribution}!
           infelizmente_o_projeto_link: Infelizmente o projeto %{link_to}
           que_voc_apoiou_n: que você apoiou não atingiu a meta estabelecida e não
-            foi financiado no %{ENV}.
+            foi financiado.
           como_o_seu_pagamento: Como o seu pagamento foi feito por boleto, segue os
             procedimentos que devem ser feitos para que possamos estornar o valor
             do seu apoio
@@ -154,7 +153,7 @@ pt:
         contribution_project_unsuccessful_credit:
           ol_contribution: Olá, %{contribution}!
           infelizmente_o_projeto_link: Infelizmente o projeto %{link_to} que você
-            apoiou não atingiu a meta estabelecida e não foi financiado no %{ENV1}.
+            apoiou não atingiu a meta estabelecida e não foi financiado.
           como_seu_apoio_foi: Como seu apoio foi realizado utilizando créditos, nossa
             equipe entrará em contato para realizar o reembolso.
           se_ficou_com_alguma: Se ficou com alguma dúvida, entre em contato conosco
@@ -166,7 +165,7 @@ pt:
         contribution_project_unsuccessful_credit_card:
           ol_contribution: Olá, %{contribution}!
           infelizmente_o_projeto_link: Infelizmente o projeto %{link_to} que você
-            apoiou não atingiu a meta estabelecida e não foi financiado no %{ENV1}.
+            apoiou não atingiu a meta estabelecida e não foi financiado.
           em_at_5_dias: Em até 5 dias úteis faremos o reembolso do valor do seu apoio,
             que <strong>virá como crédito na próxima ou
           subsequente_fatura_do_seu: subsequente fatura do seu cartão</strong>. Assim
@@ -188,7 +187,7 @@ pt:
         contribution_project_unsuccessful_slip:
           ol_contribution: Olá, %{contribution}!
           infelizmente_o_projeto_link: Infelizmente o projeto %{link_to} que você
-            apoiou não atingiu a meta estabelecida e não foi financiado no %{ENV1}.
+            apoiou não atingiu a meta estabelecida e não foi financiado.
           como_o_seu_apoio: Como o seu apoio foi efetuado através de boleto, realizaremos
             o reembolso diretamente na conta em até 30 dias.
           banco_bank_account: 'Banco: %{bank_account}'
@@ -236,8 +235,7 @@ pt:
             na nossa Central de Suporte: suporte.catarse.me.'
           um_grande_abra_o: Um grande abraço,
           equipe_do_catarse: Equipe do Catarse
-          link_to_link: ", link_to: (link_to(t("
-        credits_warning_less_group_subject:
+                  credits_warning_less_group_subject:
           text:
             total_days_dias: "%{total_days} dias para usar seus créditos e fazer um
               projeto acontecer!"
@@ -259,8 +257,7 @@ pt:
           4_clicar_no_bot: 4 - Clicar no botão Revisar e realizar pagamento na parte
             debaixo da tela;
           strong_dicas_de: "<strong>Dicas de projetos</strong>"
-          project_by_slug_url: 'project_by_slug_url(permalink: project.permalink,
-            ref: ''credits_warning_more_group''))}'
+                      ref: ''credits_warning_more_group''))}'
           caso_voc_n_o: Caso você não utilize os créditos até o dia 10/11, entraremos
             em contato para realizar o reembolso.
           se_ficar_com_alguma: Se ficar com alguma dúvida, só nos avisar respondendo
@@ -273,7 +270,7 @@ pt:
               projeto acontecer!"
         credits_warning_subject:
           text:
-            voc_tem_r_notification: Você tem R$ %{notification} em créditos no %{ENV1}
+            voc_tem_r_notification: Você tem R$ %{notification} em créditos
         deadline_extension:
           oi_notification: Oi %{notification},
           devido_s_mudan_as: Devido às mudanças que ocorreram na plataforma na noite
@@ -503,8 +500,7 @@ pt:
             respondendo a esta mensagem ou através do e-mail %{mail_to}
           um_abra_o: Um abraço,
           env: "%{ENV}"
-          link_to_link: ", link_to: ( link_to t("
-        pending_payment_subject:
+                  pending_payment_subject:
           text:
             o_projeto_notification_precisa: O projeto %{notification} precisa do seu
               apoio!
@@ -637,7 +633,7 @@ pt:
           um_abra_o: Um abraço,
         project_received_subject:
           text:
-            o_seu_rascunho_de: O seu rascunho de projeto foi criado no %{ENV}
+            o_seu_rascunho_de: O seu rascunho de projeto foi criado
         project_success:
           uhuu_project: Uhuu, %{project},
           parab_ns_pela_campanha: Parabéns pela campanha!
@@ -744,10 +740,9 @@ pt:
             de contatos os e-mails:</strong>
           um_abra_o: Um abraço,
           a_equipe_do_company: A equipe do %{company_name} te deseja uma boa campanha!!!!
-          link_to_link: ", link_to: (link_to t("
-        project_visible_subject:
+                  project_visible_subject:
           text:
-            o_projeto_notification_est: O projeto %{notification} está no ar no %{ENV1}
+            o_projeto_notification_est: O projeto %{notification} está no ar
         redbooth_task:
           diegoreeberg: "#diegoreeberg"
           arrecadado: 'Arrecadado:'
@@ -934,8 +929,7 @@ pt:
             respondendo a este email ou através do %{mail_to}
           um_abra_o: Um abraço,
           catarse: Catarse
-          link_to_link: ", link_to: (link_to t("
-        terms_update_subject:
+                  terms_update_subject:
           text:
             atualiza_o_termos_de: Atualização Termos de Uso e Política de Privacidade
         user_deactivate:
@@ -975,8 +969,7 @@ pt:
           4_clicar_no_bot: 4 - Clicar no botão Revisar e realizar pagamento na parte
             debaixo da tela;
           strong_dicas_de: "<strong>Dicas de projetos</strong>"
-          project_by_slug_url: 'project_by_slug_url(permalink: project.permalink,
-            ref: ''credits_warning_less_group''))}'
+                      ref: ''credits_warning_less_group''))}'
           caso_voc_n_o: Caso você não utilize os créditos até o dia 10/11, entraremos
             em contato para realizar o reembolso.
           se_ficar_com_alguma: Se ficar com alguma dúvida, só nos avisar respondendo

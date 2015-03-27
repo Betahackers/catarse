@@ -260,9 +260,9 @@ es:
   user:
     no_name: "Sin nombre"
     contributions_text:
-      many: "Apoyó este y más %{total} otros proyectos "
       one: "Apoyó solo este proyecto"
       two: "Apoyó este y 1 más otros proyectos"
+      many: "Apoyó este y más %{total} otros proyectos "
   channels_subscribers:
     created: "Ahora sigue el %{channel}"
     deleted: "Ya no sigues el %{channel}"

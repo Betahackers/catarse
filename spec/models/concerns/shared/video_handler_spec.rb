@@ -43,7 +43,7 @@ RSpec.describe Shared::VideoHandler, type: :model do
 
     context 'source does not have a video' do
       before do
-        ENV['MINIMUM_GOAL_FOR_VIDEO'] = 5000
+        ENV['MINIMUM_GOAL_FOR_VIDEO'] = '5000'
       end
       let(:project) { create(:project, video_url: "", goal: 3000) }
 

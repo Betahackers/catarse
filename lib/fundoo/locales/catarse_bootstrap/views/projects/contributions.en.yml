@@ -75,7 +75,7 @@ en:
         PayPal: Paypal
         MoIP: Moip
         Credits: Credits
-        OfflinePayment: Pay Cash
+        OfflinePayment: "Pay Cash"
         error: "Ooops. An error occurred while registering their contribution. Please try again."
       show:
         header_subtitle: "Without you this project didn't have a chance. Welcome to the team!"
