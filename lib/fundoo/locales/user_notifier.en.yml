@@ -35,8 +35,7 @@ en:
         nome_do_titular_bank: "Name of holder: %{bank_account}"
         cpf_bank_account: "CPF: %{bank_account}"
       adm_project_deadline_subject:
-        text:
-          o_projeto_notification_atingiu: "The project %{notification} hit the deadline"
+        o_projeto_notification_atingiu: "The project %{notification} hit the deadline"
       categorized_projects_of_the_week:
         ol_user: "Hi %{user},"
         novidades_dessa_semana_na: "This week's news in the category %{category} of Fundoo"
@@ -44,16 +43,14 @@ en:
         descadastrar: Unsubscribe
         link_to_o: "%{link_to} receiving recent projects in this category."
       categorized_projects_of_the_week_subject:
-        text:
-          projetos_recentes_na_categoria: "Recent projects in category %{notification}"
+        projetos_recentes_na_categoria: "Recent projects in category %{notification}"
       confirm_contribution:
         ol_strong_contribution_strong: "Hello, <strong> %{contribution} </strong>!"
         seu_apoio_para_o: "His support for the project %{link_to} was successfully confirmed."
         at_o_momento_voc: "By the time you and other %{contribution} people are making this project a reality."
         esse_e_mail_serve: "This email serves as a temporary receipt <strong> their </strong> contribution."
       confirm_contribution_subject:
-        text:
-          recibo_provis_rio_apoio: "Interim receipt: support confirmed for %{notification}"
+        recibo_provis_rio_apoio: "Interim receipt: support confirmed for %{notification}"
       contribution_canceled:
         ol_strong_contribution_strong: "Hello, <strong> %{contribution} </strong>!"
         n_o_recebemos_a: "We do not receive payment confirmation of support for the project %{link_to}."
@@ -71,8 +68,7 @@ en:
         esse_apoio_recebeu_uma: "This support received a notice of cancellation after you have received a confirmation notification."
         verifique_no_site_do: "Check on the website of the means of payment the actual status of the transaction and, if the support listed as confirmed, confirm it on the website of Fundoo (adm/contributions)"
       contribution_canceled_after_confirmed_subject:
-        text:
-          apoio_cancelado_ap_s: "Support cancelled after being confirmed"
+        apoio_cancelado_ap_s: "Support cancelled after being confirmed"
       contribution_canceled_slip:
         ol_strong_contribution_strong: "Hello, <strong> %{contribution} </strong>!"
         n_o_recebemos_a: "We have not received confirmation of payment of the fetlock generated for the project %{link_to}."
@@ -80,27 +76,23 @@ en:
         um_abra_o: "A hug,"
         company_name: " %{company_name}"
       contribution_canceled_slip_subject:
-        text:
-          cancelamento_apoio_para_o: "Cancellation: support for the project %{notification}"
+        cancelamento_apoio_para_o: "Cancellation: support for the project %{notification}"
       contribution_canceled_subject:
-        text:
-          cancelado_apoio_para_o: "Cancelled: support for the project %{notification}"
+        cancelado_apoio_para_o: "Cancelled: support for the project %{notification}"
       contribution_confirmed_after_project_was_closed:
         projeto_contribution: "Project: %{contribution}"
         chave_contribution: "Key: %{contribution}"
         criado_em_contribution: "Created: %{contribution}"
         confirmado_em_contribution: "Confirmed in: %{contribution}"
       contribution_confirmed_after_project_was_closed_subject:
-        text:
-          novo_apoio_confirmado_no: "New sponsor confirmed in project ' %{notification} ' after 7 days of closure"
+        novo_apoio_confirmado_no: "New sponsor confirmed in project ' %{notification} ' after 7 days of closure"
       contribution_project_successful:
         ol_strong_contribution_strong: "Hello, <strong> %{contribution} </strong>!"
         parab_ns_o_projeto: "Congratulations! The project %{link_to} that,"
         incluindo_voc_teve_contribution: "including you, had %{contribution} supporters, was funded with success."
         esse_e_mail_serve: "This email serves as a final receipt <strong> their </strong> contribution."
       contribution_project_successful_subject:
-        text:
-          recibo_definitivo_apoio_para: "Final receipt: support for the project financed %{notification}"
+        recibo_definitivo_apoio_para: "Final receipt: support for the project financed %{notification}"
       contribution_project_unsuccessful:
         ol_contribution: "Hello, %{contribution}!"
         infelizmente_o_projeto_link: "Unfortunately the project %{link_to}"
@@ -129,11 +121,9 @@ en:
         e_nos_informe_a: "and let us know the identification key for your support, which is: %{contribution}"
         um_abra_o: "A hug,"
       contribution_project_unsuccessful_credit_card_subject:
-        text:
-          reembolso_apoio_para_o: "Reimbursement: support for non-funded project %{notification}"
+        reembolso_apoio_para_o: "Reimbursement: support for non-funded project %{notification}"
       contribution_project_unsuccessful_credit_subject:
-        text:
-          reembolso_apoio_para_o: "Reimbursement: support for non-funded project %{notification}"
+        reembolso_apoio_para_o: "Reimbursement: support for non-funded project %{notification}"
       contribution_project_unsuccessful_slip:
         ol_contribution: "Hello, %{contribution}!"
         infelizmente_o_projeto_link: "Unfortunately the project %{link_to} that you supported has not reached the target set and was not funded."
@@ -148,11 +138,9 @@ en:
         e_nos_informe_a: "and let us know the identification key for your support, which is: %{contribution}"
         um_abra_o: "A hug,"
       contribution_project_unsuccessful_slip_subject:
-        text:
-          reembolso_apoio_para_o: "Reimbursement: support for non-funded project %{notification}"
+        reembolso_apoio_para_o: "Reimbursement: support for non-funded project %{notification}"
       contribution_project_unsuccessful_subject:
-        text:
-          a_o_necess: "[Action needed]-repayment: support for project %{notification}"
+        a_o_necess: "[Action needed]-repayment: support for project %{notification}"
       credits_warning:
         ol_strong_user_strong: "Hello, <strong> %{user} </strong>!"
         vimos_aqui_que_voc: "We see here that you have $ %{user} in credits in Fundoo. How about leverage and support another cool project right now?"
@@ -170,8 +158,7 @@ en:
         um_grande_abra_o: "A big hug,"
         equipe_do_catarse: "Team of Fundoo"
       credits_warning_less_group_subject:
-        text:
-          total_days_dias: " %{total_days} days to use their credits and make a project happen!"
+        total_days_dias: " %{total_days} days to use their credits and make a project happen!"
       credits_warning_more_group:
         oi_user: "Hi %{user},"
         para_podermos_simplificar_ainda: "In order to further simplify the process of refunds,"
@@ -189,11 +176,9 @@ en:
         um_abra_o: "A hug"
         catarse: Fundoo
       credits_warning_more_group_subject:
-        text:
-          total_days_dias: " %{total_days} days to use their credits and make a project happen!"
+        total_days_dias: " %{total_days} days to use their credits and make a project happen!"
       credits_warning_subject:
-        text:
-          voc_tem_r_notification: "You have $ %{notification} in credits"
+        voc_tem_r_notification: "You have $ %{notification} in credits"
       deadline_extension:
         oi_notification: "Hi %{notification},"
         devido_s_mudan_as: "Due to the changes that occurred on the platform last night, some instabilities were reported in access to Fundoo. These errors are quite specific and are happening on the system update. The forecast is that the site is fully stable up to 36 hours."
@@ -201,11 +186,9 @@ en:
         se_ficar_com_alguma: "If you have any questions, just let me know."
         abra_o: Hug!
       deadline_extension_subject:
-        text:
-          instabilidade_moment_nea_e: "Momentary instability and extension"
+        instabilidade_moment_nea_e: "Momentary instability and extension"
       hangout_subject:
-        text:
-          inscreva_se_no_hangout: "Join Hangout: the secrets of Crowdfunding"
+        inscreva_se_no_hangout: "Join Hangout: the secrets of Crowdfunding"
       in_analysis_project:
         ol_user: "Hello, %{user}!"
         muito_obrigado_por_nos: "Thank you very much for sending us the project %{link_to}"
@@ -222,8 +205,7 @@ en:
         lembrando_que_voc_pode: "Remembering that you can take any questions with us at any time by replying directly to this message or via e-mail %{mail_to}"
         um_abra_o: "A hug,"
       in_analysis_project_subject:
-        text:
-          o_seu_projeto_foi: "His project was received by Fundoo"
+        o_seu_projeto_foi: "His project was received by Fundoo"
       inactive_draft:
         ol_project_tudo_bem: "Hi %{project}, all right? This is Luciana of Fundoo."
         vi_que_voc_criou: "I saw that you created the <strong> page draft project% </strong> {link_to} but has not yet sent us. After submitting, the page will be <strong> in </strong> analysis for a few days and you will be accompanied by me or someone else from our service team."
@@ -251,14 +233,12 @@ en:
         apoie_um_projeto: "support a project"
         para_sentir_o: "-To feel what his supporters feel, %{link_to}"
       inactive_draft_subject:
-        text:
-          vamos_conversar_sobre_o: "Let's talk about your project in Fundoo?"
+        vamos_conversar_sobre_o: "Let's talk about your project in Fundoo?"
       invalid_payment:
         ol: Hello
         o_apoio_contribution_para: "The support %{contribution} for the project %{contribution1} was confirmed with the value less the value of the support of the project."
       invalid_payment_subject:
-        text:
-          pagamento_com_valor_diferente: "Payment with different value of support"
+        pagamento_com_valor_diferente: "Payment with different value of support"
       invalid_refund:
         ol_comunidade: "Hello Community!"
         o_reembolso_do_apoio: "The repayment of the support for the project %{link_to} not effected due to errors in bank details filled in:"
@@ -272,15 +252,14 @@ en:
         beijos: Kisses
         catarse: Fundoo
       invalid_refund_subject:
-        text:
-          reembolso_n_o_efetuado: "Non-refund effected: support for the project %{notification}"
+        reembolso_n_o_efetuado: "Non-refund effected: support for the project %{notification}"
       new_draft_project:
         solicita_o_de_an: "Project analysis request: %{project}"
         frase_de_efeito_project: "Soundbite: %{project}"
         tempo_de_preparo_distance: "Time of preparation: %{distance_of_time_in_words}"
         sobre_o_projeto: "ABOUT THE PROJECT"
         link_link_to: "Link: %{link_to}"
-        categoria_link_to: "Category: %{link_to} \")}"
+        categoria_link_to: "Category: %{link_to}"
         valor_da_meta_number: "Target value: %{number_to_currency}"
         sobre_o_realizador: "ABOUT THE DIRECTOR"
         nome_project: "Name: %{project}"
@@ -296,8 +275,7 @@ en:
         projetos_aprovados_project: "Projects approved: %{project}"
         projetos_recusados_project: "Projects Rejected: %{project}"
       new_draft_project_subject:
-        text:
-          an_lise_do_seu: "Analysis of your project %{notification}"
+        an_lise_do_seu: "Analysis of your project %{notification}"
       new_user_registration:
         ol: Hello
         user: ", %{user}!"
@@ -306,8 +284,7 @@ en:
         para_come_ar_vale: "For starters, it's worth knowing three projects that are in the home stretch:"
         abra_os: "Hugs,"
       new_user_registration_subject:
-        text:
-          bem_vindo_ao_catarse: "Welcome to Fundoo!"
+        bem_vindo_ao_catarse: "Welcome to Fundoo!"
       payment_slip:
         ol_strong_contribution_strong: "Hello, <strong> %{contribution} </strong>!"
         voc_acabou_de_gerar: "You just generate a ticket to support the project %{link_to}."
@@ -319,8 +296,7 @@ en:
         o_prazo_de_vencimento: "The billet is maturity of 2 consecutive days. To change the expiration date, please contact us at responding to this message or via e-mail %{mail_to}"
         um_abra_o: "A hug,"
       payment_slip_subject:
-        text:
-          boleto_gerado_apoio_para: "Billet generated: support for %{notification}"
+        boleto_gerado_apoio_para: "Billet generated: support for %{notification}"
       pending_contribution_project_unsuccessful:
         ol_contribution: "Hello, %{contribution}!"
         voc_iniciou_um_apoio: "You started a support for the project %{link_to}, but he didn't hit the goal established in Fundoo."
@@ -330,8 +306,7 @@ en:
         se_ficou_com_alguma: "If you got any questions, please contact us at responding to this message or via e-mail %{mail_to}"
         um_abra_o: "A hug,"
       pending_contribution_project_unsuccessful_subject:
-        text:
-          voc_tem_um_apoio: "You have a pending support for non-funded project %{notification}"
+        voc_tem_um_apoio: "You have a pending support for non-funded project %{notification}"
       pending_payment:
         ol_strong_contribution_strong: "Hello, <strong> %{contribution} </strong>!"
         verificamos_que_voc_iniciou: "We see that you have started to support the project %{link_to},"
@@ -347,8 +322,7 @@ en:
         descadastrar: Unsubscribe
         link_to_o: " %{link_to} receiving news of this project"
       posts_subject:
-        text:
-          novidade: "News:"
+        novidade: "News:"
       processing_payment:
         ol_strong_contribution_strong: "Hello, <strong> %{contribution} </strong>!"
         seu_apoio_para_link: "His support for %{link_to}"
@@ -361,8 +335,7 @@ en:
         um_abra_o: "A hug,"
         company_name: " %{company_name}"
       processing_payment_subject:
-        text:
-          em_an_lise_apoio: "Under review: support for %{notification}"
+        em_an_lise_apoio: "Under review: support for %{notification}"
       project_approved:
         seu_projeto_foi_aprovado: "your project has been approved"
         ol_project_o_strong: "Hello, %{project}, the <strong> %{link_to1} </strong> and can go on the air when you want."
@@ -381,8 +354,7 @@ en:
         um_grande_abra_o: "A big hug,"
         a_equipe_do_company: "The %{company_name} team wishes you a great campaign!"
       project_approved_subject:
-        text:
-          o_seu_projeto_foi: "Your project has been approved! Read this email!"
+        o_seu_projeto_foi: "Your project has been approved! Read this email!"
       project_in_waiting_funds:
         oi_project: "Hi %{project},"
         o_prazo_do_projeto: "The term of the project %{link_to} in the %{company_name1} came to an end."
@@ -401,8 +373,7 @@ en:
         se_ficou_com_alguma: "If you got any questions, reply to this message directly or contact us via e-mail %{mail_to}. If you need to talk via phone will be available from Monday to Friday from 2:0 pm to 6:0 pm on the phone (11) 98414-0173."
         um_abra_o: "A hug,"
       project_in_waiting_funds_subject:
-        text:
-          fim_do_prazo_do: "Project deadline %{notification}"
+        fim_do_prazo_do: "Project deadline %{notification}"
       project_owner_contribution_confirmed:
         ol_strong_project_strong: "Hello, <strong> %{project} </strong>!"
         confirmed_contributions_today: " %{confirmed_contributions_today} new support"
@@ -414,8 +385,7 @@ en:
         lembrando_que_voc_pode: "Remembering that you can take questions with us answering directly to this message or via e-mail %{mail_to}"
         um_abra_o: "A hug,"
       project_owner_contribution_confirmed_subject:
-        text:
-          novos_apoios_para_o: "New support for the project %{notification}"
+        novos_apoios_para_o: "New support for the project %{notification}"
       project_received:
         ol_user: "Hello, %{user}!"
         obrigado_por_iniciar_o: "Thanks for starting the process of registering a project in %{company_name}!"
@@ -432,8 +402,7 @@ en:
         mail_to_e: " %{mail_to} and %{mail_to1} to avoid that our messages get your spam box due to your email filters."
         um_abra_o: "A hug,"
       project_received_subject:
-        text:
-          o_seu_rascunho_de: "His draft project was created"
+        o_seu_rascunho_de: "His draft project was created"
       project_success:
         uhuu_project: "Hooray, %{project},"
         parab_ns_pela_campanha: "Congratulations on your campaign!"
@@ -450,8 +419,7 @@ en:
         um_abra_o_apertado: "A tight hug of congratulations!"
         a_equipe_do_company: "The team of the %{company_name} is vibrating with you!!!!"
       project_success_subject:
-        text:
-          parab_ns_notification_foi: "Congratulations!  %{notification} was funded."
+        parab_ns_notification_foi: "Congratulations!  %{notification} was funded."
       project_unsuccessful:
         oi_project: "Hi, %{project},"
         infelizmente_o_projeto_link: "Unfortunately the project %{link_to} did not reach the goal of financing in %{company_name1}."
@@ -469,8 +437,7 @@ en:
         um_grande_abra_o: "A big hug,"
         a_equipe_do_company: "The team of the %{company_name} loved to accompany you on this adventure!"
       project_unsuccessful_subject:
-        text:
-          notification_n_o: " %{notification} did not reach the goal of fundraising"
+        notification_n_o: " %{notification} did not reach the goal of fundraising"
       project_visible:
         ol_user: "Hello, %{user}."
         strong_o_projeto: "<strong> the project %{link_to} is in the air and can already receive support! </strong>"
@@ -499,8 +466,7 @@ en:
         um_abra_o: "A hug,"
         a_equipe_do_company: "The %{company_name} team wishes you a good campaign it!!!!"
       project_visible_subject:
-        text:
-          o_projeto_notification_est: "The project %{notification} is in the air in %{ENV1}"
+        o_projeto_notification_est: "The project %{notification} is in the air in %{ENV1}"
       redbooth_task:
         diegoreeberg: "#diegoreeberg"
         arrecadado: "Raised:"
@@ -516,8 +482,7 @@ en:
         nome_do_titular_project: "Name of holder: %{project_account}"
         cpf_project_account: "CPF: %{project_account}"
       redbooth_task_subject:
-        text:
-          notification: " %{notification}"
+        notification: " %{notification}"
       refund_completed_credit_card:
         ol_strong_contribution_strong: "Hello, <strong> %{contribution} </strong>!"
         o_reembolso_do_seu: "Refund of your support for the project %{link_to} in the %{company_name1} has just been held. The effective credit should happen in the next Bill, if she's still open, or the next, if this month has already been closed."
@@ -527,8 +492,7 @@ en:
         um_abra_o: "A hug,"
         company_name: " %{company_name}"
       refund_completed_credit_card_subject:
-        text:
-          reembolso_efetuado_apoio_para: "Refund effected: support for project %{notification}"
+        reembolso_efetuado_apoio_para: "Refund effected: support for project %{notification}"
       refund_completed_slip:
         ol_strong_contribution_strong: "Hello, <strong> %{contribution} </strong>!"
         o_reembolso_do_seu: "Refund of your support for the project %{link_to} in the %{company_name1} just be held for bank account:"
@@ -542,8 +506,7 @@ en:
         um_abra_o: "A hug,"
         company_name: " %{company_name}"
       refund_completed_slip_subject:
-        text:
-          reembolso_efetuado_apoio_para: "Refund effected: support for non-funded project %{notification}"
+        reembolso_efetuado_apoio_para: "Refund effected: support for non-funded project %{notification}"
       refund_moip:
         ol_user_tudo_bem: "Hi %{user}, all right?"
         para_muitos_casos_n: "For many cases, we didn't have a simple solution to make the refund. Now we are in a process to optimize this step. You're part of the first group for which we will make the refund directly to the bank account. :-)"
@@ -581,8 +544,7 @@ en:
         forma_de_pagamento_contribution: "Form of payment: %{contribution}"
         data_de_cria_o: "Date of creation: %{contribution}"
       refund_request_subject:
-        text:
-          pedido_de_reembolso_do: "Application for reimbursement of the project %{notification}"
+        pedido_de_reembolso_do: "Application for reimbursement of the project %{notification}"
       refunded_and_canceled:
         ol_strong_contribution_strong: "Hello, <strong> %{contribution} </strong>!"
         seu_reembolso_foi_realizado: "Your refund was successfully held and the payment for the project %{link_to}, canceled."
@@ -591,8 +553,7 @@ en:
         um_abra_o: "A hug,"
         company_name: " %{company_name}"
       refunded_and_canceled_subject:
-        text:
-          reembolso_efetuado_apoio_para: "Refund effected: support for project %{notification}"
+        reembolso_efetuado_apoio_para: "Refund effected: support for project %{notification}"
       reminder:
         ol_strong_user_strong: "Hello, <strong> %{user} </strong>!"
         este_o_lembrete_de: "This is the reminder that the project %{link_to} ends in 48 hours"
@@ -600,8 +561,7 @@ en:
         um_abra_o: "A hug,"
         company_name: " %{company_name}"
       reminder_subject:
-        text:
-          lembrete_do_catarse_a: "Reminder of Fundoo. The %{notification} is ending!"
+        lembrete_do_catarse_a: "Reminder of Fundoo. The %{notification} is ending!"
       requested_refund_for_credits:
         ol_comunidade: "Hello Community!"
         esse_apoio_para_projeto: "This support for non-funded project, was conducted through credits. Please contact the Director to make the refund."
@@ -617,8 +577,7 @@ en:
         forma_de_pagamento_contribution: "Form of payment: %{contribution}"
         data_de_cria_o: "Date of creation: %{contribution}"
       requested_refund_for_credits_subject:
-        text:
-          pedido_de_reembolso_para: "Refund request for credits"
+        pedido_de_reembolso_para: "Refund request for credits"
       terms_update:
         ol_user: "Hi %{user},"
         termos_de_uso: "terms of use"
@@ -639,8 +598,7 @@ en:
         um_abra_o: "A hug,"
         catarse: Fundoo
       terms_update_subject:
-        text:
-          atualiza_o_termos_de: "Updated terms of use and privacy policy"
+        atualiza_o_termos_de: "Updated terms of use and privacy policy"
       user_deactivate:
         ol_notification: "Hi %{notification},"
         clicar_aqui: "Click here"
@@ -649,8 +607,7 @@ en:
         um_abra_o: "A hug,"
         catarse: Fundoo
       user_deactivate_subject:
-        text:
-          sua_conta_no_catarse: "Your account at Fundoo has been disabled!"
+        sua_conta_no_catarse: "Your account at Fundoo has been disabled!"
       credits_warning_less_group:
         oi_user: "Hi %{user},"
         para_podermos_simplificar_ainda: "In order to further simplify the process of refunds,"
