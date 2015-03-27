@@ -742,8 +742,6 @@ pt:
             efetuados"
           por_favor_strong_n: Por favor </strong>não esqueça de incluir na sua lista
             de contatos os e-mails:</strong>
-          mail_to_e: "%{mail_to} e %{mail_to1} para evitar que nossas mensagens caiam
-            na sua caixa de spam devido a filtros do seu email."
           um_abra_o: Um abraço,
           a_equipe_do_company: A equipe do %{company_name} te deseja uma boa campanha!!!!
           link_to_link: ", link_to: (link_to t("
