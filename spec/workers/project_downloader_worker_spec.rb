@@ -5,7 +5,7 @@ RSpec.describe ProjectDownloaderWorker do
   let(:perform_project) { ProjectDownloaderWorker.perform_async(project.id) }
 
   before do
-    ENV['MINIMUM_GOAL_FOR_VIDEO'] = 5000
+    ENV['MINIMUM_GOAL_FOR_VIDEO'] = '5000'
     Sidekiq::Testing.inline!
 
     project.video_url = 'http://vimeo.com/66698435'

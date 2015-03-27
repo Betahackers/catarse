@@ -178,7 +178,7 @@ RSpec.describe Project, type: :model do
 
   describe '.video_url' do
     before do
-      ENV['MINIMUM_GOAL_FOR_VIDEO'] = 5000
+      ENV['MINIMUM_GOAL_FOR_VIDEO'] = '5000'
     end
     context 'when goal is above minimum' do
       subject { @project_01 }
@@ -194,7 +194,7 @@ RSpec.describe Project, type: :model do
       subject { @project_02 }
 
       before do
-        ENV['MINUMUM_GOAL_FOR_VIDEO'] = 5000
+        ENV['MINUMUM_GOAL_FOR_VIDEO'] = '5000'
         @project_02 = create(:project, goal: 4000)
       end
 
