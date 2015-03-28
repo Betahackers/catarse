@@ -9,7 +9,7 @@ gem 'catarse_api', github: 'catarse/catarse_api'
 gem 'protected_attributes', '~> 1.0.5' # When upgrade to strong_parameters, remove this gem.
 gem 'rails-observers', '~> 0.1.2'
 
-gem 'sidekiq',  '~> 3.1.3'
+gem 'sidekiq',  '~> 3.2.5'
 
 # Turns every field on a editable one
 gem "best_in_place", :git => "git://github.com/bernat/best_in_place", ref: "ee95961e639022e6aa528704b8cb4789596ea61b"

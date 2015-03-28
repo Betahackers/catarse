@@ -36,7 +36,7 @@
         - elsif contribution.refunded?
           = t('.rembolsado_em_contribution_decorate', refunded_on: contribution.decorate.display_date(:refunded_at))
         - elsif contribution.requested_refund?
-          = t('.reembolso_solicitado_em_contribution', requested_refuned_on: contribution.decorate.display_date(:requested_refund_at))
+          = t('.reembolso_solicitado_em_contribution', requested_refunded_on: contribution.decorate.display_date(:requested_refund_at))
     .w-col.w-col-4
       .fontsize-smallest
         span.w-hidden-main.w-hidden-medium.fontweight-semibold=> t('.recompensa_1')

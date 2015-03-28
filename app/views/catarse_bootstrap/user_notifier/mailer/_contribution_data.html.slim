@@ -37,4 +37,4 @@ p= raw t('.se_ficou_com_alguma', mail_to: (mail_to ENV['EMAIL_CONTACT']))
 p
   = raw t('.um_abra_o_e')
   br/
-  = raw t('.env', ENV: (ENV['COMPANY_NAME']))
+  = ENV['COMPANY_NAME']

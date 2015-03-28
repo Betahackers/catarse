@@ -31,7 +31,7 @@ es:
         details:
           name: "Nombre corporativo"
           bank_data: "Datos bancarios"
-          document: CPF/CNPJ
+          document: DNI/NIE
           email: "Correo electrónico"
           state_inscription: "Afiliaciones estatales"
           address: Dirección
@@ -224,7 +224,7 @@ es:
           details:
             name: "Nombre corporativo"
             bank_data: "Datos bancarios"
-            document: CPF/CNPJ
+            document: DNI/NIE
             email: "Correo electrónico"
             state_inscription: "Afiliaciones estatales"
             address: Dirección

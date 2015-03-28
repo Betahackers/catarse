@@ -4,7 +4,7 @@ en:
       contribution_data:
         seguem_todos_os_dados: "Follow all payment data:"
         nome_do_apoiador_contribution: "Name of supporter: %{contribution}"
-        cpf_cnpj_do_apoiador: "CPF/CNPJ of supporter: %{contribution}"
+        cpf_cnpj_do_apoiador: "Document ID of supporter: %{contribution}"
         data_da_confirma_o: "Date of confirmation of the support: %{l}"
         op_o_de_pagamento: "Payment option: %{contribution}"
         valor_da_contribui_o: "Contribution value: %{number_to_currency}"
@@ -14,7 +14,7 @@ en:
         estimativa_de_entrega_contribution: "Delivery estimate: %{contribution}"
         id_do_apoio_contribution: "Support ID: %{contribution}"
         nome_raz_o_social: "Name/corporate name of Director: %{contribution}"
-        cpf_cnpj_do_realizador: "CPF/CNPJ of Director: %{contribution}"
+        cpf_cnpj_do_realizador: "Document ID of Director: %{contribution}"
         importante_ressaltar_que: "It is important to note that the Fundoo is only mediator in this process,"
         portanto_se_tiver_alguma: "Therefore, if you have any questions regarding the design or reward selected among"
         em_contato_diretamente_com: "in touch directly with the Director via e-mail %{mail_to}."
@@ -46,8 +46,8 @@ en:
         projetos_recentes_na_categoria: "Recent projects in category %{notification}"
       confirm_contribution:
         ol_strong_contribution_strong: "Hello, <strong> %{contribution} </strong>!"
-        seu_apoio_para_o: "His support for the project %{link_to} was successfully confirmed."
-        at_o_momento_voc: "By the time you and other %{contribution} people are making this project a reality."
+        seu_apoio_para_o: "Your support for the project %{link_to} was successfully confirmed."
+        at_o_momento_voc: "Thanks to you and other %{contribution} people, this project is becoming a reality."
         esse_e_mail_serve: "This email serves as a temporary receipt <strong> their </strong> contribution."
       confirm_contribution_subject:
         recibo_provis_rio_apoio: "Interim receipt: support confirmed for %{notification}"
@@ -295,6 +295,16 @@ en:
         default_key: "."
         o_prazo_de_vencimento: "The billet is maturity of 2 consecutive days. To change the expiration date, please contact us at responding to this message or via e-mail %{mail_to}"
         um_abra_o: "A hug,"
+      paypal_donation_request_subject:
+        thank_you_for_supporting: "Thanks for supporting %{notification}!"
+      paypal_donation_request:
+        ol_strong_contribution_strong: "Hello, <strong> %{contribution} </strong>!"
+        thank_you_for_supporting: "Thank you so much for supporting %{link_to}."
+        the_project_organizer_will: The project organizer may need to confirm your contribution before it is applied to the campaign.              
+        if_you_would_like_to: "If you have a paypal account, you can make your donation by visiting: <a target='_blank' href='https://www.paypal.com/us/webapps/mpp/send-money-online'>https://www.paypal.com/us/webapps/mpp/send-money-online</a>. (be sure to input the email and amount correctly and select the right currency :) )"
+        organizer_email: "Organizer email address: %{email}"
+        donation_amount: "Donation amount: %{amount}"
+        um_abra_o: "A hug,"
       payment_slip_subject:
         boleto_gerado_apoio_para: "Billet generated: support for %{notification}"
       pending_contribution_project_unsuccessful:
@@ -471,7 +481,7 @@ en:
         diegoreeberg: "#diegoreeberg"
         arrecadado: "Raised:"
         usuario_moip: "User moip:"
-        cpf_cnpj_do_realizador: "CPF/CNPJ of the Director:"
+        cpf_cnpj_do_realizador: "Document ID of the Director:"
         data_de_expira_o: "Expiration date:"
         telefone: "Phone:"
         usando_pagar_me: "Using pagar.me?"

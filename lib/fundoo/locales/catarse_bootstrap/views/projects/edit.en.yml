@@ -27,7 +27,7 @@ en:
       title: "Registration data and banking"
       subtitle_html: "With the complete information below, your project will be ready to air. After completing the fill, then click Save. Review. If everything is ok, just press the publish button and start your campaign."
       user_data_title: "Registration data and address"
-      user_data_subtitle_html: "We need the information below for issuing Tax Note to successful projects. <b> warning: the CPF/CNPJ listed in registration data and bank details must be the same. </b>"
+      user_data_subtitle_html: "We need the information below for issuing Tax Note to successful projects. <b> warning: the Document ID listed in registration data and bank details must be the same. </b>"
       account_title: "Bank details"
       account_subtitle_html: "This is a required field but doesn't apply to Fundoo. just make up some values. <b> warning: the document number listed in registration data and bank details must be the same. </b>"
       submit: Save

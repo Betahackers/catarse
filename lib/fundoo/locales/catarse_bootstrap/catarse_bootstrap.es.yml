@@ -119,7 +119,7 @@ es:
       estimativa_de_entrega: "Entrega estimada:"
       selecionou_recompensa: "recompensa seleccionado"
       confirmado_em_contribution_decorate: "Confirmado el %{confirmed_on}"
-      rembolsado_em_contribution_decorate: "Reembolsada %{refuned_on}"
+      rembolsado_em_contribution_decorate: "Reembolsada %{refunded_on}"
       reembolso_solicitado_em_contribution: "Reembolso solicitado %{requested_refund_on}"
     dashboard_billing:
       cart_es_de_cr: "Tarjetas de crédito"

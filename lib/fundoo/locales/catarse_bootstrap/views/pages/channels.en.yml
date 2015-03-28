@@ -88,7 +88,7 @@ en:
       send_to_trash: "DELETE PROJECT"
       show_action: Show
       state: State
-      total_contributions: Support
+      total_contributions: Contributions
       unpublish_action: Unpublish
       user: User
       user_id: User

@@ -4,7 +4,7 @@ en:
       channel: Channel
       project: Project
       reward: Reward
-      contribution: Supporter
+      contribution: Contributor
       category: Category
       bank_account: "Bank details"
     attributes:

@@ -20,7 +20,7 @@ en:
     posts:
       project_post:
         unavailable: "This news is only available to contributors."
-        contribute: Support
+        contribute: Contribute
         unavailable_contribute: "This project to view it."
         destroy: "Remove News"
         destroy_confirmation: "Want to remove this news?"
@@ -47,7 +47,7 @@ en:
         about: About
         add_reward: "Add reward"
         comments: Comments
-        contributions: Support
+        contributions: Contributions
         metrics: Metrics
         edit: Edition
         reports: Reports
@@ -76,7 +76,7 @@ en:
         about: About
         add_reward: "Add reward"
         comments: Comments
-        contributions: Support
+        contributions: Contributions
         metrics: Metrics
         edit: Edition
         reports: Reports

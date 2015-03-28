@@ -2,7 +2,7 @@ class ContributionObserver < ActiveRecord::Observer
   observe :contribution
 
   def after_create(contribution)
-    contribution.define_key
+    contribution.define_key    
     PendingContributionWorker.perform_at(2.day.from_now, contribution.id)
   end
 
@@ -10,7 +10,7 @@ class ContributionObserver < ActiveRecord::Observer
     if contribution.payment_choice_was.nil? && contribution.payment_choice == 'BoletoBancario'
       contribution.notify_to_contributor(:payment_slip)
     end
-
+    
     contribution.project.expires_fragments(
       'project-stats',
       'project-rewards'
@@ -21,6 +21,13 @@ class ContributionObserver < ActiveRecord::Observer
     notify_confirmation(contribution) if contribution.confirmed? && contribution.confirmed_at.nil?
   end
 
+  def from_pending_to_waiting_confirmation(contribution)
+    if !contribution.confirmed?
+      contribution.notify_to_contributor(:paypal_donation_request) if contribution.project.paypal_email_address.present?
+      contribution.confirm! if contribution.project.auto_confirm_contribution
+    end
+  end
+  
   def from_confirmed_to_refunded_and_canceled(contribution)
     do_direct_refund(contribution)
   end

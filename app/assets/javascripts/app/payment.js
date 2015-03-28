@@ -11,6 +11,8 @@ App.addChild('Payment', _.extend({
   },
 
   activate: function(){
+    this.selectInternationalPayment();
+    
   },
 
   show: function(){

@@ -55,25 +55,16 @@
                 = form.input :address_state, as: :string, wrapper_html: {class: 'w-col w-col-6 w-sub-col'}, input_html: {data: {required_in_brazil: true}}, validation_text: true
                 = form.input :address_zip_code, as: :tel, wrapper_html: {class: 'w-col w-col-small-6 w-col-tiny-6 w-col-3 w-sub-col-middle'}, input_html: {data: {required_in_brazil: true, fixed_mask: '99999-999'}}, validation_text: true
                 = form.input :address_phone_number, as: :tel, wrapper_html: {class: 'w-col w-col-small-6 w-col-tiny-6 w-col-3'}, input_html: {data: {required_in_brazil: true, fixed_mask: '(99) 9999-99999'}}, validation_text: true
-          .w-row.u-marginbottom-40
-            .w-col.w-col-push-3.w-col-6
-              a#next-step.btn.btn-large href="#payment-engines" = t('.pr_ximo_passo')
-        #payment-engines.w-hidden
-          .u-marginbottom-30.u-text-center-small-only
-            .fontsize-large.fontweight-semibold.text-success-small-only= t('.choose_payment')
-            .fontcolor-secondary.fontweight-semibold.fontsize-smallest.fontcolor-secondary
-              span.fa.fa-lock
-              |&nbsp;&nbsp;&nbsp;  
-              = t('.choose_payment_subtitle')
-          #payment-methods.nav-light.u-marginbottom-30
-            - avaiable_payment_engines.each do |engine|
-              .nav-tab.nav-tab-light[id=engine.name data-target="##{engine.name}_payment"]
-                = t("projects.contributions.review.#{engine.name}")
-          .tab_content_container
-            - avaiable_payment_engines.each do |engine|
-              div[id="#{engine.name}_payment" class="payments_type hide" data-path=engine.review_path(@contribution) ]
+          / .w-row.u-marginbottom-40
+          /   .w-col.w-col-push-3.w-col-6
+          /     a#next-step.btn.btn-large href="#payment-engines" = t('.pr_ximo_passo')
+        #payment-engines
+          - engine = avaiable_payment_engines.first
+          - if engine 
+            .tab_content_container [id=engine.name data-target="##{engine.name}_payment"]
+              div[id="#{engine.name}_payment" class="payments_type" data-path=engine.review_path(@contribution) ]
                 .results
-                  .tab-loader.loader.u-text-center.w-col.w-col-12.u-marginbottom-30 = image_tag "catarse_bootstrap/fundoo-logo-infinity-spinning.svg"
+                  .u-text-center.w-col.w-col-12.u-marginbottom-30 = image_tag "catarse_bootstrap/fundoo-logo-infinity-spinning.svg"
       .w-col.w-col-4
         .w-hidden-small.w-hidden-tiny
           = render 'selected_reward'

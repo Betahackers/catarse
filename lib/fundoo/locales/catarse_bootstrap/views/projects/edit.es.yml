@@ -27,7 +27,7 @@ es:
       title: "Banca y datos del registro"
       subtitle_html: "Con la siguiente información completa, su proyecto estará listo al aire. Después de completar el relleno, luego haga clic en guardar. Revisión. Si todo está bien, sólo presione el botón publicar y empezar su campaña."
       user_data_title: "Dirección y datos de registro"
-      user_data_subtitle_html: "Necesitamos la siguiente información para emitir nota impuesto a proyectos exitosos. <b>ADVERTENCIA: el CPF/CNPJ enumerados en los datos de registro y datos bancarios deben ser el mismo.</b>"
+      user_data_subtitle_html: "Necesitamos la siguiente información para emitir nota impuesto a proyectos exitosos. <b>ADVERTENCIA: el DNI/NIE enumerados en los datos de registro y datos bancarios deben ser el mismo.</b>"
       account_title: "Datos bancarios"
       account_subtitle_html: "Este es un campo obligatorio pero no se aplica a Fundoo. inventa algunos valores. <b>ADVERTENCIA: el número de documento figuran en los datos de registro y datos bancarios deben ser el mismo.</b>"
       submit: Salvar

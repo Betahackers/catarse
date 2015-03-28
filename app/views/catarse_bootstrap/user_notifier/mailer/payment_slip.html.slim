@@ -14,4 +14,4 @@ p= raw t('.o_prazo_de_vencimento', mail_to: (mail_to ENV['EMAIL_CONTACT']))
 p 
   = raw t('.um_abra_o')
   br/
-  | #{ENV['COMPANY_NAME']}
+  = ENV['COMPANY_NAME']
