@@ -295,6 +295,8 @@ en:
         default_key: "."
         o_prazo_de_vencimento: "The billet is maturity of 2 consecutive days. To change the expiration date, please contact us at responding to this message or via e-mail %{mail_to}"
         um_abra_o: "A hug,"
+      payment_slip_subject:
+        boleto_gerado_apoio_para: "Billet generated: support for %{notification}"
       paypal_donation_request_subject:
         thank_you_for_supporting: "Thanks for supporting %{notification}!"
       paypal_donation_request:
@@ -305,8 +307,6 @@ en:
         organizer_email: "Organizer email address: %{email}"
         donation_amount: "Donation amount: %{amount}"
         um_abra_o: "A hug,"
-      payment_slip_subject:
-        boleto_gerado_apoio_para: "Billet generated: support for %{notification}"
       pending_contribution_project_unsuccessful:
         ol_contribution: "Hello, %{contribution}!"
         voc_iniciou_um_apoio: "You started a support for the project %{link_to}, but he didn't hit the goal established in Fundoo."
