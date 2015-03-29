@@ -1,0 +1,94 @@
+ca:
+  admin:
+    menu: "Moderació de canals"
+    followers_menu: Seguidors
+    statistics_menu: Estadístiques
+    profile_menu: "Editar canal"
+    partners_menu: "Editar socis"
+    statistics:
+      title: "Estadístiques de la canal"
+      total_subscribers: "Totals subscriptors"
+    confirmations:
+      destroy: "Esteu segur que voleu suprimir?"
+    filter:
+      between_created_at: "Creada entre"
+      by_id: "Per id"
+      order_table: "Taula de tipus"
+      pg_search: Projecte
+      submit: Filtre
+      title: Filtre
+      user_name_contains: L'usuari
+      with_state: "Amb l'estat"
+      by_payment_method: "Mitjans de pagament"
+    followers:
+      index:
+        download: "Descarregar llista"
+        title: Seguidors
+    management:
+      no_partners: "Qualsevol soci registrat"
+      no_posts: "No hi ha notícies registrats"
+      title: Gestió
+      total: "totals projectes"
+    partners:
+      back_to_list: "← Tornar a gestionar socis"
+      new:
+        add_partner: "Afegir soci"
+      edit:
+        edit_title: "Editar soci"
+      form:
+        hint_image: "Mida d'imatge 370 x 320"
+        save_submit: Desa
+      index:
+        new_button: "Afegir soci"
+        table:
+          created_at: "Creada l'any"
+          image: Imatge
+          name: Nom
+          url: Lloc
+          actions: Accions
+        title: "Gestionar socis"
+    posts:
+      back_to_list: "← Tornar a gestionar notícies"
+      new:
+        create_news: "Crear noves"
+      edit:
+        edit_news: "Editar notícies"
+      index:
+        new_post_button: "Crear noves"
+        table:
+          actions: Accions
+          created_at: "Creada l'any"
+          published_at: "Publicat a"
+          title: "Títol de la novetat"
+        title: "Gestionar notícies"
+      form:
+        save_submit: "Desa i presentar"
+      update:
+        published_message: "La novetat va ser publicat i enviat per correu electrònic als seguidors del canal."
+      warning_html: "Recordant-se que cada nou publicats passa directament a l'e-mail dels seus seguidors. Així, comprovar el seu text abans d'enviar-lo."
+    posts_menu: "Gestionar notícies"
+    table:
+      approve: S'aproven
+      category: Categoria
+      confirmation: "Esteu segur que voleu suprimir aquest projecte?"
+      contributed_projects: "Projectes subvencionats"
+      created_projects: "Projecte creat"
+      destroy_action: Suprimir
+      edit_action: Editar
+      expires_at: Extinció
+      goal: Meta
+      name: Títol
+      online_date: Publicació
+      pledged: Aconseguit
+      publish_action: Publicar
+      recommended: Recomanar
+      reject: Rebutjar
+      send_to_draft: "Envia-ho al projecte"
+      put_online: "Posar a l'aire"
+      send_to_trash: "ELIMINAR EL PROJECTE"
+      show_action: "Mostra el"
+      state: Estat
+      total_contributions: Aportacions
+      unpublish_action: "Anul·la la publicació"
+      user: L'usuari
+      user_id: L'usuari

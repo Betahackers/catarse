@@ -1,0 +1,22 @@
+ca:
+  devise:
+    registrations:
+      new:
+        have_account_html: "Ja teniu compte?"
+        titles:
+          site: Inscriure's
+          header: Inscriure's
+        links:
+          login: Connecti's
+        form:
+          labels:
+            show_password: "Contrasenya d'exhibició"
+            name: "Nom i cognoms"
+            password: Contrasenya
+            newsletter: "Vull rebre les novetats de Fundoo al meu e-mail"
+            accept: "Quan faci un registre, vostè accepta els <a href = \"%{terms_url}\" class = \"alt-link\" target = \"_blank\" > termes d'ús</a> i <a class = \"alt-link\" href = \"%{privacy_url}\" target = \"_blank\" ></a> política de privacitat"
+          hint:
+            password_length: "Mínim de 6 caràcters"
+          inputs:
+            submit: "Un registre"
+            facebook: "Ingressar amb Facebook"

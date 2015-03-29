@@ -1,0 +1,91 @@
+ca:
+  projects:
+    metrics:
+      titles:
+        confirmed_by_day: "Total de contribució confirmada per dia"
+        confirmed_amount_by_day: "Total recollides per dia"
+        address_state: "Total finançament per estat confirmat"
+    reminder:
+      ok: "Correcte! Us enviarem una notificació per correu electrònic 48 hores abans del final de la campanya"
+      active_btn: "Recordar-me d'aquest projecte"
+      deactive_btn: "No vull ser recordat"
+    send_to_analysis: "El seu projecte s'ha enviat al nostre equip."
+    send_to_analysis_error: "Projecte enviament d'error d'anàlisi. Ompliu tots els camps obligatoris."
+    push_to_online: "El seu projecte està en línia!"
+    push_to_online_error: "Error en realitzar el projecte en línia. Ompliu tots els camps obligatoris."
+    twitter:
+      take_a_look: "Comprovi el projecte %{name} en @catarse"
+    video_embed:
+      a_project_by_html: "Un projecte %{link} en"
+    posts:
+      project_post:
+        unavailable: "Aquesta notícia només està disponible per a contribuents."
+        contribute: Contribuir
+        unavailable_contribute: "Aquest projecte per visualitzar-lo."
+        destroy: "Treure el notícies"
+        destroy_confirmation: "Voleu suprimir aquesta notícia?"
+      new:
+        notice: "Notícies enviades correctament!"
+        comment: "Text de la notícia"
+        exclusive: "Visible només per a contribuents"
+        submit: "Envieu notícies"
+        title: "Títol de la notícia"
+        warning: "Recordar que tots els correus de novetat anirà directament al correu electrònic dels seus col·laboradors. Així, comprovar el seu text abans d'enviar-lo."
+    project_reports:
+      all_contributions_without_reward: "Descarregar Informe de tots els contribuents que hagin seleccionat una recompensa"
+      link_reports_confirmed: "Descarregar tots els contribuents confirmat informe"
+      link_reports_waiting_confirmation: "Descarregar Informe de tots els col·laboradors amb totxo imprès"
+      link_reward: "Descarregar Informe de col. laboradors de la retribució de %{value}"
+    project_about:
+      embed: <embed>
+      embed_title: "Això incrustar sobre el disseny del lloc"
+      active_btn: " Recordar"
+      deactive_btn: " Recordatori actiu"
+    show:
+      menu:
+        panel_html: "Panell de control"
+        about: Sobre
+        add_reward: "Afegir recompensa"
+        comments: Comentari
+        contributions: Aportacions
+        metrics: Mètriques
+        edit: Edició
+        reports: Informes
+        posts: Notícies
+    project_main:
+      share: Compartir
+      tweet: Tweeter
+      contribute_project:
+        display_status:
+          reached_goal: "Aquest projecte serà reeixida i finançat en %{date}"
+          not_reached_goal: "Aquest projecte es només finançarà si almenys %{goal} s'assoleixen abans %{date}"
+          failed: "Aquest projecte no ha assolit el mínim de %{goal} %{date} i no va ser finançat"
+          rejected: "Aquest projecte no va ser acceptat. No es pot realitzar una còpia de seguretat."
+          in_analysis: "Aquest projecte està en revisió i encara no està oberta a rebre aportació."
+          successful: "Aquest projecte va tenir èxit i va ser finançat en %{date}"
+          waiting_funds: "L'espera de la confirmació de les factures per veure si aquest projecte es finançarà."
+          draft: "Aquest projecte és només un esborrany i encara no pot rebre còpies de seguretat."
+        submit: "Donar suport a aquest projecte"
+      project_by: "disseny per"
+      funding_period: "Període de campanya"
+      project_header:
+        subtitle_html: "Un projecte de %{link}"
+        without_city: "Un projecte de"
+        with_city: "Un projecte de %{discussion.category_name} %{author} %{city}"
+      menu:
+        about: Sobre
+        add_reward: "Afegir recompensa"
+        comments: Comentari
+        contributions: Aportacions
+        metrics: Mètriques
+        edit: Edició
+        reports: Informes
+        posts: Notícies
+      no_rewards_warning: "No viatjar! Penseu en com vostè lliurar-los i posar tot això en el pressupost. Va prometre?! OBEIR! : D"
+      no_rewards_warning_title: "Crea aquí la teva recompensa"
+      contribution_states:
+        confirmed: Confirmat
+        pending: "Pendent confirmació"
+      sidebar:
+        contributions: contribució
+        goal: "meta %{total}"

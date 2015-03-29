@@ -1,0 +1,211 @@
+ca:
+  admin:
+    projects:
+      index:
+        meio_de_pagamento: "Mitjans de pagament"
+    financials:
+      index:
+        meio_de_pagamento: "Mitjans de pagament"
+  devise:
+    passwords:
+      new:
+        redefinir_senha: "Restablir contrasenya"
+    mailer:
+      reset_password_instructions:
+        pt:
+          ol: Hola
+          esqueceu_sua_senha_sem: "He oblidat la contrasenya? Sense problemes! Restaurar clicant aquí"
+          definir_nova_senha: "conjunt de nova contrasenya"
+          se_algum_problema_acontecer: "Si qualsevol problema passa, respondre a aquest missatge directament o contactar amb nosaltres via correu electrònic"
+          abra_os: "Abraçada,"
+  explore:
+    index:
+      explore_amazing_projects: "Explorar projectes sorprenents "
+      category_name: "Nom de la categoria"
+      how_about_starting_your: "Què tal començant el seu projecte?"
+      create_your_project_on: "Crear el teu projecte a Fundoo avui!"
+      learn_more: "Més informació"
+  layouts:
+    global_alert:
+      aqui: aquí
+      conhe_a_nossa_vers: "Contacta amb la nostra versió de beta!"
+  pages:
+    bad_browser:
+      download_chrome: "Descarregar Chrome"
+      download_firefox: "Descarregui Firefox"
+    guides:
+      guia_dos_realizadores: "Guia dels consellers"
+      uma_compila_o_dos: "Una recopilació dels punts més importants d'una campanya que l'ajudaran a fer un projecte amb èxit. Esperem que aquesta guia ajudarà a desenvolupar la seva idea i tenir èxit en la seva campanya;)"
+      come_ando: Començant
+      sua_hist_ria: "Seva història"
+      meta_e_prazo: "Objectiu i termini"
+      recompensas: Recompenses
+      mobiliza_o: Mobilització
+      p_s_campanha: "Campanya de correu"
+    jobs:
+      trabalhe_conosco: "Treballa amb nosaltres"
+      o_financiamento_coletivo_n: "El finançament col·lectiu continua creixent i l'equip súper doFundoo cal créixer junts. Vine a formar part d'aquesta història amb nosaltres."
+  projects:
+    contributions:
+      show:
+        agora_voc_parte_do: "Ara ets part d'un grup de"
+        enquanto_isso_que: ".Mentrestant, què hi ha de difondre la idea als seus amics?"
+        tweet: Tweeter
+        voc_pode_curtir_esses: "Vostè pot gaudir d'aquestes aquí massa"
+        valeu: Gràcies!
+        voc_faz_parte_do: "Ets part del grup de"
+        pessoas_que_querem_tirar: "persones que volen fer"
+        do_papel_voc_receber: "una realitat! Rebràs la confirmació de pagament per correu electrònic tan aviat com es fa. Vostè també pot rastrejar l'estatus del seu suport"
+        atrav_s_do_seu: "a través del perfil"
+        compartilhe_o_seu: ".Compartir el seu suport i augmentar les possibilitats d'arribar a la meta!"
+        compartilhe: Compartir
+        tu_te: Tweeter
+        recomenda_es_de_projetos: "Projectes recomanats per a vostè"
+        curte_a_categoria_project: "Seguir la categoria %{project_name}? Vostè pot rebre primera mà i directament al teu correu quan sorgeixen nous projectes!"
+      faq_box:
+        perguntas_frequentes: "Preguntes freqüents"
+        como_eu_apoio_este: "Com que suport aquest projecte?"
+        primeiro_escolha_o_valor: "Primer, seleccioni el valor desitjat i recompensa. A continuació, només fa clic a \"revisar i realitzar el pagament\" que ens estarem et redirigirà a la pàgina següent per completar el pagament."
+        quando_o_pagamento_efetivado: "Quan el pagament s'efectua?"
+        se_voc_pagou_com: "Si vostè va pagar amb targeta de crèdit, el reconeixement ha de ser el mateix dia si fos amb totxo, fins a 4 dies laborables."
+        e_se_o_projeto: "I si el projecte no assoleixi l'objectiu?"
+        nesse_caso_voc_recebe: "En aquest cas, vostè tornar 100% de què has pagat a través d'un reemborsament."
+        se_o_projeto_for: "Si el projecte està finançat, com aconsegueixo la meva recompensa?"
+        quando_sua_recompensa_estiver: "Quan la seva recompensa és llest, %{user_link} posarem en contacte amb tu per concertar el lliurament."
+      edit:
+        preencha_e_revise_os: "Emplenar i revisar les dades per al pagament"
+        esses_dados_ser_o: "Aquesta informació es comunicaran al Director projecte"
+        endere_o_de_entrega: "Adreça de lliurament"
+        pr_ximo_passo: "Següent pas"
+    budget_fields:
+      cost: Cost
+    card:
+      pledged: "Es va comprometre"
+    dashboard_reward:
+      save: Desa
+    mobile_video:
+      leia_mais: "Llegiu-ne més"
+    project_embed:
+      insiraum_widget_em_seu: "Insiraum widget al seu lloc"
+    reward_fields:
+      describe_this_reward: "Descriure aquesta recompensa"
+      tem_certeza: "Esteu segur?"
+    dashboard_home_templates:
+      approved:
+        como_fazemos_o_repasse: "Com podem fer que la transferència de diners"
+      failed:
+        entenda_como_fazemos_estornos: "Comprendre com fer devolucions de càrrecs i devolucions"
+      online:
+        central_de_suporte: "Suport Central"
+      rejected:
+        guia_dos_realizadores: "Guia dels consellers"
+      successful:
+        como_o_repasse_do: "com es farà la transferència dels diners"
+        status: "Estat:"
+      waiting_funds:
+        entenda_como_o_repasse: "Entendre com es fa la transferència de diners per a projectes d'èxit"
+  users:
+    contribution_row:
+      projetos_que_apoiei: "Ho van recolzar projectes"
+      valor_do_apoio: "Valor de suport"
+      status_do_apoio: "Estat de suport"
+      recompensa: Recompensa
+      apoio: "Suport:"
+      status_do_apoio_1: "Estat de suport:"
+      cart_o_de_credito: "Targeta de crèdit %{installment_value} x€ %{quotes}"
+      boleto_bancario: "Boleto bancario"
+      aguardando_confirma_o_do: "L'espera de confirmació del pagament"
+      recompensa_1: "Recompensa:"
+      estimativa_de_entrega: "Lliurament estimada:"
+      selecionou_recompensa: "recompensa seleccionat"
+      confirmado_em_contribution_decorate: "Confirmat el %{confirmed_on}"
+      rembolsado_em_contribution_decorate: "Retornat a %{refunded_on}"
+      reembolso_solicitado_em_contribution: "Devolució sol·licitada en %{requested_refund_on}"
+    dashboard_billing:
+      cart_es_de_cr: "Targetes de crèdit"
+      lembrando_caso_algum_projeto: "Recordeu: si qualsevol projecte que li han donat suport"
+      com_cart_o_de: "amb targeta de crèdit"
+      n_o_seja_bem: "és no reeixit, ens afectarà el reemborsament a la targeta que heu utilitzat per donar suport a"
+      cart_o: Targeta
+      operadora: Operador
+      remover: Treure
+      voc_tem_certeza: "Esteu segur?"
+      dados_banc_rios: "Dades bancàries"
+      caso_algum_projeto_que: "Si qualsevol projecte que li han donat suport <b>amb Banc</b> no té èxit, ens afectarà un reemborsament del seu pagament en el compte següent."
+    edit:
+      apoiados: "Amb el suport"
+      criados: Creada
+      sobre_voc: "Sobre tu"
+      dados_de_acesso: "Dades d'accés"
+      notifica_es: Notificacions
+      banco_e_cart_es: "I targetes bancàries"
+      ir_para_o_perfil: "Anar a la projecció pública"
+      atividades: Activitats
+      voc_ainda_n_o: "No heu encara creat algun projecte en Fundoo. Creure en els teus somnis!"
+      inscreva_um_projeto: "Subscriu-te al projecte!"
+    dashboard_contributions:
+      start_now: "Començar ara!"
+      voc_ainda_n_o: "Encara no té suport de qualsevol projecte catàrtic..."
+      projetos_em_andamento: "Projectes en curs"
+      projetos_bem_sucedidos: "Projectes reeixits"
+      projetos_n_o_financiados: "Projectes finançats per la no"
+    dashboard_notifications:
+      newsletters: "Butlletins:"
+      featured_projects_and_posts: "Projectes presentats i llocs del nostre bloc"
+      projects_that_you_support: "Projectes que li donen suport:"
+      i_want_to_receive: "Vull rebre les actualitzacions sobre aquests projectes"
+      categories_you_follow: "Categories que segueix:"
+      project_reminders: "Recordatoris de projecte:"
+    dashboard_settings:
+      email: "Correu electrònic"
+      keep_this_email_address: "Mantenir aquesta adreça de correu electrònic actualitzada perquè és el canal de comunicació entre vostè, Fundoo personal i els projectes que li donen suport."
+      change_my_password: "Canviar la meva contrasenya"
+      for_the_password_to: "Per a la contrasenya de canviar, cal que confirmeu la contrasenya actual."
+      disable_my_account: "Impossibilitar el meu compte"
+      all_your_contributions_will: "Totes les seves aportacions estaran anònims, les seves dades no seran visibles, sortirà el sistema i el vostre compte s'inhabilitaran permanentment."
+      deactivate_my_account_on: "Desactivar el meu compte en Fundoo"
+      you_want_to_disable: "Voleu inhabilitar aquest compte?"
+      save: Desa
+    show:
+      editar_perfil: " Editar perfil"
+    feeds:
+      feed:
+        postou: "Publicat:"
+        leia_mais: "Llegiu-ne més"
+        novo_projeto_no_ar: "Nou projecte a l'aire!"
+        categoria: "Categoria:"
+        foi_bem_sucedido: "va ser un èxit!"
+        pledged: "Es va comprometre"
+        apoiadores: Partidaris
+        finalizou_mas_n_o: "enllestit però no va ser finançat"
+  shared:
+    user_menu:
+      minhas_coisas: "Meva matèria"
+      hist_rico_de_apoios: "Història de suport"
+      projetos_criados: "Projectes creada"
+      atividade: L'activitat
+      configura_es: Configuració
+      sobre_voc: "Sobre tu"
+      notifica_es: Notificacions
+      dados_de_acesso: "Dades d'accés"
+      banco_e_cart_es: "I targetes bancàries"
+      projetos_apoiados: "Projectes subvencionats"
+      ver_todos: "Visualitza-ho tot"
+      admin: Admin
+      voc_est_logado_como: "Estàs connectat com a"
+  metrics:
+    index:
+      total_de_apoios_confirmados: "Total d'aportacions confirmades per dia"
+      total_arrecadado_por_dia: "Total recollides per dia"
+      total_de_apoios_confirmado: "Totals aportacions confirmats per l'estat"
+      estado: Estat
+      total_de_apoio_confirmado: "Totals aportacions confirmades"
+      baixar_relat_rios: "Descarregar els informes"
+      apoiadores_confirmados: "Confirmats els partidaris "
+      apoiadores_confirmados_com_boleto: "Partidaris confirmats amb totxo imprès"
+      apoiadores_que_n_o: "Partidaris que no tenen recompensa seleccionat"
+      apoiadores_da_recompensa_reward: "Partidaris de la recompensa %{reward}"
+  rewards:
+    form:
+      describe_this_reward: "Descriure aquesta recompensa"
+      tem_certeza: "Esteu segur?"

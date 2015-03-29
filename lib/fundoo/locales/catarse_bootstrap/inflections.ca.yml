@@ -1,0 +1,15 @@
+ca:
+  found_singular: "Hem trobat"
+  found_plural: "Hem trobat"
+  project_singular: projecte
+  project_plural: projectes
+  contribution_singular: partidari
+  contribution_plural: partidaris
+  remaining_singular: resta
+  remaining_plural: restants
+  created_project:
+    one: " projecte %{count} creada"
+    other: " projecte %{count} creada"
+  contributed_project:
+    one: "projecte recolzat %{count}"
+    other: "projecte recolzat %{count}"

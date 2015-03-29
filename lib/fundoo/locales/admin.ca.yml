@@ -1,0 +1,386 @@
+ca:
+  admin:
+    filter:
+      title: Filtres
+    confirm_dialog: "Esteu segur?"
+    financials:
+      index:
+        id: ID
+        name: Títol
+        user: "Usuari MoIP"
+        user_id: "ID d'usuari"
+        goal: Meta
+        total_payment_service_fee: "Taxa de MP"
+        total_catarse_fee: "Taxa de Fundoo"
+        zero_fee: "Sense cap cost de cotització?"
+        repass_value: "Pas VL."
+        expires_at: Finalitza
+        online_date: "Va passar l'aire"
+        pledged: Aconseguit
+        recommended: Recomana?
+        state: Estat
+        menu: "Rel. diners"
+        title: "Informes financers"
+        contribution_report: "Informe de seguidors"
+        search_report: "Informe de recerca"
+        total_projects: projectes
+        submit: Filtre
+        by_state: "Per l'estat"
+        between_expires_at: "Expirar entre"
+        by_progress: "Progrés %"
+        details:
+          name: "Denominació Social"
+          bank_data: "Dades bancàries"
+          document: "ID de document"
+          email: "Correu electrònic"
+          state_inscription: "Estatals afiliacions"
+          address: Adreça
+          phone_number: Telèfon
+          permalink: "Projecte Permalink"
+    projects:
+      index:
+        with_state: "Per l'estat"
+        by_category: "Per categoria"
+        project: Projecte
+        user: L'usuari
+        between_created_at: "Creada entre"
+        goal_between: "Venir entre"
+        between_expires_at: "Expirar entre"
+        between_online_date: "Va entrar a l'aire entre"
+        between_updated_at: "Actualitzat entre"
+        by_user_email: "Correu electrònic del director"
+        id: ID
+        name: Títol
+        send_to_trash: Suprimir
+        send_to_draft: "Enviar al projecte!"
+        reject: Rebutjar!
+        approve: Aprovar!
+        user_id: "ID d'usuari"
+        goal: Meta
+        total_contributions: Suport
+        online_date: "Va passar l'aire"
+        pledged: Aconseguit
+        recommended: Recomana?
+        state: Estat
+        no_projects: "Cap projecte trobat"
+        menu: "Projectes de administració"
+        title: "Gestió de projectes"
+        total_projects: projectes
+        submit: Filtre
+        expires_at: "Acaba en"
+        category: Categoria
+        order_table: "Taula de tipus"
+        order_date: "Data d'enviament"
+        order_asc: "Objectiu asc"
+        order_desc: "Objectiu desc"
+        order_created_at: "Data de presentació"
+        last_modification: "Última actualització"
+    actions:
+      confirm: Confirmar
+    users:
+      index:
+        title: "Contribucions de gestió"
+        menu: Usuaris
+        credits: Crèdits
+        credits_view: "Crèdits calculats"
+        id: ID
+        key: Clau
+        submit: Cerca
+        has_credits_difference: "Discrepància en crèdits"
+        total_contributed: contribuït
+        total_contributions: aportacions
+        total_users: usuaris
+        total_credits: crèdits
+        total_credits_view: "crèdits calculats"
+        user: L'usuari
+        value: Valor
+        payer_email: "Correu electrònic de pagament"
+        provider: Proveïdor
+    contributions:
+      messages:
+        successful:
+          confirm: "Contribució confirmat!"
+          pendent: "Cotització sense confirmar!"
+          refund: "Contribució retornat!"
+          change_reward: "Recompensa canviat!"
+          hide: "Contribució ocult!"
+          cancel: "Contribució anul·lada!"
+          push_to_trash: "Contribució suprimit!"
+      show:
+        contribution_info: "Informació cotització % {clau}"
+        payment_id: "ID de pagament"
+        payment_method: "Mitjans de pagament"
+        payment_fee: "Taxa de pagament"
+        successful: èxit
+        payment_choice: "Opció de pagament"
+        payer_email: "Correu electrònic utilitzat pels mitjans de pagament"
+        user_email: "Correu electrònic utilitzat en fundoo"
+        created_at: "Iniciat en"
+      index:
+        details:
+          payer_email: "Correu electrònic dels mitjans de pagament"
+          normal_email: "Correu electrònic a Fundoo"
+          payment_id: "ID de pagament"
+          acquirer_tid: "TID operador"
+          payment_method: "Mitjans de pagament"
+          payment_choice: "Opció de pagament"
+          acquirer_name: "Transportista de targeta"
+          installments: Parcel·les
+          created_at: "Iniciat en"
+        placeholders:
+          project: "Nom Permalink o projecte"
+          acquirer: "Nom del transportista targeta"
+          user: "ID, nom, correu electrònic o correu electrònic de pagament"
+          payment_id: "Clau de mitjans d'operador ID o TID pagament \""
+        acquirer: Operador
+        payment_tax: "Pagament quota"
+        project_state: "Projecte d'estat"
+        send_refund_request_contribution: "Enviar sol·licitud de devolució"
+        payer_email: "Correu electrònic pagador"
+        payment_id: "ID de pagament"
+        user_email: "Correu electrònic de l'usuari Fundoo"
+        push_to_trash: "Suprimir la contribució"
+        cancel: "Cancel·lar la contribució"
+        between_values: "Valors entre"
+        by_state: Estat
+        refund_and_hide: "Devolució i amaga"
+        pending_to_refund: "Pendent de reemborsament"
+        confirm_contribution: "Confirmar la contribució"
+        unconfirm_contribution: "Aportació de Desconfirmar"
+        refund_contribution: "Devolució aportació"
+        request_refund: "Sol·licitud de reemborsament directe"
+        title: "Gestió d'aportacions"
+        state: Estat
+        menu: Aportacions
+        anonymous: Anònim?
+        contribution: Aportacions
+        confirmed: Confirmada?
+        credits_html: "Crèdits utilitzats? &nbsp;"
+        id: ID
+        key: Clau
+        no_contributions: "No hi ha aportacions trobats."
+        project: Projecte
+        refunded: Retornat?
+        requested_refund: "Devolució sol·licitada?"
+        reward: Recompensa
+        no_reward: "Cap recompensa"
+        submit: Cerca
+        total_contributed: contribuït
+        total_contributions: aportacions
+        total_contribution: contribució
+        total_users: Usuaris
+        user: L'usuari
+        value: Valor
+    statistics:
+      index:
+        menu: Estadístiques
+        title: Estadístiques
+        total_users: Usuaris
+        total_contributions: Aportacions
+        total_contributors: "Col. laboradors"
+        total_contributed: Contribuït
+        total_projects: Projectes
+        total_projects_success: Èxit
+        total_projects_online: "En línia"
+      projects_in_analysis_by_week:
+        title: "Projectes presentats comissariat per setmana"
+      projects_by_week:
+        title: "Projectes enviats per setmana"
+      contributions_by_week:
+        title: "Contribuït valor confirmat per setmana"
+      charts:
+        current_period: "8 últim sense."
+        last_year: "L'any anterior"
+  channels:
+    admin:
+      filter:
+        title: Filtres
+      confirm_dialog: "Esteu segur?"
+      financials:
+        index:
+          id: ID
+          name: Títol
+          user: "Usuari MoIP"
+          user_id: "ID d'usuari"
+          goal: Meta
+          total_payment_service_fee: "Taxa de MP"
+          total_catarse_fee: "Taxa de Fundoo"
+          zero_fee: "Sense despeses de suport?"
+          repass_value: "Pas VL."
+          expires_at: Finalitza
+          online_date: "Va passar l'aire"
+          pledged: Aconseguit
+          recommended: Recomana?
+          state: Estat
+          menu: "Rel. diners"
+          title: "Informes financers"
+          contribution_report: "Informe de seguidors"
+          search_report: "Informe de recerca"
+          total_projects: projectes
+          submit: Filtre
+          by_state: "Per l'estat"
+          between_expires_at: "Expirar entre"
+          by_progress: "Progrés %"
+          details:
+            name: "Denominació Social"
+            bank_data: "Dades bancàries"
+            document: "ID de document"
+            email: "Correu electrònic"
+            state_inscription: "Estatals afiliacions"
+            address: Adreça
+            phone_number: Telèfon
+            permalink: "Projecte Permalink"
+      projects:
+        index:
+          with_state: "Per l'estat"
+          by_category: "Per categoria"
+          project: Projecte
+          user: L'usuari
+          between_created_at: "Creada entre"
+          goal_between: "Venir entre"
+          between_expires_at: "Expirar entre"
+          between_online_date: "Va entrar a l'aire entre"
+          between_updated_at: "Actualitzat entre"
+          by_user_email: "Correu electrònic del director"
+          id: ID
+          name: Títol
+          send_to_trash: Suprimir
+          send_to_draft: "Enviar al projecte!"
+          reject: Rebutjar!
+          approve: Aprovar!
+          user_id: "ID d'usuari"
+          goal: Meta
+          total_contributions: Suport
+          online_date: "Va passar l'aire"
+          pledged: Aconseguit
+          recommended: Recomana?
+          state: Estat
+          no_projects: "Cap projecte trobat"
+          menu: "Projectes de administració"
+          title: "Gestió de projectes"
+          total_projects: projectes
+          submit: Filtre
+          expires_at: "Acaba en"
+          category: Categoria
+          order_table: "Taula de tipus"
+          order_date: "Data d'enviament"
+          order_asc: "Objectiu asc"
+          order_desc: "Objectiu desc"
+          order_created_at: "Data de presentació"
+          last_modification: "Última actualització"
+      actions:
+        confirm: Confirmar
+      users:
+        index:
+          title: "Contribucions de gestió"
+          menu: Usuaris
+          credits: Crèdits
+          credits_view: "Crèdits calculats"
+          id: ID
+          key: Clau
+          submit: Cerca
+          has_credits_difference: "Discrepància en crèdits"
+          total_contributed: contribuït
+          total_contributions: aportacions
+          total_users: usuaris
+          total_credits: crèdits
+          total_credits_view: "crèdits calculats"
+          user: L'usuari
+          value: Valor
+          payer_email: "Correu electrònic de pagament"
+          provider: Proveïdor
+      contributions:
+        messages:
+          successful:
+            confirm: "Contribució confirmat!"
+            pendent: "Cotització sense confirmar!"
+            refund: "Contribució retornat!"
+            change_reward: "Recompensa canviat!"
+            hide: "Contribució ocult!"
+            cancel: "Contribució anul·lada!"
+            push_to_trash: "Contribució suprimit!"
+        show:
+          contribution_info: "Informació cotització % {clau}"
+          payment_id: "ID de pagament"
+          payment_method: "Mitjans de pagament"
+          payment_fee: "Taxa de pagament"
+          successful: èxit
+          payment_choice: "Opció de pagament"
+          payer_email: "Correu electrònic utilitzat pels mitjans de pagament"
+          user_email: "Correu electrònic utilitzat en fundoo"
+          created_at: "Iniciat en"
+        index:
+          details:
+            payer_email: "Correu electrònic dels mitjans de pagament"
+            normal_email: "Correu electrònic a Fundoo"
+            payment_id: "ID de pagament"
+            acquirer_tid: "TID operador"
+            payment_method: "Mitjans de pagament"
+            payment_choice: "Opció de pagament"
+            acquirer_name: "Transportista de targeta"
+            installments: Parcel·les
+            created_at: "Iniciat en"
+          placeholders:
+            project: "Nom Permalink o projecte"
+            acquirer: "Nom del transportista targeta"
+            user: "ID, nom, correu electrònic o correu electrònic de pagament"
+            payment_id: "Clau de mitjans d'operador ID o TID pagament \""
+          acquirer: Operador
+          payment_tax: "Pagament quota"
+          project_state: "Projecte d'estat"
+          send_refund_request_contribution: "Enviar sol·licitud de devolució"
+          payer_email: "Correu electrònic pagador"
+          payment_id: "ID de pagament"
+          user_email: "Correu electrònic de l'usuari Fundoo"
+          push_to_trash: "Suprimir la contribució"
+          cancel: "Cancel·lar la contribució"
+          between_values: "Valors entre"
+          by_state: Estat
+          refund_and_hide: "Devolució i amaga"
+          pending_to_refund: "Pendent de reemborsament"
+          confirm_contribution: "Confirmar el suport"
+          unconfirm_contribution: "Suport Desconfirmar"
+          refund_contribution: "Suport inversa"
+          request_refund: "Sol·licitud de reemborsament directe"
+          title: "Gestió d'aportacions"
+          state: Estat
+          menu: Aportacions
+          anonymous: Anònim?
+          contribution: Suport
+          confirmed: Confirmada?
+          credits_html: "Crèdits utilitzats? &NBSP;"
+          id: ID
+          key: Clau
+          no_contributions: "No hi ha aportacions trobats."
+          project: Projecte
+          refunded: Retornat?
+          requested_refund: "Devolució sol·licitada?"
+          reward: Recompensa
+          no_reward: "Cap recompensa"
+          submit: Cerca
+          total_contributed: contribuït
+          total_contributions: aportacions
+          total_contribution: suport
+          total_users: Usuaris
+          user: L'usuari
+          value: Valor
+      statistics:
+        index:
+          menu: Estadístiques
+          title: Estadístiques
+          total_users: Usuaris
+          total_contributions: Aportacions
+          total_contributors: "Col. laboradors"
+          total_contributed: Contribuït
+          total_projects: Projectes
+          total_projects_success: Èxit
+          total_projects_online: "En línia"
+        projects_in_analysis_by_week:
+          title: "Projectes presentats comissariat per setmana"
+        projects_by_week:
+          title: "Projectes enviats per setmana"
+        contributions_by_week:
+          title: "Contribuït valor confirmat per setmana"
+        charts:
+          current_period: "8 últim sense."
+          last_year: "L'any anterior"

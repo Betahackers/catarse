@@ -1,0 +1,32 @@
+ca:
+  shared:
+    formatting_tips:
+      title: "El format de consells"
+      formatting_tip1_html: "Si vostè enganxar l'url d'una imatge o un vídeo del vimeo o youtube, apareixerà en la descripció de la idea. donar-li un tir!"
+      formatting_tip2_html: "Quan enganxant una url tampoc, ella es convertirà en un enllaç. Per exemple, http://catarse.me al seu torn < el class = \"alt-enllaç\" href = \"http://catarse.me\" target = blank\"> http://catarse.me</a>."
+      formatting_tip3_html: "Si voleu posar un text a l'enllaç, només utilitzar el format següent: \"el text que vulgueu\": http://sua.url. Per exemple, \"Fundoo\": http://catarse.me al seu torn < el class = \"alt-enllaç\" href = \"http://catarse.me\" target = blank\"></a> Fundoo."
+      formatting_tip4_html: "Vostè pot utilitzar negreta afegint dos asteriscs (* *) abans i després el text que voleu formatar. Per exemple, * meu * negreta text * * apareixerà com <strong>el meu text en negreta</strong>."
+      formatting_tip5_html: "Vostè pot utilitzar itàlica afegint un subratllat (_) abans i després el text que voleu formatar. Per exemple, _ meu text en cursiva _ apareixerà com <i>el meu text en cursiva</i>."
+    terms: "condicions d'ús"
+    accept_terms_html: "He llegit i estic d'acord amb el %{link}."
+    header_channel:
+      contact: Contacte
+      logout: Sortida
+      my_credits: "Meus crèdits"
+      partners: Socis
+      posts: Notícies
+      profile: "El meu perfil"
+      signin: Connecti's
+      signup: Inscriure's
+      submit: "Enviar el projecte"
+      how_work: "Com funciona"
+    footer_channel:
+      contact: Contacte
+      how_works: "Com funciona"
+      privacy_policy: "Política de privacitat"
+      terms: "Condicions d'ús"
+      what_is_channel: "Quins són els canals?"
+      how_it_works: "Com funciona el %{name}"
+      how_channels_work: "Entendre els canals en Fundoo"
+    header_big:
+      projects: "Els meus projectes"

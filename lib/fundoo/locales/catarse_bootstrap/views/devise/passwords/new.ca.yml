@@ -1,0 +1,15 @@
+ca:
+  devise:
+    passwords:
+      new:
+        no_account_html: "No teniu un compte?"
+        titles:
+          site: "Restablir contrasenya"
+          header: "Restablir contrasenya"
+        links:
+          register: Inscriure's
+        form:
+          labels:
+            email: "Després d'introduir el seu e-mail, us enviarem una notificació amb instruccions de com restaurar la contrasenya"
+          inputs:
+            submit: Restablir

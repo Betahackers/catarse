@@ -1,0 +1,15 @@
+ca:
+  devise:
+    passwords:
+      edit:
+        titles:
+          site: "Posa una contrasenya nova"
+          header: "Conjunt de nova contrasenya"
+        form:
+          hint:
+            password_length: "Mínim de 6 caràcters"
+          labels:
+            password: "Contrasenya nova"
+            password_confirmation: "Confirmació de la contrasenya"
+          inputs:
+            submit: "Guardar i entrar"

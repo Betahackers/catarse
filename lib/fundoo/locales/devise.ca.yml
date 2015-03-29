@@ -1,0 +1,88 @@
+ca:
+  devise:
+    feedback_tab:
+      title: "Retroalimentació i suport"
+      header_html: "Benvinguts a la <br/> nou inici de sessió de Fundoo"
+      blog_button: "Llegiu-ne més"
+      form_feedback_link: "Donar retroalimentació"
+      contact_link: "Contacte suport"
+    links:
+      forgot_password: "I oblidava la meva contrasenya"
+    confirmations:
+      confirmed: "El seu compte va ser confirmat amb èxit. Ara que els signa dins."
+      send_instructions: "Vostè rebrà un correu electrònic amb instruccions sobre com confirmar el seu compte en pocs minuts."
+      send_paranoid_instructions: "Si existeix l'adreça electrònica a la nostra base de dades, rebràs un correu electrònic amb instruccions sobre com confirmar el seu compte en pocs minuts."
+    failure:
+      password_token: "Aquest enllaç per restablir la contrasenya ha caducat. Introduïu la vostra adreça de correu electrònic nou"
+      already_authenticated: "Vostè ja iniciat la sessió."
+      inactive: "El compte no s'activava encara."
+      invalid: "Adreça electrònica no vàlida o contrasenya."
+      invalid_token: "Testimoni de l'autenticació no és vàlid."
+      locked: "El vostre compte és blocat."
+      not_found_in_database: "Adreça electrònica no vàlida o contrasenya."
+      timeout: "La sessió expirada, si us plau a iniciar la sessió continuar."
+      unauthenticated: "Necessites iniciar sessió o registrar-se abans de continuar."
+      unconfirmed: "Heu de confirmar el seu compte abans de continuar."
+    mailer:
+      confirmation_instructions:
+        subject: "Instruccions de confirmació"
+      reset_password_instructions:
+        subject: "Instruccions de reinicialització de contrasenya"
+      unlock_instructions:
+        subject: "Obrir les instruccions"
+    omniauth_callbacks:
+      failure: "No podria autenticar vostè %{kind} perquè \"%{reason}\"."
+      success: "Reeixidament autoritzat del compte %{kind}."
+    passwords:
+      no_token: "Si us plau revisi el seu inbox per restablir la contrasenya"
+      send_instructions: "Aquest enllaç per restablir la contrasenya ha caducat. Introduïu la vostra adreça de correu electrònic nou"
+      send_paranoid_instructions: "Si existeix l'adreça electrònica a la nostra base de dades, rebràs un enllaç de recuperació de contrasenya a l'adreça de correu electrònic en uns minuts."
+      updated: "La contrasenya correctament s'ha canviat. Ara que els signa dins."
+      updated_not_active: "La contrasenya es canviava reeixidament."
+      new:
+        site_title: "Oblidava la meva contrasenya"
+        title: "Escriviu la vostra adreça de correu electrònic i demanar per restablir la contrasenya"
+        submit: "Enviar les instruccions que restableixi la contrasenya"
+      edit:
+        site_title: "Restablir contrasenya"
+        label_new_password: "Escrigui el seu bramar contrasenya nova"
+        title: "Restablir contrasenya"
+        subtitle: "Restablir la contrasenya per utilitzar el seu email i contrasenya a la seva connexió Fundoo"
+        submit: "Restablir contrasenya"
+    registrations:
+      destroyed: "Adéu! El teu compte s'anul·lava reeixidament. Esperem veure't una altra vegada aviat."
+      signed_up: "Benvingut! Us heu inscrit correctament."
+      signed_up_but_inactive: "Us heu inscrit correctament. No obstant això, que podria no signem vostè perquè el teu compte encara no està activat."
+      signed_up_but_locked: "Us heu inscrit correctament. No obstant això, que podria no signem vostè perquè el vostre compte és blocat."
+      signed_up_but_unconfirmed: "S'ha enviat un missatge amb un enllaç de confirmació a la seva adreça de correu electrònic. Si us plau obri l'enllaç per activar el teu compte."
+      update_needs_confirmation: "Actualitzava el seu compte amb èxit, però necessitem verificar la vostra adreça electrònica nova. Si us plau revisa el teu email i faci clic a l'enllaç de confirmar per enllestir confirmant la vostra adreça electrònica nova."
+      updated: "Heu actualitzat correctament el vostre compte."
+    sessions:
+      new:
+        site_title: Connecti's
+        submit: Connecti's
+        title: "Entri amb la vostra adreça de correu electrònic"
+        login_title: Connecti's
+        login_subtitle: "Si ja teniu un compte"
+        register_title: Inscriure's
+        register_subtitle: "Utilitzar la vostra adreça de correu electrònic"
+        with_facebook: "Utilitzar el teu compte de facebook"
+        with_facebook_subtitle: "Una manera ràpida d'accedir"
+        with_another_social: "Twitter suport s'eliminarà la setmana que ve"
+        google_warning_html: "Si esteu utilitzant un compte de <strong>Google</strong>:"
+        google_step_1: "1 - Feu clic en %{link}"
+        google_step_2: "2 - seguir els passos per crear una contrasenya nova."
+        with_another_social_subtitle: "<a target=\"_blank\" href=\"http://blog.catarse.me/mudanca-no-sistema-de-login/\"> llegir més</a> sobre ell (en portuguès només)"
+      signed_in: "Signat amb èxit."
+      signed_out: "Iniciat la sessió amb èxit."
+    unlocks:
+      send_instructions: "Vostè rebrà un correu electrònic amb instruccions sobre com desbloquejar el vostre compte en pocs minuts."
+      send_paranoid_instructions: "Si existeix el vostre compte, vostè rebrà un correu electrònic amb instruccions sobre com obrir-lo en pocs minuts."
+      unlocked: "El vostre compte s'ha obert amb èxit. Si us plau inicieu la sessió continuar."
+  errors:
+    messages:
+      already_confirmed: "era ja confirmat, proveu d'iniciar la sessió"
+      confirmation_period_expired: "ha de ser confirmat dins %{period}, cal que sol·liciteu una nova"
+      expired: "ha caducat, cal que sol·liciteu una nova"
+      not_found: "no es troba"
+      not_locked: "no estava tancat"

@@ -1,0 +1,27 @@
+ca:
+  pages:
+    start:
+      page-title: "Com funciona la Fundoo?"
+      title: "Finançar el seu projecte col·lectivament"
+      submit: "Iniciar el seu projecte"
+      learn-more: "Més informació"
+      header:
+        people: "Persones han donat suport almenys 01 projecte a Fundoo"
+        success: "Projectes ja han estat finançats a Fundoo"
+        money: "Donats per a projectes publicats aquí"
+      start:
+        title: "Iniciar el seu projecte"
+        content: "És important de començar en algun lloc. Un bon primer pas per convertir la seva idea en un projecte de finançament col·lectiu és registrar un esborrany en Fundoo. Estem aquí per ajudar."
+        link: "Més informació sobre els primers passos d'un projecte"
+      people:
+        title: "Estudi i pla"
+        content: "Produir el seu projecte amb cura, en el moment adequat. Pla una bona campanya és un factor determinant per l'èxit del seu finançament col·lectiu. Oferim una gran varietat de materials per ajudar-lo!"
+        link: "Aprendre com molts partidaris que cal mobilitzar"
+      work:
+        title: "És tot o res"
+        content: "Que defineix l'objectiu de recaptar fons i temps de campanya és vostè. Triar entre 1 i 60 dies per dur a terme la seva campanya a la recerca de seguidors. Assolir la seva meta financera, mantenir les quantitats recaptades. En cas contrari tots els que donaven suport a rebre la devolució. Es carregarà un suplement del 13% de la totals recollides projectes únics que han assolit o sobrepassat l'objectiu. "
+        link: "Rebre consells sobre campanyes reeixides a Fundoo"
+      time:
+        title: "Mobilitzar els partidaris"
+        content: "Comunicar bé durant la seva campanya i ser agradable als seus partidaris. Són la força del seu projecte i són qui realment determinarà l'èxit o no de la campanya! La Fundoo és una forma de vostès a persones que estimen el seu treball, ampliar aquesta xarxa i forma pública."
+        link: "Aprendre com la nostra quota ajuda a mantenir la Fundoo"

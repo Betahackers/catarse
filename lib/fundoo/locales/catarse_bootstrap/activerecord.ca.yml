@@ -1,0 +1,275 @@
+ca:
+  activerecord:
+    models:
+      channel: Canal
+      project: Projecte
+      reward: Recompensa
+      contribution: Contribuent
+      category: Categoria
+      bank_account: "Dades bancàries"
+    attributes:
+      project_account:
+        address_city: Ciutat
+        address_complement: Complement
+        address_neighbourhood: Barri
+        address_number: Nombre
+        address_state: Estat
+        address_street: Adreça
+        address_zip_code: "Codi postal"
+        cpf: "Número de document"
+        state_inscription: "Document d'emissió estatal"
+        email: "Correu electrònic"
+        full_name: "Ple nom/denominació"
+        phone_number: Telèfon
+        bank: Banc
+        bank_id: Banc
+        owner_name: "Nom del titular"
+        owner_document: "Número de document del titular"
+        agency: Agència
+        agency_digit: "Agència de dígits"
+        account: "En l. del compte"
+        account_digit: "Compte dos dígits"
+        account_type: "Tipus de compte"
+      bank_account:
+        bank: Banc
+        bank_id: Banc
+        owner_name: "Nom del titular"
+        owner_document: "Número de document del titular"
+        agency: Agència
+        agency_digit: "Dígit agència"
+        account: "Número de compte"
+        account_digit: "Dígits del compte"
+      contribution:
+        payer_name: "Nom i cognoms"
+        payer_email: "Correu electrònic"
+        payer_document: "Número de document"
+        country: País
+        address_street: Carrer
+        address_number: Nombre
+        address_complement: Complement
+        address_neighbourhood: Barri
+        address_state: Estat
+        address_city: Ciutat
+        address_zip_code: "Codi postal"
+        address_phone_number: Telèfon
+        value: "valor de cotització"
+        reward: recompensa
+        project: projecte
+      reward:
+        deliver_at: "Previsió de lliurament"
+      project:
+        channels: Canals
+        category: Categoria
+        expires_at: "Data límit"
+        online_days: "Termini per a la recaptació de fons"
+        headline: Soundbite
+        image_url: "URL de la imatge"
+        name: "Nom del projecte"
+        goal: "L'import a cobrar"
+        about: "Descripció del projecte"
+        user_id: "ID d'usuari"
+        video_url: "URL del vídeo"
+        permalink: "Enllaç del teu projecte"
+        more_links: "Proporcionar enllaços per a les persones saber més sobre el seu projecte i la seva trajectòria."
+        traffic_sources: "Com vas conèixer el Fundoo?"
+        first_contributions: "Qui són les primeres persones que et demanarem per donar suport el seu projecte?"
+        budget: "Projecte de pressupost"
+        uploaded_image: "Imatge projecte"
+      user:
+        address_city: Ciutat
+        address_complement: Complement
+        address_neighbourhood: Barri
+        address_number: Nombre
+        address_state: Estat
+        address_street: Adreça
+        address_zip_code: "Codi postal"
+        cpf: "Número de document"
+        cpf_hint: (?)
+        state_inscription: "Inscripció estatal"
+        current_password: "Contrasenya actual"
+        email: "Correu electrònic"
+        full_name: "Ple nom/denominació"
+        bio: "Mini Bio"
+        name: Cognom
+        newsletter: "Vull rebre les novetats de Fundoo"
+        password: Contrasenya
+        password_confirmation: "Confirmació de la contrasenya"
+        phone_number: Telèfon
+        cpf_hint_title: "Factura s'emetrà per a aquest document"
+        id: ID
+        moip_login: "Connexió MoIP"
+        moip_login_hint: "(Com crear un compte)"
+        reset_password_token: "Enllaç a recrear la contrasenya"
+      channel:
+        ga_code: "Codi Analítica"
+        description: Descripció
+        how_it_works: "Com funciona"
+        image: "Imatge de la novetat"
+        name: Nom
+        video_url: Vídeo
+      channel_partner:
+        name: Nom
+        url: Lloc
+        image: Imatge
+      project_post:
+        title: Títol
+        comment: Text
+      channel_post:
+        title: Títol
+        body: Contingut
+        visible: "Publicar (comprovi si voleu publicar aquest nóvidade)"
+    errors:
+      models:
+        contribution: "Aportació d'estalvi d'error"
+        bank_account:
+          attributes:
+            bank:
+              blank: "Banc no pot estar en blanc"
+            owner_name:
+              blank: "Nom del titular no pot estar en blanc"
+            owner_document:
+              blank: "Número de document del titular no pot estar en blanc"
+              invalid: "Vàlida número document"
+            agency:
+              blank: "Agència no pot estar en blanc"
+              invalid: "L'agència no vàlid"
+            account:
+              blank: "En l. el compte no pot estar en blanc"
+            account_digit:
+              blank: "Dígits del compte no pot estar en blanc"
+              invalid: "Tipus d'agència no és vàlid"
+        project_account:
+          attributes:
+            full_name:
+              blank: "Nom comercial de l'usuari no pot estar en blanc"
+            email:
+              blank: "Correu electrònic de l'usuari no pot estar en blanc"
+            cpf:
+              blank: "ACB de l'usuari no pot estar en blanc"
+            address_street:
+              blank: "Adreça de l'usuari no pot estar en blanc"
+            address_number:
+              blank: "Nombre a l'adreça de l'usuari no pot estar en blanc"
+            address_city:
+              blank: "Ciutat de l'usuari no pot estar en blanc"
+            address_state:
+              blank: "Estat de l'usuari no pot estar en blanc"
+            address_zip_code:
+              blank: "CODI postal de l'usuari no pot estar en blanc"
+            phone_number:
+              blank: "Telèfon de l'usuari no pot estar en blanc"
+            bank:
+              blank: "Banc de l'usuari no pot estar en blanc"
+            agency:
+              blank: "L'agència de l'usuari no pot estar en blanc"
+            agency_digit:
+              blank: "Agència dígits usuari no pot estar en blanc"
+            account:
+              blank: "En l. compte d'usuari no pot estar en blanc"
+            account_digit:
+              blank: "Dígits del compte d'usuari no pot estar en blanc"
+            owner_name:
+              blank: "Nom del titular de l'usuari no pot estar en blanc"
+            owner_document:
+              blank: "Número de document del titular de l'usuari no pot estar en blanc"
+              not_same: "Número de document de dades cadastrals i Banca ple no són igual."
+            account_type:
+              blank: "Tipus de compte no pot estar en blanc"
+        project:
+          attributes:
+            video_url:
+              blank: "El vídeo del projecte no pot estar en blanc"
+            budget:
+              blank: "Pressupost del projecte no pot estar en blanc"
+            uploaded_image:
+              blank: "La imatge del projecte no pot estar en blanc"
+            name:
+              blank: "El nom de projecte no pot estar en blanc"
+            permalink:
+              blank: "L'URL del projecte no pot estar en blanc"
+              invalid: "El projecte URL no és vàlida"
+              taken: "Aquest projecte URL ja existeix"
+            category:
+              blank: "Vostè ha d'escollir una categoria per al seu projecte"
+            goal:
+              blank: "El valor de meta no pot estar en blanc"
+              greater_than: "L'objectiu ha de ser superior a 9"
+              not_a_number: "Col·lecció meta accepta només nombres"
+            online_days:
+              blank: "El període de recollida no pot estar en blanc"
+              greater_than: "El termini per a la recollida de ser major que 0 dies"
+              not_a_number: "El termini de recollida ha de ser un nombre de dies"
+            about:
+              blank: "La descripció del projecte no pot estar en blanc"
+            headline:
+              blank: "El lema del projecte no pot estar en blanc"
+              too_long: "La frase de trampa és molt llarg. Podeu utilitzar un màxim de 140 caràcters."
+        user:
+          attributes:
+            email:
+              not_found: "El correu electrònic no està registrat, comprovar l'adreça o el seu registre"
+              taken: "L'e-mail ja està registrat, entra"
+              invalid: "Aquesta adreça de correu electrònic no és vàlid"
+              blank: "El correu electrònic no pot estar en blanc"
+            password:
+              too_short: "La contrasenya que vau escollir és massa curt"
+              confirmation: "La contrasenya i ple de contrasenya de confirmació no són iguals"
+              blank: "La contrasenya no pot estar en blanc"
+            current_password:
+              invalid: "Contrasenya actual no és vàlid"
+            reset_password_token:
+              invalid: "expirat. Ves a <a href = \"/password/new\" ></a> restaurar contrasenya i sol·licitar contrasenya restablir una altra vegada."
+            name:
+              blank: "Nom d'usuari no pot estar en blanc"
+            about:
+              blank: "Sobre no pot ser en blanc"
+            uploaded_image:
+              blank: "Imatge de l'usuari no pot estar en blanc"
+  project:
+    update:
+      success: "S'ha actualitzat la informació"
+      failed: "La no desats informació, verifiqui que tots els camps han emplenat correctament"
+    delete:
+      posts: "Novetat correctament"
+    video_regex_validation: "s'accepten només les adreces URL de Youtube o Vimeo"
+  contribution:
+    project_should_be_online: "Vostè no pot donar suport a un projecte que no està en l'aire"
+    reward_must_be_from_project: "ha de ser del mateix disseny"
+    should_not_contribute_if_maximum_contributions_been_reached: "ha arribat al nombre màxim de channels_subscribers"
+    value_must_be_at_least_rewards_value: "ha de ser com a mínim %{minimum_value} per la recompensa seleccionat"
+  contribution_report_to_project_owner:
+    reward_description: "Descripció recompensa"
+    deliver_at: "Data de lliurament de la retribució"
+    confirmed_at: "Data de confirmació del pagament"
+    contribution_value: "Valor de cotització"
+    service_fee: "Taxa de Fundoo"
+    user_full_name: "Nom i cognoms del contrib."
+    user_name: "Sobrenom del contrib."
+    user_email: "Perfil de correu electrònic Fundoo"
+    cpf: "Número de document"
+    payer_email: "Correu electrònic dels mitjans de pagament"
+    payment_method: "Mitjans de pagament"
+    street: Carrer
+    address_number: Nombre
+    complement: Complement
+    neighbourhood: Barri
+    city: Ciutat
+    address_state: Estat
+    zip_code: "Codi postal"
+    anonymous: Anònim
+  user:
+    no_name: "Sense nom"
+    contributions_text:
+      one: "Va contribuir a aquest i altres projectes %{total}"
+      other: "Va contribuir a aquest i altres projectes %{total}"
+  channels_subscribers:
+    created: "Ara segueix el %{channel}"
+    deleted: "Ja no segueixes el %{channel}"
+  channels:
+    edit: "Canal d'actualització"
+    image_hint: "Mida màxima (600x121px)"
+    subscribed: " %{count} seguint el canal"
+    back_to_news: "← Tornar a Notícies"
+    follow: "Segueix el canal"
+    following: Seguint
+    unfollow: Inseguir
