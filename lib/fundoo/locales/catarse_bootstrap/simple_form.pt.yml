@@ -38,6 +38,11 @@ pt:
         category: "Selecione uma categoria"
         select: "Selecione uma opção"
         traffic_sources: "Como você conheceu o Catarse?"
+    labels:
+      project:     
+        auto_confirm_contribution: "Should contributions be confirmed automatically?"
+        paypal_email_address: "Can people send you donations via PayPal? What is your PayPal email address?"
+        wait_for_success_to_collect_funds: "Wait to see if the campaign is successful before collecting funds?"
     hints:
       project:
         select: "Selecione uma opção"
@@ -51,3 +56,7 @@ pt:
         about: "Fale com paixão e clareza sobre o que será realizado. Esclareça possíveis dúvidas sobre como o dinheiro será utilizado, quem está por trás do projeto, como e quando o projeto será entregue. Transparência atrai mais apoiadores. Lembre-se: seu projeto será acessado por pessoas comuns que decidirão se querem ou não apoiar seu projeto. Capriche! "
         headline: "Frase no card do projeto para chamar apoiadores. Deve ter no máximo 100 caracteres e resumir bem o projeto."
         uploaded_image: "Essa imagem será utilizada como a miniatura de seu projeto (PNG, JPG tamanho 600 x 340)"
+        auto_confirm_contribution: "If checked, contributions will be applied to your project as soon as they are made, EVEN IF YOU HAVE NOT YET RECEIVED THE FUNDS. This makes sense if you plan on collecting the funds only once your project is successful. Otherwise, you should leave this box UNCHECKED and wait until you receive the funds before confirming a contribution. You can see contributions awaiting confirmation by clicking on the Contributions tab on your project's homepage and select Pending Confirmation"
+        paypal_email_address: "If you have a paypal account you can enter the associated email address here. Contributors will automatically receive an email with instructions on how to make their donation via PayPal. If you don't have a PayPal account, or would rather not send this email, just leave this field blank."
+        wait_for_success_to_collect_funds: "Check the box if you want to wait until the campaign is finished before asking contributors for their donations. IMPORTANT: If you choose to collect funds immediately and your campaign is not successful, you'll be responsible for returning donations to their contributors. Waiting to collect the funds is better if you want to avoid the hastle of returning it all, but it's also riskier since donors may not be around when it comes time to collect. It really depends on the project and whether you would rather be safe or sorry."
+        
