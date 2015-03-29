@@ -302,7 +302,7 @@ en:
       paypal_donation_request:
         ol_strong_contribution_strong: "Hello, <strong> %{contribution} </strong>!"
         thank_you_for_supporting: "Thank you so much for supporting %{link_to}."
-        the_project_organizer_will: The project organizer may need to confirm your contribution before it is applied to the campaign.              
+        the_project_organizer_will: "The project organizer may need to confirm your contribution before it is applied to the campaign."
         if_you_would_like_to: "If you have a paypal account, you can make your donation by visiting: <a target='_blank' href='https://www.paypal.com/us/webapps/mpp/send-money-online'>https://www.paypal.com/us/webapps/mpp/send-money-online</a>. (be sure to input the email and amount correctly and select the right currency :) )"
         organizer_email: "Organizer email address: %{email}"
         donation_amount: "Donation amount: %{amount}"

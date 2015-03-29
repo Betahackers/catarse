@@ -31,7 +31,7 @@ en:
         details:
           name: "Corporate name"
           bank_data: "Banking data"
-          document: Document ID
+          document: "Document ID"
           email: Email
           state_inscription: "State affiliations"
           address: Address
@@ -224,7 +224,7 @@ en:
           details:
             name: "Corporate name"
             bank_data: "Banking data"
-            document: Document ID
+            document: "Document ID"
             email: Email
             state_inscription: "State affiliations"
             address: Address

@@ -38,6 +38,11 @@ es:
         category: "Seleccione una categoría"
         select: "Seleccione una opción"
         traffic_sources: "¿Cómo conociste el Fundoo?"
+    labels:
+      project:
+        auto_confirm_contribution: "¿Deben confirmarse contribuciones automáticamente?"
+        paypal_email_address: "¿Puede usted enviar gente donaciones via PayPal? ¿Cuál es tu dirección de correo electrónico de PayPal?"
+        wait_for_success_to_collect_funds: "¿Esperar a ver si la campaña tiene éxito antes de recoger los fondos?"
     hints:
       project:
         select: "Seleccione una opción"
@@ -51,3 +56,6 @@ es:
         about: "Habla con pasión y claridad sobre lo que llevará a cabo. Aclarar posibles dudas acerca de cómo el dinero se utilizará, quién está detrás del proyecto, cómo y cuándo se entregará el proyecto. Transparencia atrae a más seguidores. Recuerde: su diseño se accederá por la gente ordinaria que decidirá o no apoyan su proyecto. Que sea una buena! "
         headline: "Frase en la tarjeta de proyecto para llamar a los fanáticos. Debe tener un máximo de 100 caracteres y resumir bien el proyecto."
         uploaded_image: "Esta imagen se utiliza como la imagen de su proyecto (PNG, JPG tamaño 600 x 340)"
+        auto_confirm_contribution: "Si está marcada, las contribuciones se aplicará a su proyecto tan pronto como se hacen, incluso si usted no han todavía recibió los fondos. Esto tiene sentido si usted planea recolectar los fondos sólo una vez que su proyecto es exitoso. De lo contrario, debería dejar esta casilla marcada y esperar hasta que usted recibe los fondos antes de confirmar la contribución. Puedes ver las contribuciones a la espera de confirmación haciendo clic en la pestaña contribuciones en la presentación de su proyecto y seleccione pendiente de confirmación"
+        paypal_email_address: "Si tienes una cuenta paypal puede introducir la dirección de correo electrónico asociada aquí. Los contribuyentes recibirán automáticamente un correo electrónico con instrucciones sobre cómo realizar su donación vía PayPal. Si no tienes una cuenta PayPal, o preferiría no enviaría este correo electrónico, simplemente deje este campo en blanco."
+        wait_for_success_to_collect_funds: "Marque la casilla si quieres esperar hasta que termine la campaña antes de pedir a los contribuyentes por sus donaciones. IMPORTANTE: Si usted elige recaudar fondos inmediatamente y su campaña no tiene éxito, serás responsable de devolver las donaciones a sus colaboradores. Esperando para recoger los fondos es mejor si quiere evitar el bullicio de devolver todo, pero también es más riesgoso ya que los donantes no pueden alrededor cuando llegue el momento de recoger. Realmente depende del proyecto y si prefieres estar segura o perdón."
