@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/Betahackers/catarse_offline_payment.git
-  revision: 13d03377db00bab97fa3b88f8a8c7d699f0cb820
+  revision: cee49925c6bdba0ef28d2ec69a2c721f5eb4bf20
   specs:
-    catarse_offline_payment (3.0.2)
+    catarse_offline_payment (3.0.3)
       rails (~> 4.0)
       slim-rails
 
