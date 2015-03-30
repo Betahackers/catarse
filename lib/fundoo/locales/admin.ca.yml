@@ -107,7 +107,7 @@ ca:
           cancel: "Contribució anul·lada!"
           push_to_trash: "Contribució suprimit!"
       show:
-        contribution_info: "Informació cotització % {clau}"
+        contribution_info: "Informació cotització %{key}"
         payment_id: "ID de pagament"
         payment_method: "Mitjans de pagament"
         payment_fee: "Taxa de pagament"
@@ -300,7 +300,7 @@ ca:
             cancel: "Contribució anul·lada!"
             push_to_trash: "Contribució suprimit!"
         show:
-          contribution_info: "Informació cotització % {clau}"
+          contribution_info: "Informació cotització %{key}"
           payment_id: "ID de pagament"
           payment_method: "Mitjans de pagament"
           payment_fee: "Taxa de pagament"
