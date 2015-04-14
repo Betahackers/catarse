@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/Betahackers/catarse_offline_payment.git
-  revision: cee49925c6bdba0ef28d2ec69a2c721f5eb4bf20
+  revision: dcc23a1a067c5fca5d4fa4ca962528b4ba9cb80a
   specs:
     catarse_offline_payment (3.0.3)
       rails (~> 4.0)
@@ -316,7 +316,7 @@ GEM
     method_source (0.8.2)
     mime-types (2.4.3)
     mini_portile (0.6.2)
-    minitest (5.5.1)
+    minitest (5.6.0)
     mixpanel-ruby (1.7.0)
     money (6.5.1)
       i18n (>= 0.6.4, <= 0.7.0)

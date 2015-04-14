@@ -73,9 +73,9 @@ en:
         se_o_projeto_for: "If the project is funded, how do I get my reward?"
         quando_sua_recompensa_estiver: "When your reward is ready, %{user_link} will contact you to arrange delivery."
       edit:
-        preencha_e_revise_os: "Fill out and review the data for payment"
-        esses_dados_ser_o: "Such information will be reported to the Project Director"
-        endere_o_de_entrega: "Delivery address"
+        preencha_e_revise_os: "Fill out and review the data for the contribution"
+        esses_dados_ser_o: "This information will be recorded for the project organizer"
+        endere_o_de_entrega: "Address"
         pr_ximo_passo: "Next step"
     budget_fields:
       cost: Cost

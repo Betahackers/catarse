@@ -69,7 +69,7 @@ en:
         choose_reward: "Choose the reward and then the value of contribution"
         choose_value: "Enter the value of your contribution."
         minimum_disclaimer: "Any amount is great;)"
-        next_step: "Review and perform payment"
+        next_step: "Review contribution"
         no_reward: "Thank you. I just want to help the project."
       review:
         PayPal: Paypal
