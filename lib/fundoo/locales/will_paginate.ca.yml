@@ -1,5 +1,0 @@
-ca:
-  will_paginate:
-    next: Següent»
-    page_gap: "..."
-    previous: «Anterior

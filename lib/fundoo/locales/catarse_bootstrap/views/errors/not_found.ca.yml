@@ -1,5 +1,0 @@
-ca:
-  errors:
-    not_found:
-      text: "Es possible que hàgiu escrit el mal adreça o la pàgina podria haver estat traslladat."
-      title: "No trobem aquesta adreça: ("
