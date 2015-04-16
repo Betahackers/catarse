@@ -34,6 +34,7 @@ class ProjectPolicy < ApplicationPolicy
       p_attr << posts_attributes
       p_attr << reward_attributes
       p_attr << account_attributes
+      p_attr << :iban
 
       {project: p_attr.flatten}
     else

@@ -3,5 +3,11 @@ p= raw t('.ol_strong_contribution_strong', contribution: (contribution.user.disp
 p
   = raw t('.seu_apoio_para_o', link_to: (link_to(contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink))))
   = raw t('.at_o_momento_voc', contribution: (contribution.project.total_contributions))
+  
+p= raw t('.share_your_support')
+= link_to t('.compartilhe'), "http://www.facebook.com/share.php?u=#{project_by_slug_url(contribution.project.permalink, {ref: 'facebook'})}", target: :_blank, id: 'facebook_share', data: { title: contribution.project.name }, class: 'button button-facebook'
+= link_to t('.tu_te'), "http://twitter.com/?status=#{t('i_just_contributed', name: contribution.project.name)} #{project_by_slug_url(contribution.project.permalink, ref: 'twitter')}", target: :_blank, id: "twitter_share_button", data: { title: contribution.project.name }, class: 'button button-twitter'
+    
+      
 p= raw t('.esse_e_mail_serve')
 = render partial: 'contribution_data', locals: {contribution: contribution}

@@ -16,6 +16,7 @@ class Contribution < ActiveRecord::Base
   # belongs_to :country
   has_many :payment_notifications
 
+  validates :payer_name, :payer_email, :payer_document, presence: true, on: :submit
   validates_presence_of :project, :user, :value
   validates_numericality_of :value, greater_than_or_equal_to: 1.00
 
@@ -59,7 +60,7 @@ class Contribution < ActiveRecord::Base
 
   scope :ordered, -> { order(id: :desc) }
 
-  attr_protected :state, :user_id
+  attr_protected :state, :user_id  
 
   def self.between_values(start_at, ends_at)
     return all unless start_at.present? && ends_at.present?

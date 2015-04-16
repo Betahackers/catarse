@@ -172,7 +172,7 @@ pt:
         4_clicar_no_bot: "4 - Clicar no botão Revisar e realizar pagamento na parte debaixo da tela;"
         strong_dicas_de: "<strong>Dicas de projetos</strong>"
         caso_voc_n_o: "Caso você não utilize os créditos até o dia 10/11, entraremos em contato para realizar o reembolso."
-        se_ficar_com_alguma: "Se ficar com alguma dúvida, só nos avisar respondendo a este e-mail ou através do contato@catarse.me"
+        se_ficar_com_alguma: "Se ficar com alguma dúvida, só nos avisar respondendo a este e-mail ou através do contato@fundoo.me"
         um_abra_o: "Um abraço"
         catarse: Catarse
       credits_warning_more_group_subject:
@@ -182,7 +182,7 @@ pt:
       deadline_extension:
         oi_notification: "Oi %{notification},"
         devido_s_mudan_as: "Devido às mudanças que ocorreram na plataforma na noite de ontem, algumas instabilidades foram relatadas no acesso ao Catarse. Esses erros são bastante pontuais e estão acontecendo por conta da atualização do sistema. A previsão é que o site esteja totalmente estável em até 36h."
-        para_que_os_projetos: "Para que os projetos não sejam prejudicados por possíveis problemas de acesso, ofereceremos a extensão de prazo de 2 dias para queles que manifestarem interesse. Para isso, você deve enviar um email para projetos@catarse.me com o título \"Extensão de prazo\"."
+        para_que_os_projetos: "Para que os projetos não sejam prejudicados por possíveis problemas de acesso, ofereceremos a extensão de prazo de 2 dias para queles que manifestarem interesse. Para isso, você deve enviar um email para projetos@fundoo.me com o título \"Extensão de prazo\"."
         se_ficar_com_alguma: "Se ficar com alguma dúvida, só avisar."
         abra_o: Abraço!
       deadline_extension_subject:
@@ -634,6 +634,6 @@ pt:
         4_clicar_no_bot: "4 - Clicar no botão Revisar e realizar pagamento na parte debaixo da tela;"
         strong_dicas_de: "<strong>Dicas de projetos</strong>"
         caso_voc_n_o: "Caso você não utilize os créditos até o dia 10/11, entraremos em contato para realizar o reembolso."
-        se_ficar_com_alguma: "Se ficar com alguma dúvida, só nos avisar respondendo a este e-mail ou através de contato@catarse.me"
+        se_ficar_com_alguma: "Se ficar com alguma dúvida, só nos avisar respondendo a este e-mail ou através de contato@fundoo.me"
         um_abra_o: "Um abraço,"
         catarse: Catarse

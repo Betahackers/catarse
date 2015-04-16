@@ -8,7 +8,7 @@
   .w-container
     .w-row
       .w-col.w-col-8 
-        .w-hidden-small.w-hidden-tiny.u-marginbottom-10.fontsize-largest = t('.title')
+        .w-hidden-small.w-hidden-tiny.u-marginbottom-10.fontsize-largest = t('.title')        
         .fontsize-base.fontweight-semibold.u-marginbottom-10.u-text-center-small-only.text-success-small-only.fontsize-large-small-only.lineheight-tight = t('.choose_reward')
         .w-form.back-reward-form
           = simple_form_for [parent, @contribution], html: { id: 'contribution_form' } do |form|
@@ -20,8 +20,12 @@
               .back-reward-input-reward.placeholder €
               = form.input_field :value, value: @contribution.value, as: :tel, class: 'w-input back-reward-input-reward u-marginbottom-20'
               .fontsize-smaller.fontweight-semibold.u-text-center-small-only == t('.minimum_disclaimer')
-      / .w-col.w-col-4
-      /   = render 'faq_box'
+      .w-col.w-col-4
+        = render 'faq_box'
+
+      
+      
+      
   .section
     .w-container
       .w-row

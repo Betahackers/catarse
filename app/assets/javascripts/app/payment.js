@@ -34,7 +34,7 @@ App.addChild('Payment', _.extend({
   },
 
   selectInternationalPayment: function() {
-    this.onTabClick({currentTarget: this.$('#OfflinePayment')});
+    // this.onTabClick({currentTarget: this.$('#OfflinePayment')});
   },
 
   loadPaymentChoices: function() {

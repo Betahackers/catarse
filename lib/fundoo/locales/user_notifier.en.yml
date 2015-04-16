@@ -2,10 +2,10 @@ en:
   user_notifier:
     mailer:
       contribution_data:
-        seguem_todos_os_dados: "Follow all payment data:"
-        nome_do_apoiador_contribution: "Name of supporter: %{contribution}"
-        cpf_cnpj_do_apoiador: "Document ID of supporter: %{contribution}"
-        data_da_confirma_o: "Date of confirmation of the support: %{l}"
+        seguem_todos_os_dados: "Here are the details of your contribution:"
+        nome_do_apoiador_contribution: "Name of contributor: %{contribution}"
+        cpf_cnpj_do_apoiador: "Document ID of contributor: %{contribution}"
+        data_da_confirma_o: "Date of confirmation of the contribution: %{l}"
         op_o_de_pagamento: "Payment option: %{contribution}"
         valor_da_contribui_o: "Contribution value: %{number_to_currency}"
         n_mero_de_parcelas: "Number of servings: %{contribution}"
@@ -13,7 +13,7 @@ en:
         recompensa_selecionada_contribution: "Reward selected: %{contribution}"
         estimativa_de_entrega_contribution: "Delivery estimate: %{contribution}"
         id_do_apoio_contribution: "Support ID: %{contribution}"
-        nome_raz_o_social: "Name/corporate name of Director: %{contribution}"
+        nome_raz_o_social: "Name of project organizer: %{contribution}"
         cpf_cnpj_do_realizador: "Document ID of Director: %{contribution}"
         importante_ressaltar_que: "It is important to note that the Fundoo is only mediator in this process,"
         portanto_se_tiver_alguma: "Therefore, if you have any questions regarding the design or reward selected among"
@@ -47,8 +47,11 @@ en:
       confirm_contribution:
         ol_strong_contribution_strong: "Hello, <strong> %{contribution} </strong>!"
         seu_apoio_para_o: "Your support for the project %{link_to} was successfully confirmed."
-        at_o_momento_voc: "Thanks to you and other %{contribution} people, this project is becoming a reality."
-        esse_e_mail_serve: "This email serves as a temporary receipt <strong> their </strong> contribution."
+        at_o_momento_voc: " Thanks to you and other %{contribution} people, this project is becoming a reality."
+        share_your_support: "Share your support and increase the chances of reaching the goal!"
+        compartilhe: Share
+        tu_te: Tweet
+        esse_e_mail_serve: "This email serves as a temporary receipt of your contribution."
       confirm_contribution_subject:
         recibo_provis_rio_apoio: "Interim receipt: support confirmed for %{notification}"
       contribution_canceled:
@@ -182,7 +185,7 @@ en:
       deadline_extension:
         oi_notification: "Hi %{notification},"
         devido_s_mudan_as: "Due to the changes that occurred on the platform last night, some instabilities were reported in access to Fundoo. These errors are quite specific and are happening on the system update. The forecast is that the site is fully stable up to 36 hours."
-        para_que_os_projetos: "To ensure that the projects are not affected by possible access problems, will offer the extension of term of 2 days for those who express interest. To do this, you must send an email to projetos@catarse.me with the title \"extension\"."
+        para_que_os_projetos: "To ensure that the projects are not affected by possible access problems, will offer the extension of term of 2 days for those who express interest. To do this, you must send an email to projetos@fundoo.me with the title \"extension\"."
         se_ficar_com_alguma: "If you have any questions, just let me know."
         abra_o: Hug!
       deadline_extension_subject:
@@ -300,12 +303,30 @@ en:
       paypal_donation_request_subject:
         thank_you_for_supporting: "Thanks for supporting %{notification}!"
       paypal_donation_request:
-        ol_strong_contribution_strong: "Hello, <strong> %{contribution} </strong>!"
+        hello: "Hello, <strong>%{name}</strong>"
         thank_you_for_supporting: "Thank you so much for supporting %{link_to}."
-        the_project_organizer_will: "The project organizer may need to confirm your contribution before it is applied to the campaign."
-        if_you_would_like_to: "If you have a paypal account, you can make your donation by visiting: <a target='_blank' href='https://www.paypal.com/us/webapps/mpp/send-money-online'>https://www.paypal.com/us/webapps/mpp/send-money-online</a>. (be sure to input the email and amount correctly and select the right currency :) )"
-        organizer_email: "Organizer email address: %{email}"
-        donation_amount: "Donation amount: %{amount}"
+        next_step: "The next step is to send your donation to the project organizer."
+        pay_pal: "Here is the information you'll need to make the donation via paypal. Click on the button below and follow the instructions (be sure to input the email and amount correctly and select the right currency :) )."        
+        no_pay_pal: "If you don't have paypal, please send an email to the project organizer to arrange the donation."
+        thank_you_for_supporting: "Thank you so much for supporting %{link_to}."
+        organizer_will_confirm: "When the organizer receives the funds, you donation will be confirmed and applied to the project."
+        if_you_would_like_to: "If you have a paypal account, you can make your donation by visiting: . "
+        organizer_paypal_email: "Organizer email address: <strong>%{email}</strong>"
+        donation_amount: "Donation amount: <strong>%{amount}</strong>"
+        um_abra_o: "A hug,"
+      pay_now_donation_request_subject:
+        thank_you_for_supporting: "Thanks for supporting %{notification}!"
+      pay_now_donation_request:
+        hello: "Hello, <strong>%{name}</strong>"
+        thank_you_for_supporting: "Thank you so much for supporting %{link_to}."
+        next_step: "The next step is to send your donation to the project organizer."
+        donate_with_pay_pal: "<strong>PayPal</strong> - If you would like to send your donation via PayPal, click on the button below to go to the PayPal website. Here's the data you'll need to enter:"  
+        donate_with_iban: "<strong>Bank Transfer</strong> - If you would like to send your donation via a bank transfer here's the data you'll need:"
+        no_pay_pal: "If you don't have paypal, please send an email to the project organizer to arrange the donation."
+        organizer_will_confirm: "<strong>Important:</strong> At the moment, your contribution is <strong>pending</strong> and needs to be confirmed by the project organizer. Until it is confirmed, your contribution is not displayed or applied to the projects progress. When the organizer receives the funds, you will receive a notification and your contribution will be confirmed and applied."
+        organizer_paypal_email: "Organizer PayPal email address: <strong>%{email}</strong>"
+        donation_amount: "Donation amount: <strong>%{amount}</strong>"
+        organizers_iban: "Organizer's IBAN number: <strong>%{iban}</strong>"        
         um_abra_o: "A hug,"
       pending_contribution_project_unsuccessful:
         ol_contribution: "Hello, %{contribution}!"

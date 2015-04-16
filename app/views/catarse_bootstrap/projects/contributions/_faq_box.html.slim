@@ -1,15 +1,17 @@
 #faq-box.w-hidden-small.w-hidden-tiny.back-faq-box data-ix='new-interaction'
   .u-marginbottom-20.fontsize-small.fontweight-semibold= t('.perguntas_frequentes')
   ul.w-list-unstyled
-    li.list-question.fontsize-smaller.alt-link= t('.como_eu_apoio_este')
-    li.list-answer.u-marginbottom-20.fontsize-smaller= t('.primeiro_escolha_o_valor')
+    li.list-question.fontsize-smaller.alt-link= t('.how_can_i_support')
+    li.list-answer.u-marginbottom-20.fontsize-smaller= t('.how_can_i_support_answer')
 
-    li.list-question.fontsize-smaller.alt-link= t('.quando_o_pagamento_efetivado')
-    li.list-answer.u-marginbottom-20.fontsize-smaller= t('.se_voc_pagou_com')
+    li.list-question.fontsize-smaller.alt-link= t('.when_do_i_pay')
+    li.list-answer.u-marginbottom-20.fontsize-smaller= @project.try(:wait_for_success_to_collect_funds) ? t('.pay_later') : t('.pay_now')
 
-    li.list-question.fontsize-smaller.alt-link= t('.e_se_o_projeto')
-    li.list-answer.u-marginbottom-20.fontsize-smaller= t('.nesse_caso_voc_recebe')
+    li.list-question.fontsize-smaller.alt-link= t('.how_do_i_pay')
+    li.list-answer.u-marginbottom-20.fontsize-smaller= t('.how_do_i_pay_answer')
 
-    li.list-question.fontsize-smaller.alt-link= t('.se_o_projeto_for')
-    li.list-answer.u-marginbottom-20.fontsize-smaller= t('.quando_sua_recompensa_estiver', user_link: link_to(
-          @project.user.display_name, user_path(@project.user)))
+    li.list-question.fontsize-smaller.alt-link= t('.what_if_it_fails')
+    li.list-answer.u-marginbottom-20.fontsize-smaller= t('.what_if_it_fails_answer')
+
+    li.list-question.fontsize-smaller.alt-link= t('.how_do_i_get_my_reward')
+    li.list-answer.u-marginbottom-20.fontsize-smaller= t('.how_do_i_get_my_reward_answer', user_link: link_to(@project.user.display_name, user_path(@project.user))).html_safe

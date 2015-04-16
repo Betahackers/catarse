@@ -14,7 +14,7 @@ ca:
     push_to_online: "El seu projecte està en línia!"
     push_to_online_error: "Error en realitzar el projecte en línia. Ompliu tots els camps obligatoris."
     twitter:
-      take_a_look: "Comprovi el projecte %{name} en @catarse"
+      take_a_look: "Comprovi el projecte %{name} en @fundoo"
     video_embed:
       a_project_by_html: "Un projecte %{link} en"
     posts:

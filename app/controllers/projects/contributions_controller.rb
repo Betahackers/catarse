@@ -38,9 +38,20 @@ class Projects::ContributionsController < ApplicationController
 
   def update
     authorize resource
-    resource.update_attributes(permitted_params[:contribution])
-    resource.update_user_billing_info
-    render json: {message: 'updated'}
+    begin
+      resource.assign_attributes(permitted_params[:contribution].merge(payment_method: 'OfflinePayment'))
+      if resource.save(context: :submit)
+        resource.waiting!
+        flash[:success] = t('success')
+        redirect_to project_contribution_path(project_id: resource.project.id, id: resource.id)
+      else
+        render :edit
+      end
+    rescue Exception => e
+      Rails.logger.info "-----> #{e.inspect}"
+      flash[:failure] = t('offline_payment_error')
+      return redirect_to new_project_contribution_path(resource.project)
+    end
   end
 
   def index

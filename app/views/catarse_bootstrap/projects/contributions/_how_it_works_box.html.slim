@@ -1,0 +1,39 @@
+/ .card.card-highlight.fontsize-small.u-radius.zindex-10.u-marginbottom-30
+/   h1= t('.how_it_works')
+/   hr
+/
+
+
+
+      
+      
+.w-hidden-small.w-hidden-tiny.card.u-radius.u-marginbottom-20 data-ix="new-interaction" 
+  .fontsize-small.fontweight-semibold.u-marginbottom-20= t('how_it_works')
+  ul.w-list-unstyled
+    li.u-marginbottom-20.fontsize-smallest
+      .w-row
+        .w-col.w-col-10
+           h4[class="#{params['action'] == 'new' ? 'text-success' : nil}"]= t(".choose.title")
+           = t(".choose.description")
+
+    li.u-marginbottom-20.fontsize-smallest
+      .w-row 
+        .w-col.w-col-10
+           h4[class="#{params['action'] == 'edit' ? 'text-success' : nil}"]= t(".confirm.title")
+           = t(".confirm.description")
+           
+    - if @project.try(:wait_for_success_to_collect_funds)         
+      li.u-marginbottom-20.fontsize-smallest
+        .w-row
+          .w-col.w-col-10    
+            h4[class="#{params['action'] == 'show' ? 'text-success' : nil}"]= t(".pay_later.title")
+            = t(".pay_later.description")             
+    - else
+      li.u-marginbottom-20.fontsize-smallest
+        .w-row
+          .w-col.w-col-10
+              h4[class="#{params['action'] == 'show' ? 'text-success' : nil}"]= t(".pay_now.title")
+              = t(".pay_now.description") 
+    
+    
+.u-marginbottom-30

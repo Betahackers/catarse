@@ -3,7 +3,7 @@ pt:
   days: dias
   facebook_locale: pt_BR
   failure_title: 'Por favor, corrija os seguintes erros:'
-  i_just_contributed: Eu acabei de apoiar o projeto %{name} no @catarse
+  i_just_contributed: Eu acabei de apoiar o projeto %{name} no @fundoo
   'no': Não
   'yes': Sim
   not_informed: não informado

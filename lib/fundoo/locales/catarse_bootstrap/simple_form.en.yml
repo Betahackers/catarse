@@ -43,6 +43,7 @@ en:
         auto_confirm_contribution: "Should contributions be confirmed automatically?"
         paypal_email_address: "Can people send you donations via PayPal? What is your PayPal email address?"
         wait_for_success_to_collect_funds: "Wait to see if the campaign is successful before collecting funds?"
+        iban: "Can people send you donations via bank transfer? What is your IBAN?"
     hints:
       project:
         select: "Select an option"
@@ -50,13 +51,13 @@ en:
         name: "Give it a name people remember easily. Do not exceed 50 characters."
         permalink: "Prefer something simple, straightforward and to identify your project. Try not to use hyphen, underline etc."
         category: "Choose the most appropriate to your project."
-        goal: "Plan a goal consistent with what your project proposes. Review your budget and don't forget to include the 13% rate charged by Fundoo if your project is successful."
+        goal: "Plan a goal consistent with what your project proposes."
         online_days: "You can choose between 1 and 60 days for your campaign. Check out the director's Guide for tips on deadlines."
         video_url: "Link to your video on Vimeo or Youtube <br/>."
         about: "Speak with passion and clarity about what will take place. Clarify possible doubts about how the money will be used, who is behind the project, how and when the project will be delivered. Transparency draws more supporters. Remember: your design will be accessed by ordinary people who will decide whether or not they support your project. Make It A Good One! "
         headline: "Phrase in the project card to call supporters. Must have a maximum of 100 characters and summarize well the project."
         uploaded_image: "This image is used as the thumbnail of your project (PNG, JPG size 600 x 340)"
         auto_confirm_contribution: "If checked, contributions will be applied to your project as soon as they are made, EVEN IF YOU HAVE NOT YET RECEIVED THE FUNDS. This makes sense if you plan on collecting the funds only once your project is successful. Otherwise, you should leave this box UNCHECKED and wait until you receive the funds before confirming a contribution. You can see contributions awaiting confirmation by clicking on the Contributions tab on your project's homepage and select Pending Confirmation"
-        paypal_email_address: "If you have a paypal account you can enter the associated email address here. Contributors will automatically receive an email with instructions on how to make their donation via PayPal. If you don't have a PayPal account, or would rather not send this email, just leave this field blank."
-        wait_for_success_to_collect_funds: "Check the box if you want to wait until the campaign is finished before asking contributors for their donations. IMPORTANT: If you choose to collect funds immediately and your campaign is not successful, you'll be responsible for returning donations to their contributors. Waiting to collect the funds is better if you want to avoid the hastle of returning it all, but it's also riskier since donors may not be around when it comes time to collect. It really depends on the project and whether you would rather be safe or sorry."
-        
+        paypal_email_address: "If you have a paypal account you can enter the associated email address here. Contributors will automatically receive an email with instructions on how to make their donation via PayPal. If you don't want to use PayPal just leave this field blank."
+        wait_for_success_to_collect_funds: "Check this box if you want to wait until the campaign is finished before asking contributors for their donations. <br/><br/><strong>IMPORTANT</strong>: If you choose to collect funds immediately and your campaign is not successful, you'll be responsible for returning donations to their contributors. Waiting to collect the funds is better if you want to avoid the hastle of returning it all, but it's also riskier since donors may not be around when it comes time to collect. It really depends on the project and whether you would rather be safe or sorry."
+        iban: "If you would like to accept donations via bank transfer, please enter your IBAN account number here. This number is encrypted in our database and unecrypted and sent via to users when they make a donation. If you don't want to provide your IBAN just leave this field blank. <br/><br/><strong>IMPORTANT</strong>: You should only provide this number if you are comfortable with sending it to everyone who contributes to your project, even if you don't know them personally."

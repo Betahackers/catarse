@@ -37,7 +37,7 @@ class ContributionPolicy < ApplicationPolicy
   end
 
   def update?
-    done_by_owner_or_admin?
+    done_by_owner_or_admin? && record.pending?
   end
 
   def show?

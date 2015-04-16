@@ -1,12 +1,19 @@
 - contribution = @notification.contribution
-p= raw t('.ol_strong_contribution_strong', contribution: (contribution.user.display_name))
+p= raw t('.hello', name: (contribution.user.display_name))
 p
   = raw t('.thank_you_for_supporting', link_to: (link_to(contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink))))
-  = raw t('.the_project_organizer_will')
-p= raw t('.if_you_would_like_to')
-= raw t('.organizer_email', email: (contribution.project.paypal_email_address))
+  = raw t('.next_step')
+  
+p= raw t('.pay_pal')
+br
+= raw t('.organizer_paypal_email', email: (contribution.project.paypal_email_address))
 br
 = raw t('.donation_amount', amount: (number_to_currency contribution.value))
+a[class='button' target='_blank' href='https://www.paypal.com/us/webapps/mpp/send-money-online'] Donate now
+br
+= raw t('.no_pay_pal')
+br 
+p= raw t('.organizer_will_confirm')
 br
 br
 = raw t('.um_abra_o')

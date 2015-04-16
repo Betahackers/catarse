@@ -14,7 +14,7 @@ en:
     push_to_online: "Your project is online!"
     push_to_online_error: "Error when placing the project online. Fill in all required fields."
     twitter:
-      take_a_look: "Check out the project %{name} in @catarse"
+      take_a_look: "Check out the project %{name} in @fundoo"
     video_embed:
       a_project_by_html: "A project of %{link} in"
     posts:

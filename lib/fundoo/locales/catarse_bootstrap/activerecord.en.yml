@@ -42,7 +42,7 @@ en:
       contribution:
         payer_name: "Full Name"
         payer_email: Email
-        payer_document: "Document Number"
+        payer_document: "Document Number (NIE/Passport)"
         country: Country
         address_street: Street
         address_number: Number
@@ -189,6 +189,10 @@ en:
               blank: "The URL of the project cannot be blank"
               invalid: "The project URL is invalid"
               taken: "This project URL already exists"
+            iban_and_paypal:
+              blank: "Donators need a way to send you funds. You must provide either an IBAN number or paypal email address"
+            iban:
+              invalid: "The IBAN number entered is invalid"
             category:
               blank: "You must choose a category for your project"
             goal:

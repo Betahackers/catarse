@@ -1,0 +1,36 @@
+- contribution = @notification.contribution
+p= raw t('.hello', name: (contribution.user.display_name))
+p
+  = raw t('.thank_you_for_supporting', link_to: (link_to(contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink))))
+  = raw t('.next_step')
+
+br 
+
+- if contribution.project.paypal_email_address.present?
+  hr
+  = raw t('.donate_with_pay_pal')
+  br
+  = raw t('.organizer_paypal_email', email: (contribution.project.paypal_email_address))
+  br
+  = raw t('.donation_amount', amount: (number_to_currency contribution.value))
+  br
+  a[class='button button-paypal' target='_blank' href='https://www.paypal.com/es/webapps/mpp/send-money-online'] Go to PayPal
+  br
+
+- if contribution.project.iban.present? 
+  hr
+  = raw t('.donate_with_iban')
+  br
+  = raw t('.organizers_iban', iban: contribution.project.iban)
+  br
+  = raw t('.donation_amount', amount: (number_to_currency contribution.value))
+  br
+  
+hr
+br 
+p= raw t('.organizer_will_confirm')
+br
+br
+= raw t('.um_abra_o')
+br
+= ENV['COMPANY_NAME']

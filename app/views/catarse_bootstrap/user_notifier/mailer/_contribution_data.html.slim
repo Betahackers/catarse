@@ -20,11 +20,7 @@ p
     br/
     = raw t('.estimativa_de_entrega_contribution', contribution: (contribution.reward.display_deliver_estimate))
     br/
-  = raw t('.id_do_apoio_contribution', contribution: (contribution.payment_id))
-  br/
   = raw t('.nome_raz_o_social', contribution: ( contribution.project.user.full_name.presence || contribution.project.user.name.presence ))
-  br/
-  = raw t('.cpf_cnpj_do_realizador', contribution: (contribution.project.user.cpf))
 
 p
   => raw t('.importante_ressaltar_que')

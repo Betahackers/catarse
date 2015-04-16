@@ -13,7 +13,7 @@ es:
         recompensa_selecionada_contribution: "Recompensa seleccionado: %{contribution}"
         estimativa_de_entrega_contribution: "Estimación de entrega: %{contribution}"
         id_do_apoio_contribution: "Soporte ID: %{contribution}"
-        nome_raz_o_social: "Nombre/denominación del Director: %{contribution}"
+        nome_raz_o_social: "Nombre del Director: %{contribution}"
         cpf_cnpj_do_realizador: "DNI/NIE del Director: %{contribution}"
         importante_ressaltar_que: "Es importante señalar que la Fundoo es sólo de mediador en este proceso,"
         portanto_se_tiver_alguma: "Por lo tanto, si usted tiene alguna pregunta relacionada con el diseño o recompensa seleccionado entre"
@@ -182,7 +182,7 @@ es:
       deadline_extension:
         oi_notification: "Hola % notificación de {},"
         devido_s_mudan_as: "Debido a los cambios ocurridos en la plataforma de anoche, se reportaron algunas inestabilidades en acceso a Fundoo. Estos errores son muy específicos y están sucediendo en la actualización del sistema. La previsión es que el sitio es completamente estable a 36 horas."
-        para_que_os_projetos: "Para asegurar que los proyectos no son afectados por problemas de acceso posible, ofrecerá la extensión del plazo de 2 días para quienes expresan interés. Para hacer esto, debe enviar un correo electrónico a projetos@catarse.me con el título \"extensión\"."
+        para_que_os_projetos: "Para asegurar que los proyectos no son afectados por problemas de acceso posible, ofrecerá la extensión del plazo de 2 días para quienes expresan interés. Para hacer esto, debe enviar un correo electrónico a projetos@fundoo.me con el título \"extensión\"."
         se_ficar_com_alguma: "Si usted tiene cualesquiera preguntas, házmelo saber."
         abra_o: Abrazo!
       deadline_extension_subject:

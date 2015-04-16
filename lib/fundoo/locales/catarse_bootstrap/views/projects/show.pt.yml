@@ -14,7 +14,7 @@ pt:
     push_to_online: "Seu projeto está online!"
     push_to_online_error: "Erro ao colocar o projeto online. Preencha todos os campos obrigatórios."
     twitter:
-      take_a_look: "Confira o projeto %{name} no @catarse"
+      take_a_look: "Confira o projeto %{name} no @fundoo"
     video_embed:
       a_project_by_html: "Um projeto de %{link} no"
     posts:

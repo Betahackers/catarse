@@ -8,13 +8,13 @@
         .u-text-center
           .fontsize-largest.text-success.u-marginbottom-20= t('.valeu')
           .fontsize-base.u-marginbottom-30
-            => t('.voc_faz_parte_do') 
-            => @project.total_contributions
-            => t('.pessoas_que_querem_tirar')
-            span.fontweight-semibold= link_to @project.name, project_by_slug_url(@project.permalink), class: 'alt-link'
-            =<> t('.do_papel_voc_receber')
-            = link_to t('.atrav_s_do_seu'), edit_user_path(resource.user, anchor: 'contributions'), class: 'link-hidden fontweight-semibold'
-            = t('.compartilhe_o_seu')
+            - if @project.try(:wait_for_success_to_collect_funds) 
+              => t('.youre_now_part_of', count: @project.total_contributions, link: link_to(@project.name, project_by_slug_url(@project.permalink), class: 'alt-link')).html_safe 
+            - else
+              => t('.pay_now', email: @contribution.payer_email).html_safe
+            =<> t('.track_the_status', link: link_to(t('.through_your_profile'), edit_user_path(resource.user, anchor: 'contributions'), class: 'fontweight-semibold') ).html_safe
+          .fontsize-base.u-marginbottom-30
+            = t('.share_your_support')
         .w-row.u-marginbottom-20
           .w-col.w-col-6.w-col-small-6.w-col-tiny-6.w-sub-col-middle
             div
@@ -38,7 +38,7 @@
   .section.section-gray-one
     .w-container
       .fontsize-larger.lineheight-tight.u-text-center.u-marginbottom-40 
-        = t('.curte_a_categoria_project', project_name: @project.category.name_pt)
+        = t('.curte_a_categoria_project', project_name: @project.category.name_en)
       .w-row
         .w-col.w-col-4.w-col-push-4
           = link_to "Follow #{@project.category.name_pt}", subscribe_category_path(@project.category), class: 'btn btn-large btn-dark'

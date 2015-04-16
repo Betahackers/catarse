@@ -23,10 +23,10 @@ class ContributionObserver < ActiveRecord::Observer
 
   def from_pending_to_waiting_confirmation(contribution)
     if !contribution.confirmed?
-      if contribution.project.wait_for_success_to_collect_funds
+      if contribution.project.wait_for_success_to_collect_funds        
         contribution.confirm! 
       else
-        contribution.notify_to_contributor(:paypal_donation_request) if contribution.project.paypal_email_address.present?
+        contribution.notify_to_contributor(:pay_now_donation_request) 
       end
     end
   end

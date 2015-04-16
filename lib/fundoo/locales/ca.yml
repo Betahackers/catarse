@@ -3,7 +3,7 @@ ca:
   days: dies
   facebook_locale: en_GB
   failure_title: "Si us plau corregeixi els següents errors:"
-  i_just_contributed: "Només donar suport el projecte %{name} en @catarse"
+  i_just_contributed: "Només donar suport el projecte %{name} en @fundoo"
   "no": "No"
   "yes": Sí
   not_informed: "no va informar"
