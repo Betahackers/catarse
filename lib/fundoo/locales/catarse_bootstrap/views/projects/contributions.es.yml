@@ -5,20 +5,20 @@ es:
       you_selected: "Elegiste esto!"
       contribute_text:
         credits_tab: "Mis créditos"
-      contribution:
-        anonymous_contribution: "Colaborador anónimo"
-        anonymous_description: "Has optado por permanecer incógnito"
-        no_reward: "Este colaborador no seleccione ninguna recompensa"
       checkout:
-        no_credits: "No tienes suficientes créditos para llevar a cabo esta contribución."
-        success: "Su contribución fue realizada con éxito. ¡Muchas gracias!"
+        no_credits: "No tienes suficientes créditos para lograr este apoyo."
+        success: "Su apoyo fue realizado con éxito. ¡Muchas gracias!"
+      contribution:
+        anonymous_contribution: "Anónimo partidario"
+        anonymous_description: "Has optado por permanecer incógnito"
+        no_reward: "Este partidario no seleccione ninguna recompensa"
       selected_reward:
-        review_without_reward_html: "Usted será contributioning con <strong>% {valor}</strong> y no quiere ninguna recompensa por su contribución."
-        value: "Valor de la contribución"
+        review_without_reward_html: "Usted estará apoyando con <strong>%{value}</strong> y no quiere ninguna recompensa por su apoyo."
+        value: "Valor de apoyo"
         reward: "Recompensa seleccionado"
         edit: Editar
       edit:
-        payment_slip_disclaimer: "Si el proyecto no tiene éxito, haremos el reembolso de su contribución. Para esto se utilizará el Banco de datos registrado aquí."
+        payment_slip_disclaimer: "Si el proyecto no tiene éxito, haremos el reembolso de su apoyo. Para esto se utilizará el Banco de datos registrado aquí."
         review_errors_title: "Compruebe los datos reportados"
         review_errors: "Falta información o no fue correctamente informado, correctamente todos los campos marcados en rojo y tesnte otra vez"
         anonymous_confirmation_title: "¿Seguro que desea que su apoyo es anónimo?"
