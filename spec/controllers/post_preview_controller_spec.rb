@@ -5,7 +5,7 @@ RSpec.describe PostPreviewController, type: :controller do
 
   describe "GET show" do
     before do
-      get :show, text: '**should convert me! :D**', locale: :pt
+      get :show, text: '**should convert me! :D**', locale: :en
     end
 
     it{ is_expected.to be_success }

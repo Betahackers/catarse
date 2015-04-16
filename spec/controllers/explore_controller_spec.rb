@@ -10,7 +10,7 @@ RSpec.describe ExploreController, type: :controller do
     context "when no user is logged in" do
       let(:user){ nil }
       before do
-        get :index, locale: :pt
+        get :index, locale: :en
       end
       it{ is_expected.to be_successful }
     end

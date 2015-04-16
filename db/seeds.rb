@@ -34,7 +34,7 @@ puts 'Seeding the database...'
   { pt: 'Filmes Documentários', en: 'Documentary Films' },
   { pt: 'Filmes Universitários', en: 'Experimental Films' }
 ].each do |name|
-   category = Category.find_or_initialize_by(name_pt: name[:pt])
+   category = Category.find_or_initialize_by(name_pt: name[:en])
    category.update_attributes({
      name_en: name[:en]
    })

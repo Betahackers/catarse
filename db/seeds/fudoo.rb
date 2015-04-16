@@ -36,7 +36,7 @@ puts 'Seeding the database...'
 ].each do |name|
    category = Category.find_or_initialize_by(name_en: name[:en])
    category.update_attributes({
-     name_pt: name[:pt],
+     name_pt: name[:en],
      name_es: name[:en]
    })
  end

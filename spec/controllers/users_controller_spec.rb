@@ -26,7 +26,7 @@ RSpec.describe UsersController, type: :controller do
 
       before do
         expect(controller).to_not receive(:sign_in)
-        get :reactivate, id: user.id, token: token, locale: :pt
+        get :reactivate, id: user.id, token: token, locale: :en
       end
 
       it "should not set deactivated_at to nil" do
@@ -41,7 +41,7 @@ RSpec.describe UsersController, type: :controller do
 
       before do
         expect(controller).to_not receive(:sign_in)
-        get :reactivate, id: user.id, token: token, locale: :pt
+        get :reactivate, id: user.id, token: token, locale: :en
       end
 
       it "should not set deactivated_at to nil" do
@@ -56,7 +56,7 @@ RSpec.describe UsersController, type: :controller do
 
       before do
         expect(controller).to receive(:sign_in).with(user)
-        get :reactivate, id: user.id, token: token, locale: :pt
+        get :reactivate, id: user.id, token: token, locale: :en
       end
 
       it "should set deactivated_at to nil" do
@@ -72,7 +72,7 @@ RSpec.describe UsersController, type: :controller do
       before do
         allow(controller).to receive(:current_user).and_call_original
         sign_in(create(:user, admin: true))
-        delete :destroy, id: user.id, locale: :pt
+        delete :destroy, id: user.id, locale: :en
       end
 
       it "should set deactivated_at" do
@@ -90,7 +90,7 @@ RSpec.describe UsersController, type: :controller do
       before do
         allow(controller).to receive(:current_user).and_call_original
         sign_in(current_user)
-        delete :destroy, id: user.id, locale: :pt
+        delete :destroy, id: user.id, locale: :en
       end
 
       it "should set deactivated_at" do
@@ -107,7 +107,7 @@ RSpec.describe UsersController, type: :controller do
     context "when user is not loged" do
       let(:current_user) { nil }
       before do
-        delete :destroy, id: user.id, locale: :pt
+        delete :destroy, id: user.id, locale: :en
       end
 
       it "should not set deactivated_at" do
@@ -121,7 +121,7 @@ RSpec.describe UsersController, type: :controller do
   describe "GET unsubscribe_notifications" do
     context "when user is loged" do
       before do
-        get :unsubscribe_notifications, id: user.id, locale: 'pt'
+        get :unsubscribe_notifications, id: user.id, locale: 'en'
       end
 
       it { is_expected.to redirect_to user_path(user, anchor: 'unsubscribes')  }
@@ -130,7 +130,7 @@ RSpec.describe UsersController, type: :controller do
     context "when user is not loged" do
       let(:current_user) { nil }
       before do
-        get :unsubscribe_notifications, id: user.id, locale: 'pt'
+        get :unsubscribe_notifications, id: user.id, locale: 'en'
       end
 
       it { is_expected.not_to redirect_to user_path(user, anchor: 'unsubscribes')  }
@@ -144,7 +144,7 @@ RSpec.describe UsersController, type: :controller do
       let(:password_confirmation){ 'newpassword123' }
 
       before do
-        put :update, id: user.id, locale: 'pt', user: { current_password: current_password, password: password, password_confirmation: password_confirmation }
+        put :update, id: user.id, locale: 'en', user: { current_password: current_password, password: password, password_confirmation: password_confirmation }
       end
 
       context "with wrong current password" do
@@ -163,7 +163,7 @@ RSpec.describe UsersController, type: :controller do
       let(:project){ create(:project, state: 'successful') }
       let(:category){ create(:category) }
       before do
-        put :update, id: user.id, locale: 'pt', user: { twitter: 'test', unsubscribes: {project.id.to_s=>"1"}, category_followers_attributes: [{category_id: category.id}]}
+        put :update, id: user.id, locale: 'en', user: { twitter: 'test', unsubscribes: {project.id.to_s=>"1"}, category_followers_attributes: [{category_id: category.id}]}
       end
       it("should update the user and nested models") do
         user.reload
@@ -177,7 +177,7 @@ RSpec.describe UsersController, type: :controller do
 
   describe "GET show" do
     before do
-      get :show, id: user.id, locale: 'pt'
+      get :show, id: user.id, locale: 'en'
     end
 
     context "when user is no longer active" do

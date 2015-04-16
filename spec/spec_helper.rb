@@ -20,8 +20,8 @@ RSpec.configure do |config|
     ActiveRecord::Base.connection.execute "SET client_min_messages TO warning;"
     ActiveRecord::Base.connection.execute "SET timezone TO 'utc';"
     DatabaseCleaner.clean_with :truncation
-    I18n.locale = :pt
-    I18n.default_locale = :pt
+    I18n.locale = :en
+    I18n.default_locale = :en
 
     FakeWeb.register_uri(:get, "http://vimeo.com/api/v2/video/17298435.json", response: fixture_path('vimeo_default_json_request.txt'))
     FakeWeb.register_uri(:get, "http://vimeo.com/17298435", response: fixture_path('vimeo_default_request.txt'))

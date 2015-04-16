@@ -13,7 +13,7 @@ RSpec.describe ProjectsController, type: :controller do
   describe "POST create" do
     let(:project){ build(:project, state: 'draft') }
     before do
-      post :create, { locale: :pt, project: project.attributes }
+      post :create, { locale: :en, project: project.attributes }
     end
 
     context "when no user is logged in" do
@@ -42,7 +42,7 @@ RSpec.describe ProjectsController, type: :controller do
       })
       create(:reward, project: project)
       create(:bank_account, user: current_user)
-      get :publish, id: project.id, locale: :pt
+      get :publish, id: project.id, locale: :en
       project.reload
     end
 
@@ -55,7 +55,7 @@ RSpec.describe ProjectsController, type: :controller do
     context "without referal link" do
       before do
         create(:reward, project: project)
-        get :send_to_analysis, id: project.id, locale: :pt
+        get :send_to_analysis, id: project.id, locale: :en
         project.reload
       end
 
@@ -66,7 +66,7 @@ RSpec.describe ProjectsController, type: :controller do
       subject { project.referal_link }
       before do
         create(:reward, project: project)
-        get :send_to_analysis, id: project.id, locale: :pt, ref: 'referal'
+        get :send_to_analysis, id: project.id, locale: :en, ref: 'referal'
         project.reload
       end
 
@@ -76,7 +76,7 @@ RSpec.describe ProjectsController, type: :controller do
 
   describe "GET index" do
     before do
-      get :index, locale: :pt
+      get :index, locale: :en
     end
     it { is_expected.to be_success }
 
@@ -84,7 +84,7 @@ RSpec.describe ProjectsController, type: :controller do
       subject { controller.session[:referal_link] }
 
       before do
-        get :index, locale: :pt, ref: 'referal'
+        get :index, locale: :en, ref: 'referal'
       end
 
       it { is_expected.to eq('referal') }
@@ -92,7 +92,7 @@ RSpec.describe ProjectsController, type: :controller do
   end
 
   describe "GET new" do
-    before { get :new, locale: :pt }
+    before { get :new, locale: :en }
 
     context "when user is a guest" do
       it { is_expected.not_to be_success }
@@ -107,13 +107,13 @@ RSpec.describe ProjectsController, type: :controller do
   describe "PUT update" do
     shared_examples_for "updatable project" do
       context "with tab anchor" do
-        before { put :update, id: project.id, project: { name: 'My Updated Title' },locale: :pt , anchor: 'basics'}
+        before { put :update, id: project.id, project: { name: 'My Updated Title' },locale: :en , anchor: 'basics'}
 
         it{ is_expected.to redirect_to edit_project_path(project, anchor: 'basics') }
       end
 
       context "with valid permalink" do
-        before { put :update, id: project.id, project: { name: 'My Updated Title' },locale: :pt }
+        before { put :update, id: project.id, project: { name: 'My Updated Title' },locale: :en }
         it {
           project.reload
           expect(project.name).to eq('My Updated Title')
@@ -124,7 +124,7 @@ RSpec.describe ProjectsController, type: :controller do
     end
 
     shared_examples_for "protected project" do
-      before { put :update, id: project.id, project: { name: 'My Updated Title' },locale: :pt }
+      before { put :update, id: project.id, project: { name: 'My Updated Title' },locale: :en }
       it {
         project.reload
         expect(project.name).to eq('Foo bar')
@@ -150,7 +150,7 @@ RSpec.describe ProjectsController, type: :controller do
         end
 
         context "when I try to update the project name and the about field" do
-          before{ put :update, id: project.id, project: { name: 'new_title', about: 'new_description' }, locale: :pt }
+          before{ put :update, id: project.id, project: { name: 'new_title', about: 'new_description' }, locale: :en }
           it "should not update title" do
             project.reload
             expect(project.name).not_to eq('new_title')
@@ -158,7 +158,7 @@ RSpec.describe ProjectsController, type: :controller do
         end
 
         context "when I try to update only the about field" do
-          before{ put :update, id: project.id, project: { about: 'new_description' }, locale: :pt }
+          before{ put :update, id: project.id, project: { about: 'new_description' }, locale: :en }
           it "should update it" do
             project.reload
             expect(project.about).to eq('new_description')
@@ -180,7 +180,7 @@ RSpec.describe ProjectsController, type: :controller do
 
   describe "GET embed" do
     before do
-      get :embed, id: project, locale: :pt
+      get :embed, id: project, locale: :en
     end
     its(:status){ should == 200 }
   end
@@ -189,7 +189,7 @@ RSpec.describe ProjectsController, type: :controller do
     context "when we have update_id in the querystring" do
       let(:project){ create(:project) }
       let(:project_post){ create(:project_post, project: project) }
-      before{ get :show, permalink: project.permalink, project_post_id: project_post.id, locale: :pt }
+      before{ get :show, permalink: project.permalink, project_post_id: project_post.id, locale: :en }
       it("should assign update to @update"){ expect(assigns(:post)).to eq(project_post) }
     end
   end
@@ -199,14 +199,14 @@ RSpec.describe ProjectsController, type: :controller do
       let(:video_url){ 'http://vimeo.com/17298435' }
       before do
         allow(VideoInfo).to receive(:get).and_return({video_id: 'abcd'})
-        get :video, locale: :pt, url: video_url
+        get :video, locale: :en, url: video_url
       end
 
       its(:body){ should == VideoInfo.get(video_url).to_json }
     end
 
     context 'url is not a valid video' do
-      before { get :video, locale: :pt, url: 'http://????' }
+      before { get :video, locale: :en, url: 'http://????' }
 
       its(:body){ should == nil.to_json }
     end

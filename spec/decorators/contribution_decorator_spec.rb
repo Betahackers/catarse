@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe ContributionDecorator do
   before do
-    I18n.locale = :pt
+    I18n.locale = :en
   end
 
   describe "#display_date" do

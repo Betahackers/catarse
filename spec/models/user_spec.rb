@@ -202,14 +202,14 @@ RSpec.describe User, type: :model do
   end
 
   describe "#change_locale" do
-    let(:user) { create(:user, locale: 'pt') }
+    let(:user) { create(:user, locale: 'en') }
 
     context "when user already has a locale" do
       before do
-        expect(user).not_to receive(:update_attributes).with(locale: 'pt')
+        expect(user).not_to receive(:update_attributes).with(locale: 'en')
       end
 
-      it { user.change_locale('pt') }
+      it { user.change_locale('en') }
     end
 
     context "when locale is diff from the user locale" do

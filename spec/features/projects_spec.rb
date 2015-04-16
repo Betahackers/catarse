@@ -19,7 +19,7 @@ RSpec.describe "Projects", type: :feature do
     before do
       create(:project, state: 'online', online_days: 30, online_date: Time.now)
       create(:project, state: 'online', online_days: 30, online_date: 7.days.ago)
-      visit root_path(locale: :pt)
+      visit root_path(locale: :en)
     end
 
     it "should show recent projects" do
@@ -32,7 +32,7 @@ RSpec.describe "Projects", type: :feature do
     before do
       create(:project, name: 'Foo', state: 'online', online_days: 30, recommended: true)
       create(:project, name: 'Lorem', state: 'online', online_days: 30, recommended: false)
-      visit explore_path(locale: :pt)
+      visit explore_path(locale: :en)
       sleep 4
     end
     it "should show recommended projects" do
@@ -62,7 +62,7 @@ RSpec.describe "Projects", type: :feature do
   #  before do
   #    project # need to build the project to create category before visiting the page
   #    login
-  #    visit new_project_path(locale: :pt)
+  #    visit new_project_path(locale: :en)
   #    sleep 1
   #  end
 
@@ -88,7 +88,7 @@ RSpec.describe "Projects", type: :feature do
 
   #  before do
   #    login
-  #    visit project_path(project, locale: :pt)
+  #    visit project_path(project, locale: :en)
   #  end
 
   #  it 'edit tab should be present' do

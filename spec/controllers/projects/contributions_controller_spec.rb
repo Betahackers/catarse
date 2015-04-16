@@ -18,7 +18,7 @@ RSpec.describe Projects::ContributionsController, type: :controller do
 
     before do
       set_expectations
-      put :update, { locale: :pt, project_id: project.id, id: contribution.id, contribution: contribution_info, format: :json }
+      put :update, { locale: :en, project_id: project.id, id: contribution.id, contribution: contribution_info, format: :json }
     end
 
     context "when no user is logged in" do
@@ -47,7 +47,7 @@ RSpec.describe Projects::ContributionsController, type: :controller do
   describe "GET edit" do
     before do
       request.env['REQUEST_URI'] = "/test_path"
-      get :edit, {locale: :pt, project_id: project.id, id: contribution.id}
+      get :edit, {locale: :en, project_id: project.id, id: contribution.id}
     end
 
     context "when no user is logged" do
@@ -73,7 +73,7 @@ RSpec.describe Projects::ContributionsController, type: :controller do
     let(:value){ '20.00' }
     before do
       request.env['REQUEST_URI'] = "/test_path"
-      post :create, {locale: :pt, project_id: project.id, contribution: { value: value, reward_id: nil, anonymous: '0' }}
+      post :create, {locale: :en, project_id: project.id, contribution: { value: value, reward_id: nil, anonymous: '0' }}
     end
 
     context "when no user is logged" do
@@ -117,7 +117,7 @@ RSpec.describe Projects::ContributionsController, type: :controller do
       allow_any_instance_of(Project).to receive(:online?).and_return(online)
       allow(controller).to receive(:browser).and_return(browser)
       allow_any_instance_of(ApplicationController).to receive(:detect_old_browsers).and_call_original
-      get :new, {locale: :pt, project_id: project.id}
+      get :new, {locale: :en, project_id: project.id}
     end
 
     context "when browser is IE 9" do
@@ -148,7 +148,7 @@ RSpec.describe Projects::ContributionsController, type: :controller do
   describe "GET show" do
     let(:contribution){ create(:contribution, value: 10.00, credits: false, state: 'confirmed') }
     before do
-      get :show, { locale: :pt, project_id: contribution.project.id, id: contribution.id }
+      get :show, { locale: :en, project_id: contribution.project.id, id: contribution.id }
     end
 
     context "when no user is logged in" do
@@ -173,7 +173,7 @@ RSpec.describe Projects::ContributionsController, type: :controller do
               reward: create(:reward, project: project, description: 'Test Reward'),
               project: project,
               user: create(:user, name: 'Foo Bar'))
-      get :index, { locale: :pt, project_id: project.id }
+      get :index, { locale: :en, project_id: project.id }
     end
     its(:status){ should eq 200 }
   end

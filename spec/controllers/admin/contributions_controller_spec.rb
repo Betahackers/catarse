@@ -15,7 +15,7 @@ RSpec.describe Admin::ContributionsController, type: :controller do
     subject { contribution.confirmed? }
 
     before do
-      put :confirm, id: contribution.id, locale: :pt
+      put :confirm, id: contribution.id, locale: :en
     end
 
     it do
@@ -29,7 +29,7 @@ RSpec.describe Admin::ContributionsController, type: :controller do
     subject { contribution.deleted? }
 
     before do
-      put :push_to_trash, id: contribution.id, locale: :pt
+      put :push_to_trash, id: contribution.id, locale: :en
       contribution.reload
     end
 
@@ -42,7 +42,7 @@ RSpec.describe Admin::ContributionsController, type: :controller do
 
     before do
       allow(controller).to receive(:current_user).and_return(admin)
-      put :hide, id: contribution.id, locale: :pt
+      put :hide, id: contribution.id, locale: :en
     end
 
     it do
@@ -56,7 +56,7 @@ RSpec.describe Admin::ContributionsController, type: :controller do
     subject { contribution.refunded? }
 
     before do
-      put :refund, id: contribution.id, locale: :pt
+      put :refund, id: contribution.id, locale: :en
     end
 
     it do
@@ -70,7 +70,7 @@ RSpec.describe Admin::ContributionsController, type: :controller do
     subject { contribution.confirmed? }
 
     before do
-      put :pendent, id: contribution.id, locale: :pt
+      put :pendent, id: contribution.id, locale: :en
     end
 
     it do
@@ -84,7 +84,7 @@ RSpec.describe Admin::ContributionsController, type: :controller do
     subject { contribution.canceled? }
 
     before do
-      put :cancel, id: contribution.id, locale: :pt
+      put :cancel, id: contribution.id, locale: :en
     end
 
     it do
@@ -97,14 +97,14 @@ RSpec.describe Admin::ContributionsController, type: :controller do
     context "when I'm not logged in" do
       let(:current_user){ nil }
       before do
-        get :index, locale: :pt
+        get :index, locale: :en
       end
       it{ is_expected.to redirect_to new_user_registration_path }
     end
 
     context "when I'm logged as admin" do
       before do
-        get :index, locale: :pt
+        get :index, locale: :en
       end
       its(:status){ should == 200 }
     end
@@ -114,14 +114,14 @@ RSpec.describe Admin::ContributionsController, type: :controller do
     let(:contribution) { create(:contribution, payer_email: 'foo@foo.com') }
     context "when there is a match" do
       before do
-        get :index, locale: :pt, payer_email_contains: 'foo@foo.com'
+        get :index, locale: :en, payer_email_contains: 'foo@foo.com'
       end
       it{ expect(assigns(:contributions)).to eq([contribution]) }
     end
 
     context "when there is no match" do
       before do
-        get :index, locale: :pt, payer_email_contains: '2foo@foo.com'
+        get :index, locale: :en, payer_email_contains: '2foo@foo.com'
       end
       it{ expect(assigns(:contributions)).to eq([]) }
     end

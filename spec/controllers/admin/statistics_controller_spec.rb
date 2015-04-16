@@ -9,7 +9,7 @@ RSpec.describe Admin::StatisticsController, type: :controller do
 
   describe "GET index" do
     before do
-      get :index, locale: 'pt'
+      get :index, locale: 'en'
     end
     it{ is_expected.to render_template :index }
     its(:status){ should == 200 }

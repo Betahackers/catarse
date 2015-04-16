@@ -15,7 +15,7 @@ RSpec.describe PaymentEngines do
 
     allow(moip_engine).to receive(:name).and_return('MoIP')
     allow(moip_engine).to receive(:review_path).with(contribution).and_return("/#{contribution}")
-    allow(moip_engine).to receive(:locale).and_return('pt')
+    allow(moip_engine).to receive(:locale).and_return('en')
   end
 
   let(:engine){ paypal_engine }
@@ -76,7 +76,7 @@ RSpec.describe PaymentEngines do
     end
     context "when locale is pt" do
       before do
-        I18n.locale = :pt
+        I18n.locale = :en
       end
       it{ is_expected.to eq([engine_pt, engine]) }
     end

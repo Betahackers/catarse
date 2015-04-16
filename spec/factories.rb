@@ -87,6 +87,7 @@ FactoryGirl.define do
     f.state 'online'
     f.budget '1000'
     f.uploaded_image File.open("#{Rails.root}/spec/support/testimg.png")
+    f.paypal_email_address 'foo@bar.com'
     after :build do |project|
       project.account = build(:project_account, project: nil)
       project.rewards.build(deliver_at: Time.now, minimum_value: 10, description: 'test')
@@ -133,7 +134,7 @@ FactoryGirl.define do
     f.template_name 'project_success'
     f.origin_name 'Foo Bar'
     f.origin_email 'foo@bar.com'
-    f.locale 'pt'
+    f.locale 'en'
   end
 
   factory :reward do |f|

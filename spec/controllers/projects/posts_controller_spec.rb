@@ -7,12 +7,12 @@ RSpec.describe Projects::PostsController, type: :controller do
   subject{ response }
 
   describe "GET index" do
-    before{ get :index, project_id: project_post.project.id, locale: 'pt', format: 'html' }
+    before{ get :index, project_id: project_post.project.id, locale: 'en', format: 'html' }
     its(:status){ should == 200 }
   end
 
   describe "DELETE destroy" do
-    before { delete :destroy, project_id: project_post.project.id, id: project_post.id, locale: 'pt' }
+    before { delete :destroy, project_id: project_post.project.id, id: project_post.id, locale: 'en' }
     context 'When user is a guest' do
       its(:status) { should == 302 }
     end

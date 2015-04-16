@@ -10,7 +10,7 @@ RSpec.describe Contribution::PaymentEngineHandler, type: :model do
 
     allow(moip_engine).to receive(:name).and_return('MoIP')
     allow(moip_engine).to receive(:review_path).and_return("/#{contribution}")
-    allow(moip_engine).to receive(:locale).and_return('pt')
+    allow(moip_engine).to receive(:locale).and_return('en')
     allow(moip_engine).to receive(:can_do_refund?).and_return(false)
     allow(moip_engine).to receive(:direct_refund).and_return(false)
 

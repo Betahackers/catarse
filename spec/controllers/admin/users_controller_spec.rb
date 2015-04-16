@@ -12,14 +12,14 @@ RSpec.describe Admin::UsersController, type: :controller do
     context "when I'm not logged in" do
       let(:current_user){ nil }
       before do
-        get :index, locale: :pt
+        get :index, locale: :en
       end
       it{ is_expected.to redirect_to new_user_registration_path }
     end
 
     context "when I'm logged as admin" do
       before do
-        get :index, locale: :pt
+        get :index, locale: :en
       end
       its(:status){ should == 200 }
     end

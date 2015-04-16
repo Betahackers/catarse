@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe UserDecorator do
   before(:all) do
-    I18n.locale = :pt
+    I18n.locale = :en
   end
 
   describe "#display_name" do
@@ -77,7 +77,7 @@ RSpec.describe UserDecorator do
 
   describe "#display_credits" do
     subject { create(:user) }
-    its(:display_credits) { should == '€ 0'}
+    its(:display_credits) { should == '€0'}
   end
 
   describe "#display_total_of_contributions" do
@@ -86,7 +86,7 @@ RSpec.describe UserDecorator do
       before do
         create(:contribution, state: 'confirmed', user: subject, value: 500.0)
       end
-      its(:display_total_of_contributions) { should == '€ 500'}
+      its(:display_total_of_contributions) { should == '€500'}
     end
   end
 end

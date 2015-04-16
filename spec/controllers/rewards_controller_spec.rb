@@ -12,14 +12,14 @@ RSpec.describe RewardsController, type: :controller do
 
   describe "GET index" do
     before do
-      get :index, project_id: project.id, locale: :pt
+      get :index, project_id: project.id, locale: :en
     end
     it{ is_expected.to be_successful }
   end
 
   describe "POST sort" do
     before do
-      post :sort, project_id: project.id, id: reward.id, reward: {row_order_position: 1}, locale: :pt
+      post :sort, project_id: project.id, id: reward.id, reward: {row_order_position: 1}, locale: :en
     end
 
     context "when user is not logged in" do
