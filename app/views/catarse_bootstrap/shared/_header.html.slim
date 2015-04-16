@@ -15,8 +15,6 @@ div class="main-header #{((defined?(overlayer) && overlayer) ? 'overlayer' : '')
       = link_to 'En', url_for(:locale=>'en'), class: 'w-nav-link header-link u-right'
       | &nbsp;
       = link_to 'Es', url_for(:locale=>'es'), class: 'w-nav-link header-link u-right'
-      | &nbsp;
-      = link_to 'Cat', url_for(:locale=>'ca'), class: 'w-nav-link header-link u-right'
       
       /
       / = link_to t('layouts.header.help'), ENV['SUPPORT_FORUM'], target: :_blank, class: 'w-nav-link w-hidden-small w-hidden-tiny header-link w-nav-link u-right',  id: 'guidelines_header_modal' if ENV['SUPPORT_FORUM'].present?
