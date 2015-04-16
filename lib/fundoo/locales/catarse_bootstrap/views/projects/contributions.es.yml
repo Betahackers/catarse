@@ -5,20 +5,20 @@ es:
       you_selected: "Elegiste esto!"
       contribute_text:
         credits_tab: "Mis créditos"
-      checkout:
-        no_credits: "No tienes suficientes créditos para lograr este apoyo."
-        success: "Su apoyo fue realizado con éxito. ¡Muchas gracias!"
       contribution:
-        anonymous_contribution: "Anónimo partidario"
+        anonymous_contribution: "Colaborador anónimo"
         anonymous_description: "Has optado por permanecer incógnito"
-        no_reward: "Este partidario no seleccione ninguna recompensa"
+        no_reward: "Este colaborador no seleccione ninguna recompensa"
+      checkout:
+        no_credits: "No tienes suficientes créditos para llevar a cabo esta contribución."
+        success: "Su contribución fue realizada con éxito. ¡Muchas gracias!"
       selected_reward:
-        review_without_reward_html: "Usted estará apoyando con <strong>%{value}</strong> y no quiere ninguna recompensa por su apoyo."
-        value: "Valor de apoyo"
+        review_without_reward_html: "Usted será contributioning con <strong>% {valor}</strong> y no quiere ninguna recompensa por su contribución."
+        value: "Valor de la contribución"
         reward: "Recompensa seleccionado"
         edit: Editar
       edit:
-        payment_slip_disclaimer: "Si el proyecto no tiene éxito, haremos el reembolso de su apoyo. Para esto se utilizará el Banco de datos registrado aquí."
+        payment_slip_disclaimer: "Si el proyecto no tiene éxito, haremos el reembolso de su contribución. Para esto se utilizará el Banco de datos registrado aquí."
         review_errors_title: "Compruebe los datos reportados"
         review_errors: "Falta información o no fue correctamente informado, correctamente todos los campos marcados en rojo y tesnte otra vez"
         anonymous_confirmation_title: "¿Seguro que desea que su apoyo es anónimo?"
@@ -29,12 +29,6 @@ es:
           payment_card_number: "Número de tarjeta"
           payment_card_flag: Bandera
           payment_card_source: "Cód. Seguridad"
-          payment_card_source_short: CVC
-          payment_card_date: "Caducidad (mm/aa)"
-          payment_card_name: "Nombre imprimido en la tarjeta de crédito"
-          payment_card_installments: Parcelas
-        installment_with_tax: "sin interés"
-        transaction_error: "Transacción se negó, por favor, vuelva a verificar sus datos o póngase en contacto con el emisor de su tarjeta bancaria/para obtener más información."
         pagarme_warning_html: "El Fundoo está en fase de pruebas de un nuevo medio de pago que facilitará la contribución financiera y la eventual devolución de los valores a los contribuyentes. Por lo tanto, te advertimos que dato adicional puede ser requerido, además de los mencionados en los términos de uso a contribución este proyecto. Cualquier duda o dificultad, contacte con nosotros por correo electrónico a %{mailto}. Gracias."
         payment_save_card: "Yo quiero salvar mi tarjeta de crédito para facilitar la contribución futura."
         reward_sold_out: "Esta recompensa se agota. Empieza un nuevo aporte."
@@ -43,11 +37,6 @@ es:
         credits_submit: "Hacer el pago"
         credits_title: "Pago con crédito"
         insufficient_credits: "Tienes %{credits} créditos. Este valor no es suficiente para realizar la contribución, por favor, elija otro medio de pago."
-        choose_payment: "Elija el método de pago"
-        choose_payment_subtitle: "PAGO SEGURO"
-        cpf: "Para continuar, por favor notifique:"
-        credits_notice_html: "Esta contribución se pagará con sus créditos. Después de la confirmación, usted tendrá un saldo de <strong>{créditos de} %</strong> en créditos que aporte otros proyectos."
-        live_in_brazil: "Vivo en Brasil. (Desmarcar si su contribución es internacional)"
         number_card: "Datos de la tarjeta"
         owner_card: "Datos del titular"
         payment_account: "Pago mediante domiciliación bancaria"

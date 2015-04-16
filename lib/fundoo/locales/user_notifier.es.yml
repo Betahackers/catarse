@@ -48,6 +48,9 @@ es:
         ol_strong_contribution_strong: "Hola, <strong> %{contribution}</strong>!"
         seu_apoio_para_o: "Con éxito se confirmó su apoyo para el proyecto %{link_to}."
         at_o_momento_voc: "Por el momento usted y otras personas %{contribution} están haciendo este proyecto una realidad."
+        share_your_support: "Comparte tu apoyo y aumentar las posibilidades de llegar a la meta!"
+        compartilhe: Compartir
+        tu_te: Tweet
         esse_e_mail_serve: "Este correo electrónico sirve como recibo temporal <strong>su</strong> contribución."
       confirm_contribution_subject:
         recibo_provis_rio_apoio: "Recibo provisional: apoyo confirmado %{notification}"
@@ -300,12 +303,29 @@ es:
       paypal_donation_request_subject:
         thank_you_for_supporting: "Thanks for supporting %{notification}!"
       paypal_donation_request:
-        ol_strong_contribution_strong: "Hello, <strong> %{contribution} </strong>!"
+        hello: "Hola, <strong>% {nombre}</strong>"
         thank_you_for_supporting: "Thank you so much for supporting %{link_to}."
-        the_project_organizer_will: "El organizador del proyecto deberá confirmar su contribución antes de que se aplica a la campaña."
+        next_step: "El siguiente paso es enviar su donación a la organizadora del proyecto."
+        pay_pal: "Esta es la información que usted necesitará hacer la donación vía paypal. Haga clic en el botón de abajo y siga las instrucciones (Asegúrese que el correo electrónico de entrada y cantidad correcta y seleccionar la moneda correcta :))."
+        no_pay_pal: "Si no tienes paypal, por favor enviar un correo electrónico al organizador proyecto para arreglar la donación."
+        organizer_will_confirm: "Cuando el organizador recibe los fondos, tu donación será confirmada y aplicado al proyecto."
         if_you_would_like_to: "Si tienes una cuenta paypal, puedes hacer tu donativo visitando: <a target=\"_blank\" href='https://www.paypal.com/us/webapps/mpp/send-money-online'> https://www.paypal.com/us/webapps/mpp/send-money-online</a>. (Asegúrese de que el correo electrónico de entrada y cantidad correcta y seleccionar la moneda correcta :))"
-        organizer_email: "Organizador Dirección: %{email}"
+        organizer_paypal_email: "Dirección de correo electrónico del organizador: <strong>% {email}</strong>"
         donation_amount: "Cantidad de donación: %{amount}"
+        um_abra_o: "Un abrazo,"
+      pay_now_donation_request_subject:
+        thank_you_for_supporting: "Gracias por apoyar a % {notificación}!"
+      pay_now_donation_request:
+        hello: "Hola, <strong>% {nombre}</strong>"
+        thank_you_for_supporting: "Gracias por apoyar a % {link_to}."
+        next_step: "El siguiente paso es enviar su donación a la organizadora del proyecto."
+        donate_with_pay_pal: "<strong>PayPal</strong> - si desea enviar su donación a través de PayPal, haga clic en el botón de abajo para ir a la Web de PayPal. Aquí están los datos que usted necesitará ingresar:"
+        donate_with_iban: "<strong>Transferencia bancaria</strong> - si desea enviar su donación a través de una transferencia bancaria aquí están los datos que necesitará:"
+        no_pay_pal: "Si no tienes paypal, por favor enviar un correo electrónico al organizador proyecto para arreglar la donación."
+        organizer_will_confirm: "<strong>Importante:</strong> Por el momento, su aporte está <strong>pendiente</strong> y debe ser confirmadas por el organizador del proyecto. Hasta que se confirma, su contribución no aparece ni aplicado a los avances de proyectos. Cuando el organizador recibe los fondos, usted recibirá una notificación y su contribución será confirmada y aplicado."
+        organizer_paypal_email: "Dirección de correo electrónico de PayPal organizador: <strong>% {email}</strong>"
+        donation_amount: "Cantidad de donación: <strong>% {cantidad}</strong>"
+        organizers_iban: "Número IBAN del organizador: <strong>% {iban}</strong>"
         um_abra_o: "Un abrazo,"
       pending_contribution_project_unsuccessful:
         ol_contribution: "Hola, %{contribution}!"

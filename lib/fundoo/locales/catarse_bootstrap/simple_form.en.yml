@@ -39,7 +39,7 @@ en:
         select: "Select an option"
         traffic_sources: "How did you hear about Fundoo?"
     labels:
-      project:     
+      project:
         auto_confirm_contribution: "Should contributions be confirmed automatically?"
         paypal_email_address: "Can people send you donations via PayPal? What is your PayPal email address?"
         wait_for_success_to_collect_funds: "Wait to see if the campaign is successful before collecting funds?"

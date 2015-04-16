@@ -29,12 +29,6 @@ en:
           payment_card_number: "Card number"
           payment_card_flag: Flag
           payment_card_source: "Cód. Security"
-          payment_card_source_short: CVC
-          payment_card_date: "Expiration (mm/yy)"
-          payment_card_name: "Name printed on the credit card"
-          payment_card_installments: Parcels
-        installment_with_tax: "without interest"
-        transaction_error: "Transaction refused, please recheck your data or contact your bank/card issuer for more information."
         pagarme_warning_html: "The Fundoo is in the testing phase of a new means of payment which will facilitate the financial contribution and the eventual repayment of values to the contributors. Therefore, we caution you that extra data may be required, in addition to those mentioned in the terms of use to contribution this project. Any doubt or difficulty, contact us by email at %{mailto}. Thank you."
         payment_save_card: "I want to save my credit card to facilitate future contribution."
         reward_sold_out: "This reward is depleted. Start a new contribution."
@@ -43,11 +37,6 @@ en:
         credits_submit: "Make payment"
         credits_title: "Payment with credit"
         insufficient_credits: "You have %{credits} credits. This value is not sufficient to perform the contribution, please choose another means of payment."
-        choose_payment: "Choose the payment method"
-        choose_payment_subtitle: "SECURE PAYMENT"
-        cpf: "To proceed, please notify:"
-        credits_notice_html: "This contribution will be paid with your credits. After confirmation, you will have a balance of <strong> %{credits} </strong> in credits to contribution other projects."
-        live_in_brazil: "I live in Brazil. (Uncheck if your contribution is international)"
         number_card: "Card data"
         owner_card: "Cardholder data"
         payment_account: "Payment with direct debit"
@@ -62,8 +51,6 @@ en:
         subtitle: "These data will be notified to the organizer of the project."
         title: "Fill out and review the data for payment"
         you_are_about_html: "You're about to be part of the group that does everything for the %{link} happen."
-        why_do_you_need_my_document_number: "Why do you need my document number?"
-        why_do_you_need_my_document_number_answer: "We want the process to be fun and simple, but we also want people to take their commitment to donate seriously. So we ask for your document number intead of a credit card or bank account number."
       new:
         page-title: "Supports %{name}"
         title: "Oohh yeah!"
@@ -73,20 +60,6 @@ en:
         minimum_disclaimer: "Any amount is great;)"
         next_step: "Review contribution"
         no_reward: "Thank you. I just want to help the project."
-        how_it_works: "Here's how it works"            
-      how_it_works_box:
-        choose:
-          title: 1) Choose your reward
-          description: Select one of the offered rewards and click 'Review'. You can change the donation amount if you would like, but it cannot be less than the value of the selected reward.
-        confirm:
-          title: 2) Confirm your details
-          description: Make sure we have your correct details (so we know who to thank!) and click 'Confirm'.
-        pay_now:
-          title: 3) Check your email and send your contribution.
-          description: We don't handle payment through the platform. You'll receive an email explaining how to make your contribution directly to the project organizer (usually via paypal).
-        pay_later:
-          title: 3) That's it!
-          description: You're all finished. If the project is succesfully funded, you will receive an email with instruction on how to make your contribution.
       review:
         PayPal: Paypal
         MoIP: Moip

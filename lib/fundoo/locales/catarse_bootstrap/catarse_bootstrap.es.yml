@@ -53,30 +53,34 @@ es:
         tweet: Tweet
         voc_pode_curtir_esses: "Se pueden disfrutar de estos aquí también"
         valeu: "¡ Gracias!"
-        voc_faz_parte_do: "Tú eres parte del grupo de"
-        pessoas_que_querem_tirar: "personas que quieren hacer"
-        do_papel_voc_receber: "que sea una realidad! Usted recibirá confirmación del pago por correo electrónico tan pronto como se procesa. También puede seguir el estado de tu apoyo"
-        atrav_s_do_seu: "a través de su perfil"
-        compartilhe_o_seu: ".Comparte tu apoyo y aumentar las posibilidades de llegar a la meta!"
+        pay_now: "Hemos enviado un correo electrónico a <span class='fontweight-semibold'> % {email}</span> con instrucciones sobre cómo completar su contribución. Por el momento, su aporte está <strong>pendiente</strong> y debe ser confirmadas por el organizador del proyecto. <br/> <br/> Hasta que se confirma, su contribución no aparece ni aplicado a los avances de proyectos. Cuando el organizador recibe los fondos, usted recibirá una notificación y su contribución será confirmada y aplicado."
+        youre_now_part_of: "Ahora eres parte del grupo de {count} % de las personas que quieren hacer <span class='fontweight-semibold'> % {link}</span> pasar!"
+        track_the_status: "También puede seguir el estado de tu contribución % {link}."
+        through_your_profile: "a través de su perfil"
+        share_your_support: " Comparte tu apoyo y aumentar las posibilidades de llegar a la meta!"
         compartilhe: Compartir
         tu_te: Tweet
         recomenda_es_de_projetos: "Proyectos recomendados para ti"
         curte_a_categoria_project: "¿Seguir la categoría %{project_name}? Usted puede recibir personalmente y directamente en su correo electrónico cuando nuevos proyectos!"
       faq_box:
         perguntas_frequentes: "Preguntas frecuentes"
-        como_eu_apoio_este: "¿Como apoyo este proyecto?"
-        primeiro_escolha_o_valor: "En primer lugar, seleccione el valor deseado y recompensa. A continuación, haz clic en 'examinar y realizar pago' que podrá redirigirle a la siguiente página para completar su pago."
-        quando_o_pagamento_efetivado: "¿Cuando se efectúa el pago?"
-        se_voc_pagou_com: "Si usted paga con tarjeta de crédito, el reconocimiento debe ser el mismo día si fue con tocho, hasta 4 días laborables."
-        e_se_o_projeto: "¿Y si el proyecto no llega a la meta?"
-        nesse_caso_voc_recebe: "En este caso, vuelve el 100% de lo que has pagado a través de un reembolso."
-        se_o_projeto_for: "Si el proyecto está financiado, ¿Cómo obtengo mi recompensa?"
-        quando_sua_recompensa_estiver: "Cuando esté lista su recompensa, %{user_link} te contactará para organizar la entrega."
+        how_can_i_support: "¿Cómo puedo apoyar este proyecto?"
+        how_can_i_support_answer: "En primer lugar, seleccione la recompensa deseada. Luego haga clic en 'Informe contribución' y nos le redirigirá a la página siguiente para confirmar sus datos."
+        when_do_i_pay: "¿puedo enviar mi donación ahora o más tarde?"
+        pay_now: "El organizador del proyecto ha optado por recoger los fondos por adelantado. Una vez que el organizador del proyecto recibe su donación, él o ella lo marcará como 'confirmado' y su nombre wil aparecen en la lista de contribuyentes (a menos que no lo quieres a)"
+        pay_later: "Cuando el proyecto está financiado con éxito, el organizador del proyecto será por correo electrónico explicando cómo hacer tu donación (generalmente a través de paypal)"
+        how_do_i_pay: "No manejar el dinero, ¿cómo puedo hacer mi donación?"
+        how_do_i_pay_answer: "Siempre hacer la donación directamente a la organizadora del proyecto (generalmente a través de paypal). Usted recibirá un correo electrónico con las instrucciones exactas."
+        what_if_it_fails: "¿Qué pasa si el proyecto no alcanza la meta?"
+        what_if_it_fails_answer: "En este caso, obtendrá regresar el monto de su donación completa (si ya has pagado)"
+        how_do_i_get_my_reward: "Si el proyecto está financiado, ¿Cómo obtengo mi recompensa?"
+        how_do_i_get_my_reward_answer: "Cuando esté lista su recompensa, % {user_link} te contactará para organizar la entrega."
       edit:
         preencha_e_revise_os: "Completar y revisar los datos de pago"
         esses_dados_ser_o: "Dicha información se notificará al Director del proyecto"
         endere_o_de_entrega: "Dirección de entrega"
         pr_ximo_passo: "Siguiente paso"
+        confirm_contribution: "Confirmar el aporte!"
     budget_fields:
       cost: Costo
     card:

@@ -229,52 +229,52 @@ en:
               blank: "About you cannot be blank"
             uploaded_image:
               blank: "Image of the user cannot be blank"
-  project:
-    update:
-      success: "The information has been updated"
-      failed: "The unsaved information, verify that all fields have been filled in correctly"
-    delete:
-      posts: "Novelty successfully deleted"
-    video_regex_validation: "only URLs from Youtube or Vimeo are accepted"
-  contribution:
-    project_should_be_online: "You can not support a project that is not in the air"
-    reward_must_be_from_project: "must be of the same design"
-    should_not_contribute_if_maximum_contributions_been_reached: "has reached its maximum number of channels_subscribers"
-    value_must_be_at_least_rewards_value: "must be at least %{minimum_value} for the selected reward"
-  contribution_report_to_project_owner:
-    reward_description: "Reward description"
-    deliver_at: "Date of delivery of the reward"
-    confirmed_at: "Date of payment confirmation"
-    contribution_value: "Value of contribution"
-    service_fee: "Rate of Fundoo"
-    user_full_name: "Full name of the contributor"
-    user_name: "Nickname of the contributor"
-    user_email: "Email profile Fundoo"
-    cpf: "Document number"
-    payer_email: "Email of the means of payment"
-    payment_method: "Means of payment"
-    street: Street
-    address_number: Number
-    complement: Add-on
-    neighbourhood: Neighborhood
-    city: City
-    address_state: State
-    zip_code: "Postal code"
-    anonymous: Anonymous
-  user:
-    no_name: "Without name"
-    contributions_text:
-      one: "Contributed only this project until now"
-      two: "Contributed this and 1 other project"
-      many: "Contributed this and other %{total} projects"
-  channels_subscribers:
-    created: "Now you follow the %{channel}"
-    deleted: "You no longer follow the %{channel}"
-  channels:
-    edit: "Update channel"
-    image_hint: "Maximum size (600x121px)"
-    subscribed: " %{count} following the channel"
-    back_to_news: "← Back to news"
-    follow: "Follow the channel"
-    following: Following
-    unfollow: Unfollow
+    project:
+      update:
+        success: "The information has been updated"
+        failed: "The unsaved information, verify that all fields have been filled in correctly"
+      delete:
+        posts: "Novelty successfully deleted"
+      video_regex_validation: "only URLs from Youtube or Vimeo are accepted"
+    contribution:
+      project_should_be_online: "You can not support a project that is not in the air"
+      reward_must_be_from_project: "must be of the same design"
+      should_not_contribute_if_maximum_contributions_been_reached: "has reached its maximum number of channels_subscribers"
+      value_must_be_at_least_rewards_value: "must be at least %{minimum_value} for the selected reward"
+    contribution_report_to_project_owner:
+      reward_description: "Reward description"
+      deliver_at: "Date of delivery of the reward"
+      confirmed_at: "Date of payment confirmation"
+      contribution_value: "Value of contribution"
+      service_fee: "Rate of Fundoo"
+      user_full_name: "Full name of the contributor"
+      user_name: "Nickname of the contributor"
+      user_email: "Email profile Fundoo"
+      cpf: "Document number"
+      payer_email: "Email of the means of payment"
+      payment_method: "Means of payment"
+      street: Street
+      address_number: Number
+      complement: Add-on
+      neighbourhood: Neighborhood
+      city: City
+      address_state: State
+      zip_code: "Postal code"
+      anonymous: Anonymous
+    user:
+      no_name: "Without name"
+      contributions_text:
+        one: "Contributed only this project until now"
+        two: "Contributed this and 1 other project"
+        many: "Contributed this and other %{total} projects"
+    channels_subscribers:
+      created: "Now you follow the %{channel}"
+      deleted: "You no longer follow the %{channel}"
+    channels:
+      edit: "Update channel"
+      image_hint: "Maximum size (600x121px)"
+      subscribed: " %{count} following the channel"
+      back_to_news: "← Back to news"
+      follow: "Follow the channel"
+      following: Following
+      unfollow: Unfollow

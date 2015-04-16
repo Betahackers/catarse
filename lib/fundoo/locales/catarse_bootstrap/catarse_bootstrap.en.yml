@@ -78,7 +78,7 @@ en:
       edit:
         preencha_e_revise_os: "Fill out and review the data for the contribution"
         esses_dados_ser_o: "This information will be recorded for the project organizer"
-        endere_o_de_entrega: "Address"
+        endere_o_de_entrega: Address
         pr_ximo_passo: "Next step"
         confirm_contribution: "Confirm contribution!"
     budget_fields:
