@@ -118,10 +118,8 @@ en:
       contribution_project_unsuccessful_credit_card:
         ol_contribution: "Hello, %{contribution}!"
         infelizmente_o_projeto_link: "Unfortunately the project %{link_to} that you supported has not reached the target set and was not funded."
-        em_at_5_dias: "Within 5 working days we will refund the amount of your support, that <strong> will come as credit on next or"
-        subsequente_fatura_do_seu: "subsequent invoice of your </strong> card. Once the refund is made, you will receive an email confirmation of the operation."
+        em_at_5_dias: "Within 5 working days the project organizer will refund any funds already contributed."
         se_ficou_com_alguma: "If you got any questions, please contact us at responding to this message or via e-mail %{mail_to}"
-        e_nos_informe_a: "and let us know the identification key for your support, which is: %{contribution}"
         um_abra_o: "A hug,"
       contribution_project_unsuccessful_credit_card_subject:
         reembolso_apoio_para_o: "Reimbursement: support for non-funded project %{notification}"
@@ -319,8 +317,10 @@ en:
         hello: "Hello, <strong>%{name}</strong>"
         thank_you_for_supporting: "Thank you so much for supporting %{link_to}."
         next_step: "The next step is to send your donation to the project organizer."
-        donate_with_pay_pal: "<strong>PayPal</strong> - If you would like to send your donation via PayPal, click on the button below to go to the PayPal website. Here's the data you'll need to enter:"
-        donate_with_iban: "<strong>Bank Transfer</strong> - If you would like to send your donation via a bank transfer here's the data you'll need:"
+        pay_pal: "PayPal"
+        iban: 'Bank Transfer'
+        donate_with_pay_pal: "If you would like to send your donation via PayPal, click on the button below to go to the PayPal website. Here's the data you'll need to enter:"
+        donate_with_iban: "If you would like to send your donation via a bank transfer here's the data you'll need:"
         no_pay_pal: "If you don't have paypal, please send an email to the project organizer to arrange the donation."
         organizer_will_confirm: "<strong>Important:</strong> At the moment, your contribution is <strong>pending</strong> and needs to be confirmed by the project organizer. Until it is confirmed, your contribution is not displayed or applied to the projects progress. When the organizer receives the funds, you will receive a notification and your contribution will be confirmed and applied."
         organizer_paypal_email: "Organizer PayPal email address: <strong>%{email}</strong>"

@@ -8,6 +8,7 @@ br
 
 - if contribution.project.paypal_email_address.present?
   hr
+  h3 = raw t('.pay_pal')
   = raw t('.donate_with_pay_pal')
   br
   = raw t('.organizer_paypal_email', email: (contribution.project.paypal_email_address))
@@ -19,6 +20,7 @@ br
 
 - if contribution.project.iban.present? 
   hr
+  h3 = raw t('.iban')
   = raw t('.donate_with_iban')
   br
   = raw t('.organizers_iban', iban: contribution.project.iban)
