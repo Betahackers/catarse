@@ -13,23 +13,23 @@ class ContributionPolicy < ApplicationPolicy
   end
 
   def confirm?
-    done_by_owner_or_admin_for_record?(record.project) && record.project.online?
+    done_by_owner_or_admin_for_record?(record.project) && record.waiting_confirmation?
   end
   
   def refund?
-    done_by_owner_or_admin_for_record?(record.project) && record.project.online?
+    done_by_owner_or_admin_for_record?(record.project) && record.confirmed?
   end
 
   def hide?
-    done_by_owner_or_admin_for_record?(record.project) && record.project.online?
+    done_by_owner_or_admin_for_record?(record.project) && (record.canceled? || record.refunded?)
   end
   
   def push_to_trash?
-    done_by_owner_or_admin_for_record?(record.project) && record.project.online?
+    done_by_owner_or_admin_for_record?(record.project) && (record.waiting_confirmation? || record.pending?)
   end
 
   def cancel?
-    done_by_owner_or_admin_for_record?(record.project) && record.project.online?
+    done_by_owner_or_admin_for_record?(record.project) && (record.waiting_confirmation? || record.pending?)
   end
   
   def create?
